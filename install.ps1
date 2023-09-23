@@ -1,5 +1,5 @@
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-#Function
+# Function
 function Write-Start {
 	param ($msg)
 	Write-Host (">> "+$msg) -ForegroundColor Green

@@ -2,15 +2,15 @@
 
 https://jxdocs.com/admin
 
-## install.ps1
+### install.ps1
 
 Quick install work environments with PowerShell
 
-## settings-font.json
+### settings-font.json
 
 Setting font in VsCode
 
-#Lệnh bài cẩm nang AIO:
+# Lệnh bài cẩm nang AIO:
 
 Add dòng này vào cuối file **magicscript.txt**
 

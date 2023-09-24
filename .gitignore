@@ -11,18 +11,9 @@
 !settings-font.json
 #
 !itemexchange_setting/
-itemexchange_setting/*
-!itemexchange_setting/item/
-itemexchange_setting/item/*
-!itemexchange_setting/item/004/
-!itemexchange_setting/item/004/*
-#
+!itemexchange_setting/**
 !rolevalueladder_setting/
-rolevalueladder_setting/*
-!rolevalueladder_setting/item/
-rolevalueladder_setting/item/*
-!rolevalueladder_setting/item/004/
-!rolevalueladder_setting/item/004/*
+!rolevalueladder_setting/**
 # script
 !script/
 script/*
@@ -76,8 +67,3 @@ data/*
 !settings/*
 !settings/item/
 !settings/item/**
-
-# !settings/item/004
-# !settings/item/004/*
-# !settings/item/004/itemvalue
-# !settings/item/004/itemvalue/*

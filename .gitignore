@@ -6,5 +6,7 @@
 !*.json
 # !script
 !script/global/gm
+!script/global/thanh
+!script/global/thinh
 # !settings
 !settings/item

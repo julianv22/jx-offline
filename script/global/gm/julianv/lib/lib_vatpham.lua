@@ -1,11 +1,11 @@
-tbNguyenLieu = {}
-tbNguyenLieu.tbList = {
+tbVatPham = {}
+tbVatPham.tbList = {
     HuyenTinh = 1,
     ThuyTinh = 2,
     PhucDuyen = 3
 }
-tbNguyenLieu.tbVatPham = {
-    [tbNguyenLieu.tbList.HuyenTinh] = {{
+tbVatPham.NguyenLieu = {
+    [tbVatPham.tbList.HuyenTinh] = {{
         szName = "HuyÒn Tinh CÊp 1",
         tbProp = {6, 1, 147, 1, 0, 0, 0},
         tbParam = {60}
@@ -46,7 +46,7 @@ tbNguyenLieu.tbVatPham = {
         tbProp = {6, 1, 147, 10, 0, 0, 0},
         tbParam = {60}
     }},
-    [tbNguyenLieu.tbList.ThuyTinh] = {{
+    [tbVatPham.tbList.ThuyTinh] = {{
         szName = "Tö Thñy Tinh",
         tbProp = {4, 239, 1, 1, 0, 0},
         tbParam = {60}
@@ -59,7 +59,7 @@ tbNguyenLieu.tbVatPham = {
         tbProp = {4, 240, 1, 1, 0, 0},
         tbParam = {60}
     }},
-    [tbNguyenLieu.tbList.PhucDuyen] = {{
+    [tbVatPham.tbList.PhucDuyen] = {{
         szName = "Phóc Duyªn TiÓu",
         tbProp = {6, 1, 122, 1, 0, 0, 0},
         tbParam = {60}
@@ -73,7 +73,6 @@ tbNguyenLieu.tbVatPham = {
         tbParam = {60}
     }}
 }
-tbVatPham = {}
 tbVatPham.Khac = {{
     szName = "Håi Thiªn T¸i T¹o LÔ Bao",
     tbProp = {6, 1, 1781, 0, 0, 0},
@@ -109,9 +108,9 @@ tbVatPham.Khac = {{
     szName = "ThËp Toµn §¹i Bæ",
     tbProp = {6, 1, 1399, 0, 0, 0}
 }}
-function tbNguyenLieu:Define()
-    for id, VatPham in tbNguyenLieu.tbVatPham do
-        tbVatPham[id] = VatPham
+function tbVatPham:Define()
+    for id, NguyenLieu in tbVatPham.NguyenLieu do
+        tbVatPham[id] = NguyenLieu
     end
 end
-tbNguyenLieu:Define()
+tbVatPham:Define()

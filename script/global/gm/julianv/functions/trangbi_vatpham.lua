@@ -312,17 +312,19 @@ function NguyenLieu_Dialog()
     {"HuyÒn Tinh", chonNguyenLieu, {1}}, --
     {"Thuû Tinh", chonNguyenLieu, {2}}, --
     {"Phóc Duyªn", chonNguyenLieu, {3}}, --
-    {"Kho¸ng Th¹ch", chonNguyenLieu, {4}}, --
-    {"M¶nh Thiªn Th¹ch", chonNguyenLieu, {5}} --
+    {"Kho¸ng Th¹ch"}, --
+    {"M¶nh Thiªn Th¹ch", chonNguyenLieu, {0}} --
     }
     tbDialog:Show(tbOpt, NhanVatPham)
 end
 
 function chonNguyenLieu(nType)
-    if nType == 5 then
+    if nType == 0 then
+        local nItemIdx
         for i = 1317, 1325 do
-            AddEventItem(i)
+            nItemIdx = AddEventItem(i)
         end
+        Msg2Player("NhËn ®­îc 10 <color=yellow>" .. GetItemName(nItemIdx))
     else
         local tbOpt = {}
         for id, VatPham in tbVatPham[nType] do
@@ -332,5 +334,11 @@ function chonNguyenLieu(nType)
     end
 end
 
-function nhanNguyenLieu(nType, nIndex)
+function nhanNguyenLieu(nType, nIndex, nCount)
+    if not nCount then
+        g_AskClientNumberEx(1, 999, "Sè l­îng", {nhanNguyenLieu, {nType, nIndex}})
+    else
+        local szLog = format("[liguan]get_free_item_%s", tbVatPham[nType][nIndex].szName)
+        tbAwardTemplet:GiveAwardByList(tbVatPham[nType][nIndex], szLog, nCount)
+    end
 end

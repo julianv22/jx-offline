@@ -5,6 +5,7 @@
 !*.md
 !*.json
 # !script
+script/skill
 !script/global/gm
 !script/global/thanh
 !script/global/thinh

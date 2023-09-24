@@ -22,6 +22,7 @@ function NhanTrangBi()
 end
 
 function NhanVatPham()
+    dofile("script/global/gm/julianv/lib/lib_nguyenlieu.lua")
     local tbOpt = { --    
     {"VËt phÈm trïng sinh", TransLifeItem_Dialog}, --
     {"LÊy ngùa", Horses_Dialog}, --
@@ -304,27 +305,32 @@ function getTransLifeItem(nIndex, nCount)
             tbAwardTemplet:GiveAwardByList(tbTransLifeItems[nIndex], szLogTitle, nCount)
         end
     end
-
-    --             Msg2Player(format("NhËn ®­îc %d %s", nCount, GetItemName(AddItem(tbTransLifeItems[nCount].tbProp))))
-
 end
 ------------------------Nguyªn liÖu chÕ t¹o ®å tÝm------------------------
 function NguyenLieu_Dialog()
     local tbOpt = { --
-    {"HuyÒn Tinh", getNguyenLieu, {1}}, --
-    {"Thuû Tinh", getNguyenLieu, {2}}, --
-    {"Phóc Duyªn", getNguyenLieu, {3}}, --
-    {"Kho¸ng Th¹ch", getNguyenLieu, {4}}, --
-    {"M¶nh Thiªn Th¹ch", getNguyenLieu, {5}} --
+    {"HuyÒn Tinh", chonNguyenLieu, {1}}, --
+    {"Thuû Tinh", chonNguyenLieu, {2}}, --
+    {"Phóc Duyªn", chonNguyenLieu, {3}}, --
+    {"Kho¸ng Th¹ch", chonNguyenLieu, {4}}, --
+    {"M¶nh Thiªn Th¹ch", chonNguyenLieu, {5}} --
     }
     tbDialog:Show(tbOpt, NhanVatPham)
 end
 
-function getNguyenLieu(nType)
+function chonNguyenLieu(nType)
     if nType == 5 then
-        for i = 1317, 1235 do
+        for i = 1317, 1325 do
             AddEventItem(i)
-            -- Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddEventItem(i)))
         end
+    else
+        local tbOpt = {}
+        for id, VatPham in tbVatPham[nType] do
+            tinsert(tbOpt, {VatPham.szName, nhanNguyenLieu, {nType, id}})
+        end
+        tbDialog:Show(tbOpt, NguyenLieu_Dialog)
     end
+end
+
+function nhanNguyenLieu(nType, nIndex)
 end

@@ -6,6 +6,7 @@
 !*.json
 # !script
 !script/global/gm
+!script/global/npc
 !script/global/thanh
 !script/global/thinh
 # !settings

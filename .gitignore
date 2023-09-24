@@ -37,4 +37,15 @@ script/global/*
 !ui/ui31/*
 !ui/ui31/道具
 !ui/ui31/道具/*
-# settings
+# UserData
+!UserData
+UserData/*
+!UserData/uiconfig.ini
+# spr
+!spr
+spr/*
+!spr/julianv.spr
+# data
+!data
+data/*
+!data/1024x768.pak

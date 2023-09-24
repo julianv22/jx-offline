@@ -8,13 +8,17 @@
 !package.ini
 !game_y.exe
 !.VnSourceCodePro-Regular.ttf
+#-------------------------
 !ui
+!settings
 !UserData/uiconfig.ini
 !spr/julianv.spr
 !data/1024x768.pak
+#Important Files
 !script/skill
 !script/global/gm
 !script/global/npc
 !script/global/thanh
 !script/global/thinh
-!settings
+!script/item/lessmoneygift.lua
+!script/item/moremoneygift.lua

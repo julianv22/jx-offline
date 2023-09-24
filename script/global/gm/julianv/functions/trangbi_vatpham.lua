@@ -301,7 +301,4 @@ function getTransLifeItem(nIndex, nCount)
             tbAwardTemplet:GiveAwardByList(tbTransLifeItems[nIndex], szLogTitle, nCount)
         end
     end
-
-    --             Msg2Player(format("NhËn ®­îc %d %s", nCount, GetItemName(AddItem(tbTransLifeItems[nCount].tbProp))))
-
 end

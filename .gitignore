@@ -1,3 +1,7 @@
-/*/
+*
 *.*
 !.gitignore
+!*.tff
+!*.ps1
+!README.md
+*.json

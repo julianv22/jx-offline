@@ -4,7 +4,6 @@
 !*.ps1
 !*.md
 !*.json
-!spr
 # !script
 !script/global
 # !settings

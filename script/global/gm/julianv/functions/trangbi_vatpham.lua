@@ -4,11 +4,11 @@
 Include("\\script\\global\\gm\\julianv\\functions\\hoangkim_bachkim.lua") -- vò khi b¹ch kim
 Include("\\script\\global\\gm\\functions_goldplatiumitems.lua") -- lÊy item hoµng kim, b¹ch kim
 Include("\\script\\global\\gm\\lib_data_table.lua") -- data table ngùa & trang bÞ
-Include("\\script\\global\\gm\\julianv\\lib\\lib_trangbi.lua")
+Include("\\script\\global\\gm\\julianv\\lib\\lib_monphai.lua")
 Include("\\script\\global\\gm\\julianv\\lib\\lib_vatpham.lua")
 
 function NhanTrangBi()
-    dofile("script/global/gm/julianv/lib/lib_trangbi.lua")
+    dofile("script/global/gm/julianv/lib/lib_monphai.lua")
     local tbOpt = { --    
     {"NhËn Ên - Phi phong - Trang søc", TrangBiKhac_Dialog}, --
     {"Trang bÞ Hoµng Kim - B¹ch Kim cao cÊp", chose_type_goldquip}, --   

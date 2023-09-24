@@ -1,0 +1,1422 @@
+ÂíÆ¥±àºÅ	ÂíÆ¥²¿¼ş±àºÅ	ËµÃ÷
+1	0	Dßng thø nhÊt cho biÕt kh«ng cã trang bŞ. Cßn l¹i ®Òu v« nghÜa
+2	10	Phæ th«ng Hoµng M· 
+3	10	Phæ th«ng Hoµng M· 
+4	10	Phæ th«ng Hoµng M· 
+5	10	Phæ th«ng Hoµng M· 
+6	10	Phæ th«ng Hoµng M· 
+7	10	Phæ th«ng Hoµng M· 
+8	10	Phæ th«ng Hoµng M· 
+9	10	Phæ th«ng Hoµng M· 
+10	10	Phæ th«ng Hoµng M· 
+11	10	Phæ th«ng Hoµng M· 
+12	6	Phæ Th«ng Thanh M· 
+13	6	Phæ Th«ng Thanh M· 
+14	6	Phæ Th«ng Thanh M· 
+15	6	Phæ Th«ng Thanh M· 
+16	6	Phæ Th«ng Thanh M· 
+17	6	Phæ Th«ng Thanh M· 
+18	6	Phæ Th«ng Thanh M· 
+19	6	Phæ Th«ng Thanh M· 
+20	6	Phæ Th«ng Thanh M· 
+21	6	Phæ Th«ng Thanh M· 
+22	9	Phæ Th«ng B¹ch M· 
+23	9	Phæ Th«ng B¹ch M· 
+24	9	Phæ Th«ng B¹ch M· 
+25	9	Phæ Th«ng B¹ch M· 
+26	9	Phæ Th«ng B¹ch M· 
+27	9	Phæ Th«ng B¹ch M· 
+28	9	Phæ Th«ng B¹ch M· 
+29	9	Phæ Th«ng B¹ch M· 
+30	9	Phæ Th«ng B¹ch M· 
+31	9	Phæ Th«ng B¹ch M· 
+32	5	Phæ Th«ng H¾c M· 
+33	5	Phæ Th«ng H¾c M· 
+34	5	Phæ Th«ng H¾c M· 
+35	5	Phæ Th«ng H¾c M· 
+36	5	Phæ Th«ng H¾c M· 
+37	5	Phæ Th«ng H¾c M· 
+38	5	Phæ Th«ng H¾c M· 
+39	5	Phæ Th«ng H¾c M· 
+40	5	Phæ Th«ng H¾c M· 
+41	5	Phæ Th«ng H¾c M· 
+42	8	Phæ Th«ng Hång M· 
+43	8	Phæ Th«ng Hång M· 
+44	8	Phæ Th«ng Hång M· 
+45	8	Phæ Th«ng Hång M· 
+46	8	Phæ Th«ng Hång M· 
+47	8	Phæ Th«ng Hång M· 
+48	8	Phæ Th«ng Hång M· 
+49	8	Phæ Th«ng Hång M· 
+50	8	Phæ Th«ng Hång M· 
+51	8	Phæ Th«ng Hång M· 
+52	7	¤ V©n §¹p TuyÕt
+53	2	Xİch Thè 
+54	11	TuyÖt ¶nh
+55	4	§İch L« 
+56	3	ChiÕu D¹ Ngäc S­ Tö 
+57	7	¤ V©n §¹p TuyÕt
+58	2	Xİch Thè 
+59	11	TuyÖt ¶nh
+60	4	§İch L« 
+61	3	ChiÕu D¹ Ngäc S­ Tö 
+62	12	B«n Tiªu
+63	12	B«n Tiªu
+64	12	B«n Tiªu
+65	12	B«n Tiªu
+66	12	B«n Tiªu
+67	12	B«n Tiªu
+68	12	B«n Tiªu
+69	12	B«n Tiªu
+70	12	B«n Tiªu
+71	12	B«n Tiªu
+72	13	Phiªn Vò 
+73	13	Phiªn Vò 
+74	13	Phiªn Vò 
+75	13	Phiªn Vò 
+76	13	Phiªn Vò 
+77	13	Phiªn Vò 
+78	13	Phiªn Vò 
+79	13	Phiªn Vò 
+80	13	Phiªn Vò 
+81	13	Phiªn Vò 
+82	14	Phi V©n
+83	14	Phi V©n
+84	14	Phi V©n
+85	14	Phi V©n
+86	14	Phi V©n
+87	14	Phi V©n
+88	14	Phi V©n
+89	14	Phi V©n
+90	14	Phi V©n
+91	14	Phi V©n
+92	15	"Xİch Long C©u, huyÕt hång cao cÊp"
+93	15	"Xİch Long C©u, huyÕt hång cao cÊp"
+94	15	"Xİch Long C©u, huyÕt hång cao cÊp"
+95	15	"Xİch Long C©u, huyÕt hång cao cÊp"
+96	15	"Xİch Long C©u, huyÕt hång cao cÊp"
+97	15	"Xİch Long C©u, huyÕt hång cao cÊp"
+98	15	"Xİch Long C©u, huyÕt hång cao cÊp"
+99	15	"Xİch Long C©u, huyÕt hång cao cÊp"
+100	15	"Xİch Long C©u, huyÕt hång cao cÊp"
+101	15	"Xİch Long C©u, huyÕt hång cao cÊp"
+102	16	"TuyÖt §Şa, broken"
+103	16	"TuyÖt §Şa, broken"
+104	16	"TuyÖt §Şa, broken"
+105	16	"TuyÖt §Şa, broken"
+106	16	"TuyÖt §Şa, broken"
+107	16	"TuyÖt §Şa, broken"
+108	16	"TuyÖt §Şa, broken"
+109	16	"TuyÖt §Şa, broken"
+110	16	"TuyÖt §Şa, broken"
+111	16	"TuyÖt §Şa, broken"
+112	17	"Du Huy, huyÕt hång cao cÊp"
+113	17	"Du Huy, huyÕt hång cao cÊp"
+114	17	"Du Huy, huyÕt hång cao cÊp"
+115	17	"Du Huy, huyÕt hång cao cÊp"
+116	17	"Du Huy, huyÕt hång cao cÊp"
+117	17	"Du Huy, huyÕt hång cao cÊp"
+118	17	"Du Huy, huyÕt hång cao cÊp"
+119	17	"Du Huy, huyÕt hång cao cÊp"
+120	17	"Du Huy, huyÕt hång cao cÊp"
+121	17	"Du Huy, huyÕt hång cao cÊp"
+122	18	"§»ng Vô, broken"
+123	18	"§»ng Vô, t«ng hoµng cao cÊp"
+124	18	"§»ng Vô, t«ng hoµng cao cÊp"
+125	18	"§»ng Vô, t«ng hoµng cao cÊp"
+126	18	"§»ng Vô, t«ng hoµng cao cÊp"
+127	18	"§»ng Vô, broken"
+128	18	"§»ng Vô, t«ng hoµng cao cÊp"
+129	18	"§»ng Vô, t«ng hoµng cao cÊp"
+130	18	"§»ng Vô, t«ng hoµng cao cÊp"
+131	18	"§»ng Vô, broken"
+132	19	"Siªu Quang, broken"
+133	19	"Siªu Quang, t«ng hång cao c©p"
+134	19	"Siªu Quang, t«ng hång cao c©p"
+135	19	"Siªu Quang, t«ng hång cao c©p"
+136	19	"Siªu Quang, broken"
+137	19	"Siªu Quang, t«ng hång cao c©p"
+138	19	"Siªu Quang, t«ng hång cao c©p"
+139	19	"Siªu Quang, t«ng hång cao c©p"
+140	19	"Siªu Quang, t«ng hång cao c©p"
+141	19	"Siªu Quang, broken"
+142	20	Hæ tr¾ng
+143	20	Hæ tr¾ng
+144	20	Hæ tr¾ng
+145	20	Hæ tr¾ng
+146	20	Hæ tr¾ng
+147	20	Hæ tr¾ng
+148	20	Hæ tr¾ng
+149	20	Hæ tr¾ng
+150	20	Hæ tr¾ng
+151	20	Hæ tr¾ng
+152	21	Háa Tinh Kim Hæ V­¬ng
+153	21	Háa Tinh Kim Hæ V­¬ng
+154	21	Háa Tinh Kim Hæ V­¬ng
+155	21	Háa Tinh Kim Hæ V­¬ng
+156	21	Háa Tinh Kim Hæ V­¬ng
+157	21	Háa Tinh Kim Hæ V­¬ng
+158	21	Háa Tinh Kim Hæ V­¬ng
+159	21	Háa Tinh Kim Hæ V­¬ng
+160	21	Háa Tinh Kim Hæ V­¬ng
+161	21	Háa Tinh Kim Hæ V­¬ng
+162	22	Kim Tinh B¹ch Hæ V­¬ng
+163	22	Kim Tinh B¹ch Hæ V­¬ng
+164	22	Kim Tinh B¹ch Hæ V­¬ng
+165	22	Kim Tinh B¹ch Hæ V­¬ng
+166	22	Kim Tinh B¹ch Hæ V­¬ng
+167	22	Kim Tinh B¹ch Hæ V­¬ng
+168	22	Kim Tinh B¹ch Hæ V­¬ng
+169	22	Kim Tinh B¹ch Hæ V­¬ng
+170	22	Kim Tinh B¹ch Hæ V­¬ng
+171	22	Kim Tinh B¹ch Hæ V­¬ng
+172	23	Long Tinh H¾c Hæ V­¬ng
+173	23	Long Tinh H¾c Hæ V­¬ng
+174	23	Long Tinh H¾c Hæ V­¬ng
+175	23	Long Tinh H¾c Hæ V­¬ng
+176	23	Long Tinh H¾c Hæ V­¬ng
+177	23	Long Tinh H¾c Hæ V­¬ng
+178	23	Long Tinh H¾c Hæ V­¬ng
+179	23	Long Tinh H¾c Hæ V­¬ng
+180	23	Long Tinh H¾c Hæ V­¬ng
+181	23	Long Tinh H¾c Hæ V­¬ng
+182	24	H·n HuyÕt Long C©u
+183	24	H·n HuyÕt Long C©u
+184	24	H·n HuyÕt Long C©u
+185	24	H·n HuyÕt Long C©u
+186	24	H·n HuyÕt Long C©u
+187	24	H·n HuyÕt Long C©u
+188	24	H·n HuyÕt Long C©u
+189	24	H·n HuyÕt Long C©u
+190	24	H·n HuyÕt Long C©u
+191	24	H·n HuyÕt Long C©u
+192	13	Phong V©n B¹ch M·
+193	13	Phong V©n B¹ch M·
+194	13	Phong V©n B¹ch M·
+195	13	Phong V©n B¹ch M·
+196	13	Phong V©n B¹ch M·
+197	13	Phong V©n B¹ch M·
+198	13	Phong V©n B¹ch M·
+199	13	Phong V©n B¹ch M·
+200	13	Phong V©n B¹ch M·
+201	13	Phong V©n B¹ch M·
+202	13	Phong V©n ChiÕn M·
+203	13	Phong V©n ChiÕn M·
+204	13	Phong V©n ChiÕn M·
+205	13	Phong V©n ChiÕn M·
+206	13	Phong V©n ChiÕn M·
+207	13	Phong V©n ChiÕn M·
+208	13	Phong V©n ChiÕn M·
+209	13	Phong V©n ChiÕn M·
+210	13	Phong V©n ChiÕn M·
+211	13	Phong V©n ChiÕn M·
+212	13	Phong V©n ThÇn M·
+213	13	Phong V©n ThÇn M·
+214	13	Phong V©n ThÇn M·
+215	13	Phong V©n ThÇn M·
+216	13	Phong V©n ThÇn M·
+217	13	Phong V©n ThÇn M·
+218	13	Phong V©n ThÇn M·
+219	13	Phong V©n ThÇn M·
+220	13	Phong V©n ThÇn M·
+221	13	Phong V©n ThÇn M·
+222	25	S­ tö tr¾ng
+223	25	S­ tö tr¾ng
+224	25	S­ tö tr¾ng
+225	25	S­ tö tr¾ng
+226	25	S­ tö tr¾ng
+227	25	S­ tö tr¾ng
+228	25	S­ tö tr¾ng
+229	25	S­ tö tr¾ng
+230	25	S­ tö tr¾ng
+231	25	S­ tö tr¾ng
+232	26	L¹c ®µ
+233	26	ÂæÍÕ
+234	26	ÂæÍÕ
+235	26	ÂæÍÕ
+236	26	ÂæÍÕ
+237	26	ÂæÍÕ
+238	26	ÂæÍÕ
+239	26	ÂæÍÕ
+240	26	ÂæÍÕ
+241	26	L¹c ®µ
+242	27	L¹c ®µ xanh
+243	27	²İÄàÂí
+244	27	²İÄàÂí
+245	27	²İÄàÂí
+246	27	²İÄàÂí
+247	27	²İÄàÂí
+248	27	²İÄàÂí
+249	27	²İÄàÂí
+250	27	²İÄàÂí
+251	27	L¹c ®µ xanh
+252	28	Nai Noel
+253	28	Ã·»¨Â¹
+254	28	Ã·»¨Â¹
+255	28	Ã·»¨Â¹
+256	28	Ã·»¨Â¹
+257	28	Ã·»¨Â¹
+258	28	Ã·»¨Â¹
+259	28	Ã·»¨Â¹
+260	28	Ã·»¨Â¹
+261	28	Nai Noel
+262	29	D­¬ng Sa
+263	29	ÑïÉ³
+264	29	ÑïÉ³
+265	29	ÑïÉ³
+266	29	ÑïÉ³
+267	29	ÑïÉ³
+268	29	ÑïÉ³
+269	29	ÑïÉ³
+270	29	ÑïÉ³
+271	29	D­¬ng Sa
+272	30	Ngù Phong
+273	30	Óù·ç
+274	30	Óù·ç
+275	30	Óù·ç
+276	30	Óù·ç
+277	30	Óù·ç
+278	30	Óù·ç
+279	30	Óù·ç
+280	30	Óù·ç
+281	30	Ngù Phong
+282	31	Truy §iÖn
+283	31	×·µç
+284	31	×·µç
+285	31	×·µç
+286	31	×·µç
+287	31	×·µç
+288	31	×·µç
+289	31	×·µç
+290	31	×·µç
+291	31	Truy §iÖn
+292	32	L­u Tinh
+293	32	Á÷ĞÇ
+294	32	Á÷ĞÇ
+295	32	Á÷ĞÇ
+296	32	Á÷ĞÇ
+297	32	Á÷ĞÇ
+298	32	Á÷ĞÇ
+299	32	Á÷ĞÇ
+300	32	Á÷ĞÇ
+301	32	L­u Tinh
+302	13	Phiªn Vò
+303	13	·­Óğ£¬¶¥¼¶Ñ©°×
+304	13	·­Óğ£¬¶¥¼¶Ñ©°×
+305	13	·­Óğ£¬¶¥¼¶Ñ©°×
+306	13	·­Óğ£¬¶¥¼¶Ñ©°×
+307	13	·­Óğ£¬¶¥¼¶Ñ©°×
+308	13	·­Óğ£¬¶¥¼¶Ñ©°×
+309	13	·­Óğ£¬¶¥¼¶Ñ©°×
+310	13	·­Óğ£¬¶¥¼¶Ñ©°×
+311	13	Phiªn Vò
+312	15	Xİch Long C©u
+313	15	³àÁú¾Ô£¬¶¥¼¶Ñªºì
+314	15	³àÁú¾Ô£¬¶¥¼¶Ñªºì
+315	15	³àÁú¾Ô£¬¶¥¼¶Ñªºì
+316	15	³àÁú¾Ô£¬¶¥¼¶Ñªºì
+317	15	³àÁú¾Ô£¬¶¥¼¶Ñªºì
+318	15	³àÁú¾Ô£¬¶¥¼¶Ñªºì
+319	15	³àÁú¾Ô£¬¶¥¼¶Ñªºì
+320	15	³àÁú¾Ô£¬¶¥¼¶Ñªºì
+321	15	³àÁú¾Ô£¬¶¥¼¶Ñªºì
+322	19	³¬¹â£¬¶¥¼¶×Øºì
+323	19	³¬¹â£¬¶¥¼¶×Øºì
+324	19	³¬¹â£¬¶¥¼¶×Øºì
+325	19	³¬¹â£¬¶¥¼¶×Øºì
+326	19	³¬¹â£¬¶¥¼¶×Øºì
+327	19	³¬¹â£¬¶¥¼¶×Øºì
+328	19	³¬¹â£¬¶¥¼¶×Øºì
+329	19	³¬¹â£¬¶¥¼¶×Øºì
+330	19	³¬¹â£¬¶¥¼¶×Øºì
+331	19	Xİch Long C©u
+332	33	broken
+333	33	À¶÷ëÉñÂ¹
+334	33	À¶÷ëÉñÂ¹
+335	33	À¶÷ëÉñÂ¹
+336	33	À¶÷ëÉñÂ¹
+337	33	À¶÷ëÉñÂ¹
+338	33	À¶÷ëÉñÂ¹
+339	33	À¶÷ëÉñÂ¹
+340	33	À¶÷ëÉñÂ¹
+341	33	broken
+342	35	broken
+343	35	¾ªÀ×
+344	35	¾ªÀ×
+345	35	¾ªÀ×
+346	35	¾ªÀ×
+347	35	¾ªÀ×
+348	35	¾ªÀ×
+349	35	¾ªÀ×
+350	35	¾ªÀ×
+351	35	broken
+352	34	broken
+353	34	¾ªÀ×
+354	34	¾ªÀ×
+355	34	¾ªÀ×
+356	34	¾ªÀ×
+357	34	¾ªÀ×
+358	34	¾ªÀ×
+359	34	¾ªÀ×
+360	34	¾ªÀ×
+361	34	broken
+362	36	TuyÕt vùc chiÕn lang
+363	36	TuyÕt vùc chiÕn lang
+364	36	TuyÕt vùc chiÕn lang
+365	36	TuyÕt vùc chiÕn lang
+366	36	TuyÕt vùc chiÕn lang
+367	36	TuyÕt vùc chiÕn lang
+368	36	TuyÕt vùc chiÕn lang
+369	36	TuyÕt vùc chiÕn lang
+370	36	TuyÕt vùc chiÕn lang
+371	36	TuyÕt vùc chiÕn lang
+372	37	heo rõng
+373	37	heo rõng
+374	37	heo rõng
+375	37	heo rõng
+376	37	heo rõng
+377	37	heo rõng
+378	37	heo rõng
+379	37	heo rõng
+380	37	heo rõng
+381	37	heo rõng
+382	38	thiÕt m·
+383	38	
+384	38	
+385	38	
+386	38	
+387	38	
+388	38	
+389	38	
+390	38	
+391	38	thiÕt m·
+392	39	c¸o hång
+393	39	
+394	39	
+395	39	
+396	39	
+397	39	
+398	39	
+399	39	
+400	39	
+401	39	c¸o hång
+402	40	c¸o xanh
+403	40	
+404	40	
+405	40	
+406	40	
+407	40	
+408	40	
+409	40	
+410	40	
+411	40	c¸o xanh
+412	41	c¸o ®en
+413	41	c¸o ®en
+414	41	c¸o ®en
+415	41	c¸o ®en
+416	41	c¸o ®en
+417	41	c¸o ®en
+418	41	c¸o ®en
+419	41	c¸o ®en
+420	41	c¸o ®en
+421	41	c¸o ®en
+422	42	TuyÕt vùc ChiÕn Lang
+423	42	TuyÕt vùc ChiÕn Lang
+424	42	TuyÕt vùc ChiÕn Lang
+425	42	TuyÕt vùc ChiÕn Lang
+426	42	TuyÕt vùc ChiÕn Lang
+427	42	TuyÕt vùc ChiÕn Lang
+428	42	TuyÕt vùc ChiÕn Lang
+429	42	TuyÕt vùc ChiÕn Lang
+430	42	TuyÕt vùc ChiÕn Lang
+431	42	TuyÕt vùc ChiÕn Lang
+432	34	TuyÕt vùc ChiÕn M·
+433	34	TuyÕt vùc ChiÕn M·
+434	34	TuyÕt vùc ChiÕn M·
+435	34	TuyÕt vùc ChiÕn M·
+436	34	TuyÕt vùc ChiÕn M·
+437	34	TuyÕt vùc ChiÕn M·
+438	34	TuyÕt vùc ChiÕn M·
+439	34	TuyÕt vùc ChiÕn M·
+440	34	TuyÕt vùc ChiÕn M·
+441	34	TuyÕt vùc ChiÕn M·
+442	43	Tr©u tr¾ng 2 sõng
+443	43	Tr©u tr¾ng 2 sõng
+444	43	Tr©u tr¾ng 2 sõng
+445	43	Tr©u tr¾ng 2 sõng
+446	43	Tr©u tr¾ng 2 sõng
+447	43	Tr©u tr¾ng 2 sõng
+448	43	Tr©u tr¾ng 2 sõng
+449	43	Tr©u tr¾ng 2 sõng
+450	43	Tr©u tr¾ng 2 sõng
+451	43	Tr©u tr¾ng 2 sõng
+452	44	Tr©u tr¾ng 2 sõng cÊp 1
+453	44	Tr©u tr¾ng 2 sõng cÊp 1
+454	44	Tr©u tr¾ng 2 sõng cÊp 1
+455	44	Tr©u tr¾ng 2 sõng cÊp 1
+456	44	Tr©u tr¾ng 2 sõng cÊp 1
+457	44	Tr©u tr¾ng 2 sõng cÊp 1
+458	44	Tr©u tr¾ng 2 sõng cÊp 1
+459	44	Tr©u tr¾ng 2 sõng cÊp 1
+460	44	Tr©u tr¾ng 2 sõng cÊp 1
+461	44	Tr©u tr¾ng 2 sõng cÊp 1
+462	45	Tr©u tr¾ng 2 sõng cÊp 2
+463	45	Tr©u tr¾ng 2 sõng cÊp 2
+464	45	Tr©u tr¾ng 2 sõng cÊp 2
+465	45	Tr©u tr¾ng 2 sõng cÊp 2
+466	45	Tr©u tr¾ng 2 sõng cÊp 2
+467	45	Tr©u tr¾ng 2 sõng cÊp 2
+468	45	Tr©u tr¾ng 2 sõng cÊp 2
+469	45	Tr©u tr¾ng 2 sõng cÊp 2
+470	45	Tr©u tr¾ng 2 sõng cÊp 2
+471	45	Tr©u tr¾ng 2 sõng cÊp 2
+472	46	Tr©u tr¾ng 2 sõng cÊp 3
+473	46	Tr©u tr¾ng 2 sõng cÊp 3
+474	46	Tr©u tr¾ng 2 sõng cÊp 3
+475	46	Tr©u tr¾ng 2 sõng cÊp 3
+476	46	Tr©u tr¾ng 2 sõng cÊp 3
+477	46	Tr©u tr¾ng 2 sõng cÊp 3
+478	46	Tr©u tr¾ng 2 sõng cÊp 3
+479	46	Tr©u tr¾ng 2 sõng cÊp 3
+480	46	Tr©u tr¾ng 2 sõng cÊp 3
+481	46	Tr©u tr¾ng 2 sõng cÊp 3
+482	47	Linh D­¬ng 2 sõng Xanh
+483	47	Linh D­¬ng 2 sõng Xanh
+484	47	Linh D­¬ng 2 sõng Xanh
+485	47	Linh D­¬ng 2 sõng Xanh
+486	47	Linh D­¬ng 2 sõng Xanh
+487	47	Linh D­¬ng 2 sõng Xanh
+488	47	Linh D­¬ng 2 sõng Xanh
+489	47	Linh D­¬ng 2 sõng Xanh
+490	47	Linh D­¬ng 2 sõng Xanh
+491	47	Linh D­¬ng 2 sõng Xanh
+492	48	Hæ tiÒn sö 1
+493	48	Hæ tiÒn sö 1
+494	48	Hæ tiÒn sö 1
+495	48	Hæ tiÒn sö 1
+496	48	Hæ tiÒn sö 1
+497	48	Hæ tiÒn sö 1
+498	48	Hæ tiÒn sö 1
+499	48	Hæ tiÒn sö 1
+500	48	Hæ tiÒn sö 1
+501	48	Hæ tiÒn sö 1
+502	49	Hæ tiÒn sö 2
+503	49	Hæ tiÒn sö 2
+504	49	Hæ tiÒn sö 2
+505	49	Hæ tiÒn sö 2
+506	49	Hæ tiÒn sö 2
+507	49	Hæ tiÒn sö 2
+508	49	Hæ tiÒn sö 2
+509	49	Hæ tiÒn sö 2
+510	49	Hæ tiÒn sö 2
+511	49	Hæ tiÒn sö 2
+512	50	Hæ tiÒn sö 3
+513	50	Hæ tiÒn sö 3
+514	50	Hæ tiÒn sö 3
+515	50	Hæ tiÒn sö 3
+516	50	Hæ tiÒn sö 3
+517	50	Hæ tiÒn sö 3
+518	50	Hæ tiÒn sö 3
+519	50	Hæ tiÒn sö 3
+520	50	Hæ tiÒn sö 3
+521	50	Hæ tiÒn sö 3
+522	51	GÊu Tróc
+523	51	GÊu Tróc
+524	51	GÊu Tróc
+525	51	GÊu Tróc
+526	51	GÊu Tróc
+527	51	GÊu Tróc
+528	51	GÊu Tróc
+529	51	GÊu Tróc
+530	51	GÊu Tróc
+531	51	GÊu Tróc
+532	52	Ch­a biÕt
+533	52	Ch­a biÕt
+534	52	Ch­a biÕt
+535	52	Ch­a biÕt
+536	52	Ch­a biÕt
+537	52	Ch­a biÕt
+538	52	Ch­a biÕt
+539	52	Ch­a biÕt
+540	52	Ch­a biÕt
+541	52	Ch­a biÕt
+542	53	Ch­a biÕt
+543	53	Ch­a biÕt
+544	53	Ch­a biÕt
+545	53	Ch­a biÕt
+546	53	Ch­a biÕt
+547	53	Ch­a biÕt
+548	53	Ch­a biÕt
+549	53	Ch­a biÕt
+550	53	Ch­a biÕt
+551	53	Ch­a biÕt
+552	54	Ch­a biÕt
+553	54	Ch­a biÕt
+554	54	Ch­a biÕt
+555	54	Ch­a biÕt
+556	54	Ch­a biÕt
+557	54	Ch­a biÕt
+558	54	Ch­a biÕt
+559	54	Ch­a biÕt
+560	54	Ch­a biÕt
+561	54	Ch­a biÕt
+562	55	T¸o Hång
+563	55	T¸o Hång
+564	55	T¸o Hång
+565	55	T¸o Hång
+566	55	T¸o Hång
+567	55	T¸o Hång
+568	55	T¸o Hång
+569	55	T¸o Hång
+570	55	T¸o Hång
+571	55	T¸o Hång
+572	56	Thanh M·
+573	56	Thanh M·
+574	56	Thanh M·
+575	56	Thanh M·
+576	56	Thanh M·
+577	56	Thanh M·
+578	56	Thanh M·
+579	56	Thanh M·
+580	56	Thanh M·
+581	56	Thanh M·
+582	57	§¹i UyÓn
+583	57	§¹i UyÓn
+584	57	§¹i UyÓn
+585	57	§¹i UyÓn
+586	57	§¹i UyÓn
+587	57	§¹i UyÓn
+588	57	§¹i UyÓn
+589	57	§¹i UyÓn
+590	57	§¹i UyÓn
+591	57	§¹i UyÓn
+592	58	¤ Truy
+593	58	¤ Truy
+594	58	¤ Truy
+595	58	¤ Truy
+596	58	¤ Truy
+597	58	¤ Truy
+598	58	¤ Truy
+599	58	¤ Truy
+600	58	¤ Truy
+601	58	¤ Truy
+602	59	¤ V©n §¹p TuyÕt
+603	59	¤ V©n §¹p TuyÕt
+604	59	¤ V©n §¹p TuyÕt
+605	59	¤ V©n §¹p TuyÕt
+606	59	¤ V©n §¹p TuyÕt
+607	59	¤ V©n §¹p TuyÕt
+608	59	¤ V©n §¹p TuyÕt
+609	59	¤ V©n §¹p TuyÕt
+610	59	¤ V©n §¹p TuyÕt
+611	59	¤ V©n §¹p TuyÕt
+612	60	§İch L«
+613	60	§İch L«
+614	60	§İch L«
+615	60	§İch L«
+616	60	§İch L«
+617	60	§İch L«
+618	60	§İch L«
+619	60	§İch L«
+620	60	§İch L«
+621	60	§İch L«
+622	61	TuyÖt ¶nh
+623	61	TuyÖt ¶nh
+624	61	TuyÖt ¶nh
+625	61	TuyÖt ¶nh
+626	61	TuyÖt ¶nh
+627	61	TuyÖt ¶nh
+628	61	TuyÖt ¶nh
+629	61	TuyÖt ¶nh
+630	61	TuyÖt ¶nh
+631	61	TuyÖt ¶nh
+632	62	ChiÕu D¹ Ngäc S­ Tö
+633	62	ChiÕu D¹ Ngäc S­ Tö
+634	62	ChiÕu D¹ Ngäc S­ Tö
+635	62	ChiÕu D¹ Ngäc S­ Tö
+636	62	ChiÕu D¹ Ngäc S­ Tö
+637	62	ChiÕu D¹ Ngäc S­ Tö
+638	62	ChiÕu D¹ Ngäc S­ Tö
+639	62	ChiÕu D¹ Ngäc S­ Tö
+640	62	ChiÕu D¹ Ngäc S­ Tö
+641	62	ChiÕu D¹ Ngäc S­ Tö
+642	63	H·n HuyÕt B¶o M·
+643	63	H·n HuyÕt B¶o M·
+644	63	H·n HuyÕt B¶o M·
+645	63	H·n HuyÕt B¶o M·
+646	63	H·n HuyÕt B¶o M·
+647	63	H·n HuyÕt B¶o M·
+648	63	H·n HuyÕt B¶o M·
+649	63	H·n HuyÕt B¶o M·
+650	63	H·n HuyÕt B¶o M·
+651	63	H·n HuyÕt B¶o M·
+652	64	Xİch Thè
+653	64	Xİch Thè
+654	64	Xİch Thè
+655	64	Xİch Thè
+656	64	Xİch Thè
+657	64	Xİch Thè
+658	64	Xİch Thè
+659	64	Xİch Thè
+660	64	Xİch Thè
+661	64	Xİch Thè
+662	65	B«n Tiªu
+663	65	B«n Tiªu
+664	65	B«n Tiªu
+665	65	B«n Tiªu
+666	65	B«n Tiªu
+667	65	B«n Tiªu
+668	65	B«n Tiªu
+669	65	B«n Tiªu
+670	65	B«n Tiªu
+671	65	B«n Tiªu
+672	66	Phiªn Vò
+673	66	Phiªn Vò
+674	66	Phiªn Vò
+675	66	Phiªn Vò
+676	66	Phiªn Vò
+677	66	Phiªn Vò
+678	66	Phiªn Vò
+679	66	Phiªn Vò
+680	66	Phiªn Vò
+681	66	Phiªn Vò
+682	67	Hû Hû 
+683	67	Hû Hû 
+684	67	Hû Hû 
+685	67	Hû Hû 
+686	67	Hû Hû 
+687	67	Hû Hû 
+688	67	Hû Hû 
+689	67	Hû Hû 
+690	67	Hû Hû 
+691	67	Hû Hû 
+692	68	Hoan Hoan
+693	68	Hoan Hoan
+694	68	Hoan Hoan
+695	68	Hoan Hoan
+696	68	Hoan Hoan
+697	68	Hoan Hoan
+698	68	Hoan Hoan
+699	68	Hoan Hoan
+700	68	Hoan Hoan
+701	68	Hoan Hoan
+702	69	L¨ng Thiªn
+703	69	L¨ng Thiªn
+704	69	L¨ng Thiªn
+705	69	L¨ng Thiªn
+706	69	L¨ng Thiªn
+707	69	L¨ng Thiªn
+708	69	L¨ng Thiªn
+709	69	L¨ng Thiªn
+710	69	L¨ng Thiªn
+711	69	L¨ng Thiªn
+712	70	Trôc NhËt
+713	70	Trôc NhËt
+714	70	Trôc NhËt
+715	70	Trôc NhËt
+716	70	Trôc NhËt
+717	70	Trôc NhËt
+718	70	Trôc NhËt
+719	70	Trôc NhËt
+720	70	Trôc NhËt
+721	70	Trôc NhËt
+722	71	Hæ C¸t T­êng
+723	71	Hæ C¸t T­êng
+724	71	Hæ C¸t T­êng
+725	71	Hæ C¸t T­êng
+726	71	Hæ C¸t T­êng
+727	71	Hæ C¸t T­êng
+728	71	Hæ C¸t T­êng
+729	71	Hæ C¸t T­êng
+730	71	Hæ C¸t T­êng
+731	71	Hæ C¸t T­êng
+732	72	øc V©n
+733	72	øc V©n
+734	72	øc V©n
+735	72	øc V©n
+736	72	øc V©n
+737	72	øc V©n
+738	72	øc V©n
+739	72	øc V©n
+740	72	øc V©n
+741	72	øc V©n
+742	73	TuyÕt Hån
+743	73	TuyÕt Hån
+744	73	TuyÕt Hån
+745	73	TuyÕt Hån
+746	73	TuyÕt Hån
+747	73	TuyÕt Hån
+748	73	TuyÕt Hån
+749	73	TuyÕt Hån
+750	73	TuyÕt Hån
+751	73	TuyÕt Hån
+752	74	Sø gi¶ Truy Phong
+753	74	Sø gi¶ Truy Phong
+754	74	Sø gi¶ Truy Phong
+755	74	Sø gi¶ Truy Phong
+756	74	Sø gi¶ Truy Phong
+757	74	Sø gi¶ Truy Phong
+758	74	Sø gi¶ Truy Phong
+759	74	Sø gi¶ Truy Phong
+760	74	Sø gi¶ Truy Phong
+761	74	Sø gi¶ Truy Phong
+762	75	Háa Kú L©n
+763	75	Háa Kú L©n
+764	75	Háa Kú L©n
+765	75	Háa Kú L©n
+766	75	Háa Kú L©n
+767	75	Háa Kú L©n
+768	75	Háa Kú L©n
+769	75	Háa Kú L©n
+770	75	Háa Kú L©n
+771	75	Háa Kú L©n
+772	76	L©n Quang
+773	76	L©n Quang
+774	76	L©n Quang
+775	76	L©n Quang
+776	76	L©n Quang
+777	76	L©n Quang
+778	76	L©n Quang
+779	76	L©n Quang
+780	76	L©n Quang
+781	76	L©n Quang
+782	77	L¹c ®µ (Tr¾ng)
+783	77	L¹c ®µ (Tr¾ng)
+784	77	L¹c ®µ (Tr¾ng)
+785	77	L¹c ®µ (Tr¾ng)
+786	77	L¹c ®µ (Tr¾ng)
+787	77	L¹c ®µ (Tr¾ng)
+788	77	L¹c ®µ (Tr¾ng)
+789	77	L¹c ®µ (Tr¾ng)
+790	77	L¹c ®µ (Tr¾ng)
+791	77	L¹c ®µ (Tr¾ng)
+792	78	L¹c ®µ (§en)
+793	78	L¹c ®µ (§en)
+794	78	L¹c ®µ (§en)
+795	78	L¹c ®µ (§en)
+796	78	L¹c ®µ (§en)
+797	78	L¹c ®µ (§en)
+798	78	L¹c ®µ (§en)
+799	78	L¹c ®µ (§en)
+800	78	L¹c ®µ (§en)
+801	78	L¹c ®µ (§en)
+802	79	Kh«ng cã res luotuohuang
+803	79	Kh«ng cã res luotuohuang
+804	79	Kh«ng cã res luotuohuang
+805	79	Kh«ng cã res luotuohuang
+806	79	Kh«ng cã res luotuohuang
+807	79	Kh«ng cã res luotuohuang
+808	79	Kh«ng cã res luotuohuang
+809	79	Kh«ng cã res luotuohuang
+810	79	Kh«ng cã res luotuohuang
+811	79	Kh«ng cã res luotuohuang
+812	80	L¹c §µ Kh«ng B­íu
+813	80	L¹c §µ Kh«ng B­íu
+814	80	L¹c §µ Kh«ng B­íu
+815	80	L¹c §µ Kh«ng B­íu
+816	80	L¹c §µ Kh«ng B­íu
+817	80	L¹c §µ Kh«ng B­íu
+818	80	L¹c §µ Kh«ng B­íu
+819	80	L¹c §µ Kh«ng B­íu
+820	80	L¹c §µ Kh«ng B­íu
+821	80	L¹c §µ Kh«ng B­íu
+822	81	L¹c §µ Kh«ng B­íu (§á)
+823	81	L¹c §µ Kh«ng B­íu (§á)
+824	81	L¹c §µ Kh«ng B­íu (§á)
+825	81	L¹c §µ Kh«ng B­íu (§á)
+826	81	L¹c §µ Kh«ng B­íu (§á)
+827	81	L¹c §µ Kh«ng B­íu (§á)
+828	81	L¹c §µ Kh«ng B­íu (§á)
+829	81	L¹c §µ Kh«ng B­íu (§á)
+830	81	L¹c §µ Kh«ng B­íu (§á)
+831	81	L¹c §µ Kh«ng B­íu (§á)
+832	82	L¹c §µ Kh«ng B­íu (Lôc)
+833	82	L¹c §µ Kh«ng B­íu (Lôc)
+834	82	L¹c §µ Kh«ng B­íu (Lôc)
+835	82	L¹c §µ Kh«ng B­íu (Lôc)
+836	82	L¹c §µ Kh«ng B­íu (Lôc)
+837	82	L¹c §µ Kh«ng B­íu (Lôc)
+838	82	L¹c §µ Kh«ng B­íu (Lôc)
+839	82	L¹c §µ Kh«ng B­íu (Lôc)
+840	82	L¹c §µ Kh«ng B­íu (Lôc)
+841	82	L¹c §µ Kh«ng B­íu (Lôc)
+842	83	B«n L«i
+843	83	B«n L«i
+844	83	B«n L«i
+845	83	B«n L«i
+846	83	B«n L«i
+847	83	B«n L«i
+848	83	B«n L«i
+849	83	B«n L«i
+850	83	B«n L«i
+851	83	B«n L«i
+852	84	Hång Long Xİch DiÖm
+853	84	Hång Long Xİch DiÖm
+854	84	Hång Long Xİch DiÖm
+855	84	Hång Long Xİch DiÖm
+856	84	Hång Long Xİch DiÖm
+857	84	Hång Long Xİch DiÖm
+858	84	Hång Long Xİch DiÖm
+859	84	Hång Long Xİch DiÖm
+860	84	Hång Long Xİch DiÖm
+861	84	Hång Long Xİch DiÖm
+862	85	TuyÖt ThÕ TuyÕt Vò
+863	85	TuyÖt ThÕ TuyÕt Vò
+864	85	TuyÖt ThÕ TuyÕt Vò
+865	85	TuyÖt ThÕ TuyÕt Vò
+866	85	TuyÖt ThÕ TuyÕt Vò
+867	85	TuyÖt ThÕ TuyÕt Vò
+868	85	TuyÖt ThÕ TuyÕt Vò
+869	85	TuyÖt ThÕ TuyÕt Vò
+870	85	TuyÖt ThÕ TuyÕt Vò
+871	85	TuyÖt ThÕ TuyÕt Vò
+872	86	Tóy NguyÖt-V« Tµ
+873	86	Tóy NguyÖt-V« Tµ
+874	86	Tóy NguyÖt-V« Tµ
+875	86	Tóy NguyÖt-V« Tµ
+876	86	Tóy NguyÖt-V« Tµ
+877	86	Tóy NguyÖt-V« Tµ
+878	86	Tóy NguyÖt-V« Tµ
+879	86	Tóy NguyÖt-V« Tµ
+880	86	Tóy NguyÖt-V« Tµ
+881	86	Tóy NguyÖt-V« Tµ
+882	87	Tóy NguyÖt-Trôc Qu©n
+883	87	Tóy NguyÖt-Trôc Qu©n
+884	87	Tóy NguyÖt-Trôc Qu©n
+885	87	Tóy NguyÖt-Trôc Qu©n
+886	87	Tóy NguyÖt-Trôc Qu©n
+887	87	Tóy NguyÖt-Trôc Qu©n
+888	87	Tóy NguyÖt-Trôc Qu©n
+889	87	Tóy NguyÖt-Trôc Qu©n
+890	87	Tóy NguyÖt-Trôc Qu©n
+891	87	Tóy NguyÖt-Trôc Qu©n
+892	88	Thùc NhËt Cuång S­
+893	88	Thùc NhËt Cuång S­
+894	88	Thùc NhËt Cuång S­
+895	88	Thùc NhËt Cuång S­
+896	88	Thùc NhËt Cuång S­
+897	88	Thùc NhËt Cuång S­
+898	88	Thùc NhËt Cuång S­
+899	88	Thùc NhËt Cuång S­
+900	88	Thùc NhËt Cuång S­
+901	88	Thùc NhËt Cuång S­
+902	89	MËt Thµnh ThiÕt Kş
+903	89	MËt Thµnh ThiÕt Kş
+904	89	MËt Thµnh ThiÕt Kş
+905	89	MËt Thµnh ThiÕt Kş
+906	89	MËt Thµnh ThiÕt Kş
+907	89	MËt Thµnh ThiÕt Kş
+908	89	MËt Thµnh ThiÕt Kş
+909	89	MËt Thµnh ThiÕt Kş
+910	89	MËt Thµnh ThiÕt Kş
+911	89	MËt Thµnh ThiÕt Kş
+912	90	Ngäc Tiªu Dao
+913	90	Ngäc Tiªu Dao
+914	90	Ngäc Tiªu Dao
+915	90	Ngäc Tiªu Dao
+916	90	Ngäc Tiªu Dao
+917	90	Ngäc Tiªu Dao
+918	90	Ngäc Tiªu Dao
+919	90	Ngäc Tiªu Dao
+920	90	Ngäc Tiªu Dao
+921	90	Ngäc Tiªu Dao
+922	91	M¹ch Th­îng Phi S­¬ng
+923	91	M¹ch Th­îng Phi S­¬ng
+924	91	M¹ch Th­îng Phi S­¬ng
+925	91	M¹ch Th­îng Phi S­¬ng
+926	91	M¹ch Th­îng Phi S­¬ng
+927	91	M¹ch Th­îng Phi S­¬ng
+928	91	M¹ch Th­îng Phi S­¬ng
+929	91	M¹ch Th­îng Phi S­¬ng
+930	91	M¹ch Th­îng Phi S­¬ng
+931	91	M¹ch Th­îng Phi S­¬ng
+932	92	TuyÕt Vò Thiªn H­¬ng
+933	92	TuyÕt Vò Thiªn H­¬ng
+934	92	TuyÕt Vò Thiªn H­¬ng
+935	92	TuyÕt Vò Thiªn H­¬ng
+936	92	TuyÕt Vò Thiªn H­¬ng
+937	92	TuyÕt Vò Thiªn H­¬ng
+938	92	TuyÕt Vò Thiªn H­¬ng
+939	92	TuyÕt Vò Thiªn H­¬ng
+940	92	TuyÕt Vò Thiªn H­¬ng
+941	92	TuyÕt Vò Thiªn H­¬ng
+942	93	MŞ Vò Thiªn H­¬ng
+943	93	MŞ Vò Thiªn H­¬ng
+944	93	MŞ Vò Thiªn H­¬ng
+945	93	MŞ Vò Thiªn H­¬ng
+946	93	MŞ Vò Thiªn H­¬ng
+947	93	MŞ Vò Thiªn H­¬ng
+948	93	MŞ Vò Thiªn H­¬ng
+949	93	MŞ Vò Thiªn H­¬ng
+950	93	MŞ Vò Thiªn H­¬ng
+951	93	MŞ Vò Thiªn H­¬ng
+952	94	DuDu Vui VÎ
+953	94	DuDu Vui VÎ
+954	94	DuDu Vui VÎ
+955	94	DuDu Vui VÎ
+956	94	DuDu Vui VÎ
+957	94	DuDu Vui VÎ
+958	94	DuDu Vui VÎ
+959	94	DuDu Vui VÎ
+960	94	DuDu Vui VÎ
+961	94	DuDu Vui VÎ
+962	95	¤ng Thá
+963	95	¤ng Thá
+964	95	¤ng Thá
+965	95	¤ng Thá
+966	95	¤ng Thá
+967	95	¤ng Thá
+968	95	¤ng Thá
+969	95	¤ng Thá
+970	95	¤ng Thá
+971	95	¤ng Thá
+972	96	Kim T­îng Th¸i §¹t
+973	96	Kim T­îng Th¸i §¹t
+974	96	Kim T­îng Th¸i §¹t
+975	96	Kim T­îng Th¸i §¹t
+976	96	Kim T­îng Th¸i §¹t
+977	96	Kim T­îng Th¸i §¹t
+978	96	Kim T­îng Th¸i §¹t
+979	96	Kim T­îng Th¸i §¹t
+980	96	Kim T­îng Th¸i §¹t
+981	96	Kim T­îng Th¸i §¹t
+982	97	Kinh HuyÒn SÊm
+983	97	Kinh HuyÒn SÊm
+984	97	Kinh HuyÒn SÊm
+985	97	Kinh HuyÒn SÊm
+986	97	Kinh HuyÒn SÊm
+987	97	Kinh HuyÒn SÊm
+988	97	Kinh HuyÒn SÊm
+989	97	Kinh HuyÒn SÊm
+990	97	Kinh HuyÒn SÊm
+991	97	Kinh HuyÒn SÊm
+992	98	§éc Vò Thiªn H¹
+993	98	§éc Vò Thiªn H¹
+994	98	§éc Vò Thiªn H¹
+995	98	§éc Vò Thiªn H¹
+996	98	§éc Vò Thiªn H¹
+997	98	§éc Vò Thiªn H¹
+998	98	§éc Vò Thiªn H¹
+999	98	§éc Vò Thiªn H¹
+1000	98	§éc Vò Thiªn H¹
+1001	98	§éc Vò Thiªn H¹
+1002	99	Ng¹o Ng« Hiªn Viªn
+1003	99	Ng¹o Ng« Hiªn Viªn
+1004	99	Ng¹o Ng« Hiªn Viªn
+1005	99	Ng¹o Ng« Hiªn Viªn
+1006	99	Ng¹o Ng« Hiªn Viªn
+1007	99	Ng¹o Ng« Hiªn Viªn
+1008	99	Ng¹o Ng« Hiªn Viªn
+1009	99	Ng¹o Ng« Hiªn Viªn
+1010	99	Ng¹o Ng« Hiªn Viªn
+1011	99	Ng¹o Ng« Hiªn Viªn
+1012	100	Nô H«n H¾c ¸m
+1013	100	Nô H«n H¾c ¸m
+1014	100	Nô H«n H¾c ¸m
+1015	100	Nô H«n H¾c ¸m
+1016	100	Nô H«n H¾c ¸m
+1017	100	Nô H«n H¾c ¸m
+1018	100	Nô H«n H¾c ¸m
+1019	100	Nô H«n H¾c ¸m
+1020	100	Nô H«n H¾c ¸m
+1021	100	Nô H«n H¾c ¸m
+1022	101	Ngän Löa ¸nh S¸ng
+1023	101	Ngän Löa ¸nh S¸ng
+1024	101	Ngän Löa ¸nh S¸ng
+1025	101	Ngän Löa ¸nh S¸ng
+1026	101	Ngän Löa ¸nh S¸ng
+1027	101	Ngän Löa ¸nh S¸ng
+1028	101	Ngän Löa ¸nh S¸ng
+1029	101	Ngän Löa ¸nh S¸ng
+1030	101	Ngän Löa ¸nh S¸ng
+1031	101	Ngän Löa ¸nh S¸ng
+1032	102	Viªm D­¬ng Long Tö
+1033	102	Viªm D­¬ng Long Tö
+1034	102	Viªm D­¬ng Long Tö
+1035	102	Viªm D­¬ng Long Tö
+1036	102	Viªm D­¬ng Long Tö
+1037	102	Viªm D­¬ng Long Tö
+1038	102	Viªm D­¬ng Long Tö
+1039	102	Viªm D­¬ng Long Tö
+1040	102	Viªm D­¬ng Long Tö
+1041	102	Viªm D­¬ng Long Tö
+1042	103	L¹c Th¸i Li VÉn
+1043	103	L¹c Th¸i Li VÉn
+1044	103	L¹c Th¸i Li VÉn
+1045	103	L¹c Th¸i Li VÉn
+1046	103	L¹c Th¸i Li VÉn
+1047	103	L¹c Th¸i Li VÉn
+1048	103	L¹c Th¸i Li VÉn
+1049	103	L¹c Th¸i Li VÉn
+1050	103	L¹c Th¸i Li VÉn
+1051	103	L¹c Th¸i Li VÉn
+1052	104	T¸i Th¸i TuÕ
+1053	104	T¸i Th¸i TuÕ
+1054	104	T¸i Th¸i TuÕ
+1055	104	T¸i Th¸i TuÕ
+1056	104	T¸i Th¸i TuÕ
+1057	104	T¸i Th¸i TuÕ
+1058	104	T¸i Th¸i TuÕ
+1059	104	T¸i Th¸i TuÕ
+1060	104	T¸i Th¸i TuÕ
+1061	104	T¸i Th¸i TuÕ
+1062	105	×ÇÎä°ÁÌì
+1063	105	×ÇÎä°ÁÌì
+1064	105	×ÇÎä°ÁÌì
+1065	105	×ÇÎä°ÁÌì
+1066	105	×ÇÎä°ÁÌì
+1067	105	×ÇÎä°ÁÌì
+1068	105	×ÇÎä°ÁÌì
+1069	105	×ÇÎä°ÁÌì
+1070	105	×ÇÎä°ÁÌì
+1071	105	×ÇÎä°ÁÌì
+1072	106	Kh«ng cã res horse72
+1073	106	Kh«ng cã res horse72
+1074	106	Kh«ng cã res horse72
+1075	106	Kh«ng cã res horse72
+1076	106	Kh«ng cã res horse72
+1077	106	Kh«ng cã res horse72
+1078	106	Kh«ng cã res horse72
+1079	106	Kh«ng cã res horse72
+1080	106	Kh«ng cã res horse72
+1081	106	Kh«ng cã res horse72
+1082	107	³°·çÓùÉù
+1083	107	³°·çÓùÉù
+1084	107	³°·çÓùÉù
+1085	107	³°·çÓùÉù
+1086	107	³°·çÓùÉù
+1087	107	³°·çÓùÉù
+1088	107	³°·çÓùÉù
+1089	107	³°·çÓùÉù
+1090	107	³°·çÓùÉù
+1091	107	³°·çÓùÉù
+1092	108	¾ÅÈğ
+1093	108	¾ÅÈğ
+1094	108	¾ÅÈğ
+1095	108	¾ÅÈğ
+1096	108	¾ÅÈğ
+1097	108	¾ÅÈğ
+1098	108	¾ÅÈğ
+1099	108	¾ÅÈğ
+1100	108	¾ÅÈğ
+1101	108	¾ÅÈğ
+1102	109	ÈüÌ«Ëê
+1103	109	ÈüÌ«Ëê
+1104	109	ÈüÌ«Ëê
+1105	109	ÈüÌ«Ëê
+1106	109	ÈüÌ«Ëê
+1107	109	ÈüÌ«Ëê
+1108	109	ÈüÌ«Ëê
+1109	109	ÈüÌ«Ëê
+1110	109	ÈüÌ«Ëê
+1111	109	ÈüÌ«Ëê
+1112	110	¾ÅÈğ
+1113	110	¾ÅÈğ
+1114	110	¾ÅÈğ
+1115	110	¾ÅÈğ
+1116	110	¾ÅÈğ
+1117	110	¾ÅÈğ
+1118	110	¾ÅÈğ
+1119	110	¾ÅÈğ
+1120	110	¾ÅÈğ
+1121	110	¾ÅÈğ
+1122	111	Ä°ÉÏº®ÑÌ
+1123	111	Ä°ÉÏº®ÑÌ
+1124	111	Ä°ÉÏº®ÑÌ
+1125	111	Ä°ÉÏº®ÑÌ
+1126	111	Ä°ÉÏº®ÑÌ
+1127	111	Ä°ÉÏº®ÑÌ
+1128	111	Ä°ÉÏº®ÑÌ
+1129	111	Ä°ÉÏº®ÑÌ
+1130	111	Ä°ÉÏº®ÑÌ
+1131	111	Ä°ÉÏº®ÑÌ
+1132	112	ÒÀÒÀ¶ÔÓ°
+1133	112	ÒÀÒÀ¶ÔÓ°
+1134	112	ÒÀÒÀ¶ÔÓ°
+1135	112	ÒÀÒÀ¶ÔÓ°
+1136	112	ÒÀÒÀ¶ÔÓ°
+1137	112	ÒÀÒÀ¶ÔÓ°
+1138	112	ÒÀÒÀ¶ÔÓ°
+1139	112	ÒÀÒÀ¶ÔÓ°
+1140	112	ÒÀÒÀ¶ÔÓ°
+1141	112	ÒÀÒÀ¶ÔÓ°
+1142	113	Ó¥·É
+1143	113	Ó¥·É
+1144	113	Ó¥·É
+1145	113	Ó¥·É
+1146	113	Ó¥·É
+1147	113	Ó¥·É
+1148	113	Ó¥·É
+1149	113	Ó¥·É
+1150	113	Ó¥·É
+1151	113	Ó¥·É
+1152	114	À¶ôá
+1153	114	À¶ôá
+1154	114	À¶ôá
+1155	114	À¶ôá
+1156	114	À¶ôá
+1157	114	À¶ôá
+1158	114	À¶ôá
+1159	114	À¶ôá
+1160	114	À¶ôá
+1161	114	À¶ôá
+1162	115	ÑÌ»ª
+1163	115	ÑÌ»ª
+1164	115	ÑÌ»ª
+1165	115	ÑÌ»ª
+1166	115	ÑÌ»ª
+1167	115	ÑÌ»ª
+1168	115	ÑÌ»ª
+1169	115	ÑÌ»ª
+1170	115	ÑÌ»ª
+1171	115	ÑÌ»ª
+1172	116	¹Âºè
+1173	116	¹Âºè
+1174	116	¹Âºè
+1175	116	¹Âºè
+1176	116	¹Âºè
+1177	116	¹Âºè
+1178	116	¹Âºè
+1179	116	¹Âºè
+1180	116	¹Âºè
+1181	116	¹Âºè
+1182	117	ĞÇÒ«
+1183	117	ĞÇÒ«
+1184	117	ĞÇÒ«
+1185	117	ĞÇÒ«
+1186	117	ĞÇÒ«
+1187	117	ĞÇÒ«
+1188	117	ĞÇÒ«
+1189	117	ĞÇÒ«
+1190	117	ĞÇÒ«
+1191	117	ĞÇÒ«
+1192	118	³àÑÒÁéÊŞ
+1193	118	³àÑÒÁéÊŞ
+1194	118	³àÑÒÁéÊŞ
+1195	118	³àÑÒÁéÊŞ
+1196	118	³àÑÒÁéÊŞ
+1197	118	³àÑÒÁéÊŞ
+1198	118	³àÑÒÁéÊŞ
+1199	118	³àÑÒÁéÊŞ
+1200	118	³àÑÒÁéÊŞ
+1201	118	³àÑÒÁéÊŞ
+1202	119	Ñ©ÁéÚĞÌı
+1203	119	Ñ©ÁéÚĞÌı
+1204	119	Ñ©ÁéÚĞÌı
+1205	119	Ñ©ÁéÚĞÌı
+1206	119	Ñ©ÁéÚĞÌı
+1207	119	Ñ©ÁéÚĞÌı
+1208	119	Ñ©ÁéÚĞÌı
+1209	119	Ñ©ÁéÚĞÌı
+1210	119	Ñ©ÁéÚĞÌı
+1211	119	Ñ©ÁéÚĞÌı
+1212	120	É¬»áÖí
+1213	120	É¬»áÖí
+1214	120	É¬»áÖí
+1215	120	É¬»áÖí
+1216	120	É¬»áÖí
+1217	120	É¬»áÖí
+1218	120	É¬»áÖí
+1219	120	É¬»áÖí
+1220	120	É¬»áÖí
+1221	120	É¬»áÖí
+1222	121	ºÉÒ¶Ğ¡Öí
+1223	121	ºÉÒ¶Ğ¡Öí
+1224	121	ºÉÒ¶Ğ¡Öí
+1225	121	ºÉÒ¶Ğ¡Öí
+1226	121	ºÉÒ¶Ğ¡Öí
+1227	121	ºÉÒ¶Ğ¡Öí
+1228	121	ºÉÒ¶Ğ¡Öí
+1229	121	ºÉÒ¶Ğ¡Öí
+1230	121	ºÉÒ¶Ğ¡Öí
+1231	121	ºÉÒ¶Ğ¡Öí
+1232	122	ÖíĞ¡ºÚ
+1233	122	ÖíĞ¡ºÚ
+1234	122	ÖíĞ¡ºÚ
+1235	122	ÖíĞ¡ºÚ
+1236	122	ÖíĞ¡ºÚ
+1237	122	ÖíĞ¡ºÚ
+1238	122	ÖíĞ¡ºÚ
+1239	122	ÖíĞ¡ºÚ
+1240	122	ÖíĞ¡ºÚ
+1241	122	ÖíĞ¡ºÚ
+1242	123	ÉñÎäĞ¡Öí
+1243	123	ÉñÎäĞ¡Öí
+1244	123	ÉñÎäĞ¡Öí
+1245	123	ÉñÎäĞ¡Öí
+1246	123	ÉñÎäĞ¡Öí
+1247	123	ÉñÎäĞ¡Öí
+1248	123	ÉñÎäĞ¡Öí
+1249	123	ÉñÎäĞ¡Öí
+1250	123	ÉñÎäĞ¡Öí
+1251	123	ÉñÎäĞ¡Öí
+1252	124	³àÑæâ³õô
+1253	124	³àÑæâ³õô
+1254	124	³àÑæâ³õô
+1255	124	³àÑæâ³õô
+1256	124	³àÑæâ³õô
+1257	124	³àÑæâ³õô
+1258	124	³àÑæâ³õô
+1259	124	³àÑæâ³õô
+1260	124	³àÑæâ³õô
+1261	124	³àÑæâ³õô
+1262	125	ÇàÔÆÁé×ğ
+1263	125	ÇàÔÆÁé×ğ
+1264	125	ÇàÔÆÁé×ğ
+1265	125	ÇàÔÆÁé×ğ
+1266	125	ÇàÔÆÁé×ğ
+1267	125	ÇàÔÆÁé×ğ
+1268	125	ÇàÔÆÁé×ğ
+1269	125	ÇàÔÆÁé×ğ
+1270	125	ÇàÔÆÁé×ğ
+1271	125	ÇàÔÆÁé×ğ
+1272	126	³àÑæâ³õô¡¤Áé
+1273	126	³àÑæâ³õô¡¤Áé
+1274	126	³àÑæâ³õô¡¤Áé
+1275	126	³àÑæâ³õô¡¤Áé
+1276	126	³àÑæâ³õô¡¤Áé
+1277	126	³àÑæâ³õô¡¤Áé
+1278	126	³àÑæâ³õô¡¤Áé
+1279	126	³àÑæâ³õô¡¤Áé
+1280	126	³àÑæâ³õô¡¤Áé
+1281	126	³àÑæâ³õô¡¤Áé
+1282	127	ÇàÔÆÁé×ğ¡¤»Ã
+1283	127	ÇàÔÆÁé×ğ¡¤»Ã
+1284	127	ÇàÔÆÁé×ğ¡¤»Ã
+1285	127	ÇàÔÆÁé×ğ¡¤»Ã
+1286	127	ÇàÔÆÁé×ğ¡¤»Ã
+1287	127	ÇàÔÆÁé×ğ¡¤»Ã
+1288	127	ÇàÔÆÁé×ğ¡¤»Ã
+1289	127	ÇàÔÆÁé×ğ¡¤»Ã
+1290	127	ÇàÔÆÁé×ğ¡¤»Ã
+1291	127	ÇàÔÆÁé×ğ¡¤»Ã
+1292	128	ÒøÔÂÉñÙç
+1293	128	ÒøÔÂÉñÙç
+1294	128	ÒøÔÂÉñÙç
+1295	128	ÒøÔÂÉñÙç
+1296	128	ÒøÔÂÉñÙç
+1297	128	ÒøÔÂÉñÙç
+1298	128	ÒøÔÂÉñÙç
+1299	128	ÒøÔÂÉñÙç
+1300	128	ÒøÔÂÉñÙç
+1301	128	ÒøÔÂÉñÙç
+1302	129	Ñ©ºìÙç
+1303	129	Ñ©ºìÙç
+1304	129	Ñ©ºìÙç
+1305	129	Ñ©ºìÙç
+1306	129	Ñ©ºìÙç
+1307	129	Ñ©ºìÙç
+1308	129	Ñ©ºìÙç
+1309	129	Ñ©ºìÙç
+1310	129	Ñ©ºìÙç
+1311	129	Ñ©ºìÙç
+1312	130	Ñ©Ä«Ùç
+1313	130	Ñ©Ä«Ùç
+1314	130	Ñ©Ä«Ùç
+1315	130	Ñ©Ä«Ùç
+1316	130	Ñ©Ä«Ùç
+1317	130	Ñ©Ä«Ùç
+1318	130	Ñ©Ä«Ùç
+1319	130	Ñ©Ä«Ùç
+1320	130	Ñ©Ä«Ùç
+1321	130	Ñ©Ä«Ùç
+1322	131	ÒøÔÂÉñÙç¡¤Áé
+1323	131	ÒøÔÂÉñÙç¡¤Áé
+1324	131	ÒøÔÂÉñÙç¡¤Áé
+1325	131	ÒøÔÂÉñÙç¡¤Áé
+1326	131	ÒøÔÂÉñÙç¡¤Áé
+1327	131	ÒøÔÂÉñÙç¡¤Áé
+1328	131	ÒøÔÂÉñÙç¡¤Áé
+1329	131	ÒøÔÂÉñÙç¡¤Áé
+1330	131	ÒøÔÂÉñÙç¡¤Áé
+1331	131	ÒøÔÂÉñÙç¡¤Áé
+1332	132	Ñ©ºìÙç¡¤Áé
+1333	132	Ñ©ºìÙç¡¤Áé
+1334	132	Ñ©ºìÙç¡¤Áé
+1335	132	Ñ©ºìÙç¡¤Áé
+1336	132	Ñ©ºìÙç¡¤Áé
+1337	132	Ñ©ºìÙç¡¤Áé
+1338	132	Ñ©ºìÙç¡¤Áé
+1339	132	Ñ©ºìÙç¡¤Áé
+1340	132	Ñ©ºìÙç¡¤Áé
+1341	132	Ñ©ºìÙç¡¤Áé
+1342	133	Ñ©Ä«Ùç¡¤Áé
+1343	133	Ñ©Ä«Ùç¡¤Áé
+1344	133	Ñ©Ä«Ùç¡¤Áé
+1345	133	Ñ©Ä«Ùç¡¤Áé
+1346	133	Ñ©Ä«Ùç¡¤Áé
+1347	133	Ñ©Ä«Ùç¡¤Áé
+1348	133	Ñ©Ä«Ùç¡¤Áé
+1349	133	Ñ©Ä«Ùç¡¤Áé
+1350	133	Ñ©Ä«Ùç¡¤Áé
+1351	133	Ñ©Ä«Ùç¡¤Áé
+1352	134	ÌßÔÆµÄÂ¬
+1353	134	ÌßÔÆµÄÂ¬
+1354	134	ÌßÔÆµÄÂ¬
+1355	134	ÌßÔÆµÄÂ¬
+1356	134	ÌßÔÆµÄÂ¬
+1357	134	ÌßÔÆµÄÂ¬
+1358	134	ÌßÔÆµÄÂ¬
+1359	134	ÌßÔÆµÄÂ¬
+1360	134	ÌßÔÆµÄÂ¬
+1361	134	ÌßÔÆµÄÂ¬
+1362	135	Ñ©³áÁ«Óğ
+1363	135	Ñ©³áÁ«Óğ
+1364	135	Ñ©³áÁ«Óğ
+1365	135	Ñ©³áÁ«Óğ
+1366	135	Ñ©³áÁ«Óğ
+1367	135	Ñ©³áÁ«Óğ
+1368	135	Ñ©³áÁ«Óğ
+1369	135	Ñ©³áÁ«Óğ
+1370	135	Ñ©³áÁ«Óğ
+1371	135	Ñ©³áÁ«Óğ
+1372	136	À¶ì½ÎÚæí
+1373	136	À¶ì½ÎÚæí
+1374	136	À¶ì½ÎÚæí
+1375	136	À¶ì½ÎÚæí
+1376	136	À¶ì½ÎÚæí
+1377	136	À¶ì½ÎÚæí
+1378	136	À¶ì½ÎÚæí
+1379	136	À¶ì½ÎÚæí
+1380	136	À¶ì½ÎÚæí
+1381	136	À¶ì½ÎÚæí
+1382	137	È¸ôáÌ¤Ñ©
+1383	137	È¸ôáÌ¤Ñ©
+1384	137	È¸ôáÌ¤Ñ©
+1385	137	È¸ôáÌ¤Ñ©
+1386	137	È¸ôáÌ¤Ñ©
+1387	137	È¸ôáÌ¤Ñ©
+1388	137	È¸ôáÌ¤Ñ©
+1389	137	È¸ôáÌ¤Ñ©
+1390	137	È¸ôáÌ¤Ñ©
+1391	137	È¸ôáÌ¤Ñ©
+1392	138	Trïng Res horse117
+1393	138	Trïng Res horse117
+1394	138	Trïng Res horse117
+1395	138	Trïng Res horse117
+1396	138	Trïng Res horse117
+1397	138	Trïng Res horse117
+1398	138	Trïng Res horse117
+1399	138	Trïng Res horse117
+1400	138	Trïng Res horse117
+1401	138	Trïng Res horse117
+1402	139	Thá Vµng
+1403	139	Thá Vµng
+1404	139	Thá Vµng
+1405	139	Thá Vµng
+1406	139	Thá Vµng
+1407	139	Thá Vµng
+1408	139	Thá Vµng
+1409	139	Thá Vµng
+1410	139	Thá Vµng
+1411	139	Thá Vµng
+1412	140	Thá Hång
+1413	140	Thá Hång
+1414	140	Thá Hång
+1415	140	Thá Hång
+1416	140	Thá Hång
+1417	140	Thá Hång
+1418	140	Thá Hång
+1419	140	Thá Hång
+1420	140	Thá Hång
+1421	140	Thá Hång

@@ -1,0 +1,38 @@
+名称	道具种类	具体类别	详细类别	动画文件名	对应物件索引	宽度	高度	说明文字	五行属性	价格	等级	是否叠放	基础属性1类型	基础属性1最小值	基础属性1最大值	基础属性2类型	基础属性2最小值	基础属性2最大值	基础属性3类型	基础属性3最小值	基础属性3最大值	基础属性4类型	基础属性4最小值	基础属性4最大值	基础属性5类型	基础属性5最小值	基础属性5最大值	基础属性6类型	基础属性6最小值	基础属性6最大值	基础属性7类型	基础属性7最小值	基础属性7最大值	需求属性1类型	需求属性1数值	需求属性2类型	需求属性2数值	需求属性3类型	需求属性3数值	需求属性4类型	需求属性4数值	需求属性5类型	需求属性5数值	需求属性6类型	需求属性6数值
+女披风01	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	1	0	30	50	50	31	15	15	139	1	1													36	1	32	30					38	0		
+女披风02	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	2	0	30	50	50	31	15	15	139	2	2													36	1	32	30					38	0		
+女披风03	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	3	0	30	50	50	31	15	15	139	3	3																					39	0		
+女披风04	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	4	0	30	50	50	31	15	15	139	4	4																								
+女披风05	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	5	0	30	50	50	31	15	15	139	5	5																								
+女披风06	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	6	0	30	50	50	31	15	15	139	6	6																								
+女披风07	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	7	0	30	50	50	31	15	15	139	7	7																								
+女披风08	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	8	0	30	50	50	31	15	15	139	8	8																								
+女披风09	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	9	0	30	50	50	31	15	15	139	9	9																								
+女披风10	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	10	0	30	50	50	31	15	15	139	10	10																								
+女披风21	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	11	0	30	50	50	31	15	15	139	11	11																								
+少林挂件女	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	12	0	30	50	50	31	15	15	139	12	12																								
+天王挂件女	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	13	0	30	50	50	31	15	15	139	13	13																								
+唐门挂件女	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	14	0	30	50	50	31	15	15	139	14	14																								
+五毒挂件女	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	15	0	30	50	50	31	15	15	139	15	15																								
+峨眉挂件女	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	16	0	30	50	50	31	15	15	139	16	16																								
+翠烟挂件女	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	17	0	30	50	50	31	15	15	139	17	17																								
+丐帮挂件女	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	18	0	30	50	50	31	15	15	139	18	18																								
+天忍挂件女	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	19	0	30	50	50	31	15	15	139	19	19																								
+武当挂件女	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	20	0	30	50	50	31	15	15	139	20	20																								
+昆仑挂件女	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	21	0	30	50	50	31	15	15	139	21	21																								
+华山挂件女	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	22	0	30	50	50	31	15	15	139	22	22																								
+武穆挂件女	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	23	0	30	50	50	31	15	15	139	23	23																								
+少林挂件女-特效	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	24	0	30	50	50	31	15	15	139	24	24																								
+天王挂件女-特效	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	25	0	30	50	50	31	15	15	139	25	25																								
+唐门挂件女-特效	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	26	0	30	50	50	31	15	15	139	26	26																								
+五毒挂件女-特效	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	27	0	30	50	50	31	15	15	139	27	27																								
+峨眉挂件女-特效	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	28	0	30	50	50	31	15	15	139	28	28																								
+翠烟挂件女-特效	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	29	0	30	50	50	31	15	15	139	29	29																								
+丐帮挂件女-特效	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	30	0	30	50	50	31	15	15	139	30	30																								
+天忍挂件女-特效	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	31	0	30	50	50	31	15	15	139	31	31																								
+武当挂件女-特效	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	32	0	30	50	50	31	15	15	139	32	32																								
+昆仑挂件女-特效	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	33	0	30	50	50	31	15	15	139	33	33																								
+华山挂件女-特效	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	34	0	30	50	50	31	15	15	139	34	34																								
+武穆挂件女-特效	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	35	0	30	50	50	31	15	15	139	35	35																								
+逍遥挂件女	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	36	0	30	50	50	31	15	15	139	36	36																								
+逍遥挂件女-特效	0	12	0	\spr\item\equip\ring\obj-ring01.spr	37	1	1	T╪g y d祅h cho c竎 ti觰 Sa Di v鮝 nh藀 m玭		0	37	0	30	50	50	31	15	15	139	37	37																								

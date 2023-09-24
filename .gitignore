@@ -1,5 +1,5 @@
-*
-
+# Ignore All
+* 
 #Exclude List
 !.gitignore
 !.VnSourceCodePro-Regular.ttf
@@ -24,6 +24,20 @@ script/global/*
 !script/global/gm/julianv/lib/*
 !script/global/gm/julianv/npc
 !script/global/gm/julianv/npc/*
+# ------------------------------------------------
+!script/global/thanh/
+script/global/thanh/*
+!script/global/thanh/npc/
+script/global/thanh/npc/*
+!script/global/thanh/npc/npc_hotro.lua
+# ------------------------------------------------
+!script/skill
+!script/skill/*
+# ------------------------------------------------
+!script/item/
+script/item/*
+!script/item/lessmoneygift.lua
+!script/item/moremoneygift.lua
 # ui 
 !ui
 !ui/*
@@ -49,3 +63,12 @@ spr/*
 !data
 data/*
 !data/1024x768.pak
+#settings
+!settings
+!settings/*
+!settings/item
+!settings/item/*
+!settings/item/004
+!settings/item/004/*
+!settings/item/004/itemvalue
+!settings/item/004/itemvalue/*

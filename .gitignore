@@ -15,7 +15,7 @@ script/*
 !script/global
 script/global/*
 !script/global/gm
-!script/global/gm/*
+# !script/global/gm/*
 !script/global/gm/julianv
 !script/global/gm/julianv/*
 !script/global/gm/julianv/functions

@@ -29,6 +29,8 @@ script/*
 !script/faction_def.lua
 !script/global
 script/global/*
+!script/global/autoexec.lua
+# ------------------------------------------------
 !script/global/gm
 script/global/gm/*
 !script/global/gm/julianv
@@ -39,6 +41,10 @@ script/global/gm/*
 !script/global/gm/julianv/lib/*
 !script/global/gm/julianv/npc
 !script/global/gm/julianv/npc/*
+# ------------------------------------------------
+!script/global/npc/
+script/global/npc/*
+!script/global/npc/add_boss_bailuyencong.lua
 # ------------------------------------------------
 !script/global/thanh/
 script/global/thanh/*
@@ -54,18 +60,11 @@ script/item/*
 !script/item/lessmoneygift.lua
 !script/item/moremoneygift.lua
 # ui 
-!ui
-!ui/*
-!ui/150skilltask
-!ui/150skilltask/*
-!ui/ui
-!ui/ui3/*
-!ui/ui3/道具
-!ui/ui3/道具/*
-!ui/ui31
-!ui/ui31/*
-!ui/ui31/道具
-!ui/ui31/道具/*
+!ui/
+ui/*
+!ui/ui3/
+ui/ui3/*
+!ui/ui3/icon_bar.ini
 # UserData
 !UserData
 UserData/*

@@ -24,7 +24,7 @@ function NhanVatPham()
     local tbOpt = { --    
     {"VËt phÈm trïng sinh", TransLifeItem_Dialog}, --
     {"LÊy ngùa", Horses_Dialog}, --
-    {"Nguyªn liÖu chÕ t¹o ®å tÝm", NguyenLieuDoTim} --
+    {"Nguyªn liÖu chÕ t¹o ®å tÝm", NguyenLieu_Dialog} --
     }
     tbDialog:Show(tbOpt, TrangBi_VatPham)
 end
@@ -308,7 +308,7 @@ function getTransLifeItem(nIndex, nCount)
 
 end
 ------------------------Nguyªn liÖu chÕ t¹o ®å tÝm------------------------
-function NguyenLieuDoTim()
+function NguyenLieu_Dialog()
     local tbOpt = { --
     {"HuyÒn Tinh", getHuyenTinh}, --
     {"Thuû Tinh", getThuyTinh}, --

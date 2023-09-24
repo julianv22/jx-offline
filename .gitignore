@@ -24,14 +24,14 @@ rolevalueladder_setting/item/*
 !rolevalueladder_setting/item/004/
 !rolevalueladder_setting/item/004/*
 # script
-!script
+!script/
 script/*
 !script/faction_def.lua
-!script/global
+!script/global/
 script/global/*
 !script/global/autoexec.lua
 # ------------------------------------------------
-!script/global/gm
+!script/global/gm/
 script/global/gm/*
 !script/global/gm/julianv/
 !script/global/gm/julianv/**
@@ -46,7 +46,7 @@ script/global/thanh/*
 script/global/thanh/npc/*
 !script/global/thanh/npc/npc_hotro.lua
 # ------------------------------------------------
-!script/skill
+!script/skill/
 !script/skill/*
 # ------------------------------------------------
 !script/item/
@@ -60,22 +60,23 @@ ui/*
 ui/ui3/*
 !ui/ui3/icon_bar.ini
 # UserData
-!UserData
+!UserData/
 UserData/*
 !UserData/uiconfig.ini
 # spr
-!spr
+!spr/
 spr/*
 !spr/julianv.spr
 # data
-!data
+!data/
 data/*
 !data/1024x768.pak
 #settings
-!settings
+!settings/
 !settings/*
+!settings/item/
 !settings/item/**
-# !settings/item/*
+
 # !settings/item/004
 # !settings/item/004/*
 # !settings/item/004/itemvalue

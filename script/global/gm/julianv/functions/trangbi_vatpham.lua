@@ -402,7 +402,45 @@ function getMasks(nIndex)
 end
 
 function TrangBiKhac_Dialog()
-    local tbOpt = {}
-
+    local tbOpt = { --
+    {"Ngò hµnh Ên", NguHanhAn_Diag}, --
+    {"Phi Phong"}, --
+    {"Trang Søc"}}
     tbDialog:Show(tbOpt, NhanTrangBi)
+end
+
+function NguHanhAn_Diag()
+    local tbOpt = { --
+    {"T©n Nh©m Hµnh Ên Gi¸m (H¹)", getNguHanhAn, {5930}}, --
+    {"T©n Nh©m Hµnh Ên Gi¸m (Trung)", getNguHanhAn, {5931}}, --
+    {"T©n Nh©m Hµnh Ên Gi¸m (Th­îng)", getNguHanhAn, {5932}}, --
+    {"Ngò Hµnh Ên C­êng Ho¸", getNguHanhAn, {0}}, --
+    {"Ngò Hµnh Ên Nh­îc Ho¸", getNguHanhAn, {1}}, --
+    {"Ngò Hµnh Ên C­êng Ho¸ vµ Nh­îc Ho¸", getNguHanhAn, {2}}}
+    tbDialog:Show(tbOpt, TrangBiKhac_Dialog)
+end
+
+function getNguHanhAn(nType, nIndex)
+    if nType > 2 then
+        Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddGoldItem(0, nType)))
+        return 0
+    end
+    if not nIndex then
+        local szLoaiAn = function(nType)
+            if nType == 0 then
+                return "Hoµng Kim Ên (C­¬ng Ho¸) "
+            elseif nType == 1 then
+                return "Hoµng Kim Ên (Nh­îc Ho¸) "
+            else
+                return "Ngò Hµnh Ên (C­¬ng Ho¸ vµ Nh­îc Ho¸) "
+            end
+        end
+        local tbOpt = {}
+        for i = 1, 10 do
+            tinsert(tbOpt, {szLoaiAn(nType) .. i, getNguHanhAn, {nType, nType * 10 + i}})
+        end
+        tbDialog:Show(tbOpt, NguHanhAn_Diag)
+    else
+        Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddGoldItem(0, nIndex + 3204)))
+    end
 end

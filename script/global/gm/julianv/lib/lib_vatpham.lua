@@ -1,3 +1,6 @@
+------------------------------------------------------------------
+-- Copyright by Julian-V (https://www.youtube.com/julianv)
+------------------------------------------------------------------
 tbVatPham = {}
 tbVatPham.tbList = {
     HuyenTinh = 1,

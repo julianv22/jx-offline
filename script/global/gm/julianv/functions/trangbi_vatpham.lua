@@ -310,11 +310,19 @@ end
 ------------------------Nguyªn liÖu chÕ t¹o ®å tÝm------------------------
 function NguyenLieu_Dialog()
     local tbOpt = { --
-    {"HuyÒn Tinh", getHuyenTinh}, --
-    {"Thuû Tinh", getThuyTinh}, --
-    {"Phóc Duyªn", getPhucDuyen}, --
-    {"Kho¸ng Th¹ch", getKhoangThach}, --
-    {"M¶nh Thiªn Th¹ch", getThienThach} --
+    {"HuyÒn Tinh", getNguyenLieu, {1}}, --
+    {"Thuû Tinh", getNguyenLieu, {2}}, --
+    {"Phóc Duyªn", getNguyenLieu, {3}}, --
+    {"Kho¸ng Th¹ch", getNguyenLieu, {4}}, --
+    {"M¶nh Thiªn Th¹ch", getNguyenLieu, {5}} --
     }
     tbDialog:Show(tbOpt, NhanVatPham)
+end
+
+function getNguyenLieu(nType)
+    if nType == 5 then
+        for i = 1317, 1235 do
+            Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddEventItem(i)))
+        end
+    end
 end

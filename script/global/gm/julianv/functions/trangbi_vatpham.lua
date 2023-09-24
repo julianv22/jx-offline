@@ -11,6 +11,7 @@ function NhanTrangBi()
     local tbOpt = { --    
     {"Trang bÞ Hoµng Kim - B¹ch Kim cao cÊp", chose_type_goldquip}, --   
     {"Trang bÞ Hoµng Kim M«n Ph¸i", SetHKMP_Dialog}, --    
+    {"NhËn trang bÞ TrÊn Bang Chi B¶o", TrangBi_HKMP_An}, --
     {"Vò khÝ B¹ch Kim m«n ph¸i", VKHK_Dialog, {1}}, --
     {"Vò khÝ Hoµng Kim M«n Ph¸i", VKHK_Dialog, {2}}, --
     {"NhËn An Bang, Kim Phong, §Þnh Quèc", HoangKimCui}, --
@@ -21,7 +22,8 @@ end
 
 function NhanVatPham()
     local tbOpt = { --
-    {"LÊy ngùa", Horses_Dialog}}
+    {"LÊy ngùa", Horses_Dialog}, --
+    {"VËt phÈm trïng sinh", TransLifeItem_Dialog}}
     tbDialog:Show(tbOpt, TrangBi_VatPham)
 end
 
@@ -70,7 +72,7 @@ function Chose_Horses(nHorseType, nPage)
             tinsert(tbOpt, {"Trang tr­íc", Chose_Horses, {nHorseType, nPage - 1}})
         end
     end
-    JDialog:Show(tbOpt, nil, "<sex>muèn lÊy ngùa nµo<pic=44><color>")
+    tbDialog:Show(tbOpt, nil, "<sex>muèn lÊy ngùa nµo<pic=44><color>")
 end
 
 function Add_Horses(nId, nLevel)
@@ -87,8 +89,8 @@ tbNgoaiTrang = {
 
 function Feature_Preview()
     function Feature_Help()
-        local szTitle = strfill_center("{{Chøc n¨ng thay ®æi ngo¹i h×nh trang bÞ}}", 50) ..
-                            "\n\n(+)Chän kiÓu ngo¹i trang muèn xem tr­íc.\n(+)NhËp ID b¾t ®Çu xem.\n(+)Sau ®ã sö dông {{§¹i Hång Bao}} vµ {{TiÓu Hång Bao}} ®Ó xem ngo¹i trang.\n(+)Sau khi chän ®­îc ngo¹i h×nh ­ng ý th× sö dông chøc n¨ng §æi ngo¹i h×nh trang bÞ theo ID ®Ó thay ®æi."
+        local szTitle =
+            "<pic=139> <bclr=pink>Chøc n¨ng thay ®æi ngo¹i h×nh trang bÞ:<bclr>\n\n<pic=136> Chän kiÓu ngo¹i trang muèn xem tr­íc.\n<pic=135> NhËp ID b¾t ®Çu xem.\n<pic=136> Sau ®ã sö dông {{§¹i Hång Bao}} vµ {{TiÓu Hång Bao}} ®Ó xem ®i tíi hoÆc lïi l¹i.\n<pic=135><color> Sau khi chän ®­îc ngo¹i h×nh ­ng ý th× sö dông chøc n¨ng §æi ngo¹i h×nh trang bÞ theo ID ®Ó thay ®æi."
         tbDialog:Show({{"Ta ®· hiÓu", Feature_Preview}}, nil, szTitle)
     end
 
@@ -256,4 +258,50 @@ function QualityItem_Dialog(bGoto)
             SetPos(1605, 3205)
         end
     end
+end
+---------------VËt phÈm trïng sinh---------------
+tbTransLifeItems = { --
+{
+    szName = "<B¾c §Èu Tr­êng Sinh ThuËt - C¬ Së Thiªn>",
+    tbProp = {6, 1, 1390, 0, 0, 0},
+    tbParam = {60}
+}, {
+    szName = "<B¾c §Èu Tr­êng Sinh ThuËt - §¹i Thõa T©m Ph¸p>",
+    tbProp = {6, 1, 2974, 0, 0, 0},
+    tbParam = {60}
+}, {
+    szName = "B¾c §Èu TÈy Tñy §¬n",
+    tbProp = {6, 1, 30127, 0, 0, 0},
+    tbParam = {60}
+}, {
+    szName = "TÝch LÞch §¬n",
+    tbProp = {6, 1, 2973, 0, 0, 0}
+}}
+
+function TransLifeItem_Dialog()
+    local tbOpt = {}
+    for i = 1, getn(tbTransLifeItems) do
+        tinsert(tbOpt, {tbTransLifeItems[i].szName, getTransLifeItem, {i}})
+    end
+    tbDialog:Show(tbOpt, NhanVatPham)
+end
+function getTransLifeItem(nIndex, nCount)
+    local nMax = CalcFreeItemCellCount()
+    if not nCount then
+        g_AskClientNumberEx(1, nIndex == 4 and 999 or nMax, "Sè l­îng", {getTransLifeItem, {nIndex}})
+    else
+        if nIndex == 4 then
+            for i = 1, nCount do
+                local prop = tbTransLifeItems[4].tbProp
+                AddItem(prop[1], prop[2], prop[3], prop[4], prop[6], prop[6])
+            end
+            Msg2Player(format("NhËn ®­îc %d %s", nCount, tbTransLifeItems[4].szName))
+        else
+            local tbLog = format("[liguan]get_free_item_%s", tbTransLifeItems[nIndex].szName)
+            tbAwardTemplet:GiveAwardByList(tbTransLifeItems[nIndex], szLogTitle, nCount)
+        end
+    end
+
+    --             Msg2Player(format("NhËn ®­îc %d %s", nCount, GetItemName(AddItem(tbTransLifeItems[nCount].tbProp))))
+
 end

@@ -13,7 +13,7 @@ function VKHK_Dialog(nType)
             tinsert(tbOpt, {tbMonPhai.tbFacName[i], getWeapon, {nType, i}})
         end
     end
-    tbDialog:Show(tbOpt, NhanTrangBi)
+    tbDialog:Show(tbOpt, NhanTrangBi, "Mêi <sex>chän m«n ph¸i<pic=46><color>")
 end
 
 function getWeapon(nType, id)
@@ -45,14 +45,32 @@ function SetHKMP_Dialog(nItemId)
     if not nItemId then
         local tbOpt = {}
         for id, wp in tbMonPhai.tbGoldEquip[nFacID] do
-            -- Msg2Player(wp)
             tinsert(tbOpt, {wp, SetHKMP_Dialog, {id}})
         end
-        JDialog:Show(tbOpt, NhanTrangBi, "<sex>h·y chän lo¹i h×nh luyÖn c«ng<pic=46><color>")
+        tbDialog:Show(tbOpt, NhanTrangBi, "Mêi <sex>chän lo¹i h×nh luyÖn c«ng<pic=46><color>")
     else
         for i = 1, 5 do
             Msg2Player("NhËn ®­îc trang bÞ Hoµng Kim M«n ph¸i <color=yellow>" ..
                            GetItemName(AddGoldItem(0, nItemId * 5 + i - 5)))
+        end
+    end
+end
+
+function TrangBi_HKMP_An(nFacId)
+    if not nFacId then
+        local tbOpt = {}
+        for id, szMonPhai in tbMonPhai.tbFacName do
+            tinsert(tbOpt, {szMonPhai, TrangBi_HKMP_An, {id}})
+        end
+        tbDialog:Show(tbOpt, NhanTrangBi, "Mêi <sex>chän m«n ph¸i<pic=46><color>")
+    else
+        if not tbMonPhai.tbPrivateEquip[nFacId] then
+            Talk(1, "", "M«n ph¸i nµy ch­a cã trang bÞ TrÊn Bang Chi B¶o")
+        else
+            for _, id in tbMonPhai.tbPrivateEquip[nFacId] do
+                Msg2Player("NhËn ®­îc trang bÞ Hoµng Kim M«n ph¸i <color=yellow>" ..
+                               GetItemName(AddGoldItem(0, id)))
+            end
         end
     end
 end
@@ -63,7 +81,7 @@ function HoangKimCui(nStart, nEnd)
         {"An Bang", HoangKimCui, {408, 411}}, --
         {"§Þnh Quèc", HoangKimCui, {389, 393}}, --
         {"Kim Phong", HoangKimCui, {177, 185}}}
-        JDialog:Show(tbOpt, NhanTrangBi, "Mêi <sex>chän<pic=46><color>")
+        tbDialog:Show(tbOpt, NhanTrangBi, "Mêi <sex>chän trong bÞ yªu thÝch<pic=46><color>")
     else
         for i = nStart, nEnd do
             Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddGoldItem(0, i)))

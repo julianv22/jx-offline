@@ -3,7 +3,7 @@
 ----------------------------Vò khÝ BKMP---------------------------
 ------------------------------------------------------------------
 tbMonPhai = {}
-tbMonPhai.FacList = {
+tbMonPhai.tbFacList = {
     TL = 1, -- ThiÕu L©m
     TV = 2, -- Thiªn V­¬ng
     NM = 3, -- Nga Mi
@@ -18,8 +18,8 @@ tbMonPhai.FacList = {
     VH = 12, -- Vâ Hån
     TD = 13 -- Tiªu Dao
 }
-tbMonPhai.tbFactionInfo = {
-    [tbMonPhai.FacList.TL] = {
+tbMonPhai.tbFacInfo = {
+    [tbMonPhai.tbFacList.TL] = {
         szPinyin = "shaolin",
         szName = "ThiÕu L©m",
         tbPlaWeapon = {{"Anh Hµo La H¸n TriÒn Thñ", 8483}, {"Anh Hµo PhËt §µ T¨ng C«n", 8493},
@@ -29,9 +29,10 @@ tbMonPhai.tbFactionInfo = {
             [1] = "ThiÕu L©m QuyÒn",
             [2] = "ThiÕu L©m C«n",
             [3] = "ThiÕu L©m §ao"
-        }
+        },
+        tbPrivateEquip = {769, 771, 776}
     },
-    [tbMonPhai.FacList.TV] = {
+    [tbMonPhai.tbFacList.TV] = {
         szPinyin = "tianwang",
         szName = "Thiªn V­¬ng",
         tbPlaWeapon = {{"Anh Hµo Tö Kim Chïy", 8513}, {"Anh Hµo Hæ §Çu Th­¬ng", 8523},
@@ -41,9 +42,10 @@ tbMonPhai.tbFactionInfo = {
             [4] = "Thiªn V­¬ng Chuú",
             [5] = "Thiªn V­¬ng Th­¬ng",
             [6] = "Thiªn V­¬ng §ao"
-        }
+        },
+        tbPrivateEquip = {793}
     },
-    [tbMonPhai.FacList.NM] = {
+    [tbMonPhai.tbFacList.NM] = {
         szPinyin = "emei",
         szName = "Nga Mi",
         tbPlaWeapon = {{"Anh Hµo V« S¾c Tr­êng KiÕm", 8543}, {"Anh Hµo TuyÕt S¾c TriÒn Thñ", 8553}},
@@ -52,9 +54,10 @@ tbMonPhai.tbFactionInfo = {
             [7] = "Nga Mi KiÕm",
             [8] = "Nga Mi Ch­ëng",
             [9] = "Nga Mi Buff"
-        }
+        },
+        tbPrivateEquip = {796, 801, 808}
     },
-    [tbMonPhai.FacList.TY] = {
+    [tbMonPhai.tbFacList.TY] = {
         szPinyin = "cuiyan",
         szName = "Thuý yªn",
         tbPlaWeapon = {{"Anh Hµo Tè La §ao", 8563}, {"Anh Hµo BÝch La Uyªn ¦¬ng§ao", 8573}},
@@ -62,9 +65,10 @@ tbMonPhai.tbFactionInfo = {
         tbGoldEquip = {
             [10] = "Thuý Yªn §¬n §ao",
             [11] = "Thuý Yªn Song §ao"
-        }
+        },
+        tbPrivateEquip = {811, 816}
     },
-    [tbMonPhai.FacList.ND] = {
+    [tbMonPhai.tbFacList.ND] = {
         szPinyin = "wudu",
         szName = "Ngò §éc",
         tbPlaWeapon = {{"Anh Hµo Ban Lan TriÒn Thñ", 8583}, {"Anh Hµo Lôc Quang §éc NhËn", 8593}},
@@ -73,9 +77,10 @@ tbMonPhai.tbFactionInfo = {
             [12] = "Ngò §éc Ch­ëng",
             [13] = "Ngò §éc §ao",
             [14] = "Ngò §éc Bïa"
-        }
+        },
+        tbPrivateEquip = {829, 834}
     },
-    [tbMonPhai.FacList.DM] = {
+    [tbMonPhai.tbFacList.DM] = {
         szPinyin = "tangmen",
         szName = "§­êng M«n",
         tbPlaWeapon = {{"Anh Hµo BÝ Linh Phi §ao", 8603}, {"Anh Hµo Tµn V©n TIÔn", 8613},
@@ -86,9 +91,10 @@ tbMonPhai.tbFactionInfo = {
             [16] = "§­êng M«n Tô TiÔn",
             [17] = "§­êng M«n Phi Tiªu",
             [18] = "§­êng M«n BÉy"
-        }
+        },
+        tbPrivateEquip = {843, 854}
     },
-    [tbMonPhai.FacList.CB] = {
+    [tbMonPhai.tbFacList.CB] = {
         szPinyin = "gaibang",
         szName = "C¸i Bang",
         tbPlaWeapon = {{"Anh Hµo Tr­êng Phong TriÒn Thñ", 8633}, {"Anh Hµo Liªn Hoa Tr­îng", 8643}},
@@ -96,9 +102,10 @@ tbMonPhai.tbFactionInfo = {
         tbGoldEquip = {
             [19] = "C¸i Bang Ch­ëng",
             [20] = "C¸i Bang Bæng"
-        }
+        },
+        tbPrivateEquip = {855}
     },
-    [tbMonPhai.FacList.TN] = {
+    [tbMonPhai.tbFacList.TN] = {
         szPinyin = "tianren",
         szName = "Thiªn NhÉn",
         tbPlaWeapon = {{"Anh Hµo LÖ ¢m Th­¬ng", 8653}, {"Anh Hµo NghiÖp Háa §ao", 8663}},
@@ -107,9 +114,10 @@ tbMonPhai.tbFactionInfo = {
             [21] = "Thiªn NhÉn KÝch",
             [22] = "Thiªn NhÉn §ao",
             [23] = "Thiªn NhÉn Bïa"
-        }
+        },
+        tbPrivateEquip = {868, 874, 876}
     },
-    [tbMonPhai.FacList.VD] = {
+    [tbMonPhai.tbFacList.VD] = {
         szPinyin = "wudang",
         szName = "Vâ §ang",
         tbPlaWeapon = {{"Anh Hµo Th¸i Cùc KiÕm", 8673}, {"Anh Hµo Linh Ch©n KiÕm", 8683}},
@@ -117,9 +125,10 @@ tbMonPhai.tbFactionInfo = {
         tbGoldEquip = {
             [24] = "Vâ §ang KhÝ",
             [25] = "Vâ §ang KiÕm"
-        }
+        },
+        tbPrivateEquip = {891, 898, 901}
     },
-    [tbMonPhai.FacList.CL] = {
+    [tbMonPhai.tbFacList.CL] = {
         szPinyin = "kunlun",
         szName = "C«n L«n",
         tbPlaWeapon = {{"Anh Hµo B¹ch Hång §ao", 8693}, {"Anh Hµo Tö §iÖn KiÕm", 8703}},
@@ -128,19 +137,20 @@ tbMonPhai.tbFactionInfo = {
             [26] = "C«n L«n §ao",
             [27] = "C«n L«n KiÕm",
             [28] = "C«n L«n Bïa"
-        }
+        },
+        tbPrivateEquip = {}
     },
-    [tbMonPhai.FacList.HS] = {
+    [tbMonPhai.tbFacList.HS] = {
         szPinyin = "huashan",
         szName = "Hoa S¬n",
         tbPlaWeapon = {{"Anh Hµo Th­¬ng Lan KiÕm", 8713}, {"Anh Hµo BÝch Hoa KiÕm", 8723}}
     },
-    [tbMonPhai.FacList.VH] = {
+    [tbMonPhai.tbFacList.VH] = {
         szPinyin = "wuhun",
         szName = "Vâ Hån",
         tbPlaWeapon = {{"Anh Hµo B¸ KhÝ ThuÉn", 8733}, {"Anh Hµo Uy Vò §ao", 8743}}
     },
-    [tbMonPhai.FacList.TD] = {
+    [tbMonPhai.tbFacList.TD] = {
         szPinyin = "xiaoyao",
         szName = "Tiªu Dao",
         tbPlaWeapon = {{"Anh Hµo Chi Di T¾c CÇm", 8753}, {"Anh Hµo Chi Hoa Èn KiÕm", 8763}}
@@ -148,17 +158,23 @@ tbMonPhai.tbFactionInfo = {
 }
 
 function tbMonPhai:Define()
-    self.tbFacName = {}
-    self.tbPlaWeapon = {}
-    self.tbGoldWeapon = {}
-    self.tbGoldEquip = {}
-    self.tbPinyn = {}
-    for id, tbInfo in self.tbFactionInfo do
+    self.tbFacName = {} -- Ten MP
+    self.tbPlaWeapon = {} -- VK Bach Kim
+    self.tbGoldWeapon = {} -- VK Hoang Kim
+    self.tbGoldEquip = {} -- Trang bi Hoang Kim
+    self.tbPinyn = {} -- Ten Pinyn
+    -- self.tbShortName = {} -- {Ten viet tat, Ten Pinyn}
+    self.tbPrivateEquip = {} -- Trang bi Hoang Kim an 
+    for id, tbInfo in self.tbFacInfo do
         self.tbFacName[id] = tbInfo.szName
         self.tbPlaWeapon[id] = tbInfo.tbPlaWeapon
         self.tbGoldWeapon[id] = tbInfo.tbGoldWeapon
         self.tbGoldEquip[id] = tbInfo.tbGoldEquip
+        self.tbPrivateEquip[id] = tbInfo.tbPrivateEquip
         self.tbPinyn[tbInfo.szPinyin] = id
     end
+    -- for key, id in self.tbFacList do
+    --     self.tbShortName[id] = {key, self.tbFacInfo[id].szPinyin}
+    -- end
 end
 tbMonPhai:Define()

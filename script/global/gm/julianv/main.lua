@@ -13,7 +13,7 @@ Include("\\script\\global\\gm\\julianv\\functions\\dialog_fun.lua")
 
 tbDialog = JDialog
 function main()
-    dofile("script/global/gm/julianv/main.lua")        
+    dofile("script/global/gm/julianv/main.lua")
     local tbOpt = { --
     {"Tools", ChucNangKhac}, --
     {"Qu¶n lý Nh©n vËt", Player_Dialog}, --
@@ -60,8 +60,6 @@ function Player_Dialog()
     dofile("script/global/gm/julianv/functions/player_manager.lua")
     local tbOpt = { --    
     {"NhËn ®iÓm", Point_Dialog}, --
-    {"Kü n¨ng - TiÒm n¨ng", skillSupport}, --    
-    {"Häc kü n¨ng M«n ph¸i", change_phai}, --
     {"§æi mµu PK", change_PK}, --
     {"§æi ngò hµnh", Change_Serries}, --
     {"§æi giíi tÝnh", Change_Sex}, --
@@ -70,9 +68,9 @@ function Player_Dialog()
 end
 ------------------------Server------------------------
 function Server_Dialog()
-    local tbOpt = {}
+    local tbOpt = { --
+    {"Gäi Boss Hoµng Kim"}}
     tbDialog:Show(tbOpt, main)
-    -- CreateNewSayEx("Chøc n¨ng {{Qu¶n lý Server}}:\n\n" .. format(TITLEDIALOG, GetName()), tbOpt)
 end
 ------------------------Trang Trang bÞ - VËt phÈm------------------------
 Include("\\script\\global\\gm\\julianv\\functions\\trangbi_vatpham.lua")
@@ -91,7 +89,6 @@ function TrangBi_VatPham()
     {"Dän s¹ch R­¬ng chøa ®å", ClearF4}, --    
     {"Huû vËt phÈm", DisposeItem}}
     tbDialog:Show(tbOpt, main)
-    -- CreateNewSayEx("NhËn {{Trang bÞ - VËt phÈm}}:\n\n" .. format(TITLEDIALOG, GetName()), tbOpt)
 end
 ------------------------Chøc n¨ng kh¸c------------------------
 function ChucNangKhac()
@@ -102,7 +99,6 @@ function ChucNangKhac()
     {"Söa lçi ThÇn Hµnh Phï", fix_shenxingfu}, --  
     {"KickOutSelf", KickOutSelf}}
     tbDialog:Show(tbOpt, main)
-    -- CreateNewSayEx(format(TITLEDIALOG, GetName()), tbOpt)
 end
 
 function fix_shenxingfu()

@@ -9,7 +9,6 @@ SPRLINK = "<#><link=image[0]:\\spr\\julianv.spr><link>"
 JDialog = {}
 
 function JDialog:_init(szMessage) -- Khoi tao tieu de Dialog
-
     dofile("script/global/gm/julianv/functions/dialog_fun.lua")
     if szMessage then
         self.szTitle = SPRLINK .. szMessage -- Tieu de Dialog
@@ -20,33 +19,25 @@ function JDialog:_init(szMessage) -- Khoi tao tieu de Dialog
     self.tbOptions = {nil} -- Cac dong menu
 end
 
-function JDialog:Show(table, pCallBack, szTitle) -- Hien thi Dialog
+function JDialog:Show(table, pBack, szTitle) -- Hien thi Dialog
     if szTitle then
         self:_init(szTitle)
     end
     self.tbOptions = table
-    if pCallBack then
-        if type(pCallBack) == "function" then -- nÕu tham sè lµ function
-            tinsert(self.tbOptions, {"Trë l¹i", pCallBack})
-        elseif type(pCallBack) == "table" then -- nÕu tham sè lµ table
-            self.tbCallBack = {"Trë l¹i"} -- Menu tro lai
-            for i = 1, getn(pCallBack) do
-                tinsert(self.tbCallBack, pCallBack[i])
+    if pBack then
+        if type(pBack) == "function" then -- nÕu tham sè lµ function
+            tinsert(self.tbOptions, {"Trë l¹i", pBack})
+        elseif type(pBack) == "table" then -- nÕu tham sè lµ table
+            self.tbBack = {"Trë l¹i"}
+            for i = 1, getn(pBack) do
+                tinsert(self.tbBack, pBack[i])
             end
-            tinsert(self.tbOptions, self.tbCallBack)
+            tinsert(self.tbOptions, self.tbBack)
         end
     end
     tinsert(self.tbOptions, {"KÕt thóc ®èi tho¹i"})
     CreateNewSayEx(self.szTitle, self.tbOptions)
     self:ChangeTitle()
-end
-
-function JDialog:InsertOpt(tbOpt, nIndex) -- Them dong menu
-    if nIndex then
-        tinsert(self.tbOptions, nIndex, tbOpt)
-    else
-        tinsert(self.tbOptions, tbOpt)
-    end
 end
 
 function JDialog:ChangeTitle() -- Reset tieu de Dialog ve mac dinh

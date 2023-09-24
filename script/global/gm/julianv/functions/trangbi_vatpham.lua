@@ -5,7 +5,7 @@ Include("\\script\\global\\gm\\julianv\\functions\\hoangkim_bachkim.lua") -- vò 
 Include("\\script\\global\\gm\\functions_goldplatiumitems.lua") -- lÊy item hoµng kim, b¹ch kim
 Include("\\script\\global\\gm\\lib_data_table.lua") -- data table ngùa & trang bÞ
 Include("\\script\\global\\gm\\julianv\\lib\\lib_trangbi.lua")
-Include("\\script\\global\\gm\\julianv\\lib\\lib_nguyenlieu.lua")
+Include("\\script\\global\\gm\\julianv\\lib\\lib_vatpham.lua")
 
 function NhanTrangBi()
     dofile("script/global/gm/julianv/lib/lib_trangbi.lua")
@@ -22,11 +22,12 @@ function NhanTrangBi()
 end
 
 function NhanVatPham()
-    dofile("script/global/gm/julianv/lib/lib_nguyenlieu.lua")
+    dofile("script/global/gm/julianv/lib/lib_vatpham.lua")
     local tbOpt = { --    
-    {"VËt phÈm trïng sinh", TransLifeItem_Dialog}, --
     {"LÊy ngùa", Horses_Dialog}, --
-    {"Nguyªn liÖu chÕ t¹o ®å tÝm", NguyenLieu_Dialog} --
+    {"VËt phÈm trïng sinh", TransLifeItem_Dialog}, --    
+    {"Nguyªn liÖu chÕ t¹o ®å tÝm", NguyenLieu_Dialog}, --
+    {"NhËn c¸c lo¹i vËt phÈm kh¸c", VatPhamKhac_Dialog} --
     }
     tbDialog:Show(tbOpt, TrangBi_VatPham)
 end
@@ -40,7 +41,7 @@ function ChangeFeature_Dialog()
     {"Phôc håi ngo¹i h×nh gèc", Restore_Feature}}
     tbDialog:Show(tbOpt, TrangBi_VatPham)
 end
-
+-------------------------NhËn ngùa-------------------------
 function Horses_Dialog()
     local tbOpt = {}
     for i = 1, getn(tbNameResHorse) do
@@ -170,7 +171,7 @@ function Restore_Feature_Confirm(nCount)
         SetItemNewFeature(nItemIndex, -1)
     end
 end
--------------------------End Feature-------------------------
+------------------------C¸c lo¹i vËt phÈm------------------------
 function DisposeItem(nCount)
     if not nCount then
         GiveItemUI("Hñy vËt phÈm",
@@ -363,4 +364,8 @@ function nhanKhoangThach(nSeries)
         end
         Talk(1, "", "NhËn Kho¸ng Th¹ch thµnh c«ng! H·y kiÓm tra hµnh trang")
     end
+end
+-------------------------VËt phÈm kh¸c-------------------------
+function VatPhamKhac_Dialog()
+    
 end

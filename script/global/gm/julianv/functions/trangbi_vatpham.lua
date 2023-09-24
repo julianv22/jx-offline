@@ -312,7 +312,7 @@ function NguyenLieu_Dialog()
     {"HuyÒn Tinh", chonNguyenLieu, {1}}, --
     {"Thuû Tinh", chonNguyenLieu, {2}}, --
     {"Phóc Duyªn", chonNguyenLieu, {3}}, --
-    {"Kho¸ng Th¹ch"}, --
+    {"Kho¸ng Th¹ch", nhanKhoangThach}, --
     {"M¶nh Thiªn Th¹ch", chonNguyenLieu, {0}} --
     }
     tbDialog:Show(tbOpt, NhanVatPham)
@@ -340,5 +340,27 @@ function nhanNguyenLieu(nType, nIndex, nCount)
     else
         local szLog = format("[liguan]get_free_item_%s", tbVatPham[nType][nIndex].szName)
         tbAwardTemplet:GiveAwardByList(tbVatPham[nType][nIndex], szLog, nCount)
+    end
+end
+
+function nhanKhoangThach(nSeries)
+    if not nSeries then
+        local tbOpt = { --
+        {"HÖ Kim", nhanKhoangThach, {0}}, --
+        {"HÖ Méc", nhanKhoangThach, {1}}, --
+        {"HÖ Thuû", nhanKhoangThach, {2}}, --
+        {"HÖ Ho¶", nhanKhoangThach, {3}}, --
+        {"HÖ Thæ", nhanKhoangThach, {4}} --
+        }
+        tbDialog:Show(tbOpt, NguyenLieu_Dialog, "Mêi <sex>chän ngò hµnh cho Kho¸ng Th¹ch<pic=46><color>")
+    else
+        for i = 149, 154 do
+            if mod(i, 2) == 0 then
+                AddItem(6, 1, i, 1, 0, 0, 0)
+            else
+                AddItem(6, 1, i, 1, nSeries, 0, 0)
+            end
+        end
+        Talk(1, "", "NhËn Kho¸ng Th¹ch thµnh c«ng! H·y kiÓm tra hµnh trang")
     end
 end

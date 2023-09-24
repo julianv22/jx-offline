@@ -21,9 +21,11 @@ function NhanTrangBi()
 end
 
 function NhanVatPham()
-    local tbOpt = { --
+    local tbOpt = { --    
+    {"VËt phÈm trïng sinh", TransLifeItem_Dialog}, --
     {"LÊy ngùa", Horses_Dialog}, --
-    {"VËt phÈm trïng sinh", TransLifeItem_Dialog}}
+    {"Nguyªn liÖu chÕ t¹o ®å tÝm", NguyenLieuDoTim} --
+    }
     tbDialog:Show(tbOpt, TrangBi_VatPham)
 end
 
@@ -301,4 +303,18 @@ function getTransLifeItem(nIndex, nCount)
             tbAwardTemplet:GiveAwardByList(tbTransLifeItems[nIndex], szLogTitle, nCount)
         end
     end
+
+    --             Msg2Player(format("NhËn ®­îc %d %s", nCount, GetItemName(AddItem(tbTransLifeItems[nCount].tbProp))))
+
+end
+------------------------Nguyªn liÖu chÕ t¹o ®å tÝm------------------------
+function NguyenLieuDoTim()
+    local tbOpt = { --
+    {"HuyÒn Tinh", getHuyenTinh}, --
+    {"Thuû Tinh", getThuyTinh}, --
+    {"Phóc Duyªn", getPhucDuyen}, --
+    {"Kho¸ng Th¹ch", getKhoangThach}, --
+    {"M¶nh Thiªn Th¹ch", getThienThach} --
+    }
+    tbDialog:Show(tbOpt, NhanVatPham)
 end

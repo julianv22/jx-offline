@@ -9,13 +9,28 @@
 !package.ini
 !README.md
 !settings-font.json
+#
+!itemexchange_setting/
+itemexchange_setting/*
+!itemexchange_setting/item/
+itemexchange_setting/item/*
+!itemexchange_setting/item/004/
+!itemexchange_setting/item/004/*
+#
+!rolevalueladder_setting/
+rolevalueladder_setting/*
+!rolevalueladder_setting/item/
+rolevalueladder_setting/item/*
+!rolevalueladder_setting/item/004/
+!rolevalueladder_setting/item/004/*
 # script
 !script
 script/*
+!script/faction_def.lua
 !script/global
 script/global/*
 !script/global/gm
-# !script/global/gm/*
+script/global/gm/*
 !script/global/gm/julianv
 !script/global/gm/julianv/*
 !script/global/gm/julianv/functions

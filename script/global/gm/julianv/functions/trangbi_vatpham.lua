@@ -5,6 +5,7 @@ Include("\\script\\global\\gm\\julianv\\functions\\hoangkim_bachkim.lua") -- vò 
 Include("\\script\\global\\gm\\functions_goldplatiumitems.lua") -- lÊy item hoµng kim, b¹ch kim
 Include("\\script\\global\\gm\\lib_data_table.lua") -- data table ngùa & trang bÞ
 Include("\\script\\global\\gm\\julianv\\lib\\lib_trangbi.lua")
+Include("\\script\\global\\gm\\julianv\\lib\\lib_nguyenlieu.lua")
 
 function NhanTrangBi()
     dofile("script/global/gm/julianv/lib/lib_trangbi.lua")
@@ -322,7 +323,8 @@ end
 function getNguyenLieu(nType)
     if nType == 5 then
         for i = 1317, 1235 do
-            Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddEventItem(i)))
+            AddEventItem(i)
+            -- Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddEventItem(i)))
         end
     end
 end

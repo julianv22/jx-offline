@@ -8,7 +8,7 @@ Tải bản release mới nhất về và giải nén. Sau đó copy vào thư m
 
 Reset server và trải nghiệm.
 
-**Lưu ý:** Ngoài thư mục ***script*** ra thì các file và thư mục khác có thể không sao chép cũng được.
+**Lưu ý:** Ngoài thư mục ***script*** và ***spr*** ra thì các file và thư mục khác có thể không sao chép cũng được.
 
 Các file và thư mục này chỉ bao gồm những chỉnh sửa nhỏ không đáng kể và không làm thay đổi trải nghiệm.
 

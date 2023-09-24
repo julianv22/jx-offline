@@ -6,11 +6,11 @@ https://youtube.com/julianv
 
 Tải bản release mới nhất về và giải nén. Sau đó copy vào thư mục client và server
 
-***Lưu ý:*** Ngoài thư mục **script** ra thì các file và thư mục khác có thể không sao chép cũng được.
+Reset server và trải nghiệm.
+
+**Lưu ý:** Ngoài thư mục ***script*** ra thì các file và thư mục khác có thể không sao chép cũng được.
 
 Các file và thư mục này chỉ bao gồm những chỉnh sửa nhỏ không đáng kể và không làm thay đổi trải nghiệm.
-
-Reset server và trải nghiệm.
 
 # Lệnh bài cẩm nang AIO:
 

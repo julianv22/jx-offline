@@ -73,7 +73,7 @@ tbVatPham.NguyenLieu = {
         tbParam = {60}
     }}
 }
-tbVatPham.Khac = {{
+tbVatPham.VP_Khac = {{
     szName = "Håi Thiªn T¸i T¹o LÔ Bao",
     tbProp = {6, 1, 1781, 0, 0, 0},
     tbParam = {60}
@@ -114,3 +114,11 @@ function tbVatPham:Define()
     end
 end
 tbVatPham:Define()
+
+function tbVatPham:Khac()
+    local tbTemp = {}
+    for id, VP_Khac in tbVatPham.VP_Khac do
+        tbTemp[id] = VP_Khac
+    end
+    return tbTemp
+end

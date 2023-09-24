@@ -367,5 +367,19 @@ function nhanKhoangThach(nSeries)
 end
 -------------------------VÀt ph»m kh∏c-------------------------
 function VatPhamKhac_Dialog()
-    
+    local tbOpt = {}
+    local tbVP_Khac = tbVatPham:Khac()
+    for id, VatPham in tbVP_Khac do
+        tinsert(tbOpt, {VatPham.szName, Nhan_VP_Khac, {id}})
+    end
+    tbDialog:Show(tbOpt, NhanVatPham)
+end
+
+function Nhan_VP_Khac(nIndex, nCount)
+    if not nCount then
+        g_AskClientNumberEx(1, CalcFreeItemCellCount(), "SË l≠Óng", {Nhan_VP_Khac, {nIndex}})
+    else
+        local szLogTitle = format("[liguan]get_free_item_%s", tbVatPham:Khac()[nIndex].szName)
+        tbAwardTemplet:GiveAwardByList(tbVatPham:Khac()[nIndex], szLogTitle, nCount)
+    end
 end

@@ -1,6 +1,6 @@
 *
 
-#Exclude
+#Exclude List
 !.gitignore
 !.VnSourceCodePro-Regular.ttf
 !engine.dll
@@ -9,6 +9,7 @@
 !package.ini
 !README.md
 !settings-font.json
+# script
 !script
 script/*
 !script/global
@@ -23,3 +24,17 @@ script/global/*
 !script/global/gm/julianv/lib/*
 !script/global/gm/julianv/npc
 !script/global/gm/julianv/npc/*
+# ui 
+!ui
+!ui/*
+!ui/150skilltask
+!ui/150skilltask/*
+!ui/ui
+!ui/ui3/*
+!ui/ui3/道具
+!ui/ui3/道具/*
+!ui/ui31
+!ui/ui31/*
+!ui/ui31/道具
+!ui/ui31/道具/*
+# settings

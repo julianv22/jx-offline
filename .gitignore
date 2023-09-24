@@ -5,7 +5,7 @@
 !*.md
 !*.json
 !spr
-!script
+# !script
 !script/global
-!settings
+# !settings
 !settings/item

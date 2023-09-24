@@ -6,4 +6,6 @@
 !*.json
 !spr
 !script
+!script/global
 !settings
+!settings/item

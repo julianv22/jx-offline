@@ -33,14 +33,7 @@ script/global/*
 # ------------------------------------------------
 !script/global/gm
 script/global/gm/*
-!script/global/gm/julianv
-!script/global/gm/julianv/*
-!script/global/gm/julianv/functions
-!script/global/gm/julianv/functions/*
-!script/global/gm/julianv/lib
-!script/global/gm/julianv/lib/*
-!script/global/gm/julianv/npc
-!script/global/gm/julianv/npc/*
+!script/global/gm/julianv/**
 # ------------------------------------------------
 !script/global/npc/
 script/global/npc/*
@@ -80,9 +73,9 @@ data/*
 #settings
 !settings
 !settings/*
-!settings/item
-!settings/item/*
-!settings/item/004
-!settings/item/004/*
-!settings/item/004/itemvalue
-!settings/item/004/itemvalue/*
+!settings/item/**
+# !settings/item/*
+# !settings/item/004
+# !settings/item/004/*
+# !settings/item/004/itemvalue
+# !settings/item/004/itemvalue/*

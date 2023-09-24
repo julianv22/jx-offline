@@ -30,6 +30,10 @@ tbMonPhai.tbFacInfo = {
             [2] = "ThiÕu L©m C«n",
             [3] = "ThiÕu L©m §ao"
         },
+        tbMasks = {
+            nStart = 4608,
+            nEnd = 4610
+        },
         tbPrivateEquip = {769, 771, 776}
     },
     [tbMonPhai.tbFacList.TV] = {
@@ -43,6 +47,10 @@ tbMonPhai.tbFacInfo = {
             [5] = "Thiªn V­¬ng Th­¬ng",
             [6] = "Thiªn V­¬ng §ao"
         },
+        tbMasks = {
+            nStart = 4611,
+            nEnd = 4613
+        },
         tbPrivateEquip = {793}
     },
     [tbMonPhai.tbFacList.NM] = {
@@ -55,6 +63,10 @@ tbMonPhai.tbFacInfo = {
             [8] = "Nga Mi Ch­ëng",
             [9] = "Nga Mi Buff"
         },
+        tbMasks = {
+            nStart = 4614,
+            nEnd = 4615
+        },
         tbPrivateEquip = {796, 801, 808}
     },
     [tbMonPhai.tbFacList.TY] = {
@@ -65,6 +77,10 @@ tbMonPhai.tbFacInfo = {
         tbGoldEquip = {
             [10] = "Thuý Yªn §¬n §ao",
             [11] = "Thuý Yªn Song §ao"
+        },
+        tbMasks = {
+            nStart = 4616,
+            nEnd = 4617
         },
         tbPrivateEquip = {811, 816}
     },
@@ -77,6 +93,10 @@ tbMonPhai.tbFacInfo = {
             [12] = "Ngò §éc Ch­ëng",
             [13] = "Ngò §éc §ao",
             [14] = "Ngò §éc Bïa"
+        },
+        tbMasks = {
+            nStart = 4618,
+            nEnd = 4619
         },
         tbPrivateEquip = {829, 834}
     },
@@ -92,6 +112,10 @@ tbMonPhai.tbFacInfo = {
             [17] = "§­êng M«n Phi Tiªu",
             [18] = "§­êng M«n BÉy"
         },
+        tbMasks = {
+            nStart = 4620,
+            nEnd = 4622
+        },
         tbPrivateEquip = {843, 854}
     },
     [tbMonPhai.tbFacList.CB] = {
@@ -102,6 +126,10 @@ tbMonPhai.tbFacInfo = {
         tbGoldEquip = {
             [19] = "C¸i Bang Ch­ëng",
             [20] = "C¸i Bang Bæng"
+        },
+        tbMasks = {
+            nStart = 4623,
+            nEnd = 4624
         },
         tbPrivateEquip = {855}
     },
@@ -115,6 +143,10 @@ tbMonPhai.tbFacInfo = {
             [22] = "Thiªn NhÉn §ao",
             [23] = "Thiªn NhÉn Bïa"
         },
+        tbMasks = {
+            nStart = 4625,
+            nEnd = 4626
+        },
         tbPrivateEquip = {868, 874, 876}
     },
     [tbMonPhai.tbFacList.VD] = {
@@ -126,7 +158,11 @@ tbMonPhai.tbFacInfo = {
             [24] = "Vâ §ang KhÝ",
             [25] = "Vâ §ang KiÕm"
         },
-        tbPrivateEquip = {891, 898, 901}
+        tbMasks = {
+            nStart = 4627,
+            nEnd = 4628
+        },
+        tbPrivateEquip = {881, 888}
     },
     [tbMonPhai.tbFacList.CL] = {
         szPinyin = "kunlun",
@@ -138,7 +174,11 @@ tbMonPhai.tbFacInfo = {
             [27] = "C«n L«n KiÕm",
             [28] = "C«n L«n Bïa"
         },
-        tbPrivateEquip = {}
+        tbMasks = {
+            nStart = 4629,
+            nEnd = 4630
+        },
+        tbPrivateEquip = {891, 898, 901}
     },
     [tbMonPhai.tbFacList.HS] = {
         szPinyin = "huashan",
@@ -163,6 +203,7 @@ function tbMonPhai:Define()
     self.tbGoldWeapon = {} -- VK Hoang Kim
     self.tbGoldEquip = {} -- Trang bi Hoang Kim
     self.tbPinyn = {} -- Ten Pinyn
+    self.tbMasks = {} -- Mat na
     -- self.tbShortName = {} -- {Ten viet tat, Ten Pinyn}
     self.tbPrivateEquip = {} -- Trang bi Hoang Kim an 
     for id, tbInfo in self.tbFacInfo do
@@ -172,6 +213,7 @@ function tbMonPhai:Define()
         self.tbGoldEquip[id] = tbInfo.tbGoldEquip
         self.tbPrivateEquip[id] = tbInfo.tbPrivateEquip
         self.tbPinyn[tbInfo.szPinyin] = id
+        self.tbMasks[id] = tbInfo.tbMasks
     end
     -- for key, id in self.tbFacList do
     --     self.tbShortName[id] = {key, self.tbFacInfo[id].szPinyin}

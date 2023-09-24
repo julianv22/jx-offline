@@ -10,6 +10,7 @@ Include("\\script\\global\\gm\\julianv\\lib\\lib_vatpham.lua")
 function NhanTrangBi()
     dofile("script/global/gm/julianv/lib/lib_trangbi.lua")
     local tbOpt = { --    
+    {"NhÀn  n - Phi phong - Trang s¯c", TrangBiKhac_Dialog}, --
     {"Trang bﬁ Hoµng Kim - Bπch Kim cao c p", chose_type_goldquip}, --   
     {"Trang bﬁ Hoµng Kim M´n Ph∏i", SetHKMP_Dialog}, --    
     {"NhÀn trang bﬁ Tr n Bang Chi B∂o", TrangBi_HKMP_An}, --
@@ -25,6 +26,7 @@ function NhanVatPham()
     dofile("script/global/gm/julianv/lib/lib_vatpham.lua")
     local tbOpt = { --    
     {"L y ng˘a", Horses_Dialog}, --
+    {"NhÀn m∆t nπ Chi’n tr≠Íng", getMasks}, --
     {"VÀt ph»m trÔng sinh", TransLifeItem_Dialog}, --    
     {"Nguy™n li÷u ch’ tπo ÆÂ t›m", NguyenLieu_Dialog}, --
     {"NhÀn c∏c loπi vÀt ph»m kh∏c", VatPhamKhac_Dialog} --
@@ -382,4 +384,25 @@ function Nhan_VP_Khac(nIndex, nCount)
         local szLogTitle = format("[liguan]get_free_item_%s", tbVatPham:Khac()[nIndex].szName)
         tbAwardTemplet:GiveAwardByList(tbVatPham:Khac()[nIndex], szLogTitle, nCount)
     end
+end
+
+function getMasks(nIndex)
+    if not nIndex then
+        local tbOpt = {}
+        for i = 1, 10 do
+            tinsert(tbOpt, {tbMonPhai.tbFacName[i], getMasks, {i}})
+        end
+        tbDialog:Show(tbOpt, NhanVatPham)
+    else
+        local nStart, nEnd = tbMonPhai.tbMasks[nIndex].nStart, tbMonPhai.tbMasks[nIndex].nEnd
+        for i = nStart, nEnd do
+            Msg2Player("NhÀn Æ≠Óc <color=yellow>" .. GetItemName(AddGoldItem(0, i)))
+        end
+    end
+end
+
+function TrangBiKhac_Dialog()
+    local tbOpt = {}
+
+    tbDialog:Show(tbOpt, NhanTrangBi)
 end

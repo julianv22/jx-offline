@@ -1,27 +1,20 @@
 {
     "editor.fontSize": 14,
-    //Thi?t l?p pattern và rule cho Symbol Masks
     "symbolMasks.masks": [
         {
-            //SymbolMasks s? ho?t ??ng v?i nh?ng file ngôn ng? ???c li?t kê d??i ?ây.
             "language": [ "lua", "plaintext", "ini", "log", "c", "csharp", "cpp", "json"],
             "patterns": [
             {
-            //Trong "" ?ã có ch? "?" mã Unicode, trình duy?t không hi?n th?
             "pattern": "­",
-            //Thay th? ký t? ???c li?t kê trong pattern b?ng kí t? này
             "replace": "?",
             }
             ]
         }
     ],
-    //B? qua thông báo trust files khi m? folder m?i
     "security.workspace.trust.untrustedFiles": "open",
     "security.workspace.trust.enabled": false,
-    //B? qua highlight nh?ng ký t? unicode (ti?ng vi?t có d?u là nh?ng ký t? unicode)
     "editor.unicodeHighlight.ambiguousCharacters": false,
     "editor.unicodeHighlight.invisibleCharacters": false,
-    //T?t diagnose Lua script, vì mình không có source code nên hay báo l?i sai 1 vài hàm
     "Lua.diagnostics.enable": false,
     "editor.guides.bracketPairs": "active",
     "php.validate.executablePath": "C:\\xampp8\\php\\php.exe",    

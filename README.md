@@ -4,7 +4,7 @@ https://youtube.com/julianv
 
 # Hướng dẫn cài đặt
 
-Tải bản release mới nhất về và giải nén. Sau đó copy vào thư mục client và server
+Tải bản release mới nhất về và giải nén. Sau đó copy vào thư mục client và server.
 
 Reset server và trải nghiệm.
 

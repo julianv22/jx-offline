@@ -6,7 +6,9 @@ https://youtube.com/julianv
 
 Tải bản release mới nhất về và giải nén. Sau đó copy vào thư mục client và server
 
-***Lưu ý:*** thư mục settings có thể không cần chép đè vào nếu đã chỉnh sửa nhiều trong thư mục này rồi. Ngoài ra có thể chỉ cần sao chép thư mục script cũng OK!
+***Lưu ý:*** Ngoài thư mục **script** ra thì các file và thư mục khác có thể không sao chép cũng được.
+
+Các file và thư mục này chỉ bao gồm những chỉnh sửa nhỏ không đáng kể và không làm thay đổi trải nghiệm.
 
 Reset server và trải nghiệm.
 

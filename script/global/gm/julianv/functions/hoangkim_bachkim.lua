@@ -23,16 +23,10 @@ function getWeapon(nType, id)
     if CalcFreeItemCellCount() < 15 then
         Talk(1, "", "Hµnh trang kh«ng ®ñ « trèng! Xin h·y s¾p xÕp råi quay l¹i nhÐ.");
         return
-    end
-    local tbWeapon = function(nType)
-        if nType == 1 then
-            return tbMonPhai.tbPlaWeapon
-        else
-            return tbMonPhai.tbGoldWeapon
-        end
-    end
+    end  
+    local tbWeapon = nType == 1 and tbMonPhai.tbPlaWeapon or tbMonPhai.tbGoldWeapon
     local nItemId
-    for _, wp in tbWeapon(nType)[id] do
+    for _, wp in tbWeapon[id] do
         nItemId = nType == 1 and AddPlatinaItem(0, wp[2]) or AddGoldItem(0, wp)
         Msg2Player(format("<color=green>NhËn ®­îc Vò khÝ Hoµng Kim m«n ph¸i<color> %s %s%s",
             tbMonPhai.tbFacName[id], nType == 1 and "<bclr=blue><color=white>" or "<color=yellow>", GetItemName(nItemId)))

@@ -24,7 +24,7 @@ Tải bản release mới nhất [![(Download ZIP)](https://badgen.net/badge/Dow
 
 Các file và thư mục này chỉ bao gồm những chỉnh sửa nhỏ không đáng kể và không làm thay đổi trải nghiệm.
 
-[Add [Cẩm nang AIO]](https://github.com/julianv22/jx-offline#add-l%E1%BB%87nh-b%C3%A0i-c%E1%BA%A9m-nang-aio-v%C3%A0o-magicscript) theo hướng dẫn bên dưới.
+[Add [Cẩm nang AIO]](https://github.com/julianv22/jx-offline#add-c%E1%BA%A9m-nang-aio-v%C3%A0o-magicscript) theo hướng dẫn bên dưới.
 
 Reset server và trải nghiệm.
 

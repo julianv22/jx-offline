@@ -62,8 +62,11 @@ spr/*
 !data/
 data/*
 !data/1024x768.pak
-#settings
+# settings
 !settings/
 !settings/*
 !settings/item/
 !settings/item/**
+# docs
+!docs/
+!docs/**

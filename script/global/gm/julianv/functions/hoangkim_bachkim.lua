@@ -1,8 +1,7 @@
 ------------------------------------------------------------------
 -- Copyright by Julian-V (https://www.youtube.com/julianv)
 ----------------------------Vò khÝ BKMP---------------------------
-function VKHK_Dialog(nType)
-    dofile("script/global/gm/julianv/functions/hoangkim_bachkim.lua")
+function VKHK_Dialog(nType)    
     local tbOpt = {}
     if nType == 1 then
         for id, szMonPhai in tbMonPhai.tbFacName do
@@ -113,7 +112,7 @@ function getNguHanhAn(nType, nIndex)
                 return "Hoµng Kim Ên (C­êng Ho¸) "
             elseif nType == 1 then
                 return "Hoµng Kim Ên (Nh­îc Ho¸) "
-            elseif nType == 3 then
+            elseif nType == 2 then
                 return "Ngò Hµnh Ên (C­êng Ho¸ vµ Nh­îc Ho¸) "
             end
         end

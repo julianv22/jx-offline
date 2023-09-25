@@ -9,6 +9,7 @@ Include("\\script\\global\\gm\\julianv\\lib\\lib_vatpham.lua")
 
 function NhanTrangBi()
     dofile("script/global/gm/julianv/lib/lib_monphai.lua")
+    dofile("script/global/gm/julianv/functions/hoangkim_bachkim.lua")
     local tbOpt = { --    
     {"NhËn Ên - Phi phong - Trang søc", TrangBiKhac_Dialog}, --
     {"Trang bÞ Hoµng Kim - B¹ch Kim cao cÊp", chose_type_goldquip}, --   

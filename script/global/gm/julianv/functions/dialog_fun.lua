@@ -42,13 +42,14 @@ end
 
 function JDialog:ChangeTitle() -- Reset tieu de Dialog ve mac dinh
     local nW, nX, nY = GetWorldPos()
-    local nOnline, szAccount, szName, szFacName, nTransLifeCount = GetPlayerCount(), GetAccount(),
-        tbMonPhai.tbPinyn[GetFaction()][2], GetName(), ST_GetTransLifeCount()
+    local szFactionName = GetFaction() == "" and "Ch­a gia nhËp" or tbMonPhai.tbPinyn[GetFaction()][2]
+    local nOnline, szAccount, szName, nTransLifeCount = GetPlayerCount(), GetAccount(), GetName(),
+        ST_GetTransLifeCount()
     local szCurCamp = format("<color=%s>%s<color>", tbMonPhai.tbPK_Status[GetCamp()][2],
         tbMonPhai.tbPK_Status[GetCamp()][1])
     local szMessage = format(
         "<pic=137> Online   : <color=yellow>%s<color>     Tµi kho¶n : <bclr=red>%s<bclr>\n<pic=136> Nh©n vËt : <bclr=blue>%s<bclr>\n<pic=135> M«n ph¸i : <color=green>%s<color>     CÊp ®é : <color=green>%d<color>\n<pic=137> Mµu PK   : %s   Trïng sinh : <color=green>%d<color>\n\n<pic=54> Täa ®é  : <color=yellow>%d,<color> <color=orange>%d/%d<color>",
-        nOnline, szAccount, szFacName, szName, GetLevel(), szCurCamp, nTransLifeCount, nW, nX, nY)    
+        nOnline, szAccount, szName, szFactionName, GetLevel(), szCurCamp, 0, nW, nX, nY)
     self:_init(szMessage)
 end
 

@@ -60,9 +60,11 @@ Include("\\script\\global\\gm\\julianv\\functions\\player_manager.lua")
 Include("\\script\\global\\gm\\ex_lib_function.lua")
 
 function Player_Dialog()
-    dofile("script/global/gm/julianv/functions/player_manager.lua")    
+    dofile("script/global/gm/julianv/functions/player_manager.lua")
     local tbOpt = { --    
     {"NhËn ®iÓm", Point_Dialog}, --
+    {"Kü n¨ng - TiÒm n¨ng", skillSupport}, --    
+    {"Häc kü n¨ng M«n ph¸i", change_phai}, --
     {"§æi mµu PK", change_PK}, --
     {"§æi ngò hµnh", Change_Serries}, --
     {"§æi giíi tÝnh", Change_Sex}, --

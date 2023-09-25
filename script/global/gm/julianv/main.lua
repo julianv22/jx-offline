@@ -9,11 +9,15 @@ Include("\\script\\dailogsys\\dailogsay.lua")
 Include("\\script\\activitysys\\functionlib.lua")
 Include("\\script\\lib\\common.lua")
 Include("\\script\\global\\gm\\julianv\\functions\\dialog_fun.lua")
+Include("\\script\\global\\gm\\julianv\\lib\\lib_monphai.lua")
+Include("\\script\\global\\gm\\julianv\\lib\\lib_vatpham.lua")
 -----------------------------DIALOG-----------------------------
 
 tbDialog = JDialog
 function main()
     dofile("script/global/gm/julianv/main.lua")
+    dofile("script/global/gm/julianv/lib/lib_vatpham.lua")
+    dofile("script/global/gm/julianv/lib/lib_monphai.lua")
     local tbOpt = { --
     {"Tools", ChucNangKhac}, --
     {"Qu∂n l˝ Nh©n vÀt", Player_Dialog}, --
@@ -51,13 +55,12 @@ function CheckEmo(nPic)
     end
 end
 ------------------------Nh©n vÀt------------------------
-Include("\\script\\global\\gm\\functions_points.lua") -- c∏c loπi Æi”m
 Include("\\script\\global\\fuyuan.lua") -- fuc duyen
 Include("\\script\\global\\gm\\julianv\\functions\\player_manager.lua")
 Include("\\script\\global\\gm\\ex_lib_function.lua")
 
 function Player_Dialog()
-    dofile("script/global/gm/julianv/functions/player_manager.lua")
+    dofile("script/global/gm/julianv/functions/player_manager.lua")    
     local tbOpt = { --    
     {"NhÀn Æi”m", Point_Dialog}, --
     {"ßÊi mµu PK", change_PK}, --
@@ -75,7 +78,7 @@ end
 ------------------------Trang Trang bﬁ - VÀt ph»m------------------------
 Include("\\script\\global\\gm\\julianv\\functions\\trangbi_vatpham.lua")
 function TrangBi_VatPham()
-    dofile("script/global/gm/julianv/functions/trangbi_vatpham.lua")
+    dofile("script/global/gm/julianv/functions/trangbi_vatpham.lua")    
     local tbOpt = { --    
     {"NhÀn trang bﬁ", NhanTrangBi}, --    
     {"NhÀn vÀt ph»m", NhanVatPham}, --    

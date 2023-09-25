@@ -199,27 +199,27 @@ tbMonPhai.tbMisc = { -- Ngu hanh - ngoai trang - pk ...
     [0] = {
         szNgoaiTrang = "NPC",
         tbSeries = {"Kim", "yellow"},
-        tbPK_Status = {"LuyÖn c«ng (Tr¾ng)", "white"}
+        tbPK_Status = {"LuyÖn c«ng", "white", "Tr¾ng"}
     },
     [1] = {
         szNgoaiTrang = "Mò",
         tbSeries = {"Méc", "green"},
-        tbPK_Status = {"ChÝnh Ph¸i (Vµng)", "orange"}
+        tbPK_Status = {"ChÝnh Ph¸i", "orange", "Vµng"}
     },
     [2] = {
         szNgoaiTrang = "¸o",
         tbSeries = {"Thuû", "blue"},
-        tbPK_Status = {"Tµ Ph¸i (TÝm)", "pink"}
+        tbPK_Status = {"Tµ Ph¸i", "pink", "TÝm"}
     },
     [3] = {
         szNgoaiTrang = "Vò khÝ",
         tbSeries = {"Ho¶", "red"},
-        tbPK_Status = {"Trung LËp (Xanh)", "green"}
+        tbPK_Status = {"Trung LËp", "green", "Xanh"}
     },
     [4] = {
         szNgoaiTrang = "Ngùa",
         tbSeries = {"Thæ", "orange"},
-        tbPK_Status = {"S¸t Thñ (§á)", "red"}
+        tbPK_Status = {"S¸t Thñ", "red", "§á"}
     }
 }
 

@@ -109,15 +109,19 @@ tbPointsType = { -- C¸c lo¹i ®iÓm
 function change_PK(nType)
     if not nType then
         local tbSay = {"<sex>muèn ®æi sang tr¹ng th¸i nµo<pic=44>"}
+        local szPK = function(num)
+            return format("%s (%s)", tbMonPhai.tbPK_Status[num][1], tbMonPhai.tbPK_Status[num][3])
+        end
         for i = 0, getn(tbMonPhai.tbPK_Status) do
-            tinsert(tbSay, tbMonPhai.tbPK_Status[i][1] .. "/change_PK")
+            tinsert(tbSay, szPK(i) .. "/change_PK")
         end
         tinsert(tbSay, "Ta sÏ quay l¹i sau/return")
         CreateTaskSay(tbSay)
     else
         SetCurCamp(nType)
         SetCamp(nType)
-        Msg2Player(format("§· ®æi mµu PK sang <color=%s>%s", tbSeries[nType][4], tbSeries[nType][3]))
+        Msg2Player(format("§· ®æi mµu PK sang <color=%s>%s", tbMonPhai.tbPK_Status[nType][2],
+            tbMonPhai.tbPK_Status[nType][1]))
     end
 end
 

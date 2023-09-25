@@ -4,11 +4,9 @@
 Include("\\script\\global\\gm\\julianv\\functions\\hoangkim_bachkim.lua") -- vò khi hoµng/b¹ch kim
 Include("\\script\\global\\gm\\functions_goldplatiumitems.lua") -- lÊy item hoµng kim, b¹ch kim
 Include("\\script\\global\\gm\\lib_data_table.lua") -- data table ngùa & trang bÞ
-Include("\\script\\global\\gm\\julianv\\lib\\lib_monphai.lua")
-Include("\\script\\global\\gm\\julianv\\lib\\lib_vatpham.lua")
+
 
 function NhanTrangBi()
-    dofile("script/global/gm/julianv/lib/lib_monphai.lua")
     dofile("script/global/gm/julianv/functions/hoangkim_bachkim.lua")
     local tbOpt = { --    
     {"NhËn Ên - Phi phong - Trang søc", TrangBiKhac_Dialog}, --
@@ -24,7 +22,6 @@ function NhanTrangBi()
 end
 
 function NhanVatPham()
-    dofile("script/global/gm/julianv/lib/lib_vatpham.lua")
     local tbOpt = { --    
     {"LÊy ngùa", Horses_Dialog}, --
     {"NhËn mÆt n¹ ChiÕn tr­êng", getMasks}, --

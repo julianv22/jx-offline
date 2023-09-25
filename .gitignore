@@ -1,5 +1,5 @@
 # Ignore All
-* 
+*
 #Exclude List
 !.gitignore
 !.VnSourceCodePro-Regular.ttf
@@ -70,4 +70,3 @@ data/*
 # docs
 !docs/
 !docs/**
-!index.html

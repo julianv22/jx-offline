@@ -10,7 +10,7 @@ Tải bản release mới nhất [![(Download ZIP)](https://badgen.net/badge/Dow
 
 Reset server và trải nghiệm.
 
-[![Note](https://badgen.net/badge/color/L%C6%B0u%20%C3%BD/red?label=)](https://github.com/julianv22/jx-offline/edit/main/README.md#h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-c%C3%A0i-%C4%91%E1%BA%B7t) Ngoài thư mục ***script*** và ***spr*** ra thì các file và thư mục khác có thể không sao chép cũng được.
+[![Note](https://badgen.net/badge/color/L%C6%B0u%20%C3%BD/red?label=)](https://github.com/julianv22/jx-offline/#h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-c%C3%A0i-%C4%91%E1%BA%B7t) Ngoài thư mục ***script*** và ***spr*** ra thì các file và thư mục khác có thể không sao chép cũng được.
 
 Các file và thư mục này chỉ bao gồm những chỉnh sửa nhỏ không đáng kể và không làm thay đổi trải nghiệm.
 

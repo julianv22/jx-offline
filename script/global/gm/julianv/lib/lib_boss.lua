@@ -1,30 +1,6 @@
 ------------------------------------------------------------------
 -- Copyright by Julian-V (https://www.youtube.com/julianv)
 ------------------------------------------------------------------
-NHANCANKHONTD = {
-    ["Kh¸ng Háa - Thêi Gian Tróng §éc"] = {6578},
-    ["Kh¸ng B¨ng - Thêi Gian Tróng §éc"] = {6579},
-    ["Kh¸ng L«i - Thêi Gian Tróng §éc"] = {6580},
-    ["Kh¸ng §éc - Thêi Gian Tróng §éc"] = {6581},
-    ["PTVL - Thêi Gian Tróng §éc"] = {6582}
-}
-
-NHANCANKHONLC = {
-    ["Kh¸ng Háa - Thêi Gian Lµm Cho¸ng"] = {6583},
-    ["Kh¸ng B¨ng - Thêi Gian Lµm Cho¸ng"] = {6584},
-    ["Kh¸ng L«i - Thêi Gian Lµm Cho¸ng"] = {6585},
-    ["Kh¸ng §éc - Thêi Gian Lµm Cho¸ng"] = {6586},
-    ["PTVL - Thêi Gian Lµm Cho¸ng"] = {6587}
-}
-
-NHANCANKHONLCH = {
-    ["Kh¸ng Háa - Thêi Gian Lµm ChËm"] = {6588},
-    ["Kh¸ng B¨ng - Thêi Gian Lµm ChËm"] = {6589},
-    ["Kh¸ng L«i - Thêi Gian Lµm ChËm"] = {6590},
-    ["Kh¸ng §éc - Thêi Gian Lµm ChËm"] = {6591},
-    ["PTVL - Thêi Gian Lµm ChËm"] = {6592}
-}
-
 tbBoss = { -- tªn boss,id boss, tû lÖ r¬i ®å,series boss,nLevel
     [1] = {
         szName = "TÞnh Th«ng",

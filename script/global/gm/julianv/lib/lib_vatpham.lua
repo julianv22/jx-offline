@@ -2,13 +2,13 @@
 -- Copyright by Julian-V (https://www.youtube.com/julianv)
 ------------------------------------------------------------------
 tbVatPham = {}
-tbVatPham.tbList = {
+tbVatPham.List = {
     HuyenTinh = 1,
     ThuyTinh = 2,
     PhucDuyen = 3
 }
 tbVatPham.NguyenLieu = {
-    [tbVatPham.tbList.HuyenTinh] = {{
+    [tbVatPham.List.HuyenTinh] = {{
         szName = "HuyÒn Tinh CÊp 1",
         tbProp = {6, 1, 147, 1, 0, 0, 0},
         tbParam = {60}
@@ -49,7 +49,7 @@ tbVatPham.NguyenLieu = {
         tbProp = {6, 1, 147, 10, 0, 0, 0},
         tbParam = {60}
     }},
-    [tbVatPham.tbList.ThuyTinh] = {{
+    [tbVatPham.List.ThuyTinh] = {{
         szName = "Tö Thñy Tinh",
         tbProp = {4, 239, 1, 1, 0, 0},
         tbParam = {60}
@@ -62,7 +62,7 @@ tbVatPham.NguyenLieu = {
         tbProp = {4, 240, 1, 1, 0, 0},
         tbParam = {60}
     }},
-    [tbVatPham.tbList.PhucDuyen] = {{
+    [tbVatPham.List.PhucDuyen] = {{
         szName = "Phóc Duyªn TiÓu",
         tbProp = {6, 1, 122, 1, 0, 0, 0},
         tbParam = {60}
@@ -111,6 +111,29 @@ tbVatPham.VP_Khac = {{
     szName = "ThËp Toµn §¹i Bæ",
     tbProp = {6, 1, 1399, 0, 0, 0}
 }}
+-- NHANCANKHONTD = {
+--     ["Kh¸ng Háa - Thêi Gian Tróng §éc"] = {6578},
+--     ["Kh¸ng B¨ng - Thêi Gian Tróng §éc"] = {6579},
+--     ["Kh¸ng L«i - Thêi Gian Tróng §éc"] = {6580},
+--     ["Kh¸ng §éc - Thêi Gian Tróng §éc"] = {6581},
+--     ["PTVL - Thêi Gian Tróng §éc"] = {6582}
+-- }
+
+-- NHANCANKHONLC = {
+--     ["Kh¸ng Háa - Thêi Gian Lµm Cho¸ng"] = {6583},
+--     ["Kh¸ng B¨ng - Thêi Gian Lµm Cho¸ng"] = {6584},
+--     ["Kh¸ng L«i - Thêi Gian Lµm Cho¸ng"] = {6585},
+--     ["Kh¸ng §éc - Thêi Gian Lµm Cho¸ng"] = {6586},
+--     ["PTVL - Thêi Gian Lµm Cho¸ng"] = {6587}
+-- }
+
+-- NHANCANKHONLCH = {
+--     ["Kh¸ng Háa - Thêi Gian Lµm ChËm"] = {6588},
+--     ["Kh¸ng B¨ng - Thêi Gian Lµm ChËm"] = {6589},
+--     ["Kh¸ng L«i - Thêi Gian Lµm ChËm"] = {6590},
+--     ["Kh¸ng §éc - Thêi Gian Lµm ChËm"] = {6591},
+--     ["PTVL - Thêi Gian Lµm ChËm"] = {6592}
+-- }
 function tbVatPham:Define()
     for id, NguyenLieu in tbVatPham.NguyenLieu do
         tbVatPham[id] = NguyenLieu

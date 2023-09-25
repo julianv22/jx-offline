@@ -2,7 +2,7 @@
 -- Copyright by Julian-V (https://www.youtube.com/julianv)
 ----------------------------Vò khÝ BKMP---------------------------
 tbMonPhai = {}
-tbMonPhai.tbFacList = { -- Ds mon phai
+tbMonPhai.FacList = { -- Ds mon phai
     TL = 1, -- ThiÕu L©m
     TV = 2, -- Thiªn V­¬ng
     NM = 3, -- Nga Mi
@@ -17,8 +17,8 @@ tbMonPhai.tbFacList = { -- Ds mon phai
     VH = 12, -- Vâ Hån
     TD = 13 -- Tiªu Dao
 }
-tbMonPhai.tbFacInfo = { -- Thong tin tong hop
-    [tbMonPhai.tbFacList.TL] = {
+tbMonPhai.FacInfo = { -- Thong tin tong hop
+    [tbMonPhai.FacList.TL] = {
         szPinyin = "shaolin",
         szName = "ThiÕu L©m",
         tbPlaWeapon = {{"Anh Hµo La H¸n TriÒn Thñ", 8483}, {"Anh Hµo PhËt §µ T¨ng C«n", 8493},
@@ -35,7 +35,7 @@ tbMonPhai.tbFacInfo = { -- Thong tin tong hop
         },
         tbPrivateEquip = {769, 771, 776}
     },
-    [tbMonPhai.tbFacList.TV] = {
+    [tbMonPhai.FacList.TV] = {
         szPinyin = "tianwang",
         szName = "Thiªn V­¬ng",
         tbPlaWeapon = {{"Anh Hµo Tö Kim Chïy", 8513}, {"Anh Hµo Hæ §Çu Th­¬ng", 8523},
@@ -52,7 +52,7 @@ tbMonPhai.tbFacInfo = { -- Thong tin tong hop
         },
         tbPrivateEquip = {793}
     },
-    [tbMonPhai.tbFacList.NM] = {
+    [tbMonPhai.FacList.NM] = {
         szPinyin = "emei",
         szName = "Nga Mi",
         tbPlaWeapon = {{"Anh Hµo V« S¾c Tr­êng KiÕm", 8543}, {"Anh Hµo TuyÕt S¾c TriÒn Thñ", 8553}},
@@ -68,7 +68,7 @@ tbMonPhai.tbFacInfo = { -- Thong tin tong hop
         },
         tbPrivateEquip = {796, 801, 808}
     },
-    [tbMonPhai.tbFacList.TY] = {
+    [tbMonPhai.FacList.TY] = {
         szPinyin = "cuiyan",
         szName = "Thuý yªn",
         tbPlaWeapon = {{"Anh Hµo Tè La §ao", 8563}, {"Anh Hµo BÝch La Uyªn ¦¬ng§ao", 8573}},
@@ -83,7 +83,7 @@ tbMonPhai.tbFacInfo = { -- Thong tin tong hop
         },
         tbPrivateEquip = {811, 816}
     },
-    [tbMonPhai.tbFacList.ND] = {
+    [tbMonPhai.FacList.ND] = {
         szPinyin = "wudu",
         szName = "Ngò §éc",
         tbPlaWeapon = {{"Anh Hµo Ban Lan TriÒn Thñ", 8583}, {"Anh Hµo Lôc Quang §éc NhËn", 8593}},
@@ -99,7 +99,7 @@ tbMonPhai.tbFacInfo = { -- Thong tin tong hop
         },
         tbPrivateEquip = {829, 834}
     },
-    [tbMonPhai.tbFacList.DM] = {
+    [tbMonPhai.FacList.DM] = {
         szPinyin = "tangmen",
         szName = "§­êng M«n",
         tbPlaWeapon = {{"Anh Hµo BÝ Linh Phi §ao", 8603}, {"Anh Hµo Tµn V©n TIÔn", 8613},
@@ -117,7 +117,7 @@ tbMonPhai.tbFacInfo = { -- Thong tin tong hop
         },
         tbPrivateEquip = {843, 854}
     },
-    [tbMonPhai.tbFacList.CB] = {
+    [tbMonPhai.FacList.CB] = {
         szPinyin = "gaibang",
         szName = "C¸i Bang",
         tbPlaWeapon = {{"Anh Hµo Tr­êng Phong TriÒn Thñ", 8633}, {"Anh Hµo Liªn Hoa Tr­îng", 8643}},
@@ -132,7 +132,7 @@ tbMonPhai.tbFacInfo = { -- Thong tin tong hop
         },
         tbPrivateEquip = {855}
     },
-    [tbMonPhai.tbFacList.TN] = {
+    [tbMonPhai.FacList.TN] = {
         szPinyin = "tianren",
         szName = "Thiªn NhÉn",
         tbPlaWeapon = {{"Anh Hµo LÖ ¢m Th­¬ng", 8653}, {"Anh Hµo NghiÖp Háa §ao", 8663}},
@@ -148,7 +148,7 @@ tbMonPhai.tbFacInfo = { -- Thong tin tong hop
         },
         tbPrivateEquip = {868, 874, 876}
     },
-    [tbMonPhai.tbFacList.VD] = {
+    [tbMonPhai.FacList.VD] = {
         szPinyin = "wudang",
         szName = "Vâ §ang",
         tbPlaWeapon = {{"Anh Hµo Th¸i Cùc KiÕm", 8673}, {"Anh Hµo Linh Ch©n KiÕm", 8683}},
@@ -163,7 +163,7 @@ tbMonPhai.tbFacInfo = { -- Thong tin tong hop
         },
         tbPrivateEquip = {881, 888}
     },
-    [tbMonPhai.tbFacList.CL] = {
+    [tbMonPhai.FacList.CL] = {
         szPinyin = "kunlun",
         szName = "C«n L«n",
         tbPlaWeapon = {{"Anh Hµo B¹ch Hång §ao", 8693}, {"Anh Hµo Tö §iÖn KiÕm", 8703}},
@@ -179,17 +179,17 @@ tbMonPhai.tbFacInfo = { -- Thong tin tong hop
         },
         tbPrivateEquip = {891, 898, 901}
     },
-    [tbMonPhai.tbFacList.HS] = {
+    [tbMonPhai.FacList.HS] = {
         szPinyin = "huashan",
         szName = "Hoa S¬n",
         tbPlaWeapon = {{"Anh Hµo Th­¬ng Lan KiÕm", 8713}, {"Anh Hµo BÝch Hoa KiÕm", 8723}}
     },
-    [tbMonPhai.tbFacList.VH] = {
+    [tbMonPhai.FacList.VH] = {
         szPinyin = "wuhun",
         szName = "Vâ Hån",
         tbPlaWeapon = {{"Anh Hµo B¸ KhÝ ThuÉn", 8733}, {"Anh Hµo Uy Vò §ao", 8743}}
     },
-    [tbMonPhai.tbFacList.TD] = {
+    [tbMonPhai.FacList.TD] = {
         szPinyin = "xiaoyao",
         szName = "Tiªu Dao",
         tbPlaWeapon = {{"Anh Hµo Chi Di T¾c CÇm", 8753}, {"Anh Hµo Chi Hoa Èn KiÕm", 8763}}
@@ -235,7 +235,7 @@ function tbMonPhai:Define() -- Dinh nghia table
     self.tbNgoaiTrang = {} -- Ngoai trang trang bi
     -- self.tbShortName = {} -- {Ten viet tat, Ten Pinyn}
     self.tbPrivateEquip = {} -- Trang bi Hoang Kim an 
-    for id, tbInfo in self.tbFacInfo do
+    for id, tbInfo in self.FacInfo do
         self.tbFacName[id] = tbInfo.szName
         self.tbPlaWeapon[id] = tbInfo.tbPlaWeapon
         self.tbGoldWeapon[id] = tbInfo.tbGoldWeapon
@@ -249,8 +249,8 @@ function tbMonPhai:Define() -- Dinh nghia table
         self.tbPK_Status[id] = tbInfo.tbPK_Status
         self.tbNgoaiTrang[id] = tbInfo.szNgoaiTrang
     end
-    -- for key, id in self.tbFacList do
-    --     self.tbShortName[id] = {key, self.tbFacInfo[id].szPinyin}
+    -- for key, id in self.FacList do
+    --     self.tbShortName[id] = {key, self.FacInfo[id].szPinyin}
     -- end
 end
 tbMonPhai:Define()

@@ -2,7 +2,7 @@
 
 [![Julian-V](https://github.com/julianv22/jx-offline/blob/main/docs/Julian-V.png)](https://youtube.com/julianv)
 
-[![JX](https://badgen.net/badge/JX-Offline/Linux?icon=git)](https://github.com/julianv22/jx-offline) [![Version](https://badgen.net/badge/Version/8.2?icon=packagephobia)](https://github.com/julianv22/jx-offline) [![Board Status](https://dev.azure.com/julianv2212/d6b1d911-8c73-47d2-8f20-31d3ec16c111/3cb8438c-a300-489e-8bd6-05f07ccffa06/_apis/work/boardbadge/7adac85b-f9c6-438a-8569-807615cccdec?columnOptions=1)](https://dev.azure.com/julianv2212/d6b1d911-8c73-47d2-8f20-31d3ec16c111/_boards/board/t/3cb8438c-a300-489e-8bd6-05f07ccffa06/Issues/) [![Build Status](https://github.com/julianv22/jx-offline/actions/workflows/main.yml/badge.svg)](https://github.com/julianv22/jx-offline/actions/workflows/main.yml)
+[![JX](https://badgen.net/badge/JX-Offline/Linux?icon=git)](https://github.com/julianv22/jx-offline#) [![Version](https://badgen.net/badge/Version/8.2?icon=packagephobia#)](https://github.com/julianv22/jx-offline) [![Board Status](https://dev.azure.com/julianv2212/d6b1d911-8c73-47d2-8f20-31d3ec16c111/3cb8438c-a300-489e-8bd6-05f07ccffa06/_apis/work/boardbadge/7adac85b-f9c6-438a-8569-807615cccdec?columnOptions=1)](https://dev.azure.com/julianv2212/d6b1d911-8c73-47d2-8f20-31d3ec16c111/_boards/board/t/3cb8438c-a300-489e-8bd6-05f07ccffa06/Issues/) [![Build Status](https://github.com/julianv22/jx-offline/actions/workflows/main.yml/badge.svg)](https://github.com/julianv22/jx-offline/actions/workflows/main.yml)
 
 # Hướng dẫn cài đặt
 
@@ -22,7 +22,7 @@ Add dòng này vào cuối file **magicscript.txt**
 | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | - | -|
 | CÈm nang AIO | 6 | 1 | 5128 | \spr\item\longmenbiaoju\»¤ïÚÁî.spr | 341 | 1 | 1 | CÈm nang tÊt c¶ trong mét. Writen by <bclr=blue>Julian-V<bclr> |  | 0 | 1 | 0 | \script\global\gm\julianv\main.lua | 0 | 1 | 1 | 0 | 1 |  | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
 
-**Txt:**
+**Copy code**
 ```js	
 CÈm nang AIO	6	1	5128	\spr\item\longmenbiaoju\»¤ïÚÁî.spr	341	1	1	CÈm nang tÊt c¶ trong mét. Writen by <bclr=blue>Julian-V<bclr>		0	1	0	\script\global\gm\julianv\main.lua	0	1	1	0	1		0	0	0	0	0	0	0	0	0	0
 ```

@@ -22,7 +22,7 @@ Tương thích tốt nhất với phiên bản 8, những phiên bản khác có
 
 [![Note](https://badgen.net/badge/color/L%C6%B0u%20%C3%BD/red?label=)](https://github.com/julianv22/jx-offline#h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-c%C3%A0i-%C4%91%E1%BA%B7t) Ngoài thư mục ***script*** và ***spr*** ra thì các file và thư mục khác có thể không sao chép cũng được.
 
-+ Cập nhật README.md làm rõ các vấn đề Các file và thư mục này chỉ bao gồm những chỉnh sửa nhỏ không đáng kể và không làm thay đổi trải nghiệm.
++ Các file và thư mục này chỉ bao gồm những chỉnh sửa nhỏ không đáng kể và không làm thay đổi trải nghiệm.
 
 + [Add [Cẩm nang AIO]](https://github.com/julianv22/jx-offline#add-c%E1%BA%A9m-nang-aio-v%C3%A0o-magicscript) theo hướng dẫn bên dưới.
 

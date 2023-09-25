@@ -1,0 +1,17 @@
+name: Close as a support issue
+on:
+  issues:
+    types: [labeled]
+
+jobs:
+  build:
+    permissions:
+      issues: write
+    runs-on: ubuntu-latest
+    steps:
+    - name: Close Issue
+      uses: peter-evans/close-issue@v3
+      if: contains(github.event.issue.labels.*.name, 'support')
+      with:
+        comment: |
+          Sorry, but we'd like to keep issues related to code in this repository. Thank you 🙇 

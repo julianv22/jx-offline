@@ -6,7 +6,7 @@
 
 # Hướng dẫn cài đặt
 
-Tải bản release mới nhất [![(Download ZIP)](https://badgen.net/badge/Download/ZIP?icon=bitcoin-lightning)](https://github.com/julianv22/jx-offline/archive/refs/heads/main.zip) về và giải nén. Sau đó copy vào thư mục client và server.
+Tải bản release mới nhất [![(Download ZIP)](https://badgen.net/badge/Download/ZIP?icon=bitcoin-lightning)](https://github.com/julianv22/jx-offline/archive/refs/heads/main.zip) về và giải nén. Sau đó copy vào **client** và **server**.
 
 Reset server và trải nghiệm.
 
@@ -19,7 +19,7 @@ Các file và thư mục này chỉ bao gồm những chỉnh sửa nhỏ không
 [![Example 3](https://github.com/julianv22/jx-offline/blob/main/docs/ex3.png)](#) 
 [![Example 4](https://github.com/julianv22/jx-offline/blob/main/docs/ex4.png)](#)
 
-# Lệnh bài cẩm nang AIO:
+# Add [Lệnh bài cẩm nang AIO] vào *magicscript
 
 Add dòng này vào cuối file **magicscript.txt**
 
@@ -32,13 +32,15 @@ Add dòng này vào cuối file **magicscript.txt**
 CÈm nang AIO	6	1	5128	\spr\item\longmenbiaoju\»¤ïÚÁî.spr	341	1	1	CÈm nang tÊt c¶ trong mét. Writen by <bclr=blue>Julian-V<bclr>		0	1	0	\script\global\gm\julianv\main.lua	0	1	1	0	1		0	0	0	0	0	0	0	0	0	0
 ```
 
-Item Id của lệnh bài là: ***{6,	1,	5128}*** có thể thay đổi tuỳ theo magicscript.txt
+Item Id của lệnh bài là: ***{6,	1,	5128}*** có thể thay đổi tuỳ theo magicscript.txt của bạn.
 
 # Tài liệu
 
 https://jxdocs.com/admin
 
 https://fb.com/groups/volamquan
+
+https://www.fb.com/groups/pytagaming1
 
 # Linh tinh
 

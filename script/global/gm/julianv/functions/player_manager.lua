@@ -106,19 +106,11 @@ tbPointsType = { -- C¸c lo¹i ®iÓm
     }
 }
 
-tbSeries = { -- Ngò hµnh
-    [0] = {"Kim", "yellow", "LuyÖn c«ng (Tr¾ng)", "white"},
-    [1] = {"Méc", "green", "ChÝnh Ph¸i (Vµng)", "orange"},
-    [2] = {"Thuû", "blue", "Tµ Ph¸i (TÝm)", "pink"},
-    [3] = {"Ho¶", "red", "Trung LËp (Xanh)", "green"},
-    [4] = {"Thæ", "orange", "S¸t Thñ (§á)", "red"}
-}
-
 function change_PK(nType)
     if not nType then
         local tbSay = {"<sex>muèn ®æi sang tr¹ng th¸i nµo<pic=44>"}
-        for i = 0, getn(tbSeries) do
-            tinsert(tbSay, tbSeries[i][3] .. "/change_PK")
+        for i = 0, getn(tbMonPhai.tbPK_Status) do
+            tinsert(tbSay, tbMonPhai.tbPK_Status[i][1] .. "/change_PK")
         end
         tinsert(tbSay, "Ta sÏ quay l¹i sau/return")
         CreateTaskSay(tbSay)
@@ -149,12 +141,11 @@ function CongDiemNhanh()
     CreateTaskSay(tbSay)
 end
 
-function learnSkill(nSkillId, nSkillLvl)
-    
+function learnSkill(nSkillId, nLevel)
     if HaveMagic(nSkillId) == 1 then
         Talk(1, "", "Ng­¬i ®· së h÷u kü n¨ng nµy råi")
     else
-        AddMagic(nSkillId, nSkillLvl and nSkillLvl or 1)
+        AddMagic(nSkillId, nLevel and nLevel or 1)
     end
 end
 
@@ -183,9 +174,9 @@ function AdvancedSkill(szSkill)
         if getn(tbSkill) > 2 then
             Talk(1, "", "Qu¸ nhiÒu tham sè, chØ nhËn 2 tham sè lµ Skill ID vµ Level")
         else
-            local nSkillId, nSkillLvl = tonumber(tbSkill[1]), tonumber(tbSkill[2])
-            AddMagic(nSkillId, nSkillLvl)
-            Msg2Player("NhËn ®­îc Skill <color=yellow>" .. GetSkillName(nSkillId) .. "<color> cÊp " .. nSkillLvl)
+            local nSkillId, nLevel = tonumber(tbSkill[1]), tonumber(tbSkill[2])
+            AddMagic(nSkillId, nLevel)
+            Msg2Player("NhËn ®­îc Skill <color=yellow>" .. GetSkillName(nSkillId) .. "<color> cÊp " .. nLevel)
         end
     end
 end
@@ -238,12 +229,12 @@ end
 function Change_Serries(nSeries)
     local nCurSeries = GetSeries()
     local szSeries = function(num)
-        return format("<color=%s>%s<color>", tbSeries[num][2], tbSeries[num][1])
+        return format("<color=%s>%s<color>", tbMonPhai.tbSeries[num][2], tbMonPhai.tbSeries[num][1])
     end
     if not nSeries then
         local tbOpt = {}
-        for i = 0, getn(tbSeries) do
-            tinsert(tbOpt, {tbSeries[i][1], Change_Serries, {i}})
+        for i = 0, getn(tbMonPhai.tbSeries) do
+            tinsert(tbOpt, {tbMonPhai.tbSeries[i][1], Change_Serries, {i}})
         end
         tbDialog:Show(tbOpt, Player_Dialog,
             "<sex>hiÖn t¹i lµ hÖ " .. szSeries(nCurSeries) .. "\n\nMêi chän ngò hµnh muèn ®æi:")

@@ -13,7 +13,7 @@ function NhanTrangBi()
     local tbOpt = { --    
     {"NhËn Ên - Phi phong - Trang søc", TrangBiKhac_Dialog}, --
     {"Trang bÞ Hoµng Kim - B¹ch Kim cao cÊp", chose_type_goldquip}, --   
-    {"Trang bÞ Hoµng Kim M«n Ph¸i", SetHKMP_Dialog}, --    
+    {"NhËn Set Hoµng Kim M«n Ph¸i", SetHKMP_Dialog}, --    
     {"NhËn trang bÞ TrÊn Bang Chi B¶o", TrangBi_HKMP_An}, --
     {"Vò khÝ B¹ch Kim m«n ph¸i", VKHK_Dialog, {1}}, --
     {"Vò khÝ Hoµng Kim M«n Ph¸i", VKHK_Dialog, {2}}, --
@@ -89,20 +89,13 @@ function Chose_Horses(nHorseType, nPage)
             tinsert(tbOpt, {"Trang tr­íc", Chose_Horses, {nHorseType, nPage - 1}})
         end
     end
-    tbDialog:Show(tbOpt, nil, "<sex>muèn lÊy ngùa nµo<pic=44><color>")
+    tbDialog:Show(tbOpt, nil,
+        "<sex>h·y chän cho m×nh mét con chiÕn m· tèt ®Ó hµnh tÈu giang hå<pic=46><color>")
 end
 
 function Add_Horses(nId, nLevel)
     Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddItem(0, 10, nId, nLevel, 0, 0, 0)))
 end
--------------------------Start Feature-------------------------
-tbNgoaiTrang = {
-    [0] = "Ngo¹i h×nh NPC",
-    [1] = "Ngo¹i h×nh Mò",
-    [2] = "Ngo¹i h×nh ¸o",
-    [3] = "Ngo¹i h×nh Vò khÝ",
-    [4] = "Ngo¹i h×nh Ngùa"
-}
 
 function Feature_Preview()
     function Feature_Help()
@@ -119,15 +112,16 @@ function Feature_Preview()
     end
     local tbOpt = {}
     tinsert(tbOpt, {"Xem h­íng dÉn", Feature_Help})
-    for i = 0, getn(tbNgoaiTrang) do
-        tinsert(tbOpt, {tbNgoaiTrang[i], Ask_Feature_StartId, {i}})
+    for i = 0, getn(tbMonPhai.tbNgoaiTrang) do
+        tinsert(tbOpt, {tbMonPhai.tbNgoaiTrang[i], Ask_Feature_StartId, {i}})
     end
-    tbDialog:Show(tbOpt, ChangeFeature_Dialog)
+    tbDialog:Show(tbOpt, ChangeFeature_Dialog,
+        "<bclr=pink>Chøc n¨ng xem tr­íc ngo¹i h×nh trang bÞ.<bclr>\n\n<sex>muèn kiÓm tra lo¹i trang bÞ nµo<pic=44><color>")
 end
 
 function Ask_Feature_StartId(nId)
     SetTaskTemp(168, nId)
-    Msg2Player("Xem tr­íc ngo¹i h×nh <color=yellow>" .. tbNgoaiTrang[nId])
+    Msg2Player("Xem tr­íc ngo¹i h×nh <color=yellow>" .. tbMonPhai.tbNgoaiTrang[nId])
     g_AskClientNumberEx(1, 9999, "Start ID", {SetTaskTemp, {169}})
 end
 
@@ -358,13 +352,10 @@ end
 
 function nhanKhoangThach(nSeries)
     if not nSeries then
-        local tbOpt = { --
-        {"HÖ Kim", nhanKhoangThach, {0}}, --
-        {"HÖ Méc", nhanKhoangThach, {1}}, --
-        {"HÖ Thuû", nhanKhoangThach, {2}}, --
-        {"HÖ Ho¶", nhanKhoangThach, {3}}, --
-        {"HÖ Thæ", nhanKhoangThach, {4}} --
-        }
+        local tbOpt = {} --
+        for i = 0, getn(tbMonPhai.tbSeries) do
+            tinsert(tbOpt, {tbMonPhai.tbSeries[i][1], nhanKhoangThach, {i}})
+        end      
         tbDialog:Show(tbOpt, NguyenLieu_Dialog, "Mêi <sex>chän ngò hµnh cho Kho¸ng Th¹ch<pic=46><color>")
     else
         for i = 149, 154 do

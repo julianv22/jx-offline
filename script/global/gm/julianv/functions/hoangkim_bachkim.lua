@@ -1,7 +1,7 @@
 ------------------------------------------------------------------
 -- Copyright by Julian-V (https://www.youtube.com/julianv)
 ----------------------------VÚ kh› BKMP---------------------------
-function VKHK_Dialog(nType)    
+function VKHK_Dialog(nType)
     local tbOpt = {}
     if nType == 1 then
         for id, szMonPhai in tbMonPhai.tbFacName do
@@ -40,7 +40,7 @@ function getWeapon(nType, id)
 end
 
 function SetHKMP_Dialog(nItemId)
-    local nFacID = tbMonPhai.tbPinyn[GetFaction()]
+    local nFacID = tbMonPhai.tbPinyn[GetFaction()][1]
     if not nItemId then
         local tbOpt = {}
         for id, wp in tbMonPhai.tbGoldEquip[nFacID] do

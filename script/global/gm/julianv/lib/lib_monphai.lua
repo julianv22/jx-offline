@@ -2,7 +2,7 @@
 -- Copyright by Julian-V (https://www.youtube.com/julianv)
 ----------------------------Vò khÝ BKMP---------------------------
 tbMonPhai = {}
-tbMonPhai.tbFacList = {
+tbMonPhai.tbFacList = { -- Ds mon phai
     TL = 1, -- ThiÕu L©m
     TV = 2, -- Thiªn V­¬ng
     NM = 3, -- Nga Mi
@@ -17,7 +17,7 @@ tbMonPhai.tbFacList = {
     VH = 12, -- Vâ Hån
     TD = 13 -- Tiªu Dao
 }
-tbMonPhai.tbFacInfo = {
+tbMonPhai.tbFacInfo = { -- Thong tin tong hop
     [tbMonPhai.tbFacList.TL] = {
         szPinyin = "shaolin",
         szName = "ThiÕu L©m",
@@ -195,14 +195,44 @@ tbMonPhai.tbFacInfo = {
         tbPlaWeapon = {{"Anh Hµo Chi Di T¾c CÇm", 8753}, {"Anh Hµo Chi Hoa Èn KiÕm", 8763}}
     }
 }
+tbMonPhai.tbMisc = { -- Ngu hanh - ngoai trang - pk ...
+    [0] = {
+        szNgoaiTrang = "NPC",
+        tbSeries = {"Kim", "yellow"},
+        tbPK_Status = {"LuyÖn c«ng (Tr¾ng)", "white"}
+    },
+    [1] = {
+        szNgoaiTrang = "Mò",
+        tbSeries = {"Méc", "green"},
+        tbPK_Status = {"ChÝnh Ph¸i (Vµng)", "orange"}
+    },
+    [2] = {
+        szNgoaiTrang = "¸o",
+        tbSeries = {"Thuû", "blue"},
+        tbPK_Status = {"Tµ Ph¸i (TÝm)", "pink"}
+    },
+    [3] = {
+        szNgoaiTrang = "Vò khÝ",
+        tbSeries = {"Ho¶", "red"},
+        tbPK_Status = {"Trung LËp (Xanh)", "green"}
+    },
+    [4] = {
+        szNgoaiTrang = "Ngùa",
+        tbSeries = {"Thæ", "orange"},
+        tbPK_Status = {"S¸t Thñ (§á)", "red"}
+    }
+}
 
-function tbMonPhai:Define()
+function tbMonPhai:Define() -- Dinh nghia table
     self.tbFacName = {} -- Ten MP
     self.tbPlaWeapon = {} -- VK Bach Kim
     self.tbGoldWeapon = {} -- VK Hoang Kim
     self.tbGoldEquip = {} -- Trang bi Hoang Kim
     self.tbPinyn = {} -- Ten Pinyn
     self.tbMasks = {} -- Mat na
+    self.tbSeries = {} -- Ngu hanh
+    self.tbPK_Status = {} -- Trang thai PK
+    self.tbNgoaiTrang = {} -- Ngoai trang trang bi
     -- self.tbShortName = {} -- {Ten viet tat, Ten Pinyn}
     self.tbPrivateEquip = {} -- Trang bi Hoang Kim an 
     for id, tbInfo in self.tbFacInfo do
@@ -211,8 +241,13 @@ function tbMonPhai:Define()
         self.tbGoldWeapon[id] = tbInfo.tbGoldWeapon
         self.tbGoldEquip[id] = tbInfo.tbGoldEquip
         self.tbPrivateEquip[id] = tbInfo.tbPrivateEquip
-        self.tbPinyn[tbInfo.szPinyin] = id
+        self.tbPinyn[tbInfo.szPinyin] = {id, tbInfo.szName}
         self.tbMasks[id] = tbInfo.tbMasks
+    end
+    for id, tbInfo in tbMonPhai.tbMisc do
+        self.tbSeries[id] = tbInfo.tbSeries
+        self.tbPK_Status[id] = tbInfo.tbPK_Status
+        self.tbNgoaiTrang[id] = tbInfo.szNgoaiTrang
     end
     -- for key, id in self.tbFacList do
     --     self.tbShortName[id] = {key, self.tbFacInfo[id].szPinyin}

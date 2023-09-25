@@ -42,7 +42,7 @@ end
 
 function JDialog:ChangeTitle() -- Reset tieu de Dialog ve mac dinh
     local nW, nX, nY = GetWorldPos()
-    local szFactionName = GetFaction() == "" and "Ch­a gia nhËp" or tbMonPhai.tbPinyn[GetFaction()][2]
+    local szFactionName = GetFaction() == "" and "T¸n Nh©n" or tbMonPhai.tbPinyn[GetFaction()][2]
     local nOnline, szAccount, szName, nTransLifeCount = GetPlayerCount(), GetAccount(), GetName(),
         ST_GetTransLifeCount()
     local szCurCamp = format("<color=%s>%s<color>", tbMonPhai.tbPK_Status[GetCamp()][2],

@@ -24,7 +24,7 @@ Tải bản release mới nhất [![(Download ZIP)](https://badgen.net/badge/Dow
 
 Các file và thư mục này chỉ bao gồm những chỉnh sửa nhỏ không đáng kể và không làm thay đổi trải nghiệm.
 
-[Add [Lệnh bài cẩm nang AIO]](https://github.com/julianv22/jx-offline#add-l%E1%BB%87nh-b%C3%A0i-c%E1%BA%A9m-nang-aio-v%C3%A0o-magicscript) theo hướng dẫn bên dưới.
+[Add [Cẩm nang AIO]](https://github.com/julianv22/jx-offline#add-l%E1%BB%87nh-b%C3%A0i-c%E1%BA%A9m-nang-aio-v%C3%A0o-magicscript) theo hướng dẫn bên dưới.
 
 Reset server và trải nghiệm.
 
@@ -35,7 +35,7 @@ Reset server và trải nghiệm.
 [![Example 3](https://github.com/julianv22/jx-offline/blob/main/docs/ex3.png)](https://github.com/julianv22/jx-offline#demo) 
 [![Example 4](https://github.com/julianv22/jx-offline/blob/main/docs/ex4.png)](https://github.com/julianv22/jx-offline#demo)
 
-# Add [Lệnh bài cẩm nang AIO] vào magicscript
+# Add [Cẩm nang AIO] vào magicscript
 
 Add dòng này vào cuối file **magicscript.txt**
 
@@ -48,7 +48,7 @@ Add dòng này vào cuối file **magicscript.txt**
 CÈm nang AIO	6	1	5128	\spr\item\longmenbiaoju\»¤ïÚÁî.spr	341	1	1	CÈm nang tÊt c¶ trong mét. Writen by <bclr=blue>Julian-V<bclr>		0	1	0	\script\global\gm\julianv\main.lua	0	1	1	0	1		0	0	0	0	0	0	0	0	0	0
 ```
 
-[![Note](https://badgen.net/badge/color/L%C6%B0u%20%C3%BD/red?label=)](https://github.com/julianv22/jx-offline#add-l%E1%BB%87nh-b%C3%A0i-c%E1%BA%A9m-nang-aio-v%C3%A0o-magicscript) Item Id của lệnh bài là: ***{6,	1,	5128}*** có thể thay đổi tuỳ theo magicscript.txt của bạn.
+[![Note](https://badgen.net/badge/color/L%C6%B0u%20%C3%BD/red?label=)](https://github.com/julianv22/jx-offline#add-c%E1%BA%A9m-nang-aio-v%C3%A0o-magicscript) Item Id của lệnh bài là: ***{6,	1,	5128}*** có thể thay đổi tuỳ theo magicscript.txt của bạn.
 
 # Tài liệu
 

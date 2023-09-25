@@ -14,6 +14,11 @@ Reset server và trải nghiệm.
 
 Các file và thư mục này chỉ bao gồm những chỉnh sửa nhỏ không đáng kể và không làm thay đổi trải nghiệm.
 
+[![Example 1](https://github.com/julianv22/jx-offline/blob/main/docs/ex1.png)](#) 
+[![Example 2](https://github.com/julianv22/jx-offline/blob/main/docs/ex2.png)](#) 
+[![Example 3](https://github.com/julianv22/jx-offline/blob/main/docs/ex3.png)](#) 
+[![Example 4](https://github.com/julianv22/jx-offline/blob/main/docs/ex4.png)](#)
+
 # Lệnh bài cẩm nang AIO:
 
 Add dòng này vào cuối file **magicscript.txt**

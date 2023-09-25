@@ -1,4 +1,4 @@
-Name	ItemGenre	DetailType	SPR	¶ÔÓ¦Îï¼şË÷Òı	¿í¶È	¸ß¶È	Desc	ParticularType	Stack
+Name	ItemGenre	DetailType	SPR	Corresponding object index	width	high	Desc	ParticularType	Stack
 Thóy Vò tr©m	4	0	\spr\item\questkey\taskobj001.spr	41	1	1	VËt phÈm nhiÖm vô  	0	0
 §¹i M¹n ®µ la hoa	4	1	\spr\item\questkey\taskobj002.spr	41	1	1	VËt phÈm nhiÖm vô  	0	0
 C¸ Ng©n TuyÕt	4	2	\spr\item\questkey\taskobj003.spr	41	1	1	VËt phÈm nhiÖm vô  	0	0

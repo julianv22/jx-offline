@@ -1,4 +1,4 @@
-Ãû³Æ	ItemGenre	DetailType	ParticularType	¶¯»­ÎÄ¼şÃû	¶ÔÓ¦Îï¼şË÷Òı	¿í¶È	¸ß¶È	ËµÃ÷ÎÄ×Ö	ÎåĞĞÊôĞÔ	¼Û¸ñ	µÈ¼¶	ÊÇ·ñµş·Å	Ò©Æ·ÊôĞÔ1	ÊôĞÔ1ÊıÖµ	ÊôĞÔ1Ê±¼ä(ÓÎÏ·Ñ­»·Êı£©	Ò©Æ·ÊôĞÔ2	ÊôĞÔ2ÊıÖµ	ÊôĞÔ2Ê±¼ä	Ò©Æ·ÊôĞÔ3	ÊôĞÔ3ÊıÖµ	ÊôĞÔ3Ê±¼ä	Ò©Æ·ÊôĞÔ4	ÊôĞÔ4ÊıÖµ	ÊôĞÔ4Ê±¼ä	Ò©Æ·ÊôĞÔ5	ÊôĞÔ5ÊıÖµ	ÊôĞÔ5Ê±¼ä
+name	ItemGenre	DetailType	ParticularType	Animation file name	Corresponding object index	width	high	instructions	Five elements attributes	price	grade	Whether to stack	Drug properties 1	Attribute 1 value	Attribute 1 time (number of game loops)	Drug properties 2	Attribute 2 value	Property 2 time	Drug properties 3	Attribute 3 value	Attribute 3 time	Drug properties 4	Attribute 4 value	Property 4 time	Drug properties 5	Attribute 5 value	Attribute 5 time
 Kim S¸ng D­îc (tiÓu) 	1	0	0	\spr\item\medecine\obj-potion01.spr	18	1	1	Håi phôc chót İt khİ huyÕt		0	1	0	153	10	100												
 Kim S¸ng D­îc (trung) 	1	0	0	\spr\item\medecine\obj-potion01.spr	18	1	1	Håi phôc khİ huyÕt t­¬ng ®èi nhanh.		0	2	0	153	25	100												
 Kim S¸ng D­îc (®¹i) 	1	0	0	\spr\item\medecine\obj-potion02.spr	307	1	1	Håi phôc khİ huyÕt cùc nhanh.		0	3	0	153	25	200												

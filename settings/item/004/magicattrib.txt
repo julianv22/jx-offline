@@ -1,4 +1,4 @@
-Ç°ºó×ºÃû³Æ	ÊÇ·ñÇ°×º	ÎåĞĞÊôĞÔÒªÇó	µÈ¼¶ÒªÇó	ÊôĞÔµ÷ÕûÀà±ğ	²ÎÊı1×îĞ¡Öµ	²ÎÊı1×î´óÖµ	²ÎÊı2×îĞ¡Öµ	²ÎÊı2×î´óÖµ	²ÎÊı3×îĞ¡Öµ	²ÎÊı3×î´óÖµ	Ğ§¹ûËµÃ÷	½ü³ÌÎäÆ÷	°µÆ÷	¿ø¼×	½äÖ¸	ÏîÁ´	Ñ¥×Ó	Ñü´ø	Í·¿ø	»¤Íó	Ñü×¹	Âí
+suffix name	Whether to prefix	Five Elements Attribute Requirements	Level requirements	Property adjustment category	Parameter 1 minimum value	Parameter 1 maximum value	Parameter 2 minimum value	Parameter 2 maximum value	Parameter 3 minimum value	Parameter 3 maximum value	Effect description	close range weapons	hidden weapon	armor	ring	necklace	boots	belt	helmet	wrist braces	waist pendant	horse
 Thanh §ång 	1		1	126	5	10	-1	-1	6	6	T¨ng hiÖu qu¶ s¸t th­¬ng	100000	100000	0	0	0	0	0	0	0	0	0
 Xİch §ång 	1		2	126	10	20	-1	-1	6	6	T¨ng hiÖu qu¶ s¸t th­¬ng	100000	100000	0	0	0	0	0	0	0	0	0
 Sinh ThiÕt	1		3	126	20	30	-1	-1	6	6	T¨ng hiÖu qu¶ s¸t th­¬ng	100000	100000	0	0	0	0	0	0	0	0	0

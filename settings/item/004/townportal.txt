@@ -1,2 +1,2 @@
-Ãû³Æ	ItemGenre	¶¯»­ÎÄ¼þÃû	¶ÔÓ¦Îï¼þË÷Òý	¿í¶È	¸ß¶È	¼Û¸ñ	ËµÃ÷ÎÄ×Ö
-Thæ ®Þa phï 	5	\spr\item\special\Obj_TownPortal.spr	38	1	1	500	Mét lo¹i bïa ph¸p, gióp b¹n mau chãng ®Õn n¬i muèn ®Õn. 
+name	ItemGenre	Animation file name	Corresponding object index	width	high	price	instructions
+Thæ ®Þa phï 	5	\spr\item\special\Obj_TownPortal.spr	38	1	1	500	"Mét lo¹i bïa ph¸p, gióp b¹n mau chãng ®Õn n¬i muèn ®Õn. "

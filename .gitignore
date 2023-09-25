@@ -1,6 +1,7 @@
 # Ignore All
 *
 #Exclude List
+!.github
 !.gitignore
 !.VnSourceCodePro-Regular.ttf
 !engine.dll

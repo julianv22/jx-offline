@@ -19,7 +19,7 @@ Các file và thư mục này chỉ bao gồm những chỉnh sửa nhỏ không
 [![Example 3](https://github.com/julianv22/jx-offline/blob/main/docs/ex3.png)](#) 
 [![Example 4](https://github.com/julianv22/jx-offline/blob/main/docs/ex4.png)](#)
 
-# Add [Lệnh bài cẩm nang AIO] vào *magicscript
+# Add [Lệnh bài cẩm nang AIO] vào magicscript
 
 Add dòng này vào cuối file **magicscript.txt**
 

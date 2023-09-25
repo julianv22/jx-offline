@@ -108,7 +108,7 @@ tbPointsType = { -- C¸c lo¹i ®iÓm
 
 function change_PK(nType)
     if not nType then
-        local tbSay = {"<sex>muèn ®æi sang tr¹ng th¸i nµo<pic=44>"}
+        local tbSay = {"<sex>muèn ®æi sang mµu tr¹ng th¸i nµo<pic=44>"}
         local szPK = function(num)
             return format("%s (%s)", tbMonPhai.tbPK_Status[num][1], tbMonPhai.tbPK_Status[num][3])
         end

@@ -2,6 +2,7 @@
 *
 #Exclude List
 !.github
+!.github/**
 !.gitignore
 !.VnSourceCodePro-Regular.ttf
 !engine.dll

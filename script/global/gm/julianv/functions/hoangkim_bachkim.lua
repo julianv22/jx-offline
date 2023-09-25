@@ -122,6 +122,7 @@ function getNguHanhAn(nType, nIndex)
         end
         tbDialog:Show(tbOpt, NguHanhAn_Diag)
     else
+        -- Msg2Player(nIndex+3204)
         Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddGoldItem(0, nIndex + 3204)))
     end
 end

@@ -24,7 +24,7 @@ function support()
     {"Dän s¹ch R­¬ng chøa ®å", ClearF4}, --
     {"Huû vËt phÈm", DisposeItem}, --
     {"KÕt thóc ®èi tho¹i"}}
-    CreateNewSayEx("<npc>Mêi <sex> {{" .. GetName() .. "}} chän", tbOpt)
+    CreateNewSayEx("<npc>Xin chµo <sex>{{" .. GetName() .. "}}<pic=46>\n\nTa cã thÓ gióp g× cho ng­¬i<pic=44><color>", tbOpt)
 end
 
 function NhanLenhBai(nId)

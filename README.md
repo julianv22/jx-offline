@@ -8,11 +8,11 @@
 
 ### Yêu cầu cần thiết:
 
-Đã cài đặt jx-offline của [PYTA GAMING](https://www.youtube.com/watch?v=do5mFT4M3wc) phiên bản 8.2
+Đã cài đặt jx-offline của [PYTA GAMING](https://www.youtube.com/watch?v=do5mFT4M3wc) phiên bản 8.2.
 
 ### Cần lưu ý:
 
-Tương thích tốt nhất với phiên bản 8, những phiên bản khác có thể có những thay đổi trong settings dẫn đến kết quả sẽ khác khi sử dụng để lấy các item.
+Tương thích tốt nhất với phiên bản 8, những phiên bản khác có thể có những thay đổi trong **settings** dẫn đến kết quả sẽ khác khi sử dụng để lấy các item.
 
 Đây chỉ là phần code nhỏ của một vài tính năng chứ không phải **full code**.
 
@@ -20,11 +20,13 @@ Tương thích tốt nhất với phiên bản 8, những phiên bản khác có
 
 Tải bản release mới nhất [![(Download ZIP)](https://badgen.net/badge/Download/ZIP?icon=bitcoin-lightning)](https://github.com/julianv22/jx-offline/archive/refs/heads/main.zip) về và giải nén. Sau đó copy vào **client** và **server**.
 
-Reset server và trải nghiệm.
-
 [![Note](https://badgen.net/badge/color/L%C6%B0u%20%C3%BD/red?label=)](#) Ngoài thư mục ***script*** và ***spr*** ra thì các file và thư mục khác có thể không sao chép cũng được.
 
 Các file và thư mục này chỉ bao gồm những chỉnh sửa nhỏ không đáng kể và không làm thay đổi trải nghiệm.
+
+[Add [Lệnh bài cẩm nang AIO]](https://github.com/julianv22/jx-offline#add-l%E1%BB%87nh-b%C3%A0i-c%E1%BA%A9m-nang-aio-v%C3%A0o-magicscript) theo hướng dẫn bên dưới.
+
+Reset server và trải nghiệm.
 
 ### Demo:
 

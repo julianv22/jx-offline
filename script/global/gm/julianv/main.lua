@@ -80,7 +80,7 @@ end
 ------------------------Trang Trang bﬁ - VÀt ph»m------------------------
 Include("\\script\\global\\gm\\julianv\\functions\\trangbi_vatpham.lua")
 function TrangBi_VatPham()
-    dofile("script/global/gm/julianv/functions/trangbi_vatpham.lua")    
+    dofile("script/global/gm/julianv/functions/trangbi_vatpham.lua")
     local tbOpt = { --    
     {"NhÀn trang bﬁ", NhanTrangBi}, --    
     {"NhÀn vÀt ph»m", NhanVatPham}, --    

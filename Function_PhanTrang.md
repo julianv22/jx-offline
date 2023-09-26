@@ -86,7 +86,7 @@ function PhanTrang( table, nOfPage )
 
         local nMod = mod(nCount, nOfPage) -- Chia lấy phần dư nMod = 5
 
-        if nMod > 0 then -- Nếu phần dư > 0 (trong 1 vài trường hợp thì nCount là chẵn nên phải kiểm soát phần này)
+        if nMod > 0 then -- Nếu phần dư > 0 (trong 1 vài trường hợp thì nCount chia hết cho nOfPage)
 
             local tbTemp = {} -- tạo 1 bảng tạm khác
 

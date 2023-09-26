@@ -225,3 +225,9 @@ function Call_Boss( tbBoss, nIndex )
 
 end
 ```
+
+# Lời cuối
+
+Bài toán này không phải chỉ có thể giải quyết vấn đề với Boss Hoàng Kim, tương tự với các loại Ngựa cũng vậy. Số lượng ngựa thường trong game phải trên 80 con, còn ngựa cao cấp và ngựa Kiếm Thế nữa.
+
+Ngoài ra thì nhiều vật phẩm, trang bị khác cũng có số lượng nhiều. Nên bài toán này có thể giúp đỡ ta phần nào giải quyết được các vấn đề này, vì số lượng dòng trong Dialog CreateNewSayEx chỉ có tối đa 16 dòng mà thôi.

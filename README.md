@@ -31,7 +31,6 @@ Tương thích tốt nhất với phiên bản 8, những phiên bản khác có
 ### Demo:
 
 [![Example 1](https://github.com/julianv22/jx-offline/blob/main/docs/ex1.png)](https://github.com/julianv22/jx-offline#demo) 
-[![Example 2](https://github.com/julianv22/jx-offline/blob/main/docs/ex2.png)](https://github.com/julianv22/jx-offline#demo) 
 [![Example 3](https://github.com/julianv22/jx-offline/blob/main/docs/ex3.png)](https://github.com/julianv22/jx-offline#demo) 
 [![Example 4](https://github.com/julianv22/jx-offline/blob/main/docs/ex4.png)](https://github.com/julianv22/jx-offline#demo)
 

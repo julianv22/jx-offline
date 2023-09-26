@@ -15,43 +15,48 @@ Include("\\script\\global\\gm\\julianv\\lib\\lib_boss.lua")
 -----------------------------DIALOG-----------------------------
 
 JulianV = JDialog
+
 function main()
     dofile("script/global/gm/julianv/main.lua")
     dofile("script/global/gm/julianv/lib/lib_vatpham.lua")
     dofile("script/global/gm/julianv/lib/lib_monphai.lua")
     dofile("script/global/gm/julianv/lib/lib_boss.lua")
+    JulianV:Main()
+    return 1
+end
+
+function JulianV:Main()
     local tbOpt = {
         { "Qu¶n lý Server", Server_Dialog }, --
         { "Qu¶n lý Nh©n vËt", Player_Dialog }, --        
         { "Trang bÞ - VËt phÈm", TrangBi_VatPham }, --                
-        { "Admin Control Panel", Admin_Dialog }, --    
-        { "Tools", ChucNangKhac }, --
+        { "Admin Control Panel", JulianV.Admin_Dialog }, --    
+        { "Tools", JulianV.ChucNangKhac }, --
     }
     JulianV:ChangeTitle()
     JulianV:Show(tbOpt)
-    return 1
 end
 ------------------------Admin------------------------
-function Admin_Dialog()
+function JulianV:Admin_Dialog()
     local tbOpt = {
-        { "Check Emoticons", CheckEmo }, --    
+        { "Check Emoticons", JulianV.CheckEmo }, --    
     }
     JulianV:Show(tbOpt, main)
 end
 
-function CheckEmo( nPic )
+function JulianV.CheckEmo( nPic )
     if not nPic then
-        AskClientForNumber("CheckEmo", 1, 999, "Start ID")
+        AskClientForNumber("JulianV.CheckEmo", 1, 999, "Start ID")
     else
         local szPic = ""
         for i = nPic, nPic + 7 do szPic = szPic .. "Pic " .. i .. ": <pic=" .. i .. ">\n" end
         local tbSay = {
             szPic, --
             "                      Rêi khái/return", --
-            format("                      Next/#CheckEmo(%d)", nPic + 8),
+            format("                      Next/#JulianV.CheckEmo(%d)", nPic + 8),
         }
         if nPic > 8 then
-            tinsert(tbSay, format("                      Previous/#CheckEmo(%d)", nPic - 8))
+            tinsert(tbSay, format("                      Previous/#JulianV.CheckEmo(%d)", nPic - 8))
         end
         CreateTaskSay(tbSay)
     end
@@ -103,24 +108,24 @@ function TrangBi_VatPham()
     JulianV:Show(tbOpt, main)
 end
 ------------------------Chøc n¨ng kh¸c------------------------
-function ChucNangKhac()
+function JulianV:ChucNangKhac()
     local tbOpt = {
         { "Më Shop", Sale, { 142 } }, --        
-        { "§i tíi B·i LuyÖn C«ng", goto_BLC }, --
-        { "Trë vÒ Ba L¨ng HuyÖn", goto_BLH }, --  
-        { "Söa lçi ThÇn Hµnh Phï", fix_shenxingfu }, --  
+        { "§i tíi B·i LuyÖn C«ng", JulianV.goto_BLC }, --
+        { "Trë vÒ Ba L¨ng HuyÖn", JulianV.goto_BLH }, --  
+        { "Söa lçi ThÇn Hµnh Phï", JulianV.fix_shenxingfu }, --  
         { "KickOutSelf", KickOutSelf },
     }
     JulianV:Show(tbOpt, main)
 end
 
-function fix_shenxingfu()
+function JulianV:fix_shenxingfu()
     DisabledUseTownP(0)
     Talk(1, "",
         "Tr¹ng th¸i sö dông thæ ®Þa phï vµ thÇn hµnh phï cña quý nh©n sÜ ®· trë vÒ ban ®Çu<pic=46>")
 end
 
-function goto_BLH()
+function JulianV:goto_BLH()
     w, x, y = GetWorldPos()
     if (w ~= 53) then
         SetFightState(0)
@@ -131,7 +136,7 @@ function goto_BLH()
     Msg2Player("Di chuyÓn vÒ <color=yellow>Ba L¨ng HuyÖn<color> thµnh c«ng!");
 end
 
-function goto_BLC()
+function JulianV:goto_BLC()
     NewWorld(996, 1581, 3197)
     SetFightState(1)
 end

@@ -38,8 +38,6 @@ Include("\\script\\missions\\maze\\addstatdata.lua")
 -- Include("\\script\\update_feature\\thuonghoi\\add_npc_nvth.lua")--Nhiem Vu Thuong Hoi
 -- Include("\\script\\update_feature\\codetanthu\\vlmc_bossdeath.lua")
 --------------------------------------------------------------------------------------------------------------
-Include("\\script\\global\\npc\\add_boss_bailuyencong.lua") -- B穒 luy謓 c玭g
---------------------------------------------------------------------------------------------------------------
 if (GetProductRegion() == "vn") then
     -- 2006 中秋节活动头文件
     Include("\\script\\event\\mid_autumn06\\autoexe.lua"); -- Chien Tam Ton Gia
@@ -146,7 +144,6 @@ function main()
     add_npc_thanh()
     add_npc_hoason()
     add_new_npc_julianv()
-    add_boss_bailuyencong(tbBoss)
     -- add_npc_vuhon()
     local szFile = "\\script\\event\\great_night\\great_night_head.lua"
     DynamicExecute(szFile, "OnGreatNightServerStart")

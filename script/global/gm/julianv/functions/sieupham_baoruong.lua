@@ -5,22 +5,22 @@ tbItem = {}
 tbItem.Ds = {
     Nhan = 1,
     DayChuyen = 2,
-    NgocBoi = 3
-}
+    NgocBoi = 3,
+ }
 
 tbItem.tbItemInfo = {
     [tbItem.Ds.Nhan] = {
         szName = "Nh…n",
-        tbList = {4134, 4135}
-    },
+        tbList = { 4134, 4135 },
+     },
     [tbItem.Ds.DayChuyen] = {
         szName = "D©y Chuy“n",
-        tbList = {4436}
-    },
+        tbList = { 4436 },
+     },
     [tbItem.Ds.NgocBoi] = {
         szName = "Ng‰c BÈi",
-        tbList = {4481}
-    }
+        tbList = { 4481 },
+     },
 }
 
 function main()

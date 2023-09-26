@@ -7,45 +7,48 @@ Include("\\script\\global\\gm\\lib_data_table.lua") -- data table ngùa & trang b
 
 function NhanTrangBi()
     dofile("script/global/gm/julianv/functions/hoangkim_bachkim.lua")
-    local tbOpt = { --    
-    {"NhËn Ên - Phi phong - Trang søc", TrangBiKhac_Dialog}, --
-    {"Trang bÞ Hoµng Kim - B¹ch Kim cao cÊp", chose_type_goldquip}, --   
-    {"NhËn Set Hoµng Kim M«n Ph¸i", SetHKMP_Dialog}, --    
-    {"NhËn trang bÞ TrÊn Bang Chi B¶o", TrangBi_HKMP_An}, --
-    {"Vò khÝ B¹ch Kim m«n ph¸i", VKHK_Dialog, {1}}, --
-    {"Vò khÝ Hoµng Kim M«n Ph¸i", VKHK_Dialog, {2}}, --
-    {"NhËn An Bang, Kim Phong, §Þnh Quèc, Hång ¶nh", HoangKimCui}, --
-    {"NhËn ®å xanh"}, --
-    {"NhËn ®å tÝm", QualityItem_Dialog}} --
+    local tbOpt = {
+        { "NhËn Ên - Phi phong - Trang søc", TrangBiKhac_Dialog }, --
+        { "Trang bÞ Hoµng Kim - B¹ch Kim cao cÊp", chose_type_goldquip }, --   
+        { "NhËn Set Hoµng Kim M«n Ph¸i", SetHKMP_Dialog }, --    
+        { "NhËn trang bÞ TrÊn Bang Chi B¶o", TrangBi_HKMP_An }, --
+        { "Vò khÝ B¹ch Kim m«n ph¸i", VKHK_Dialog, { 1 } }, --
+        { "Vò khÝ Hoµng Kim M«n Ph¸i", VKHK_Dialog, { 2 } }, --
+        { "NhËn An Bang, Kim Phong, §Þnh Quèc, Hång ¶nh", HoangKimCui }, --
+        { "NhËn ®å xanh", nhanDoXanh_Dialog }, --
+        { "NhËn ®å tÝm", QualityItem_Dialog },
+    }
     tbDialog:Show(tbOpt, TrangBi_VatPham)
 end
 
 function NhanVatPham()
-    local tbOpt = { --    
-    {"LÊy ngùa", Horses_Dialog}, --
-    {"NhËn mÆt n¹ ChiÕn tr­êng", getMasks}, --
-    {"VËt phÈm trïng sinh", TransLifeItem_Dialog}, --    
-    {"Nguyªn liÖu chÕ t¹o ®å tÝm", NguyenLieu_Dialog}, --
-    {"NhËn c¸c lo¹i vËt phÈm kh¸c", VatPhamKhac_Dialog} --
+    local tbOpt = {
+        { "LÊy ngùa", Horses_Dialog }, --
+        { "NhËn mÆt n¹ ChiÕn tr­êng", getMasks }, --
+        { "VËt phÈm trïng sinh", TransLifeItem_Dialog }, --    
+        { "Nguyªn liÖu chÕ t¹o ®å tÝm", NguyenLieu_Dialog }, --
+        { "NhËn c¸c lo¹i vËt phÈm kh¸c", VatPhamKhac_Dialog }, --
     }
     tbDialog:Show(tbOpt, TrangBi_VatPham)
 end
 
 function ChangeFeature_Dialog()
-    local tbOpt = { --
-    {"Xem tr­íc ngo¹i h×nh", Feature_Preview}, --
-    {"KiÓm tra ID ngo¹i trang", Check_Feature}, --
-    {"§æi ngo¹i h×nh trang bÞ theo ID", Change_Equip_Feature}, --
-    {"§æi ngo¹i h×nh vò khÝ (Sö dông menu)", Change_Weapon_Feature}, --
-    {"Phôc håi ngo¹i h×nh gèc", Restore_Feature}}
+    local tbOpt = {
+        { "Xem tr­íc ngo¹i h×nh", Feature_Preview }, --
+        { "KiÓm tra ID ngo¹i trang", Check_Feature }, --
+        { "§æi ngo¹i h×nh trang bÞ theo ID", Change_Equip_Feature }, --
+        { "§æi ngo¹i h×nh vò khÝ (Sö dông menu)", Change_Weapon_Feature }, --
+        { "Phôc håi ngo¹i h×nh gèc", Restore_Feature },
+    }
     tbDialog:Show(tbOpt, TrangBi_VatPham)
 end
 
 function TrangBiKhac_Dialog()
-    local tbOpt = { --
-    {"Ngò hµnh Ên", NguHanhAn_Diag}, --
-    {"Phi Phong", getPhiPhong}, --
-    {"Trang Søc", getTrangSuc}}
+    local tbOpt = {
+        { "Ngò hµnh Ên", NguHanhAn_Diag }, --
+        { "Phi Phong", getPhiPhong }, --
+        { "Trang Søc", getTrangSuc },
+    }
     tbDialog:Show(tbOpt, NhanTrangBi)
 end
 
@@ -53,51 +56,50 @@ end
 function Horses_Dialog()
     local tbOpt = {}
     for i = 1, getn(tbNameResHorse) do
-        tinsert(tbOpt, {tbNameResHorse[i].szName, Chose_Horses, {i}})
+        tinsert(tbOpt, { tbNameResHorse[i].szName, Chose_Horses, { i } })
     end
     tbDialog:Show(tbOpt, NhanVatPham)
 end
 
-function Chose_Horses(nHorseType, nPage)
+function Chose_Horses( nHorseType, nPage )
     local tbHorse = JDialog:PhanTrang(tbNameResHorse[nHorseType].szEquip, 10)
-    local tbHorseRes = function(table, num)
-        return {table[num][1] .. " [CÊp " .. table[num][3] .. "]", Add_Horses, {table[num][2], table[num][3]}}
+    local tbHorseRes = function( table, num )
+        return {
+            table[num][1] .. " [CÊp " .. table[num][3] .. "]", Add_Horses,
+            { table[num][2], table[num][3] },
+        }
     end
     local tbOpt = {}
     if not nPage or nPage == 1 then
-        for i = 1, 10 do
-            tinsert(tbOpt, tbHorseRes(tbHorse[1], i))
-        end
-        tinsert(tbOpt, {"Trang sau", Chose_Horses, {nHorseType, 2}})
+        for i = 1, 10 do tinsert(tbOpt, tbHorseRes(tbHorse[1], i)) end
+        tinsert(tbOpt, { "Trang sau", Chose_Horses, { nHorseType, 2 } })
     else
         local nCount = getn(tbHorse)
         if nPage < nCount then
-            for i = 1, 10 do
-                tinsert(tbOpt, tbHorseRes(tbHorse[nPage], i))
-            end
-            tinsert(tbOpt, {"Trang sau", Chose_Horses, {nHorseType, nPage + 1}})
+            for i = 1, 10 do tinsert(tbOpt, tbHorseRes(tbHorse[nPage], i)) end
+            tinsert(tbOpt, { "Trang sau", Chose_Horses, { nHorseType, nPage + 1 } })
         else
             for i = 1, getn(tbHorse[nCount]) do
                 tinsert(tbOpt, tbHorseRes(tbHorse[nCount], i))
             end
         end
         if nPage > 1 then
-            tinsert(tbOpt, {"Trang tr­íc", Chose_Horses, {nHorseType, nPage - 1}})
+            tinsert(tbOpt, { "Trang tr­íc", Chose_Horses, { nHorseType, nPage - 1 } })
         end
     end
     tbDialog:Show(tbOpt, nil,
         "<sex>h·y chän cho m×nh mét con chiÕn m· tèt ®Ó hµnh tÈu giang hå<pic=46><color>")
 end
 
-function Add_Horses(nId, nLevel)
+function Add_Horses( nId, nLevel )
     Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddItem(0, 10, nId, nLevel, 0, 0, 0)))
 end
-
+-------------------------Thay ®æi ngo¹i h×nh trang bÞ-------------------------
 function Feature_Preview()
     function Feature_Help()
         local szTitle =
             "<pic=139> <bclr=pink>Chøc n¨ng thay ®æi ngo¹i h×nh trang bÞ:<bclr>\n\n<pic=136> Chän kiÓu ngo¹i trang muèn xem tr­íc.\n<pic=135> NhËp ID b¾t ®Çu xem.\n<pic=136> Sau ®ã sö dông {{§¹i Hång Bao}} vµ {{TiÓu Hång Bao}} ®Ó xem ®i tíi hoÆc lïi l¹i.\n<pic=135><color> Sau khi chän ®­îc ngo¹i h×nh ­ng ý th× sö dông chøc n¨ng §æi ngo¹i h×nh trang bÞ theo ID ®Ó thay ®æi."
-        tbDialog:Show({{"Ta ®· hiÓu", Feature_Preview}}, nil, szTitle)
+        tbDialog:Show({ { "Ta ®· hiÓu", Feature_Preview } }, nil, szTitle)
     end
 
     if HaveCommonItem(6, 1, 13) < 1 then
@@ -107,25 +109,25 @@ function Feature_Preview()
         Msg2Player("Nh©n ®­îc <color=yellow>" .. GetItemName(AddItem(6, 1, 14, 0, 0, 0)))
     end
     local tbOpt = {}
-    tinsert(tbOpt, {"Xem h­íng dÉn", Feature_Help})
+    tinsert(tbOpt, { "Xem h­íng dÉn", Feature_Help })
     for i = 0, getn(tbMonPhai.tbNgoaiTrang) do
-        tinsert(tbOpt, {tbMonPhai.tbNgoaiTrang[i], Ask_Feature_StartId, {i}})
+        tinsert(tbOpt, { tbMonPhai.tbNgoaiTrang[i], Ask_Feature_StartId, { i } })
     end
     tbDialog:Show(tbOpt, ChangeFeature_Dialog,
         "<bclr=pink>Chøc n¨ng xem tr­íc ngo¹i h×nh trang bÞ.<bclr>\n\n<sex>muèn kiÓm tra lo¹i trang bÞ nµo<pic=44><color>")
 end
 
-function Ask_Feature_StartId(nId)
+function Ask_Feature_StartId( nId )
     SetTaskTemp(168, nId)
     Msg2Player("Xem tr­íc ngo¹i h×nh <color=yellow>" .. tbMonPhai.tbNgoaiTrang[nId])
-    g_AskClientNumberEx(1, 9999, "Start ID", {SetTaskTemp, {169}})
+    g_AskClientNumberEx(1, 9999, "Start ID", { SetTaskTemp, { 169 } })
 end
 
 function Check_Feature()
     local nHelm, nArmor, nWeapon, nHorse, nMaskNPC = GetPlayerFeature(PlayerIndex)
     Msg2Player(format(
-        "Helm: <color=yellow>%d<color>, Armor: <color=yellow>%d<color>, Weapon: <color=yellow>%d<color>, Horse <color=yellow>%d<color>, Mask: <color=yellow>%d",
-        nHelm, nArmor, nWeapon, nHorse, nMaskNPC))
+                   "Helm: <color=yellow>%d<color>, Armor: <color=yellow>%d<color>, Weapon: <color=yellow>%d<color>, Horse <color=yellow>%d<color>, Mask: <color=yellow>%d",
+                   nHelm, nArmor, nWeapon, nHorse, nMaskNPC))
 end
 
 function Change_Equip_Feature()
@@ -134,13 +136,13 @@ function Change_Equip_Feature()
         "Change_Equip_Feature_Confirm", "onCancel", 1);
 end
 
-function Change_Equip_Feature_Confirm(nCount)
+function Change_Equip_Feature_Confirm( nCount )
     if nCount > 1 then
         Talk(1, "", "Qu¸ nhiÒu trang bÞ, kh«ng thÓ xö lÝ")
         return
     elseif nCount == 1 then
         local nItemIndex = GetGiveItemUnit(1)
-        g_AskClientNumberEx(1, 9999, "NhËp ID muèn ®æi:", {SetItemNewFeature, {nItemIndex}})
+        g_AskClientNumberEx(1, 9999, "NhËp ID muèn ®æi:", { SetItemNewFeature, { nItemIndex } })
         -- SetItemNewFeature(nItemIndex, nNo)
     end
 end
@@ -151,13 +153,13 @@ function Change_Weapon_Feature()
         "Change_Weapon_Feature_Confirm", "onCancel", 1);
 end
 
-function Change_Weapon_Feature_Confirm(nCount)
+function Change_Weapon_Feature_Confirm( nCount )
     if nCount > 1 then
         Talk(1, "", "Qu¸ nhiÒu trang bÞ, kh«ng thÓ xö lÝ")
         return
     elseif nCount == 1 then
         local nItemIndex = GetGiveItemUnit(1)
-        g_AskClientNumberEx(1, 500, "NhËp ID muèn ®æi:", {SetItemNewFeature, {nItemIndex}})
+        g_AskClientNumberEx(1, 500, "NhËp ID muèn ®æi:", { SetItemNewFeature, { nItemIndex } })
         -- SetItemNewFeature(nItemIndex, nNo)
     end
 end
@@ -167,14 +169,14 @@ function Restore_Feature()
         "Restore_Feature_Confirm", "onCancel", 1);
 end
 
-function Restore_Feature_Confirm(nCount)
+function Restore_Feature_Confirm( nCount )
     for i = 1, nCount do
         local nItemIndex = GetGiveItemUnit(i)
         SetItemNewFeature(nItemIndex, -1)
     end
 end
 ------------------------C¸c lo¹i vËt phÈm------------------------
-function DisposeItem(nCount)
+function DisposeItem( nCount ) -- Huû vËt phÈm
     if not nCount then
         GiveItemUI("Hñy vËt phÈm",
             "§¹i hiÖp h·y cÈn träng trong viÖc hñy vËt phÈm, vËt phÈm ®· hñy kh«ng thÓ lÊy l¹i ®­îc!",
@@ -191,48 +193,49 @@ function DisposeItem(nCount)
     end
 end
 
-function getGoldItem(nItemIdx)
+function getGoldItem( nItemIdx ) -- nhËn trang bÞ HK
     if not nItemIdx then
-        g_AskClientNumberEx(1, 9999, "GoldItem ID", {getGoldItem})
+        g_AskClientNumberEx(1, 9999, "GoldItem ID", { getGoldItem })
     else
         Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddGoldItem(0, nItemIdx)))
     end
 end
 
-function ClearF4(bComfirm)
+function ClearF4( bComfirm ) -- Dän r­¬ng ®å
     if not bComfirm then
         CreateNewSayEx(SPRLINK ..
                            "<color=red><pic=115> L­u ý: <color>TÊt c¶ vËt phÈm vµ trang bÞ trong R­¬ng chøa ®å sÏ bÞ {{Xo¸ bá}} hoµn toµn vµ kh«ng thÓ phôc håi nh­ cò.\n\n<sex>cã ch¾c ch¾n muèn lµm vËy kh«ng<pic=44><color>", --
-            {{"X¸c nhËn", ClearF4, {1}}, --
-            {"§Ó ta suy nghÜ l¹i..."}})
+            {
+                { "X¸c nhËn", ClearF4, { 1 } }, --
+                { "§Ó ta suy nghÜ l¹i..." },
+            })
     else
         local tbItems = GetRoomItems(0);
         if (getn(tbItems) > 0) then
-            for i = 1, getn(tbItems) do
-                RemoveItemByIndex(tbItems[i], -1);
-            end
+            for i = 1, getn(tbItems) do RemoveItemByIndex(tbItems[i], -1); end
             AddItem(6, 1, 5128, 0, 0, 0)
         end
         Talk(1, "", "§· dän s¹ch r­¬ng")
     end
 end
 
-function getQuestkey(nItemId)
+function getQuestkey( nItemId ) -- nhËn questkey item
     if nItemId == 7 or not nItemId then
-        g_AskClientNumberEx(1, 9999, "Questkey ID", {getQuestkey})
+        g_AskClientNumberEx(1, 9999, "Questkey ID", { getQuestkey })
     else
         Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddEventItem(nItemId)))
     end
 end
 
-function getMagicItem(szItem)
+function getMagicItem( szItem ) -- nhËn magic item
     if not szItem then
-        g_AskClientStringEx("6,1,125,0,0,0", 1, 9000, "Item Code:", {getMagicItem})
+        g_AskClientStringEx("6,1,125,0,0,0", 1, 9000, "Item Code:", { getMagicItem })
     else
         local tbItem = lib:Split(szItem, ",")
         if getn(tbItem) == 6 then
-            local nClass, nType, nId, nLvl, nSerie, nLuck = tonumber(tbItem[1]), tonumber(tbItem[2]),
-                tonumber(tbItem[3]), tonumber(tbItem[4]), tonumber(tbItem[5]), tonumber(tbItem[6])
+            local nClass, nType, nId, nLvl, nSerie, nLuck = tonumber(tbItem[1]),
+                tonumber(tbItem[2]), tonumber(tbItem[3]), tonumber(tbItem[4]), tonumber(tbItem[5]),
+                tonumber(tbItem[6])
             local nItemIdx = AddItem(nClass, nType, nId, nLvl, nSerie, nLuck)
             Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(nItemIdx))
         else
@@ -241,77 +244,88 @@ function getMagicItem(szItem)
     end
 end
 
-function getMagicItemSll(nItemId, nCount)
+function getMagicItemSll( nItemId, nCount ) -- nhËn magic item theo sè l­îng
     if not nItemId then
-        g_AskClientNumberEx(1, 9999, "ParticularType ID", {getMagicItemSll})
+        g_AskClientNumberEx(1, 9999, "ParticularType ID", { getMagicItemSll })
     else
         if not nCount then
-            g_AskClientNumberEx(1, CalcFreeItemCellCount(), "Sè l­îng", {getMagicItemSll, {nItemId}})
+            g_AskClientNumberEx(1, CalcFreeItemCellCount(), "Sè l­îng",
+                { getMagicItemSll, { nItemId } })
         else
             local ItemIndex
-            for i = 1, nCount do
-                ItemIndex = AddItem(6, 1, nItemId, 0, 0, 0)
-            end
+            for i = 1, nCount do ItemIndex = AddItem(6, 1, nItemId, 0, 0, 0) end
             Msg2Player("NhËn ®­îc " .. nCount .. " <color=yellow>" .. GetItemName(ItemIndex))
         end
     end
 end
 
-function ExpandStorage()
+function ExpandStorage() -- Më réng r­¬ng
     OpenStoreBox(1)
     OpenStoreBox(2)
     OpenStoreBox(3)
     AddItem(6, 1, 1427, 90, 1, 0, 0)
 end
+---------------NhËn ®å xanh, ®å tÝm---------------
+-- function QualityItem_Dialog(bGoto)
+--     if not bGoto then
+--         CreateTaskSay({"H·y nhËn ®å tÝm t¹i <bclr=pink>NPC §å TÝm<bclr>\n\n" ..
+--             strfill_center("<color=yellow>Ba L¨ng HuyÖn<color>: <color=green>200/200<color>", 100) ..
+--             "\n<sex>cã muèn di chuyÓn tíi ®ã kh«ng?", --
+--         "H·y ®­a ta tíi ®ã!/#QualityItem_Dialog(1)", --
+--         "Ta sÏ quay l¹i sau.../return"})
+--     else
+--         Msg2Player("H·y ngåi yªn, chóng ta di chuyÓn tíi <color=yellow>Ba L¨ng HuyÖn")
+--         w, x, y = GetWorldPos()
+--         if (w ~= 53) then
+--             SetFightState(0)
+--             NewWorld(53, 1605, 3205)
+--         else
+--             SetPos(1605, 3205)
+--         end
+--     end
+-- end
+function QualityItem_Dialog( nSex ) -- då tÝm    
+    Include("\\script\\tagnewplayer\\qualityitem.lua")
+    local tbOpt = {}
 
-function QualityItem_Dialog(bGoto)
-    if not bGoto then
-        CreateTaskSay({"H·y nhËn ®å tÝm t¹i <bclr=pink>NPC §å TÝm<bclr>\n\n" ..
-            strfill_center("<color=yellow>Ba L¨ng HuyÖn<color>: <color=green>200/200<color>", 100) ..
-            "\n<sex>cã muèn di chuyÓn tíi ®ã kh«ng?", --
-        "H·y ®­a ta tíi ®ã!/#QualityItem_Dialog(1)", --
-        "Ta sÏ quay l¹i sau.../return"})
-    else
-        Msg2Player("H·y ngåi yªn, chóng ta di chuyÓn tíi <color=yellow>Ba L¨ng HuyÖn")
-        w, x, y = GetWorldPos()
-        if (w ~= 53) then
-            SetFightState(0)
-            NewWorld(53, 1605, 3205)
-        else
-            SetPos(1605, 3205)
-        end
-    end
+    tbDialog:Show(tbOpt, NhanTrangBi)
+end
+function nhanDoXanh_Dialog() -- ®å xanh
+    local tbOpt = {}
+    tbDialog:Show(tbOpt, NhanTrangBi)
 end
 ---------------VËt phÈm trïng sinh---------------
-tbTransLifeItems = { --
-{
-    szName = "<B¾c §Èu Tr­êng Sinh ThuËt - C¬ Së Thiªn>",
-    tbProp = {6, 1, 1390, 0, 0, 0},
-    tbParam = {60}
-}, {
-    szName = "<B¾c §Èu Tr­êng Sinh ThuËt - §¹i Thõa T©m Ph¸p>",
-    tbProp = {6, 1, 2974, 0, 0, 0},
-    tbParam = {60}
-}, {
-    szName = "B¾c §Èu TÈy Tñy §¬n",
-    tbProp = {6, 1, 30127, 0, 0, 0},
-    tbParam = {60}
-}, {
-    szName = "TÝch LÞch §¬n",
-    tbProp = {6, 1, 2973, 0, 0, 0}
-}}
+tbTransLifeItems = {
+    {
+        szName = "<B¾c §Èu Tr­êng Sinh ThuËt - C¬ Së Thiªn>",
+        tbProp = { 6, 1, 1390, 0, 0, 0 },
+        tbParam = { 60 },
+    }, {
+        szName = "<B¾c §Èu Tr­êng Sinh ThuËt - §¹i Thõa T©m Ph¸p>",
+        tbProp = { 6, 1, 2974, 0, 0, 0 },
+        tbParam = { 60 },
+    }, {
+        szName = "B¾c §Èu TÈy Tñy §¬n",
+        tbProp = { 6, 1, 30127, 0, 0, 0 },
+        tbParam = { 60 },
+     }, {
+        szName = "TÝch LÞch §¬n",
+        tbProp = { 6, 1, 2973, 0, 0, 0 },
+     },
+}
 
 function TransLifeItem_Dialog()
     local tbOpt = {}
     for i = 1, getn(tbTransLifeItems) do
-        tinsert(tbOpt, {tbTransLifeItems[i].szName, getTransLifeItem, {i}})
+        tinsert(tbOpt, { tbTransLifeItems[i].szName, getTransLifeItem, { i } })
     end
     tbDialog:Show(tbOpt, NhanVatPham)
 end
-function getTransLifeItem(nIndex, nCount)
+function getTransLifeItem( nIndex, nCount )
     local nMax = CalcFreeItemCellCount()
     if not nCount then
-        g_AskClientNumberEx(1, nIndex == 4 and 999 or nMax, "Sè l­îng", {getTransLifeItem, {nIndex}})
+        g_AskClientNumberEx(1, nIndex == 4 and 999 or nMax, "Sè l­îng",
+            { getTransLifeItem, { nIndex } })
     else
         if nIndex == 4 then
             for i = 1, nCount do
@@ -327,48 +341,47 @@ function getTransLifeItem(nIndex, nCount)
 end
 ------------------------Nguyªn liÖu chÕ t¹o ®å tÝm------------------------
 function NguyenLieu_Dialog()
-    local tbOpt = { --
-    {"HuyÒn Tinh", chonNguyenLieu, {1}}, --
-    {"Thuû Tinh", chonNguyenLieu, {2}}, --
-    {"Phóc Duyªn", chonNguyenLieu, {3}}, --
-    {"Kho¸ng Th¹ch", nhanKhoangThach}, --
-    {"M¶nh Thiªn Th¹ch", chonNguyenLieu, {0}} --
+    local tbOpt = {
+        { "HuyÒn Tinh", chonNguyenLieu, { 1 } }, --
+        { "Thuû Tinh", chonNguyenLieu, { 2 } }, --
+        { "Phóc Duyªn", chonNguyenLieu, { 3 } }, --
+        { "Kho¸ng Th¹ch", nhanKhoangThach }, --
+        { "M¶nh Thiªn Th¹ch", chonNguyenLieu, { 0 } }, --
     }
     tbDialog:Show(tbOpt, NhanVatPham)
 end
 
-function chonNguyenLieu(nType)
+function chonNguyenLieu( nType )
     if nType == 0 then
         local nItemIdx
-        for i = 1317, 1325 do
-            nItemIdx = AddEventItem(i)
-        end
+        for i = 1317, 1325 do nItemIdx = AddEventItem(i) end
         Msg2Player("NhËn ®­îc 10 <color=yellow>" .. GetItemName(nItemIdx))
     else
         local tbOpt = {}
         for id, VatPham in tbVatPham[nType] do
-            tinsert(tbOpt, {VatPham.szName, nhanNguyenLieu, {nType, id}})
+            tinsert(tbOpt, { VatPham.szName, nhanNguyenLieu, { nType, id } })
         end
         tbDialog:Show(tbOpt, NguyenLieu_Dialog)
     end
 end
 
-function nhanNguyenLieu(nType, nIndex, nCount)
+function nhanNguyenLieu( nType, nIndex, nCount )
     if not nCount then
-        g_AskClientNumberEx(1, 999, "Sè l­îng", {nhanNguyenLieu, {nType, nIndex}})
+        g_AskClientNumberEx(1, 999, "Sè l­îng", { nhanNguyenLieu, { nType, nIndex } })
     else
         local szLog = format("[liguan]get_free_item_%s", tbVatPham[nType][nIndex].szName)
         tbAwardTemplet:GiveAwardByList(tbVatPham[nType][nIndex], szLog, nCount)
     end
 end
 
-function nhanKhoangThach(nSeries)
+function nhanKhoangThach( nSeries )
     if not nSeries then
-        local tbOpt = {} --
+        local tbOpt = {}
         for i = 0, getn(tbMonPhai.tbSeries) do
-            tinsert(tbOpt, {tbMonPhai.tbSeries[i][1], nhanKhoangThach, {i}})
+            tinsert(tbOpt, { tbMonPhai.tbSeries[i][1], nhanKhoangThach, { i } })
         end
-        tbDialog:Show(tbOpt, NguyenLieu_Dialog, "Mêi <sex>chän ngò hµnh cho Kho¸ng Th¹ch<pic=46><color>")
+        tbDialog:Show(tbOpt, NguyenLieu_Dialog,
+            "Mêi <sex>chän ngò hµnh cho Kho¸ng Th¹ch<pic=46><color>")
     else
         for i = 149, 154 do
             if mod(i, 2) == 0 then
@@ -384,27 +397,23 @@ end
 function VatPhamKhac_Dialog()
     local tbOpt = {}
     local tbVP_Khac = tbVatPham:Khac()
-    for id, VatPham in tbVP_Khac do
-        tinsert(tbOpt, {VatPham.szName, Nhan_VP_Khac, {id}})
-    end
+    for id, VatPham in tbVP_Khac do tinsert(tbOpt, { VatPham.szName, Nhan_VP_Khac, { id } }) end
     tbDialog:Show(tbOpt, NhanVatPham)
 end
 
-function Nhan_VP_Khac(nIndex, nCount)
+function Nhan_VP_Khac( nIndex, nCount )
     if not nCount then
-        g_AskClientNumberEx(1, CalcFreeItemCellCount(), "Sè l­îng", {Nhan_VP_Khac, {nIndex}})
+        g_AskClientNumberEx(1, CalcFreeItemCellCount(), "Sè l­îng", { Nhan_VP_Khac, { nIndex } })
     else
         local szLogTitle = format("[liguan]get_free_item_%s", tbVatPham:Khac()[nIndex].szName)
         tbAwardTemplet:GiveAwardByList(tbVatPham:Khac()[nIndex], szLogTitle, nCount)
     end
 end
 
-function getMasks(nIndex)
+function getMasks( nIndex )
     if not nIndex then
         local tbOpt = {}
-        for i = 1, 10 do
-            tinsert(tbOpt, {tbMonPhai.tbFacName[i], getMasks, {i}})
-        end
+        for i = 1, 10 do tinsert(tbOpt, { tbMonPhai.tbFacName[i], getMasks, { i } }) end
         tbDialog:Show(tbOpt, NhanVatPham)
     else
         local nStart, nEnd = tbMonPhai.tbMasks[nIndex].nStart, tbMonPhai.tbMasks[nIndex].nEnd

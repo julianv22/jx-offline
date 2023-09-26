@@ -198,7 +198,7 @@ tbDoTim.tbSeries = {
     [3] = { "Ho∂", "red" },
     [4] = { "ThÊ", "orange" },
 }
-szSerires = function( num )
+tbDoTim.szSerires = function( num )
     return format("<color=%s>%s<color>", tbDoTim.tbSeries[num][2], tbDoTim.tbSeries[num][1])
 end
 
@@ -223,23 +223,28 @@ tbCheTao = {
     tbOptions = {},
 }
 
-tbDialog = JDialog
-function main() -- ch‰n loπi trang bﬁ ch’ tπo
+JulianV = JDialog
+function main()
     dofile("script/global/gm/julianv/npc/npc_dotim.lua")
+    tbDoTim:Main()
+end
+
+function tbDoTim:Main() -- ch‰n loπi trang bﬁ ch’ tπo 
     MAIN_TITLE = "<npc>MÍi <sex><bclr=red>" .. GetName() .. "<bclr> l˘a ch‰n<pic=46>\n"
     local szTitle = "<npc><sex><bclr=red>" .. GetName() ..
                         "<bclr> muËn ch’ tπo <bclr=pink>ßÂ T›m<bclr> ch®ng<pic=44><color>"
     local tbOpt = {}
-    for id, tbEquip in tbDoTim.tbTrangBi do
-        tinsert(tbOpt, { id .. ". " .. tbEquip.szName, PurpleItem_diaglog, { id } })
+    for id, tbEquip in self.tbTrangBi do
+        tinsert(tbOpt, { id .. ". " .. tbEquip.szName, self.PurpleItem_diaglog, { id } })
     end
-    tbDialog:ChangeTitle()
-    tbDialog:Show(tbOpt, nil, szTitle)
+    JulianV:ChangeTitle()
+    JulianV:Show(tbOpt, nil, szTitle)
 end
 
-function PurpleItem_diaglog( nItemId ) -- ch‰n t™n trang bﬁ
+function tbDoTim.PurpleItem_diaglog( nItemId ) -- ch‰n t™n trang bﬁ
     if (CountFreeRoomByWH(2, 3) < 1) then
-        Talk(1, "", "Hµnh trang kh´ng ÆÒ ´ trËng! Xin h∑y sæp x’p rÂi quay lπi nh–<pic=46>");
+        Talk(1, "",
+            "Hµnh trang kh´ng ÆÒ ´ trËng! Xin h∑y sæp x’p rÂi quay lπi nh–<pic=46>");
         return
     end
     MAIN_TITLE = MAIN_TITLE ..
@@ -249,21 +254,22 @@ function PurpleItem_diaglog( nItemId ) -- ch‰n t™n trang bﬁ
     local tbOpt = {}
     for id, tbEquip in tbDoTim.tbTrangBi[nItemId].tbEquip do
         local nEqIdx, nGenre, nDetail, nPart = id, tbEquip[2], tbEquip[3], tbEquip[4]
-        tinsert(tbOpt, { tbEquip[1], getItemLevel, { nItemId, nEqIdx, nGenre, nDetail, nPart } })
+        tinsert(tbOpt,
+            { tbEquip[1], tbDoTim.getItemLevel, { nItemId, nEqIdx, nGenre, nDetail, nPart } })
     end
-    tbDialog:Show(tbOpt, main, MAIN_TITLE)
+    JulianV:Show(tbOpt, main, MAIN_TITLE)
 end
 
-function getItemLevel( nItemId, nEqIdx, nGenre, nDetail, nPart ) -- ch‰n level trang bﬁ
+function tbDoTim.getItemLevel( nItemId, nEqIdx, nGenre, nDetail, nPart ) -- ch‰n level trang bﬁ
     tbCheTao.nItemId = nItemId
     tbCheTao.szName = tbDoTim.tbTrangBi[nItemId].tbEquip[nEqIdx][1]
     tbCheTao.nGenre = nGenre
     tbCheTao.nDetail = nDetail
     tbCheTao.nPart = nPart
-    g_AskClientNumberEx(1, 10, "Item level", { getItemSeries })
+    g_AskClientNumberEx(1, 10, "Item level", { tbDoTim.getItemSeries })
 end
 
-function getItemSeries( nItemLevel ) -- ch‰n ngÚ hµnh trang bﬁ
+function tbDoTim.getItemSeries( nItemLevel ) -- ch‰n ngÚ hµnh trang bﬁ
     tbCheTao.nLevel = nItemLevel
     MAIN_TITLE = MAIN_TITLE ..
                      format("\n<pic=137> Trang bﬁ: <bclr=blue>%s<bclr> c p: %d", tbCheTao.szName,
@@ -271,12 +277,12 @@ function getItemSeries( nItemLevel ) -- ch‰n ngÚ hµnh trang bﬁ
     local szTitle = MAIN_TITLE .. "\n<pic=136><color>Ch‰n ngÚ hµnh:"
     local tbOpt = {}
     for nSeries, tbHe in tbDoTim.tbSeries do
-        tinsert(tbOpt, { "H÷ " .. tbHe[1], getLine, { 1, nSeries } })
+        tinsert(tbOpt, { "H÷ " .. tbHe[1], tbDoTim.getLine, { 1, nSeries } })
     end
-    tbDialog:Show(tbOpt, nil, szTitle)
+    JulianV:Show(tbOpt, nil, szTitle)
 end
 
-function getLine( nLine, nSeries, tbLineOpt ) -- ch‰n c∏c dﬂng
+function tbDoTim.getLine( nLine, nSeries, tbLineOpt ) -- ch‰n c∏c dﬂng
     tbCheTao.nSeries = nSeries
     local tbOpt = {}
     local szTitle = ""
@@ -293,48 +299,49 @@ function getLine( nLine, nSeries, tbLineOpt ) -- ch‰n c∏c dﬂng
     end
     if nLine <= 6 then
         szTitle = MAIN_TITLE .. "\n<pic=135><color> Ch‰n dﬂng " .. nLine .. ":"
-        insertTable(tbOpt, nLine + 1)
+        tbDoTim.insertTable(tbOpt, nLine + 1)
     else
         szTitle = MAIN_TITLE
-        tinsert(tbOpt, { "ßÂng ˝ ch’ tπo", CheTaoDoTim })
+        tinsert(tbOpt, { "ßÂng ˝ ch’ tπo", tbDoTim.CheTaoDoTim })
     end
-    tbDialog:Show(tbOpt, nil, szTitle)
+    JulianV:Show(tbOpt, nil, szTitle)
 end
 
-function insertTable( tbOpt, nLine ) -- hi”n thﬁ c∏c dﬂng
+function tbDoTim.insertTable( tbOpt, nLine ) -- hi”n thﬁ c∏c dﬂng
     if tbCheTao.nItemId == 1 then -- check id n’u lµ vÚ kh›
         for _, optVK in tbDoTim.tbWeaponMagic[tbCheTao.nSeries] do
             if type(optVK) == "table" then
-                tinsert(tbOpt, { optVK[1], getLine, { nLine, tbCheTao.nSeries, optVK } })
+                tinsert(tbOpt, { optVK[1], tbDoTim.getLine, { nLine, tbCheTao.nSeries, optVK } })
             end
         end
     else
         if tbCheTao.nItemId == 9 then -- n’u lµ giµy th◊ th™m dﬂng TDDC
             tinsert(tbOpt, {
-                "TËc ÆÈ di chuy”n", getLine,
+                "TËc ÆÈ di chuy”n", tbDoTim.getLine,
                 { nLine, tbCheTao.nSeries, { "TËc ÆÈ di chuy”n", 70 } },
             })
         end
         if tbCheTao.nItemId == 4 then -- n’u lµ d©y chuy“n th◊ th™m dﬂng Kh∏ng t t c∂
             tinsert(tbOpt, {
-                "Kh∏ng t t c∂", getLine, { nLine, tbCheTao.nSeries, { "Kh∏ng t t c∂", 120 } },
+                "Kh∏ng t t c∂", tbDoTim.getLine,
+                { nLine, tbCheTao.nSeries, { "Kh∏ng t t c∂", 120 } },
             })
         end
         if tbCheTao.nItemId == 3 and tbCheTao.nSeries == 0 then -- n’u lµ ∏o h÷ Kim th◊ th™m dﬂng Ph∂n Æﬂn cÀn chi’n
             tinsert(tbOpt, {
-                "Ph∂n Æﬂn cÀn chi’n", getLine,
+                "Ph∂n Æﬂn cÀn chi’n", tbDoTim.getLine,
                 { nLine, tbCheTao.nSeries, { "Ph∂n Æﬂn cÀn chi’n", 80 } },
             })
         end
         for _, optTB in tbDoTim.tbEquipMagic[tbCheTao.nSeries] do
             if type(optTB) == "table" then
-                tinsert(tbOpt, { optTB[1], getLine, { nLine, tbCheTao.nSeries, optTB } })
+                tinsert(tbOpt, { optTB[1], tbDoTim.getLine, { nLine, tbCheTao.nSeries, optTB } })
             end
         end
     end
 end
 
-function CheTaoDoTim()
+function tbDoTim:CheTaoDoTim()
     local nItemIdx = AddQualityItem(2, tbCheTao.nGenre, tbCheTao.nDetail, tbCheTao.nPart,
                          tbCheTao.nLevel, tbCheTao.nSeries, 500, tbCheTao.tbOptions[1][2],
                          tbCheTao.tbOptions[2][2], tbCheTao.tbOptions[3][2],

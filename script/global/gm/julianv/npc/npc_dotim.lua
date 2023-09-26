@@ -287,7 +287,8 @@ function tbDoTim.getLine( nLine, nSeries, tbLineOpt ) -- ch‰n c∏c dﬂng
     local tbOpt = {}
     local szTitle = ""
     if nLine == 1 then -- dﬂng 1
-        MAIN_TITLE = MAIN_TITLE .. "\n<pic=136><color> NgÚ hµnh h÷: " .. szSerires(nSeries)
+        MAIN_TITLE = MAIN_TITLE .. "\n<pic=136><color> NgÚ hµnh h÷: " ..
+                         tbDoTim.szSerires(nSeries)
     else -- dﬂng #1
         tinsert(tbCheTao.tbOptions, tbLineOpt)
         local nPreLine = nLine - 1

@@ -1,4 +1,6 @@
-dialognpc_julianv = {
+dialognpc_julianv = {}
+
+npc_dotim = {
     { 2526, 53, 1604, 3204, "\\script\\global\\gm\\julianv\\npc\\npc_dotim.lua", "NPC §å TÝm" },
     { 2526, 11, 3147, 5077, "\\script\\global\\gm\\julianv\\npc\\npc_dotim.lua", "NPC §å TÝm" },
     { 2526, 78, 1571, 3237, "\\script\\global\\gm\\julianv\\npc\\npc_dotim.lua", "NPC §å TÝm" },
@@ -13,18 +15,13 @@ npc_cocgo = {
     { 2521, 95, 0, 53, 1553, 3269, 0, "Cäc gç Siªu CÊp", 0, "" },
     { 2521, 95, 0, 53, 1547, 3270, 0, "Cäc gç Siªu CÊp", 0, "" },
 }
+
 boss_luyen_cong = {}
 for i = 1590, 1630 do
     tinsert(boss_luyen_cong, { i - 235, 95, 5, 996, i, i * 2, 0, "NPC LuyÖn C«ng", 1, " " })
 end
 
-function add_new_npc_julianv()
-    add_dialognpc(dialognpc_julianv)
-    add_newtasknpc(npc_cocgo, "Hit me")
-    add_boss_bailuyencong(boss_luyen_cong)
-end
-
-function add_boss_bailuyencong( Tab1 )
+function boss_luyen_cong:add( Tab1 )
     for i = 1, getn(Tab1) do
         Mid = SubWorldID2Idx(Tab1[i][4]);
         if (Mid >= 0) then
@@ -36,3 +33,17 @@ function add_boss_bailuyencong( Tab1 )
         end
     end
 end
+
+function dialognpc_julianv:init() --
+    for _, npc in npc_dotim do tinsert(dialognpc_julianv, npc) end
+end
+dialognpc_julianv:init()
+
+function dialognpc_julianv:add()
+    add_dialognpc(dialognpc_julianv)
+    add_newtasknpc(npc_cocgo, "Hit me")
+    boss_luyen_cong:add(boss_luyen_cong)
+    -- add_boss_bailuyencong(boss_luyen_cong)
+end
+
+-- function add_boss_bailuyencong( Tab1 ) end

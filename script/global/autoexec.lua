@@ -143,7 +143,7 @@ function main()
     add_npc_thinh()
     add_npc_thanh()
     add_npc_hoason()
-    add_new_npc_julianv()
+    dialognpc_julianv:add()
     -- add_npc_vuhon()
     local szFile = "\\script\\event\\great_night\\great_night_head.lua"
     DynamicExecute(szFile, "OnGreatNightServerStart")

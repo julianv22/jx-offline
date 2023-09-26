@@ -15,11 +15,13 @@ end
 
 function getWeapon( nType, id )
     if (CountFreeRoomByWH(2, 4, 1) < 1) then
-        Talk(1, "", "Hµnh trang kh«ng ®ñ « trèng! Xin h·y s¾p xÕp råi quay l¹i nhÐ<pic=46>");
+        Talk(1, "",
+            "Hµnh trang kh«ng ®ñ « trèng! Xin h·y s¾p xÕp råi quay l¹i nhÐ<pic=46>");
         return
     end
     if CalcFreeItemCellCount() < 15 then
-        Talk(1, "", "Hµnh trang kh«ng ®ñ « trèng! Xin h·y s¾p xÕp råi quay l¹i nhÐ<pic=46>");
+        Talk(1, "",
+            "Hµnh trang kh«ng ®ñ « trèng! Xin h·y s¾p xÕp råi quay l¹i nhÐ<pic=46>");
         return
     end
     local tbWeapon = nType == 1 and tbMonPhai.tbPlaWeapon or tbMonPhai.tbGoldWeapon
@@ -180,5 +182,24 @@ function getTrangSuc( nIndex, nEnd )
             thongbao()
             return
         end
+    end
+end
+-------------------------NhÉn Cµn Kh«n-------------------------
+function NhanCanKhon_Diag( szResit, nIndex )
+    local tbOpt = {}
+    if not nIndex then
+        if not szResit then
+            for resitName, _ in tbNhanCanKhon do
+                tinsert(tbOpt, { resitName, NhanCanKhon_Diag, { resitName } })
+            end
+        else
+            for _, tbEff in tbNhanCanKhon[szResit] do
+                tinsert(tbOpt, { tbEff[1], NhanCanKhon_Diag, { szResit, tbEff[2] } })
+            end
+        end
+        tbDialog:Show(tbOpt, TrangBiKhac_Dialog,
+            "Mêi <sex>chän thuéc tÝnh cña NhÉn Cµn Kh«n<pic=46><color>")
+    else
+        Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddGoldItem(0, nIndex)))
     end
 end

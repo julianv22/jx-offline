@@ -119,29 +119,29 @@ tbVatPham.VP_Khac = {
         tbProp = { 6, 1, 1399, 0, 0, 0 },
      },
 }
--- NHANCANKHONTD = {
---     ["Kh¸ng Háa - Thêi Gian Tróng §éc"] = {6578},
---     ["Kh¸ng B¨ng - Thêi Gian Tróng §éc"] = {6579},
---     ["Kh¸ng L«i - Thêi Gian Tróng §éc"] = {6580},
---     ["Kh¸ng §éc - Thêi Gian Tróng §éc"] = {6581},
---     ["PTVL - Thêi Gian Tróng §éc"] = {6582}
--- }
+tbNhanCanKhon = {
+    ["Kh¸ng Ho¶"] = {
+        { "Thêi gian tróng ®éc", 3664 }, { "Thêi gian lµm cho¸ng", 3869 },
+        { "Thêi gian lµm chËm", 3874 },
+    },
+    ["Kh¸ng B¨ng"] = {
+        { "Thêi gian tróng ®éc", 3865 }, { "Thêi gian lµm cho¸ng", 3870 },
+        { "Thêi gian lµm chËm", 3875 },
+    },
+    ["Kh¸ng L«i"] = {
+        { "Thêi gian tróng ®éc", 3866 }, { "Thêi gian lµm cho¸ng", 3871 },
+        { "Thêi gian lµm chËm", 3876 },
+    },
+    ["Kh¸ng §éc"] = {
+        { "Thêi gian tróng ®éc", 3867 }, { "Thêi gian lµm cho¸ng", 3872 },
+        { "Thêi gian lµm chËm", 3877 },
+    },
+    ["Phßng thñ vËt lý"] = {
+        { "Thêi gian tróng ®éc", 3868 }, { "Thêi gian lµm cho¸ng", 3873 },
+        { "Thêi gian lµm chËm", 3878 },
+    },
+}
 
--- NHANCANKHONLC = {
---     ["Kh¸ng Háa - Thêi Gian Lµm Cho¸ng"] = {6583},
---     ["Kh¸ng B¨ng - Thêi Gian Lµm Cho¸ng"] = {6584},
---     ["Kh¸ng L«i - Thêi Gian Lµm Cho¸ng"] = {6585},
---     ["Kh¸ng §éc - Thêi Gian Lµm Cho¸ng"] = {6586},
---     ["PTVL - Thêi Gian Lµm Cho¸ng"] = {6587}
--- }
-
--- NHANCANKHONLCH = {
---     ["Kh¸ng Háa - Thêi Gian Lµm ChËm"] = {6588},
---     ["Kh¸ng B¨ng - Thêi Gian Lµm ChËm"] = {6589},
---     ["Kh¸ng L«i - Thêi Gian Lµm ChËm"] = {6590},
---     ["Kh¸ng §éc - Thêi Gian Lµm ChËm"] = {6591},
---     ["PTVL - Thêi Gian Lµm ChËm"] = {6592}
--- }
 function tbVatPham:Define()
     for id, NguyenLieu in tbVatPham.NguyenLieu do tbVatPham[id] = NguyenLieu end
 end

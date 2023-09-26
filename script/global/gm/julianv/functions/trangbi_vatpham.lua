@@ -55,7 +55,8 @@ function TrangBiKhac_Dialog()
     local tbOpt = {
         { "Ngò hµnh Ên", NguHanhAn_Diag }, --
         { "Phi Phong", getPhiPhong }, --
-        { "Trang Søc", getTrangSuc },
+        { "Trang Søc", getTrangSuc }, --
+        { "NhÉn Cµn Kh«n", NhanCanKhon_Diag },
     }
     tbDialog:Show(tbOpt, NhanTrangBi)
 end

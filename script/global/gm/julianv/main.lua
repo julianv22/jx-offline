@@ -11,6 +11,7 @@ Include("\\script\\lib\\common.lua")
 Include("\\script\\global\\gm\\julianv\\functions\\dialog_fun.lua")
 Include("\\script\\global\\gm\\julianv\\lib\\lib_monphai.lua")
 Include("\\script\\global\\gm\\julianv\\lib\\lib_vatpham.lua")
+Include("\\script\\global\\gm\\julianv\\lib\\lib_boss.lua")
 -----------------------------DIALOG-----------------------------
 
 tbDialog = JDialog
@@ -18,6 +19,7 @@ function main()
     dofile("script/global/gm/julianv/main.lua")
     dofile("script/global/gm/julianv/lib/lib_vatpham.lua")
     dofile("script/global/gm/julianv/lib/lib_monphai.lua")
+    dofile("script/global/gm/julianv/lib/lib_boss.lua")
     local tbOpt = {
         { "Tools", ChucNangKhac }, --
         { "Qu¶n lý Nh©n vËt", Player_Dialog }, --
@@ -73,8 +75,10 @@ function Player_Dialog()
     tbDialog:Show(tbOpt, main)
 end
 ------------------------Server------------------------
+Include("\\script\\global\\gm\\julianv\\functions\\server_manager.lua")
 function Server_Dialog()
-    local tbOpt = { { "Gäi Boss Hoµng Kim" } }
+    dofile("script/global/gm/julianv/functions/server_manager.lua")
+    local tbOpt = { { "Gäi Boss Hoµng Kim", Choose_Boss_Dialog } }
     tbDialog:Show(tbOpt, main)
 end
 ------------------------Trang Trang bÞ - VËt phÈm------------------------
@@ -112,7 +116,7 @@ end
 function fix_shenxingfu()
     DisabledUseTownP(0)
     Talk(1, "",
-        "Tr¹ng th¸i sö dông thæ ®Þa phï vµ thÇn hµnh phï cña quý nh©n sÜ ®· trë vÒ ban ®Çu!")
+        "Tr¹ng th¸i sö dông thæ ®Þa phï vµ thÇn hµnh phï cña quý nh©n sÜ ®· trë vÒ ban ®Çu<pic=46>")
 end
 
 function goto_BLH()

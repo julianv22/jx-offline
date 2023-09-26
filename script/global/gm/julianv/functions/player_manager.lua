@@ -128,7 +128,7 @@ end
 
 function learnSkill( nSkillId, nLevel ) -- häc skill
     if HaveMagic(nSkillId) == 1 then
-        Talk(1, "", "Ng­¬i ®· së h÷u kü n¨ng nµy råi")
+        Talk(1, "", "Ng­¬i ®· së h÷u kü n¨ng nµy råi<pic=46>")
     else
         AddMagic(nSkillId, nLevel and nLevel or 1)
     end
@@ -161,7 +161,7 @@ function AdvancedSkill( szSkill )
     else
         local tbSkill = lib:Split(szSkill, ",")
         if getn(tbSkill) > 2 then
-            Talk(1, "", "Qu¸ nhiÒu tham sè, chØ nhËn 2 tham sè lµ Skill ID vµ Level")
+            Talk(1, "", "Qu¸ nhiÒu tham sè, chØ nhËn 2 tham sè lµ Skill ID vµ Level<pic=46>")
         else
             local nSkillId, nLevel = tonumber(tbSkill[1]), tonumber(tbSkill[2])
             AddMagic(nSkillId, nLevel)
@@ -214,7 +214,7 @@ function Change_Sex( bComfirm ) -- chuyÓn giíi
                            "}} cã ch¾c ch¾n muèn sang Th¸i kh«ng <pic=108><color>", tbOpt)
     else
         SetSex(GetSex() == 1 and 0 or 1)
-        Talk(1, "KickOutSelf", "§· chuyÓn giíi thµnh c«ng")
+        Talk(1, "KickOutSelf", "§· chuyÓn giíi thµnh c«ng<pic=46>")
     end
 end
 
@@ -233,7 +233,7 @@ function Change_Serries( nSeries ) -- ®æi ngò hµnh
     else
         if nCurSeries == nSeries then
             Talk(1, "",
-                "§· lµ hÖ " .. szSeries(nCurSeries) .. " råi, kh«ng cÇn chuyÓn n÷a!")
+                "§· lµ hÖ " .. szSeries(nCurSeries) .. " råi, kh«ng cÇn chuyÓn n÷a<pic=46>")
         else
             SetSeries(nSeries)
             Talk(1, "KickOutSelf", "§· chuyÓn sang hÖ " .. szSeries(nSeries))

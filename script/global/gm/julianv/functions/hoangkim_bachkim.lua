@@ -15,11 +15,11 @@ end
 
 function getWeapon( nType, id )
     if (CountFreeRoomByWH(2, 4, 1) < 1) then
-        Talk(1, "", "Hµnh trang kh´ng ÆÒ ´ trËng! Xin h∑y sæp x’p rÂi quay lπi nh–.");
+        Talk(1, "", "Hµnh trang kh´ng ÆÒ ´ trËng! Xin h∑y sæp x’p rÂi quay lπi nh–<pic=46>");
         return
     end
     if CalcFreeItemCellCount() < 15 then
-        Talk(1, "", "Hµnh trang kh´ng ÆÒ ´ trËng! Xin h∑y sæp x’p rÂi quay lπi nh–.");
+        Talk(1, "", "Hµnh trang kh´ng ÆÒ ´ trËng! Xin h∑y sæp x’p rÂi quay lπi nh–<pic=46>");
         return
     end
     local tbWeapon = nType == 1 and tbMonPhai.tbPlaWeapon or tbMonPhai.tbGoldWeapon
@@ -59,7 +59,7 @@ function TrangBi_HKMP_An( nFacId ) -- set trang bﬁ hkmp »n
         tbDialog:Show(tbOpt, NhanTrangBi, "MÍi <sex>ch‰n m´n ph∏i<pic=46><color>")
     else
         if not tbMonPhai.tbPrivateEquip[nFacId] then
-            Talk(1, "", "M´n ph∏i nµy ch≠a c„ trang bﬁ Tr n Bang Chi B∂o")
+            Talk(1, "", "M´n ph∏i nµy ch≠a c„ trang bﬁ Tr n Bang Chi B∂o<pic=46>")
         else
             for _, id in tbMonPhai.tbPrivateEquip[nFacId] do
                 Msg2Player("NhÀn Æ≠Óc trang bﬁ Hoµng Kim M´n ph∏i <color=yellow>" ..
@@ -141,7 +141,7 @@ function getPhiPhong( nIndex )
             return
         end
         for i = nIndex, nIndex + 2 do AddGoldItem(0, i) end
-        Talk(1, "", "ß∑ chuy”n Phi Phong vµo hµnh trang, xin h∑y ki”m tra lπi!")
+        Talk(1, "", "ß∑ chuy”n Phi Phong vµo hµnh trang, xin h∑y ki”m tra lπi<pic=46>")
     end
 end
 
@@ -157,7 +157,7 @@ function getTrangSuc( nIndex, nEnd )
         tbDialog:Show(tbOpt, TrangBiKhac_Dialog)
     else
         local thongbao = function()
-            Talk(1, "", "ß∑ chuy”n trang bﬁ vµo hµnh trang, xin h∑y ki”m tra lπi!")
+            Talk(1, "", "ß∑ chuy”n trang bﬁ vµo hµnh trang, xin h∑y ki”m tra lπi<pic=46>")
         end
         if nIndex == 1 then
             for i = 3542, 3554 do AddGoldItem(0, i) end

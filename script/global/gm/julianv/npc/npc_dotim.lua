@@ -239,7 +239,7 @@ end
 
 function PurpleItem_diaglog( nItemId ) -- chän tªn trang bÞ
     if (CountFreeRoomByWH(2, 3) < 1) then
-        Talk(1, "", "Hµnh trang kh«ng ®ñ « trèng! Xin h·y s¾p xÕp råi quay l¹i nhÐ.");
+        Talk(1, "", "Hµnh trang kh«ng ®ñ « trèng! Xin h·y s¾p xÕp råi quay l¹i nhÐ<pic=46>");
         return
     end
     MAIN_TITLE = MAIN_TITLE ..

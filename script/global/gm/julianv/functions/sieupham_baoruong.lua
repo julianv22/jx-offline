@@ -27,10 +27,10 @@ function main()
     dofile("script/global/gm/julianv/functions/sieupham_baoruong.lua")
 
     if (CountFreeRoomByWH(2, 2, 1) < 1) then
-        Talk(1, "", "Hµnh trang kh«ng ®ñ « trèng! Xin h·y s¾p xÕp råi quay l¹i nhÐ.");
+        Talk(1, "", "Hµnh trang kh«ng ®ñ « trèng! Xin h·y s¾p xÕp råi quay l¹i nhÐ<pic=46>");
         return
     elseif CalcFreeItemCellCount() < 6 then
-        Talk(1, "", "Hµnh trang kh«ng ®ñ « trèng! Xin h·y s¾p xÕp råi quay l¹i nhÐ.");
+        Talk(1, "", "Hµnh trang kh«ng ®ñ « trèng! Xin h·y s¾p xÕp råi quay l¹i nhÐ<pic=46>");
         return
     else
         getItem()

@@ -72,160 +72,155 @@ tbBoss = { -- tªn boss,id boss, tû lÖ r¬i ®å,series boss,nLevel
         nSeries = 4,
         nLevel = 95,
      },
-}
 
-tbBoss2 = { -- tªn boss,id boss, tû lÖ r¬i ®å,series boss,nLevel
-    [1] = {
+    [11] = {
         szName = "Cæ B¸ch",
         nBossId = 566,
         nRate = 322,
         nSeries = 0,
         nLevel = 95,
      },
-    [2] = {
+    [12] = {
         szName = "V­¬ng T¸",
         nBossId = 739,
         nRate = 322,
         nSeries = 0,
         nLevel = 95,
      },
-    [3] = {
+    [13] = {
         szName = "HuyÒn Gi¸c §¹i S­",
         nBossId = 740,
         nRate = 322,
         nSeries = 0,
         nLevel = 95,
      },
-    [4] = {
+    [14] = {
         szName = "HuyÒn Nan §¹i S­",
         nBossId = 1365,
         nRate = 342,
         nSeries = 0,
         nLevel = 95,
      },
-    [5] = {
+    [15] = {
         szName = "§­êng BÊt NhiÔm",
         nBossId = 741,
         nRate = 336,
         nSeries = 1,
         nLevel = 95,
      },
-    [6] = {
+    [16] = {
         szName = "§­êng Phi YÕn",
         nBossId = 1366,
         nRate = 342,
         nSeries = 1,
         nLevel = 95,
      },
-    [7] = {
+    [17] = {
         szName = "B¹ch Doanh Doanh",
         nBossId = 742,
         nRate = 336,
         nSeries = 1,
         nLevel = 95,
      },
-    [8] = {
+    [18] = {
         szName = "Lam Y Y",
         nBossId = 582,
         nRate = 336,
         nSeries = 1,
         nLevel = 95,
      },
-    [9] = {
+    [19] = {
         szName = "Thanh TuyÖt S­ Th¸i",
         nBossId = 743,
         nRate = 341,
         nSeries = 2,
         nLevel = 95,
      },
-    [10] = {
+    [20] = {
         szName = "Hµ Linh Phiªu",
         nBossId = 568,
         nRate = 336,
         nSeries = 2,
         nLevel = 95,
      },
-    [11] = {
+    [21] = {
         szName = "Chung Linh Tó",
         nBossId = 567,
         nRate = 336,
         nSeries = 2,
         nLevel = 95,
      },
-}
-
-tbBoss3 = { -- tªn boss,id boss, tû lÖ r¬i ®å,series boss,nLevel
-    [1] = {
+    [22] = {
         szName = "Yªn HiÓu Tr¸i",
         nBossId = 744,
         nRate = 336,
         nSeries = 2,
         nLevel = 95,
      },
-    [2] = {
+    [23] = {
         szName = "Hµ Nh©n Ng·",
         nBossId = 745,
         nRate = 321,
         nSeries = 3,
         nLevel = 95,
      },
-    [3] = {
+    [24] = {
         szName = "M¹nh Th­¬ng L­¬ng",
         nBossId = 583,
         nRate = 321,
         nSeries = 3,
         nLevel = 95,
      },
-    [4] = {
+    [25] = {
         szName = "§o¹n Méc DuÖ",
         nBossId = 565,
         nRate = 227,
         nSeries = 3,
         nLevel = 95,
      },
-    [5] = {
+    [26] = {
         szName = "Gia LuËt TÞ Ly",
         nBossId = 563,
         nRate = 227,
         nSeries = 3,
         nLevel = 95,
      },
-    [6] = {
+    [27] = {
         szName = "Hµn M«ng",
         nBossId = 748,
         nRate = 341,
         nSeries = 3,
         nLevel = 95,
      },
-    [7] = {
+    [28] = {
         szName = "§¬n Tö Nam",
         nBossId = 746,
         nRate = 341,
         nSeries = 4,
         nLevel = 95,
      },
-    [8] = {
+    [29] = {
         szName = "§¹o Thanh Ch©n Nh©n",
         nBossId = 562,
         nRate = 341,
         nSeries = 4,
         nLevel = 95,
-     },
-    [9] = {
+    },
+    [30] = {
         szName = "Tõ §¹i Nh¹c",
         nBossId = 1367,
         nRate = 342,
         nSeries = 4,
         nLevel = 95,
      },
-    [10] = {
+    [31] = {
         szName = "Thanh Liªn Tö",
         nBossId = 1368,
         nRate = 875,
         nSeries = 4,
         nLevel = 95,
      },
-    [11] = {
+    [32] = {
         szName = "TuyÒn C¬ Tö",
         nBossId = 747,
         nRate = 341,
@@ -233,8 +228,7 @@ tbBoss3 = { -- tªn boss,id boss, tû lÖ r¬i ®å,series boss,nLevel
         nLevel = 95,
      },
 }
-
-tbBossCAONHAN = { -- tªn boss,id boss, tû lÖ r¬i ®å,series boss,nLevel
+tbFactionBoss = { -- tªn boss,id boss, tû lÖ r¬i ®å,series boss,nLevel
     [1] = {
         szName = "ThiÕu L©m Hé Tù Vâ T¨ng",
         nBossId = 1194,
@@ -313,8 +307,7 @@ tbBossCAONHAN = { -- tªn boss,id boss, tû lÖ r¬i ®å,series boss,nLevel
         nLevel = 95,
     },
 }
-
-tbBossCAOCAP = { -- tªn boss,id boss, tû lÖ r¬i ®å,series boss,nLevel
+tbAdvancedBoss = { -- tªn boss,id boss, tû lÖ r¬i ®å,series boss,nLevel
     [1] = {
         szName = "Mé Dung Toµn",
         nBossId = 1875,

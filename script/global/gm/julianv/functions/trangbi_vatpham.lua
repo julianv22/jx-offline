@@ -146,7 +146,7 @@ end
 
 function Change_Equip_Feature_Confirm( nCount )
     if nCount > 1 then
-        Talk(1, "", "Qu¸ nhiÒu trang bŞ, kh«ng thÓ xö lİ")
+        Talk(1, "", "Qu¸ nhiÒu trang bŞ, kh«ng thÓ xö lİ<pic=46>")
         return
     elseif nCount == 1 then
         local nItemIndex = GetGiveItemUnit(1)
@@ -163,7 +163,7 @@ end
 
 function Change_Weapon_Feature_Confirm( nCount )
     if nCount > 1 then
-        Talk(1, "", "Qu¸ nhiÒu trang bŞ, kh«ng thÓ xö lİ")
+        Talk(1, "", "Qu¸ nhiÒu trang bŞ, kh«ng thÓ xö lİ<pic=46>")
         return
     elseif nCount == 1 then
         local nItemIndex = GetGiveItemUnit(1)
@@ -197,7 +197,7 @@ function DisposeItem( nCount ) -- Huû vËt phÈm
             -- WriteLog(date("%Y%m%d %H%M%S").."\t".." GM Hñy Item "..GetAccount().."\t"..GetName().."\t".." Huû item "..strItem)
         end
         Msg2Player("Thao t¸c hñy vËt phÈm thµnh c«ng")
-        Talk(1, "", "Thao t¸c thµnh c«ng, xin kiÓm tra l¹i!");
+        Talk(1, "", "Thao t¸c thµnh c«ng, xin kiÓm tra l¹i<pic=46>");
     end
 end
 
@@ -223,7 +223,7 @@ function ClearF4( bComfirm ) -- Dän r­¬ng ®å
             for i = 1, getn(tbItems) do RemoveItemByIndex(tbItems[i], -1); end
             AddItem(6, 1, 5128, 0, 0, 0)
         end
-        Talk(1, "", "§· dän s¹ch r­¬ng")
+        Talk(1, "", "§· dän s¹ch r­¬ng<pic=46>")
     end
 end
 
@@ -247,7 +247,7 @@ function getMagicItem( szItem ) -- nhËn magic item
             local nItemIdx = AddItem(nClass, nType, nId, nLvl, nSerie, nLuck)
             Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(nItemIdx))
         else
-            Talk(1, "", "Sai Item code: [" .. getn(tbItem) .. "] tr­êng d÷ liÖu.")
+            Talk(1, "", "Sai Item code: [" .. getn(tbItem) .. "] tr­êng d÷ liÖu<pic=46>")
         end
     end
 end
@@ -421,7 +421,7 @@ function nhanKhoangThach( nSeries )
                 AddItem(6, 1, i, 1, nSeries, 0, 0)
             end
         end
-        Talk(1, "", "NhËn Kho¸ng Th¹ch thµnh c«ng! H·y kiÓm tra hµnh trang")
+        Talk(1, "", "NhËn Kho¸ng Th¹ch thµnh c«ng<pic=46> H·y kiÓm tra hµnh trang")
     end
 end
 -------------------------VËt phÈm kh¸c-------------------------

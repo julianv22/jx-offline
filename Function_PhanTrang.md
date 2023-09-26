@@ -65,7 +65,7 @@ function PhanTrang( table, nOfPage )
 
     if nCount > nOfPage then -- Nếu số phần tử của `table` lớn hơn số phân tử mỗi trang (35 > 10)
 
-        local nIndex = floor(nCount / nOfPage) -- Chia lấy phần nguyên nIndex = 3
+        local nIndex = floor(nCount / nOfPage) -- Chia lấy phần nguyên nIndex = 3 (35 / 10)
 
         for id = 0, nIndex - 1 do -- Chạy vòng lặp từ 0 đến nIndex -1 (3 - 1 = 2)
         -- Nên chạy từ 0 thay vì 1 để dễ tính toán cho vòng for bên dưới
@@ -80,7 +80,7 @@ function PhanTrang( table, nOfPage )
 
             end     
             
-            tinsert(tbSplitTable, tbTemp) -- insert `tbTemp` vào `tbSplitTable`
+            tinsert(tbSplitTable, tbTemp) -- insert bảng tạm `tbTemp` vào `tbSplitTable` (với id chạy từ 0 -> 2)
 
         end
 
@@ -97,11 +97,11 @@ function PhanTrang( table, nOfPage )
             end
 
             tinsert(tbSplitTable, tbTemp) -- tiếp tục insert `tbTemp` vào `tbSplitTable`
-            -- Lúc này các phần tử từ 31 -> 35 sẽ nằm trong table thứ 4 của `tbSplitTable`
+            -- Lúc này các phần tử từ 31 -> 35 sẽ nằm trong phần tử thứ 4 của `tbSplitTable`
 
         end
 
-    else -- Nếu số phần từ của `table` nhỏ hơn hoặc bằng số phần tử mỗi trang nCount <= nOfPage
+    else -- Nếu nCount <= nOfPage
 
         tbSplitTable = table -- Không cần phân trang mà gán trực tiếp cho `tbSplitTable` 
 
@@ -115,18 +115,19 @@ end
 ### 2. Xử lý table đã được phân trang
 
 ```lua
-function Boss_HK( nPage ) -- function này sẽ nhận tham số là nPage (số trang)
+function Boss_HK( nPage ) -- function này sẽ nhận tham số nPage (số trang)
 
-    local tbBossHK = PhanTrang(tbBoss, 10) -- Phân trang `tbBoss` thành 1 table mà mỗi phần tử chỉ chứa thông tin 10 Boss rồi gán cho tbBossHK
+    local tbBossHK = PhanTrang(tbBoss, 10)
+    -- Phân trang `tbBoss` thành 1 table có 4 phần tử, mỗi phần tử chỉ chứa thông tin 10 Boss rồi gán cho tbBossHK
 
     local tbOpt = {}
 
     if not nPage or nPage == 1 then -- Nếu chưa có số trang hoặc số trang là 1
 
-        for i = 1, 10 do -- Chạy vòng lặp từ 1 đến 10 để show tên boss 
+        for i = 1, 10 do -- Chạy vòng lặp từ 1 đến 10 để show tên Boss 
 
             tinsert(tbOpt, { tbBossHK[1][i].szName, Call_Boss, { tbBossHK[1], i } })
-            -- Show tên Boss và function Gọi boss (Call_Boss) truyền các tham số tương ứng với trang 1
+            -- Show tên Boss và function gọi Boss (Call_Boss) truyền các tham số tương ứng với trang 1
 
         end
 
@@ -136,11 +137,11 @@ function Boss_HK( nPage ) -- function này sẽ nhận tham số là nPage (số
 
     else
 
-        local nCount = getn(tbBossHK) -- Đếm số phần tử của tbBossHK (table này là table đã phân trang) (=4)
+        local nCount = getn(tbBossHK) -- getn(tbBossHK) = 4 (Đếm số phần tử của tbBossHK (table đã phân trang))
 
-        if nPage < nCount then -- Nếu số trang vẫn còn < số phần tử của tbBossHK (4)
+        if nPage < nCount then -- nPage < 4 (Nếu số trang vẫn còn < getn(tbBossHK))
 
-            for i = 1, 10 do -- Chạy vòng lặp để show tên Boss 
+            for i = 1, 10 do -- Chạy vòng lặp từ 1 đến 10 để show tên Boss
 
                 tinsert(tbOpt, { tbBossHK[nPage][i].szName, Call_Boss, { tbBossHK[nPage], i } })
                 -- Show tên Boss và function gọi Call_Boss với các tham số tương ứng với số trang
@@ -151,9 +152,9 @@ function Boss_HK( nPage ) -- function này sẽ nhận tham số là nPage (số
             -- Thêm dòng trang sau theo yêu cầu 3 của bài toán
             -- Tham số nPage sẽ được tăng lên 1
 
-        else -- Khi số trang = số phần tử của tbBossHK (4)
+        else -- Khi số trang nPage = 4
 
-            for i = 1, getn(tbBossHK[nCount]) do -- Chỉ chạy vòng lặp từ 1 đến số phần tử của tbBossHK[4] = 5
+            for i = 1, getn(tbBossHK[nCount]) do -- Chạy vòng lặp từ 1 đến 5 (getn(tbBossHK[4]) = 5)
 
                 tinsert(tbOpt, { tbBossHK[nCount][i].szName, Call_Boss, { tbBossHK[nCount], i } })
                 -- Show tên Boss và function gọi Call_Boss với các tham số tương ứng

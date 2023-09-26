@@ -1,5 +1,6 @@
 name: Actions
-run-name: GitHub Actions ${{ github.actor }} 🚀
+run-name: ${{ github.actor }} ${{ github.event.head_commit.message }}🚀
+# run-name: GitHub Actions ${{ github.actor }} 🚀
 on: [push, pull_request, pull_request_target]
 jobs:
   Explore-GitHub-Actions:

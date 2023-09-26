@@ -13,7 +13,7 @@ function JDialog:_init(szMessage) -- Khoi tao tieu de Dialog
     if szMessage then
         self.szTitle = SPRLINK .. szMessage -- Tieu de Dialog
     else
-        self.szTitle = format(SPRLINK .. "Xin chµo <sex><bclr=red>%s<bclr> t«i cã thÓ gióp g×<pic=44><color>",
+        self.szTitle = format(SPRLINK .. "Xin chµo <sex><bclr=red>%s<bclr> ta cã thÓ gióp g× cho ng­¬i<pic=44><color>",
             GetName())
     end
     self.tbOptions = {nil} -- Cac dong menu

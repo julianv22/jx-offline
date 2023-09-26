@@ -5,6 +5,7 @@
 Include("\\script\\dailogsys\\dailogsay.lua");
 Include("\\script\\lib\\common.lua")
 Include("\\script\\global\\gm\\julianv\\functions\\dialog_fun.lua")
+Include("\\script\\global\\gm\\julianv\\lib\\lib_monphai.lua")
 
 tbDoTim = {}
 tbDoTim.tbTrangBi = {
@@ -223,6 +224,7 @@ function main()
     for id, tbEquip in tbDoTim.tbTrangBi do
         tinsert(tbOpt, {id .. ". " .. tbEquip.szName, PurpleItem_diaglog, {id}})
     end
+    tbDialog:ChangeTitle()
     tbDialog:Show(tbOpt, nil, szTitle)
 end
 

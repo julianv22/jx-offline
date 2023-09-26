@@ -130,10 +130,12 @@ Include("\\script\\\\global\\\\gm\\\\julianv\\\\npc\\\\npc_congskill.lua") -- Hç
 
 function skillSupport()
     local tbOpt = { --
-    {"Häc Khinh c«ng", learnSkill, {210}}, --
     {"TÈy Tñy", ClearPoints_Dialog}, --
     {"Céng ®iÓm nhanh", CongDiemNhanh}, --    
     {"Thªm - Xo¸ Skill n©ng cao", Skill_Nang_Cao}}
+    if HaveMagic(210) == -1 then
+        tinsert(tbOpt, 1, {"Häc Khinh c«ng", learnSkill, {210}})
+    end
     tbDialog:Show(tbOpt, Player_Dialog)
 end
 

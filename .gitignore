@@ -18,6 +18,7 @@
 !script/
 script/*
 !script/faction_def.lua
+# -------------------script/global-------------------
 !script/global/
 script/global/*
 !script/global/autoexec.lua
@@ -36,14 +37,20 @@ script/global/thanh/*
 !script/global/thanh/npc/
 script/global/thanh/npc/*
 !script/global/thanh/npc/npc_hotro.lua
-# ------------------------------------------------
+# -------------------script/skill-------------------
 !script/skill/
 !script/skill/*
-# ------------------------------------------------
+# -------------------script/item-------------------
 !script/item/
 script/item/*
 !script/item/lessmoneygift.lua
 !script/item/moremoneygift.lua
+# -------------------script/task-------------------
+!script/task/
+script/task/*
+!script/task/system/
+script/task/system/*
+!script/task/system/task_string.lua
 # -------------------ui------------------- 
 !ui/
 ui/*

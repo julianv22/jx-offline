@@ -37,6 +37,10 @@ function getWeapon( nType, id )
 end
 
 function SetHKMP_Dialog( nItemId ) -- set trang bÞ hkmp
+    if GetFaction() == "" then
+        Talk(1, "", "Nhµ ng­¬i ch­a gia nhËp m«n ph¸i nhËn c¸i g× mµ nhËn <pic=138>")
+        return
+    end
     local nFacID = tbMonPhai.tbPinyn[GetFaction()][1]
     if not nItemId then
         local tbOpt = {}

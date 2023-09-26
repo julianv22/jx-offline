@@ -21,11 +21,11 @@ function main()
     dofile("script/global/gm/julianv/lib/lib_monphai.lua")
     dofile("script/global/gm/julianv/lib/lib_boss.lua")
     local tbOpt = {
-        { "Tools", ChucNangKhac }, --
         { "Qu∂n l˝ Nh©n vÀt", Player_Dialog }, --
         { "Qu∂n l˝ Server", Server_Dialog }, --
-        { "Trang bﬁ - VÀt ph»m", TrangBi_VatPham }, --        
-        { "Check Resources", Admin_Dialog }, --    
+        { "Trang bﬁ - VÀt ph»m", TrangBi_VatPham }, --                
+        { "Admin Control Panel", Admin_Dialog }, --    
+        { "Tools", ChucNangKhac }, --
     }
     tbDialog:ChangeTitle()
     tbDialog:Show(tbOpt)
@@ -86,8 +86,9 @@ Include("\\script\\global\\gm\\julianv\\functions\\trangbi_vatpham.lua")
 function TrangBi_VatPham()
     dofile("script/global/gm/julianv/functions/trangbi_vatpham.lua")
     local tbOpt = {
-        { "NhÀn trang bﬁ", NhanTrangBi }, --    
         { "NhÀn vÀt ph»m", NhanVatPham }, --    
+        { "NhÀn trang bﬁ", NhanTrangBi }, --   
+        { "Trang bﬁ hi’m" }, --
         { "Thay ÆÊi ngoπi h◊nh trang bﬁ", ChangeFeature_Dialog }, --    
         { "------------------------", TrangBi_VatPham }, --
         { "NhÀn MagicScript Item (Genre, Detail, Particular)", getMagicItem }, --

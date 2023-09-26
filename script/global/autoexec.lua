@@ -29,6 +29,7 @@ Include("\\script\\global\\huashan2013\\npc_hoason.lua")
 Include("\\script\\global\\autoexec_npc.lua")
 Include("\\script\\global\\thinh\\npc\\add_npc.lua")
 Include("\\script\\global\\thanh\\npc\\add_npc.lua")
+Include("\\script\\global\\gm\\julianv\\npc\\add_npc.lua")
 --------------------------------------------------------------------------------------------------------------
 Include("\\script\\missions\\maze\\head.lua")
 Include("\\script\\missions\\bairenleitai\\head.lua")
@@ -68,8 +69,10 @@ function main()
     DynamicExecute("\\script\\missions\\tianchimijing\\floor1\\yunchihead.lua", "AddEnterNpc")
     DynamicExecute("\\script\\changefeature\\initmap.lua", "AddDailogNpc")
     -- Nguyet Ca Dao
-    DynamicExecute("\\script\\missions\\yuegedao\\yuegedao\\yuegedaoworld.lua", "YueGeDaoWorld:Start")
-    DynamicExecute("\\script\\missions\\yuegedao\\yuegemigu\\yuegemiguworld.lua", "YueGeMiGuWorld:Start")
+    DynamicExecute("\\script\\missions\\yuegedao\\yuegedao\\yuegedaoworld.lua",
+        "YueGeDaoWorld:Start")
+    DynamicExecute("\\script\\missions\\yuegedao\\yuegemigu\\yuegemiguworld.lua",
+        "YueGeMiGuWorld:Start")
 
     DynamicExecute("\\script\\global\\npc\\huoke.lua", "CallHuoKeInit")
     tbShenSuanZi:Init()
@@ -118,7 +121,8 @@ function main()
         -- add_obstacle_map();
 
         if (SubWorldID2Idx(11) >= 0) then
-            local npcidx = AddNpc(245, 1, SubWorldID2Idx(11), 390 * 8 * 32, 317 * 16 * 32, 1, "Hoµng Liªn L·o L·o");
+            local npcidx = AddNpc(245, 1, SubWorldID2Idx(11), 390 * 8 * 32, 317 * 16 * 32, 1,
+                               "Hoµng Liªn L·o L·o");
             SetNpcScript(npcidx, "\\script\\event\\jiefang_jieri\\200904\\denggao\\npc.lua");
         end
         add_dialognpc(au06_tab_kidnpc); -- Chien Tam Ton Gia
@@ -141,6 +145,7 @@ function main()
     add_npc_thinh()
     add_npc_thanh()
     add_npc_hoason()
+    add_new_npc_julianv()
     add_boss_bailuyencong(tbBoss)
     -- add_npc_vuhon()
     local szFile = "\\script\\event\\great_night\\great_night_head.lua"
@@ -148,7 +153,7 @@ function main()
 end
 
 function load_mission_aexp()
-    mapTab = {235, 236, 237, 238, 239, 240, 241};
+    mapTab = { 235, 236, 237, 238, 239, 240, 241 };
     nCount = getn(mapTab);
 
     oldSubWorld = SubWorld;
@@ -163,28 +168,28 @@ function load_mission_aexp()
     SubWorld = oldSubWorld;
 end
 
-function add_dialognpc(Tab)
+function add_dialognpc( Tab )
     for i = 1, getn(Tab) do
         local itemlist = Tab[i]
         SId = SubWorldID2Idx(itemlist[2]);
         if (SId >= 0) then
-            npcindex = AddNpc(itemlist[1], 1, SId, itemlist[3] * 32, itemlist[4] * 32, 1, itemlist[6]);
+            npcindex = AddNpc(itemlist[1], 1, SId, itemlist[3] * 32, itemlist[4] * 32, 1,
+                           itemlist[6]);
             SetNpcScript(npcindex, itemlist[5]);
         else
-            if itemlist[1] == 1454 then
-                print(itemlist[6], itemlist[2])
-            end
+            if itemlist[1] == 1454 then print(itemlist[6], itemlist[2]) end
         end
     end
 end
 
-function add_newtasknpc(Tab1)
+function add_newtasknpc( Tab1 )
     for i = 1, getn(Tab1) do
         Mid = SubWorldID2Idx(Tab1[i][4]);
         if (Mid >= 0) then
             TabValue5 = Tab1[i][5] * 32
             TabValue6 = Tab1[i][6] * 32
-            newtasknpcindex = AddNpc(Tab1[i][1], Tab1[i][2], Mid, TabValue5, TabValue6, Tab1[i][7], Tab1[i][8]);
+            newtasknpcindex = AddNpc(Tab1[i][1], Tab1[i][2], Mid, TabValue5, TabValue6, Tab1[i][7],
+                                  Tab1[i][8]);
             SetNpcScript(newtasknpcindex, Tab1[i][10]);
         end
     end

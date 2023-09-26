@@ -21,8 +21,8 @@ function main()
     dofile("script/global/gm/julianv/lib/lib_monphai.lua")
     dofile("script/global/gm/julianv/lib/lib_boss.lua")
     local tbOpt = {
-        { "Qu¶n lý Nh©n vËt", Player_Dialog }, --
         { "Qu¶n lý Server", Server_Dialog }, --
+        { "Qu¶n lý Nh©n vËt", Player_Dialog }, --        
         { "Trang bÞ - VËt phÈm", TrangBi_VatPham }, --                
         { "Admin Control Panel", Admin_Dialog }, --    
         { "Tools", ChucNangKhac }, --

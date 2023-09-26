@@ -16,10 +16,9 @@ end
 function support()
     local tbOpt = { --
         { "NhËn CÈm nang AIO", NhanLenhBai, { 5128 } }, --
-        { "Hç trî t©n thñ", HoTroTanThu }, --
-        { "NhËn Siªu PhÈm B¶o R­¬ng", toGiveItems, { 5129 } }, --
+        { "Hç trî t©n thñ", HoTroTanThu }, --        
         { "NhËn trang bÞ t©n thñ", HoangKim_TanThu }, --
-        -- {"Kü n¨ng - TiÒm n¨ng", HoTroSkill}, --        
+        { "NhËn Siªu PhÈm B¶o R­¬ng", toGiveItems, { 5129 } }, --  
         { "NhËn trïng sinh", TrungSinh }, --
         { "-----------------------------------", support }, --
         { "Dän s¹ch R­¬ng chøa ®å", ClearF4 }, --
@@ -46,16 +45,6 @@ function NhanLenhBai( nId )
         nItemIdx = AddItem(6, 1, nId, 0, 0, 0)
     end
     Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(nItemIdx))
-end
-
-function HoTroSkill()
-    local tbOpt = { --
-        { "TÈy Tñy", clear_attibute_point }, --
-        { "Céng ®iÓm nhanh", add_prop }, --
-        { "Trê l¹i", support }, --
-        { "KÕt thóc ®èi tho¹i" },
-    }
-    CreateNewSayEx("<npc>Hç trî Kü n¨ng - TiÒm n¨ng ng­êi ch¬i", tbOpt)
 end
 
 function HoTroTanThu()
@@ -181,7 +170,9 @@ end
 
 function AddEquipGold_confirm( num1, num2 )
     if (num2 - num1) <= 30 then
-        for nID = num1, num2 do AddGoldItem(0, nID) end
+        for nID = num1, num2 do
+            Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddGoldItem(0, nID)))
+        end
     else
         Talk(1, "", "Kh«ng thÓ nhËn qu¸ nhiÒu trang bÞ 1 lóc.")
     end

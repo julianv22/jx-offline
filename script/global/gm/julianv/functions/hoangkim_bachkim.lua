@@ -10,7 +10,7 @@ function VKHK_Dialog( nType )
     else
         for i = 1, 10 do tinsert(tbOpt, { tbMonPhai.tbFacName[i], getWeapon, { nType, i } }) end
     end
-    tbDialog:Show(tbOpt, NhanTrangBi, "Mêi <sex>chän m«n ph¸i<pic=46><color>")
+    JulianV:Show(tbOpt, NhanTrangBi, "Mêi <sex>chän m«n ph¸i<pic=46><color>")
 end
 
 function getWeapon( nType, id )
@@ -47,7 +47,7 @@ function SetHKMP_Dialog( nItemId ) -- set trang bÞ hkmp
         for id, wp in tbMonPhai.tbGoldEquip[nFacID] do
             tinsert(tbOpt, { wp, SetHKMP_Dialog, { id } })
         end
-        tbDialog:Show(tbOpt, NhanTrangBi, "Mêi <sex>chän lo¹i h×nh luyÖn c«ng<pic=46><color>")
+        JulianV:Show(tbOpt, NhanTrangBi, "Mêi <sex>chän lo¹i h×nh luyÖn c«ng<pic=46><color>")
     else
         for i = 1, 5 do
             Msg2Player("NhËn ®­îc trang bÞ Hoµng Kim M«n ph¸i <color=yellow>" ..
@@ -62,7 +62,7 @@ function TrangBi_HKMP_An( nFacId ) -- set trang bÞ hkmp Èn
         for id, szMonPhai in tbMonPhai.tbFacName do
             tinsert(tbOpt, { szMonPhai, TrangBi_HKMP_An, { id } })
         end
-        tbDialog:Show(tbOpt, NhanTrangBi, "Mêi <sex>chän m«n ph¸i<pic=46><color>")
+        JulianV:Show(tbOpt, NhanTrangBi, "Mêi <sex>chän m«n ph¸i<pic=46><color>")
     else
         if not tbMonPhai.tbPrivateEquip[nFacId] then
             Talk(1, "", "M«n ph¸i nµy ch­a cã trang bÞ TrÊn Bang Chi B¶o<pic=46>")
@@ -84,7 +84,7 @@ function HoangKimCui( nStart, nEnd ) -- trang bÞ hk th­êng
             { "Hång ¶nh (Th­êng)", HoangKimCui, { 204, 207 } }, --
             { "Hång ¶nh (Hoµn Mü)", HoangKimCui, { 434, 437 } },
         }
-        tbDialog:Show(tbOpt, NhanTrangBi, "Mêi <sex>chän trong bÞ yªu thÝch<pic=46><color>")
+        JulianV:Show(tbOpt, NhanTrangBi, "Mêi <sex>chän trong bÞ yªu thÝch<pic=46><color>")
     else
         for i = nStart, nEnd do
             Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddGoldItem(0, i)))
@@ -101,7 +101,7 @@ function NguHanhAn_Diag()
         { "Ngò Hµnh Ên Nh­îc Ho¸", getNguHanhAn, { 1 } }, --
         { "Ngò Hµnh Ên C­êng Ho¸ vµ Nh­îc Ho¸", getNguHanhAn, { 2 } },
     }
-    tbDialog:Show(tbOpt, TrangBiKhac_Dialog)
+    JulianV:Show(tbOpt, TrangBiKhac_Dialog)
 end
 
 function getNguHanhAn( nType, nIndex )
@@ -123,7 +123,7 @@ function getNguHanhAn( nType, nIndex )
         for i = 1, 10 do
             tinsert(tbOpt, { szLoaiAn(nType) .. i, getNguHanhAn, { nType, nType * 10 + i } })
         end
-        tbDialog:Show(tbOpt, NguHanhAn_Diag)
+        JulianV:Show(tbOpt, NguHanhAn_Diag)
     else
         -- Msg2Player(nIndex+3204)
         Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddGoldItem(0, nIndex + 3204)))
@@ -140,7 +140,7 @@ function getPhiPhong( nIndex )
             { "Phi Phong V« Cùc", getPhiPhong, { 3485 } }, --
             { "Phi Phong Siªu CÊp", getPhiPhong, { 3488 } },
         }
-        tbDialog:Show(tbOpt, TrangBiKhac_Dialog)
+        JulianV:Show(tbOpt, TrangBiKhac_Dialog)
     else
         if nIndex == 3465 then
             for i = 3465, 3475 do AddGoldItem(0, i) end
@@ -160,7 +160,7 @@ function getTrangSuc( nIndex, nEnd )
             { "Bé Trang Søc Cuång Lan", getTrangSuc, { 4488, 4492 } }, --
             { "Long ChiÕn Vu D·", getTrangSuc, { 5657 } },
         }
-        tbDialog:Show(tbOpt, TrangBiKhac_Dialog)
+        JulianV:Show(tbOpt, TrangBiKhac_Dialog)
     else
         local thongbao = function()
             Talk(1, "", "§· chuyÓn trang bÞ vµo hµnh trang, xin h·y kiÓm tra l¹i<pic=46>")
@@ -201,7 +201,7 @@ function NhanCanKhon_Diag( szResit, nIndex )
                 tinsert(tbOpt, { tbEff[1], NhanCanKhon_Diag, { szResit, tbEff[2] } })
             end
         end
-        tbDialog:Show(tbOpt, TrangBiKhac_Dialog,
+        JulianV:Show(tbOpt, TrangBiKhac_Dialog,
             "Mêi <sex>chän thuéc tÝnh cña NhÉn Cµn Kh«n<pic=46><color>")
     else
         Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddGoldItem(0, nIndex)))

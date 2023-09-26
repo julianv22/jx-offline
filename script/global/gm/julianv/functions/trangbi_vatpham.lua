@@ -17,7 +17,7 @@ function NhanTrangBi()
         { "Vò khÝ Hoµng Kim M«n Ph¸i", VKHK_Dialog, { 2 } }, --
         { "NhËn An Bang, Kim Phong, §Þnh Quèc, Hång ¶nh", HoangKimCui }, --
     }
-    tbDialog:Show(tbOpt, TrangBi_VatPham)
+    JulianV:Show(tbOpt, TrangBi_VatPham)
 end
 
 function NhanTrangBi2()
@@ -26,7 +26,7 @@ function NhanTrangBi2()
         { "NhËn Trang bÞ tÝm", QualityItem_Dialog }, --
         { "NhËn vò khÝ tÝm", QualityWeapon_Dialog },
     }
-    tbDialog:Show(tbOpt, NhanTrangBi)
+    JulianV:Show(tbOpt, NhanTrangBi)
 end
 
 function NhanVatPham()
@@ -37,7 +37,7 @@ function NhanVatPham()
         { "Nguyªn liÖu chÕ t¹o ®å tÝm", NguyenLieu_Dialog }, --
         { "NhËn c¸c lo¹i vËt phÈm kh¸c", VatPhamKhac_Dialog }, --
     }
-    tbDialog:Show(tbOpt, TrangBi_VatPham)
+    JulianV:Show(tbOpt, TrangBi_VatPham)
 end
 
 function ChangeFeature_Dialog()
@@ -48,7 +48,7 @@ function ChangeFeature_Dialog()
         { "§æi ngo¹i h×nh vò khÝ (Sö dông menu)", Change_Weapon_Feature }, --
         { "Phôc håi ngo¹i h×nh gèc", Restore_Feature },
     }
-    tbDialog:Show(tbOpt, TrangBi_VatPham)
+    JulianV:Show(tbOpt, TrangBi_VatPham)
 end
 
 function TrangBiKhac_Dialog()
@@ -58,7 +58,7 @@ function TrangBiKhac_Dialog()
         { "Phi Phong", getPhiPhong }, --
         { "Trang Søc", getTrangSuc },
     }
-    tbDialog:Show(tbOpt, NhanTrangBi)
+    JulianV:Show(tbOpt, NhanTrangBi)
 end
 
 -------------------------NhËn ngùa-------------------------
@@ -67,7 +67,7 @@ function Horses_Dialog()
     for i = 1, getn(tbNameResHorse) do
         tinsert(tbOpt, { tbNameResHorse[i].szName, Chose_Horses, { i } })
     end
-    tbDialog:Show(tbOpt, NhanVatPham)
+    JulianV:Show(tbOpt, NhanVatPham)
 end
 
 function Chose_Horses( nHorseType, nPage )
@@ -96,7 +96,7 @@ function Chose_Horses( nHorseType, nPage )
             tinsert(tbOpt, { "Trang tr­íc", Chose_Horses, { nHorseType, nPage - 1 } })
         end
     end
-    tbDialog:Show(tbOpt, nil,
+    JulianV:Show(tbOpt, nil,
         "<sex>h·y chän cho m×nh mét con chiÕn m· tèt ®Ó hµnh tÈu giang hå<pic=46><color>")
 end
 
@@ -108,7 +108,7 @@ function Feature_Preview()
     function Feature_Help()
         local szTitle =
             "<pic=139> <bclr=pink>Chøc n¨ng thay ®æi ngo¹i h×nh trang bÞ:<bclr>\n\n<pic=136> Chän kiÓu ngo¹i trang muèn xem tr­íc.\n<pic=135> NhËp ID b¾t ®Çu xem.\n<pic=136> Sau ®ã sö dông {{§¹i Hång Bao}} vµ {{TiÓu Hång Bao}} ®Ó xem ®i tíi hoÆc lïi l¹i.\n<pic=135><color> Sau khi chän ®­îc ngo¹i h×nh ­ng ý th× sö dông chøc n¨ng §æi ngo¹i h×nh trang bÞ theo ID ®Ó thay ®æi."
-        tbDialog:Show({ { "Ta ®· hiÓu", Feature_Preview } }, nil, szTitle)
+        JulianV:Show({ { "Ta ®· hiÓu", Feature_Preview } }, nil, szTitle)
     end
 
     if HaveCommonItem(6, 1, 13) < 1 then
@@ -122,7 +122,7 @@ function Feature_Preview()
     for i = 0, getn(tbMonPhai.tbNgoaiTrang) do
         tinsert(tbOpt, { tbMonPhai.tbNgoaiTrang[i], Ask_Feature_StartId, { i } })
     end
-    tbDialog:Show(tbOpt, ChangeFeature_Dialog,
+    JulianV:Show(tbOpt, ChangeFeature_Dialog,
         "<bclr=pink>Chøc n¨ng xem tr­íc ngo¹i h×nh trang bÞ.<bclr>\n\n<sex>muèn kiÓm tra lo¹i trang bÞ nµo<pic=44><color>")
 end
 
@@ -304,18 +304,18 @@ function QualityItem_Dialog( nSex, nSeries ) -- då tÝm
             { "§å tÝm dµnh cho Nam", QualityItem_Dialog, { 0 } },
             { "§å tÝm dµnh cho N÷", QualityItem_Dialog, { 1 } },
         }
-        tbDialog:Show(tbOpt, NhanTrangBi2, "Mêi <sex>chän lo¹i trang bÞ<pic=46><color>")
+        JulianV:Show(tbOpt, NhanTrangBi2, "Mêi <sex>chän lo¹i trang bÞ<pic=46><color>")
     else
         if not nSeries then -- chän ngò hµnh
             for i = 0, 4 do
                 tinsert(tbOpt, { tbMonPhai.tbSeries[i][1], QualityItem_Dialog, { nSex, i } })
             end
-            tbDialog:Show(tbOpt, NhanTrangBi2, "Mêi <sex>chän ngò hµnh<pic=46><color>")
+            JulianV:Show(tbOpt, NhanTrangBi2, "Mêi <sex>chän ngò hµnh<pic=46><color>")
         else -- chän trang bÞ            
             for szName, _ in QItemNam do
                 tinsert(tbOpt, { szName, getQualityItem, { szName, nSeries, nSex } })
             end
-            tbDialog:Show(tbOpt, QualityItem_Dialog, "Mêi <sex>chän trang bÞ<pic=46><color>")
+            JulianV:Show(tbOpt, QualityItem_Dialog, "Mêi <sex>chän trang bÞ<pic=46><color>")
         end
     end
 end
@@ -324,7 +324,7 @@ function getQualityItem( szName, nSeries, nSex ) AddQItem(szName, nSeries, nSex)
 
 function nhanDoXanh_Dialog() -- ®å xanh
     local tbOpt = {}
-    tbDialog:Show(tbOpt, NhanTrangBi2)
+    JulianV:Show(tbOpt, NhanTrangBi2)
 end
 ---------------VËt phÈm trïng sinh---------------
 tbTransLifeItems = {
@@ -351,7 +351,7 @@ function TransLifeItem_Dialog()
     for i = 1, getn(tbTransLifeItems) do
         tinsert(tbOpt, { tbTransLifeItems[i].szName, getTransLifeItem, { i } })
     end
-    tbDialog:Show(tbOpt, NhanVatPham)
+    JulianV:Show(tbOpt, NhanVatPham)
 end
 function getTransLifeItem( nIndex, nCount )
     local nMax = CalcFreeItemCellCount()
@@ -380,7 +380,7 @@ function NguyenLieu_Dialog()
         { "Kho¸ng Th¹ch", nhanKhoangThach }, --
         { "M¶nh Thiªn Th¹ch", chonNguyenLieu, { 0 } }, --
     }
-    tbDialog:Show(tbOpt, NhanVatPham)
+    JulianV:Show(tbOpt, NhanVatPham)
 end
 
 function chonNguyenLieu( nType )
@@ -393,7 +393,7 @@ function chonNguyenLieu( nType )
         for id, VatPham in tbVatPham[nType] do
             tinsert(tbOpt, { VatPham.szName, nhanNguyenLieu, { nType, id } })
         end
-        tbDialog:Show(tbOpt, NguyenLieu_Dialog)
+        JulianV:Show(tbOpt, NguyenLieu_Dialog)
     end
 end
 
@@ -412,7 +412,7 @@ function nhanKhoangThach( nSeries )
         for i = 0, getn(tbMonPhai.tbSeries) do
             tinsert(tbOpt, { tbMonPhai.tbSeries[i][1], nhanKhoangThach, { i } })
         end
-        tbDialog:Show(tbOpt, NguyenLieu_Dialog,
+        JulianV:Show(tbOpt, NguyenLieu_Dialog,
             "Mêi <sex>chän ngò hµnh cho Kho¸ng Th¹ch<pic=46><color>")
     else
         for i = 149, 154 do
@@ -430,7 +430,7 @@ function VatPhamKhac_Dialog()
     local tbOpt = {}
     local tbVP_Khac = tbVatPham:Khac()
     for id, VatPham in tbVP_Khac do tinsert(tbOpt, { VatPham.szName, Nhan_VP_Khac, { id } }) end
-    tbDialog:Show(tbOpt, NhanVatPham)
+    JulianV:Show(tbOpt, NhanVatPham)
 end
 
 function Nhan_VP_Khac( nIndex, nCount )
@@ -446,7 +446,7 @@ function getMasks( nIndex )
     if not nIndex then
         local tbOpt = {}
         for i = 1, 10 do tinsert(tbOpt, { tbMonPhai.tbFacName[i], getMasks, { i } }) end
-        tbDialog:Show(tbOpt, NhanVatPham)
+        JulianV:Show(tbOpt, NhanVatPham)
     else
         local nStart, nEnd = tbMonPhai.tbMasks[nIndex].nStart, tbMonPhai.tbMasks[nIndex].nEnd
         for i = nStart, nEnd do

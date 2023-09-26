@@ -10,7 +10,7 @@ function Choose_Boss_Dialog()
             { "Boss TiÓu - §¹i Hoµng Kim", Boss_HK },
             { "Boss Hoµng Kim M«n Ph¸i", Boss_HKMP }, { "Boss Cao thñ Vâ l©m", Boss_CaoThu },
         }
-        tbDialog:Show(tbOpt, main)
+        JulianV:Show(tbOpt, main)
     end
 end
 
@@ -19,7 +19,7 @@ function Boss_CaoThu()
     for i = 1, getn(tbAdvancedBoss) do
         tinsert(tbOpt, { tbAdvancedBoss[i].szName, Call_Boss, { tbAdvancedBoss, i } })
     end
-    tbDialog:Show(tbOpt, Choose_Boss_Dialog, "Mêi <sex>chän Boss muèn gäi<pic=46><color>")
+    JulianV:Show(tbOpt, Choose_Boss_Dialog, "Mêi <sex>chän Boss muèn gäi<pic=46><color>")
 end
 
 function Boss_HKMP()
@@ -27,7 +27,7 @@ function Boss_HKMP()
     for i = 1, getn(tbFactionBoss) do
         tinsert(tbOpt, { tbFactionBoss[i].szName, Call_Boss, { tbFactionBoss, i } })
     end
-    tbDialog:Show(tbOpt, Choose_Boss_Dialog, "Mêi <sex>chän Boss muèn gäi<pic=46><color>")
+    JulianV:Show(tbOpt, Choose_Boss_Dialog, "Mêi <sex>chän Boss muèn gäi<pic=46><color>")
 end
 
 function Boss_HK( nPage )
@@ -53,7 +53,7 @@ function Boss_HK( nPage )
         if nPage > 1 then tinsert(tbOpt, { "Trang tr­íc", Boss_HK, { nPage - 1 } }) end
     end
 
-    tbDialog:Show(tbOpt, nil, "Mêi <sex>chän Boss muèn gäi<pic=46><color>")
+    JulianV:Show(tbOpt, nil, "Mêi <sex>chän Boss muèn gäi<pic=46><color>")
 end
 
 function Call_Boss( tbBoss, nIndex )

@@ -113,7 +113,7 @@ function skillSupport() -- hç trî skill
         { "Thªm - Xo¸ Skill n©ng cao", Skill_Nang_Cao },
     }
     if HaveMagic(210) == -1 then tinsert(tbOpt, 1, { "Häc Khinh c«ng", learnSkill, { 210 } }) end
-    tbDialog:Show(tbOpt, Player_Dialog)
+    JulianV:Show(tbOpt, Player_Dialog)
 end
 
 function CongDiemNhanh()
@@ -185,7 +185,7 @@ function Point_Dialog()
     for id, tbPoints in tbPointsType do
         tinsert(tbOpt, { tbPoints.szName, Pick_Points, { id, tbPoints.nLimit } })
     end
-    tbDialog:Show(tbOpt, Player_Dialog)
+    JulianV:Show(tbOpt, Player_Dialog)
 end
 
 function Pick_Points( nType, nLimit )
@@ -228,7 +228,7 @@ function Change_Serries( nSeries ) -- ®æi ngò hµnh
         for i = 0, getn(tbMonPhai.tbSeries) do
             tinsert(tbOpt, { tbMonPhai.tbSeries[i][1], Change_Serries, { i } })
         end
-        tbDialog:Show(tbOpt, Player_Dialog, "<sex>hiÖn t¹i lµ hÖ " .. szSeries(nCurSeries) ..
+        JulianV:Show(tbOpt, Player_Dialog, "<sex>hiÖn t¹i lµ hÖ " .. szSeries(nCurSeries) ..
             "\n\nMêi chän ngò hµnh muèn ®æi:")
     else
         if nCurSeries == nSeries then

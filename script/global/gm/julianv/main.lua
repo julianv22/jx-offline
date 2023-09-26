@@ -14,7 +14,7 @@ Include("\\script\\global\\gm\\julianv\\lib\\lib_vatpham.lua")
 Include("\\script\\global\\gm\\julianv\\lib\\lib_boss.lua")
 -----------------------------DIALOG-----------------------------
 
-tbDialog = JDialog
+JulianV = JDialog
 function main()
     dofile("script/global/gm/julianv/main.lua")
     dofile("script/global/gm/julianv/lib/lib_vatpham.lua")
@@ -27,8 +27,8 @@ function main()
         { "Admin Control Panel", Admin_Dialog }, --    
         { "Tools", ChucNangKhac }, --
     }
-    tbDialog:ChangeTitle()
-    tbDialog:Show(tbOpt)
+    JulianV:ChangeTitle()
+    JulianV:Show(tbOpt)
     return 1
 end
 ------------------------Admin------------------------
@@ -36,7 +36,7 @@ function Admin_Dialog()
     local tbOpt = {
         { "Check Emoticons", CheckEmo }, --    
     }
-    tbDialog:Show(tbOpt, main)
+    JulianV:Show(tbOpt, main)
 end
 
 function CheckEmo( nPic )
@@ -72,14 +72,14 @@ function Player_Dialog()
         { "§æi giíi tÝnh", Change_Sex }, --
         { "§æi tªn nh©n vËt", renameCharacter },
     }
-    tbDialog:Show(tbOpt, main)
+    JulianV:Show(tbOpt, main)
 end
 ------------------------Server------------------------
 Include("\\script\\global\\gm\\julianv\\functions\\server_manager.lua")
 function Server_Dialog()
     dofile("script/global/gm/julianv/functions/server_manager.lua")
     local tbOpt = { { "Gäi Boss Hoµng Kim", Choose_Boss_Dialog } }
-    tbDialog:Show(tbOpt, main)
+    JulianV:Show(tbOpt, main)
 end
 ------------------------Trang Trang bÞ - VËt phÈm------------------------
 Include("\\script\\global\\gm\\julianv\\functions\\trangbi_vatpham.lua")
@@ -100,7 +100,7 @@ function TrangBi_VatPham()
         { "Dän s¹ch R­¬ng chøa ®å", ClearF4 }, --
         { "Huû vËt phÈm", DisposeItem },
     }
-    tbDialog:Show(tbOpt, main)
+    JulianV:Show(tbOpt, main)
 end
 ------------------------Chøc n¨ng kh¸c------------------------
 function ChucNangKhac()
@@ -111,7 +111,7 @@ function ChucNangKhac()
         { "Söa lçi ThÇn Hµnh Phï", fix_shenxingfu }, --  
         { "KickOutSelf", KickOutSelf },
     }
-    tbDialog:Show(tbOpt, main)
+    JulianV:Show(tbOpt, main)
 end
 
 function fix_shenxingfu()

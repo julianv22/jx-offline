@@ -5,7 +5,6 @@ Include("\\script\\global\\gm\\julianv\\functions\\hoangkim_bachkim.lua") -- vò 
 Include("\\script\\global\\gm\\functions_goldplatiumitems.lua") -- lÊy item hoµng kim, b¹ch kim
 Include("\\script\\global\\gm\\lib_data_table.lua") -- data table ngùa & trang bÞ
 
-
 function NhanTrangBi()
     dofile("script/global/gm/julianv/functions/hoangkim_bachkim.lua")
     local tbOpt = { --    
@@ -141,7 +140,7 @@ function Change_Equip_Feature_Confirm(nCount)
         return
     elseif nCount == 1 then
         local nItemIndex = GetGiveItemUnit(1)
-        g_AskClientNumberEx(1, 500, "NhËp ID muèn ®æi:", {SetItemNewFeature, {nItemIndex}})
+        g_AskClientNumberEx(1, 9999, "NhËp ID muèn ®æi:", {SetItemNewFeature, {nItemIndex}})
         -- SetItemNewFeature(nItemIndex, nNo)
     end
 end
@@ -220,7 +219,7 @@ end
 
 function getQuestkey(nItemId)
     if nItemId == 7 or not nItemId then
-        g_AskClientNumberEx(343, 9999, "Questkey ID", {getQuestkey})
+        g_AskClientNumberEx(1, 9999, "Questkey ID", {getQuestkey})
     else
         Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddEventItem(nItemId)))
     end
@@ -232,12 +231,28 @@ function getMagicItem(szItem)
     else
         local tbItem = lib:Split(szItem, ",")
         if getn(tbItem) == 6 then
-            local nClass, nType, nId, nLvl, nSerie, nLuck, nMagic = tonumber(tbItem[1]), tonumber(tbItem[2]),
+            local nClass, nType, nId, nLvl, nSerie, nLuck = tonumber(tbItem[1]), tonumber(tbItem[2]),
                 tonumber(tbItem[3]), tonumber(tbItem[4]), tonumber(tbItem[5]), tonumber(tbItem[6])
-            local nItemIdx = AddItem(nClass, nType, nId, nLvl, nSerie, nLuck, nMagic)
+            local nItemIdx = AddItem(nClass, nType, nId, nLvl, nSerie, nLuck)
             Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(nItemIdx))
         else
             Talk(1, "", "Sai Item code: [" .. getn(tbItem) .. "] tr­êng d÷ liÖu.")
+        end
+    end
+end
+
+function getMagicItemSll(nItemId, nCount)
+    if not nItemId then
+        g_AskClientNumberEx(1, 9999, "ParticularType ID", {getMagicItemSll})
+    else
+        if not nCount then
+            g_AskClientNumberEx(1, CalcFreeItemCellCount(), "Sè l­îng", {getMagicItemSll, {nItemId}})
+        else
+            local ItemIndex
+            for i = 1, nCount do
+                ItemIndex = AddItem(6, 1, nItemId, 0, 0, 0)
+            end
+            Msg2Player("NhËn ®­îc " .. nCount .. " <color=yellow>" .. GetItemName(ItemIndex))
         end
     end
 end
@@ -305,7 +320,7 @@ function getTransLifeItem(nIndex, nCount)
             end
             Msg2Player(format("NhËn ®­îc %d %s", nCount, tbTransLifeItems[4].szName))
         else
-            local tbLog = format("[liguan]get_free_item_%s", tbTransLifeItems[nIndex].szName)
+            local szLogTitle = format("[liguan]get_free_item_%s", tbTransLifeItems[nIndex].szName)
             tbAwardTemplet:GiveAwardByList(tbTransLifeItems[nIndex], szLogTitle, nCount)
         end
     end
@@ -352,7 +367,7 @@ function nhanKhoangThach(nSeries)
         local tbOpt = {} --
         for i = 0, getn(tbMonPhai.tbSeries) do
             tinsert(tbOpt, {tbMonPhai.tbSeries[i][1], nhanKhoangThach, {i}})
-        end      
+        end
         tbDialog:Show(tbOpt, NguyenLieu_Dialog, "Mêi <sex>chän ngò hµnh cho Kho¸ng Th¹ch<pic=46><color>")
     else
         for i = 149, 154 do

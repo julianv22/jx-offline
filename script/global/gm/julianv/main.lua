@@ -86,7 +86,8 @@ function TrangBi_VatPham()
     {"NhËn vËt phÈm", NhanVatPham}, --    
     {"Thay ®æi ngo¹i h×nh trang bÞ", ChangeFeature_Dialog}, --    
     {"------------------------", TrangBi_VatPham}, --
-    {"LÊy MagicScript Item", getMagicItem}, --
+    {"LÊy Item (Genre, Detail, Particular)", getMagicItem}, --
+    {"LÊy nhiÒu Magic Item (Particular ID)", getMagicItemSll}, --
     {"LÊy Questkey Item (Questkey ID)", getQuestkey}, --
     {"LÊy GoldItem (GoldItem ID)", getGoldItem}, --
     {"------------------------", TrangBi_VatPham}, --

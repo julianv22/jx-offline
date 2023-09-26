@@ -90,8 +90,8 @@ tbVatPham.VP_Khac = {{
     szName = "Nhπc V≠¨ng Ki’m L‘ Bao",
     tbProp = {6, 1, 2340, 0, 0, 0}
 }, {
-    szName = "Long Huy’t Hoµng",
-    tbProp = {6, 1, 2340, 0, 0, 0}
+    szName = "Long Huy’t Hoµn",
+    tbProp = {6, 1, 2117, 0, 0, 0}
 }, {
     szName = "Tˆ M…u L÷nh",
     tbProp = {6, 1, 1427, 0, 0, 0}

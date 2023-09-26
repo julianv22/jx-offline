@@ -1,5 +1,11 @@
 dialognpc_julianv = {
     { 2526, 53, 1604, 3204, "\\script\\global\\gm\\julianv\\npc\\npc_dotim.lua", "NPC §å TÝm" },
+    { 2526, 11, 3147, 5077, "\\script\\global\\gm\\julianv\\npc\\npc_dotim.lua", "NPC §å TÝm" },
+    { 2526, 78, 1571, 3237, "\\script\\global\\gm\\julianv\\npc\\npc_dotim.lua", "NPC §å TÝm" },
+    { 2526, 1, 1609, 3198, "\\script\\global\\gm\\julianv\\npc\\npc_dotim.lua", "NPC §å TÝm" },
+    { 2526, 162, 1629, 3156, "\\script\\global\\gm\\julianv\\npc\\npc_dotim.lua", "NPC §å TÝm" },
+    { 2526, 37, 1718, 3084, "\\script\\global\\gm\\julianv\\npc\\npc_dotim.lua", "NPC §å TÝm" },
+    { 2526, 80, 1785, 3033, "\\script\\global\\gm\\julianv\\npc\\npc_dotim.lua", "NPC §å TÝm" },
 }
 
 npc_cocgo = {

@@ -1,60 +1,60 @@
 ------------------------------------------------------------------
 -- Copyright by Julian-V (https://www.youtube.com/julianv)
 ------------------------------------------------------------------
-tbPointsType = { C¸c lo¹i ®iÓm
+tbPointsType = { -- C¸c lo¹i ®iÓm
     [1] = {
         szName = "Kinh nghiÖm (EXP)",
         szUnit = "®iÓm EXP",
         nLimit = 9999999999999999,
-        pFun = function(num) AddOwnExp(num) end,
+        pFun = function( num ) AddOwnExp(num) end,
     },
     [2] = {
         szName = "§¼ng cÊp (Level)",
         szUnit = "®¼ng cÊp",
         nLimit = 200,
-        pFun = function(num) ST_LevelUp(num - GetLevel()) end,
+        pFun = function( num ) ST_LevelUp(num - GetLevel()) end,
     },
     [3] = {
         szName = "TiÒm n¨ng",
         szUnit = "®iÓm TiÒm n¨ng",
         nLimit = 1000000,
-        pFun = function(num) AddProp(num) end,
+        pFun = function( num ) AddProp(num) end,
     },
     [4] = {
         szName = "Kü n¨ng",
         szUnit = "®iÓm Kü n¨ng",
         nLimit = 999,
-        pFun = function(num) AddMagicPoint(num) end,
+        pFun = function( num ) AddMagicPoint(num) end,
     },
     [5] = {
         szName = "TiÒn v¹n",
         szUnit = "v¹n l­îng",
         nLimit = 100000,
-        pFun = function(num) Earn(num * 10000) end,
+        pFun = function( num ) Earn(num * 10000) end,
     },
     [6] = {
         szName = "TiÒn §ång",
         szUnit = "TiÒn §ång",
         nLimit = 999,
-        pFun = function(num) for i = 1, num do AddStackItem(1, 4, 417, 1, 1, 0, 0, 0) end end,
+        pFun = function( num ) for i = 1, num do AddStackItem(1, 4, 417, 1, 1, 0, 0, 0) end end,
     },
     [7] = {
         szName = "Kim Nguyªn B¶o",
         szUnit = "Kim Nguyªn B¶o",
         nLimit = 999,
-        pFun = function(num) for i = 1, num do AddEventItem(343) end end,
+        pFun = function( num ) for i = 1, num do AddEventItem(343) end end,
     },
     [8] = {
         szName = "Danh Väng",
         szUnit = "®iÓm Danh Väng",
         nLimit = 100000,
-        pFun = function(num) AddRepute(num) end,
+        pFun = function( num ) AddRepute(num) end,
     },
     [9] = {
         szName = "Phóc Duyªn",
         szUnit = "®iÓm Phóc Duyªn",
         nLimit = 100000,
-        pFun = function(num)
+        pFun = function( num )
             FuYuan_Start()
             FuYuan_Add(num)
         end,
@@ -86,10 +86,10 @@ tbPointsType = { C¸c lo¹i ®iÓm
     },
 }
 
-function change_PK(nType) -- ®æi mµu pk
+function change_PK( nType ) -- ®æi mµu pk
     if not nType then
         local tbSay = { "<sex>muèn ®æi sang mµu tr¹ng th¸i nµo<pic=44>" }
-        local szPK = function(num)
+        local szPK = function( num )
             return format("%s (%s)", tbMonPhai.tbPK_Status[num][1], tbMonPhai.tbPK_Status[num][3])
         end
         for i = 0, getn(tbMonPhai.tbPK_Status) do tinsert(tbSay, szPK(i) .. "/change_PK") end
@@ -99,12 +99,12 @@ function change_PK(nType) -- ®æi mµu pk
         SetCurCamp(nType)
         SetCamp(nType)
         Msg2Player(format("§· ®æi mµu PK sang <color=%s>%s", tbMonPhai.tbPK_Status[nType][2],
-                          tbMonPhai.tbPK_Status[nType][1]))
+                       tbMonPhai.tbPK_Status[nType][1]))
     end
 end
 
 Include("\\script\\global\\ÌØÊâÓÃµØ\\ÃÎ¾³\\npc\\Â·ÈË_ÅÑÉ®.lua"); -- tÈy tuû, c«ng ®iÓm nhanh
-Include("\\script\\\\global\\\\gm\\\\julianv\\\\npc\\\\npc_congskill.lua") -- Hç Trî Céng Full Skill
+Include("\\script\\global\\gm\\julianv\\npc\\npc_congskill.lua") -- Hç Trî Céng Full Skill
 
 function skillSupport() -- hç trî skill
     local tbOpt = {
@@ -126,7 +126,7 @@ function CongDiemNhanh()
     CreateTaskSay(tbSay)
 end
 
-function learnSkill(nSkillId, nLevel) -- häc skill
+function learnSkill( nSkillId, nLevel ) -- häc skill
     if HaveMagic(nSkillId) == 1 then
         Talk(1, "", "Ng­¬i ®· së h÷u kü n¨ng nµy råi")
     else
@@ -155,7 +155,7 @@ function Skill_Nang_Cao()
     CreateTaskSay(tbSay)
 end
 
-function AdvancedSkill(szSkill)
+function AdvancedSkill( szSkill )
     if szSkill == 0 then
         g_AskClientStringEx("1995,20", 1, 100, "Skill ID", { AdvancedSkill })
     else
@@ -171,7 +171,7 @@ function AdvancedSkill(szSkill)
     end
 end
 
-function DelAdvSkill(nSkillId)
+function DelAdvSkill( nSkillId )
     if nSkillId == 0 then
         g_AskClientNumberEx(1, 9999, "Skill ID", { DelAdvSkill })
     else
@@ -188,7 +188,7 @@ function Point_Dialog()
     tbDialog:Show(tbOpt, Player_Dialog)
 end
 
-function Pick_Points(nType, nLimit)
+function Pick_Points( nType, nLimit )
     if nType < 10 then
         g_AskClientNumberEx(1, nLimit, "Sè l­îng:", { Set_Points, { nType } })
     else
@@ -196,7 +196,7 @@ function Pick_Points(nType, nLimit)
     end
 end
 
-function Set_Points(nType, num)
+function Set_Points( nType, num )
     if num ~= 0 then
         tbPointsType[nType].pFun(num)
         Msg2Player("NhËn ®­îc <color=yellow>" .. num .. "<color> <color=green>" ..
@@ -204,7 +204,7 @@ function Set_Points(nType, num)
     end
 end
 
-function Change_Sex(bComfirm) -- chuyÓn giíi
+function Change_Sex( bComfirm ) -- chuyÓn giíi
     if not bComfirm then
         local tbOpt = {
             { "§i th«i!", Change_Sex, { 1 } }, --
@@ -218,9 +218,9 @@ function Change_Sex(bComfirm) -- chuyÓn giíi
     end
 end
 
-function Change_Serries(nSeries) -- ®æi ngò hµnh
+function Change_Serries( nSeries ) -- ®æi ngò hµnh
     local nCurSeries = GetSeries()
-    local szSeries = function(num)
+    local szSeries = function( num )
         return format("<color=%s>%s<color>", tbMonPhai.tbSeries[num][2], tbMonPhai.tbSeries[num][1])
     end
     if not nSeries then
@@ -229,11 +229,11 @@ function Change_Serries(nSeries) -- ®æi ngò hµnh
             tinsert(tbOpt, { tbMonPhai.tbSeries[i][1], Change_Serries, { i } })
         end
         tbDialog:Show(tbOpt, Player_Dialog, "<sex>hiÖn t¹i lµ hÖ " .. szSeries(nCurSeries) ..
-                          "\n\nMêi chän ngò hµnh muèn ®æi:")
+            "\n\nMêi chän ngò hµnh muèn ®æi:")
     else
         if nCurSeries == nSeries then
             Talk(1, "",
-                 "§· lµ hÖ " .. szSeries(nCurSeries) .. " råi, kh«ng cÇn chuyÓn n÷a!")
+                "§· lµ hÖ " .. szSeries(nCurSeries) .. " råi, kh«ng cÇn chuyÓn n÷a!")
         else
             SetSeries(nSeries)
             Talk(1, "KickOutSelf", "§· chuyÓn sang hÖ " .. szSeries(nSeries))
@@ -241,7 +241,7 @@ function Change_Serries(nSeries) -- ®æi ngò hµnh
     end
 end
 
-function renameCharacter(szName) -- ®æi tªn
+function renameCharacter( szName ) -- ®æi tªn
     if not szName then
         AskClientForString("renameCharacter", "", 1, 100, "NhËp tªn míi")
     else

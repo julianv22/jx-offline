@@ -8,6 +8,7 @@ Include("\\script\\global\\gm\\lib_data_table.lua") -- data table ngùa & trang b
 function NhanTrangBi()
     dofile("script/global/gm/julianv/functions/hoangkim_bachkim.lua")
     local tbOpt = {
+        { "NhËn ®å xanh - ®å tÝm", NhanTrangBi2 },
         { "NhËn Ên - Phi phong - Trang søc", TrangBiKhac_Dialog }, --
         { "Trang bÞ Hoµng Kim - B¹ch Kim cao cÊp", chose_type_goldquip }, --   
         { "NhËn Set Hoµng Kim M«n Ph¸i", SetHKMP_Dialog }, --    
@@ -15,10 +16,17 @@ function NhanTrangBi()
         { "Vò khÝ B¹ch Kim m«n ph¸i", VKHK_Dialog, { 1 } }, --
         { "Vò khÝ Hoµng Kim M«n Ph¸i", VKHK_Dialog, { 2 } }, --
         { "NhËn An Bang, Kim Phong, §Þnh Quèc, Hång ¶nh", HoangKimCui }, --
-        { "NhËn ®å xanh", nhanDoXanh_Dialog }, --
-        { "NhËn ®å tÝm", QualityItem_Dialog },
     }
     tbDialog:Show(tbOpt, TrangBi_VatPham)
+end
+
+function NhanTrangBi2()
+    local tbOpt = {
+        { "NhËn ®å xanh", nhanDoXanh_Dialog }, --
+        { "NhËn Trang bÞ tÝm", QualityItem_Dialog }, --
+        { "NhËn vò khÝ tÝm", QualityWeapon_Dialog },
+    }
+    tbDialog:Show(tbOpt, NhanTrangBi)
 end
 
 function NhanVatPham()
@@ -266,33 +274,56 @@ function ExpandStorage() -- Më réng r­¬ng
     AddItem(6, 1, 1427, 90, 1, 0, 0)
 end
 ---------------NhËn ®å xanh, ®å tÝm---------------
--- function QualityItem_Dialog(bGoto)
---     if not bGoto then
---         CreateTaskSay({"H·y nhËn ®å tÝm t¹i <bclr=pink>NPC §å TÝm<bclr>\n\n" ..
---             strfill_center("<color=yellow>Ba L¨ng HuyÖn<color>: <color=green>200/200<color>", 100) ..
---             "\n<sex>cã muèn di chuyÓn tíi ®ã kh«ng?", --
---         "H·y ®­a ta tíi ®ã!/#QualityItem_Dialog(1)", --
---         "Ta sÏ quay l¹i sau.../return"})
---     else
---         Msg2Player("H·y ngåi yªn, chóng ta di chuyÓn tíi <color=yellow>Ba L¨ng HuyÖn")
---         w, x, y = GetWorldPos()
---         if (w ~= 53) then
---             SetFightState(0)
---             NewWorld(53, 1605, 3205)
---         else
---             SetPos(1605, 3205)
---         end
---     end
--- end
-function QualityItem_Dialog( nSex ) -- då tÝm    
+function QualityWeapon_Dialog( bGoto )
+    if not bGoto then
+        CreateTaskSay({
+            "H·y nhËn ®å tÝm t¹i <bclr=pink>NPC §å TÝm<bclr>\n\n" ..
+                strfill_center("<color=yellow>Ba L¨ng HuyÖn<color>: <color=green>200/200<color>",
+                    100) .. "\n<sex>cã muèn di chuyÓn tíi ®ã kh«ng?", --
+            "H·y ®­a ta tíi ®ã!/#QualityWeapon_Dialog(1)", --
+            "Ta sÏ quay l¹i sau.../return",
+        })
+    else
+        Msg2Player("H·y ngåi yªn, chóng ta di chuyÓn tíi <color=yellow>Ba L¨ng HuyÖn")
+        w, x, y = GetWorldPos()
+        if (w ~= 53) then
+            SetFightState(0)
+            NewWorld(53, 1605, 3205)
+        else
+            SetPos(1605, 3205)
+        end
+    end
+end
+
+function QualityItem_Dialog( nSex, nSeries ) -- då tÝm    
     Include("\\script\\tagnewplayer\\qualityitem.lua")
     local tbOpt = {}
-
-    tbDialog:Show(tbOpt, NhanTrangBi)
+    if not nSex then -- chän giíi tÝnh
+        tbOpt = {
+            { "§å tÝm dµnh cho Nam", QualityItem_Dialog, { 0 } },
+            { "§å tÝm dµnh cho N÷", QualityItem_Dialog, { 1 } },
+        }
+        tbDialog:Show(tbOpt, NhanTrangBi2, "Mêi <sex>chän lo¹i trang bÞ<pic=46><color>")
+    else
+        if not nSeries then -- chän ngò hµnh
+            for i = 0, 4 do
+                tinsert(tbOpt, { tbMonPhai.tbSeries[i][1], QualityItem_Dialog, { nSex, i } })
+            end
+            tbDialog:Show(tbOpt, NhanTrangBi2, "Mêi <sex>chän ngò hµnh<pic=46><color>")
+        else -- chän trang bÞ            
+            for szName, _ in QItemNam do
+                tinsert(tbOpt, { szName, getQualityItem, { szName, nSeries, nSex } })
+            end
+            tbDialog:Show(tbOpt, QualityItem_Dialog, "Mêi <sex>chän trang bÞ<pic=46><color>")
+        end
+    end
 end
+
+function getQualityItem( szName, nSeries, nSex ) AddQItem(szName, nSeries, nSex) end
+
 function nhanDoXanh_Dialog() -- ®å xanh
     local tbOpt = {}
-    tbDialog:Show(tbOpt, NhanTrangBi)
+    tbDialog:Show(tbOpt, NhanTrangBi2)
 end
 ---------------VËt phÈm trïng sinh---------------
 tbTransLifeItems = {

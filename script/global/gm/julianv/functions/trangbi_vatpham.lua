@@ -313,23 +313,26 @@ function JulianV.QualityItem_Dialog( nSex, nSeries ) -- dÂ t›m
         }
         JDialog:Show(tbOpt, JulianV.NhanTrangBi2, "MÍi <sex>ch‰n loπi trang bﬁ<pic=46><color>")
     else
-        if not nSeries then -- ch‰n ngÚ hµnh
-            for i = 0, 4 do
-                tinsert(tbOpt, { tbMonPhai.tbSeries[i][1], JulianV.QualityItem_Dialog, { nSex, i } })
-            end
-            JDialog:Show(tbOpt, JulianV.NhanTrangBi2, "MÍi <sex>ch‰n ngÚ hµnh<pic=46><color>")
-        else -- ch‰n trang bﬁ            
-            for szName, _ in QItemNam do
-                tinsert(tbOpt, { szName, JulianV.getQualityItem, { szName, nSeries, nSex } })
-            end
-            JDialog:Show(tbOpt, JulianV.QualityItem_Dialog,
-                "MÍi <sex>ch‰n trang bﬁ<pic=46><color>")
+        for szName, _ in QItemNam do
+            tinsert(tbOpt, { szName, JulianV.getQualityItem, { nSex, szName } })
         end
+        JDialog:Show(tbOpt, JulianV.QualityItem_Dialog,
+            "MÍi <sex>ch‰n loπi trang bﬁ<pic=46><color>")
     end
+
 end
 
-function JulianV.getQualityItem( szName, nSeries, nSex ) --
-    AddQItem(szName, nSeries, nSex)
+function JulianV.getQualityItem( nSex, szName, nSeries )
+    if not nSeries then
+        local tbOpt = {}
+        for i = 0, 4 do
+            tinsert(tbOpt, { tbMonPhai.tbSeries[i][1], JulianV.getQualityItem, { nSex, szName, i } })
+        end
+        JDialog:Show(tbOpt, { JulianV.QualityItem_Dialog, { nSex } },
+            "MÍi <sex>ch‰n ngÚ hµnh cho trang bﬁ<pic=46><color>")
+    else
+        AddQItem(szName, nSeries, nSex)
+    end
 end
 
 function JulianV.DoXanh_Dialog( szEquipName ) -- ÆÂ xanh

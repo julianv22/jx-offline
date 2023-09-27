@@ -23,7 +23,7 @@ end
 function JulianV:NhanTrangBi2()
     local tbOpt = {
         { "NhÀn ÆÂ xanh", JulianV.DoXanh_Dialog }, --
-        { "NhÀn Trang bﬁ t›m", JulianV.QualityItem_Dialog }, --
+        { "NhÀn ÆÂ t›m", JulianV.QualityItem_Dialog }, --
         { "Ch’ tπo ÆÂ t›m", JulianV.QualityWeapon_Dialog },
     }
     JDialog:Show(tbOpt, JulianV.NhanTrangBi)

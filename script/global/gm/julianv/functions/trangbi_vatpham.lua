@@ -190,46 +190,11 @@ function Restore_Feature_Confirm( nCount )
     end
 end
 ------------------------C¸c lo¹i vËt phÈm------------------------
-function DisposeItem( nCount ) -- Huû vËt phÈm
-    if not nCount then
-        GiveItemUI("Hñy vËt phÈm",
-            "§¹i hiÖp h·y cÈn träng trong viÖc hñy vËt phÈm, vËt phÈm ®· hñy kh«ng thÓ lÊy l¹i ®­îc!",
-            "DisposeItem", "onCancel", 1);
-    else
-        for i = 1, nCount do
-            local nItemIndex = GetGiveItemUnit(i)
-            local strItem = GetItemName(nItemIndex)
-            RemoveItemByIndex(nItemIndex)
-            -- WriteLog(date("%Y%m%d %H%M%S").."\t".." GM Hñy Item "..GetAccount().."\t"..GetName().."\t".." Huû item "..strItem)
-        end
-        Msg2Player("Thao t¸c hñy vËt phÈm thµnh c«ng")
-        Talk(1, "", "Thao t¸c thµnh c«ng, xin kiÓm tra l¹i<pic=46>");
-    end
-end
-
 function JulianV.getGoldItem( nItemIdx ) -- nhËn trang bÞ HK
     if not nItemIdx then
         g_AskClientNumberEx(1, 9999, "GoldItem ID", { JulianV.getGoldItem })
     else
         Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddGoldItem(0, nItemIdx)))
-    end
-end
-
-function JulianV.ClearF4( bComfirm ) -- Dän r­¬ng ®å
-    if not bComfirm then
-        CreateNewSayEx(SPRLINK ..
-                           "<color=red><pic=115> L­u ý: <color>TÊt c¶ vËt phÈm vµ trang bÞ trong R­¬ng chøa ®å sÏ bÞ {{Xo¸ bá}} hoµn toµn vµ kh«ng thÓ phôc håi nh­ cò.\n\n<sex>cã ch¾c ch¾n muèn lµm vËy kh«ng<pic=44><color>", --
-            {
-                { "X¸c nhËn", JulianV.ClearF4, { 1 } }, --
-                { "§Ó ta suy nghÜ l¹i..." },
-            })
-    else
-        local tbItems = GetRoomItems(0);
-        if (getn(tbItems) > 0) then
-            for i = 1, getn(tbItems) do RemoveItemByIndex(tbItems[i], -1); end
-            AddItem(6, 1, 5128, 0, 0, 0)
-        end
-        Talk(1, "", "§· dän s¹ch r­¬ng<pic=46>")
     end
 end
 
@@ -273,12 +238,6 @@ function JulianV.getMagicItemSll( nItemId, nCount ) -- nhËn magic item theo sè l
     end
 end
 
-function JulianV:ExpandStorage() -- Më réng r­¬ng
-    OpenStoreBox(1)
-    OpenStoreBox(2)
-    OpenStoreBox(3)
-    AddItem(6, 1, 1427, 90, 1, 0, 0)
-end
 ---------------NhËn ®å xanh, ®å tÝm---------------
 function JulianV:QualityWeapon_Dialog()
     Include("\\script\\global\\gm\\julianv\\npc\\npc_dotim.lua")

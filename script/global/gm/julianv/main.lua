@@ -128,34 +128,6 @@ function JulianV.MoveTo( nMapId, nPosX, nPosY )
     GMMsg2Player("DÞch chuyÓn ®Õn vÞ trÝ",
         nMapId .. ", <color=yellow>" .. nPosX .. "/" .. nPosY .. "<color> <color=green>Thµnh c«ng!")
 end
--- function JulianV.Teleport( szPos )
---     if not szPos then
---         g_AskClientStringEx(GetStringTask(TASK_S_POSITION), 0, 256, "Map,PosX,PosY",
---             { JulianV.Teleport })
---     else
---         local tbPos = split(szPos, ",")
---         local nMap = tonumber(tbPos[1])
---         local nPosX = tonumber(tbPos[2])
---         local nPosY = tonumber(tbPos[3])
---         local nMove;
---         if nPosX < 1000 and nPosY < 1000 then
---             nPosX = nPosX * 8
---             nPosY = nPosY * 16
---         end
-
---         nMove = NewWorld(nMap, nPosX, nPosY)
---         AddSkillState(963, 1, 0, 18 * 3)
-
---         if nMove ~= 1 then
---             GMMsg2Player("DÞch chuyÓn ®Õn vÞ trÝ",
---                 "ThÊt b¹i! VÞ trÝ kh«ng hîp lÖ, vui lßng kiÓm tra l¹i.")
---             return
---         end
-
---         SetStringTask(TASK_S_POSITION, szPos)
---         GMMsg2Player("DÞch chuyÓn ®Õn vÞ trÝ", "<color=yellow>Thµnh c«ng!")
---     end
--- end
 ------------------------Nh©n vËt------------------------
 Include("\\script\\global\\fuyuan.lua") -- fuc duyen
 Include("\\script\\global\\gm\\julianv\\functions\\player_manager.lua")

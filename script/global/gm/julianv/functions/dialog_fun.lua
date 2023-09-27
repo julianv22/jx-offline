@@ -21,7 +21,11 @@ function JDialog:_init( szMessage ) -- Khoi tao tieu de Dialog
 end
 
 function JDialog:Show( table, pBack, szTitle ) -- Hien thi Dialog
-    if szTitle then self:_init(szTitle) end
+    if szTitle then
+        self:_init(szTitle)
+    else
+        self:ChangeTitle()
+    end
     self.tbOptions = table
     if pBack then
         if type(pBack) == "function" then -- nÕu tham sè lµ function
@@ -34,7 +38,6 @@ function JDialog:Show( table, pBack, szTitle ) -- Hien thi Dialog
     end
     tinsert(self.tbOptions, { "KÕt thóc ®èi tho¹i" })
     CreateNewSayEx(self.szTitle, self.tbOptions)
-    self:ChangeTitle()
 end
 
 function JDialog:ChangeTitle() -- Reset tieu de Dialog ve mac dinh

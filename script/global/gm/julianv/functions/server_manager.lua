@@ -1,62 +1,63 @@
 ------------------------------------------------------------------
 -- Copyright by Julian-V (https://www.youtube.com/julianv)
 ------------------------------------------------------------------
-function Choose_Boss_Dialog()
+function JulianV:Choose_Boss_Dialog()
     if GetLevel() < 90 then
         Talk(1, "",
             "§¼ng cÊp cña ng­¬i qu¸ thÊp kh«ng thÓ sö dông chøc n¨ng nµy <pic=15>\nH·y t¨ng lªn cÊp <color=yellow>90<color> råi quay l¹i nhÐ<pic=46>")
     else
         local tbOpt = {
-            { "Boss TiÓu - §¹i Hoµng Kim", Boss_HK },
-            { "Boss Hoµng Kim M«n Ph¸i", Boss_HKMP }, { "Boss Cao thñ Vâ l©m", Boss_CaoThu },
+            { "Boss TiÓu - §¹i Hoµng Kim", JulianV.Boss_HK },
+            { "Boss Hoµng Kim M«n Ph¸i", JulianV.Boss_HKMP },
+            { "Boss Cao thñ Vâ l©m", JulianV.Boss_CaoThu },
         }
-        JulianV:Show(tbOpt, main)
+        JDialog:Show(tbOpt, main)
     end
 end
 
-function Boss_CaoThu()
+function JulianV:Boss_CaoThu()
     local tbOpt = {}
     for i = 1, getn(tbAdvancedBoss) do
-        tinsert(tbOpt, { tbAdvancedBoss[i].szName, Call_Boss, { tbAdvancedBoss, i } })
+        tinsert(tbOpt, { tbAdvancedBoss[i].szName, JulianV.Call_Boss, { tbAdvancedBoss, i } })
     end
-    JulianV:Show(tbOpt, Choose_Boss_Dialog, "Mêi <sex>chän Boss muèn gäi<pic=46><color>")
+    JDialog:Show(tbOpt, JulianV.Choose_Boss_Dialog, "Mêi <sex>chän Boss muèn gäi<pic=46><color>")
 end
 
-function Boss_HKMP()
+function JulianV:Boss_HKMP()
     local tbOpt = {}
     for i = 1, getn(tbFactionBoss) do
-        tinsert(tbOpt, { tbFactionBoss[i].szName, Call_Boss, { tbFactionBoss, i } })
+        tinsert(tbOpt, { tbFactionBoss[i].szName, JulianV.Call_Boss, { tbFactionBoss, i } })
     end
-    JulianV:Show(tbOpt, Choose_Boss_Dialog, "Mêi <sex>chän Boss muèn gäi<pic=46><color>")
+    JDialog:Show(tbOpt, JulianV.Choose_Boss_Dialog, "Mêi <sex>chän Boss muèn gäi<pic=46><color>")
 end
 
-function Boss_HK( nPage )
+function JulianV.Boss_HK( nPage )
     local tbBossHK = JDialog:PhanTrang(tbBoss, 11)
     local tbOpt = {}
     if not nPage or nPage == 1 then
         for i = 1, 11 do
-            tinsert(tbOpt, { tbBossHK[1][i].szName, Call_Boss, { tbBossHK[1], i } })
+            tinsert(tbOpt, { tbBossHK[1][i].szName, JulianV.Call_Boss, { tbBossHK[1], i } })
         end
-        tinsert(tbOpt, { "Trang sau", Boss_HK, { 2 } })
+        tinsert(tbOpt, { "Trang sau", JulianV.Boss_HK, { 2 } })
     else
         local nCount = getn(tbBossHK)
         if nPage < nCount then
             for i = 1, 11 do
-                tinsert(tbOpt, { tbBossHK[nPage][i].szName, Call_Boss, { tbBossHK[nPage], i } })
+                tinsert(tbOpt, { tbBossHK[nPage][i].szName, JulianV.Call_Boss, { tbBossHK[nPage], i } })
             end
-            tinsert(tbOpt, { "Trang sau", Boss_HK, { nPage + 1 } })
+            tinsert(tbOpt, { "Trang sau", JulianV.Boss_HK, { nPage + 1 } })
         else
             for i = 1, getn(tbBossHK[nCount]) do
-                tinsert(tbOpt, { tbBossHK[nCount][i].szName, Call_Boss, { tbBossHK[nCount], i } })
+                tinsert(tbOpt, { tbBossHK[nCount][i].szName, JulianV.Call_Boss, { tbBossHK[nCount], i } })
             end
         end
-        if nPage > 1 then tinsert(tbOpt, { "Trang tr­íc", Boss_HK, { nPage - 1 } }) end
+        if nPage > 1 then tinsert(tbOpt, { "Trang tr­íc", JulianV.Boss_HK, { nPage - 1 } }) end
     end
 
-    JulianV:Show(tbOpt, nil, "Mêi <sex>chän Boss muèn gäi<pic=46><color>")
+    JDialog:Show(tbOpt, nil, "Mêi <sex>chän Boss muèn gäi<pic=46><color>")
 end
 
-function Call_Boss( tbBoss, nIndex )
+function JulianV.Call_Boss( tbBoss, nIndex )
     if GetFightState() == 0 then
         Talk(1, "", "Kh«ng thÓ th¶ boss ë nh÷ng n¬i phi chiÕn ®Êu ®­îc.")
         return

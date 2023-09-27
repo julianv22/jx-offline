@@ -14,7 +14,7 @@ Include("\\script\\global\\gm\\julianv\\lib\\lib_vatpham.lua")
 Include("\\script\\global\\gm\\julianv\\lib\\lib_boss.lua")
 -----------------------------DIALOG-----------------------------
 
-JulianV = JDialog
+JulianV = {}
 
 function main()
     dofile("script/global/gm/julianv/main.lua")
@@ -27,26 +27,27 @@ end
 
 function JulianV:Main()
     local tbOpt = {
-        { "Qu¶n lý Server", Server_Dialog }, --
-        { "Qu¶n lý Nh©n vËt", Player_Dialog }, --        
-        { "Trang bÞ - VËt phÈm", TrangBi_VatPham }, --                
-        { "Admin Control Panel", JulianV.Admin_Dialog }, --    
-        { "Tools", JulianV.ChucNangKhac }, --
+        { "Qu¶n lý Server", self.Server_Dialog }, --
+        { "Qu¶n lý Nh©n vËt", self.Player_Dialog }, --        
+        { "Trang bÞ - VËt phÈm", self.TrangBi_VatPham }, --                
+        { "Admin Control Panel", self.Admin_Dialog }, --    
+        { "Tools", self.ChucNangKhac }, --
     }
-    JulianV:ChangeTitle()
-    JulianV:Show(tbOpt)
+    JDialog:ChangeTitle()
+    JDialog:Show(tbOpt)
 end
 ------------------------Admin------------------------
 function JulianV:Admin_Dialog()
     local tbOpt = {
         { "Check Emoticons", JulianV.CheckEmo }, --    
     }
-    JulianV:Show(tbOpt, main)
+    JDialog:Show(tbOpt, main)
 end
 
 function JulianV.CheckEmo( nPic )
     if not nPic then
-        AskClientForNumber("JulianV.CheckEmo", 1, 999, "Start ID")
+        -- AskClientForNumber("#JulianV.CheckEmo", 1, 999, "Start ID")
+        g_AskClientNumberEx(1, 999, "Start Id", { JulianV.CheckEmo })
     else
         local szPic = ""
         for i = nPic, nPic + 7 do szPic = szPic .. "Pic " .. i .. ": <pic=" .. i .. ">\n" end
@@ -66,7 +67,7 @@ Include("\\script\\global\\fuyuan.lua") -- fuc duyen
 Include("\\script\\global\\gm\\julianv\\functions\\player_manager.lua")
 Include("\\script\\global\\gm\\ex_lib_function.lua")
 
-function Player_Dialog()
+function JulianV:Player_Dialog()
     dofile("script/global/gm/julianv/functions/player_manager.lua")
     local tbOpt = {
         { "NhËn ®iÓm", Point_Dialog }, --
@@ -77,18 +78,18 @@ function Player_Dialog()
         { "§æi giíi tÝnh", Change_Sex }, --
         { "§æi tªn nh©n vËt", renameCharacter },
     }
-    JulianV:Show(tbOpt, main)
+    JDialog:Show(tbOpt, main)
 end
 ------------------------Server------------------------
 Include("\\script\\global\\gm\\julianv\\functions\\server_manager.lua")
-function Server_Dialog()
+function JulianV:Server_Dialog()
     dofile("script/global/gm/julianv/functions/server_manager.lua")
-    local tbOpt = { { "Gäi Boss Hoµng Kim", Choose_Boss_Dialog } }
-    JulianV:Show(tbOpt, main)
+    local tbOpt = { { "Gäi Boss Hoµng Kim", JulianV.Choose_Boss_Dialog } }
+    JDialog:Show(tbOpt, main)
 end
 ------------------------Trang Trang bÞ - VËt phÈm------------------------
 Include("\\script\\global\\gm\\julianv\\functions\\trangbi_vatpham.lua")
-function TrangBi_VatPham()
+function JulianV:TrangBi_VatPham()
     dofile("script/global/gm/julianv/functions/trangbi_vatpham.lua")
     local tbOpt = {
         { "NhËn vËt phÈm", NhanVatPham }, --    
@@ -105,7 +106,7 @@ function TrangBi_VatPham()
         { "Dän s¹ch R­¬ng chøa ®å", ClearF4 }, --
         { "Huû vËt phÈm", DisposeItem },
     }
-    JulianV:Show(tbOpt, main)
+    JDialog:Show(tbOpt, main)
 end
 ------------------------Chøc n¨ng kh¸c------------------------
 function JulianV:ChucNangKhac()
@@ -116,7 +117,7 @@ function JulianV:ChucNangKhac()
         { "Söa lçi ThÇn Hµnh Phï", JulianV.fix_shenxingfu }, --  
         { "KickOutSelf", KickOutSelf },
     }
-    JulianV:Show(tbOpt, main)
+    JDialog:Show(tbOpt, main)
 end
 
 function JulianV:fix_shenxingfu()

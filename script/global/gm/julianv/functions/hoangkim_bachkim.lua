@@ -1,19 +1,21 @@
 ------------------------------------------------------------------
 -- Copyright by Julian-V (https://www.youtube.com/julianv)
 ----------------------------Vò khÝ BKMP---------------------------
-function VKHK_Dialog( nType )
+function JulianV.VKHK_Dialog( nType )
     local tbOpt = {}
     if nType == 1 then
         for id, szMonPhai in tbMonPhai.tbFacName do
-            tinsert(tbOpt, { szMonPhai, getWeapon, { nType, id } })
+            tinsert(tbOpt, { szMonPhai, JulianV.getWeapon, { nType, id } })
         end
     else
-        for i = 1, 10 do tinsert(tbOpt, { tbMonPhai.tbFacName[i], getWeapon, { nType, i } }) end
+        for i = 1, 10 do
+            tinsert(tbOpt, { tbMonPhai.tbFacName[i], JulianV.getWeapon, { nType, i } })
+        end
     end
-    JDialog:Show(tbOpt, NhanTrangBi, "Mêi <sex>chän m«n ph¸i<pic=46><color>")
+    JDialog:Show(tbOpt, JulianV.NhanTrangBi, "Mêi <sex>chän m«n ph¸i<pic=46><color>")
 end
 
-function getWeapon( nType, id )
+function JulianV.getWeapon( nType, id )
     if (CountFreeRoomByWH(2, 4, 1) < 1) then
         Talk(1, "",
             "Hµnh trang kh«ng ®ñ « trèng! Xin h·y s¾p xÕp råi quay l¹i nhÐ<pic=46>");
@@ -36,7 +38,7 @@ function getWeapon( nType, id )
     end
 end
 
-function SetHKMP_Dialog( nItemId ) -- set trang bÞ hkmp
+function JulianV.SetHKMP_Dialog( nItemId ) -- set trang bÞ hkmp
     if GetFaction() == "" then
         Talk(1, "", "Nhµ ng­¬i ch­a gia nhËp m«n ph¸i nhËn c¸i g× mµ nhËn <pic=138>")
         return
@@ -45,9 +47,10 @@ function SetHKMP_Dialog( nItemId ) -- set trang bÞ hkmp
     if not nItemId then
         local tbOpt = {}
         for id, wp in tbMonPhai.tbGoldEquip[nFacID] do
-            tinsert(tbOpt, { wp, SetHKMP_Dialog, { id } })
+            tinsert(tbOpt, { wp, JulianV.SetHKMP_Dialog, { id } })
         end
-        JDialog:Show(tbOpt, NhanTrangBi, "Mêi <sex>chän lo¹i h×nh luyÖn c«ng<pic=46><color>")
+        JDialog:Show(tbOpt, JulianV.NhanTrangBi,
+            "Mêi <sex>chän lo¹i h×nh luyÖn c«ng<pic=46><color>")
     else
         for i = 1, 5 do
             Msg2Player("NhËn ®­îc trang bÞ Hoµng Kim M«n ph¸i <color=yellow>" ..
@@ -56,13 +59,13 @@ function SetHKMP_Dialog( nItemId ) -- set trang bÞ hkmp
     end
 end
 
-function TrangBi_HKMP_An( nFacId ) -- set trang bÞ hkmp Èn
+function JulianV.TrangBi_HKMP_An( nFacId ) -- set trang bÞ hkmp Èn
     if not nFacId then
         local tbOpt = {}
         for id, szMonPhai in tbMonPhai.tbFacName do
-            tinsert(tbOpt, { szMonPhai, TrangBi_HKMP_An, { id } })
+            tinsert(tbOpt, { szMonPhai, JulianV.TrangBi_HKMP_An, { id } })
         end
-        JDialog:Show(tbOpt, NhanTrangBi, "Mêi <sex>chän m«n ph¸i<pic=46><color>")
+        JDialog:Show(tbOpt, JulianV.NhanTrangBi, "Mêi <sex>chän m«n ph¸i<pic=46><color>")
     else
         if not tbMonPhai.tbPrivateEquip[nFacId] then
             Talk(1, "", "M«n ph¸i nµy ch­a cã trang bÞ TrÊn Bang Chi B¶o<pic=46>")
@@ -75,16 +78,17 @@ function TrangBi_HKMP_An( nFacId ) -- set trang bÞ hkmp Èn
     end
 end
 
-function HoangKimCui( nStart, nEnd ) -- trang bÞ hk th­êng
+function JulianV.HoangKimCui( nStart, nEnd ) -- trang bÞ hk th­êng
     if not nStart then
         local tbOpt = {
-            { "An Bang", HoangKimCui, { 408, 411 } }, --
-            { "§Þnh Quèc", HoangKimCui, { 389, 393 } }, --
-            { "Kim Phong", HoangKimCui, { 177, 185 } }, --
-            { "Hång ¶nh (Th­êng)", HoangKimCui, { 204, 207 } }, --
-            { "Hång ¶nh (Hoµn Mü)", HoangKimCui, { 434, 437 } },
+            { "An Bang", JulianV.HoangKimCui, { 408, 411 } }, --
+            { "§Þnh Quèc", JulianV.HoangKimCui, { 389, 393 } }, --
+            { "Kim Phong", JulianV.HoangKimCui, { 177, 185 } }, --
+            { "Hång ¶nh (Th­êng)", JulianV.HoangKimCui, { 204, 207 } }, --
+            { "Hång ¶nh (Hoµn Mü)", JulianV.HoangKimCui, { 434, 437 } },
         }
-        JDialog:Show(tbOpt, NhanTrangBi, "Mêi <sex>chän trong bÞ yªu thÝch<pic=46><color>")
+        JDialog:Show(tbOpt, JulianV.NhanTrangBi,
+            "Mêi <sex>chän trong bÞ yªu thÝch<pic=46><color>")
     else
         for i = nStart, nEnd do
             Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddGoldItem(0, i)))
@@ -92,19 +96,19 @@ function HoangKimCui( nStart, nEnd ) -- trang bÞ hk th­êng
     end
 end
 -------------------------Ên - Phi Phong - Trang Søc-------------------------
-function NguHanhAn_Diag()
+function JulianV:NguHanhAn_Diag()
     local tbOpt = {
-        { "T©n Nh©m Hµnh Ên Gi¸m (H¹)", getNguHanhAn, { 5930 } }, --
-        { "T©n Nh©m Hµnh Ên Gi¸m (Trung)", getNguHanhAn, { 5931 } }, --
-        { "T©n Nh©m Hµnh Ên Gi¸m (Th­îng)", getNguHanhAn, { 5932 } }, --
-        { "Ngò Hµnh Ên C­êng Ho¸", getNguHanhAn, { 0 } }, --
-        { "Ngò Hµnh Ên Nh­îc Ho¸", getNguHanhAn, { 1 } }, --
-        { "Ngò Hµnh Ên C­êng Ho¸ vµ Nh­îc Ho¸", getNguHanhAn, { 2 } },
+        { "T©n Nh©m Hµnh Ên Gi¸m (H¹)", JulianV.getNguHanhAn, { 5930 } }, --
+        { "T©n Nh©m Hµnh Ên Gi¸m (Trung)", JulianV.getNguHanhAn, { 5931 } }, --
+        { "T©n Nh©m Hµnh Ên Gi¸m (Th­îng)", JulianV.getNguHanhAn, { 5932 } }, --
+        { "Ngò Hµnh Ên C­êng Ho¸", JulianV.getNguHanhAn, { 0 } }, --
+        { "Ngò Hµnh Ên Nh­îc Ho¸", JulianV.getNguHanhAn, { 1 } }, --
+        { "Ngò Hµnh Ên C­êng Ho¸ vµ Nh­îc Ho¸", JulianV.getNguHanhAn, { 2 } },
     }
-    JDialog:Show(tbOpt, TrangBiKhac_Dialog)
+    JDialog:Show(tbOpt, JulianV.TrangBiKhac_Dialog)
 end
 
-function getNguHanhAn( nType, nIndex )
+function JulianV.getNguHanhAn( nType, nIndex )
     if nType > 2 then
         Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddGoldItem(0, nType)))
         return
@@ -121,26 +125,26 @@ function getNguHanhAn( nType, nIndex )
         end
         local tbOpt = {}
         for i = 1, 10 do
-            tinsert(tbOpt, { szLoaiAn(nType) .. i, getNguHanhAn, { nType, nType * 10 + i } })
+            tinsert(tbOpt, { szLoaiAn(nType) .. i, JulianV.getNguHanhAn, { nType, nType * 10 + i } })
         end
-        JDialog:Show(tbOpt, NguHanhAn_Diag)
+        JDialog:Show(tbOpt, JulianV.NguHanhAn_Diag)
     else
         -- Msg2Player(nIndex+3204)
         Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddGoldItem(0, nIndex + 3204)))
     end
 end
 
-function getPhiPhong( nIndex )
+function JulianV.getPhiPhong( nIndex )
     if not nIndex then
         local tbOpt = {
-            { "Phi Phong cÊp thÊp", getPhiPhong, { 3465 } }, --
-            { "Phi Phong PhÖ Quang", getPhiPhong, { 3476 } }, --
-            { "Phi Phong KhÊp ThÇn", getPhiPhong, { 3479 } }, --
-            { "Phi Phong K×nh Thiªn", getPhiPhong, { 3482 } }, --
-            { "Phi Phong V« Cùc", getPhiPhong, { 3485 } }, --
-            { "Phi Phong Siªu CÊp", getPhiPhong, { 3488 } },
+            { "Phi Phong cÊp thÊp", JulianV.getPhiPhong, { 3465 } }, --
+            { "Phi Phong PhÖ Quang", JulianV.getPhiPhong, { 3476 } }, --
+            { "Phi Phong KhÊp ThÇn", JulianV.getPhiPhong, { 3479 } }, --
+            { "Phi Phong K×nh Thiªn", JulianV.getPhiPhong, { 3482 } }, --
+            { "Phi Phong V« Cùc", JulianV.getPhiPhong, { 3485 } }, --
+            { "Phi Phong Siªu CÊp", JulianV.getPhiPhong, { 3488 } },
         }
-        JDialog:Show(tbOpt, TrangBiKhac_Dialog)
+        JDialog:Show(tbOpt, JulianV.TrangBiKhac_Dialog)
     else
         if nIndex == 3465 then
             for i = 3465, 3475 do AddGoldItem(0, i) end
@@ -151,16 +155,16 @@ function getPhiPhong( nIndex )
     end
 end
 
-function getTrangSuc( nIndex, nEnd )
+function JulianV.getTrangSuc( nIndex, nEnd )
     if not nIndex then
         local tbOpt = {
-            { "Bé Trang Søc 1", getTrangSuc, { 1 } }, --
-            { "Bé Trang Søc 2", getTrangSuc, { 2 } }, --
-            { "Bé Trang Søc Long §¸m", getTrangSuc, { 4483, 4487 } }, --
-            { "Bé Trang Søc Cuång Lan", getTrangSuc, { 4488, 4492 } }, --
-            { "Long ChiÕn Vu D·", getTrangSuc, { 5657 } },
+            { "Bé Trang Søc 1", JulianV.getTrangSuc, { 1 } }, --
+            { "Bé Trang Søc 2", JulianV.getTrangSuc, { 2 } }, --
+            { "Bé Trang Søc Long §¸m", JulianV.getTrangSuc, { 4483, 4487 } }, --
+            { "Bé Trang Søc Cuång Lan", JulianV.getTrangSuc, { 4488, 4492 } }, --
+            { "Long ChiÕn Vu D·", JulianV.getTrangSuc, { 5657 } },
         }
-        JDialog:Show(tbOpt, TrangBiKhac_Dialog)
+        JDialog:Show(tbOpt, JulianV.TrangBiKhac_Dialog)
     else
         local thongbao = function()
             Talk(1, "", "§· chuyÓn trang bÞ vµo hµnh trang, xin h·y kiÓm tra l¹i<pic=46>")
@@ -189,19 +193,19 @@ function getTrangSuc( nIndex, nEnd )
     end
 end
 -------------------------NhÉn Cµn Kh«n-------------------------
-function NhanCanKhon_Diag( szResit, nIndex )
+function JulianV.NhanCanKhon_Diag( szResit, nIndex )
     local tbOpt = {}
     if not nIndex then
         if not szResit then
             for resitName, _ in tbNhanCanKhon do
-                tinsert(tbOpt, { resitName, NhanCanKhon_Diag, { resitName } })
+                tinsert(tbOpt, { resitName, JulianV.NhanCanKhon_Diag, { resitName } })
             end
         else
             for _, tbEff in tbNhanCanKhon[szResit] do
-                tinsert(tbOpt, { tbEff[1], NhanCanKhon_Diag, { szResit, tbEff[2] } })
+                tinsert(tbOpt, { tbEff[1], JulianV.NhanCanKhon_Diag, { szResit, tbEff[2] } })
             end
         end
-        JDialog:Show(tbOpt, TrangBiKhac_Dialog,
+        JDialog:Show(tbOpt, JulianV.TrangBiKhac_Dialog,
             "Mêi <sex>chän thuéc tÝnh cña NhÉn Cµn Kh«n<pic=46><color>")
     else
         Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddGoldItem(0, nIndex)))

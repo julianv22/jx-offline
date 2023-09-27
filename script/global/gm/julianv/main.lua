@@ -116,7 +116,7 @@ function JulianV.MoveTo( nMapId, nPosX, nPosY )
         nPosX = nPosX * 8
         nPosY = nPosY * 16
     end
-    nMove = NewWorld(nMapId, nPosX, nPosY)
+    local nMove = NewWorld(nMapId, nPosX, nPosY)
     AddSkillState(963, 1, 0, 18 * 3)
     if nMove ~= 1 then
         GMMsg2Player("Dﬁch chuy”n Æ’n vﬁ tr›",

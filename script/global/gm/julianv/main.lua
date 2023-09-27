@@ -8,10 +8,12 @@ IncludeLib("FILESYS")
 Include("\\script\\dailogsys\\dailogsay.lua")
 Include("\\script\\activitysys\\functionlib.lua")
 Include("\\script\\lib\\common.lua")
+------------------------------------------------------------------
 Include("\\script\\global\\gm\\julianv\\functions\\dialog_fun.lua")
 Include("\\script\\global\\gm\\julianv\\lib\\lib_monphai.lua")
 Include("\\script\\global\\gm\\julianv\\lib\\lib_vatpham.lua")
 Include("\\script\\global\\gm\\julianv\\lib\\lib_boss.lua")
+Include("\\script\\global\\gm\\julianv\\lib\\lib_trangbi.lua")
 -----------------------------DIALOG-----------------------------
 
 JulianV = {}
@@ -72,7 +74,7 @@ function JulianV:TrangBi_VatPham()
     local tbOpt = {
         { "NhÀn vÀt ph»m", JulianV.NhanVatPham }, --    
         { "NhÀn trang bﬁ", JulianV.NhanTrangBi }, --   
-        { "Trang bﬁ hi’m" }, --
+        { "Trang bﬁ hi’m", JulianV.TrangBiHiem }, --
         { "Thay ÆÊi ngoπi h◊nh trang bﬁ", JulianV.ChangeFeature_Dialog }, --    
         { "------------------------", JulianV.TrangBi_VatPham }, --
         { "NhÀn MagicScript Item (Genre, Detail, Particular)", JulianV.getMagicItem }, --

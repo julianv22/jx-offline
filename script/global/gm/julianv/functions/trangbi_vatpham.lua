@@ -22,11 +22,16 @@ end
 
 function JulianV:NhanTrangBi2()
     local tbOpt = {
-        { "NhËn ®å xanh", JulianV.nhanDoXanh_Dialog }, --
+        { "NhËn ®å xanh", JulianV.DoXanh_Dialog }, --
         { "NhËn Trang bÞ tÝm", JulianV.QualityItem_Dialog }, --
         { "ChÕ t¹o ®å tÝm", JulianV.QualityWeapon_Dialog },
     }
     JDialog:Show(tbOpt, JulianV.NhanTrangBi)
+end
+
+function JulianV.TrangBiHiem()
+    local tbOpt = {}
+    JDialog:Show(tbOpt, JulianV.TrangBi_VatPham)
 end
 
 function JulianV:NhanVatPham()
@@ -327,9 +332,42 @@ function JulianV.getQualityItem( szName, nSeries, nSex ) --
     AddQItem(szName, nSeries, nSex)
 end
 
-function JulianV:nhanDoXanh_Dialog() -- ®å xanh
+function JulianV.DoXanh_Dialog( szEquipName ) -- ®å xanh
     local tbOpt = {}
-    JDialog:Show(tbOpt, JulianV.NhanTrangBi2)
+    if not szEquipName then
+        for szTenTb, _ in tbDoXanh do
+            tinsert(tbOpt, { szTenTb, JulianV.DoXanh_Dialog, { szTenTb } })
+        end
+
+    else
+        for id, tbEquip in tbDoXanh[szEquipName] do
+            tinsert(tbOpt, { tbEquip[1], JulianV.Chon_Series, { tbEquip } })
+        end
+    end
+    JDialog:Show(tbOpt, JulianV.DoXanh_Dialog, "<sex>muèn nhËn trang bÞ nµo<pic=44><color>")
+end
+
+function JulianV.Chon_Series( tbEquip )
+    local tbOpt = {}
+    for i = 0, getn(tbMonPhai.tbSeries) do
+        tinsert(tbOpt, { tbMonPhai.tbSeries[i][1], JulianV.getDoXanh, { tbEquip, i } })
+    end
+    JDialog:Show(tbOpt, JulianV.DoXanh_Dialog,
+        "Mêi <sex>chän ngò hµnh cho trang bÞ<pic=46><color>")
+end
+
+function JulianV.getDoXanh( tbEquip, nSeries, nCount )
+    if not nCount or nCount == 0 then
+        g_AskClientNumberEx(1, CalcFreeItemCellCount(), "Sè l­îng",
+            { JulianV.getDoXanh, { tbEquip, nSeries, nCount } })
+    else
+        local nItemIndex
+        local nGenre, nDetail, nPart = tbEquip[2], tbEquip[3], tbEquip[4]
+        for i = 1, nCount do
+            nItemIndex = AddItem(nGenre, nDetail, nPart, 10, nSeries, 500, 10)
+        end
+        Msg2Player("NhËn ®­îc " .. nCount .. " <color=blue>" .. GetItemName(nItemIndex))
+    end
 end
 ---------------VËt phÈm trïng sinh---------------
 tbTransLifeItems = {

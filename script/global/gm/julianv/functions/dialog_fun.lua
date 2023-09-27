@@ -7,6 +7,7 @@ Include("\\script\\lib\\common.lua")
 
 SPRLINK = "<#><link=image[0]:\\spr\\julianv.spr><link>"
 JDialog = {}
+JDialog.tbOptions = { nil } -- Cac dong menu
 
 function JDialog:InitTitle( szMessage ) -- Khoi tao tieu de Dialog
     dofile("script/global/gm/julianv/functions/dialog_fun.lua")
@@ -17,16 +18,15 @@ function JDialog:InitTitle( szMessage ) -- Khoi tao tieu de Dialog
                                   "Xin chµo <sex><bclr=red>%s<bclr> ta cã thÓ gióp g× cho ng­¬i<pic=44><color>",
                            GetName())
     end
-    self.tbOptions = { nil } -- Cac dong menu
 end
 
-function JDialog:Show( table, pBack, szTitle ) -- Hien thi Dialog
+function JDialog:Show( tbOpt, pBack, szTitle ) -- Hien thi Dialog
     if szTitle then
         self:InitTitle(szTitle)
     else
         self:DefaultTitle()
     end
-    self.tbOptions = table
+    self.tbOptions = tbOpt
     if pBack then
         if type(pBack) == "function" then -- nÕu tham sè lµ function
             tinsert(self.tbOptions, { "Trë l¹i", pBack })

@@ -8,7 +8,7 @@ Include("\\script\\lib\\common.lua")
 SPRLINK = "<#><link=image[0]:\\spr\\julianv.spr><link>"
 JDialog = {}
 
-function JDialog:_init( szMessage ) -- Khoi tao tieu de Dialog
+function JDialog:InitTitle( szMessage ) -- Khoi tao tieu de Dialog
     dofile("script/global/gm/julianv/functions/dialog_fun.lua")
     if szMessage then
         self.szTitle = SPRLINK .. szMessage -- Tieu de Dialog
@@ -22,9 +22,9 @@ end
 
 function JDialog:Show( table, pBack, szTitle ) -- Hien thi Dialog
     if szTitle then
-        self:_init(szTitle)
+        self:InitTitle(szTitle)
     else
-        self:ChangeTitle()
+        self:DefaultTitle()
     end
     self.tbOptions = table
     if pBack then
@@ -40,7 +40,7 @@ function JDialog:Show( table, pBack, szTitle ) -- Hien thi Dialog
     CreateNewSayEx(self.szTitle, self.tbOptions)
 end
 
-function JDialog:ChangeTitle() -- Reset tieu de Dialog ve mac dinh
+function JDialog:DefaultTitle() -- Reset tieu de Dialog ve mac dinh
     local nW, nX, nY = GetWorldPos()
     local szFactionName = GetFaction() == "" and "T¸n Nh©n" or tbMonPhai.tbPinyn[GetFaction()][2]
     local nOnline, szAccount, szName, nTransLifeCount = GetPlayerCount(), GetAccount(), GetName(),
@@ -51,7 +51,7 @@ function JDialog:ChangeTitle() -- Reset tieu de Dialog ve mac dinh
                           "<pic=137> Online   : <color=yellow>%s<color>     Tµi kho¶n : <bclr=red>%s<bclr>\n<pic=136> Nh©n vËt : <bclr=blue>%s<bclr>\n<pic=135> M«n ph¸i : <color=green>%s<color>     CÊp ®é : <color=green>%d<color>\n<pic=137> Mµu PK   : %s   Trïng sinh : <color=green>%d<color>\n\n<pic=54> Täa ®é  : <color=yellow>%d,<color> <color=orange>%d/%d<color>",
                           nOnline, szAccount, szName, szFactionName, GetLevel(), szCurCamp, 0, nW,
                           nX, nY)
-    self:_init(szMessage)
+    self:InitTitle(szMessage)
 end
 
 function JDialog:PhanTrang( table, nOfPage ) -- Phan trang

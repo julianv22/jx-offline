@@ -223,7 +223,6 @@ tbCheTao = {
     tbOptions = {},
 }
 
-JulianV = JDialog
 function main()
     dofile("script/global/gm/julianv/npc/npc_dotim.lua")
     tbDoTim:Main()
@@ -237,8 +236,7 @@ function tbDoTim:Main() -- ch‰n loπi trang bﬁ ch’ tπo
     for id, tbEquip in self.tbTrangBi do
         tinsert(tbOpt, { id .. ". " .. tbEquip.szName, self.PurpleItem_diaglog, { id } })
     end
-    JulianV:ChangeTitle()
-    JulianV:Show(tbOpt, nil, szTitle)
+    JDialog:Show(tbOpt, nil, szTitle)
 end
 
 function tbDoTim.PurpleItem_diaglog( nItemId ) -- ch‰n t™n trang bﬁ
@@ -257,7 +255,7 @@ function tbDoTim.PurpleItem_diaglog( nItemId ) -- ch‰n t™n trang bﬁ
         tinsert(tbOpt,
             { tbEquip[1], tbDoTim.getItemLevel, { nItemId, nEqIdx, nGenre, nDetail, nPart } })
     end
-    JulianV:Show(tbOpt, main, MAIN_TITLE)
+    JDialog:Show(tbOpt, main, MAIN_TITLE)
 end
 
 function tbDoTim.getItemLevel( nItemId, nEqIdx, nGenre, nDetail, nPart ) -- ch‰n level trang bﬁ
@@ -279,7 +277,7 @@ function tbDoTim.getItemSeries( nItemLevel ) -- ch‰n ngÚ hµnh trang bﬁ
     for nSeries, tbHe in tbDoTim.tbSeries do
         tinsert(tbOpt, { "H÷ " .. tbHe[1], tbDoTim.getLine, { 1, nSeries } })
     end
-    JulianV:Show(tbOpt, nil, szTitle)
+    JDialog:Show(tbOpt, nil, szTitle)
 end
 
 function tbDoTim.getLine( nLine, nSeries, tbLineOpt ) -- ch‰n c∏c dﬂng
@@ -305,7 +303,7 @@ function tbDoTim.getLine( nLine, nSeries, tbLineOpt ) -- ch‰n c∏c dﬂng
         szTitle = MAIN_TITLE
         tinsert(tbOpt, { "ßÂng ˝ ch’ tπo", tbDoTim.CheTaoDoTim })
     end
-    JulianV:Show(tbOpt, nil, szTitle)
+    JDialog:Show(tbOpt, nil, szTitle)
 end
 
 function tbDoTim.insertTable( tbOpt, nLine ) -- hi”n thﬁ c∏c dﬂng

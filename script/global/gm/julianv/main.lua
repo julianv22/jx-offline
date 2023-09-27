@@ -33,7 +33,6 @@ function JulianV:Main()
         { "Admin Control Panel", self.Admin_Dialog }, --    
         { "Tools", self.ChucNangKhac }, --
     }
-    JDialog:ChangeTitle()
     JDialog:Show(tbOpt)
 end
 ------------------------Admin------------------------

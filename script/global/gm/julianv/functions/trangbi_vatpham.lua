@@ -24,7 +24,7 @@ function JulianV:NhanTrangBi2()
     local tbOpt = {
         { "NhËn ®å xanh", JulianV.nhanDoXanh_Dialog }, --
         { "NhËn Trang bÞ tÝm", JulianV.QualityItem_Dialog }, --
-        { "NhËn vò khÝ tÝm", JulianV.QualityWeapon_Dialog },
+        { "ChÕ t¹o ®å tÝm", JulianV.QualityWeapon_Dialog },
     }
     JDialog:Show(tbOpt, JulianV.NhanTrangBi)
 end
@@ -275,25 +275,27 @@ function JulianV:ExpandStorage() -- Më réng r­¬ng
     AddItem(6, 1, 1427, 90, 1, 0, 0)
 end
 ---------------NhËn ®å xanh, ®å tÝm---------------
-function JulianV.QualityWeapon_Dialog( bGoto )
-    if not bGoto then
-        CreateTaskSay({
-            "H·y nhËn ®å tÝm t¹i <bclr=pink>NPC §å TÝm<bclr>\n\n" ..
-                strfill_center("<color=yellow>Ba L¨ng HuyÖn<color>: <color=green>200/200<color>",
-                    100) .. "\n<sex>cã muèn di chuyÓn tíi ®ã kh«ng?", --
-            "H·y ®­a ta tíi ®ã!/#JulianV.QualityWeapon_Dialog(1)", --
-            "Ta sÏ quay l¹i sau.../return",
-        })
-    else
-        Msg2Player("H·y ngåi yªn, chóng ta di chuyÓn tíi <color=yellow>Ba L¨ng HuyÖn")
-        w, x, y = GetWorldPos()
-        if (w ~= 53) then
-            SetFightState(0)
-            NewWorld(53, 1605, 3205)
-        else
-            SetPos(1605, 3205)
-        end
-    end
+function JulianV:QualityWeapon_Dialog()
+    Include("\\script\\global\\gm\\julianv\\npc\\npc_dotim.lua")
+    tbDoTim:Main()
+    -- if not bGoto then
+    --     CreateTaskSay({
+    --         "H·y nhËn ®å tÝm t¹i <bclr=pink>NPC §å TÝm<bclr>\n\n" ..
+    --             strfill_center("<color=yellow>Ba L¨ng HuyÖn<color>: <color=green>200/200<color>",
+    --                 100) .. "\n<sex>cã muèn di chuyÓn tíi ®ã kh«ng?", --
+    --         "H·y ®­a ta tíi ®ã!/#JulianV.QualityWeapon_Dialog(1)", --
+    --         "Ta sÏ quay l¹i sau.../return",
+    --     })
+    -- else
+    --     Msg2Player("H·y ngåi yªn, chóng ta di chuyÓn tíi <color=yellow>Ba L¨ng HuyÖn")
+    --     w, x, y = GetWorldPos()
+    --     if (w ~= 53) then
+    --         SetFightState(0)
+    --         NewWorld(53, 1605, 3205)
+    --     else
+    --         SetPos(1605, 3205)
+    --     end
+    -- end
 end
 
 function JulianV.QualityItem_Dialog( nSex, nSeries ) -- då tÝm    

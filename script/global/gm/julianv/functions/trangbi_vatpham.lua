@@ -50,7 +50,7 @@ function JulianV:ChangeFeature_Dialog()
         { "Xem tr­íc ngo¹i h×nh", JulianV.Feature_Preview }, --
         { "KiÓm tra ID ngo¹i trang", JulianV.Check_Feature }, --
         { "§æi ngo¹i h×nh trang bÞ theo ID", JulianV.Change_Equip_Feature }, --
-        { "§æi ngo¹i h×nh vò khÝ (Sö dông menu)", JulianV.Change_Weapon_Feature }, --
+        -- { "§æi ngo¹i h×nh vò khÝ (Sö dông menu)", JulianV.Change_Weapon_Feature }, --
         { "Phôc håi ngo¹i h×nh gèc", JulianV.Restore_Feature },
     }
     JDialog:Show(tbOpt, JulianV.TrangBi_VatPham)

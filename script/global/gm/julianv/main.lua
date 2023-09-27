@@ -131,16 +131,20 @@ function JulianV.MoveTo( nMapId, nPosX, nPosY )
 end
 
 function JulianV.PowerUp( lvl )
-    if not lvl then
-        g_AskClientNumberEx(1, 200, "Power Up Level", { JulianV.PowerUp })
+    if not lvl or lvl == 0 then
+        g_AskClientNumberEx(0, 200, "Power Up Level", { JulianV.PowerUp })
     else
         ST_LevelUp(lvl - GetLevel())
         -- AddItem(0, 10, 5, 5, 0, 0, 0) -- Ng?a
-        AddProp(200000);
-        AddStrg(50000);
-        AddDex(50000);
-        AddVit(50000);
-        AddEng(50000) -- Á¦Á¿¡¢Éí·¨¡¢Íâ¹¦¡¢ÄÚ¹¦¸÷1000
+        if not GetTaskTemp(222) or GetTaskTemp(222) ~= 1 then
+            AddProp(200000);
+            AddStrg(50000);
+            AddDex(50000);
+            AddVit(50000);
+            AddEng(50000) -- Á¦Á¿¡¢Éí·¨¡¢Íâ¹¦¡¢ÄÚ¹¦¸÷1000
+            Earn(10000000) -- 1000WÒø×Ó 
+            SetTaskTemp(222, 1)
+        end
         AddMagic(160, 30) -- ÌÝÔÆ×Ý
         AddMagic(21, 30) -- Ò×½î¾­
         AddMagic(36, 30) -- ÌìÍõÕ½Òâ
@@ -153,7 +157,6 @@ function JulianV.PowerUp( lvl )
         AddMagic(156, 30) -- ´¿ÑôÐÄ·¨
         AddMagic(161, 30) -- Á½ÒÇÐÄ·¨
         AddMagic(166, 30) -- Ì«¼«Éñ¹¦
-        Earn(10000000) -- 1000WÒø×Ó 
     end
 end
 ------------------------Nh©n vËt------------------------
@@ -178,8 +181,33 @@ end
 Include("\\script\\global\\gm\\julianv\\functions\\server_manager.lua")
 function JulianV:Server_Dialog()
     dofile("script/global/gm/julianv/functions/server_manager.lua")
-    local tbOpt = { { "Gäi Boss Hoµng Kim", JulianV.Choose_Boss_Dialog } }
+    local tbOpt = {
+        { "Chøc n¨ng th«ng b¸o", JulianV.Notification_Dialog },
+        { "Gäi Boss Hoµng Kim", JulianV.Choose_Boss_Dialog },
+    }
     JDialog:Show(tbOpt, main)
+end
+
+function JulianV:Notification_Dialog()
+    local tbOpt = {
+        { "TÇn sè thÕ giíi", JulianV.GM_Notification, { 0 } },
+        { "TÇn sè m¸y chñ", JulianV.GM_Notification, { 1 } },
+    }
+    JDialog:Show(tbOpt, JulianV.Admin_Dialog)
+end
+
+function JulianV.GM_Notification( nType, szMessage )
+    if not szMessage then
+        g_AskClientStringEx("", 0, 256, "Néi dung", { JulianV.GM_Notification, { nType } })
+    else
+        if nType == 0 then
+            Msg2SubWorld("<color=yellow><bclr=red>GM " .. GetName() ..
+                             "<bclr> th«ng b¸o:<color> <color=cyan>" .. szMessage)
+        else
+            AddGlobalCountNews("<color=yellow><bclr=red>GM " .. GetName() ..
+                                   "<bclr> th«ng b¸o: <color>" .. szMessage, 3)
+        end
+    end
 end
 ------------------------Trang Trang bÞ - VËt phÈm------------------------
 Include("\\script\\global\\gm\\julianv\\functions\\trangbi_vatpham.lua")

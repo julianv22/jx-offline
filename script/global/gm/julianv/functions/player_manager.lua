@@ -86,13 +86,15 @@ tbPointsType = { -- C¸c lo¹i ®iÓm
     },
 }
 
-function change_PK( nType ) -- ®æi mµu pk
+function JulianV.change_PK( nType ) -- ®æi mµu pk
     if not nType then
         local tbSay = { "<sex>muèn ®æi sang mµu tr¹ng th¸i nµo<pic=44>" }
         local szPK = function( num )
             return format("%s (%s)", tbMonPhai.tbPK_Status[num][1], tbMonPhai.tbPK_Status[num][3])
         end
-        for i = 0, getn(tbMonPhai.tbPK_Status) do tinsert(tbSay, szPK(i) .. "/change_PK") end
+        for i = 0, getn(tbMonPhai.tbPK_Status) do
+            tinsert(tbSay, szPK(i) .. format("/#JulianV.change_PK(%d)", i))
+        end
         tinsert(tbSay, "Ta sÏ quay l¹i sau/return")
         CreateTaskSay(tbSay)
     else
@@ -106,27 +108,28 @@ end
 Include("\\script\\global\\ÌØÊâÓÃµØ\\ÃÎ¾³\\npc\\Â·ÈË_ÅÑÉ®.lua"); -- tÈy tuû, c«ng ®iÓm nhanh
 Include("\\script\\global\\gm\\julianv\\npc\\npc_congskill.lua") -- Hç Trî Céng Full Skill
 
-function skillSupport() -- hç trî skill
+function JulianV:skillSupport() -- hç trî skill
     local tbOpt = {
-        { "TÈy Tñy", ClearPoints_Dialog }, --
-        { "Céng ®iÓm nhanh", CongDiemNhanh }, --    
-        { "Thªm - Xo¸ Skill n©ng cao", Skill_Nang_Cao },
+        { "TÈy Tñy", JulianV.ClearPoints_Dialog }, --
+        { "Céng ®iÓm nhanh", JulianV.CongDiemNhanh }, --    
+        { "Thªm - Xo¸ Skill n©ng cao", JulianV.Skill_Nang_Cao },
     }
-    if HaveMagic(210) == -1 then tinsert(tbOpt, 1, { "Häc Khinh c«ng", learnSkill, { 210 } }) end
-    JDialog:Show(tbOpt, Player_Dialog)
+    if HaveMagic(210) == -1 then
+        tinsert(tbOpt, 1, { "Häc Khinh c«ng", JulianV.learnSkill, { 210 } })
+    end
+    JDialog:Show(tbOpt, JulianV.Player_Dialog)
 end
 
-function CongDiemNhanh()
-    local tbSay = {
-        "<sex>muèn céng ®iÓm lo¹i nµo<pic=44>", --
-        "Céng TiÒm n¨ng nhanh/add_prop", --
-        format("Céng Kü n¨ng nhanh/#add_magic(%d)", GetLastFactionNumber()), --
-        "Ta sÏ quay l¹i sau/return",
+function JulianV:CongDiemNhanh()
+    local tbOpt = {
+        { "Céng TiÒm n¨ng nhanh", add_prop }, --
+        { "Céng Kü n¨ng nhanh", add_magic, { GetLastFactionNumber() } }, --
     }
-    CreateTaskSay(tbSay)
+    JDialog:_init()
+    JDialog:Show(tbOpt, JulianV.skillSupport)
 end
 
-function learnSkill( nSkillId, nLevel ) -- häc skill
+function JulianV.learnSkill( nSkillId, nLevel ) -- häc skill
     if HaveMagic(nSkillId) == 1 then
         Talk(1, "", "Ng­¬i ®· së h÷u kü n¨ng nµy råi<pic=46>")
     else
@@ -134,30 +137,28 @@ function learnSkill( nSkillId, nLevel ) -- häc skill
     end
 end
 
-function ClearPoints_Dialog() -- tÈy tuû
-    local tbSay = {
-        "<sex>muèn tÈy tuû lo¹i nµo<pic=44>", --
-        "TÈy TiÒm n¨ng/DoClearPropCore", --
-        "TÈy Kü n¨ng/DoClearSkillCore", --
-        "Kh«ng tÈy/return",
+function JulianV:ClearPoints_Dialog() -- tÈy tuû
+    local tbOpt = {
+        { "TÈy TiÒm n¨ng", DoClearPropCore }, --
+        { "TÈy Kü n¨ng", DoClearSkillCore }, --
+        { "Kh«ng tÈy", JulianV.skillSupport }, --
     }
-    CreateTaskSay(tbSay)
+    JDialog:_init()
+    JDialog:Show(tbOpt)
 end
 ------------------------Thªm, xo¸ skil theo ID------------------------
-function Skill_Nang_Cao()
-    local tbSay = {
-        "<sex>muèn sö dông chøc n¨ng nµo<pic=44>", --
-        format("Thªm Skill (SkillID, Level)/#AdvancedSkill(0)"), --
-        "Xo¸ Skill (SkillID)/#DelAdvSkill(0)", --
-        "Trë l¹i/skillSupport", --
-        "KÕt thóc ®èi tho¹i/return",
+function JulianV:Skill_Nang_Cao()
+    local tbOpt = {
+        { "Thªm Skill (SkillID, Level)", JulianV.AdvancedSkill, { 0 } }, --
+        { "Xo¸ Skill (SkillID)", DelAdvSkill, { 0 } }, --        
     }
-    CreateTaskSay(tbSay)
+    JDialog:_init()
+    JDialog:Show(tbOpt, JulianV.skillSupport)
 end
 
-function AdvancedSkill( szSkill )
+function JulianV.AdvancedSkill( szSkill )
     if szSkill == 0 then
-        g_AskClientStringEx("1995,20", 1, 100, "Skill ID", { AdvancedSkill })
+        g_AskClientStringEx("1995,20", 1, 100, "Skill ID", { JulianV.AdvancedSkill })
     else
         local tbSkill = lib:Split(szSkill, ",")
         if getn(tbSkill) > 2 then
@@ -171,32 +172,32 @@ function AdvancedSkill( szSkill )
     end
 end
 
-function DelAdvSkill( nSkillId )
+function JulianV.DelAdvSkill( nSkillId )
     if nSkillId == 0 then
-        g_AskClientNumberEx(1, 9999, "Skill ID", { DelAdvSkill })
+        g_AskClientNumberEx(1, 9999, "Skill ID", { JulianV.DelAdvSkill })
     else
         DelMagic(nSkillId)
         Msg2Player("§· xo¸ Skill <color=yellow>" .. GetSkillName(nSkillId))
     end
 end
 ------------------------NhËn ®iÓm------------------------
-function Point_Dialog()
+function JulianV:Point_Dialog()
     local tbOpt = {}
     for id, tbPoints in tbPointsType do
-        tinsert(tbOpt, { tbPoints.szName, Pick_Points, { id, tbPoints.nLimit } })
+        tinsert(tbOpt, { tbPoints.szName, JulianV.Pick_Points, { id, tbPoints.nLimit } })
     end
-    JDialog:Show(tbOpt, Player_Dialog)
+    JDialog:Show(tbOpt, JulianV.Player_Dialog)
 end
 
-function Pick_Points( nType, nLimit )
+function JulianV.Pick_Points( nType, nLimit )
     if nType < 10 then
-        g_AskClientNumberEx(1, nLimit, "Sè l­îng:", { Set_Points, { nType } })
+        g_AskClientNumberEx(1, nLimit, "Sè l­îng:", { JulianV.Set_Points, { nType } })
     else
         tbPointsType[nType].pFun()
     end
 end
 
-function Set_Points( nType, num )
+function JulianV.Set_Points( nType, num )
     if num ~= 0 then
         tbPointsType[nType].pFun(num)
         Msg2Player("NhËn ®­îc <color=yellow>" .. num .. "<color> <color=green>" ..
@@ -204,10 +205,10 @@ function Set_Points( nType, num )
     end
 end
 
-function Change_Sex( bComfirm ) -- chuyÓn giíi
+function JulianV.Change_Sex( bComfirm ) -- chuyÓn giíi
     if not bComfirm then
         local tbOpt = {
-            { "§i th«i!", Change_Sex, { 1 } }, --
+            { "§i th«i!", JulianV.Change_Sex, { 1 } }, --
             { "§Ó ta suy nghÜ l¹i..." },
         }
         CreateNewSayEx(SPRLINK .. "<sex>{{" .. GetName() ..
@@ -218,7 +219,7 @@ function Change_Sex( bComfirm ) -- chuyÓn giíi
     end
 end
 
-function Change_Serries( nSeries ) -- ®æi ngò hµnh
+function JulianV.Change_Serries( nSeries ) -- ®æi ngò hµnh
     local nCurSeries = GetSeries()
     local szSeries = function( num )
         return format("<color=%s>%s<color>", tbMonPhai.tbSeries[num][2], tbMonPhai.tbSeries[num][1])
@@ -226,14 +227,14 @@ function Change_Serries( nSeries ) -- ®æi ngò hµnh
     if not nSeries then
         local tbOpt = {}
         for i = 0, getn(tbMonPhai.tbSeries) do
-            tinsert(tbOpt, { tbMonPhai.tbSeries[i][1], Change_Serries, { i } })
+            tinsert(tbOpt, { tbMonPhai.tbSeries[i][1], JulianV.Change_Serries, { i } })
         end
-        JDialog:Show(tbOpt, Player_Dialog, "<sex>hiÖn t¹i lµ hÖ " .. szSeries(nCurSeries) ..
-            "\n\nMêi chän ngò hµnh muèn ®æi:")
+        JDialog:Show(tbOpt, JulianV.Player_Dialog, "<sex>hiÖn t¹i lµ hÖ " ..
+            szSeries(nCurSeries) .. "\n\nMêi chän ngò hµnh muèn ®æi:")
     else
         if nCurSeries == nSeries then
-            Talk(1, "",
-                "§· lµ hÖ " .. szSeries(nCurSeries) .. " råi, kh«ng cÇn chuyÓn n÷a<pic=46>")
+            Talk(1, "", "§· lµ hÖ " .. szSeries(nCurSeries) ..
+                " råi, kh«ng cÇn chuyÓn n÷a<pic=46>")
         else
             SetSeries(nSeries)
             Talk(1, "KickOutSelf", "§· chuyÓn sang hÖ " .. szSeries(nSeries))
@@ -241,9 +242,9 @@ function Change_Serries( nSeries ) -- ®æi ngò hµnh
     end
 end
 
-function renameCharacter( szName ) -- ®æi tªn
+function JulianV.renameCharacter( szName ) -- ®æi tªn
     if not szName then
-        AskClientForString("renameCharacter", "", 1, 100, "NhËp tªn míi")
+        g_AskClientStringEx("Julian-V", 1, 100, "NhËp tªn míi", { JulianV.renameCharacter })
     else
         RenameRole(szName)
     end

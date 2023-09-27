@@ -17,7 +17,7 @@ function NhanTrangBi()
         { "Vò khÝ Hoµng Kim M«n Ph¸i", VKHK_Dialog, { 2 } }, --
         { "NhËn An Bang, Kim Phong, §Þnh Quèc, Hång ¶nh", HoangKimCui }, --
     }
-    JDialog:Show(tbOpt, TrangBi_VatPham)
+    JDialog:Show(tbOpt, JulianV.TrangBi_VatPham)
 end
 
 function NhanTrangBi2()
@@ -37,7 +37,7 @@ function NhanVatPham()
         { "Nguyªn liÖu chÕ t¹o ®å tÝm", NguyenLieu_Dialog }, --
         { "NhËn c¸c lo¹i vËt phÈm kh¸c", VatPhamKhac_Dialog }, --
     }
-    JDialog:Show(tbOpt, TrangBi_VatPham)
+    JDialog:Show(tbOpt, JulianV.TrangBi_VatPham)
 end
 
 function ChangeFeature_Dialog()
@@ -48,7 +48,7 @@ function ChangeFeature_Dialog()
         { "§æi ngo¹i h×nh vò khÝ (Sö dông menu)", Change_Weapon_Feature }, --
         { "Phôc håi ngo¹i h×nh gèc", Restore_Feature },
     }
-    JDialog:Show(tbOpt, TrangBi_VatPham)
+    JDialog:Show(tbOpt, JulianV.TrangBi_VatPham)
 end
 
 function TrangBiKhac_Dialog()

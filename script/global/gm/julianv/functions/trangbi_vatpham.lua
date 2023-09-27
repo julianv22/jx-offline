@@ -5,110 +5,110 @@ Include("\\script\\global\\gm\\julianv\\functions\\hoangkim_bachkim.lua") -- vò 
 Include("\\script\\global\\gm\\functions_goldplatiumitems.lua") -- lÊy item hoµng kim, b¹ch kim
 Include("\\script\\global\\gm\\lib_data_table.lua") -- data table ngùa & trang bÞ
 
-function NhanTrangBi()
+function JulianV:NhanTrangBi()
     dofile("script/global/gm/julianv/functions/hoangkim_bachkim.lua")
     local tbOpt = {
-        { "NhËn ®å xanh - ®å tÝm", NhanTrangBi2 },
-        { "NhËn Ên - Phi phong - Trang søc", TrangBiKhac_Dialog }, --
+        { "NhËn ®å xanh - ®å tÝm", JulianV.NhanTrangBi2 },
+        { "NhËn Ên - Phi phong - Trang søc", JulianV.TrangBiKhac_Dialog }, --
         { "Trang bÞ Hoµng Kim - B¹ch Kim cao cÊp", chose_type_goldquip }, --   
-        { "NhËn Set Hoµng Kim M«n Ph¸i", SetHKMP_Dialog }, --    
-        { "NhËn trang bÞ TrÊn Bang Chi B¶o", TrangBi_HKMP_An }, --
-        { "Vò khÝ B¹ch Kim m«n ph¸i", VKHK_Dialog, { 1 } }, --
-        { "Vò khÝ Hoµng Kim M«n Ph¸i", VKHK_Dialog, { 2 } }, --
-        { "NhËn An Bang, Kim Phong, §Þnh Quèc, Hång ¶nh", HoangKimCui }, --
+        { "NhËn Set Hoµng Kim M«n Ph¸i", JulianV.SetHKMP_Dialog }, --    
+        { "NhËn trang bÞ TrÊn Bang Chi B¶o", JulianV.TrangBi_HKMP_An }, --
+        { "Vò khÝ B¹ch Kim m«n ph¸i", JulianV.VKHK_Dialog, { 1 } }, --
+        { "Vò khÝ Hoµng Kim M«n Ph¸i", JulianV.VKHK_Dialog, { 2 } }, --
+        { "NhËn An Bang, Kim Phong, §Þnh Quèc, Hång ¶nh", JulianV.HoangKimCui }, --
     }
     JDialog:Show(tbOpt, JulianV.TrangBi_VatPham)
 end
 
-function NhanTrangBi2()
+function JulianV:NhanTrangBi2()
     local tbOpt = {
-        { "NhËn ®å xanh", nhanDoXanh_Dialog }, --
-        { "NhËn Trang bÞ tÝm", QualityItem_Dialog }, --
-        { "NhËn vò khÝ tÝm", QualityWeapon_Dialog },
+        { "NhËn ®å xanh", JulianV.nhanDoXanh_Dialog }, --
+        { "NhËn Trang bÞ tÝm", JulianV.QualityItem_Dialog }, --
+        { "NhËn vò khÝ tÝm", JulianV.QualityWeapon_Dialog },
     }
-    JDialog:Show(tbOpt, NhanTrangBi)
+    JDialog:Show(tbOpt, JulianV.NhanTrangBi)
 end
 
-function NhanVatPham()
+function JulianV:NhanVatPham()
     local tbOpt = {
-        { "LÊy ngùa", Horses_Dialog }, --
-        { "NhËn mÆt n¹ ChiÕn tr­êng", getMasks }, --
-        { "VËt phÈm trïng sinh", TransLifeItem_Dialog }, --    
-        { "Nguyªn liÖu chÕ t¹o ®å tÝm", NguyenLieu_Dialog }, --
-        { "NhËn c¸c lo¹i vËt phÈm kh¸c", VatPhamKhac_Dialog }, --
+        { "LÊy ngùa", JulianV.Horses_Dialog }, --
+        { "NhËn mÆt n¹ ChiÕn tr­êng", JulianV.getMasks }, --
+        { "VËt phÈm trïng sinh", JulianV.TransLifeItem_Dialog }, --    
+        { "Nguyªn liÖu chÕ t¹o ®å tÝm", JulianV.NguyenLieu_Dialog }, --
+        { "NhËn c¸c lo¹i vËt phÈm kh¸c", JulianV.VatPhamKhac_Dialog }, --
     }
     JDialog:Show(tbOpt, JulianV.TrangBi_VatPham)
 end
 
-function ChangeFeature_Dialog()
+function JulianV:ChangeFeature_Dialog()
     local tbOpt = {
-        { "Xem tr­íc ngo¹i h×nh", Feature_Preview }, --
-        { "KiÓm tra ID ngo¹i trang", Check_Feature }, --
-        { "§æi ngo¹i h×nh trang bÞ theo ID", Change_Equip_Feature }, --
-        { "§æi ngo¹i h×nh vò khÝ (Sö dông menu)", Change_Weapon_Feature }, --
-        { "Phôc håi ngo¹i h×nh gèc", Restore_Feature },
+        { "Xem tr­íc ngo¹i h×nh", JulianV.Feature_Preview }, --
+        { "KiÓm tra ID ngo¹i trang", JulianV.Check_Feature }, --
+        { "§æi ngo¹i h×nh trang bÞ theo ID", JulianV.Change_Equip_Feature }, --
+        { "§æi ngo¹i h×nh vò khÝ (Sö dông menu)", JulianV.Change_Weapon_Feature }, --
+        { "Phôc håi ngo¹i h×nh gèc", JulianV.Restore_Feature },
     }
     JDialog:Show(tbOpt, JulianV.TrangBi_VatPham)
 end
 
-function TrangBiKhac_Dialog()
+function JulianV:TrangBiKhac_Dialog()
     local tbOpt = {
-        { "Cµn Kh«n Giíi ChØ", NhanCanKhon_Diag }, --
-        { "Ngò hµnh Ên", NguHanhAn_Diag }, --
-        { "Phi Phong", getPhiPhong }, --
-        { "Trang Søc", getTrangSuc },
+        { "Cµn Kh«n Giíi ChØ", JulianV.NhanCanKhon_Diag }, --
+        { "Ngò hµnh Ên", JulianV.NguHanhAn_Diag }, --
+        { "Phi Phong", JulianV.getPhiPhong }, --
+        { "Trang Søc", JulianV.getTrangSuc },
     }
-    JDialog:Show(tbOpt, NhanTrangBi)
+    JDialog:Show(tbOpt, JulianV.NhanTrangBi)
 end
 
 -------------------------NhËn ngùa-------------------------
-function Horses_Dialog()
+function JulianV:Horses_Dialog()
     local tbOpt = {}
     for i = 1, getn(tbNameResHorse) do
-        tinsert(tbOpt, { tbNameResHorse[i].szName, Chose_Horses, { i } })
+        tinsert(tbOpt, { tbNameResHorse[i].szName, JulianV.Chose_Horses, { i } })
     end
-    JDialog:Show(tbOpt, NhanVatPham)
+    JDialog:Show(tbOpt, JulianV.NhanVatPham)
 end
 
-function Chose_Horses( nHorseType, nPage )
+function JulianV.Chose_Horses( nHorseType, nPage )
     local tbHorse = JDialog:PhanTrang(tbNameResHorse[nHorseType].szEquip, 10)
     local tbHorseRes = function( table, num )
         return {
-            table[num][1] .. " [CÊp " .. table[num][3] .. "]", Add_Horses,
+            table[num][1] .. " [CÊp " .. table[num][3] .. "]", JulianV.Add_Horses,
             { table[num][2], table[num][3] },
         }
     end
     local tbOpt = {}
     if not nPage or nPage == 1 then
         for i = 1, 10 do tinsert(tbOpt, tbHorseRes(tbHorse[1], i)) end
-        tinsert(tbOpt, { "Trang sau", Chose_Horses, { nHorseType, 2 } })
+        tinsert(tbOpt, { "Trang sau", JulianV.Chose_Horses, { nHorseType, 2 } })
     else
         local nCount = getn(tbHorse)
         if nPage < nCount then
             for i = 1, 10 do tinsert(tbOpt, tbHorseRes(tbHorse[nPage], i)) end
-            tinsert(tbOpt, { "Trang sau", Chose_Horses, { nHorseType, nPage + 1 } })
+            tinsert(tbOpt, { "Trang sau", JulianV.Chose_Horses, { nHorseType, nPage + 1 } })
         else
             for i = 1, getn(tbHorse[nCount]) do
                 tinsert(tbOpt, tbHorseRes(tbHorse[nCount], i))
             end
         end
         if nPage > 1 then
-            tinsert(tbOpt, { "Trang tr­íc", Chose_Horses, { nHorseType, nPage - 1 } })
+            tinsert(tbOpt, { "Trang tr­íc", JulianV.Chose_Horses, { nHorseType, nPage - 1 } })
         end
     end
     JDialog:Show(tbOpt, nil,
         "<sex>h·y chän cho m×nh mét con chiÕn m· tèt ®Ó hµnh tÈu giang hå<pic=46><color>")
 end
 
-function Add_Horses( nId, nLevel )
+function JulianV.Add_Horses( nId, nLevel )
     Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddItem(0, 10, nId, nLevel, 0, 0, 0)))
 end
 -------------------------Thay ®æi ngo¹i h×nh trang bÞ-------------------------
-function Feature_Preview()
-    function Feature_Help()
+function JulianV:Feature_Preview()
+    local Feature_Help = function()
         local szTitle =
             "<pic=139> <bclr=pink>Chøc n¨ng thay ®æi ngo¹i h×nh trang bÞ:<bclr>\n\n<pic=136> Chän kiÓu ngo¹i trang muèn xem tr­íc.\n<pic=135> NhËp ID b¾t ®Çu xem.\n<pic=136> Sau ®ã sö dông {{§¹i Hång Bao}} vµ {{TiÓu Hång Bao}} ®Ó xem ®i tíi hoÆc lïi l¹i.\n<pic=135><color> Sau khi chän ®­îc ngo¹i h×nh ­ng ý th× sö dông chøc n¨ng §æi ngo¹i h×nh trang bÞ theo ID ®Ó thay ®æi."
-        JDialog:Show({ { "Ta ®· hiÓu", Feature_Preview } }, nil, szTitle)
+        JDialog:Show({ { "Ta ®· hiÓu", JulianV.Feature_Preview } }, nil, szTitle)
     end
 
     if HaveCommonItem(6, 1, 13) < 1 then
@@ -120,26 +120,26 @@ function Feature_Preview()
     local tbOpt = {}
     tinsert(tbOpt, { "Xem h­íng dÉn", Feature_Help })
     for i = 0, getn(tbMonPhai.tbNgoaiTrang) do
-        tinsert(tbOpt, { tbMonPhai.tbNgoaiTrang[i], Ask_Feature_StartId, { i } })
+        tinsert(tbOpt, { tbMonPhai.tbNgoaiTrang[i], JulianV.Ask_Feature_StartId, { i } })
     end
-    JDialog:Show(tbOpt, ChangeFeature_Dialog,
+    JDialog:Show(tbOpt, JulianV.ChangeFeature_Dialog,
         "<bclr=pink>Chøc n¨ng xem tr­íc ngo¹i h×nh trang bÞ.<bclr>\n\n<sex>muèn kiÓm tra lo¹i trang bÞ nµo<pic=44><color>")
 end
 
-function Ask_Feature_StartId( nId )
+function JulianV.Ask_Feature_StartId( nId )
     SetTaskTemp(168, nId)
     Msg2Player("Xem tr­íc ngo¹i h×nh <color=yellow>" .. tbMonPhai.tbNgoaiTrang[nId])
     g_AskClientNumberEx(1, 9999, "Start ID", { SetTaskTemp, { 169 } })
 end
 
-function Check_Feature()
+function JulianV:Check_Feature()
     local nHelm, nArmor, nWeapon, nHorse, nMaskNPC = GetPlayerFeature(PlayerIndex)
     Msg2Player(format(
                    "Helm: <color=yellow>%d<color>, Armor: <color=yellow>%d<color>, Weapon: <color=yellow>%d<color>, Horse <color=yellow>%d<color>, Mask: <color=yellow>%d",
                    nHelm, nArmor, nWeapon, nHorse, nMaskNPC))
 end
 
-function Change_Equip_Feature()
+function JulianV:Change_Equip_Feature()
     GiveItemUI("Thay ®æi ngo¹i h×nh trang bÞ",
         "H·y ®Æt vµo 1 trang bÞ muèn thay ®æi. L­u ý ngo¹i h×nh míi vÉn tån t¹i sau khi tho¸t game.",
         "Change_Equip_Feature_Confirm", "onCancel", 1);
@@ -156,7 +156,7 @@ function Change_Equip_Feature_Confirm( nCount )
     end
 end
 
-function Change_Weapon_Feature()
+function JulianV:Change_Weapon_Feature()
     GiveItemUI("Thay ®æi ngo¹i h×nh trang bÞ",
         "H·y ®Æt vµo 1 trang bÞ muèn thay ®æi. L­u ý ngo¹i h×nh míi vÉn tån t¹i sau khi tho¸t game.",
         "Change_Weapon_Feature_Confirm", "onCancel", 1);
@@ -173,7 +173,7 @@ function Change_Weapon_Feature_Confirm( nCount )
     end
 end
 
-function Restore_Feature()
+function JulianV:Restore_Feature()
     GiveItemUI("Phôc håi ngo¹i h×nh trang bÞ", "§Æt vµo c¸c trang bÞ muèn phôc håi.",
         "Restore_Feature_Confirm", "onCancel", 1);
 end
@@ -202,20 +202,20 @@ function DisposeItem( nCount ) -- Huû vËt phÈm
     end
 end
 
-function getGoldItem( nItemIdx ) -- nhËn trang bÞ HK
+function JulianV.getGoldItem( nItemIdx ) -- nhËn trang bÞ HK
     if not nItemIdx then
-        g_AskClientNumberEx(1, 9999, "GoldItem ID", { getGoldItem })
+        g_AskClientNumberEx(1, 9999, "GoldItem ID", { JulianV.getGoldItem })
     else
         Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddGoldItem(0, nItemIdx)))
     end
 end
 
-function ClearF4( bComfirm ) -- Dän r­¬ng ®å
+function JulianV.ClearF4( bComfirm ) -- Dän r­¬ng ®å
     if not bComfirm then
         CreateNewSayEx(SPRLINK ..
                            "<color=red><pic=115> L­u ý: <color>TÊt c¶ vËt phÈm vµ trang bÞ trong R­¬ng chøa ®å sÏ bÞ {{Xo¸ bá}} hoµn toµn vµ kh«ng thÓ phôc håi nh­ cò.\n\n<sex>cã ch¾c ch¾n muèn lµm vËy kh«ng<pic=44><color>", --
             {
-                { "X¸c nhËn", ClearF4, { 1 } }, --
+                { "X¸c nhËn", JulianV.ClearF4, { 1 } }, --
                 { "§Ó ta suy nghÜ l¹i..." },
             })
     else
@@ -228,17 +228,17 @@ function ClearF4( bComfirm ) -- Dän r­¬ng ®å
     end
 end
 
-function getQuestkey( nItemId ) -- nhËn questkey item
+function JulianV.getQuestkey( nItemId ) -- nhËn questkey item
     if nItemId == 7 or not nItemId then
-        g_AskClientNumberEx(1, 9999, "Questkey ID", { getQuestkey })
+        g_AskClientNumberEx(1, 9999, "Questkey ID", { JulianV.getQuestkey })
     else
         Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddEventItem(nItemId)))
     end
 end
 
-function getMagicItem( szItem ) -- nhËn magic item
+function JulianV.getMagicItem( szItem ) -- nhËn magic item
     if not szItem then
-        g_AskClientStringEx("6,1,125,0,0,0", 1, 9000, "Item Code:", { getMagicItem })
+        g_AskClientStringEx("6,1,125,0,0,0", 1, 9000, "Item Code:", { JulianV.getMagicItem })
     else
         local tbItem = lib:Split(szItem, ",")
         if getn(tbItem) == 6 then
@@ -253,9 +253,9 @@ function getMagicItem( szItem ) -- nhËn magic item
     end
 end
 
-function getMagicItemSll( nItemId, nCount ) -- nhËn magic item theo sè l­îng
+function JulianV.getMagicItemSll( nItemId, nCount ) -- nhËn magic item theo sè l­îng
     if not nItemId then
-        g_AskClientNumberEx(1, 9999, "ParticularType ID", { getMagicItemSll })
+        g_AskClientNumberEx(1, 9999, "ParticularType ID", { JulianV.getMagicItemSll })
     else
         if not nCount then
             g_AskClientNumberEx(1, CalcFreeItemCellCount(), "Sè l­îng",
@@ -268,20 +268,20 @@ function getMagicItemSll( nItemId, nCount ) -- nhËn magic item theo sè l­îng
     end
 end
 
-function ExpandStorage() -- Më réng r­¬ng
+function JulianV:ExpandStorage() -- Më réng r­¬ng
     OpenStoreBox(1)
     OpenStoreBox(2)
     OpenStoreBox(3)
     AddItem(6, 1, 1427, 90, 1, 0, 0)
 end
 ---------------NhËn ®å xanh, ®å tÝm---------------
-function QualityWeapon_Dialog( bGoto )
+function JulianV.QualityWeapon_Dialog( bGoto )
     if not bGoto then
         CreateTaskSay({
             "H·y nhËn ®å tÝm t¹i <bclr=pink>NPC §å TÝm<bclr>\n\n" ..
                 strfill_center("<color=yellow>Ba L¨ng HuyÖn<color>: <color=green>200/200<color>",
                     100) .. "\n<sex>cã muèn di chuyÓn tíi ®ã kh«ng?", --
-            "H·y ®­a ta tíi ®ã!/#QualityWeapon_Dialog(1)", --
+            "H·y ®­a ta tíi ®ã!/#JulianV.QualityWeapon_Dialog(1)", --
             "Ta sÏ quay l¹i sau.../return",
         })
     else
@@ -296,35 +296,38 @@ function QualityWeapon_Dialog( bGoto )
     end
 end
 
-function QualityItem_Dialog( nSex, nSeries ) -- då tÝm    
+function JulianV.QualityItem_Dialog( nSex, nSeries ) -- då tÝm    
     Include("\\script\\tagnewplayer\\qualityitem.lua")
     local tbOpt = {}
     if not nSex then -- chän giíi tÝnh
         tbOpt = {
-            { "§å tÝm dµnh cho Nam", QualityItem_Dialog, { 0 } },
-            { "§å tÝm dµnh cho N÷", QualityItem_Dialog, { 1 } },
+            { "§å tÝm dµnh cho Nam", JulianV.QualityItem_Dialog, { 0 } },
+            { "§å tÝm dµnh cho N÷", JulianV.QualityItem_Dialog, { 1 } },
         }
-        JDialog:Show(tbOpt, NhanTrangBi2, "Mêi <sex>chän lo¹i trang bÞ<pic=46><color>")
+        JDialog:Show(tbOpt, JulianV.NhanTrangBi2, "Mêi <sex>chän lo¹i trang bÞ<pic=46><color>")
     else
         if not nSeries then -- chän ngò hµnh
             for i = 0, 4 do
-                tinsert(tbOpt, { tbMonPhai.tbSeries[i][1], QualityItem_Dialog, { nSex, i } })
+                tinsert(tbOpt, { tbMonPhai.tbSeries[i][1], JulianV.QualityItem_Dialog, { nSex, i } })
             end
-            JDialog:Show(tbOpt, NhanTrangBi2, "Mêi <sex>chän ngò hµnh<pic=46><color>")
+            JDialog:Show(tbOpt, JulianV.NhanTrangBi2, "Mêi <sex>chän ngò hµnh<pic=46><color>")
         else -- chän trang bÞ            
             for szName, _ in QItemNam do
-                tinsert(tbOpt, { szName, getQualityItem, { szName, nSeries, nSex } })
+                tinsert(tbOpt, { szName, JulianV.getQualityItem, { szName, nSeries, nSex } })
             end
-            JDialog:Show(tbOpt, QualityItem_Dialog, "Mêi <sex>chän trang bÞ<pic=46><color>")
+            JDialog:Show(tbOpt, JulianV.QualityItem_Dialog,
+                "Mêi <sex>chän trang bÞ<pic=46><color>")
         end
     end
 end
 
-function getQualityItem( szName, nSeries, nSex ) AddQItem(szName, nSeries, nSex) end
+function JulianV.getQualityItem( szName, nSeries, nSex ) --
+    AddQItem(szName, nSeries, nSex)
+end
 
-function nhanDoXanh_Dialog() -- ®å xanh
+function JulianV:nhanDoXanh_Dialog() -- ®å xanh
     local tbOpt = {}
-    JDialog:Show(tbOpt, NhanTrangBi2)
+    JDialog:Show(tbOpt, JulianV.NhanTrangBi2)
 end
 ---------------VËt phÈm trïng sinh---------------
 tbTransLifeItems = {
@@ -346,18 +349,19 @@ tbTransLifeItems = {
      },
 }
 
-function TransLifeItem_Dialog()
+function JulianV:TransLifeItem_Dialog()
     local tbOpt = {}
     for i = 1, getn(tbTransLifeItems) do
-        tinsert(tbOpt, { tbTransLifeItems[i].szName, getTransLifeItem, { i } })
+        tinsert(tbOpt, { tbTransLifeItems[i].szName, JulianV.getTransLifeItem, { i } })
     end
-    JDialog:Show(tbOpt, NhanVatPham)
+    JDialog:Show(tbOpt, JulianV.NhanVatPham)
 end
-function getTransLifeItem( nIndex, nCount )
+
+function JulianV.getTransLifeItem( nIndex, nCount )
     local nMax = CalcFreeItemCellCount()
     if not nCount then
         g_AskClientNumberEx(1, nIndex == 4 and 999 or nMax, "Sè l­îng",
-            { getTransLifeItem, { nIndex } })
+            { JulianV.getTransLifeItem, { nIndex } })
     else
         if nIndex == 4 then
             for i = 1, nCount do
@@ -372,18 +376,18 @@ function getTransLifeItem( nIndex, nCount )
     end
 end
 ------------------------Nguyªn liÖu chÕ t¹o ®å tÝm------------------------
-function NguyenLieu_Dialog()
+function JulianV:NguyenLieu_Dialog()
     local tbOpt = {
-        { "HuyÒn Tinh", chonNguyenLieu, { 1 } }, --
-        { "Thuû Tinh", chonNguyenLieu, { 2 } }, --
-        { "Phóc Duyªn", chonNguyenLieu, { 3 } }, --
-        { "Kho¸ng Th¹ch", nhanKhoangThach }, --
-        { "M¶nh Thiªn Th¹ch", chonNguyenLieu, { 0 } }, --
+        { "HuyÒn Tinh", JulianV.chonNguyenLieu, { 1 } }, --
+        { "Thuû Tinh", JulianV.chonNguyenLieu, { 2 } }, --
+        { "Phóc Duyªn", JulianV.chonNguyenLieu, { 3 } }, --
+        { "Kho¸ng Th¹ch", JulianV.nhanKhoangThach }, --
+        { "M¶nh Thiªn Th¹ch", JulianV.chonNguyenLieu, { 0 } }, --
     }
-    JDialog:Show(tbOpt, NhanVatPham)
+    JDialog:Show(tbOpt, JulianV.NhanVatPham)
 end
 
-function chonNguyenLieu( nType )
+function JulianV.chonNguyenLieu( nType )
     if nType == 0 then
         local nItemIdx
         for i = 1317, 1325 do nItemIdx = AddEventItem(i) end
@@ -391,28 +395,28 @@ function chonNguyenLieu( nType )
     else
         local tbOpt = {}
         for id, VatPham in tbVatPham[nType] do
-            tinsert(tbOpt, { VatPham.szName, nhanNguyenLieu, { nType, id } })
+            tinsert(tbOpt, { VatPham.szName, JulianV.nhanNguyenLieu, { nType, id } })
         end
-        JDialog:Show(tbOpt, NguyenLieu_Dialog)
+        JDialog:Show(tbOpt, JulianV.NguyenLieu_Dialog)
     end
 end
 
-function nhanNguyenLieu( nType, nIndex, nCount )
+function JulianV.nhanNguyenLieu( nType, nIndex, nCount )
     if not nCount then
-        g_AskClientNumberEx(1, 999, "Sè l­îng", { nhanNguyenLieu, { nType, nIndex } })
+        g_AskClientNumberEx(1, 999, "Sè l­îng", { JulianV.nhanNguyenLieu, { nType, nIndex } })
     else
         local szLog = format("[liguan]get_free_item_%s", tbVatPham[nType][nIndex].szName)
         tbAwardTemplet:GiveAwardByList(tbVatPham[nType][nIndex], szLog, nCount)
     end
 end
 
-function nhanKhoangThach( nSeries )
+function JulianV.nhanKhoangThach( nSeries )
     if not nSeries then
         local tbOpt = {}
         for i = 0, getn(tbMonPhai.tbSeries) do
-            tinsert(tbOpt, { tbMonPhai.tbSeries[i][1], nhanKhoangThach, { i } })
+            tinsert(tbOpt, { tbMonPhai.tbSeries[i][1], JulianV.nhanKhoangThach, { i } })
         end
-        JDialog:Show(tbOpt, NguyenLieu_Dialog,
+        JDialog:Show(tbOpt, JulianV.NguyenLieu_Dialog,
             "Mêi <sex>chän ngò hµnh cho Kho¸ng Th¹ch<pic=46><color>")
     else
         for i = 149, 154 do
@@ -426,27 +430,30 @@ function nhanKhoangThach( nSeries )
     end
 end
 -------------------------VËt phÈm kh¸c-------------------------
-function VatPhamKhac_Dialog()
+function JulianV:VatPhamKhac_Dialog()
     local tbOpt = {}
     local tbVP_Khac = tbVatPham:Khac()
-    for id, VatPham in tbVP_Khac do tinsert(tbOpt, { VatPham.szName, Nhan_VP_Khac, { id } }) end
-    JDialog:Show(tbOpt, NhanVatPham)
+    for id, VatPham in tbVP_Khac do
+        tinsert(tbOpt, { VatPham.szName, JulianV.Nhan_VP_Khac, { id } })
+    end
+    JDialog:Show(tbOpt, JulianV.NhanVatPham)
 end
 
-function Nhan_VP_Khac( nIndex, nCount )
+function JulianV.Nhan_VP_Khac( nIndex, nCount )
     if not nCount then
-        g_AskClientNumberEx(1, CalcFreeItemCellCount(), "Sè l­îng", { Nhan_VP_Khac, { nIndex } })
+        g_AskClientNumberEx(1, CalcFreeItemCellCount(), "Sè l­îng",
+            { JulianV.Nhan_VP_Khac, { nIndex } })
     else
         local szLogTitle = format("[liguan]get_free_item_%s", tbVatPham:Khac()[nIndex].szName)
         tbAwardTemplet:GiveAwardByList(tbVatPham:Khac()[nIndex], szLogTitle, nCount)
     end
 end
 
-function getMasks( nIndex )
+function JulianV.getMasks( nIndex )
     if not nIndex then
         local tbOpt = {}
-        for i = 1, 10 do tinsert(tbOpt, { tbMonPhai.tbFacName[i], getMasks, { i } }) end
-        JDialog:Show(tbOpt, NhanVatPham)
+        for i = 1, 10 do tinsert(tbOpt, { tbMonPhai.tbFacName[i], JulianV.getMasks, { i } }) end
+        JDialog:Show(tbOpt, JulianV.NhanVatPham)
     else
         local nStart, nEnd = tbMonPhai.tbMasks[nIndex].nStart, tbMonPhai.tbMasks[nIndex].nEnd
         for i = nStart, nEnd do

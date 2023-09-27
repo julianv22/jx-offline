@@ -92,18 +92,18 @@ Include("\\script\\global\\gm\\julianv\\functions\\trangbi_vatpham.lua")
 function JulianV:TrangBi_VatPham()
     dofile("script/global/gm/julianv/functions/trangbi_vatpham.lua")
     local tbOpt = {
-        { "NhËn vËt phÈm", NhanVatPham }, --    
-        { "NhËn trang bÞ", NhanTrangBi }, --   
+        { "NhËn vËt phÈm", JulianV.NhanVatPham }, --    
+        { "NhËn trang bÞ", JulianV.NhanTrangBi }, --   
         { "Trang bÞ hiÕm" }, --
-        { "Thay ®æi ngo¹i h×nh trang bÞ", ChangeFeature_Dialog }, --    
-        { "------------------------", TrangBi_VatPham }, --
-        { "NhËn MagicScript Item (Genre, Detail, Particular)", getMagicItem }, --
-        { "LÊy nhiÒu Magic Item (Particular)", getMagicItemSll }, --
-        { "NhËn Questkey Item (Questkey ID)", getQuestkey }, --
-        { "NhËn GoldItem (GoldItem ID)", getGoldItem }, --
-        { "------------------------", TrangBi_VatPham }, --
-        { "Më réng r­¬ng", ExpandStorage }, --
-        { "Dän s¹ch R­¬ng chøa ®å", ClearF4 }, --
+        { "Thay ®æi ngo¹i h×nh trang bÞ", JulianV.ChangeFeature_Dialog }, --    
+        { "------------------------", JulianV.TrangBi_VatPham }, --
+        { "NhËn MagicScript Item (Genre, Detail, Particular)", JulianV.getMagicItem }, --
+        { "LÊy nhiÒu Magic Item (Particular)", JulianV.getMagicItemSll }, --
+        { "NhËn Questkey Item (Questkey ID)", JulianV.getQuestkey }, --
+        { "NhËn GoldItem (GoldItem ID)", JulianV.getGoldItem }, --
+        { "------------------------", JulianV.TrangBi_VatPham }, --
+        { "Më réng r­¬ng", JulianV.ExpandStorage }, --
+        { "Dän s¹ch R­¬ng chøa ®å", JulianV.ClearF4 }, --
         { "Huû vËt phÈm", DisposeItem },
     }
     JDialog:Show(tbOpt, main)

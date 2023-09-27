@@ -102,7 +102,7 @@ end
 
 function JulianV.Teleport( nMapId, nPosX )
     if not nMapId then
-        g_AskClientNumberEx(0, 999, "NhËp ID map", { JulianV.Teleport })
+        g_AskClientNumberEx(0, 9999, "NhËp ID map", { JulianV.Teleport })
     elseif not nPosX then
         g_AskClientNumberEx(0, 9999, "To¹ ®é X", { JulianV.Teleport, { nMapId } })
     else

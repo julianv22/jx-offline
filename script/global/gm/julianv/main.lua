@@ -37,29 +37,8 @@ function JulianV:Main()
 end
 ------------------------Admin------------------------
 function JulianV:Admin_Dialog()
-    local tbOpt = {
-        { "Check Emoticons", JulianV.CheckEmo }, --    
-    }
+    local tbOpt = {}
     JDialog:Show(tbOpt, main)
-end
-
-function JulianV.CheckEmo( nPic )
-    if not nPic then
-        -- AskClientForNumber("#JulianV.CheckEmo", 1, 999, "Start ID")
-        g_AskClientNumberEx(1, 999, "Start Id", { JulianV.CheckEmo })
-    else
-        local szPic = ""
-        for i = nPic, nPic + 7 do szPic = szPic .. "Pic " .. i .. ": <pic=" .. i .. ">\n" end
-        local tbSay = {
-            szPic, --
-            "                      Rêi khái/return", --
-            format("                      Next/#JulianV.CheckEmo(%d)", nPic + 8),
-        }
-        if nPic > 8 then
-            tinsert(tbSay, format("                      Previous/#JulianV.CheckEmo(%d)", nPic - 8))
-        end
-        CreateTaskSay(tbSay)
-    end
 end
 ------------------------Nh©n vËt------------------------
 Include("\\script\\global\\fuyuan.lua") -- fuc duyen
@@ -113,8 +92,9 @@ function JulianV:ChucNangKhac()
         { "Më Shop", Sale, { 142 } }, --        
         { "§i tíi B·i LuyÖn C«ng", JulianV.goto_BLC }, --
         { "Trë vÒ Ba L¨ng HuyÖn", JulianV.goto_BLH }, --  
-        { "Söa lçi ThÇn Hµnh Phï", JulianV.fix_shenxingfu }, --  
-        { "KickOutSelf", KickOutSelf },
+        { "Söa lçi ThÇn Hµnh Phï", JulianV.fix_shenxingfu }, --          
+        { "Check Emoticons", JulianV.CheckEmo }, --    
+        { "KickOutSelf", KickOutSelf }, --
     }
     JDialog:Show(tbOpt, main)
 end
@@ -139,4 +119,22 @@ end
 function JulianV:goto_BLC()
     NewWorld(996, 1581, 3197)
     SetFightState(1)
+end
+
+function JulianV.CheckEmo( nPic )
+    if not nPic then
+        g_AskClientNumberEx(1, 999, "Start Id", { JulianV.CheckEmo })
+    else
+        local szPic = ""
+        for i = nPic, nPic + 7 do szPic = szPic .. "Pic " .. i .. ": <pic=" .. i .. ">\n" end
+        local tbSay = {
+            szPic, --
+            "                      Rêi khái/return", --
+            format("                      Next/#JulianV.CheckEmo(%d)", nPic + 8),
+        }
+        if nPic > 8 then
+            tinsert(tbSay, format("                      Previous/#JulianV.CheckEmo(%d)", nPic - 8))
+        end
+        CreateTaskSay(tbSay)
+    end
 end

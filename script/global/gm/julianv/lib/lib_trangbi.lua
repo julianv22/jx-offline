@@ -44,3 +44,26 @@ tbDoXanh = {
     },
     ["NhÉn"] = { { "Toµn Th¹ch Giíi ChØ ", 0, 3, 0 } },
 }
+
+tbNhanCanKhon = {
+    ["Kh¸ng Ho¶"] = {
+        { "Thêi gian tróng ®éc", 3664 }, { "Thêi gian lµm cho¸ng", 3869 },
+        { "Thêi gian lµm chËm", 3874 },
+    },
+    ["Kh¸ng B¨ng"] = {
+        { "Thêi gian tróng ®éc", 3865 }, { "Thêi gian lµm cho¸ng", 3870 },
+        { "Thêi gian lµm chËm", 3875 },
+    },
+    ["Kh¸ng L«i"] = {
+        { "Thêi gian tróng ®éc", 3866 }, { "Thêi gian lµm cho¸ng", 3871 },
+        { "Thêi gian lµm chËm", 3876 },
+    },
+    ["Kh¸ng §éc"] = {
+        { "Thêi gian tróng ®éc", 3867 }, { "Thêi gian lµm cho¸ng", 3872 },
+        { "Thêi gian lµm chËm", 3877 },
+    },
+    ["Phßng thñ vËt lý"] = {
+        { "Thêi gian tróng ®éc", 3868 }, { "Thêi gian lµm cho¸ng", 3873 },
+        { "Thêi gian lµm chËm", 3878 },
+    },
+}

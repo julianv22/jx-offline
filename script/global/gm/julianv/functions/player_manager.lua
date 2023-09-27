@@ -125,7 +125,6 @@ function JulianV:CongDiemNhanh()
         { "Céng TiÒm n¨ng nhanh", add_prop }, --
         { "Céng Kü n¨ng nhanh", add_magic, { GetLastFactionNumber() } }, --
     }
-    JDialog:_init()
     JDialog:Show(tbOpt, JulianV.skillSupport)
 end
 
@@ -143,7 +142,6 @@ function JulianV:ClearPoints_Dialog() -- tÈy tuû
         { "TÈy Kü n¨ng", DoClearSkillCore }, --
         { "Kh«ng tÈy", JulianV.skillSupport }, --
     }
-    JDialog:_init()
     JDialog:Show(tbOpt)
 end
 ------------------------Thªm, xo¸ skil theo ID------------------------
@@ -152,7 +150,6 @@ function JulianV:Skill_Nang_Cao()
         { "Thªm Skill (SkillID, Level)", JulianV.AdvancedSkill, { 0 } }, --
         { "Xo¸ Skill (SkillID)", DelAdvSkill, { 0 } }, --        
     }
-    JDialog:_init()
     JDialog:Show(tbOpt, JulianV.skillSupport)
 end
 

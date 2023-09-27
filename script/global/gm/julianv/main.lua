@@ -62,6 +62,7 @@ function JulianV:Admin_Dialog()
     end
     local tbOpt = {
         { "DÞch chuyÓn tøc thêi", JulianV.Teleport }, GM_Title(1), GM_Res(2), GM_Hide(3),
+        { "Power Up", JulianV.PowerUp },
     }
     JDialog:Show(tbOpt, main)
 end
@@ -125,8 +126,35 @@ function JulianV.MoveTo( nMapId, nPosX, nPosY )
     end
 
     SetStringTask(TASK_S_POSITION, szPos)
-    GMMsg2Player("DÞch chuyÓn ®Õn vÞ trÝ",
-        nMapId .. ", <color=yellow>" .. nPosX .. "/" .. nPosY .. "<color> <color=green>Thµnh c«ng!")
+    GMMsg2Player("DÞch chuyÓn ®Õn vÞ trÝ", nMapId .. ", <color=yellow>" .. nPosX .. "/" ..
+        nPosY .. "<color> <color=green>Thµnh c«ng!")
+end
+
+function JulianV.PowerUp( lvl )
+    if not lvl then
+        g_AskClientNumberEx(1, 200, "Power Up Level", { JulianV.PowerUp })
+    else
+        ST_LevelUp(lvl - GetLevel())
+        -- AddItem(0, 10, 5, 5, 0, 0, 0) -- Ng?a
+        AddProp(200000);
+        AddStrg(50000);
+        AddDex(50000);
+        AddVit(50000);
+        AddEng(50000) -- Á¦Á¿¡¢Éí·¨¡¢Íâ¹¦¡¢ÄÚ¹¦¸÷1000
+        AddMagic(160, 30) -- ÌÝÔÆ×Ý
+        AddMagic(21, 30) -- Ò×½î¾­
+        AddMagic(36, 30) -- ÌìÍõÕ½Òâ
+        AddMagic(92, 30) -- ÍûÔÂ£¨»ØÑª¹â»·£©
+        AddMagic(282, 30) -- ÃÎµû£¨»ØÄÚ¹â»·£©
+        AddMagic(332, 30) -- ´Èº½ÆÕ¶É£¨´ó²¹Ñª£©
+        AddMagic(712, 30) -- ´Èº½ÆÕ¶É£¨´ó²¹Ñª£©
+        AddMagic(130, 30) -- ×íµû¿ñÎè
+        AddMagic(75, 30) -- Îå¶¾Ææ¾­
+        AddMagic(156, 30) -- ´¿ÑôÐÄ·¨
+        AddMagic(161, 30) -- Á½ÒÇÐÄ·¨
+        AddMagic(166, 30) -- Ì«¼«Éñ¹¦
+        Earn(10000000) -- 1000WÒø×Ó 
+    end
 end
 ------------------------Nh©n vËt------------------------
 Include("\\script\\global\\fuyuan.lua") -- fuc duyen

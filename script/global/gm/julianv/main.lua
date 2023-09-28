@@ -9,25 +9,33 @@ Include("\\script\\dailogsys\\dailogsay.lua")
 Include("\\script\\activitysys\\functionlib.lua")
 Include("\\script\\lib\\common.lua")
 ------------------------------------------------------------------
-Include("\\script\\global\\gm\\julianv\\functions\\dialog_fun.lua")
-Include("\\script\\global\\gm\\julianv\\lib\\lib_monphai.lua")
-Include("\\script\\global\\gm\\julianv\\lib\\lib_vatpham.lua")
-Include("\\script\\global\\gm\\julianv\\lib\\lib_boss.lua")
-Include("\\script\\global\\gm\\julianv\\lib\\lib_trangbi.lua")
------------------------------DIALOG-----------------------------
-
 JulianV = {}
-
+function JulianV:IncludeFiles()
+    local root = "\\script\\global\\gm\\julianv\\"
+    local tbInclude = {
+        functions = { "dialog_fun", "player_manager", "server_manager", "trangbi_vatpham" },
+        lib = { "lib_monphai", "lib_vatpham", "lib_boss", "lib_trangbi" },
+    }
+    for folder, filename in tbInclude do
+        for i = 1, getn(filename) do
+            Include(root .. folder .. "\\" .. filename[i] .. ".lua")
+        end
+    end
+end
+JulianV:IncludeFiles()
+-----------------------------DIALOG-----------------------------
 function main()
     dofile("script/global/gm/julianv/main.lua")
     dofile("script/global/gm/julianv/lib/lib_vatpham.lua")
     dofile("script/global/gm/julianv/lib/lib_monphai.lua")
+    dofile("script/global/gm/julianv/lib/lib_trangbi.lua")
     dofile("script/global/gm/julianv/lib/lib_boss.lua")
     JulianV:Main()
     return 1
 end
 
 function JulianV:Main()
+
     local tbOpt = {
         { "Qu¶n lý Server", self.Server_Dialog }, --
         { "Qu¶n lý Nh©n vËt", self.Player_Dialog }, --        
@@ -161,7 +169,6 @@ function JulianV.PowerUp( lvl )
 end
 ------------------------Nh©n vËt------------------------
 Include("\\script\\global\\fuyuan.lua") -- fuc duyen
-Include("\\script\\global\\gm\\julianv\\functions\\player_manager.lua")
 Include("\\script\\global\\gm\\ex_lib_function.lua")
 
 function JulianV:Player_Dialog()
@@ -178,7 +185,6 @@ function JulianV:Player_Dialog()
     JDialog:Show(tbOpt, main)
 end
 ------------------------Server------------------------
-Include("\\script\\global\\gm\\julianv\\functions\\server_manager.lua")
 function JulianV:Server_Dialog()
     dofile("script/global/gm/julianv/functions/server_manager.lua")
     local tbOpt = {
@@ -210,7 +216,6 @@ function JulianV.GM_Notification( nType, szMessage )
     end
 end
 ------------------------Trang Trang bÞ - VËt phÈm------------------------
-Include("\\script\\global\\gm\\julianv\\functions\\trangbi_vatpham.lua")
 function JulianV:TrangBi_VatPham()
     dofile("script/global/gm/julianv/functions/trangbi_vatpham.lua")
     local tbOpt = {

@@ -6,7 +6,6 @@ IncludeLib("SETTING")
 IncludeLib("ITEM")
 IncludeLib("FILESYS")
 Include("\\script\\dailogsys\\dailogsay.lua")
-Include("\\script\\activitysys\\functionlib.lua")
 Include("\\script\\lib\\common.lua")
 -----------------------------INCLUDE FILES-----------------------------
 JulianV = {}
@@ -105,7 +104,7 @@ function JulianV.GM_Activate( num )
         end
     end
 end
----@param nMapId? number
+---@param nMapId? number 
 ---@param nPosX? number
 function JulianV.Teleport( nMapId, nPosX )
     if not nMapId then
@@ -117,10 +116,9 @@ function JulianV.Teleport( nMapId, nPosX )
     end
 
 end
----@param nMapId? number
----@param nPosX? number
----@param nPosY? number
-function JulianV.MoveTo( nMapId, nPosX, nPosY )
+
+function JulianV.MoveTo( ... )
+    local nMapId, nPosX, nPosY = unpack(arg)
     if nPosX < 1000 and nPosY < 1000 then
         nPosX = nPosX * 8
         nPosY = nPosY * 16
@@ -137,7 +135,7 @@ function JulianV.MoveTo( nMapId, nPosX, nPosY )
     GMMsg2Player("DÞch chuyÓn ®Õn vÞ trÝ", nMapId .. ", <color=yellow>" .. nPosX .. "/" ..
         nPosY .. "<color> <color=green>Thµnh c«ng!")
 end
----@param lvl? number
+---@param lvl? number @Level
 function JulianV.PowerUp( lvl )
     if not lvl or lvl == 0 then
         g_AskClientNumberEx(0, 200, "Power Up Level", { JulianV.PowerUp })

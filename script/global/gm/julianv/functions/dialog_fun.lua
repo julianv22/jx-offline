@@ -8,7 +8,7 @@ Include("\\script\\lib\\common.lua")
 SPRLINK = "<#><link=image[0]:\\spr\\julianv.spr><link>"
 JDialog = {}
 JDialog.tbOptions = { nil } -- Cac dong menu
-
+---@param szMessage? string @Tieu de Dialog
 function JDialog:InitTitle( szMessage ) -- Khoi tao tieu de Dialog
     dofile("script/global/gm/julianv/functions/dialog_fun.lua")
     if szMessage then
@@ -19,7 +19,8 @@ function JDialog:InitTitle( szMessage ) -- Khoi tao tieu de Dialog
                            GetName())
     end
 end
-
+---@param tbOpt? table @Options
+---@param szTitle? string @Tieu de Dialog
 function JDialog:Show( tbOpt, pBack, szTitle ) -- Hien thi Dialog
     if szTitle then
         self:InitTitle(szTitle)
@@ -53,7 +54,8 @@ function JDialog:DefaultTitle() -- Reset tieu de Dialog ve mac dinh
                           nX, nY)
     self:InitTitle(szMessage)
 end
-
+---@param table? table @Table phan trang
+---@param nOfPage? number @So phan tu moi trang
 function JDialog:PhanTrang( table, nOfPage ) -- Phan trang
     local tbSplitTable = { nil }
     local nCount = getn(table) -- §Õm sè phÇn tö cña b¶ng

@@ -210,7 +210,7 @@ function JulianV.getMagicItem( szItem ) -- nhËn magic item
     if not szItem then
         g_AskClientStringEx("6,1,125,0,0,0", 1, 9000, "Item Code:", { JulianV.getMagicItem })
     else
-        local tbItem = lib:Split(szItem, ",")
+        local tbItem = split(szItem, ",")
         if getn(tbItem) == 6 then
             local nClass, nType, nId, nLvl, nSerie, nLuck = tonumber(tbItem[1]),
                 tonumber(tbItem[2]), tonumber(tbItem[3]), tonumber(tbItem[4]), tonumber(tbItem[5]),
@@ -281,7 +281,8 @@ function JulianV.QualityItem_Dialog( nSex, nSeries ) -- då tÝm
 
 end
 
-function JulianV.getQualityItem( nSex, szName, nSeries )
+function JulianV.getQualityItem( ... )
+    local nSex, szName, nSeries = unpack(arg)
     if not nSeries then
         local tbOpt = {}
         for i = 0, 4 do

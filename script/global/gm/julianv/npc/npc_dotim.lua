@@ -238,7 +238,7 @@ function tbDoTim:Main() -- ch‰n loπi trang bﬁ ch’ tπo
     end
     JDialog:Show(tbOpt, nil, szTitle)
 end
-
+---@param nItemId? number @Item Index
 function tbDoTim.PurpleItem_diaglog( nItemId ) -- ch‰n t™n trang bﬁ
     if (CountFreeRoomByWH(2, 3) < 1) then
         Talk(1, "",
@@ -257,7 +257,11 @@ function tbDoTim.PurpleItem_diaglog( nItemId ) -- ch‰n t™n trang bﬁ
     end
     JDialog:Show(tbOpt, main, MAIN_TITLE)
 end
-
+---@param nItemId? number @Loai trang bi (Vu khi, ao giap...)
+---@param nEqIdx? number @Equip Index
+---@param nGenre? number @Item Genre
+---@param nDetail? number @Detail Type
+---@param nPart? number @Particular Type
 function tbDoTim.getItemLevel( nItemId, nEqIdx, nGenre, nDetail, nPart ) -- ch‰n level trang bﬁ
     tbCheTao.nItemId = nItemId
     tbCheTao.szName = tbDoTim.tbTrangBi[nItemId].tbEquip[nEqIdx][1]
@@ -266,7 +270,7 @@ function tbDoTim.getItemLevel( nItemId, nEqIdx, nGenre, nDetail, nPart ) -- ch‰n
     tbCheTao.nPart = nPart
     g_AskClientNumberEx(1, 10, "Item level", { tbDoTim.getItemSeries })
 end
-
+---@param nItemLevel? number
 function tbDoTim.getItemSeries( nItemLevel ) -- ch‰n ngÚ hµnh trang bﬁ
     tbCheTao.nLevel = nItemLevel
     MAIN_TITLE = MAIN_TITLE ..
@@ -279,7 +283,9 @@ function tbDoTim.getItemSeries( nItemLevel ) -- ch‰n ngÚ hµnh trang bﬁ
     end
     JDialog:Show(tbOpt, nil, szTitle)
 end
-
+---@param nLine? number @So dong
+---@param nSeries? number @Ngu hanh
+---@param tbLineOpt? table @Thuoc tinh dong
 function tbDoTim.getLine( nLine, nSeries, tbLineOpt ) -- ch‰n c∏c dﬂng
     tbCheTao.nSeries = nSeries
     local tbOpt = {}
@@ -305,7 +311,8 @@ function tbDoTim.getLine( nLine, nSeries, tbLineOpt ) -- ch‰n c∏c dﬂng
     end
     JDialog:Show(tbOpt, nil, szTitle)
 end
-
+---@param tbOpt? table @Options
+---@param nLine? number @So dong
 function tbDoTim.insertTable( tbOpt, nLine ) -- hi”n thﬁ c∏c dﬂng
     if tbCheTao.nItemId == 1 then -- check id n’u lµ vÚ kh›
         for _, optVK in tbDoTim.tbWeaponMagic[tbCheTao.nSeries] do

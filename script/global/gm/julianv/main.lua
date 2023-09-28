@@ -8,7 +8,7 @@ IncludeLib("FILESYS")
 Include("\\script\\dailogsys\\dailogsay.lua")
 Include("\\script\\activitysys\\functionlib.lua")
 Include("\\script\\lib\\common.lua")
-------------------------------------------------------------------
+-----------------------------INCLUDE FILES-----------------------------
 JulianV = {}
 function JulianV:IncludeFiles()
     local root = "\\script\\global\\gm\\julianv\\"
@@ -17,9 +17,7 @@ function JulianV:IncludeFiles()
         lib = { "lib_monphai", "lib_vatpham", "lib_boss", "lib_trangbi" },
     }
     for folder, filename in tbInclude do
-        for i = 1, getn(filename) do
-            Include(root .. folder .. "\\" .. filename[i] .. ".lua")
-        end
+        for i = 1, getn(filename) do Include(root .. folder .. "\\" .. filename[i] .. ".lua") end
     end
 end
 JulianV:IncludeFiles()
@@ -33,9 +31,7 @@ function main()
     JulianV:Main()
     return 1
 end
-
 function JulianV:Main()
-
     local tbOpt = {
         { "Qu¶n lý Server", self.Server_Dialog }, --
         { "Qu¶n lý Nh©n vËt", self.Player_Dialog }, --        
@@ -75,6 +71,7 @@ function JulianV:Admin_Dialog()
     JDialog:Show(tbOpt, main)
 end
 
+---@param num? number
 function JulianV.GM_Activate( num )
     if num == 1 then
         if Title_GetActiveTitle() ~= 191 then
@@ -108,7 +105,8 @@ function JulianV.GM_Activate( num )
         end
     end
 end
-
+---@param nMapId? number
+---@param nPosX? number
 function JulianV.Teleport( nMapId, nPosX )
     if not nMapId then
         g_AskClientNumberEx(0, 9999, "NhËp ID map", { JulianV.Teleport })
@@ -119,7 +117,9 @@ function JulianV.Teleport( nMapId, nPosX )
     end
 
 end
-
+---@param nMapId? number
+---@param nPosX? number
+---@param nPosY? number
 function JulianV.MoveTo( nMapId, nPosX, nPosY )
     if nPosX < 1000 and nPosY < 1000 then
         nPosX = nPosX * 8
@@ -137,7 +137,7 @@ function JulianV.MoveTo( nMapId, nPosX, nPosY )
     GMMsg2Player("DÞch chuyÓn ®Õn vÞ trÝ", nMapId .. ", <color=yellow>" .. nPosX .. "/" ..
         nPosY .. "<color> <color=green>Thµnh c«ng!")
 end
-
+---@param lvl? number
 function JulianV.PowerUp( lvl )
     if not lvl or lvl == 0 then
         g_AskClientNumberEx(0, 200, "Power Up Level", { JulianV.PowerUp })
@@ -201,7 +201,8 @@ function JulianV:Notification_Dialog()
     }
     JDialog:Show(tbOpt, JulianV.Admin_Dialog)
 end
-
+---@param nType? number
+---@param szMessage? string
 function JulianV.GM_Notification( nType, szMessage )
     if not szMessage then
         g_AskClientStringEx("", 0, 256, "Néi dung", { JulianV.GM_Notification, { nType } })
@@ -269,7 +270,7 @@ function JulianV:goto_BLC()
     NewWorld(996, 1581, 3197)
     SetFightState(1)
 end
-
+---@param nPic? number
 function JulianV.CheckEmo( nPic )
     if not nPic then
         g_AskClientNumberEx(1, 999, "Start Id", { JulianV.CheckEmo })
@@ -294,13 +295,13 @@ function JulianV:ExpandStorage() -- Më réng r­¬ng
     OpenStoreBox(3)
     AddItem(6, 1, 1427, 90, 1, 0, 0)
 end
-
+---@param bComfirm? boolean
 function JulianV.ClearF4( bComfirm ) -- Dän r­¬ng ®å
     if not bComfirm then
         CreateNewSayEx(SPRLINK ..
                            "<color=red><pic=115> L­u ý: <color>TÊt c¶ vËt phÈm vµ trang bÞ trong R­¬ng chøa ®å sÏ bÞ {{Xo¸ bá}} hoµn toµn vµ kh«ng thÓ phôc håi nh­ cò.\n\n<sex>cã ch¾c ch¾n muèn lµm vËy kh«ng<pic=44><color>", --
             {
-                { "X¸c nhËn", JulianV.ClearF4, { 1 } }, --
+                { "X¸c nhËn", JulianV.ClearF4, { "true" } }, --
                 { "§Ó ta suy nghÜ l¹i..." },
             })
     else
@@ -312,7 +313,7 @@ function JulianV.ClearF4( bComfirm ) -- Dän r­¬ng ®å
         Talk(1, "", "§· dän s¹ch r­¬ng<pic=46>")
     end
 end
-
+---@param nCount? number
 function DisposeItem( nCount ) -- Huû vËt phÈm
     if not nCount then
         GiveItemUI("Hñy vËt phÈm",

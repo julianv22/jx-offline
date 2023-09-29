@@ -57,7 +57,7 @@ function JDialog:DefaultTitle() -- Reset tieu de Dialog ve mac dinh
     self:InitTitle(szMessage)
 end
 ---@param table? table @Table phan trang
----@param nOfPage? number @So phan tu moi trang
+---@param nOfPage? integer @So phan tu moi trang
 function JDialog:PhanTrang( table, nOfPage ) -- Phan trang
     local tbSplitTable = { nil }
     local nCount = getn(table) -- §Õm sè phÇn tö cña b¶ng

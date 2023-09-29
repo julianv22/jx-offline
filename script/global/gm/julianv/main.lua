@@ -69,7 +69,7 @@ function JulianV:Admin_Dialog()
     }
     JDialog:Show(tbOpt, main)
 end
----@param num? number
+---@param num? integer
 function JulianV.GM_Activate( num )
     if num == 1 then
         if Title_GetActiveTitle() ~= 191 then
@@ -103,8 +103,8 @@ function JulianV.GM_Activate( num )
         end
     end
 end
----@param nMapId? number 
----@param nPosX? number
+---@param nMapId? integer 
+---@param nPosX? integer
 function JulianV.Teleport( nMapId, nPosX )
     if not nMapId then
         g_AskClientNumberEx(0, 9999, "NhËp ID map", { JulianV.Teleport })
@@ -134,7 +134,7 @@ function JulianV.MoveTo( ... )
     GMMsg2Player("DÞch chuyÓn ®Õn vÞ trÝ", nMapId .. ", <color=yellow>" .. nPosX .. "/" ..
         nPosY .. "<color> <color=green>Thµnh c«ng!")
 end
----@param lvl? number @Level
+---@param lvl? integer @Level
 function JulianV.PowerUp( lvl )
     if not lvl or lvl == 0 then
         g_AskClientNumberEx(0, 200, "Power Up Level", { JulianV.PowerUp })
@@ -198,7 +198,7 @@ function JulianV:Notification_Dialog()
     }
     JDialog:Show(tbOpt, main)
 end
----@param nType? number
+---@param nType? integer
 ---@param szMessage? string
 function JulianV.GM_Notification( nType, szMessage )
     if not szMessage then
@@ -267,7 +267,7 @@ function JulianV:goto_BLC()
     NewWorld(996, 1581, 3197)
     SetFightState(1)
 end
----@param nPic? number
+---@param nPic? integer
 function JulianV.CheckEmo( nPic )
     if not nPic then
         g_AskClientNumberEx(1, 999, "Start Id", { JulianV.CheckEmo })
@@ -310,7 +310,7 @@ function JulianV.ClearF4( bComfirm ) -- Dän r­¬ng ®å
         Talk(1, "", "§· dän s¹ch r­¬ng<pic=46>")
     end
 end
----@param nCount? number
+---@param nCount? integer
 function DisposeItem( nCount ) -- Huû vËt phÈm
     if not nCount then
         GiveItemUI("Hñy vËt phÈm",

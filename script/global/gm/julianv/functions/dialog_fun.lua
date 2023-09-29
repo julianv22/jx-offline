@@ -12,16 +12,12 @@ JDialog.tbOptions = {} -- Cac dong menu
 function JDialog:InitTitle( szMessage ) -- Khoi tao tieu de Dialog
     dofile("script/global/gm/julianv/functions/dialog_fun.lua")
     if type(szMessage) == "table" then
-        self.szTitle = szMessage[1]
+        self.szTitle = szMessage[1] -- Tieu de Dialog
     else
-        self.szTitle = SPRLINK .. szMessage -- Tieu de Dialog
-        -- else
-        --     self.szTitle = format(SPRLINK ..
-        --                               "Xin chµo <sex><bclr=red>%s<bclr> ta cã thÓ gióp g× cho ng­¬i<pic=44><color>",
-        --                        GetName())
+        self.szTitle = SPRLINK .. szMessage
     end
 end
----@param tbOpt? table @Options
+---@param tbOpt? table @Cac options
 ---@param szTitle? string @Tieu de Dialog
 function JDialog:Show( tbOpt, pBack, szTitle ) -- Hien thi Dialog
     if szTitle then
@@ -34,7 +30,7 @@ function JDialog:Show( tbOpt, pBack, szTitle ) -- Hien thi Dialog
         if type(pBack) == "function" then -- nÕu tham sè lµ function
             tinsert(self.tbOptions, { "Trë l¹i", pBack })
         elseif type(pBack) == "table" then -- nÕu tham sè lµ table
-            self.tbBack = { "Trë l¹i" }
+            self.tbBack = { "Trë l¹i" } -- Menu tro lai
             for i = 1, getn(pBack) do tinsert(self.tbBack, pBack[i]) end
             tinsert(self.tbOptions, self.tbBack)
         end

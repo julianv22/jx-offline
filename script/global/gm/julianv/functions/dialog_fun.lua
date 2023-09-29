@@ -8,15 +8,17 @@ Include("\\script\\lib\\common.lua")
 SPRLINK = "<#><link=image[0]:\\spr\\julianv.spr><link>"
 JDialog = {}
 JDialog.tbOptions = { nil } -- Cac dong menu
----@param szMessage? string @Tieu de Dialog
+
 function JDialog:InitTitle( szMessage ) -- Khoi tao tieu de Dialog
     dofile("script/global/gm/julianv/functions/dialog_fun.lua")
-    if szMessage then
-        self.szTitle = SPRLINK .. szMessage -- Tieu de Dialog
+    if type(szMessage) == "table" then
+        self.szTitle = szMessage[1]
     else
-        self.szTitle = format(SPRLINK ..
-                                  "Xin chµo <sex><bclr=red>%s<bclr> ta cã thÓ gióp g× cho ng­¬i<pic=44><color>",
-                           GetName())
+        self.szTitle = SPRLINK .. szMessage -- Tieu de Dialog
+        -- else
+        --     self.szTitle = format(SPRLINK ..
+        --                               "Xin chµo <sex><bclr=red>%s<bclr> ta cã thÓ gióp g× cho ng­¬i<pic=44><color>",
+        --                        GetName())
     end
 end
 ---@param tbOpt? table @Options
@@ -50,8 +52,8 @@ function JDialog:DefaultTitle() -- Reset tieu de Dialog ve mac dinh
                           tbMonPhai.tbPK_Status[GetCamp()][1])
     local szMessage = format(
                           "<pic=137> Online   : <color=yellow>%s<color>     Tµi kho¶n : <bclr=red>%s<bclr>\n<pic=136> Nh©n vËt : <bclr=blue>%s<bclr>\n<pic=135> M«n ph¸i : <color=green>%s<color>     CÊp ®é : <color=green>%d<color>\n<pic=137> Mµu PK   : %s   Trïng sinh : <color=green>%d<color>\n\n<pic=54> Täa ®é  : <color=yellow>%d,<color> <color=orange>%d/%d<color>",
-                          nOnline, szAccount, szName, szFactionName, GetLevel(), szCurCamp, ST_GetTransLifeCount(), nW,
-                          nX, nY)
+                          nOnline, szAccount, szName, szFactionName, GetLevel(), szCurCamp,
+                          ST_GetTransLifeCount(), nW, nX, nY)
     self:InitTitle(szMessage)
 end
 ---@param table? table @Table phan trang

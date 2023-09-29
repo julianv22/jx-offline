@@ -236,7 +236,7 @@ function tbDoTim:Main() -- chän lo¹i trang bÞ chÕ t¹o
     for id, tbEquip in self.tbTrangBi do
         tinsert(tbOpt, { id .. ". " .. tbEquip.szName, self.PurpleItem_diaglog, { id } })
     end
-    JDialog:Show(tbOpt, nil, szTitle)
+    JDialog:Show(tbOpt, nil, { szTitle })
 end
 ---@param nItemId? number @Item Index
 function tbDoTim.PurpleItem_diaglog( nItemId ) -- chän tªn trang bÞ
@@ -255,7 +255,7 @@ function tbDoTim.PurpleItem_diaglog( nItemId ) -- chän tªn trang bÞ
         tinsert(tbOpt,
             { tbEquip[1], tbDoTim.getItemLevel, { nItemId, nEqIdx, nGenre, nDetail, nPart } })
     end
-    JDialog:Show(tbOpt, main, MAIN_TITLE)
+    JDialog:Show(tbOpt, main, { MAIN_TITLE })
 end
 ---@param nItemId? number @Loai trang bi (Vu khi, ao giap...)
 ---@param nEqIdx? number @Equip Index
@@ -281,7 +281,7 @@ function tbDoTim.getItemSeries( nItemLevel ) -- chän ngò hµnh trang bÞ
     for nSeries, tbHe in tbDoTim.tbSeries do
         tinsert(tbOpt, { "HÖ " .. tbHe[1], tbDoTim.getLine, { 1, nSeries } })
     end
-    JDialog:Show(tbOpt, nil, szTitle)
+    JDialog:Show(tbOpt, nil, { szTitle })
 end
 ---@param nLine? number @So dong
 ---@param nSeries? number @Ngu hanh
@@ -309,7 +309,7 @@ function tbDoTim.getLine( nLine, nSeries, tbLineOpt ) -- chän c¸c dßng
         szTitle = MAIN_TITLE
         tinsert(tbOpt, { "§ång ý chÕ t¹o", tbDoTim.CheTaoDoTim })
     end
-    JDialog:Show(tbOpt, nil, szTitle)
+    JDialog:Show(tbOpt, nil, { szTitle })
 end
 ---@param tbOpt? table @Options
 ---@param nLine? number @So dong

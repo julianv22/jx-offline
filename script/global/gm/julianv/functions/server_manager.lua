@@ -11,7 +11,7 @@ function JulianV:Choose_Boss_Dialog()
             { "Boss Hoµng Kim M«n Ph¸i", JulianV.Boss_HKMP },
             { "Boss Cao thñ Vâ l©m", JulianV.Boss_CaoThu },
         }
-        JDialog:Show(tbOpt, main)
+        JDialog:Show(tbOpt, JulianV.Server_Dialog)
     end
 end
 
@@ -43,12 +43,14 @@ function JulianV.Boss_HK( nPage )
         local nCount = getn(tbBossHK)
         if nPage < nCount then
             for i = 1, 11 do
-                tinsert(tbOpt, { tbBossHK[nPage][i].szName, JulianV.Call_Boss, { tbBossHK[nPage], i } })
+                tinsert(tbOpt,
+                    { tbBossHK[nPage][i].szName, JulianV.Call_Boss, { tbBossHK[nPage], i } })
             end
             tinsert(tbOpt, { "Trang sau", JulianV.Boss_HK, { nPage + 1 } })
         else
             for i = 1, getn(tbBossHK[nCount]) do
-                tinsert(tbOpt, { tbBossHK[nCount][i].szName, JulianV.Call_Boss, { tbBossHK[nCount], i } })
+                tinsert(tbOpt,
+                    { tbBossHK[nCount][i].szName, JulianV.Call_Boss, { tbBossHK[nCount], i } })
             end
         end
         if nPage > 1 then tinsert(tbOpt, { "Trang tr­íc", JulianV.Boss_HK, { nPage - 1 } }) end

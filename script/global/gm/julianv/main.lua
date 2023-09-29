@@ -69,7 +69,6 @@ function JulianV:Admin_Dialog()
     }
     JDialog:Show(tbOpt, main)
 end
-
 ---@param num? number
 function JulianV.GM_Activate( num )
     if num == 1 then
@@ -197,7 +196,7 @@ function JulianV:Notification_Dialog()
         { "TÇn sè thÕ giíi", JulianV.GM_Notification, { 0 } },
         { "TÇn sè m¸y chñ", JulianV.GM_Notification, { 1 } },
     }
-    JDialog:Show(tbOpt, JulianV.Admin_Dialog)
+    JDialog:Show(tbOpt, main)
 end
 ---@param nType? number
 ---@param szMessage? string
@@ -234,7 +233,7 @@ end
 ------------------------Chøc n¨ng kh¸c------------------------
 function JulianV:ChucNangKhac()
     local tbOpt = {
-        { "Më Shop", Sale, { 142 } }, --        
+        { "Më Shop", Sale, { 188 } }, --        
         { "§i tíi B·i LuyÖn C«ng", JulianV.goto_BLC }, --
         { "Trë vÒ Ba L¨ng HuyÖn", JulianV.goto_BLH }, --  
         { "Söa lçi ThÇn Hµnh Phï", JulianV.fix_shenxingfu }, --
@@ -299,7 +298,7 @@ function JulianV.ClearF4( bComfirm ) -- Dän r­¬ng ®å
         CreateNewSayEx(SPRLINK ..
                            "<color=red><pic=115> L­u ý: <color>TÊt c¶ vËt phÈm vµ trang bÞ trong R­¬ng chøa ®å sÏ bÞ {{Xo¸ bá}} hoµn toµn vµ kh«ng thÓ phôc håi nh­ cò.\n\n<sex>cã ch¾c ch¾n muèn lµm vËy kh«ng<pic=44><color>", --
             {
-                { "X¸c nhËn", JulianV.ClearF4, { "true" } }, --
+                { "X¸c nhËn", JulianV.ClearF4, { 1 } }, --
                 { "§Ó ta suy nghÜ l¹i..." },
             })
     else

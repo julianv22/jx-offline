@@ -257,12 +257,9 @@ function tbDoTim.PurpleItem_diaglog( nItemId ) -- ch‰n t™n trang bﬁ
     end
     JDialog:Show(tbOpt, main, { MAIN_TITLE })
 end
----@param nItemId? integer @Loai trang bi (Vu khi, ao giap...)
----@param nEqIdx? integer @Equip Index
----@param nGenre? integer @Item Genre
----@param nDetail? integer @Detail Type
----@param nPart? integer @Particular Type
-function tbDoTim.getItemLevel( nItemId, nEqIdx, nGenre, nDetail, nPart ) -- ch‰n level trang bﬁ
+
+function tbDoTim.getItemLevel( ... ) -- ch‰n level trang bﬁ
+    local nItemId, nEqIdx, nGenre, nDetail, nPart = unpack(arg)
     tbCheTao.nItemId = nItemId
     tbCheTao.szName = tbDoTim.tbTrangBi[nItemId].tbEquip[nEqIdx][1]
     tbCheTao.nGenre = nGenre
@@ -300,7 +297,7 @@ function tbDoTim.getLine( nLine, nSeries, tbLineOpt ) -- ch‰n c∏c dﬂng
         MAIN_TITLE = MAIN_TITLE ..
                          format("\n  - Dﬂng %d: <color=%s>%s<color>", nPreLine, szColor,
                              tbCheTao.tbOptions[nPreLine][1])
-        Msg2Player("Dﬂng " .. nPreLine .. ": <color=green>" .. tbCheTao.tbOptions[nPreLine][1])
+                             GMMsg2Player("Dﬂng " .. nPreLine,"<color=yellow>" .. tbCheTao.tbOptions[nPreLine][1])
     end
     if nLine <= 6 then
         szTitle = MAIN_TITLE .. "\n<pic=135><color> Ch‰n dﬂng " .. nLine .. ":"

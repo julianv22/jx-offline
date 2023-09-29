@@ -7,7 +7,7 @@ Include("\\script\\lib\\common.lua")
 
 SPRLINK = "<#><link=image[0]:\\spr\\julianv.spr><link>"
 JDialog = {}
-JDialog.tbOptions = { nil } -- Cac dong menu
+JDialog.tbOptions = {} -- Cac dong menu
 
 function JDialog:InitTitle( szMessage ) -- Khoi tao tieu de Dialog
     dofile("script/global/gm/julianv/functions/dialog_fun.lua")
@@ -59,7 +59,7 @@ end
 ---@param table? table @Table phan trang
 ---@param nOfPage? integer @So phan tu moi trang
 function JDialog:PhanTrang( table, nOfPage ) -- Phan trang
-    local tbSplitTable = { nil }
+    local tbSplitTable = {}
     local nCount = getn(table) -- §Õm sè phÇn tö cña b¶ng
     if nCount > nOfPage then -- NÕu sè phÇn tö > sè item cña 1 trang
         local nIndex = floor(nCount / nOfPage) -- Chia lÊy phÇn nguyªn

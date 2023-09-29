@@ -157,7 +157,7 @@ function JulianV.AdvancedSkill( szSkill )
     if szSkill == 0 then
         g_AskClientStringEx("1995,20", 1, 100, "Skill ID", { JulianV.AdvancedSkill })
     else
-        local tbSkill = lib:Split(szSkill, ",")
+        local tbSkill = split(szSkill, ",")
         if getn(tbSkill) > 2 then
             Talk(1, "", "Qu¸ nhiÒu tham sè, chØ nhËn 2 tham sè lµ Skill ID vµ Level<pic=46>")
         else

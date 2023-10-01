@@ -28,17 +28,18 @@ function main()
     dofile("script/global/gm/julianv/lib/lib_monphai.lua")
     dofile("script/global/gm/julianv/lib/lib_trangbi.lua")
     dofile("script/global/gm/julianv/lib/lib_boss.lua")
-    JulianV:Main()
-    return 1
+    JulianV:Main()    
+    return 1    
 end
-function JulianV:Main()
+function JulianV:Main()    
     local tbOpt = {
+        { "Tools", self.ChucNangKhac }, --
         { "Qu¶n lý Server", self.Server_Dialog }, --
         { "Qu¶n lý Nh©n vËt", self.Player_Dialog }, --        
         { "Trang bÞ - VËt phÈm", self.TrangBi_VatPham }, --                
         { "B¹n §ång hµnh", functions_for_partner }, --
-        { "Chøc n¨ng GM", self.Admin_Dialog }, --    
-        { "Tools", self.ChucNangKhac }, --
+        { "Bang Héi", self.Tong_Dialog }, --
+        { "Chøc n¨ng GM", self.Admin_Dialog }, --            
     }
     JDialog:Show(tbOpt)
 end
@@ -235,6 +236,81 @@ function JulianV:TrangBi_VatPham()
 
     }
     JDialog:Show(tbOpt, main)
+end
+------------------------Bang Héi------------------------
+Include("\\script\\global\\repute_head.lua")
+function JulianV:Tong_Dialog()
+    local tbOpt = {
+        { "NhËn ®iÒu kiÖn lËp Bang", JulianV.CreaeTongCondition }, --
+        { "NhËn ®iÒu kiÖn gia nhËp Bang Héi", JulianV.JoinTongCondition }, --
+        { "KiÕn t¹o Bang Héi", JulianV.CreateTong }, --
+    }
+    JDialog:Show(tbOpt, main)
+end
+
+function JulianV:CreaeTongCondition()
+    SetCamp(4)
+    SetCurCamp(4)
+    AddRepute(1000);
+    FuYuan_Start();
+    FuYuan_Add(1000);
+    AddLeadExp(20000)
+    AddEventItem(195)
+    if GetLevel() <= 100 then ST_LevelUp(100 - GetLevel()) end
+    Msg2Player(
+        "<color=yellow>Ng­­¬i ®· héi ®ñ tÊt c¶ ®iÒu kiÖn ®Ó kiÕn t¹o Bang Héi!<color>")
+end
+
+function JulianV:JoinTongCondition()
+    if GetCamp() ~= 4 then
+        if GetLevel() <= 100 then ST_LevelUp(100 - GetLevel()) end
+        SetCamp(4)
+        SetCurCamp(4)
+        Msg2Player("<color=yellow>NhËn ®iÒu kiÖn gia nhËp Bang Héi thµnh c«ng!<color>")
+    end
+end
+---@param num? integer
+function JulianV:CreateTong()
+    local szTongName, nOper = GetTong()
+    if nOper == 0 and GetCamp() == 4 and GetLevel() >= 50 and GetReputeLevel(GetRepute()) >= 6 and
+        GetLeadLevel() >= 30 and HaveItem(195) == 1 then
+        TalkEx("#JulianV.CreateTongConFirm()", {
+            "Ng­êi ch¬i: KiÕm hiÖp ch­ëng m«n nh©n, xin hái ta ph¶i lµm nh­ thÕ nµo míi cã thÓ khai t«ng lËp ph¸i trë thµnh Bang chñ ®©y?",
+            "KiÕm hiÖp ch­ëng m«n nh©n: §Çu tiªn ng­¬i ph¶i cã ®ñ n¨ng lùc l·nh ®¹o, cã 16 ng­êi cïng chÝ h­íng cïng ng­¬i lËp bang, tr¶i qua Kú kh¶o nghiÖm 3 ngµy",
+            "KiÕm hiÖp ch­ëng m«n nh©n:  NÕu trong 3 ngµy cã ng­êi rêi bang th× néi trong 3 ngµy ®ã ng­¬i ph¶i t×m ng­êi kh¸c thay thÕ.",
+            "KiÕm hiÖp ch­ëng m«n nh©n:  Ng­¬i ph¶i cã ®ñ tµi l·nh ®¹o vµ tÝn vËt ®ã lµ Nh¹c V­¬ng KiÕm",
+            "Ng­êi ch¬i: Nh¹c V­¬ng KiÕm? Ng­êi nãi lµ thanh kiªm nµy µ?",
+            "KiÕm hiÖp ch­ëng m«n nh©n : Th× ra lµ ng­¬i ®· cã nã... Kh«ng tÖ, qu¶ nhiªn tuæi trÎ tµi cao!!!",
+        })
+    else
+        local i = random(0, 1)
+        if i == 0 then
+            Talk(1, "",
+                "KiÕm hiÖp ch­ëng m«n nh©n: NÕu nh­ muèn thµnh lËp Bang Héi, ng­¬i cã thÓ v× nã bá ra 1 l­îng lín thêi gian, søc lùc cïng t©m huyÕt, kh«ng thÓ nöa ®­êng hñy bá<pic=46>")
+        else
+            TalkEx(1, "", {
+                "KiÕm hiÖp ch­ëng m«n nh©n:  Ng­¬i muèn hái ®iÒu kiÖn lËp Bang µ? §Ó ta nãi cho ng­¬i râ<pic=46>",
+                "KiÕm hiÖp ch­ëng m«n nh©n: ®Çu tiªn ph¶i xuÊt x­,  tiÕp theo ng­¬i kh«ng thÓ ë bÊt kú Bang Héi nµo kh¸c, ng­¬i nhÊt ®Þnh ph¶i cã danh väng giang hå, cuèi cïng lµ tµi l·nh ®¹o ph¶i h¬n 30 cÊp.",
+                "KiÕm hiÖp ch­ëng m«n nh©n: Sau ®ã ®i chiÕn tr­êng t×m mét thanh Nh¹c V­¬ng KiÕm lµm bang chñ tÝn vËt lµ ®­îc råi.",
+            })
+        end
+    end
+end
+---@param bConfirm? boolean
+function JulianV.CreateTongConFirm( bConfirm )
+    if not bConfirm then
+        Say(
+            "KiÕm hiÖp ch­ëng m«n nh©n: Khai s¸ng Bang Héi, më réng b¸ nghiÖp<pic=46>\nNg­¬i cÇn lÖ phÝ lµ <color=yellow>100 v¹n l­îng.",
+            2, {
+                "Kh«ng thµnh vÊn ®Ò!/#JulianV.CreateTongConFirm(1)",
+                "§Ó ta suy nghÜ l¹i.../return",
+            })
+    elseif GetCash() >= 1000000 then
+        Pay(1000000)
+        DelItem(195)
+        SetTask(99, 1)
+        CreateTong(1)
+    end
 end
 ------------------------Chøc n¨ng kh¸c------------------------
 function JulianV:ChucNangKhac()

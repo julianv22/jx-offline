@@ -150,7 +150,7 @@ end
 function JulianV.Ask_Feature_StartId( nId )
     SetTaskTemp(168, nId)
     Msg2Player("Xem tr­íc ngo¹i h×nh <color=yellow>" .. tbMonPhai.tbNgoaiTrang[nId])
-    g_AskClientNumberEx(1, 9999, "Start ID", { SetTaskTemp, { 169 } })
+    g_AskClientNumberEx(0, 9999, "Start ID", { SetTaskTemp, { 169 } })
 end
 
 function JulianV:Check_Feature()
@@ -167,12 +167,13 @@ function JulianV:Change_Equip_Feature()
 end
 
 function Change_Equip_Feature_Confirm( nCount )
+    if nCount == 0 then return end
     if nCount > 1 then
         Talk(1, "", "Qu¸ nhiÒu trang bÞ, kh«ng thÓ xö lÝ<pic=46>")
         return
     elseif nCount == 1 then
         local nItemIndex = GetGiveItemUnit(1)
-        g_AskClientNumberEx(1, 9999, "NhËp ID muèn ®æi:", { SetItemNewFeature, { nItemIndex } })
+        g_AskClientNumberEx(0, 9999, "NhËp ID muèn ®æi:", { SetItemNewFeature, { nItemIndex } })
         -- SetItemNewFeature(nItemIndex, nNo)
     end
 end
@@ -184,12 +185,13 @@ function JulianV:Change_Weapon_Feature()
 end
 
 function Change_Weapon_Feature_Confirm( nCount )
+    if nCount == 0 then return end
     if nCount > 1 then
         Talk(1, "", "Qu¸ nhiÒu trang bÞ, kh«ng thÓ xö lÝ<pic=46>")
         return
     elseif nCount == 1 then
         local nItemIndex = GetGiveItemUnit(1)
-        g_AskClientNumberEx(1, 500, "NhËp ID muèn ®æi:", { SetItemNewFeature, { nItemIndex } })
+        g_AskClientNumberEx(0, 500, "NhËp ID muèn ®æi:", { SetItemNewFeature, { nItemIndex } })
         -- SetItemNewFeature(nItemIndex, nNo)
     end
 end
@@ -207,16 +209,18 @@ function Restore_Feature_Confirm( nCount )
 end
 ------------------------C¸c lo¹i vËt phÈm------------------------
 function JulianV.getGoldItem( nItemIdx ) -- nhËn trang bÞ HK
+    if nItemIdx == 0 then return end
     if not nItemIdx then
-        g_AskClientNumberEx(1, 9999, "GoldItem ID", { JulianV.getGoldItem })
+        g_AskClientNumberEx(0, 9999, "GoldItem ID", { JulianV.getGoldItem })
     else
         Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddGoldItem(0, nItemIdx)))
     end
 end
 
 function JulianV.getQuestkey( nItemId ) -- nhËn questkey item
+    if nItemId == 0 then return end
     if nItemId == 7 or not nItemId then
-        g_AskClientNumberEx(1, 9999, "Questkey ID", { JulianV.getQuestkey })
+        g_AskClientNumberEx(0, 9999, "Questkey ID", { JulianV.getQuestkey })
     else
         Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddEventItem(nItemId)))
     end
@@ -224,7 +228,7 @@ end
 
 function JulianV.getMagicItem( szItem ) -- nhËn magic item
     if not szItem then
-        g_AskClientStringEx("6,1,125,0,0,0", 1, 9000, "Item Code:", { JulianV.getMagicItem })
+        g_AskClientStringEx("6,1,125,0,0,0", 0, 9000, "Item Code:", { JulianV.getMagicItem })
     else
         local tbItem = split(szItem, ",")
         if getn(tbItem) == 6 then
@@ -240,17 +244,16 @@ function JulianV.getMagicItem( szItem ) -- nhËn magic item
 end
 
 function JulianV.getMagicItemSll( nItemId, nCount ) -- nhËn magic item theo sè l­îng
+    if nItemId == 0 or nCount == 0 then return end
     if not nItemId then
-        g_AskClientNumberEx(1, 9999, "ParticularType ID", { JulianV.getMagicItemSll })
+        g_AskClientNumberEx(0, 9999, "ParticularType ID", { JulianV.getMagicItemSll })
+    elseif not nCount then
+        g_AskClientNumberEx(0, CalcFreeItemCellCount(), "Sè l­îng",
+            { JulianV.getMagicItemSll, { nItemId } })
     else
-        if not nCount then
-            g_AskClientNumberEx(1, CalcFreeItemCellCount(), "Sè l­îng",
-                { getMagicItemSll, { nItemId } })
-        else
-            local ItemIndex
-            for i = 1, nCount do ItemIndex = AddItem(6, 1, nItemId, 0, 0, 0) end
-            Msg2Player("NhËn ®­îc " .. nCount .. " <color=yellow>" .. GetItemName(ItemIndex))
-        end
+        local ItemIndex
+        for i = 1, nCount do ItemIndex = AddItem(6, 1, nItemId, 0, 0, 0) end
+        Msg2Player("NhËn ®­îc " .. nCount .. " <color=yellow>" .. GetItemName(ItemIndex))
     end
 end
 
@@ -336,9 +339,10 @@ function JulianV.Chon_Series( tbEquip )
 end
 
 function JulianV.getDoXanh( tbEquip, nSeries, nCount )
-    if not nCount or nCount == 0 then
-        g_AskClientNumberEx(1, CalcFreeItemCellCount(), "Sè l­îng",
-            { JulianV.getDoXanh, { tbEquip, nSeries, nCount } })
+    if nCount == 0 then return end
+    if not nCount then
+        g_AskClientNumberEx(0, CalcFreeItemCellCount(), "Sè l­îng",
+            { JulianV.getDoXanh, { tbEquip, nSeries } })
     else
         local nItemIndex
         local nGenre, nDetail, nPart = tbEquip[2], tbEquip[3], tbEquip[4]
@@ -377,9 +381,10 @@ function JulianV:TransLifeItem_Dialog()
 end
 
 function JulianV.getTransLifeItem( nIndex, nCount )
+    if nCount == 0 then return end
     local nMax = CalcFreeItemCellCount()
     if not nCount then
-        g_AskClientNumberEx(1, nIndex == 4 and 999 or nMax, "Sè l­îng",
+        g_AskClientNumberEx(0, nIndex == 4 and 999 or nMax, "Sè l­îng",
             { JulianV.getTransLifeItem, { nIndex } })
     else
         if nIndex == 4 then

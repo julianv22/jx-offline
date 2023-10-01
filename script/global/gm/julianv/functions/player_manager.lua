@@ -170,8 +170,9 @@ function JulianV.AdvancedSkill( szSkill )
 end
 
 function JulianV.DelAdvSkill( nSkillId )
-    if nSkillId == 0 then
-        g_AskClientNumberEx(1, 9999, "Skill ID", { JulianV.DelAdvSkill })
+    if nSkillId == 0 then return end
+    if not nSkillId then
+        g_AskClientNumberEx(0, 9999, "Skill ID", { JulianV.DelAdvSkill })
     else
         DelMagic(nSkillId)
         Msg2Player("§· xo¸ Skill <color=yellow>" .. GetSkillName(nSkillId))
@@ -188,14 +189,16 @@ end
 
 function JulianV.Pick_Points( nType, nLimit )
     if nType < 10 then
-        g_AskClientNumberEx(1, nLimit, "Sè l­îng:", { JulianV.Set_Points, { nType } })
+        g_AskClientNumberEx(0, nLimit, "Sè l­îng:", { JulianV.Set_Points, { nType } })
     else
         tbPointsType[nType].pFun()
     end
 end
 
 function JulianV.Set_Points( nType, num )
-    if num ~= 0 then
+    if num == 0 then
+        return
+    else
         tbPointsType[nType].pFun(num)
         Msg2Player("NhËn ®­îc <color=yellow>" .. num .. "<color> <color=green>" ..
                        tbPointsType[nType].szUnit)
@@ -281,9 +284,8 @@ function JulianV.DanhHieuVoLam( nPage )
         local nCount = getn(DanhHieuVL)
         if nPage < nCount then
             for i = 1, 10 do
-                tinsert(tbOpt, {
-                    DanhHieuVL[nPage][i][1], tbDanhHieu.Active, { DanhHieuVL[nPage][i][2] },
-                })
+                tinsert(tbOpt,
+                    { DanhHieuVL[nPage][i][1], tbDanhHieu.Active, { DanhHieuVL[nPage][i][2] } })
             end
             tinsert(tbOpt, { "Trang sau", JulianV.DanhHieuVoLam, { nPage + 1 } })
         else

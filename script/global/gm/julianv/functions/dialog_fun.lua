@@ -42,14 +42,15 @@ end
 function JDialog:DefaultTitle() -- Reset tieu de Dialog ve mac dinh
     local nW, nX, nY = GetWorldPos()
     local szFactionName = GetFaction() == "" and "T¸n Nh©n" or tbMonPhai.tbPinyn[GetFaction()][2]
-    local nOnline, szAccount, szName, nTransLifeCount = GetPlayerCount(), GetAccount(), GetName(),
-        ST_GetTransLifeCount()
+    local szTongName = GetTong()
+    szTongName = szTongName == "" and "Trèng" or szTongName
+    local szAccount, szName, nTransLifeCount = GetAccount(), GetName(), ST_GetTransLifeCount()
     local szCurCamp = format("<color=%s>%s<color>", tbMonPhai.tbPK_Status[GetCamp()][2],
                           tbMonPhai.tbPK_Status[GetCamp()][1])
     local szMessage = format(
-                          "<pic=137> Tµi kho¶n : <bclr=red>%s<bclr>     Index : <color=yellow>%s<color>\n<pic=136> Nh©n vËt  : <bclr=blue>%s<bclr>\n<pic=135> M«n ph¸i  : <color=green>%s<color>     CÊp ®é : <color=green>%d<color>\n<pic=136> ThÕ lùc   : %s   Trïng sinh : <color=green>%d<color>\n\n<pic=135> Online    : <color=green>%d<color>\n<pic=54> Täa ®é   : <color=yellow>%d,<color> <color=orange>%d/%d<color>",
+                          "<pic=137> Tµi kho¶n : <bclr=red>%s<bclr>     Index : <color=yellow>%s<color>\n<pic=136> Nh©n vËt  : <bclr=blue>%s<bclr>\n<pic=135> M«n ph¸i  : <color=green>%s<color>     CÊp ®é : <color=green>%d<color>\n<pic=136> ThÕ lùc   : %s   Trïng sinh : <color=green>%d<color>\n<pic=135> Bang Héi  : <bclr=pink>%s<bclr>\n\n<pic=54> Täa ®é   : <color=yellow>%d,<color> <color=orange>%d/%d<color>",
                           szAccount, PlayerIndex, szName, szFactionName, GetLevel(), szCurCamp,
-                          ST_GetTransLifeCount(), nOnline, nW, nX, nY)
+                          ST_GetTransLifeCount(), szTongName, nW, nX, nY)
     self:InitTitle(szMessage)
 end
 ---@param table? table @Table phan trang

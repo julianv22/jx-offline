@@ -67,7 +67,7 @@ function JulianV:Admin_Dialog()
         end
     end
     local PowerOpt = function()
-        if HaveMagic(712) ~= -1 then
+        if HaveMagic(161) ~= -1 then
             return { "Power Down", JulianV.PowerUp, { -1 } }
         else
             return { "Power Up", JulianV.PowerUp, { 0 } }

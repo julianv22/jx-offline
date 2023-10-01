@@ -1,8 +1,8 @@
 # jx-offline
 
-[![Julian-V](https://github.com/julianv22/jx-offline/blob/main/docs/Julian-V.png)](https://youtube.com/julianv)
+[![Julian-V](docs/Julian-V.png)](https://youtube.com/julianv "Julian-V")
 
-[![JX](https://badgen.net/badge/JX-Offline/Linux/cyan?icon=git)](https://github.com/julianv22/jx-offline) [![Version](https://badgen.net/badge/Version/8.2/purple?icon=packagephobia)](https://github.com/julianv22/jx-offline#jx-offline) [![Actions](https://github.com/julianv22/jx-offline/actions/workflows/main.yml/badge.svg?event=push)](https://github.com/julianv22/jx-offline/actions/workflows/main.yml)
+[![JX](https://badgen.net/badge/JX-Offline/Linux/cyan?icon=git)](/) [![Version](https://badgen.net/badge/Version/8.2/purple?icon=packagephobia)](#jx-offline) [![Actions](https://github.com/julianv22/jx-offline/actions/workflows/main.yml/badge.svg?event=push)](actions/workflows/main.yml)
 
 # README 
 
@@ -18,25 +18,25 @@ Tương thích tốt nhất với phiên bản 8, những phiên bản khác có
 
 # Hướng dẫn cài đặt
 
-+ Tải bản release mới nhất [![(Download ZIP)](https://badgen.net/badge/Download/ZIP?icon=bitcoin-lightning)](https://github.com/julianv22/jx-offline/archive/refs/heads/main.zip) về và giải nén. Sau đó copy vào **client** và **server**.
++ Tải bản release mới nhất [![(Download ZIP)](https://badgen.net/badge/Download/ZIP?icon=bitcoin-lightning)](archive/refs/heads/main.zip) về và giải nén. Sau đó copy vào **client** và **server**.
 
-[![Note](https://badgen.net/badge/color/L%C6%B0u%20%C3%BD/red?label=)](https://github.com/julianv22/jx-offline#h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-c%C3%A0i-%C4%91%E1%BA%B7t) Ngoài thư mục ***[script](https://github.com/julianv22/jx-offline/tree/main/script), [spr](https://github.com/julianv22/jx-offline/tree/main/spr)*** và file ***[settings/maplist.ini](https://github.com/julianv22/jx-offline/blob/main/settings/maplist.ini)*** ra thì các file và thư mục khác có thể không sao chép cũng được.
+[![Note](https://badgen.net/badge/color/L%C6%B0u%20%C3%BD/red?label=)](#h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-c%C3%A0i-%C4%91%E1%BA%B7t) Ngoài thư mục ***[script](script), [spr](spr)*** và file ***[settings/maplist.ini](settings/maplist.ini)*** ra thì các file và thư mục khác có thể không sao chép cũng được.
 
 + Các file này chỉ bao gồm những chỉnh sửa nhỏ không đáng kể và không làm thay đổi trải nghiệm.
 
-+ [Add [Cẩm nang AIO]](https://github.com/julianv22/jx-offline#add-c%E1%BA%A9m-nang-aio-v%C3%A0o-magicscript) theo hướng dẫn bên dưới.
++ [Add [Cẩm nang AIO]](#add-c%E1%BA%A9m-nang-aio-v%C3%A0o-magicscript) theo hướng dẫn bên dưới.
 
 + Reset server và trải nghiệm.
 
 ### Demo:
 
-[![Example 1](https://github.com/julianv22/jx-offline/blob/main/docs/ex1.png)](https://github.com/julianv22/jx-offline#demo) 
-[![Example 1](https://github.com/julianv22/jx-offline/blob/main/docs/ex2.png)](https://github.com/julianv22/jx-offline#demo)
-[![Example 3](https://github.com/julianv22/jx-offline/blob/main/docs/ex3.png)](https://github.com/julianv22/jx-offline#demo) 
-[![Example 4](https://github.com/julianv22/jx-offline/blob/main/docs/ex4.png)](https://github.com/julianv22/jx-offline#demo)
-[![Example 1](https://github.com/julianv22/jx-offline/blob/main/docs/ex5.png)](https://github.com/julianv22/jx-offline#demo)
+![Example 1](docs/ex1.png "Demo 1")
+![Example 3](docs/ex2.png "Demo 2")
+![Example 2](docs/ex3.png "Demo 3")
+![Example 4](docs/ex4.png "Demo 4")
+![Example 5](docs/ex5.png "Demo 5")
 
-# Add [Cẩm nang AIO] vào [magicscript](https://github.com/julianv22/jx-offline/blob/main/settings/item/004/magicscript.txt)
+# Add [Cẩm nang AIO] vào [magicscript](settings/item/004/magicscript.txt)
 
 Add dòng này vào cuối file **magicscript.txt**
 
@@ -49,7 +49,7 @@ Add dòng này vào cuối file **magicscript.txt**
 CÈm nang AIO	6	1	5128	\spr\item\longmenbiaoju\»¤ïÚÁî.spr	341	1	1	CÈm nang tÊt c¶ trong mét. Writen by <bclr=blue>Julian-V<bclr>		0	1	0	\script\global\gm\julianv\main.lua	0	1	1	0	1		0	0	0	0	0	0	0	0	0	0
 ```
 
-[![Note](https://badgen.net/badge/color/L%C6%B0u%20%C3%BD/red?label=)](https://github.com/julianv22/jx-offline#add-c%E1%BA%A9m-nang-aio-v%C3%A0o-magicscript) Item Id của lệnh bài là: ***{6,	1,	5128}*** có thể thay đổi tuỳ theo magicscript.txt của bạn.
+[![Note](https://badgen.net/badge/color/L%C6%B0u%20%C3%BD/red?label=)](#add-c%E1%BA%A9m-nang-aio-v%C3%A0o-magicscript) Item Id của lệnh bài là: ***{6,	1,	5128}*** có thể thay đổi tuỳ theo magicscript.txt của bạn.
 
 # Tài liệu
 
@@ -61,11 +61,11 @@ https://www.fb.com/groups/pytagaming1
 
 # Linh tinh
 
-### [install.ps1](https://github.com/julianv22/jx-offline/blob/main/install.ps1)
+### [install.ps1](install.ps1)
 
 Quick install work environments with PowerShell
 
-### [settings-font.json](https://github.com/julianv22/jx-offline/blob/main/settings-font.json)
+### [settings-font.json](settings-font.json)
 
 Setting font in VsCode
 

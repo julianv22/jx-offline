@@ -29,9 +29,19 @@ function JulianV:NhanTrangBi2()
     JDialog:Show(tbOpt, JulianV.NhanTrangBi)
 end
 
-function JulianV.TrangBiHiem()
-    local tbOpt = {}
+function JulianV:TrangBiHiem()
+    local tbOpt = {
+        { "Long T­¬ng Chi L©n", JulianV.NhanTBHiem, { 5219, 5227 } }, --
+        { "L¨ng V©n", JulianV.NhanTBHiem, { 5203, 5207 } }, --
+        { "H¾c ThÇn", JulianV.NhanTBHiem, { 4838, 4842 } }, --
+        { "Th­¬ng Khung", JulianV.NhanTBHiem, { 5198, 5202 } }, --
+    }
     JDialog:Show(tbOpt, JulianV.TrangBi_VatPham)
+end
+---@param nStart? integer
+---@param nEnd? integer
+function JulianV.NhanTBHiem( nStart, nEnd ) --
+    for i = nStart, nEnd do AddGoldItem(0, i) end
 end
 
 function JulianV:NhanVatPham()
@@ -57,11 +67,12 @@ function JulianV:ChangeFeature_Dialog()
 end
 
 function JulianV:TrangBiKhac_Dialog()
-    local tbOpt = {
-        { "Cµn Kh«n Giíi ChØ", JulianV.NhanCanKhon_Diag }, --
+    local tbOpt = {        
         { "Ngò hµnh Ên", JulianV.NguHanhAn_Diag }, --
         { "Phi Phong", JulianV.getPhiPhong }, --
         { "Trang Søc", JulianV.getTrangSuc },
+        { "Cµn Kh«n Giíi ChØ", JulianV.NhanCanKhon_Diag }, --
+        { "Set §éng S¸t", JulianV.NhanTBHiem, { 494, 497 } }, --
     }
     JDialog:Show(tbOpt, JulianV.NhanTrangBi)
 end

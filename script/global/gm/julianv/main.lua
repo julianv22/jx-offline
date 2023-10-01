@@ -275,7 +275,7 @@ end
 ---@param nPic? integer
 function JulianV.CheckEmo( nPic )
     if not nPic then
-        g_AskClientNumberEx(1, 999, "Start Id", { JulianV.CheckEmo })
+        g_AskClientNumberEx(0, 999, "Start Id", { JulianV.CheckEmo })
     else
         local szPic = ""
         for i = nPic, nPic + 7 do szPic = szPic .. "Pic " .. i .. ": <pic=" .. i .. ">\n" end

@@ -8,7 +8,7 @@ function JulianV:Choose_Boss_Dialog()
     else
         local tbOpt = {
             { "Boss TiÓu - §¹i Hoµng Kim", JulianV.Boss_HK },
-            { "Boss Hoµng Kim M«n Ph¸i", JulianV.Boss_HKMP },
+            { "Boss Hoµng Kim M«n Ph¸i", JulianV.FactionBoss },
             { "Boss Cao thñ Vâ l©m", JulianV.Boss_CaoThu },
         }
         JDialog:Show(tbOpt, JulianV.Server_Dialog)
@@ -23,7 +23,7 @@ function JulianV:Boss_CaoThu()
     JDialog:Show(tbOpt, JulianV.Choose_Boss_Dialog, "Mêi <sex>chän Boss muèn gäi<pic=46><color>")
 end
 
-function JulianV:Boss_HKMP()
+function JulianV:FactionBoss()
     local tbOpt = {}
     for i = 1, getn(tbFactionBoss) do
         tinsert(tbOpt, { tbFactionBoss[i].szName, JulianV.Call_Boss, { tbFactionBoss, i } })

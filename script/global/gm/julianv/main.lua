@@ -7,6 +7,7 @@ IncludeLib("ITEM")
 IncludeLib("FILESYS")
 Include("\\script\\dailogsys\\dailogsay.lua")
 Include("\\script\\lib\\common.lua")
+Include("\\script\\global\\thinh\\hotro\\functions_partner.lua") -- b¹n ®ång hµnh
 -----------------------------INCLUDE FILES-----------------------------
 JulianV = {}
 function JulianV:IncludeFiles()
@@ -35,6 +36,7 @@ function JulianV:Main()
         { "Qu¶n lý Server", self.Server_Dialog }, --
         { "Qu¶n lý Nh©n vËt", self.Player_Dialog }, --        
         { "Trang bÞ - VËt phÈm", self.TrangBi_VatPham }, --                
+        { "B¹n §ång hµnh", functions_for_partner }, --
         { "Chøc n¨ng GM", self.Admin_Dialog }, --    
         { "Tools", self.ChucNangKhac }, --
     }

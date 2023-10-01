@@ -269,27 +269,27 @@ function JulianV.DanhHieuKiemThe( nIndex )
 end
 
 function JulianV.DanhHieuVoLam( nPage )
-    local tbDanhHieuVL = JDialog:PhanTrang(tbDanhHieu.VoLam, 10)
+    local DanhHieuVL = JDialog:PhanTrang(tbDanhHieu.VoLam, 10)
     local tbOpt = {}
     if not nPage or nPage == 1 then
         for i = 1, 10 do
-            tinsert(tbOpt, { tbDanhHieuVL[1][i][1], tbDanhHieu.Active, { tbDanhHieuVL[1][i][2] } })
+            tinsert(tbOpt, { DanhHieuVL[1][i][1], tbDanhHieu.Active, { DanhHieuVL[1][i][2] } })
         end
         tinsert(tbOpt, { "Trang sau", JulianV.DanhHieuVoLam, { 2 } })
         tinsert(tbOpt, { "Trë l¹i", JulianV.NhanDanhHieu })
     else
-        local nCount = getn(tbDanhHieuVL)
+        local nCount = getn(DanhHieuVL)
         if nPage < nCount then
             for i = 1, 10 do
                 tinsert(tbOpt, {
-                    tbDanhHieuVL[nPage][i][1], tbDanhHieu.Active, { tbDanhHieuVL[nPage][i][2] },
+                    DanhHieuVL[nPage][i][1], tbDanhHieu.Active, { DanhHieuVL[nPage][i][2] },
                 })
             end
             tinsert(tbOpt, { "Trang sau", JulianV.DanhHieuVoLam, { nPage + 1 } })
         else
-            for i = 1, getn(tbDanhHieuVL[nCount]) do
+            for i = 1, getn(DanhHieuVL[nCount]) do
                 tinsert(tbOpt, {
-                    tbDanhHieuVL[nCount][i][1], tbDanhHieu.Active, { tbDanhHieuVL[nCount][i][2] },
+                    DanhHieuVL[nCount][i][1], tbDanhHieu.Active, { DanhHieuVL[nCount][i][2] },
                 })
             end
         end

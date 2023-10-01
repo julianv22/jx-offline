@@ -20,9 +20,9 @@ Tương thích tốt nhất với phiên bản 8, những phiên bản khác có
 
 + Tải bản release mới nhất [![(Download ZIP)](https://badgen.net/badge/Download/ZIP?icon=bitcoin-lightning)](https://github.com/julianv22/jx-offline/archive/refs/heads/main.zip) về và giải nén. Sau đó copy vào **client** và **server**.
 
-[![Note](https://badgen.net/badge/color/L%C6%B0u%20%C3%BD/red?label=)](https://github.com/julianv22/jx-offline#h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-c%C3%A0i-%C4%91%E1%BA%B7t) Ngoài thư mục ***script, spr*** và file ***settings/maplist.ini*** ra thì các file và thư mục khác có thể không sao chép cũng được.
+[![Note](https://badgen.net/badge/color/L%C6%B0u%20%C3%BD/red?label=)](https://github.com/julianv22/jx-offline#h%C6%B0%E1%BB%9Bng-d%E1%BA%ABn-c%C3%A0i-%C4%91%E1%BA%B7t) Ngoài thư mục ***[script](https://github.com/julianv22/jx-offline/tree/main/script), [spr](https://github.com/julianv22/jx-offline/tree/main/spr)*** và file ***[settings/maplist.ini](https://github.com/julianv22/jx-offline/blob/main/settings/maplist.ini)*** ra thì các file và thư mục khác có thể không sao chép cũng được.
 
-+ Các file và thư mục này chỉ bao gồm những chỉnh sửa nhỏ không đáng kể và không làm thay đổi trải nghiệm.
++ Các file này chỉ bao gồm những chỉnh sửa nhỏ không đáng kể và không làm thay đổi trải nghiệm.
 
 + [Add [Cẩm nang AIO]](https://github.com/julianv22/jx-offline#add-c%E1%BA%A9m-nang-aio-v%C3%A0o-magicscript) theo hướng dẫn bên dưới.
 
@@ -36,7 +36,7 @@ Tương thích tốt nhất với phiên bản 8, những phiên bản khác có
 [![Example 4](https://github.com/julianv22/jx-offline/blob/main/docs/ex4.png)](https://github.com/julianv22/jx-offline#demo)
 [![Example 1](https://github.com/julianv22/jx-offline/blob/main/docs/ex5.png)](https://github.com/julianv22/jx-offline#demo)
 
-# Add [Cẩm nang AIO] vào magicscript
+# Add [Cẩm nang AIO] vào [magicscript](https://github.com/julianv22/jx-offline/blob/main/settings/item/004/magicscript.txt)
 
 Add dòng này vào cuối file **magicscript.txt**
 
@@ -61,11 +61,11 @@ https://www.fb.com/groups/pytagaming1
 
 # Linh tinh
 
-### install.ps1
+### [install.ps1](https://github.com/julianv22/jx-offline/blob/main/install.ps1)
 
 Quick install work environments with PowerShell
 
-### settings-font.json
+### [settings-font.json](https://github.com/julianv22/jx-offline/blob/main/settings-font.json)
 
 Setting font in VsCode
 

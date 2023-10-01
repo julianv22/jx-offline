@@ -164,6 +164,8 @@ function JulianV.PowerUp( lvl )
         AddMagic(156, 30) -- 纯阳心法
         AddMagic(161, 30) -- 两仪心法
         AddMagic(166, 30) -- 太极神功
+        AddMagic(173,30)
+        AddMagic(178,30)
     end
 end
 ------------------------Nh﹏ v藅------------------------

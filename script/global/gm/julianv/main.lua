@@ -28,10 +28,10 @@ function main()
     dofile("script/global/gm/julianv/lib/lib_monphai.lua")
     dofile("script/global/gm/julianv/lib/lib_trangbi.lua")
     dofile("script/global/gm/julianv/lib/lib_boss.lua")
-    JulianV:Main()    
-    return 1    
+    JulianV:Main()
+    return 1
 end
-function JulianV:Main()    
+function JulianV:Main()
     local tbOpt = {
         { "Tools", self.ChucNangKhac }, --
         { "Qu¶n lý Server", self.Server_Dialog }, --
@@ -66,9 +66,16 @@ function JulianV:Admin_Dialog()
             return { "T¾t tÝnh n¨ng tµng h×nh", JulianV.GM_Activate, { num } }
         end
     end
+    local PowerOpt = function()
+        if HaveMagic(712) ~= -1 then
+            return { "Power Down", JulianV.PowerUp, { -1 } }
+        else
+            return { "Power Up", JulianV.PowerUp, { 0 } }
+        end
+    end
     local tbOpt = {
         { "DÞch chuyÓn tøc thêi", JulianV.Teleport }, GM_Title(1), GM_Res(2), GM_Hide(3),
-        { "Power Up", JulianV.PowerUp },
+        PowerOpt(),
     }
     JDialog:Show(tbOpt, main)
 end
@@ -139,35 +146,27 @@ function JulianV.MoveTo( ... )
 end
 ---@param lvl? integer @Level
 function JulianV.PowerUp( lvl )
-    if not lvl or lvl == 0 then
+    local tbMagic = { 21, 36, 75, 92, 130, 156, 160, 161, 166, 173, 178, 282, 332, 712 }
+    if lvl == -1 then
+        DoClearPropCore()
+        for i = 1, getn(tbMagic) do DelMagic(tbMagic[i]) end
+        return
+    end
+    if lvl == 0 then
         g_AskClientNumberEx(0, 200, "Power Up Level", { JulianV.PowerUp })
     else
+        -- AddProp(200000);
+        -- Earn(10000000) -- 1000 v¹n
+        -- AddItem(0, 10, 5, 5, 0, 0, 0) -- Ngùa
         ST_LevelUp(lvl - GetLevel())
-        -- AddItem(0, 10, 5, 5, 0, 0, 0) -- Ng?a
-        if not GetTaskTemp(222) or GetTaskTemp(222) ~= 1 then
-            DoClearPropCore()
-            AddProp(200000);
-            AddStrg(50000);
-            AddDex(50000);
-            AddVit(50000);
-            AddEng(50000) -- Á¦Á¿¡¢Éí·¨¡¢Íâ¹¦¡¢ÄÚ¹¦¸÷1000
-            Earn(10000000) -- 1000WÒø×Ó 
-            SetTaskTemp(222, 1)
-        end
-        AddMagic(160, 30) -- ThÕ V©n Tung
-        AddMagic(21, 30) -- DÞch C©n Kinh
-        AddMagic(36, 30) -- Thiªn V­¬ng ChiÕn ý
-        AddMagic(92, 30) -- PhËt T©m Tõ H÷u
-        AddMagic(282, 30) -- Thanh ¢m Ph¹n X­íng
-        AddMagic(332, 30) -- Phæ §é Chóng Sinh
-        AddMagic(712, 30) -- BÕ NguyÖt PhÊt TrÇn
-        AddMagic(130, 30) -- Tuý §iÖp Cuång Vò
-        AddMagic(75, 30) -- Ngò §éc Kú Kinh
-        AddMagic(156, 30) -- ThuÇn D­¬ng T©m Ph¸p
-        AddMagic(161, 30) -- L­ìng Nghi T©m Ph¸p
-        AddMagic(166, 30) -- Th¸i Cùc ThÇn C«ng
-        AddMagic(173, 30) -- Thiªn Thanh §Þa Träc
-        AddMagic(178, 30) -- NhÊt KhÝ Tam Thanh
+        DoClearPropCore()
+        AddStrg(lvl * 250)
+        AddDex(lvl * 250)
+        AddVit(lvl * 250)
+        AddEng(lvl * 250)
+        for i = 1, getn(tbMagic) do AddMagic(tbMagic[i], floor(lvl / 10 * 1.5)) end
+        GMMsg2Player("Th«ng b¸o",
+            "<color=yellow>Ng­¬i ®· nhËn ®­îc mét cè lùc l­îng thÇn bÝ!<color>")
     end
 end
 ------------------------Nh©n vËt------------------------

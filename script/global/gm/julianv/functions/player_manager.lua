@@ -246,3 +246,56 @@ function JulianV.renameCharacter( szName ) -- ÆÊi t™n
         RenameRole(szName)
     end
 end
+------------------------NhÀn NhÀn Danh hi÷u------------------------
+function JulianV:NhanDanhHieu()
+    local tbOpt = {
+        { "Danh hi÷u V‚ l©m", JulianV.DanhHieuVoLam }, --
+        { "Danh hi÷u Ki’m Th’", JulianV.DanhHieuKiemThe }, --
+    }
+    JDialog:Show(tbOpt, JulianV.Player_Dialog)
+end
+
+function JulianV.DanhHieuKiemThe( nIndex )
+    if not nIndex then
+        local tbOpt = {}
+        for id, tbDanhHieu in tbDanhHieu.KiemThe do
+            tinsert(tbOpt, { tbDanhHieu[1], JulianV.DanhHieuKiemThe, { id } })
+        end
+        JDialog:Show(tbOpt, JulianV.NhanDanhHieu, "MÍi <sex>ch‰n danh hi÷u<pic=46><color>")
+    else
+        tbDanhHieu.Active(tbDanhHieu.KiemThe[nIndex][2])
+        Msg2Player("K›ch hoπt danh hi÷u <color=yellow>" .. tbDanhHieu.KiemThe[nIndex][1])
+    end
+end
+
+function JulianV.DanhHieuVoLam( nPage )
+    local tbDanhHieuVL = JDialog:PhanTrang(tbDanhHieu.VoLam, 10)
+    local tbOpt = {}
+    if not nPage or nPage == 1 then
+        for i = 1, 10 do
+            tinsert(tbOpt, { tbDanhHieuVL[1][i][1], tbDanhHieu.Active, { tbDanhHieuVL[1][i][2] } })
+        end
+        tinsert(tbOpt, { "Trang sau", JulianV.DanhHieuVoLam, { 2 } })
+        tinsert(tbOpt, { "TrÎ lπi", JulianV.NhanDanhHieu })
+    else
+        local nCount = getn(tbDanhHieuVL)
+        if nPage < nCount then
+            for i = 1, 10 do
+                tinsert(tbOpt, {
+                    tbDanhHieuVL[nPage][i][1], tbDanhHieu.Active, { tbDanhHieuVL[nPage][i][2] },
+                })
+            end
+            tinsert(tbOpt, { "Trang sau", JulianV.DanhHieuVoLam, { nPage + 1 } })
+        else
+            for i = 1, getn(tbDanhHieuVL[nCount]) do
+                tinsert(tbOpt, {
+                    tbDanhHieuVL[nCount][i][1], tbDanhHieu.Active, { tbDanhHieuVL[nCount][i][2] },
+                })
+            end
+        end
+        if nPage > 1 then
+            tinsert(tbOpt, { "Trang tr≠Ìc", JulianV.DanhHieuVoLam, { nPage - 1 } })
+        end
+    end
+    JDialog:Show(tbOpt, nil, "MÍi <sex>ch‰n danh hi÷u<pic=46><color>")
+end

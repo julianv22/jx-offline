@@ -164,8 +164,8 @@ function JulianV.PowerUp( lvl )
         AddMagic(156, 30) -- ´¿ÑôÐÄ·¨
         AddMagic(161, 30) -- Á½ÒÇÐÄ·¨
         AddMagic(166, 30) -- Ì«¼«Éñ¹¦
-        AddMagic(173,30)
-        AddMagic(178,30)
+        AddMagic(173, 30)
+        AddMagic(178, 30)
     end
 end
 ------------------------Nh©n vËt------------------------
@@ -178,6 +178,7 @@ function JulianV:Player_Dialog()
         { "NhËn ®iÓm", JulianV.Point_Dialog }, --
         { "Kü n¨ng - TiÒm n¨ng", JulianV.skillSupport }, --    
         { "Häc kü n¨ng M«n ph¸i", change_phai }, --
+        { "NhËn danh hiÖu", JulianV.NhanDanhHieu }, --
         { "§æi mµu PK", JulianV.change_PK }, --
         { "§æi ngò hµnh", JulianV.Change_Serries }, --
         { "§æi giíi tÝnh", JulianV.Change_Sex }, --

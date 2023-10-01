@@ -144,6 +144,7 @@ function JulianV.PowerUp( lvl )
         ST_LevelUp(lvl - GetLevel())
         -- AddItem(0, 10, 5, 5, 0, 0, 0) -- Ng?a
         if not GetTaskTemp(222) or GetTaskTemp(222) ~= 1 then
+            DoClearPropCore()
             AddProp(200000);
             AddStrg(50000);
             AddDex(50000);
@@ -152,20 +153,20 @@ function JulianV.PowerUp( lvl )
             Earn(10000000) -- 1000WÒø×Ó 
             SetTaskTemp(222, 1)
         end
-        AddMagic(160, 30) -- ÌÝÔÆ×Ý
-        AddMagic(21, 30) -- Ò×½î¾­
-        AddMagic(36, 30) -- ÌìÍõÕ½Òâ
-        AddMagic(92, 30) -- ÍûÔÂ£¨»ØÑª¹â»·£©
-        AddMagic(282, 30) -- ÃÎµû£¨»ØÄÚ¹â»·£©
-        AddMagic(332, 30) -- ´Èº½ÆÕ¶É£¨´ó²¹Ñª£©
-        AddMagic(712, 30) -- ´Èº½ÆÕ¶É£¨´ó²¹Ñª£©
-        AddMagic(130, 30) -- ×íµû¿ñÎè
-        AddMagic(75, 30) -- Îå¶¾Ææ¾­
-        AddMagic(156, 30) -- ´¿ÑôÐÄ·¨
-        AddMagic(161, 30) -- Á½ÒÇÐÄ·¨
-        AddMagic(166, 30) -- Ì«¼«Éñ¹¦
-        AddMagic(173, 30)
-        AddMagic(178, 30)
+        AddMagic(160, 30) -- ThÕ V©n Tung
+        AddMagic(21, 30) -- DÞch C©n Kinh
+        AddMagic(36, 30) -- Thiªn V­¬ng ChiÕn ý
+        AddMagic(92, 30) -- PhËt T©m Tõ H÷u
+        AddMagic(282, 30) -- Thanh ¢m Ph¹n X­íng
+        AddMagic(332, 30) -- Phæ §é Chóng Sinh
+        AddMagic(712, 30) -- BÕ NguyÖt PhÊt TrÇn
+        AddMagic(130, 30) -- Tuý §iÖp Cuång Vò
+        AddMagic(75, 30) -- Ngò §éc Kú Kinh
+        AddMagic(156, 30) -- ThuÇn D­¬ng T©m Ph¸p
+        AddMagic(161, 30) -- L­ìng Nghi T©m Ph¸p
+        AddMagic(166, 30) -- Th¸i Cùc ThÇn C«ng
+        AddMagic(173, 30) -- Thiªn Thanh §Þa Träc
+        AddMagic(178, 30) -- NhÊt KhÝ Tam Thanh
     end
 end
 ------------------------Nh©n vËt------------------------

@@ -1,4 +1,4 @@
-Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+#Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
 # Function
 function Write-Start {
 	param ($msg)

@@ -4,15 +4,13 @@
 !.github
 !.github/**
 !.gitignore
-!*.md
-!.VnSourceCodePro-Regular.ttf
-!install.ps1
-!settings-font.json
+!*.*
 #
 !server
 !server/**
 #
 !client
+client/*
 !client/game_y.7z
 !client/package.ini
 # ------------------------------------------------

@@ -14,6 +14,8 @@ client/*
 !client/game_y.7z
 !client/package.ini
 #
+!client/maps
+client/maps/*
 !client/maps/scrollsetting/2_scroll.ini
 !client/maps/scrollsetting/340_scroll.ini
 # ------------------------------------------------

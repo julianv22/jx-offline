@@ -1,4 +1,4 @@
-Status	ÄĞ½ÇÉ«	ÀàĞÍ	²¥·Å·½Ê½	Ö÷½ÇÉíºó¿ªÊ¼Ö¡	Ö÷½ÇÉíºó½áÊøÖ¡	¶¯»­×ÜÖ¡Êı	¶¯»­×Ü·½ÏòÊı	¶¯»­Ö¡¼ä¸ô	Í¼·Ö¼¸°ê	ËµÃ÷£ºÍ¼Ö»ÄÜ·Ö1¡¢2¡¢3°ê
+Status	ÎÄ¼şÃû	ÀàĞÍ	²¥·Å·½Ê½	Ö÷½ÇÉíºó¿ªÊ¼Ö¡	Ö÷½ÇÉíºó½áÊøÖ¡	¶¯»­×ÜÖ¡Êı	¶¯»­×Ü·½ÏòÊı	¶¯»­Ö¡¼ä¸ô	Í¼·Ö¼¸°ê	ËµÃ÷£ºÍ¼Ö»ÄÜ·Ö1¡¢2¡¢3°ê
 Status1	Special	Head	Loop			8	1	50	1	Ñ£ÔÎ
 Status2	Special	Foot	Loop			8	1	50	1	ÖĞ¶¾
 Status3	Special	Body	Loop	0	29	8	1	50	1	±ù¶³
@@ -105,7 +105,7 @@ Status103	\spr\skill\task\skill_jinpai.spr	Foot	Loop	0	0	10	1	30	1	½ğÅÆĞÅÊ¹
 Status104	\spr\skill\task\skill_yucijinpai.spr	Foot	Loop	0	0	10	1	30	1	Óù´Í½ğÅÆĞÅÊ¹
 Status105	\spr\skill\task\randomtask.spr	Head	Loop	0	0	20	1	37	1	Ëæ»úÈÎÎñ×´Ì¬
 Status106	\spr\skill\²¹³ä\mag_spe_Ñ£ÔÎ.spr	Head	Loop	0	0	10	1	10	1	Ê¥µ®Ñ£ÔÎ
-Status107	\spr\skill\others\ib_citymaster.spr	Foot	Loop	0	0	10	1	30	1	IB³ÇÊĞ³ÇÖ÷¹â»·
+Status107	\spr\skill\top_tong\bangzhu.spr	Foot	Loop	0	0	16	1	35	1	ÎäÁÖµÚÒ»°ï°ïÖ÷
 Status108	\spr\skill\top_tong\bangzhong.spr	Foot	Loop	0	0	16	1	35	1	ÎäÁÖµÚÒ»°ï°ïÖÚ
 Status109	\spr\skill\special\Õ¨µ¯ÈË±êÊ¾.spr	Head	Loop	0	0	18	1	50	1	Õ¨µ¯ÈË±êÊ¾
 Status110	\spr\skill\tw\µ¹ĞéÌì.spr	Body	Loop	0	0	28	1	15	1	µ¹ĞéÌì_ÎŞÊÓ×çÖäÌØĞ§
@@ -139,7 +139,7 @@ Status137	\spr\skill\others\title_new_yl.spr	Foot	Loop	0	0	11	1	18	1	ËÎ½ğÓğÁÖÖĞÀ
 Status138	\spr\skill\others\title_new_bj.spr	Foot	Loop	0	0	20	1	23	1	ËÎ½ğæôÆï´ó½«¾ü
 Status139	\spr\skill\others\title_new_ab.spr	Foot	Loop	0	0	15	1	30	1	ËÎ½ğ°²°î´ó½«¾ü
 Status140	\spr\skill\others\title_new_dg.spr	Foot	Loop	0	0	15	1	15	1	ËÎ½ğ¶¨¹úÔªË§
-Status141	\spr\item\script\tisheng_skill.spr	Body	Loop	0	0	8	1	8	1	½ğÖÓÕÖ
+Status141	\spr\item\script\tisheng_skill.spr	Body	Loop	0	0	8	1	18	1	½ğÖÓÕÖ
 Status142	\spr\skill\others\jingyingsaiguanjun.spr	Foot	Loop	0	0	15	1	18	1	¾«Ó¢Èü¹Ú¾ü
 Status143	\spr\skill\others\jingyingsaiyajun.spr	Foot	Loop	0	0	15	1	15	1	¾«Ó¢ÈüÑÇ¾ü
 Status144	\spr\skill\others\jingyingsaijijun.spr	Foot	Loop	0	0	15	1	15	1	¾«Ó¢Èü¼¾¾ü
@@ -165,10 +165,10 @@ Status163	\spr\skill\others\vip_sr.spr	Foot	Loop	0	0	20	1	80	1	¸ß¼¶VIP¹â»·
 Status164	\spr\skill\others\vip_sp.spr	Foot	Loop	0	0	20	1	80	1	³¬¼¶VIP¹â»·
 Status165	\spr\skill\others\dati.spr	Foot	Loop	0	0	20	1	56	1	´ğÌâ±ÈÈü¹â»·
 Status166	\spr\item\newyear2010\×í¾Æ.spr	Head	Loop	0	0	12	1	110	1	×í¾Æ
-Status167	\spr\skill\others\¸ñµ².spr	Body	Loop	0	0	20	1	56	1	
-Status168	\spr\skill\others\ÖØ»÷.spr	Body	Loop	0	0	20	1	56	1	
-Status169	\spr\skill\others\Ë²ÒÆ.spr	Body	Loop	0	0	50	1	56	1	
-Status170	\spr\skill\others\zhongyueguanjun.spr	Foot	Loop	0	0	30	1	56	1	ÖĞÔ½PKÈü¹Ú¾ü
+Status167	\spr\skill\others\¸ñµ².spr	Head	Loop	0	0	20	1	56	1	
+Status168	\spr\skill\others\ÖØ»÷.spr	Head	Loop	0	0	20	1	56	1	
+Status169	\spr\skill\others\Ë²ÒÆ.spr	Head	Loop	0	0	50	1	56	1	
+Status170	\spr\skill\others\zhongyueguanjun.spr	Body	Loop	0	0	30	1	56	1	ÖĞÔ½PKÈü¹Ú¾ü
 Status171	\spr\skill\others\jianmianhui_1st.spr	Foot	Loop	0	0	20	1	80	1	Ê×½ì½ğÉ½ÂÛ½£¹â»·
 Status172	\spr\skill\others\jianghugaoshou.spr	Foot	Loop	0	0	15	1	60	1	VIPÕÊºÅ¹â»·½­ºş¸ßÊÖ
 Status173	\spr\skill\others\wulinhaojie.spr	Foot	Loop	0	0	15	1	60	1	VIPÕÊºÅ¹â»·ÎäÁÖºÀ½Ü
@@ -195,65 +195,53 @@ Status193	\spr\skill\others\jianghugaoshou.spr	Foot	Loop	0	0	15	1	60	1	Ô½ÄÏÁú»¢Ë
 Status194	\spr\skill\others\wulinhaojie.spr	Foot	Loop	0	0	15	1	60	1	Ô½ÄÏÁú»¢ËÎ½ğ¡°ËÄ·½ÃûÉù¡±
 Status195	\spr\skill\others\jianxiazhizun.spr	Foot	Loop	0	0	15	1	60	1	Ô½ÄÏÁú»¢ËÎ½ğ¡°ÉíÊÖ²»·²¡±
 Status196	\spr\skill\others\dubutianxia.spr	Foot	Loop	0	0	15	1	60	1	Ô½ÄÏÁú»¢ËÎ½ğ¡°ÌìÏÂÎŞË«¡±
-Status197	\spr\skill\others\µÇ·åÔì¼«200j.spr	Head	Loop	0	0	41	1	50	1	µÇ·åÔì¼«
+Status197	\spr\skill\partner\skill_bairenzhan.spr	Foot	Loop	0	0	20	1	25	1	×øÆï
 Status198	spr\skill\others\vipez.spr	Foot	Loop	0	0	15	1	83	1	Ô½ÄÏ°æÌìÏÂÎŞµĞ½±Àø¹â»Æ
-Status199	spr\skill\others\‘ğ¹â»·.spr	Head	Loop	0	0	20	1	56	1	‘ğ¹â»·
-Status200	\spr\skill\others\jingyingsaiguanjun.spr	Foot	Loop	0	0	15	1	35	1	ÌìÏÂµÚÒ»°ï¹Ú¾ü
-Status201	\spr\skill\others\jingyingsaiguanjun_old.spr	Foot	Loop	0	0	15	1	45	1	ÌìÏÂµÚÒ»°ïÑÇ¾ü
-Status202	\spr\skill\others\jingyingsaijijun_old.spr	Foot	Loop	0	0	15	1	45	1	ÌìÏÂµÚÒ»°ï¼¾¾ü
+Status199	spr\skill\others\‘ğ¹â»·	Head	Loop	0	0	20	1	56	1	‘ğ¹â»·
+Status200	spr\skill\others\jingyingsaiguanjun.spr	Foot	Loop	0	0	15	1	35	1	ÌìÏÂµÚÒ»°ï¹Ú¾ü
+Status201	spr\skill\others\jingyingsaiguanjun_old.spr	Foot	Loop	0	0	15	1	45	1	ÌìÏÂµÚÒ»°ïÑÇ¾ü
+Status202	spr\skill\others\jingyingsaijijun_old.spr	Foot	Loop	0	0	15	1	45	1	ÌìÏÂµÚÒ»°ï¼¾¾ü
 Status203	\spr\skill\ºÚÉñ×°\ºÚÉñ.spr	Body	Loop	0	0	39	1	75	1	ºÚÉñ¹â»·
 Status204	\spr\skill\´äÑÌ\mag_cy_08_±ùÇ½_b.spr	Foot	Loop	0	0	7	1	150	1	±ùÇ½Ğ§¹û
 Status205	\spr\skill\songjin\dubatianxia.spr	Foot	Loop	0	0	15	1	111	1	Ô½ÄÏËÎ½ğÕ½³¡»ı·ÖÅÅÃûµÚÒ»Ãû¡°¶À²½ÌìÏÂ¡±
 Status206	\spr\skill\songjin\weimengwushuang.spr	Body	Loop	0	0	15	1	111	1	Ô½ÄÏËÎ½ğÕ½³¡»ı·ÖÅÅÃûµÚ¶şÃû¡°ÍşÃÍÎŞË«¡±
 Status207	\spr\skill\songjin\liyaqunxiong.spr	Body	Loop	0	0	15	1	111	1	Ô½ÄÏËÎ½ğÕ½³¡»ı·ÖÅÅÃûµÚÈıÃû¡°Á¦Ñ¹ÈºĞÛ¡±
-Status208	\spr\effect\other\weizhenjiuzhou_vn.spr	Head	Loop	0	0	20	1	20	1	uy chan cuu chau
-Status209	\spr\effect\other\wulinzhizun_vn.spr	Head	Loop	0	0	20	1	20	1	vo lam chi ton
-Status210	\spr\effect\other\yijianfengtian_vn.spr	Head	Loop	0	0	20	1	20	1	nhat kiem phong thien
-Status211	\spr\effect\other\yiliugaoshou_vn.spr	Head	Loop	0	0	20	1	20	1	nhat luu cao thu
-Status212	\spr\effect\other\zuihoudaxia_vn.spr	Head	Loop	0	0	20	1	20	1	hiep khac cuoi cung tren giang ho
+Status208	\spr\skill\songjin\zhanchangyinghao.spr	Foot	Loop	0	0	15	1	111	1	Ô½ÄÏËÎ½ğÕ½³¡»ı·ÖÅÅÃûµÚËÄÃû¡°ËÄ¾øÕ½³¡¡±
+Status209	\spr\skill\songjin\zhanchangyinghao.spr	Foot	Loop	0	0	15	1	111	1	Ô½ÄÏËÎ½ğÕ½³¡»ı·ÖÅÅÃûµÚÎåÃû¡°ËÄ¾øÕ½³¡¡±
+Status210	\spr\skill\songjin\zhanchangyinghao.spr	Foot	Loop	0	0	15	1	111	1	Ô½ÄÏËÎ½ğÕ½³¡»ı·ÖÅÅÃûµÚÁùÃû¡°ËÄ¾øÕ½³¡¡±
+Status211	\spr\skill\songjin\zhanchangyinghao.spr	Foot	Loop	0	0	15	1	111	1	Ô½ÄÏËÎ½ğÕ½³¡»ı·ÖÅÅÃûµÚÆßÃû¡°ËÄ¾øÕ½³¡¡±
+Status212	\spr\skill\songjin\zhanchangyinghao.spr	Foot	Loop	0	0	15	1	111	1	Ô½ÄÏËÎ½ğÕ½³¡»ı·ÖÅÅÃûµÚ°ËÃû¡°ËÄ¾øÕ½³¡¡±
 Status213	\spr\skill\songjin\zhanchangyinghao.spr	Foot	Loop	0	0	15	1	111	1	Ô½ÄÏËÎ½ğÕ½³¡»ı·ÖÅÅÃûµÚ¾ÅÃû¡°ËÄ¾øÕ½³¡¡±
 Status214	\spr\skill\songjin\zhanchangyinghao.spr	Foot	Loop	0	0	15	1	111	1	Ô½ÄÏËÎ½ğÕ½³¡»ı·ÖÅÅÃûµÚÊ®Ãû¡°ËÄ¾øÕ½³¡¡±
-Status215	spr\skill\others\‰ôÖ®ê ¹â»·.spr	Head	Loop	0	0	30	1	30	1	‰ôÖ®ê ¹â»·
+Status215	spr\skill\others\‰ôÖ®ê ¹â»·	Head	Loop	0	0	30	1	30	1	‰ôÖ®ê ¹â»·
 Status216	\spr\skill\others\title_new_yl.spr	Foot	Loop	0	0	11	1	18	1	ËÎ½ğ»ı·ÖÅÅÃûµÚËÄ-Ê®Ãû
-Status217	\spr\skill\others\sieuthan.spr	Foot	Loop	0	0	20	1	23	1	ËÎ½ğ»ı·ÖÅÅÃûµÚÈı
+Status217	\spr\skill\others\title_new_bj.spr	Foot	Loop	0	0	20	1	23	1	ËÎ½ğ»ı·ÖÅÅÃûµÚÈı
 Status218	\spr\skill\others\title_new_ab.spr	Foot	Loop	0	0	15	1	30	1	ËÎ½ğ»ı·ÖÅÅÃûµÚ¶ş
 Status219	\spr\skill\others\title_new_dg.spr	Foot	Loop	0	0	15	1	15	1	ËÎ½ğ»ı·ÖÅÅÃûµÚÒ»
 Status220	\spr\skill\others\jueshigaoshouvn.spr	Head	Loop	0	0	20	1	80	1	CTC³õ¼¶»áÔ±¿¨³ÆºÅÌØĞ§
-Status221	\spr\skill\others\jingyingsaiyajun_old.spr	Foot	Loop	0	0	15	1	35	1	ÑªÔ¡£¨Ô½ÄÏ£©
-Status222	\spr\skill\zhanji\ËºÁÑbuff.spr	Foot	Loop	0	0	15	1	35	1	Õ½Ìì£¨Ô½ÄÏ£©
+Status221	\spr\skill\others\title_new_yl.spr	Foot	Loop	0	0	11	1	50	1	ÑªÔ¡£¨Ô½ÄÏ£©
+Status222	\spr\skill\others\jingyingsaijijun_old.spr	Foot	Loop	0	0	15	1	35	1	Õ½Ìì£¨Ô½ÄÏ£©
 Status223	\spr\skill\others\jingyingsaiguanjun_old.spr	Foot	Loop	0	0	15	1	40	1	²Ôºè£¨Ô½ÄÏ£©
 Status224	\spr\skill\others\jingyingsaijijun.spr	Foot	Loop	0	0	15	1	35	1	ÀÇê»£¨Ô½ÄÏ£©
 Status225	\spr\skill\others\jingyingsaiguanjun.spr	Foot	Loop	0	0	15	1	35	1	Õ×ÃÍ£¨Ô½ÄÏ£©
-Status226	\spr\skill\others\\sjzh_jin.spr	Head	Loop	0	0	10	1	18	1	½ğbuff
-Status227	\spr\skill\others\sjzh_mu.spr	Head	Loop	0	0	10	1	18	1	Ä¾buff
-Status228	\spr\skill\others\sjzh_shui.spr	Head	Loop	0	0	10	1	18	1	Ë®buff
-Status229	\spr\skill\others\sjzh_huo.spr	Head	Loop	0	0	10	1	18	1	»ğbuff
-Status230	\spr\skill\others\sjzh_tu.spr	Head	Loop	0	0	10	1	18	1	ÍÁbuff
-Status231	\spr\skill\others\¿ºÁúÓĞ»Ú.spr	Head	Loop	0	0	25	1	40	1	¿ºÁúÓĞ»Ú
-Status232	\spr\skill\others\title_bj.spr	Foot	Loop	0	0	10	1	50	1	°ÁÊÓÈºĞÛ
-Status233	\spr\skill\others\½á°éÍ¬ĞĞ.spr	Head	Loop	0	0	25	1	1	1	ºÃÓÑÕÙ»Ø³ÆºÅ1
-Status234	\spr\skill\others\ÈıÅóËÄÓÑ.spr	Head	Loop	0	0	25	1	1	1	ºÃÓÑÕÙ»Ø³ÆºÅ2
-Status235	\spr\skill\others\¼Ã¼ÃÒ»ÌÃ.spr	Head	Loop	0	0	25	1	1	1	ºÃÓÑÕÙ»Ø³ÆºÅ3
-Status236	\spr\skill\others\¸ßÅóÂú×ù.spr	Head	Loop	0	0	25	1	1	1	ºÃÓÑÕÙ»Ø³ÆºÅ4
-Status237	\spr\skill\others\Ê¤ÓÑÈçÔÆ.spr	Head	Loop	0	0	25	1	1	1	ºÃÓÑÕÙ»Ø³ÆºÅ5
-Status238	\spr\skill\wuhuntang\ÎäÄÂÒÅÖ¾ĞéÓ°³öÏÖ.spr	Body	Loop	0	0	280	8	36	1	ÎäÄÂÒÅÖ¾ĞéÓ°
-Status239	\spr\skill\wuhuntang\¾«ÖÒ±¨¹ú.spr	Body	Loop	0	0	96	8	6	1	¾«ÖÒ±¨¹ú
-Status240	\spr\skill\wuhuntang\²ù¼é³ıØúdebuff.spr	Body	Loop	0	0	20	1	1	1	²ù¼é³ıØúDebuff
-Status241	\spr\skill\wuhuntang\ÖÒÎäÁ÷·ç.spr	Foot	Loop	0	0	20	1	20	1	ÖÒÎäÁ÷·ç
-Status242	\spr\skill\wuhuntang\µôÑªBUFF.spr	Body	Loop	0	0	12	1	12	1	º³É½»÷µôÑªbuff
-Status243	\spr\skill\wuhuntang\¼õËÙ×´Ì¬.spr	Head	Loop	0	0	12	1	33	1	¼õ¹¥»÷Debuff
-Status244	\spr\skill\wuhuntang\¼õËÙ×´Ì¬.spr	Head	Loop	0	0	12	1	33	1	¼õ¹¥ËÙDebuff
-Status245	\spr\skill\others\²ÔÑ×ÆßÊ¥¡ª¹â»·.spr	Foot	Loop	0	0	30	1	40	1	ÏŞÊ±ÅÄÂôÉİ³Ş¹â»·-À¶Áé×Ï¼ø
-Status246	\spr\skill\zhanji\ËºÁÑbuff.spr	Body	Loop	0	0	20	1	30	1	ÎŞÓ°´©µôÑªDEBUFF
-Status247	\spr\skill\zhanji\Ë®Ïµbuff.spr	Body	Loop	0	0	20	1	30	1	½£»¨Íì¾§BUFF
-Status248	\spr\skill\zhanji\Ë®Ïµdebuff.spr	Head	Loop	0	0	20	1	30	1	±ùÓêçó¾§DEBUFF
-Status249	\spr\Ui4\Ö÷½çÃæ\Õ½Æì\Õ½Æì¹âÈ¦.spr	Foot	Loop	0	0	1	1	1	1	³àÓ¡Õ½Æì¹âÈ¦
-Status250	\spr\skill\others\³ÆºÅ-½£ÏÀÊ®°ËËê.spr	Head	Loop	0	0	20	1	56	1	³ÆºÅ-½£ÏÀÊ®°ËËê
-Status251	\spr\skill\others\åÈÀ¶Ä¦Úµ-¹â»·.spr	Foot	Loop	0	0	30	1	50	1	åÈÀ¶Ä¦Úµ-¹â»·
-Status252	\spr\skill\others\chaoji_diyibang.spr	Foot	Loop	0	0	20	1	56	1	ÃûÏÀÑ°·Ã¹â»·
-Status253	\spr\skill\xiaoyao\à¢ÖË³Öõü.spr	Body	Loop	0	0	20	1	25	1	à¢ÖË³Öõü
-Status254	\spr\skill\xiaoyao\åĞÒ£Óğ.spr	Body	Loop	0	0	20	1	25	1	åĞÒ£Óğ
-Status255	\spr\skill\zhongqiu\zq_sl_001.spr	Head	Loop	0	0	10	1	20	1	Ã·»¨ÈıÅªDeBuff¡ª¡ª»Ğã±
-Status256	\spr\skill\others\dm2.spr	Foot	Loop	0	0	20	1	56	1	ÃÅÅÉÊ×Ï¯¹â»·
-Status257	\spr\skill\others\dm3.spr	Foot	Loop	0	0	20	1	56	1	ÎäÁÖÊ×Ï¯¹â»·
-Status258	\spr\skill\Îäµ±\wd_08_ÈË½£ºÏÒ».spr	Head	Loop	0	0	14	1	56	1	ÎäÁÖÊ×Ï¯¹â»·
+Status226	\spr\skill\ºÚÉñ×°\´«Ææ¹â»·.spr	Body	Loop	0	0	30	1	48	1	´«Ææ¹â»·£¨Ô½ÄÏ£©
+Status227	\spr\skill\tr\xianzhongqiusheng.spr	Head	Loop	0	0	18	1	18	1	ÏÕÖĞÇóÊ¤
+Status228	\spr\skill\tr\zhuizongshu.spr	Head	Loop	0	0	18	1	18	1	×·×ÙÊõ
+Status229	\spr\skill\others\sjzh_jin.spr	Head	Loop	0	0	10	1	18	1	½ğbuff
+Status230	\spr\skill\others\sjzh_mu.spr	Head	Loop	0	0	10	1	18	1	Ä¾buff
+Status231	\spr\skill\others\sjzh_shui.spr	Head	Loop	0	0	10	1	18	1	Ë®buff
+Status232	\spr\skill\others\sjzh_huo.spr	Head	Loop	0	0	10	1	18	1	»ğbuff
+Status233	\spr\skill\others\sjzh_tu.spr	Head	Loop	0	0	10	1	18	1	ÍÁbuff
+Status234	\spr\skill\wuhuntang\ÎäÄÂÒÅÖ¾ĞéÓ°³öÏÖ.spr	Body	Loop	0	0	280	8	36	1	ÎäÄÂÒÅÖ¾ĞéÓ°
+Status235	\spr\skill\wuhuntang\¾«ÖÒ±¨¹ú.spr	Body	Loop	0	0	96	8	6	1	¾«ÖÒ±¨¹ú
+Status236	\spr\skill\wuhuntang\²ù¼é³ıØúdebuff.spr	Body	Loop	0	0	20	1	1	1	²ù¼é³ıØúDebuff
+Status237	\spr\skill\wuhuntang\ÖÒÎäÁ÷·ç.spr	Foot	Loop	0	0	20	1	20	1	ÖÒÎäÁ÷·ç
+Status238	\spr\skill\wuhuntang\µôÑªBUFF.spr	Body	Loop	0	0	12	1	12	1	º³É½»÷µôÑªbuff
+Status239	\spr\skill\wuhuntang\¼õËÙ×´Ì¬.spr	Head	Loop	0	0	12	1	33	1	¼õ¹¥»÷Debuff
+Status240	\spr\skill\wuhuntang\¼õËÙ×´Ì¬.spr	Head	Loop	0	0	12	1	33	1	¼õ¹¥ËÙDebuff
+Status241	\spr\skill\zhongqiu\zq_sl_001.spr	Head	Loop	0	0	10	1	20	1	Ã·»¨ÈıÅªDeBuff¡ª¡ª»Ğã±
+Status242	\spr\effect\other\weizhenjiuzhou_vn.spr	Head	Loop	0	0	20	1	20	1	uy chan cuu chau
+Status243	\spr\effect\other\wulinzhizun_vn.spr	Head	Loop	0	0	20	1	20	1	vo lam chi ton
+Status244	\spr\effect\other\yijianfengtian_vn.spr	Head	Loop	0	0	20	1	20	1	nhat kiem phong thien
+Status245	\spr\effect\other\yiliugaoshou_vn.spr	Head	Loop	0	0	20	1	20	1	nhat luu cao thu
+Status246	\spr\effect\other\zuihoudaxia_vn.spr	Head	Loop	0	0	20	1	20	1	hiep khac cuoi cung tren giang ho

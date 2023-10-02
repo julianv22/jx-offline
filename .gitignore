@@ -62,8 +62,7 @@ client/script/task/system/*
 !client/ui/
 client/ui/*
 !client/ui/ui3/
-client/ui/ui3/*
-!client/ui/ui3/icon_bar.ini
+client/ui/ui3/**
 # -------------------UserData-------------------
 !client/UserData/
 client/UserData/*

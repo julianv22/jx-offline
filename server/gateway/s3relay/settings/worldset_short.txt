@@ -1,0 +1,85 @@
+MAP_ID	GAMESVR_SET_1	GAMESVR_SET_2	GAMESVR_SET_3	GAMESVR_SET_4	GAMESVR_SET_5	GAMESVR_SET_6	GAMESVR_SET_7	GAMESVR_SET_8	GAMESVR_SET_9	GAMESVR_SET_10	GAMESVR_SET_11	GAMESVR_SET_12	GAMESVR_SET_13	GAMESVR_SET_14	GAMESVR_SET_15	GAMESVR_SET_16	±∏◊¢
+1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	 Ph≠Óng T≠Íng
+2	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	 Hoa S¨n
+11	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	 Thµnh ß´
+37	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	 Bi÷n Kinh
+44	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Chi’n tr≠Íng TËng Kim
+53	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Ba L®ng huy÷n
+75	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Kho∂ Lang ÆÈng
+78	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	 T≠¨ng D≠¨ng
+80	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	 D≠¨ng Ch©u
+162	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	 ßπi L˝ phÒ 
+176	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	 L©m An
+323	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	ßi”m b∏o danh TËng Kim (s¨ c p) 
+324	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	ßi”m b∏o danh TËng Kim (trung c p) 
+325	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	ßi”m b∏o danh TËng Kim (cao c p) 
+326	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Khu v˘c b◊nh nguy™n (s¨ c p) 
+327	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Khu v˘c b◊nh nguy™n (trung c p) 
+328	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Khu v˘c b◊nh nguy™n (cao c p) 
+329	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Khu v˘c Hµ T©n (s¨ c p) 
+330	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Khu v˘c Hµ T©n (trung c p) 
+331	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Khu v˘c Hµ T©n (cao c p) 
+342	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Vi s¨n Æ∂o
+344	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Thµnh tr n (s¨ c p) 
+345	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Thµnh tr n (trung c p) 
+346	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Thµnh tr n (cao c p) 
+347	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	S¨n cËc (s¨ c p) 
+348	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	S¨n cËc (trung c p) 
+349	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	S¨n cËc (cao c p) 
+350	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Th©m l©m (s¨ c p) 
+351	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Th©m l©m (trung c p) 
+352	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Th©m l©m (cao c p) 
+353	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Doanh trπi (s¨ c p) 
+354	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Doanh trπi (trung c p) 
+355	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Doanh trπi (cao c p) 
+357	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	ß¨n Æ u B◊nh nguy™n (S¨ c p) 
+358	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	ß¨n Æ u B◊nh nguy™n (Trung c p) 
+359	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	ß¨n Æ u B◊nh nguy™n (Cao c p) 
+360	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	ß¨n Æ u Hµ t©n (S¨ c p) 
+361	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	ß¨n Æ u Hµ t©n (Trung c p) 
+362	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	ß¨n Æ u Hµ t©n (Cao c p) 
+363	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	ß¨n Æ u Th©m l©m (S¨ c p) 
+364	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	ß¨n Æ u Th©m l©m (Trung c p) 
+365	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	ß¨n Æ u Th©m l©m (Cao c p) 
+366	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	ß¨n Æ u S¨n cËc (S¨ c p) 
+367	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	ß¨n Æ u S¨n cËc (Trung c p) 
+368	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	ß¨n Æ u S¨n cËc (Cao c p) 
+369	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	ß¨n Æ u Thµnh tr n (S¨ c p) 
+370	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	ß¨n Æ u Thµnh tr n (Trung c p) 
+371	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	ß¨n Æ u Thµnh tr n (Cao c p) 
+372	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	ß¨n Æ u Doanh trπi (S¨ c p) 
+373	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	ß¨n Æ u Doanh trπi (Trung c p) 
+374	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	ß¨n Æ u Doanh trπi (Cao c p) 
+375	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Chi’n tr≠Íng TËng Kim cÚ (s¨ c p) 
+376	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Chi’n tr≠Íng TËng Kim cÚ (trung c p) 
+377	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Chi’n tr≠Íng TËng Kim (cao c p) 
+378	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Xung phong (S¨ c p) 
+379	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Xung phong (Trung c p) 
+380	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Xung phong (Cao c p) 
+381	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Th©m l©m (s¨ c p) 
+382	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Th©m l©m (trung c p) 
+383	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Th©m l©m (cao c p) 
+384	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	C«u ranh giÌi (s¨ c p) 
+385	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	C«u ranh giÌi (trung c p) 
+386	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	C«u ranh giÌi (cao c p) 
+388	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Phong K˙ (90 - 119) 
+389	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Phong K˙ (tr™n 120) 
+391	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	S¨n Th«n Mi’u (90 - 119) 
+392	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	S¨n Th«n Mi’u (tr™n 120) 
+394	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Thi™n B∂o khË (90 - 119) 
+395	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Thi™n B∂o khË (tr™n 120) 
+520	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Minh Nguy÷t tr n (Ph≠Óng T≠Íng) 
+521	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Minh Nguy÷t tr n (Thµnh ß´) 
+522	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Minh Nguy÷t tr n (Bi÷n Kinh) 
+523	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Minh Nguy÷t tr n (T≠¨ng D≠¨ng) 
+524	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Minh Nguy÷t tr n (D≠¨ng Ch©u) 
+525	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Minh Nguy÷t tr n (ßπi L˝) 
+526	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Minh Nguy÷t tr n (L©m An) 
+949	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Th› Ki’m CËc
+957	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	MÀt Phﬂng cˆa ∂i
+959	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Chi’n Long ßÈng
+968	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Nguy÷t Ca ß∂o
+969	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Nguy÷t Ca MÀt CËc
+985	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	ßﬁa Cung Bi™n Kinh
+987	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	Hoa S¨n ph∏i
+996	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	B∑i luy÷n c´ng

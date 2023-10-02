@@ -1,0 +1,11 @@
+2023-09-26 08:18:02	(INF)	mod:SYS	act:GameStart	
+2023-09-26 08:18:02	(INF)	mod:TONG	act:dbload	from:new	tongnum:1
+2023-09-26 09:26:51	(INF)	mod:SYS	act:GameClose	
+2023-09-26 09:26:57	(INF)	mod:SYS	act:GameStart	
+2023-09-26 09:26:57	(INF)	mod:TONG	act:dbload	from:new	tongnum:1
+2023-09-26 20:07:06	(INF)	mod:SYS	act:GameClose	
+2023-09-26 20:07:11	(INF)	mod:SYS	act:GameStart	
+2023-09-26 20:07:11	(INF)	mod:TONG	act:dbload	from:new	tongnum:1
+2023-09-26 20:53:43	(INF)	mod:SYS	act:GameClose	
+2023-09-26 20:53:55	(INF)	mod:SYS	act:GameStart	
+2023-09-26 20:53:55	(INF)	mod:TONG	act:dbload	from:new	tongnum:1

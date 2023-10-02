@@ -1,0 +1,427 @@
+[2023/10/01 12:00:21] Delete event data: ShareKey(EVENT_cailuhongbao), Param1(-1), Param2(-1), Timeout(2010-3-30)
+[2023/10/01 12:00:21] Delete event data: ShareKey(EVENT_MIDAUT_2010), Param1(-1), Param2(-1), Timeout(2010-10-19)
+[2023/10/01 12:00:21] Delete event data: ShareKey(EVENT_dayanqunxia), Param1(-1), Param2(-1), Timeout(2011-3-20)
+[2023/10/01 12:00:21] Delete event data: ShareKey(FUNC_RANK_EQUIPVALUE), Param1(-1), Param2(-1), Timeout()
+[2023/10/01 12:00:21] Delete event data: ShareKey(EVENT_April_zhushuai), Param1(-1), Param2(-1), Timeout(2012-6-4)
+[2023/10/01 12:00:21] Delete event data: ShareKey(EVENT_2012ChristmasDay), Param1(-1), Param2(-1), Timeout(2013-1-30)
+[2023/10/01 12:00:21] Loading All Scripts....................
+[2023/10/01 12:00:21] Load Rank FUNC_RANK_EQUIPVALUE
+[2023/10/01 12:00:21] Load Stable Rank count 0
+[2023/10/01 12:00:21] Load Dynamic Rank count 0
+[2023/10/01 12:00:21] Load Rank FUNC_RANK_EQUIPVALUE end
+[2023/10/01 12:00:21] 
+All Scripts Have Been Loaded! Count = 88
+[2023/10/01 12:00:21] root client[:0] create
+[2023/10/01 12:00:23] start autotimer for Ping: 
+[2023/10/01 12:00:23] gateway client create: 127.0.0.1
+[2023/10/01 12:00:23] TRIP_MODE: None
+[2023/10/01 12:00:23] Loading World Setting...
+[2023/10/01 12:00:23] Reset map ph„ b∂n thµnh c´ng
+[2023/10/01 12:00:23] 1 tong(s) loaded from tongex DB.
+[2023/10/01 12:00:23] Load LeagueData: LeagueType: 4, Leagues: 7, Roles: 7
+[2023/10/01 12:00:23] Load LeagueData: LeagueType: 500, Leagues: 2, Roles: 2
+[2023/10/01 12:00:23] Load LeagueData: LeagueType: 502, Leagues: 11, Roles: 11
+[2023/10/01 12:00:23] Load LeagueData: LeagueType: 535, Leagues: 2, Roles: 0
+[2023/10/01 12:00:23] Load LeagueData: LeagueType: 538, Leagues: 1, Roles: 1
+[2023/10/01 12:00:23] Load LeagueData: LeagueType: 10000, Leagues: 1, Roles: 7
+[2023/10/01 12:00:23] KhÎi ÆÈng h÷ thËng Æ„ng mÎ c∏c ch¯c n®ng trong trﬂ ch¨i...
+[2023/10/01 12:00:23] topten server sort list
+[2023/10/01 12:00:23] topten server sort list
+[2023/10/01 12:00:23] topten server sort list
+[2023/10/01 12:00:23] =================GLOBALEXCUTECHAT=================
+[2023/10/01 12:00:23] BATTLE[XiangYang] 9:30 startup...
+[2023/10/01 12:00:23] BATTLE[XiangYang] 11:00 startup...
+[2023/10/01 12:00:23] BATTLE[XiangYang] 13:00 startup...
+[2023/10/01 12:00:23] BATTLE[XiangYang] 15:00 startup...
+[2023/10/01 12:00:23] BATTLE[XiangYang] 17:00 startup...
+[2023/10/01 12:00:23] BATTLE[XiangYang] 19:00 startup...
+[2023/10/01 12:00:23] BATTLE[XiangYang] 20:00 startup...
+[2023/10/01 12:00:23] BATTLE[XiangYang] 21:00 startup...
+[2023/10/01 12:00:23] BATTLE[XiangYang] 22:00 startup...
+[2023/10/01 12:00:23] BATTLE[XiangYang] 23:00 startup...
+[2023/10/01 12:00:23] MAKE GOLDBOSS AT CITY OR OUTTER  :  22:00
+[2023/10/01 12:00:23] MAKE BIG BOSS AT :  22:15
+[2023/10/01 12:00:23] GOLD BOSS COUNT :  0
+[2023/10/01 12:00:23] MAKE GOLDBOSS AT CITY OR OUTTER  :  23:00
+[2023/10/01 12:00:23] MAKE BIG BOSS AT :  23:15
+[2023/10/01 12:00:23] GOLD BOSS COUNT :  0
+[2023/10/01 12:00:23] #NAME?
+[2023/10/01 12:00:23] KhÎi ÆÈng h‰at ÆÈng Hoa Æ®ng1200
+[2023/10/01 12:00:23] =====birthday0905 liehaozhu ## 12:0 ### 30 #? ?###=======
+[2023/10/01 12:00:23] X„a d˜ li÷u qu∏i vÀt Hoµng kim trong database52301
+[2023/10/01 12:00:23] X„a d˜ li÷u qu∏i vÀt Hoµng kim trong database51302
+[2023/10/01 12:00:23] X„a d˜ li÷u qu∏i vÀt Hoµng kim trong database51102
+[2023/10/01 12:00:23] X„a d˜ li÷u qu∏i vÀt Hoµng kim trong database135403
+[2023/10/01 12:00:23] X„a d˜ li÷u qu∏i vÀt Hoµng kim trong database135604
+[2023/10/01 12:00:23] X„a d˜ li÷u qu∏i vÀt Hoµng kim trong database135705
+[2023/10/01 12:00:23] X„a d˜ li÷u qu∏i vÀt Hoµng kim trong database135206
+[2023/10/01 12:00:23] X„a d˜ li÷u qu∏i vÀt Hoµng kim trong database135807
+[2023/10/01 12:00:23] X„a d˜ li÷u qu∏i vÀt Hoµng kim trong database136008
+[2023/10/01 12:00:23] X„a d˜ li÷u qu∏i vÀt Hoµng kim trong database135109
+[2023/10/01 12:00:23] X„a d?li÷u qu∏i vÀt Hoµng kim trong database52301
+[2023/10/01 12:00:23] X„a d?li÷u qu∏i vÀt Hoµng kim trong database51302
+[2023/10/01 12:00:23] X„a d?li÷u qu∏i vÀt Hoµng kim trong database51102
+[2023/10/01 12:00:23] X„a d?li÷u qu∏i vÀt Hoµng kim trong database135403
+[2023/10/01 12:00:23] X„a d?li÷u qu∏i vÀt Hoµng kim trong database135604
+[2023/10/01 12:00:23] X„a d?li÷u qu∏i vÀt Hoµng kim trong database135705
+[2023/10/01 12:00:23] X„a d?li÷u qu∏i vÀt Hoµng kim trong database135206
+[2023/10/01 12:00:23] X„a d?li÷u qu∏i vÀt Hoµng kim trong database135807
+[2023/10/01 12:00:23] X„a d?li÷u qu∏i vÀt Hoµng kim trong database136008
+[2023/10/01 12:00:23] X„a d?li÷u qu∏i vÀt Hoµng kim trong database135109
+[2023/10/01 12:00:23] X„a d˜ li÷u qu∏i vÀt Hoµng kim trong database52301
+[2023/10/01 12:00:23] X„a d˜ li÷u qu∏i vÀt Hoµng kim trong database51302
+[2023/10/01 12:00:23] X„a d˜ li÷u qu∏i vÀt Hoµng kim trong database51102
+[2023/10/01 12:00:23] X„a d˜ li÷u qu∏i vÀt Hoµng kim trong database135403
+[2023/10/01 12:00:23] X„a d˜ li÷u qu∏i vÀt Hoµng kim trong database135604
+[2023/10/01 12:00:23] X„a d˜ li÷u qu∏i vÀt Hoµng kim trong database135705
+[2023/10/01 12:00:23] X„a d˜ li÷u qu∏i vÀt Hoµng kim trong database135206
+[2023/10/01 12:00:23] X„a d˜ li÷u qu∏i vÀt Hoµng kim trong database135807
+[2023/10/01 12:00:23] X„a d˜ li÷u qu∏i vÀt Hoµng kim trong database136008
+[2023/10/01 12:00:23] X„a d˜ li÷u qu∏i vÀt Hoµng kim trong database135109
+[2023/10/01 12:00:23] **************** TÊng Æi“u ÆÈng quËc chi’n tËng kim nhi÷m vÙ khÎi ÆÈng thµnh c´ng ****************
+[2023/10/01 12:00:23] =================¥≥πÿªÓ∂Ø√ø»’≈≈––∞Ò==================
+[2023/10/01 12:00:23] MAKE GOLDBOSS murongquan:  20:20
+[2023/10/01 12:00:23] MAKE GOLDBOSS zhangxuan:  20:10
+[2023/10/01 12:00:23] MAKE GOLDBOSS jinshiliang:  20:15
+[2023/10/01 12:00:23] tianchimijing boss out
+[2023/10/01 12:00:23] =================Phong l®ng ÆÈ==================
+[2023/10/01 12:00:23] =================Phong l®ng ÆÈ==================
+[2023/10/01 12:00:23] =================Phong l®ng ÆÈ==================
+[2023/10/01 12:00:23] =================Phong l®ng ÆÈ==================
+[2023/10/01 12:00:23] =================Phong l®ng ÆÈ==================
+[2023/10/01 12:00:23] =================Phong l®ng ÆÈ==================
+[2023/10/01 12:00:23] =================Phong l®ng ÆÈ==================
+[2023/10/01 12:00:23] =================Phong l®ng ÆÈ==================
+[2023/10/01 12:00:23] =================Phong l®ng ÆÈ==================
+[2023/10/01 12:00:23] =================Phong l®ng ÆÈ==================
+[2023/10/01 12:00:23] =================Phong l®ng ÆÈ==================
+[2023/10/01 12:00:23] =================Phong l®ng ÆÈ==================
+[2023/10/01 12:00:23] Nhiem vu khieu chien thoi gian (Vuot ai) - vao cac gio le trong ngay
+[2023/10/01 12:00:23] Nhiem vu khieu chien thoi gian (Vuot ai) - vao cac gio le trong ngay
+[2023/10/01 12:00:23] Nhiem vu khieu chien thoi gian (Vuot ai) - vao cac gio le trong ngay
+[2023/10/01 12:00:23] Nhiem vu khieu chien thoi gian (Vuot ai) - vao cac gio le trong ngay
+[2023/10/01 12:00:23] Nhiem vu khieu chien thoi gian (Vuot ai) - vao cac gio le trong ngay
+[2023/10/01 12:00:23] Nhiem vu khieu chien thoi gian (Vuot ai) - vao cac gio le trong ngay
+[2023/10/01 12:00:23] Nhiem vu khieu chien thoi gian (Vuot ai) - vao cac gio le trong ngay
+[2023/10/01 12:00:23] Nhiem vu khieu chien thoi gian (Vuot ai) - vao cac gio le trong ngay
+[2023/10/01 12:00:23] Nhiem vu khieu chien thoi gian (Vuot ai) - vao cac gio le trong ngay
+[2023/10/01 12:00:23] Nhiem vu khieu chien thoi gian (Vuot ai) - vao cac gio le trong ngay
+[2023/10/01 12:00:23] Nhiem vu khieu chien thoi gian (Vuot ai) - vao cac gio le trong ngay
+[2023/10/01 12:00:23] Nhiem vu khieu chien thoi gian (Vuot ai) - vao cac gio le trong ngay
+[2023/10/01 12:00:23] Failed to init statdatamanager!
+[2023/10/01 12:00:23] [SGN]Failed to initialize.
+[2023/10/01 12:00:23] S3Relay-∆Ù∂ØÕÍ±œ£° S3Relay- Khoi dong hoan tat! 
+[2023/10/01 12:00:23] 
+*
+***** S3Relay Start (@ 151287200/00/43200 00:-1937048:135874861.136293495) >>>>>
+*
+
+
+[2023/10/01 12:00:23] SockThread start success
+[2023/10/01 12:00:23] Game Module Is Started. -->Hoπt ÆÈng xu©n 2006
+[2023/10/01 12:00:23] Game Module Is Started. -->OpenShop
+[2023/10/01 12:00:23] Game Module Is Started. -->Thi÷p th´ng b∏o chÛc mıng mµu
+[2023/10/01 12:00:23] Game Module Is Started. -->Thi÷p cuÈn
+[2023/10/01 12:00:23] Game Module Is Started. -->PhÛc duy™n ph∏o hoa
+[2023/10/01 12:00:23] Game Module Is Started. -->Truy“n c´ng
+[2023/10/01 12:00:23] Game Module Is Started. -->L‘ vÀt t◊nh nh©n
+[2023/10/01 12:00:23] Game Module Is Started. -->YANDIBAOZANG
+[2023/10/01 12:00:23] Game Module Is Started. -->YANDIBAOZANG_TALK
+[2023/10/01 12:00:23] Game Module Is Started. -->SWITH_DAIYITOUSHI
+[2023/10/01 12:00:23] Game Module Is Started. -->chunjie2009_dangboss
+[2023/10/01 12:01:05] HostConnection create: 127.0.0.1
+[2023/10/01 12:01:05] ChatConnection create: 127.0.0.1
+[2023/10/01 12:01:05] TongConnection create: 127.0.0.1
+[2023/10/01 12:02:05] GameServerLogin: 127.0.0.1
+[2023/10/01 12:02:05] TongDataSendFinish: 127.0.0.1
+[2023/10/01 12:02:11] Assign Dynamic map(986,65536) for GS:0
+[2023/10/01 12:02:11] GS:0 Total Dynamic map:1
+[2023/10/01 12:02:11] GS:0 Total Static map:700
+[2023/10/01 12:02:11] Assign Dynamic map(986,65537) for GS:0
+[2023/10/01 12:02:11] GS:0 Total Dynamic map:2
+[2023/10/01 12:02:11] GS:0 Total Static map:700
+[2023/10/01 12:02:11] Assign Dynamic map(986,65538) for GS:0
+[2023/10/01 12:02:11] GS:0 Total Dynamic map:3
+[2023/10/01 12:02:11] GS:0 Total Static map:700
+[2023/10/01 12:02:11] Assign Dynamic map(986,65539) for GS:0
+[2023/10/01 12:02:11] GS:0 Total Dynamic map:4
+[2023/10/01 12:02:11] GS:0 Total Static map:700
+[2023/10/01 12:02:11] Assign Dynamic map(986,65540) for GS:0
+[2023/10/01 12:02:11] GS:0 Total Dynamic map:5
+[2023/10/01 12:02:11] GS:0 Total Static map:700
+[2023/10/01 12:02:11] Assign Dynamic map(948,74518) for GS:0
+[2023/10/01 12:02:11] GS:0 Total Dynamic map:6
+[2023/10/01 12:02:11] GS:0 Total Static map:700
+[2023/10/01 12:02:11] Assign Dynamic map(948,74519) for GS:0
+[2023/10/01 12:02:11] GS:0 Total Dynamic map:7
+[2023/10/01 12:02:11] GS:0 Total Static map:700
+[2023/10/01 12:02:11] Assign Dynamic map(948,74520) for GS:0
+[2023/10/01 12:02:11] GS:0 Total Dynamic map:8
+[2023/10/01 12:02:11] GS:0 Total Static map:700
+[2023/10/01 12:02:11] Assign Dynamic map(948,74521) for GS:0
+[2023/10/01 12:02:11] GS:0 Total Dynamic map:9
+[2023/10/01 12:02:11] GS:0 Total Static map:700
+[2023/10/01 12:02:11] Assign Dynamic map(948,74522) for GS:0
+[2023/10/01 12:02:11] GS:0 Total Dynamic map:10
+[2023/10/01 12:02:11] GS:0 Total Static map:700
+[2023/10/01 12:02:12] Assign Dynamic map(976,65541) for GS:0
+[2023/10/01 12:02:12] GS:0 Total Dynamic map:11
+[2023/10/01 12:02:12] GS:0 Total Static map:700
+[2023/10/01 12:02:12] Assign Dynamic map(976,65542) for GS:0
+[2023/10/01 12:02:12] GS:0 Total Dynamic map:12
+[2023/10/01 12:02:12] GS:0 Total Static map:700
+[2023/10/01 12:02:12] Assign Dynamic map(976,65543) for GS:0
+[2023/10/01 12:02:12] GS:0 Total Dynamic map:13
+[2023/10/01 12:02:12] GS:0 Total Static map:700
+[2023/10/01 12:02:12] Assign Dynamic map(976,65544) for GS:0
+[2023/10/01 12:02:12] GS:0 Total Dynamic map:14
+[2023/10/01 12:02:12] GS:0 Total Static map:700
+[2023/10/01 12:02:12] Assign Dynamic map(976,65545) for GS:0
+[2023/10/01 12:02:12] GS:0 Total Dynamic map:15
+[2023/10/01 12:02:12] GS:0 Total Static map:700
+[2023/10/01 12:02:12] Assign Dynamic map(958,74523) for GS:0
+[2023/10/01 12:02:12] GS:0 Total Dynamic map:16
+[2023/10/01 12:02:12] GS:0 Total Static map:700
+[2023/10/01 12:02:12] Assign Dynamic map(958,74524) for GS:0
+[2023/10/01 12:02:12] GS:0 Total Dynamic map:17
+[2023/10/01 12:02:12] GS:0 Total Static map:700
+[2023/10/01 12:02:12] Assign Dynamic map(958,74525) for GS:0
+[2023/10/01 12:02:12] GS:0 Total Dynamic map:18
+[2023/10/01 12:02:12] GS:0 Total Static map:700
+[2023/10/01 12:02:12] Assign Dynamic map(958,74526) for GS:0
+[2023/10/01 12:02:12] GS:0 Total Dynamic map:19
+[2023/10/01 12:02:12] GS:0 Total Static map:700
+[2023/10/01 12:02:12] Assign Dynamic map(958,74527) for GS:0
+[2023/10/01 12:02:12] GS:0 Total Dynamic map:20
+[2023/10/01 12:02:12] GS:0 Total Static map:700
+[2023/10/01 12:02:12] Assign Dynamic map(988,65546) for GS:0
+[2023/10/01 12:02:12] GS:0 Total Dynamic map:21
+[2023/10/01 12:02:12] GS:0 Total Static map:700
+[2023/10/01 12:02:12] Assign Dynamic map(988,65547) for GS:0
+[2023/10/01 12:02:12] GS:0 Total Dynamic map:22
+[2023/10/01 12:02:12] GS:0 Total Static map:700
+[2023/10/01 12:02:12] Assign Dynamic map(988,65548) for GS:0
+[2023/10/01 12:02:12] GS:0 Total Dynamic map:23
+[2023/10/01 12:02:12] GS:0 Total Static map:700
+[2023/10/01 12:02:12] Assign Dynamic map(988,65549) for GS:0
+[2023/10/01 12:02:12] GS:0 Total Dynamic map:24
+[2023/10/01 12:02:12] GS:0 Total Static map:700
+[2023/10/01 12:02:12] Assign Dynamic map(988,65550) for GS:0
+[2023/10/01 12:02:12] GS:0 Total Dynamic map:25
+[2023/10/01 12:02:12] GS:0 Total Static map:700
+[2023/10/01 12:02:12] Assign Dynamic map(975,65551) for GS:0
+[2023/10/01 12:02:12] GS:0 Total Dynamic map:26
+[2023/10/01 12:02:12] GS:0 Total Static map:700
+[2023/10/01 12:02:12] Assign Dynamic map(975,65552) for GS:0
+[2023/10/01 12:02:12] GS:0 Total Dynamic map:27
+[2023/10/01 12:02:12] GS:0 Total Static map:700
+[2023/10/01 12:02:12] Assign Dynamic map(975,65553) for GS:0
+[2023/10/01 12:02:12] GS:0 Total Dynamic map:28
+[2023/10/01 12:02:12] GS:0 Total Static map:700
+[2023/10/01 12:02:12] Assign Dynamic map(975,65554) for GS:0
+[2023/10/01 12:02:12] GS:0 Total Dynamic map:29
+[2023/10/01 12:02:12] GS:0 Total Static map:700
+[2023/10/01 12:02:12] Assign Dynamic map(975,65555) for GS:0
+[2023/10/01 12:02:12] GS:0 Total Dynamic map:30
+[2023/10/01 12:02:12] GS:0 Total Static map:700
+[2023/10/01 12:48:48] HostConnection close: 127.0.0.1
+[2023/10/01 12:48:48] ChatConnection close: 127.0.0.1
+[2023/10/01 12:48:48] TongConnection close: 127.0.0.1
+[2023/10/01 12:49:04] ChatConnection create: 127.0.0.1
+[2023/10/01 12:49:04] TongConnection create: 127.0.0.1
+[2023/10/01 12:49:04] HostConnection create: 127.0.0.1
+[2023/10/01 12:49:27] GameServerLogin: 127.0.0.1
+[2023/10/01 12:49:27] TongDataSendFinish: 127.0.0.1
+[2023/10/01 12:49:33] Assign Dynamic map(986,65556) for GS:0
+[2023/10/01 12:49:33] GS:0 Total Dynamic map:31
+[2023/10/01 12:49:33] GS:0 Total Static map:700
+[2023/10/01 12:49:33] Assign Dynamic map(986,65557) for GS:0
+[2023/10/01 12:49:33] GS:0 Total Dynamic map:32
+[2023/10/01 12:49:33] GS:0 Total Static map:700
+[2023/10/01 12:49:33] Assign Dynamic map(986,65558) for GS:0
+[2023/10/01 12:49:33] GS:0 Total Dynamic map:33
+[2023/10/01 12:49:33] GS:0 Total Static map:700
+[2023/10/01 12:49:33] Assign Dynamic map(986,65559) for GS:0
+[2023/10/01 12:49:33] GS:0 Total Dynamic map:34
+[2023/10/01 12:49:33] GS:0 Total Static map:700
+[2023/10/01 12:49:33] Assign Dynamic map(986,65560) for GS:0
+[2023/10/01 12:49:33] GS:0 Total Dynamic map:35
+[2023/10/01 12:49:33] GS:0 Total Static map:700
+[2023/10/01 12:49:33] Assign Dynamic map(976,65561) for GS:0
+[2023/10/01 12:49:33] GS:0 Total Dynamic map:36
+[2023/10/01 12:49:33] GS:0 Total Static map:700
+[2023/10/01 12:49:33] Assign Dynamic map(976,65562) for GS:0
+[2023/10/01 12:49:33] GS:0 Total Dynamic map:37
+[2023/10/01 12:49:33] GS:0 Total Static map:700
+[2023/10/01 12:49:33] Assign Dynamic map(976,65563) for GS:0
+[2023/10/01 12:49:33] GS:0 Total Dynamic map:38
+[2023/10/01 12:49:33] GS:0 Total Static map:700
+[2023/10/01 12:49:33] Assign Dynamic map(976,65564) for GS:0
+[2023/10/01 12:49:33] GS:0 Total Dynamic map:39
+[2023/10/01 12:49:33] GS:0 Total Static map:700
+[2023/10/01 12:49:33] Assign Dynamic map(976,65565) for GS:0
+[2023/10/01 12:49:33] GS:0 Total Dynamic map:40
+[2023/10/01 12:49:33] GS:0 Total Static map:700
+[2023/10/01 12:49:34] Assign Dynamic map(988,65566) for GS:0
+[2023/10/01 12:49:34] GS:0 Total Dynamic map:41
+[2023/10/01 12:49:34] GS:0 Total Static map:700
+[2023/10/01 12:49:34] Assign Dynamic map(988,65567) for GS:0
+[2023/10/01 12:49:34] GS:0 Total Dynamic map:42
+[2023/10/01 12:49:34] GS:0 Total Static map:700
+[2023/10/01 12:49:34] Assign Dynamic map(988,65568) for GS:0
+[2023/10/01 12:49:34] GS:0 Total Dynamic map:43
+[2023/10/01 12:49:34] GS:0 Total Static map:700
+[2023/10/01 12:49:34] Assign Dynamic map(988,65569) for GS:0
+[2023/10/01 12:49:34] GS:0 Total Dynamic map:44
+[2023/10/01 12:49:34] GS:0 Total Static map:700
+[2023/10/01 12:49:34] Assign Dynamic map(988,65570) for GS:0
+[2023/10/01 12:49:34] GS:0 Total Dynamic map:45
+[2023/10/01 12:49:34] GS:0 Total Static map:700
+[2023/10/01 12:49:34] Assign Dynamic map(975,65571) for GS:0
+[2023/10/01 12:49:34] GS:0 Total Dynamic map:46
+[2023/10/01 12:49:34] GS:0 Total Static map:700
+[2023/10/01 12:49:34] Assign Dynamic map(975,65572) for GS:0
+[2023/10/01 12:49:34] GS:0 Total Dynamic map:47
+[2023/10/01 12:49:34] GS:0 Total Static map:700
+[2023/10/01 12:49:34] Assign Dynamic map(975,65573) for GS:0
+[2023/10/01 12:49:34] GS:0 Total Dynamic map:48
+[2023/10/01 12:49:34] GS:0 Total Static map:700
+[2023/10/01 12:49:34] Assign Dynamic map(975,65574) for GS:0
+[2023/10/01 12:49:34] GS:0 Total Dynamic map:49
+[2023/10/01 12:49:34] GS:0 Total Static map:700
+[2023/10/01 12:49:34] Assign Dynamic map(975,65575) for GS:0
+[2023/10/01 12:49:34] GS:0 Total Dynamic map:50
+[2023/10/01 12:49:34] GS:0 Total Static map:700
+[2023/10/01 12:50:23] -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[2023/10/01 12:50:23] [2023-10-01 12:50:23]  NEW BATTLE START
+[2023/10/01 12:50:23] BattleID: 1   BattleLevel: 1   Issue: 13   79th.Round
+[2023/10/01 12:50:23] RoundID: 16   MapPattern: 10   BattleMapID:  6   WorldMapID: 384   MapName: ßπi doanh Qu©n TËng   RuleID: 4
+[2023/10/01 12:50:23] -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[2023/10/01 12:50:23] -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[2023/10/01 12:50:23] [2023-10-01 12:50:23]  NEW BATTLE START
+[2023/10/01 12:50:23] BattleID: 1   BattleLevel: 2   Issue: 13   79th.Round
+[2023/10/01 12:50:23] RoundID: 16   MapPattern: 10   BattleMapID:  6   WorldMapID: 385   MapName: ßπi doanh Qu©n Kim   RuleID: 4
+[2023/10/01 12:50:23] -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[2023/10/01 12:50:23] -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[2023/10/01 12:50:23] [2023-10-01 12:50:23]  NEW BATTLE START
+[2023/10/01 12:50:23] BattleID: 1   BattleLevel: 3   Issue: 13   79th.Round
+[2023/10/01 12:50:23] RoundID: 16   MapPattern: 10   BattleMapID:  6   WorldMapID: 386   MapName: Hoµng Sa L©m Ngao Chi’n   RuleID: 4
+[2023/10/01 12:50:23] -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[2023/10/01 13:00:23] Æang bao danh thi Æ u 'Th∏ch th¯c thÍi gian'
+[2023/10/01 14:00:23] =Hoπt ÆÈng Boss Ti”u xu t hi÷n=
+[2023/10/01 14:10:23] =Hoπt ÆÈng Boss Ti”u xu t hi÷n=
+[2023/10/01 14:20:23] =Hoπt ÆÈng Boss Ti”u xu t hi÷n=
+[2023/10/01 14:30:23] =Hoπt ÆÈng Boss Ti”u xu t hi÷n=
+[2023/10/01 14:40:23] =Hoπt ÆÈng Boss Ti”u xu t hi÷n=
+[2023/10/01 14:50:23] -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[2023/10/01 14:50:23] [2023-10-01 14:50:23]  NEW BATTLE START
+[2023/10/01 14:50:23] BattleID: 1   BattleLevel: 1   Issue: 13   80th.Round
+[2023/10/01 14:50:23] RoundID: 1   MapPattern: 9   BattleMapID:  21   WorldMapID: 868   MapName: NgÚ Ph≠¨ng Nguy™n Chi’n   RuleID: 8
+[2023/10/01 14:50:23] -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[2023/10/01 14:50:23] -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[2023/10/01 14:50:23] [2023-10-01 14:50:23]  NEW BATTLE START
+[2023/10/01 14:50:23] BattleID: 1   BattleLevel: 2   Issue: 13   80th.Round
+[2023/10/01 14:50:23] RoundID: 1   MapPattern: 11   BattleMapID:  1   WorldMapID: 379   MapName: Bπch M´n Nguy™n Chi’n   RuleID: 3
+[2023/10/01 14:50:23] -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[2023/10/01 14:50:23] -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[2023/10/01 14:50:23] [2023-10-01 14:50:23]  NEW BATTLE START
+[2023/10/01 14:50:23] BattleID: 1   BattleLevel: 3   Issue: 13   80th.Round
+[2023/10/01 14:50:23] RoundID: 1   MapPattern: 9   BattleMapID:  21   WorldMapID: 870   MapName: Chi’n Tr≠Íng Hoang Mπc   RuleID: 8
+[2023/10/01 14:50:23] -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[2023/10/01 14:50:23] =Hoπt ÆÈng Boss Ti”u xu t hi÷n=
+[2023/10/01 15:00:23] =Hoπt ÆÈng Boss Ti”u xu t hi÷n=
+[2023/10/01 15:00:23] Æang bao danh thi Æ u 'Th∏ch th¯c thÍi gian'
+[2023/10/01 15:30:23] -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[2023/10/01 15:30:23] [2023-10-01 15:30:23]  BATTLE END
+[2023/10/01 15:30:23] BattleID: 1   BattleLevel: 2   Issue: 13   80th.Round RoundId: 1   Result: 1
+[2023/10/01 15:30:23] -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+[2023/10/01 16:35:51] ChatConnection close: 127.0.0.1
+[2023/10/01 16:35:51] TongConnection close: 127.0.0.1
+[2023/10/01 16:35:51] HostConnection close: 127.0.0.1
+[2023/10/01 16:36:11] ChatConnection create: 127.0.0.1
+[2023/10/01 16:36:11] TongConnection create: 127.0.0.1
+[2023/10/01 16:36:11] HostConnection create: 127.0.0.1
+[2023/10/01 16:36:13] ChatConnection close: 127.0.0.1
+[2023/10/01 16:36:13] TongConnection close: 127.0.0.1
+[2023/10/01 16:36:13] HostConnection close: 127.0.0.1
+[2023/10/01 16:36:30] ChatConnection create: 127.0.0.1
+[2023/10/01 16:36:30] TongConnection create: 127.0.0.1
+[2023/10/01 16:36:30] HostConnection create: 127.0.0.1
+[2023/10/01 16:36:57] GameServerLogin: 127.0.0.1
+[2023/10/01 16:36:57] TongDataSendFinish: 127.0.0.1
+[2023/10/01 16:37:02] Assign Dynamic map(986,65576) for GS:0
+[2023/10/01 16:37:02] GS:0 Total Dynamic map:51
+[2023/10/01 16:37:02] GS:0 Total Static map:700
+[2023/10/01 16:37:02] Assign Dynamic map(986,65577) for GS:0
+[2023/10/01 16:37:02] GS:0 Total Dynamic map:52
+[2023/10/01 16:37:02] GS:0 Total Static map:700
+[2023/10/01 16:37:02] Assign Dynamic map(986,65578) for GS:0
+[2023/10/01 16:37:02] GS:0 Total Dynamic map:53
+[2023/10/01 16:37:02] GS:0 Total Static map:700
+[2023/10/01 16:37:02] Assign Dynamic map(986,65579) for GS:0
+[2023/10/01 16:37:02] GS:0 Total Dynamic map:54
+[2023/10/01 16:37:02] GS:0 Total Static map:700
+[2023/10/01 16:37:02] Assign Dynamic map(986,65580) for GS:0
+[2023/10/01 16:37:02] GS:0 Total Dynamic map:55
+[2023/10/01 16:37:02] GS:0 Total Static map:700
+[2023/10/01 16:37:03] Assign Dynamic map(976,65581) for GS:0
+[2023/10/01 16:37:03] GS:0 Total Dynamic map:56
+[2023/10/01 16:37:03] GS:0 Total Static map:700
+[2023/10/01 16:37:03] Assign Dynamic map(976,65582) for GS:0
+[2023/10/01 16:37:03] GS:0 Total Dynamic map:57
+[2023/10/01 16:37:03] GS:0 Total Static map:700
+[2023/10/01 16:37:03] Assign Dynamic map(976,65583) for GS:0
+[2023/10/01 16:37:03] GS:0 Total Dynamic map:58
+[2023/10/01 16:37:03] GS:0 Total Static map:700
+[2023/10/01 16:37:03] Assign Dynamic map(976,65584) for GS:0
+[2023/10/01 16:37:03] GS:0 Total Dynamic map:59
+[2023/10/01 16:37:03] GS:0 Total Static map:700
+[2023/10/01 16:37:03] Assign Dynamic map(976,65585) for GS:0
+[2023/10/01 16:37:03] GS:0 Total Dynamic map:60
+[2023/10/01 16:37:03] GS:0 Total Static map:700
+[2023/10/01 16:37:03] Assign Dynamic map(988,65586) for GS:0
+[2023/10/01 16:37:03] GS:0 Total Dynamic map:61
+[2023/10/01 16:37:03] GS:0 Total Static map:700
+[2023/10/01 16:37:03] Assign Dynamic map(988,65587) for GS:0
+[2023/10/01 16:37:03] GS:0 Total Dynamic map:62
+[2023/10/01 16:37:03] GS:0 Total Static map:700
+[2023/10/01 16:37:03] Assign Dynamic map(988,65588) for GS:0
+[2023/10/01 16:37:03] GS:0 Total Dynamic map:63
+[2023/10/01 16:37:03] GS:0 Total Static map:700
+[2023/10/01 16:37:03] Assign Dynamic map(988,65589) for GS:0
+[2023/10/01 16:37:03] GS:0 Total Dynamic map:64
+[2023/10/01 16:37:03] GS:0 Total Static map:700
+[2023/10/01 16:37:03] Assign Dynamic map(988,65590) for GS:0
+[2023/10/01 16:37:03] GS:0 Total Dynamic map:65
+[2023/10/01 16:37:03] GS:0 Total Static map:700
+[2023/10/01 16:37:03] Assign Dynamic map(975,65591) for GS:0
+[2023/10/01 16:37:03] GS:0 Total Dynamic map:66
+[2023/10/01 16:37:03] GS:0 Total Static map:700
+[2023/10/01 16:37:03] Assign Dynamic map(975,65592) for GS:0
+[2023/10/01 16:37:03] GS:0 Total Dynamic map:67
+[2023/10/01 16:37:03] GS:0 Total Static map:700
+[2023/10/01 16:37:03] Assign Dynamic map(975,65593) for GS:0
+[2023/10/01 16:37:03] GS:0 Total Dynamic map:68
+[2023/10/01 16:37:03] GS:0 Total Static map:700
+[2023/10/01 16:37:03] Assign Dynamic map(975,65594) for GS:0
+[2023/10/01 16:37:03] GS:0 Total Dynamic map:69
+[2023/10/01 16:37:03] GS:0 Total Static map:700
+[2023/10/01 16:37:03] Assign Dynamic map(975,65595) for GS:0
+[2023/10/01 16:37:03] GS:0 Total Dynamic map:70
+[2023/10/01 16:37:03] GS:0 Total Static map:700
+[2023/10/01 16:41:30] TongConnection close: 127.0.0.1
+[2023/10/01 16:41:30] ChatConnection close: 127.0.0.1
+[2023/10/01 16:41:30] HostConnection close: 127.0.0.1
+[2023/10/01 16:41:34] SockThread stop success
+[2023/10/01 16:41:34] S3Relay-ø™ ºπÿ±’£° S3Relay- bat dau dong lai! 
+[2023/10/01 16:41:34] 
+*
+***** S3Relay Stop (@ 0000/00/00 00:-1937016:134778110.151287200) <<<<<
+*
+
+
+[2023/10/01 16:41:34] chat server shutdown
+[2023/10/01 16:41:34] tong server shutdown
+[2023/10/01 16:41:34] host server shutdown
+[2023/10/01 16:41:34] stop autotimer for Ping: 192.168.1.200
+[2023/10/01 16:41:34] S3Relay: ”ÎRelayRootµƒ¡¥Ω”∂œø™¡À -  cung voi RelayRoot lien tiep bi ngat quang - 192.168.1.200

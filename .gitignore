@@ -10,6 +10,9 @@
 !install.ps1
 !client/package.ini
 !settings-font.json
+!client
+!server
+!server/**
 # ------------------------------------------------
 !client/itemexchange_setting/
 !client/itemexchange_setting/**

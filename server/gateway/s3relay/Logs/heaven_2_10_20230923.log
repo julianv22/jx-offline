@@ -1,0 +1,26 @@
+2023-09-23 06:34:12	heaven(version 2.02) log start....
+2023-09-23 06:34:46	Allocate Connectionidx:0, IP:127.0.0.1, LeftFreeCount:9
+2023-09-23 07:37:03	heaven(version 2.02) log start....
+2023-09-23 07:37:21	Allocate Connectionidx:0, IP:127.0.0.1, LeftFreeCount:9
+2023-09-23 09:01:27	Callback Connectionidx:0, CloseReason:2, IP:127.0.0.1, LeftFreeCount: 10
+2023-09-23 09:01:46	Allocate Connectionidx:1, IP:127.0.0.1, LeftFreeCount:9
+2023-09-23 13:39:26	heaven(version 2.02) log start....
+2023-09-23 13:40:04	Allocate Connectionidx:0, IP:127.0.0.1, LeftFreeCount:9
+2023-09-23 16:03:46	Callback Connectionidx:0, CloseReason:2, IP:127.0.0.1, LeftFreeCount: 10
+2023-09-23 16:04:58	Allocate Connectionidx:1, IP:127.0.0.1, LeftFreeCount:9
+2023-09-23 16:29:51	Callback Connectionidx:1, CloseReason:2, IP:127.0.0.1, LeftFreeCount: 10
+2023-09-23 16:30:09	Allocate Connectionidx:2, IP:127.0.0.1, LeftFreeCount:9
+2023-09-23 17:31:45	Callback Connectionidx:2, CloseReason:2, IP:127.0.0.1, LeftFreeCount: 10
+2023-09-23 17:32:04	Allocate Connectionidx:3, IP:127.0.0.1, LeftFreeCount:9
+2023-09-23 23:47:27	Callback Connectionidx:3, CloseReason:2, IP:127.0.0.1, LeftFreeCount: 10
+2023-09-23 23:47:45	Allocate Connectionidx:4, IP:127.0.0.1, LeftFreeCount:9
+2023-09-24 00:13:27	Callback Connectionidx:4, CloseReason:2, IP:127.0.0.1, LeftFreeCount: 10
+2023-09-24 00:13:45	Allocate Connectionidx:5, IP:127.0.0.1, LeftFreeCount:9
+2023-09-24 01:49:25	Callback Connectionidx:5, CloseReason:2, IP:127.0.0.1, LeftFreeCount: 10
+2023-09-24 01:49:44	Allocate Connectionidx:6, IP:127.0.0.1, LeftFreeCount:9
+2023-09-24 01:50:53	Callback Connectionidx:6, CloseReason:2, IP:127.0.0.1, LeftFreeCount: 10
+2023-09-24 01:51:12	Allocate Connectionidx:7, IP:127.0.0.1, LeftFreeCount:9
+2023-09-24 02:23:57	Callback Connectionidx:7, CloseReason:2, IP:127.0.0.1, LeftFreeCount: 10
+2023-09-24 02:24:15	Allocate Connectionidx:8, IP:127.0.0.1, LeftFreeCount:9
+2023-09-24 03:56:33	Callback Connectionidx:8, CloseReason:2, IP:127.0.0.1, LeftFreeCount: 10
+2023-09-24 03:56:38	heaven log close....

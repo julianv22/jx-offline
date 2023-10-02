@@ -1,0 +1,3 @@
+TongCount=1, MemberCount=16, UnionCount=0
+TongName	MasterName	TongLevel	TongExp	SelfCamp	AllMemberCount	DirectorCount	ManagerCount	MemberCount	BuildLevel	MoneyFund	BuildFund	WarBuildFund	MaintainFund	StoredOffer	StoredBuildFund	UnionNum	UnionName	IsUnionLeader	UnionCamp
+Test	cAIbANG	12	150360	1	16	0	0	15	0	86160968	6010	0	0	0	0	0		0	0

@@ -1,0 +1,91 @@
+[Begin]Account(pgaming1), Role(KingOfTheWorld)
+Money(10649401): Value(149)
+[Begin]Item Evaluate
+[End]Item Evaluate
+[Error]Account(pgaming1), Role(KingOfTheWorld): Role(KingOfTheWorld): Can't Evaluate Item(iquality=0,iGenre=0,idetailtype=10,iparticulartype=13,iseries=0,ilevel=10,irandseed=1299123048,ilucky=0,iequipversion=4,pnParam=(0,0,0,0,0,0),pnExParam=(0,0)
+[Begin]Account(pgaming1), Role(Oliver)
+Money(44336278): Value(620)
+[Begin]Item Evaluate
+[End]Item Evaluate
+[Error]Account(pgaming1), Role(Oliver): Role(Oliver): Can't Evaluate Item(iquality=4,iGenre=0,idetailtype=10,iparticulartype=1,iseries=0,ilevel=10,irandseed=-1129856265,ilucky=0,iequipversion=4,pnParam=(0,0,0,0,0,0),pnExParam=(1,0)
+[Begin]Account(tramy), Role(meomeo)
+Money(35928743): Value(503)
+[Begin]Item Evaluate
+[End]Item Evaluate
+[Error]Account(tramy), Role(meomeo): Role(meomeo): Can't Evaluate Item(iquality=0,iGenre=0,idetailtype=10,iparticulartype=7,iseries=0,ilevel=10,irandseed=1648803722,ilucky=0,iequipversion=4,pnParam=(0,0,0,0,0,0),pnExParam=(0,0)
+[Begin]Account(pgaming1), Role(DrMagic)
+Money(10218325): Value(143)
+[Begin]Item Evaluate
+[End]Item Evaluate
+[Error]Account(pgaming1), Role(DrMagic): Role(DrMagic): Can't Evaluate Item(iquality=0,iGenre=0,idetailtype=3,iparticulartype=0,iseries=2,ilevel=4,irandseed=1376739691,ilucky=200,iequipversion=4,pnParam=(10,10,10,10,10,10),pnExParam=(0,0)
+[Begin]Account(thinh1), Role(United)
+Money(149994): Value(2)
+[Begin]Item Evaluate
+[End]Item Evaluate
+[End]Account(thinh1), Role(United): ValueG(2), ValueS(0)
+[Begin]Account(thinh1), Role(TrungSinh)
+Money(0): Value(0)
+[Begin]Item Evaluate
+[End]Item Evaluate
+[Error]Account(thinh1), Role(TrungSinh): Role(TrungSinh): Can't Evaluate Item(iquality=0,iGenre=0,idetailtype=10,iparticulartype=13,iseries=0,ilevel=10,irandseed=112764571,ilucky=0,iequipversion=4,pnParam=(0,0,0,0,0,0),pnExParam=(0,0)
+[Begin]Account(thinh1), Role(FireStorm)
+Money(15802345): Value(221)
+[Begin]Item Evaluate
+[End]Item Evaluate
+[Error]Account(thinh1), Role(FireStorm): Role(FireStorm): Can't Evaluate Item(iquality=0,iGenre=0,idetailtype=0,iparticulartype=0,iseries=0,ilevel=10,irandseed=1997022827,ilucky=0,iequipversion=4,pnParam=(0,0,0,0,0,0),pnExParam=(0,0)
+[Begin]Account(thinh2), Role(Tr≠¨ngV´Kﬁ)
+Money(249400): Value(3)
+[Begin]Item Evaluate
+[End]Item Evaluate
+[Error]Account(thinh2), Role(Tr≠¨ngV´Kﬁ): Role(Tr≠¨ngV´Kﬁ): Can't Evaluate Item(iquality=0,iGenre=0,idetailtype=0,iparticulartype=0,iseries=0,ilevel=1,irandseed=4,ilucky=0,iequipversion=2,pnParam=(0,0,0,0,0,0),pnExParam=(0,0)
+[Begin]Account(huyvnn), Role(MinhGiao)
+Money(0): Value(0)
+[Begin]Item Evaluate
+[End]Item Evaluate
+[Error]Account(huyvnn), Role(MinhGiao): Role(MinhGiao): Can't Evaluate Item(iquality=1,iGenre=0,idetailtype=512,iparticulartype=1,iseries=0,ilevel=10,irandseed=1859420823,ilucky=0,iequipversion=4,pnParam=(0,0,0,0,0,0),pnExParam=(0,0)
+[Begin]Account(eurofun), Role(HÈiQu∏nV‚L©m)
+Money(4080): Value(0)
+[Begin]Item Evaluate
+[End]Item Evaluate
+[End]Account(eurofun), Role(HÈiQu∏nV‚L©m): ValueG(0), ValueS(0)
+[Begin]Account(test01), Role(V‚L©mQu∏n)
+Money(28): Value(0)
+[Begin]Item Evaluate
+[End]Item Evaluate
+[Error]Account(test01), Role(V‚L©mQu∏n): Role(V‚L©mQu∏n): Can't Evaluate Item(iquality=1,iGenre=0,idetailtype=158,iparticulartype=3,iseries=0,ilevel=8,irandseed=1840782103,ilucky=0,iequipversion=4,pnParam=(0,0,0,0,0,0),pnExParam=(0,0)
+[Begin]Account(minhthanh920), Role(Si™uNh©n)
+Money(251249): Value(3)
+[Begin]Item Evaluate
+[Enchasable]Item: (0,2,10,110,4,10),º”…À∫¶«øªØ=(5,0),º”…À∫¶«øªØ=(20,0),º”…À∫¶«øªØ=(23,0),º”…À∫¶«øªØ=(40,0),º”…À∫¶«øªØ=(43,0),º”…À∫¶«øªØ=(56,0), unbind = 0, bind = 0
+[Enchasable]Item: (0,2,10,111,4,10),º”…À∫¶«øªØ=(8,0),º”…À∫¶«øªØ=(17,0),º”…À∫¶«øªØ=(26,0),º”…À∫¶«øªØ=(37,0),º”…À∫¶«øªØ=(46,0),º”…À∫¶«øªØ=(51,0), unbind = 0, bind = 0
+[Enchasable]Item: (0,2,10,121,4,10),º”…À∫¶«øªØ=(6,0),º”…À∫¶«øªØ=(19,0),º”…À∫¶«øªØ=(22,0),º”…À∫¶«øªØ=(37,0),º”…À∫¶«øªØ=(44,0),º”…À∫¶«øªØ=(53,0), unbind = 0, bind = 0
+[Enchasable]Item: (0,2,10,122,4,10),º”…À∫¶«øªØ=(9,0),º”…À∫¶«øªØ=(18,0),º”…À∫¶«øªØ=(29,0),º”…À∫¶«øªØ=(34,0),º”…À∫¶«øªØ=(45,0),º”…À∫¶«øªØ=(60,0), unbind = 0, bind = 0
+[Enchasable]Item: (0,2,10,124,4,5),º”…À∫¶«øªØ=(9,0),º”…À∫¶«øªØ=(16,0),º”…À∫¶«øªØ=(21,0),º”…À∫¶«øªØ=(34,0),º”…À∫¶«øªØ=(45,0),º”…À∫¶«øªØ=(54,0), unbind = 0, bind = 0
+[Enchasable]Item: (0,2,10,123,4,5),º”…À∫¶«øªØ=(8,0),º”…À∫¶«øªØ=(17,0),º”…À∫¶«øªØ=(30,0),º”…À∫¶«øªØ=(35,0),º”…À∫¶«øªØ=(50,0),º”…À∫¶«øªØ=(59,0), unbind = 0, bind = 0
+[End]Item Evaluate
+[Error]Account(minhthanh920), Role(Si™uNh©n): Role(Si™uNh©n): Can't Evaluate Item(iquality=0,iGenre=0,idetailtype=0,iparticulartype=4,iseries=0,ilevel=1,irandseed=4,ilucky=0,iequipversion=2,pnParam=(0,0,0,0,0,0),pnExParam=(0,0)
+[Begin]Account(minhthanh920), Role(adssssasaa)
+Money(3001241): Value(42)
+[Begin]Item Evaluate
+[End]Item Evaluate
+[Error]Account(minhthanh920), Role(adssssasaa): Role(adssssasaa): Can't Evaluate Item(iquality=0,iGenre=0,idetailtype=1,iparticulartype=2,iseries=2,ilevel=10,irandseed=-617395997,ilucky=200,iequipversion=4,pnParam=(10,10,10,10,10,10),pnExParam=(0,0)
+[Begin]Account(minhthanh920), Role(adasdasdqwe)
+Money(537): Value(0)
+[Begin]Item Evaluate
+[End]Item Evaluate
+[Error]Account(minhthanh920), Role(adasdasdqwe): Role(adasdasdqwe): Can't Evaluate Item(iquality=0,iGenre=0,idetailtype=0,iparticulartype=3,iseries=0,ilevel=1,irandseed=4,ilucky=0,iequipversion=2,pnParam=(0,0,0,0,0,0),pnExParam=(0,0)
+[Begin]Account(minhthanh921), Role(·dqeqe)
+Money(175): Value(0)
+[Begin]Item Evaluate
+[End]Item Evaluate
+[Error]Account(minhthanh921), Role(·dqeqe): Role(·dqeqe): Can't Evaluate Item(iquality=0,iGenre=0,idetailtype=10,iparticulartype=5,iseries=0,ilevel=5,irandseed=-1215178625,ilucky=0,iequipversion=4,pnParam=(0,0,0,0,0,0),pnExParam=(0,0)
+[Begin]Account(minhthanh921), Role(Adminnnnn)
+Money(625512): Value(8)
+[Begin]Item Evaluate
+[End]Item Evaluate
+[End]Account(minhthanh921), Role(Adminnnnn): ValueG(8), ValueS(0)
+[Begin]Account(minhthanh921), Role(∏daqweqwe)
+Money(0): Value(0)
+[Begin]Item Evaluate
+[End]Item Evaluate
+[Error]Account(minhthanh921), Role(∏daqweqwe): Role(∏daqweqwe): Can't Evaluate Item(iquality=0,iGenre=0,idetailtype=0,iparticulartype=0,iseries=0,ilevel=1,irandseed=4,ilucky=0,iequipversion=2,pnParam=(0,0,0,0,0,0),pnExParam=(0,0)

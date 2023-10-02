@@ -6,13 +6,15 @@
 !.gitignore
 !*.md
 !.VnSourceCodePro-Regular.ttf
-!client/game_y.7z
 !install.ps1
 !client/package.ini
 !settings-font.json
-!client
+#
 !server
 !server/**
+#
+!client
+!client/game_y.7z
 # ------------------------------------------------
 !client/itemexchange_setting/
 !client/itemexchange_setting/**
@@ -79,5 +81,5 @@ client/data/*
 !client/settings/item/
 !client/settings/item/**
 # -------------------docs-------------------
-!client/docs/
-!client/docs/**
+!docs/
+!docs/**

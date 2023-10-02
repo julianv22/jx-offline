@@ -553,7 +553,7 @@ tbFacDef.tbWholeInfoList = {
     },
 
     [tbFacDef.tbIds.KUNLUN] = { -- À¥ÂØ
-     
+        szFacName = "kunlun",
         szFacChName = "C«n L«n ph¸i",
         szFacShortName = "C«n L«n",
         szFacShortEng = "kl",
@@ -610,7 +610,7 @@ tbFacDef.tbWholeInfoList = {
         }
     },
     [tbFacDef.tbIds.HUASHAN] = { -- »ªÉ½
-        
+        szFacName = "huashan",
         szFacChName = "Hoa S¬n ph¸i",
         szFacShortName = "Hoa S¬n",
         szFacShortEng = "hs",
@@ -665,7 +665,7 @@ tbFacDef.tbWholeInfoList = {
         }
     },
     [tbFacDef.tbIds.WUHUN] = { -- Îä»ê
-      
+        szFacName = "wuhun",
         szFacChName = "Vò Hån",
         szFacShortName = "Vò Hån",
         szFacShortEng = "wh",
@@ -721,7 +721,7 @@ tbFacDef.tbWholeInfoList = {
     },
     [tbFacDef.tbIds.XIAOYAO] = { -- åÐÒ£ÅÉ
         bFactionIsOpen = nil,
-        
+        szFacName = "xiaoyao",
         szFacChName = "Ph¸i Tiªu Dao",
         szFacShortName = "Tiªu Dao",
         szFacShortEng = "xy",

@@ -1,0 +1,54 @@
+EqName	SwordShieldWFreeStand	ShieldSwordWFreeStand	FreeStand1	FreeStand2	FreeStand3	MeleeWStand	RangeWStand	DoubleWStand	SwordShieldWStand	ShieldSwordWStand	GuqinWStand1	GuqinWStand2	FreeWalk	NormalWalk	MeleeWWalk	RangeWWalk	DoubleWWalk	SwordShieldWWalk	ShieldSwordWWalk	GuqinWWalk	FreeRun	NormalRun	MeleeWRun	RangeWRun	DoubleWRun	SwordShieldWRun	ShieldSwordWRun	GuqinWRun	FreeWound	MeleeWWound	RangeWWound	DoubleWWound	SwordShieldWWound	ShieldSwordWWound	GuqinWWound	FreeDie	MeleeWDie	RangeWDie	DoubleWDie	SwordShieldWDie	ShieldSwordWDie	GuqinWDie	FreeAttack	MeleeWPuncture	MeleeWCut	RangeWPuncture	RangeWCut	DoubleWPull	DoubleWPound	SwordShieldWChop	SwordShieldWCut	ShieldSwordWChop	ShieldSwordWCut	GuqinWPuncture	GuqinWCut	DartThrow	FreeMagic	MeleeWMagic	RangeWMagic	DoubleWMagic	SwordShieldWMagic	ShieldSwordWMagic	GuqinWMagic	SitDown	JumpFly	RideStand	RideWalk	RideRun	RideCut	RidePuncture	RideMagic	RideWound	RideDie	RideStand1	RideStand2
+马匹1																																																																											
+马匹2																																																																											
+马匹3																																																																											
+马匹4																																																																											
+马匹5																																																																											
+马匹6																																																																											
+马匹7																																																																											
+马匹8																																																																											
+马匹9																																																																											
+马匹10																																																																											
+马匹11																																																																											
+马匹12																																																																											
+马匹13																																																																											
+马匹14																																																																											
+马匹15																																																																											
+马匹16																																																																											
+马匹17																																																																											
+马匹18																																																																											
+马匹19																																																																											
+马匹20																																																																											
+马匹21																																																																											
+马匹22																																																																											
+马匹23																																																																		horse_effect_a.spr	horse_effect_a.spr	horse_effect_a.spr	horse_effect_a.spr	horse_effect_a.spr	horse_effect_a.spr	horse_effect_a.spr	horse_effect_a.spr	horse_effect_a.spr	horse_effect_a.spr
+马匹24																																																																											
+马匹25																																																																											
+马匹26																																																																											
+马匹27																																																																											
+马匹28																																																																											
+马匹29																																																																											
+马匹30																																																																											
+马匹31																																																																											
+马匹32																																																																											
+马匹33																																																																											
+马匹34																																																																											
+马匹35																																																																											
+马匹36																																																																											
+马匹37																																																																											
+马匹38																																																																											
+马匹39																																																																											
+马匹40																																																																											
+马匹41																																																																											
+马匹42																																																																											
+马匹43																																																																											
+马匹44																																																																											
+马匹45																																																																											
+马匹46																																																																											
+马匹47																																																																											
+马匹48																																																																											
+马匹49																																																																		MA_HTF_091_RD01.spr	MA_HTF_091_HW01.spr	MA_HTF_091_HR01.spr	MA_HTF_091_HA01.spr	MA_HTF_091_HA02.spr	MA_HTF_091_HM01.spr	MA_HTF_091_HI01.spr	MA_HTF_091_HD01.spr	MA_HTF_091_RD01.spr	MA_HTF_091_RD01.spr
+马匹50																																																																		MA_HTF_064_RD01.spr	MA_HTF_064_HW01.spr	MA_HTF_064_HR01.spr	MA_HTF_064_HA01.spr	MA_HTF_064_HA02.spr	MA_HTF_064_HM01.spr	MA_HTF_064_HI01.spr	MA_HTF_064_HD01.spr	MA_HTF_064_RD01.spr	MA_HTF_064_RD01.spr
+马匹51																																																																											
+马匹52																																																																											
+马匹53																																																																		MA_HTF_114_RD01.spr	MA_HTF_114_HW01.spr	MA_HTF_114_HR01.spr	MA_HTF_114_HA01.spr	MA_HTF_114_HA02.spr	MA_HTF_114_HM01.spr	MA_HTF_114_HI01.spr	MA_HTF_114_HD01.spr	MA_HTF_114_RD01.spr	MA_HTF_114_RD01.spr

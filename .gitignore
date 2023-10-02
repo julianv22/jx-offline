@@ -16,6 +16,8 @@ client/*
 # -------------------maps-------------------
 !client/maps
 client/maps/*
+!client/maps/scrollsetting
+client/maps/scrollsetting/*
 !client/maps/scrollsetting/2_scroll.ini
 !client/maps/scrollsetting/340_scroll.ini
 # ------------------------------------------------

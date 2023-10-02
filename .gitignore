@@ -6,75 +6,75 @@
 !.gitignore
 !*.md
 !.VnSourceCodePro-Regular.ttf
-!game_y.7z
+!client/game_y.7z
 !install.ps1
-!package.ini
+!client/package.ini
 !settings-font.json
 # ------------------------------------------------
-!itemexchange_setting/
-!itemexchange_setting/**
-!rolevalueladder_setting/
-!rolevalueladder_setting/**
+!client/itemexchange_setting/
+!client/itemexchange_setting/**
+!client/rolevalueladder_setting/
+!client/rolevalueladder_setting/**
 # -------------------script-------------------
-!script/
-script/*
-!script/faction_def.lua
+!client/script/
+client/script/*
+!client/script/faction_def.lua
 # -------------------script/global-------------------
-!script/global/
-script/global/*
-!script/global/autoexec.lua
+!client/script/global/
+client/script/global/*
+!client/script/global/autoexec.lua
 # ------------------------------------------------
-!script/global/gm/
-script/global/gm/*
-!script/global/gm/julianv/
-!script/global/gm/julianv/**
+!client/script/global/gm/
+client/script/global/gm/*
+!client/script/global/gm/julianv/
+!client/script/global/gm/julianv/**
 # ------------------------------------------------
-!script/global/npc/
-script/global/npc/*
-!script/global/npc/add_boss_bailuyencong.lua
+!client/script/global/npc/
+client/script/global/npc/*
+!client/script/global/npc/add_boss_bailuyencong.lua
 # ------------------------------------------------
-!script/global/thanh/
-script/global/thanh/*
-!script/global/thanh/npc/
-script/global/thanh/npc/*
-!script/global/thanh/npc/npc_hotro.lua
+!client/script/global/thanh/
+client/script/global/thanh/*
+!client/script/global/thanh/npc/
+client/script/global/thanh/npc/*
+!client/script/global/thanh/npc/npc_hotro.lua
 # -------------------script/skill-------------------
-!script/skill/
-!script/skill/*
+!client/script/skill/
+!client/script/skill/*
 # -------------------script/item-------------------
-!script/item/
-script/item/*
-!script/item/lessmoneygift.lua
-!script/item/moremoneygift.lua
+!client/script/item/
+client/script/item/*
+!client/script/item/lessmoneygift.lua
+!client/script/item/moremoneygift.lua
 # -------------------script/task-------------------
-!script/task/
-script/task/*
-!script/task/system/
-script/task/system/*
-!script/task/system/task_string.lua
+!client/script/task/
+client/script/task/*
+!client/script/task/system/
+client/script/task/system/*
+!client/script/task/system/task_string.lua
 # -------------------ui------------------- 
-!ui/
-ui/*
-!ui/ui3/
-ui/ui3/*
-!ui/ui3/icon_bar.ini
+!client/ui/
+client/ui/*
+!client/ui/ui3/
+client/ui/ui3/*
+!client/ui/ui3/icon_bar.ini
 # -------------------UserData-------------------
-!UserData/
-UserData/*
-!UserData/uiconfig.ini
+!client/UserData/
+client/UserData/*
+!client/UserData/uiconfig.ini
 # -------------------spr-------------------
-!spr/
-spr/*
-!spr/julianv.spr
+!client/spr/
+client/spr/*
+!client/spr/julianv.spr
 # -------------------data-------------------
-!data/
-data/*
-!data/1024x768.pak
+!client/data/
+client/data/*
+!client/data/1024x768.pak
 # -------------------settings-------------------
-!settings/
-!settings/*
-!settings/item/
-!settings/item/**
+!client/settings/
+!client/settings/*
+!client/settings/item/
+!client/settings/item/**
 # -------------------docs-------------------
-!docs/
-!docs/**
+!client/docs/
+!client/docs/**

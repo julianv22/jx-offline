@@ -7,7 +7,6 @@
 !*.md
 !.VnSourceCodePro-Regular.ttf
 !install.ps1
-!client/package.ini
 !settings-font.json
 #
 !server
@@ -15,6 +14,7 @@
 #
 !client
 !client/game_y.7z
+!client/package.ini
 # ------------------------------------------------
 !client/itemexchange_setting/
 !client/itemexchange_setting/**

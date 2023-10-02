@@ -86,9 +86,9 @@ tbDanhHieu = {
     },
 }
 ---@param nId? integer @Index danh hieu
-function tbDanhHieu.Active( nId )
+function tbDanhHieu.Active( nTitleId )
     -- Msg2Player(nId)
-    Title_AddTitle(nId, 1, 4302359);
-    Title_ActiveTitle(nId);
-    SetTask(1122, nId);
+    Title_AddTitle(nTitleId, 1, 4302359);
+    Title_ActiveTitle(nTitleId);
+    SetTask(1122, nTitleId);
 end

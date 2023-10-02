@@ -254,6 +254,8 @@ function JulianV:NhanDanhHieu()
     local tbOpt = {
         { "Danh hi÷u V‚ l©m", JulianV.DanhHieuVoLam }, --
         { "Danh hi÷u Ki’m Th’", JulianV.DanhHieuKiemThe }, --
+        { "K›ch hoπt Danh hi÷u (Title ID)", JulianV.ActiveTitle, { 1 } }, --
+        { "Hu˚ k›ch hoπt Danh hi÷u", JulianV.ActiveTitle },
     }
     JDialog:Show(tbOpt, JulianV.Player_Dialog)
 end
@@ -300,4 +302,16 @@ function JulianV.DanhHieuVoLam( nPage )
         end
     end
     JDialog:Show(tbOpt, nil, "MÍi <sex>ch‰n danh hi÷u<pic=46><color>")
+end
+
+function JulianV.ActiveTitle( nType, nTitleId )
+    if nType == 1 then
+        if not nTitleId or nTitleId == 0 then
+            g_AskClientNumberEx(0, 500, "Title ID", { JulianV.ActiveTitle, { nType } })
+        else
+            tbDanhHieu.Active(nTitleId)
+        end
+    else
+        Title_RemoveTitle(GetTask(1122))
+    end
 end

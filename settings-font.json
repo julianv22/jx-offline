@@ -1,11 +1,11 @@
-{
+#{
     "editor.fontSize": 14,
     "symbolMasks.masks": [
         {
             "language": [ "lua", "plaintext", "ini", "log", "c", "csharp", "cpp", "json"],
             "patterns": [
             {
-            "pattern": "­",
+            "pattern": "Â­",
             "replace": "?",
             }
             ]

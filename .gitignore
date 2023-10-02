@@ -5,15 +5,15 @@
 !.github/**
 !.gitignore
 !*.*
-#
+# -------------------server-------------------
 !server
 !server/**
-#
+# -------------------client-------------------
 !client
 client/*
 !client/game_y.7z
 !client/package.ini
-#
+# -------------------maps-------------------
 !client/maps
 client/maps/*
 !client/maps/scrollsetting/2_scroll.ini

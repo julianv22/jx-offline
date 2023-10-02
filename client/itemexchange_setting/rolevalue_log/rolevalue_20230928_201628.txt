@@ -1,0 +1,48 @@
+[Enchasable]Item: (0,2,8,0,3,10),¼ÓÉúÃü×î´óÖµÉÏÏŞ=(198,39900),ÎïÃâ°Ù·Ö±È=(25,19950),¼ÓÄÚÁ¦ÉÏÏŞ=(162,11970),½µµÍ±ù¶³Ê±¼ä=(40,15960),¼ÓÉúÃü»Ö¸´ËÙ¶È=(6,15960),¼ÓÃô½İ=(19,10640), unbind = 0, bind = 114380
+[Enchasable]Item: (0,2,5,3,1,10),¼ÓÉúÃü×î´óÖµÉÏÏŞ=(197,19950),¼Ó¿¹µçĞÔ=(30,13300),¼ÓÄÚÁ¦ÉÏÏŞ=(177,7980),ÎïÀíÉËº¦ÎüÊÕ£¨×ª»¯ÎªÄÚÁ¦Ìá¸ß£©=(10,1995),¼Ó¿ì×ßÂ·/ÅÜ²½ËÙ¶È=(40,19950),ÓÀ²»Ä¥Ëğ=(1,0), unbind = 0, bind = 63175
+[Enchasable]Item: (0,2,6,0,4,10),¼ÓÉúÃü×î´óÖµÉÏÏŞ=(194,39900),¼Ó¿¹±ùĞÔ=(25,10640),¼ÓÄÚÁ¦ÉÏÏŞ=(160,5985),½µµÍÖĞ¶¾Ê±¼ä=(40,10640),¼ÓÉúÃü»Ö¸´ËÙ¶È=(6,11970),ÎïÀíÉËº¦ÎüÊÕ£¨×ª»¯ÎªÄÚÁ¦Ìá¸ß£©=(10,3990), unbind = 0, bind = 83125
+[Enchasable]Item: (0,2,7,8,2,10),¼ÓÉúÃü×î´óÖµÉÏÏŞ=(198,19950),¼Ó¿¹»ğĞÔ=(25,10640),¼ÓÄÚÁ¦ÉÏÏŞ=(164,7980),ÃâÒßÑ£ÔÎ×´Ì¬=(40,10640),¼ÓÉúÃü»Ö¸´ËÙ¶È=(6,13300),¼ÓÌåÖÊ=(19,6650), unbind = 0, bind = 69160
+[Enchasable]Item: (0,2,2,9,0,10),¿ìËÙ´ò»÷»Ø¸´=(40,8512),¼Ó¿¹¶¾ĞÔ=(25,10640),¼ÓÉúÃü×î´óÖµÉÏÏŞ=(190,19950),ÎïÀíÉËº¦ÎüÊÕ£¨×ª»¯ÎªÄÚÁ¦Ìá¸ß£©=(10,1330),¼ÓÄÚÁ¦ÉÏÏŞ=(171,7980),ÓÀ²»Ä¥Ëğ=(1,0), unbind = 0, bind = 48412
+[Enchasable]Item: (0,2,0,3,2,10),¼Ó±ùÉËº¦=(100,19950),ÍµÑª=(10,31920),¼ÓÉËº¦Ç¿»¯=(94,19950),¼ÓÎïÀíÉËº¦=(49,0),¼Ó¼¼ÄÜ=(2,0),ºöÂÔ¶ÔÊÖ·ÀÓù=(1,3990), unbind = 0, bind = 75810
+[Normal]Item: Lang Nha Bæng(0,0,0,2,1,7), unbind = 0, bind = 0
+[Normal]Item: Lang Nha Bæng(0,0,0,2,1,7), unbind = 0, bind = 0
+[Normal]Item: Lang Nha Bæng(0,0,0,2,1,7), unbind = 0, bind = 0
+[Normal]Item: Lang Nha Bæng(0,0,0,2,1,7), unbind = 0, bind = 0
+[Normal]Item: Nh¹n Linh Th­¬ng(0,0,0,3,2,7), unbind = 0, bind = 0
+[Normal]Item: Nh¹n Linh Th­¬ng(0,0,0,3,2,7), unbind = 0, bind = 0
+[Normal]Item: Nh¹n Linh Th­¬ng(0,0,0,3,2,7), unbind = 0, bind = 0
+[Normal]Item: H¶i Lam B¶o Th¹ch Giíi ChØ(0,0,3,0,2,7), unbind = 0, bind = 0
+[Normal]Item: Nh¹n Linh Th­¬ng(0,0,0,3,2,7), unbind = 0, bind = 0
+[Normal]Item: Nh¹n Linh Th­¬ng(0,0,0,3,2,7), unbind = 0, bind = 0
+[Normal]Item: §¹i Phong §ao(0,0,0,1,2,10), unbind = 0, bind = 0
+[Normal]Item: Cæn Ch©u B¶o ®ao(0,0,0,1,2,7), unbind = 0, bind = 0
+[Normal]Item: Nh¹n Linh Th­¬ng(0,0,0,3,4,7), unbind = 0, bind = 0
+[Normal]Item: Nh¹n Linh Th­¬ng(0,0,0,3,4,7), unbind = 0, bind = 0
+[Normal]Item: Nh¹n Linh Th­¬ng(0,0,0,3,4,7), unbind = 0, bind = 0
+[Normal]Item: Nh¹n Linh Th­¬ng(0,0,0,3,4,7), unbind = 0, bind = 0
+[Normal]Item: Ph¸ Gi¸p Nç (0,0,1,2,1,7), unbind = 0, bind = 0
+[Normal]Item: H¶i Lam B¶o Th¹ch Giíi ChØ(0,0,3,0,1,7), unbind = 0, bind = 0
+[Normal]Item: Ph¸ Gi¸p Nç (0,0,1,2,1,7), unbind = 0, bind = 0
+[Normal]Item: Ph¸ Gi¸p Nç (0,0,1,2,1,7), unbind = 0, bind = 0
+[Normal]Item: Quang C¸n §ao(0,0,1,1,1,7), unbind = 0, bind = 0
+[Normal]Item: Cæn Ch©u B¶o ®ao(0,0,0,1,0,7), unbind = 0, bind = 0
+[Normal]Item: H¶i Lam B¶o Th¹ch Giíi ChØ(0,0,3,0,0,7), unbind = 0, bind = 0
+[Normal]Item: Cæn Ch©u B¶o ®ao(0,0,0,1,0,7), unbind = 0, bind = 0
+[Normal]Item: Cæn Ch©u B¶o ®ao(0,0,0,1,0,7), unbind = 0, bind = 0
+[Normal]Item: H¶i Lam B¶o Th¹ch Giíi ChØ(0,0,3,0,0,7), unbind = 0, bind = 0
+[Normal]Item: Cæn Ch©u B¶o ®ao(0,0,0,1,0,7), unbind = 0, bind = 0
+[Normal]Item: Cæn Ch©u B¶o ®ao(0,0,0,1,0,7), unbind = 0, bind = 0
+[Normal]Item: HuyÒn ThiÕt KiÕm(0,0,0,0,4,10), unbind = 0, bind = 0
+[Normal]Item: H¶i Lam B¶o Th¹ch Giíi ChØ(0,0,3,0,4,7), unbind = 0, bind = 0
+[Normal]Item: To¸i NguyÖt §ao(0,0,1,1,4,10), unbind = 0, bind = 0
+[Normal]Item: To¸i NguyÖt §ao(0,0,1,1,4,10), unbind = 0, bind = 0
+[Normal]Item: Khæng T­íc Linh(0,0,1,2,4,10), unbind = 0, bind = 0
+[Normal]Item: To¸i NguyÖt §ao(0,0,1,1,4,10), unbind = 0, bind = 0
+[Normal]Item: B¸ V­¬ngTiªu(0,0,1,0,4,10), unbind = 0, bind = 0
+[Normal]Item: Khæng T­íc Linh(0,0,1,2,4,10), unbind = 0, bind = 0
+[Normal]Item: To¸i NguyÖt §ao(0,0,1,1,4,10), unbind = 0, bind = 0
+[Normal]Item: Khæng T­íc Linh(0,0,1,2,4,10), unbind = 0, bind = 0
+[Normal]Item: Khæng T­íc Linh(0,0,1,2,4,10), unbind = 0, bind = 0
+[Normal]Item: To¸i NguyÖt §ao(0,0,1,1,4,10), unbind = 0, bind = 0
+[Normal]Item: B¸ V­¬ngTiªu(0,0,1,0,4,10), unbind = 0, bind = 0
+[Enchasable]Item: (0,2,0,3,2,10),¼Ó±ùÉËº¦=(100,19950),ÍµÑª=(10,31920),¼ÓÉËº¦Ç¿»¯=(94,19950),¼ÓÎïÀíÉËº¦=(49,0),¼Ó¼¼Ä

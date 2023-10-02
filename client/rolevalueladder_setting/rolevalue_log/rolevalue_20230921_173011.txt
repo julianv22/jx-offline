@@ -1,0 +1,45 @@
+[Normal]Item: Anh Hµo Liªn Hoa H¹ng Liªn(0,1,8636,1,0,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa §Çu Hoµn(0,1,8637,5,2,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa Th­îng Giíi(0,1,8638,0,1,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa Hé UyÓn(0,1,8639,1,3,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa Thóc Yªu(0,1,8640,0,4,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa C¸i Y(0,1,8641,5,0,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa Ngoa(0,1,8643,0,1,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa Yªu Trôy(0,1,8644,1,3,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa H¹ Giíi(0,1,8645,0,4,10), unbind = 0, bind = 60000
+[Enchasable]Item: (0,2,0,2,2,10),¼Ó±ùÉËº¦=(100,0),¼ÓÎïÀíÉËº¦=(46,0),¼Ó¹¥»÷ËÙ¶È=(30,0),¼ÓÉËº¦Ç¿»¯=(99,0),¼ÓºÚ°µ´¦ÊÓÒ°·¶Î§=(6,0),¼Ó¼¼ÄÜ=(2,0), unbind = 0, bind = 0
+[Enchasable]Item: (0,2,2,3,2,7),¼ÓÄÚÁ¦ÉÏÏŞ=(189,0),ÃâÒßÑ£ÔÎ×´Ì¬=(40,0),¼Ó¿¹»ğĞÔ=(25,0),ÎïÀíÉËº¦ÎüÊÕ£¨×ª»¯ÎªÄÚÁ¦Ìá¸ß£©=(10,0),¼ÓÔËÆø=(10,0),¼ÓÌåÖÊ=(19,0), unbind = 0, bind = 0
+[Enchasable]Item: (0,2,0,2,2,10),¼Ó±ùÉËº¦=(100,0),¼ÓÎïÀíÉËº¦=(46,0),¼Ó¹¥»÷ËÙ¶È=(30,0),¼ÓÉËº¦Ç¿»¯=(99,0),¼ÓºÚ°µ´¦ÊÓÒ°·¶Î§=(6,0),¼Ó¼¼ÄÜ=(2,0), unbind = 0, bind = 0
+[Normal]Item: Anh Hµo Liªn Hoa H¹ Giíi(0,1,8645,0,4,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa Yªu Trôy(0,1,8644,1,3,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa Ngoa(0,1,8643,0,1,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa C¸i Y(0,1,8641,5,0,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa Thóc Yªu(0,1,8640,0,4,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa Hé UyÓn(0,1,8639,1,3,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa Th­îng Giíi(0,1,8638,0,1,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa §Çu Hoµn(0,1,8637,5,2,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa H¹ng Liªn(0,1,8636,1,0,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa H¹ng Liªn(0,1,8636,1,0,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa §Çu Hoµn(0,1,8637,5,2,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa Th­îng Giíi(0,1,8638,0,1,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa Hé UyÓn(0,1,8639,1,3,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa Thóc Yªu(0,1,8640,0,4,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa C¸i Y(0,1,8641,5,0,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa Ngoa(0,1,8643,0,1,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa Yªu Trôy(0,1,8644,1,3,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa H¹ Giíi(0,1,8645,0,4,10), unbind = 0, bind = 60000
+[Enchasable]Item: (0,2,0,2,2,10),¼Ó±ùÉËº¦=(100,0),¼ÓÎïÀíÉËº¦=(46,0),¼Ó¹¥»÷ËÙ¶È=(30,0),¼ÓÉËº¦Ç¿»¯=(99,0),¼ÓºÚ°µ´¦ÊÓÒ°·¶Î§=(6,0),¼Ó¼¼ÄÜ=(2,0), unbind = 0, bind = 0
+[Enchasable]Item: (0,2,0,2,2,10),¼Ó±ùÉËº¦=(100,0),¼ÓÎïÀíÉËº¦=(46,0),¼Ó¹¥»÷ËÙ¶È=(30,0),¼ÓÉËº¦Ç¿»¯=(99,0),¼ÓºÚ°µ´¦ÊÓÒ°·¶Î§=(6,0),¼Ó¼¼ÄÜ=(2,0), unbind = 0, bind = 0
+[Normal]Item: Anh Hµo Liªn Hoa H¹ Giíi(0,1,8645,0,4,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa Yªu Trôy(0,1,8644,1,3,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa Ngoa(0,1,8643,0,1,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa C¸i Y(0,1,8641,5,0,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa Thóc Yªu(0,1,8640,0,4,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa Hé UyÓn(0,1,8639,1,3,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa Th­îng Giíi(0,1,8638,0,1,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa §Çu Hoµn(0,1,8637,5,2,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa H¹ng Liªn(0,1,8636,1,0,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa H¹ng Liªn(0,1,8636,1,0,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa §Çu Hoµn(0,1,8637,5,2,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Liªn Hoa Th­îng Giíi(0,1,8638,0,1,10), unbind = 0, bind = 60000
+[Normal]

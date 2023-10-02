@@ -1,0 +1,139 @@
+[Normal]Item: L¨ng V©n Tr¸ng Chİ §¸i(0,1,5206,0,4,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng V©n Tr¸ng Chİ Tô(0,1,5205,0,3,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng V©n Tr¸ng Chİ L÷(0,1,5204,0,1,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng V©n Tr¸ng Chİ Gi¸p(0,1,5203,0,0,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng V©n Tr¸ng Chİ Kh«i(0,1,5202,0,2,10), unbind = 0, bind = 50
+[Normal]Item: §éc C« CÇu B¹i Th­îng Giíi(0,1,4133,0,0,10), unbind = 0, bind = 50
+[Normal]Item: §éc C« CÇu B¹i H¹ Giíi(0,1,4134,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Huynh §Ö §ång T©m Chi Liªn(0,1,4435,1,0,10), unbind = 0, bind = 50
+[Normal]Item: Huynh §Ö Song Hµnh Ngäc Béi(0,1,4480,1,4,10), unbind = 0, bind = 50
+[Normal]Item: Th­¬ng Khung Thiªn Khëi Kh«i(0,1,5197,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Th­¬ng Khung Thiªn Khëi Gi¸p(0,1,5198,0,0,10), unbind = 0, bind = 50
+[Normal]Item: Th­¬ng Khung Thiªn Khëi L÷(0,1,5199,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Th­¬ng Khung Thiªn Khëi Tô(0,1,5200,0,3,10), unbind = 0, bind = 50
+[Normal]Item: Th­¬ng Khung Thiªn Khëi §¸i(0,1,5201,0,4,10), unbind = 0, bind = 50
+[Enchasable]Item: (0,2,1,1,2,10),¼Ó±ùÉËº¦=(100,16625),¼ÓÉËº¦Ç¿»¯=(97,10640),¼Ó¹¥»÷ËÙ¶È=(30,10640),¼ÓÎïÀíÉËº¦=(47,0),¼Ó¼¼ÄÜ=(2,0),ºöÂÔ¶ÔÊÖ·ÀÓù=(1,2128), unbind = 0, bind = 40033
+[Enchasable]Item: (0,2,1,1,2,10),¼Ó±ùÉËº¦=(100,16625),¼ÓÉËº¦Ç¿»¯=(97,10640),¼Ó¹¥»÷ËÙ¶È=(30,10640),¼ÓÎïÀíÉËº¦=(47,0),¼Ó¼¼ÄÜ=(2,0),ºöÂÔ¶ÔÊÖ·ÀÓù=(1,2128), unbind = 0, bind = 40033
+[Normal]Item: Th­¬ng Khung Thiªn Khëi Gi¸p(0,1,5198,0,0,10), unbind = 0, bind = 50
+[Normal]Item: Th­¬ng Khung Thiªn Khëi Kh«i(0,1,5197,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Huynh §Ö Song Hµnh Ngäc Béi(0,1,4480,1,4,10), unbind = 0, bind = 50
+[Normal]Item: Huynh §Ö §ång T©m Chi Liªn(0,1,4435,1,0,10), unbind = 0, bind = 50
+[Normal]Item: §éc C« CÇu B¹i H¹ Giíi(0,1,4134,0,1,10), unbind = 0, bind = 50
+[Normal]Item: §éc C« CÇu B¹i Th­îng Giíi(0,1,4133,0,0,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng V©n Tr¸ng Chİ L÷(0,1,5204,0,1,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng V©n Tr¸ng Chİ Tô(0,1,5205,0,3,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng V©n Tr¸ng Chİ §¸i(0,1,5206,0,4,10), unbind = 0, bind = 50
+[Normal]Item: Tø Kh«ng Gi¸ng Ma Giíi ®ao(0,1,10,1,0,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng V©n Tr¸ng Chİ §¸i(0,1,5206,0,4,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng V©n Tr¸ng Chİ Tô(0,1,5205,0,3,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng V©n Tr¸ng Chİ L÷(0,1,5204,0,1,10), unbind = 0, bind = 50
+[Normal]Item: §éc C« CÇu B¹i Th­îng Giíi(0,1,4133,0,0,10), unbind = 0, bind = 50
+[Normal]Item: §éc C« CÇu B¹i H¹ Giíi(0,1,4134,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Huynh §Ö §ång T©m Chi Liªn(0,1,4435,1,0,10), unbind = 0, bind = 50
+[Normal]Item: Huynh §Ö Song Hµnh Ngäc Béi(0,1,4480,1,4,10), unbind = 0, bind = 50
+[Normal]Item: Th­¬ng Khung Thiªn Khëi Kh«i(0,1,5197,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Th­¬ng Khung Thiªn Khëi Gi¸p(0,1,5198,0,0,10), unbind = 0, bind = 50
+[Enchasable]Item: (0,2,1,1,2,10),¼Ó±ùÉËº¦=(100,16625),¼ÓÉËº¦Ç¿»¯=(97,10640),¼Ó¹¥»÷ËÙ¶È=(30,10640),¼ÓÎïÀíÉËº¦=(47,0),¼Ó¼¼ÄÜ=(2,0),ºöÂÔ¶ÔÊÖ·ÀÓù=(1,2128), unbind = 0, bind = 40033
+[Enchasable]Item: (0,2,1,1,2,10),¼Ó±ùÉËº¦=(100,16625),¼ÓÉËº¦Ç¿»¯=(97,10640),¼Ó¹¥»÷ËÙ¶È=(30,10640),¼ÓÎïÀíÉËº¦=(47,0),¼Ó¼¼ÄÜ=(2,0),ºöÂÔ¶ÔÊÖ·ÀÓù=(1,2128), unbind = 0, bind = 40033
+[Normal]Item: Th­¬ng Khung Thiªn Khëi Gi¸p(0,1,5198,0,0,10), unbind = 0, bind = 50
+[Normal]Item: Th­¬ng Khung Thiªn Khëi Kh«i(0,1,5197,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Huynh §Ö Song Hµnh Ngäc Béi(0,1,4480,1,4,10), unbind = 0, bind = 50
+[Normal]Item: Huynh §Ö §ång T©m Chi Liªn(0,1,4435,1,0,10), unbind = 0, bind = 50
+[Normal]Item: §éc C« CÇu B¹i H¹ Giíi(0,1,4134,0,1,10), unbind = 0, bind = 50
+[Normal]Item: §éc C« CÇu B¹i Th­îng Giíi(0,1,4133,0,0,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng V©n Tr¸ng Chİ L÷(0,1,5204,0,1,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng V©n Tr¸ng Chİ Tô(0,1,5205,0,3,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng V©n Tr¸ng Chİ §¸i(0,1,5206,0,4,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng V©n Tr¸ng Chİ §¸i(0,1,5206,0,4,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng V©n Tr¸ng Chİ Tô(0,1,5205,0,3,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng V©n Tr¸ng Chİ L÷(0,1,5204,0,1,10), unbind = 0, bind = 50
+[Normal]Item: §éc C« CÇu B¹i Th­îng Giíi(0,1,4133,0,0,10), unbind = 0, bind = 50
+[Normal]Item: §éc C« CÇu B¹i H¹ Giíi(0,1,4134,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Huynh §Ö §ång T©m Chi Liªn(0,1,4435,1,0,10), unbind = 0, bind = 50
+[Normal]Item: Huynh §Ö Song Hµnh Ngäc Béi(0,1,4480,1,4,10), unbind = 0, bind = 50
+[Normal]Item: Th­¬ng Khung Thiªn Khëi Kh«i(0,1,5197,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Th­¬ng Khung Thiªn Khëi Gi¸p(0,1,5198,0,0,10), unbind = 0, bind = 50
+[Enchasable]Item: (0,2,1,1,2,10),¼Ó±ùÉËº¦=(100,16625),¼ÓÉËº¦Ç¿»¯=(97,10640),¼Ó¹¥»÷ËÙ¶È=(30,10640),¼ÓÎïÀíÉËº¦=(47,0),¼Ó¼¼ÄÜ=(2,0),ºöÂÔ¶ÔÊÖ·ÀÓù=(1,2128), unbind = 0, bind = 40033
+[Enchasable]Item: (0,2,1,1,2,10),¼Ó±ùÉËº¦=(100,16625),¼ÓÉËº¦Ç¿»¯=(97,10640),¼Ó¹¥»÷ËÙ¶È=(30,10640),¼ÓÎïÀíÉËº¦=(47,0),¼Ó¼¼ÄÜ=(2,0),ºöÂÔ¶ÔÊÖ·ÀÓù=(1,2128), unbind = 0, bind = 40033
+[Normal]Item: Th­¬ng Khung Thiªn Khëi Gi¸p(0,1,5198,0,0,10), unbind = 0, bind = 50
+[Normal]Item: Th­¬ng Khung Thiªn Khëi Kh«i(0,1,5197,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Huynh §Ö Song Hµnh Ngäc Béi(0,1,4480,1,4,10), unbind = 0, bind = 50
+[Normal]Item: Huynh §Ö §ång T©m Chi Liªn(0,1,4435,1,0,10), unbind = 0, bind = 50
+[Normal]Item: §éc C« CÇu B¹i H¹ Giíi(0,1,4134,0,1,10), unbind = 0, bind = 50
+[Normal]Item: §éc C« CÇu B¹i Th­îng Giíi(0,1,4133,0,0,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng V©n Tr¸ng Chİ L÷(0,1,5204,0,1,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng V©n Tr¸ng Chİ Tô(0,1,5205,0,3,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng V©n Tr¸ng Chİ §¸i(0,1,5206,0,4,10), unbind = 0, bind = 50
+[Enchasable]Item: (0,2,1,1,2,10),¼Ó±ùÉËº¦=(100,16625),¼ÓÉËº¦Ç¿»¯=(97,10640),¼Ó¹¥»÷ËÙ¶È=(30,10640),¼ÓÎïÀíÉËº¦=(48,0),¼Ó¼¼ÄÜ=(2,0),¼ÓºÚ°µ´¦ÊÓÒ°·¶Î§=(6,0), unbind = 0, bind = 37905
+[Normal]Item: Phi Phong cao cÊp(0,1,3489,0,5,10), unbind = 0, bind = 50
+[Normal]Item: Long ChiÕn Vu D· - KiÕm DiÖu(0,1,5656,0,5,10), unbind = 0, bind = 150000
+[Normal]Item: Ngò Hµnh Ên(0,1,3233,0,5,10), unbind = 0, bind = 150000
+[Enchasable]Item: (0,2,0,3,2,10),¼Ó±ùÉËº¦=(100,19950),ÍµÑª=(10,31920),¼ÓÉËº¦Ç¿»¯=(94,19950),¼ÓÎïÀíÉËº¦=(49,0),¼Ó¼¼ÄÜ=(2,0),ºöÂÔ¶ÔÊÖ·ÀÓù=(1,3990), unbind = 0, bind = 75810
+[Normal]Item: H¾c thÇn- M·nh Uy- Kh«i(0,1,4837,0,2,10), unbind = 0, bind = 50
+[Normal]Item: H¾c thÇn- M·nh Uy- §¹o Bµo(0,1,4838,0,0,10), unbind = 0, bind = 50
+[Normal]Item: H¾c thÇn- M·nh Uy- Lı(0,1,4839,0,1,10), unbind = 0, bind = 50
+[Normal]Item: H¾c thÇn- M·nh Uy- Hé UyÓn(0,1,4840,0,3,10), unbind = 0, bind = 50
+[Normal]Item: H¾c thÇn- M·nh Uy- Yªu §¸i(0,1,4841,0,4,10), unbind = 0, bind = 50
+[Normal]Item: §éc C« CÇu B¹i Th­îng Giíi(0,1,4133,0,0,10), unbind = 0, bind = 50
+[Normal]Item: §éc C« CÇu B¹i H¹ Giíi(0,1,4134,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Huynh §Ö §ång T©m Chi Liªn(0,1,4435,1,0,10), unbind = 0, bind = 50
+[Normal]Item: Huynh §Ö Song Hµnh Ngäc Béi(0,1,4480,1,4,10), unbind = 0, bind = 50
+[Normal]Item: Huynh §Ö Song Hµnh Ngäc Béi(0,1,4480,1,4,10), unbind = 0, bind = 50
+[Normal]Item: Huynh §Ö §ång T©m Chi Liªn(0,1,4435,1,0,10), unbind = 0, bind = 50
+[Normal]Item: §éc C« CÇu B¹i H¹ Giíi(0,1,4134,0,1,10), unbind = 0, bind = 50
+[Normal]Item: §éc C« CÇu B¹i Th­îng Giíi(0,1,4133,0,0,10), unbind = 0, bind = 50
+[Normal]Item: H¾c thÇn- M·nh Uy- Yªu §¸i(0,1,4841,0,4,10), unbind = 0, bind = 50
+[Normal]Item: H¾c thÇn- M·nh Uy- Hé UyÓn(0,1,4840,0,3,10), unbind = 0, bind = 50
+[Normal]Item: H¾c thÇn- M·nh Uy- Lı(0,1,4839,0,1,10), unbind = 0, bind = 50
+[Normal]Item: H¾c thÇn- M·nh Uy- §¹o Bµo(0,1,4838,0,0,10), unbind = 0, bind = 50
+[Normal]Item: H¾c thÇn- M·nh Uy- Kh«i(0,1,4837,0,2,10), unbind = 0, bind = 50
+[Enchasable]Item: (0,2,0,3,2,10),¼Ó±ùÉËº¦=(100,19950),ÍµÑª=(10,31920),¼ÓÉËº¦Ç¿»¯=(94,19950),¼ÓÎïÀíÉËº¦=(49,0),¼Ó¼¼ÄÜ=(2,0),ºöÂÔ¶ÔÊÖ·ÀÓù=(1,3990), unbind = 0, bind = 75810
+[Normal]Item: Ngò Hµnh Ên(0,1,3233,0,5,10), unbind = 0, bind = 150000
+[Normal]Item: Long ChiÕn Vu D· - KiÕm DiÖu(0,1,5656,0,5,10), unbind = 0, bind = 150000
+[Normal]Item: Phi Phong cao cÊp(0,1,3489,0,5,10), unbind = 0, bind = 50
+[Normal]Item: Phi Phong cao cÊp(0,1,3489,0,5,10), unbind = 0, bind = 50
+[Normal]Item: Long ChiÕn Vu D· - KiÕm DiÖu(0,1,5656,0,5,10), unbind = 0, bind = 150000
+[Normal]Item: Ngò Hµnh Ên(0,1,3233,0,5,10), unbind = 0, bind = 150000
+[Enchasable]Item: (0,2,0,3,2,10),¼Ó±ùÉËº¦=(100,19950),ÍµÑª=(10,31920),¼ÓÉËº¦Ç¿»¯=(94,19950),¼ÓÎïÀíÉËº¦=(49,0),¼Ó¼¼ÄÜ=(2,0),ºöÂÔ¶ÔÊÖ·ÀÓù=(1,3990), unbind = 0, bind = 75810
+[Normal]Item: H¾c thÇn- M·nh Uy- Kh«i(0,1,4837,0,2,10), unbind = 0, bind = 50
+[Normal]Item: H¾c thÇn- M·nh Uy- §¹o Bµo(0,1,4838,0,0,10), unbind = 0, bind = 50
+[Normal]Item: H¾c thÇn- M·nh Uy- Lı(0,1,4839,0,1,10), unbind = 0, bind = 50
+[Normal]Item: H¾c thÇn- M·nh Uy- Hé UyÓn(0,1,4840,0,3,10), unbind = 0, bind = 50
+[Normal]Item: H¾c thÇn- M·nh Uy- Yªu §¸i(0,1,4841,0,4,10), unbind = 0, bind = 50
+[Normal]Item: §éc C« CÇu B¹i Th­îng Giíi(0,1,4133,0,0,10), unbind = 0, bind = 50
+[Normal]Item: §éc C« CÇu B¹i H¹ Giíi(0,1,4134,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Huynh §Ö §ång T©m Chi Liªn(0,1,4435,1,0,10), unbind = 0, bind = 50
+[Normal]Item: Huynh §Ö Song Hµnh Ngäc Béi(0,1,4480,1,4,10), unbind = 0, bind = 50
+[Normal]Item: Huynh §Ö Song Hµnh Ngäc Béi(0,1,4480,1,4,10), unbind = 0, bind = 50
+[Normal]Item: Huynh §Ö §ång T©m Chi Liªn(0,1,4435,1,0,10), unbind = 0, bind = 50
+[Normal]Item: §éc C« CÇu B¹i H¹ Giíi(0,1,4134,0,1,10), unbind = 0, bind = 50
+[Normal]Item: §éc C« CÇu B¹i Th­îng Giíi(0,1,4133,0,0,10), unbind = 0, bind = 50
+[Normal]Item: H¾c thÇn- M·nh Uy- Yªu §¸i(0,1,4841,0,4,10), unbind = 0, bind = 50
+[Normal]Item: H¾c thÇn- M·nh Uy- Hé UyÓn(0,1,4840,0,3,10), unbind = 0, bind = 50
+[Normal]Item: H¾c thÇn- M·nh Uy- Lı(0,1,4839,0,1,10), unbind = 0, bind = 50
+[Normal]Item: H¾c thÇn- M·nh Uy- §¹o Bµo(0,1,4838,0,0,10), unbind = 0, bind = 50
+[Normal]Item: H¾c thÇn- M·nh Uy- Kh«i(0,1,4837,0,2,10), unbind = 0, bind = 50
+[Enchasable]Item: (0,2,0,3,2,10),¼Ó±ùÉËº¦=(100,19950),ÍµÑª=(10,31920),¼ÓÉËº¦Ç¿»¯=(94,19950),¼ÓÎïÀíÉËº¦=(49,0),¼Ó¼¼ÄÜ=(2,0),ºöÂÔ¶ÔÊÖ·ÀÓù=(1,3990), unbind = 0, bind = 75810
+[Normal]Item: Ngò Hµnh Ên(0,1,3233,0,5,10), unbind = 0, bind = 150000
+[Normal]Item: Long ChiÕn Vu D· - KiÕm DiÖu(0,1,5656,0,5,10), unbind = 0, bind = 150000
+[Normal]Item: Phi Phong cao cÊp(0,1,3489,0,5,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng V©n Tr¸ng Chİ Kh«i(0,1,5202,0,2,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng V©n Tr¸ng Chİ Gi¸p(0,1,5203,0,0,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng V©n Tr¸ng Chİ L÷(0,1,5204,0,1,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng V©n Tr¸ng Chİ Tô(0,1,5205,0,3,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng V©n Tr¸ng Chİ §¸i(0,1,5206,0,4,10), unbind = 0, bind = 50
+[Normal]Item: Th­¬ng Khung Thiªn Khëi Kh«i(0,1,5197,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Th­¬ng Khung Thiªn Khëi Gi¸p(0,1,5198,0,0,10), unbind = 0, bind = 50
+[Normal]Item: Th­¬ng Khung Thiªn Khëi L÷(0,1,5199,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Th­¬ng Khung Thiªn Khëi Tô(0,1,5200,0,3,10), unbind = 0, bind = 50
+[Normal]Item: Th­¬ng Khung Thiªn Khëi §¸i(0,1,5201,0,4,10), unbind = 0, bind = 50
+[Normal]Item: Th­¬ng Khung Thiªn Khëi Kh«i(0,1,5197,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Th­¬ng Khung Thiªn Khëi Gi¸p(0,1,5198,0,0,10), unbind = 0, bind = 50
+[Normal]Item: Th­¬ng Khung Thiªn Khëi L÷(0,1,5199,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Th­¬ng Khung Thiªn Khëi Tô(0,1,5200,0,3,10), unbind = 0, bind = 50
+[Normal]Item: Th­¬ng Khung Thiªn Khëi §¸i(0,1,5201,0,4,10), unbind = 0, bind = 50
+[Normal]Item: Phi Phong cao cÊp(0,1,3489,0,5,10), unbind = 0, bind = 50
+[Normal]Item: Long ChiÕn Vu D· - KiÕm DiÖu(0,1,5656,0,5,10), unbind = 0, bind = 150000
+[Normal]Item: Ngò Hµnh Ên(0,1,3233,0,5,10), unbind = 0, bind = 150000
+[Enchasable]Item: (0,2,0,3,2,10),¼Ó±ùÉËº¦=(100,19950),ÍµÑª=(10,31920),¼ÓÉËº¦Ç¿»¯=(94,19950),¼ÓÎïÀíÉËº¦=(49,0),¼Ó¼¼ÄÜ=(2,0),ºöÂÔ¶ÔÊÖ·ÀÓù=(1,3990), unbind = 0, bind = 75810
+[Normal]Item: H¾c thÇn- M·nh Uy- Kh«i(0,1,4837,0,2,10), un

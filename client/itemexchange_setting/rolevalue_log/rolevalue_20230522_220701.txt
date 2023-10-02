@@ -1,0 +1,20 @@
+[Normal]Item: §Şnh Quèc Thanh Sa Tr­êng Sam(0,1,158,3,0,8), unbind = 0, bind = 0
+[Normal]Item: §Şnh Quèc ¤ Sa Ph¸t Qu¸n(0,1,159,3,2,9), unbind = 0, bind = 0
+[Normal]Item: §Şnh Quèc Xİch Quyªn NhuyÔn Ngoa(0,1,160,1,1,8), unbind = 0, bind = 0
+[Normal]Item: §Şnh Quèc Tö §»ng Hé uyÓn(0,1,161,1,3,8), unbind = 0, bind = 0
+[Normal]Item: §Şnh Quèc Ng©n Tµm Yªu ®¸i(0,1,162,1,4,8), unbind = 0, bind = 0
+[Normal]Item: An Bang B¨ng Tinh Th¹ch H¹ng Liªn(0,1,163,0,4,10), unbind = 0, bind = 1667
+[Normal]Item: An Bang Cóc Hoa Th¹ch ChØ hoµn(0,1,164,0,2,8), unbind = 0, bind = 1250
+[Normal]Item: An Bang §iÒn Hoµng Th¹ch Ngäc Béi(0,1,165,1,1,8), unbind = 0, bind = 1250
+[Normal]Item: An Bang Kª HuyÕt Th¹ch Giíi ChØ (0,1,166,0,3,8), unbind = 0, bind = 1250
+[Enchasable]Item: (0,2,1,2,0,10),¼Ó¹¥»÷ËÙ¶È=(30,10640),¼ÓÎïÀíÉËº¦=(46,16625),¼ÓÉËº¦Ç¿»¯=(91,10640),¼Ó¿¹¶¾ĞÔ=(25,6650),ÍµÄÚÁ¦=(10,25536),¼Ó¼¼ÄÜ=(2,0), unbind = 0, bind = 70091
+[Enchasable]Item: (0,2,1,2,0,10),¼Ó¹¥»÷ËÙ¶È=(30,10640),¼ÓÎïÀíÉËº¦=(46,16625),¼ÓÉËº¦Ç¿»¯=(91,10640),¼Ó¿¹¶¾ĞÔ=(25,6650),ÍµÄÚÁ¦=(10,25536),¼Ó¼¼ÄÜ=(2,0), unbind = 0, bind = 70091
+[Normal]Item: An Bang Kª HuyÕt Th¹ch Giíi ChØ (0,1,166,0,3,8), unbind = 0, bind = 1250
+[Normal]Item: An Bang §iÒn Hoµng Th¹ch Ngäc Béi(0,1,165,1,1,8), unbind = 0, bind = 1250
+[Normal]Item: An Bang Cóc Hoa Th¹ch ChØ hoµn(0,1,164,0,2,8), unbind = 0, bind = 1250
+[Normal]Item: An Bang B¨ng Tinh Th¹ch H¹ng Liªn(0,1,163,0,4,10), unbind = 0, bind = 1667
+[Normal]Item: §Şnh Quèc Ng©n Tµm Yªu ®¸i(0,1,162,1,4,8), unbind = 0, bind = 0
+[Normal]Item: §Şnh Quèc Tö §»ng Hé uyÓn(0,1,161,1,3,8), unbind = 0, bind = 0
+[Normal]Item: §Şnh Quèc Xİch Quyªn NhuyÔn Ngoa(0,1,160,1,1,8), unbind = 0, bind = 0
+[Normal]Item: §Şnh Quèc ¤ Sa Ph¸t Qu¸n(0,1,159,3,2,9), unbind = 0, bind = 0
+[Normal]Item: §Şnh Quèc Thanh Sa Tr­êng Sam(0,1,158,3,0,8), unbind = 0, bind = 0

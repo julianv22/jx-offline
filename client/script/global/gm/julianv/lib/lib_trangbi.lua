@@ -70,31 +70,19 @@ tbNhanCanKhon = {
 
 tbDanhHieu = {
     VoLam = {
-        { "Long ThÇn KiÕm", 80 }, { "Vâ L©m Liªn §Êu Qu¸n Qu©n", 81 },
-        { "Vâ L©m Liªn §Êu H¹ng 2", 82 }, { "Vâ L©m Liªn §Êu H¹ng 3", 83 },
-        { "Vâ L©m Liªn §Êu H¹ng 4", 84 }, { "Thiªn H¹ §Ö NhÊt Bang", 142 },
-        { "Th¸i thó Ph­îng T­êng", 153 }, { "Th¸i thó Thµnh §«", 154 },
-        { "Th¸i thó §¹i Lý", 155 }, { "Th¸i thó BiÖn Kinh", 156 },
-        { "Th¸i thó T­¬ng D­¬ng", 157 }, { "Th¸i thó D­¬ng Ch©u", 158 },
-        { "Th¸i thó L©m An", 159 }, { "Ngù Long Cuång §ao", 165 },
-        { "Phiªu M· §¹i T­íng Qu©n", 185 }, { "B¸ Chñ ThÊt Thµnh", 193 },
-        { "Vua PK", 229 }, { "TuyÖt ThÕ Cao Thñ", 240 }, { "Th©n Thñ BÊt Phµm", 256 },
-        { "Long Tranh Hæ ®Êu", 236 }, { "§éc C« CÇu B¹i", 237 },
-        { "Vâ L©m ChÝ T«n", 238 }, { "Míi nhËp giang hå ", 244 },
-        { "Vâ L©m Minh Chñ", 245 }, { "Vâ Häc Kú Tµi", 258 },
-        { "§éc B¸ Thiªn H¹", 325 }, { "Uy M·nh V« Song­", 326 },
-        { "Lùc ¸p QuÇn Hïng", 327 }, { "Tø TuyÖt chiÕn tr­êng", 328 },
-        { "Ngò TuyÖt chiÕn tr­êng", 329 }, { "Lôc TuyÖt chiÕn tr­êng", 330 },
-        { "ThÊt TuyÖt chiÕn tr­êng", 331 }, { "B¸t TuyÖt chiÕn tr­êng", 332 },
-        { "Cöu TuyÖt chiÕn tr­êng", 333 }, { "ThËp TuyÖt chiÕn tr­êng", 334 },
-        { "TriÖu M·nh", 408 }, { "Thiªn H¹ V« §Þch", 421 },
-        { "Thiªn H¹ ThËp C­êng", 422 }, { "T©n thñ", 423 },
-
+        { "Th¸i thó Ph­îng T­êng.", 153 }, { "Th¸i thó Thµnh §«.", 154 },
+        { "Th¸i thó §¹i Lý.", 155 }, { "Th¸i thó BiÖn Kinh.", 156 },
+        { "Th¸i thó T­¬ng D­¬ng.", 157 }, { "Th¸i thó D­¬ng Ch©u.", 158 },
+        { "Th¸i thó L©m An.", 159 }, { "Vâ L©m Liªn §Êu Qu¸n Qu©n.", 81 },
+        { "Vâ L©m Liªn §Êu H¹ng 2.", 82 }, { "Vâ L©m Liªn §Êu H¹ng 3.", 83 },
+        { "Vâ L©m Liªn §Êu H¹ng 4.", 84 }, { "Vâ L©m Minh Chñ.", 189 },
+        { "Phiªu M· §¹i T­íng Qu©n.", 185 }, { "Ngù Long Cuång §ao.", 165 },
+        { "Long ThÇn KiÕm.", 80 }, { "Thiªn H¹ §Ö NhÊt Bang.", 189 },
     },
     KiemThe = {
-        { "Uy ChÊn Cöu Ch©u", 5001 }, { "Vâ L©m ChÝ T«n", 5002 },
-        { "NhÊt KiÕm Phong Thiªn", 5003 }, { "NhÊt L­u Cao Thñ", 5004 },
-        { "HiÖp Kh¸ch Cuèi Cïng Trªn Giang Hå", 5005 },
+        { "Uy ChÊn Cöu Ch©u", 192 }, { "Vâ L©m ChÝ T«n", 193 },
+        { "NhÊt KiÕm Phong Thiªn", 194 }, { "NhÊt L­u Cao Thñ", 195 },
+        { "HiÖp Kh¸ch Cuèi Cïng Trªn Giang Hå", 196 },
     },
 }
 ---@param nId? integer @Index danh hieu

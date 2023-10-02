@@ -29,6 +29,9 @@ client/maps/scrollsetting/*
 !client/script/
 client/script/*
 !client/script/faction_def.lua
+# -------------------script/battles-------------------
+!client/script/battles
+!client/script/battles/*.*
 # -------------------script/global-------------------
 !client/script/global/
 client/script/global/*

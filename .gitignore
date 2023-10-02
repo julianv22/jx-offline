@@ -36,6 +36,8 @@ client/script/*
 !client/script/global/
 client/script/global/*
 !client/script/global/autoexec.lua
+!client/script/global/login.lua
+!client/script/global/loginmessage.lua
 # ------------------------------------------------
 !client/script/global/gm/
 client/script/global/gm/*

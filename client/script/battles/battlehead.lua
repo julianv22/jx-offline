@@ -13,7 +13,7 @@ Include("\\script\\misc\\vngpromotion\\ipbonus\\ipbonus_2_head.lua")
 Include("\\script\\event\\jiefang_jieri\\200904\\qianqiu_yinglie\\head.lua");
 
 Include("\\script\\battles\\doubleexp.lua")
-FRAME2TIME = 18; -- 18 t­¬ng ®­¬ng 1 gi©y
+FRAME2TIME = 18 -- 18 t­¬ng ®­¬ng 1 gi©y
 BAOMING_TIME = 10 -- 10 phót thêi gian ®¨ng ký
 FIGHTING_TIME = 30 -- 60 phót trËn chiÕn
 ANNOUNCE_TIME = 20 -- 20 gi©y c«ng bè t¹i chiÕn trËn

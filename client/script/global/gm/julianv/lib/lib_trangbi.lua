@@ -82,7 +82,7 @@ tbDanhHieu = {
     KiemThe = {
         { "Uy ChÊn Cöu Ch©u", 192 }, { "Vâ L©m ChÝ T«n", 193 },
         { "NhÊt KiÕm Phong Thiªn", 194 }, { "NhÊt L­u Cao Thñ", 195 },
-        { "HiÖp Kh¸ch Cuèi Cïng Trªn Giang Hå", 196 },
+        { "HiÖp Kh¸ch Cuèi Cïng Trªn Giang Hå", 196 }, { "Phong V©n", 197 },
     },
 }
 

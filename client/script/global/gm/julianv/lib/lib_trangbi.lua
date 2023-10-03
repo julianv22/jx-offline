@@ -75,7 +75,7 @@ tbDanhHieu = {
         { "Th¸i thó T­¬ng D­¬ng", 157 }, { "Th¸i thó D­¬ng Ch©u", 158 },
         { "Th¸i thó L©m An", 159 }, { "Vâ L©m Liªn §Êu Qu¸n Qu©n", 81 },
         { "Vâ L©m Liªn §Êu H¹ng 2", 82 }, { "Vâ L©m Liªn §Êu H¹ng 3", 83 },
-        { "Vâ L©m Liªn §Êu H¹ng 4", 84 }, { "Vâ L©m Minh Chñ", 189 },
+        { "Vâ L©m Liªn §Êu H¹ng 4", 84 }, { "Vâ L©m Minh Chñ", 188 },
         { "Phiªu M· §¹i T­íng Qu©n", 185 }, { "Ngù Long Cuång §ao", 165 },
         { "Long ThÇn KiÕm", 80 }, { "Thiªn H¹ §Ö NhÊt Bang", 189 },
     },

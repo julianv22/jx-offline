@@ -253,7 +253,7 @@ end
 function JulianV:NhanDanhHieu()
     local tbOpt = {
         { "Danh hi÷u V‚ l©m", JulianV.DanhHieuVoLam }, --
-        { "Danh hi÷u Ki’m Th’", JulianV.DanhHieuKiemThe }, --
+        { "Danh hi÷u VIP", JulianV.DanhHieuKiemThe }, --
         { "K›ch hoπt Danh hi÷u (Title ID)", JulianV.ActiveTitle, { 1 } }, --
         { "Hu˚ k›ch hoπt Danh hi÷u", JulianV.ActiveTitle },
     }

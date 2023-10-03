@@ -80,10 +80,10 @@ tbDanhHieu = {
         { "Long ThÇn KiÕm", 80 }, { "Thiªn H¹ §Ö NhÊt Bang", 189 },
     },
     KiemThe = {
-        { "GM Julian-V", 200 }, { "Uy ChÊn Cöu Ch©u", 192 }, { "Vâ L©m ChÝ T«n", 193 },
+        { "GM Julian-V", 200 }, { "Phong V©n", 197 }, { "§¹i Th¸nh", 198 },
+        { "TrÊn Thiªn", 199 }, { "Uy ChÊn Cöu Ch©u", 192 }, { "Vâ L©m ChÝ T«n", 193 },
         { "NhÊt KiÕm Phong Thiªn", 194 }, { "NhÊt L­u Cao Thñ", 195 },
-        { "HiÖp Kh¸ch Cuèi Cïng Trªn Giang Hå", 196 }, { "Phong V©n", 197 },
-        { "§¹i Th¸nh", 198 }, { "TrÊn Thiªn", 199 },
+        { "HiÖp Kh¸ch Cuèi Cïng Trªn Giang Hå", 196 },
     },
 }
 

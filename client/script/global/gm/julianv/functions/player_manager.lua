@@ -260,16 +260,17 @@ function JulianV:NhanDanhHieu()
     JDialog:Show(tbOpt, JulianV.Player_Dialog)
 end
 
-function JulianV.DanhHieuKiemThe( nIndex )
-    if not nIndex then
+function JulianV.DanhHieuKiemThe( DanhHieu )
+    if not DanhHieu then
         local tbOpt = {}
-        for id, tbDanhHieu in tbDanhHieu.KiemThe do
-            tinsert(tbOpt, { tbDanhHieu[1], JulianV.DanhHieuKiemThe, { id } })
+        for i = 1, getn(tbDanhHieu.KiemThe) do
+            tinsert(tbOpt, {
+                tbDanhHieu.KiemThe[i][1], JulianV.DanhHieuKiemThe, { tbDanhHieu.KiemThe[i] },
+            })
         end
         JDialog:Show(tbOpt, JulianV.NhanDanhHieu, "MÍi <sex>ch‰n danh hi÷u<pic=46><color>")
     else
-        tbDanhHieu.Active(tbDanhHieu.KiemThe[nIndex][2])
-        Msg2Player("K›ch hoπt danh hi÷u <color=yellow>" .. tbDanhHieu.KiemThe[nIndex][1])
+        tbDanhHieu.Active(DanhHieu)
     end
 end
 
@@ -278,7 +279,7 @@ function JulianV.DanhHieuVoLam( nPage )
     local tbOpt = {}
     if not nPage or nPage == 1 then
         for i = 1, 10 do
-            tinsert(tbOpt, { DanhHieuVL[1][i][1], tbDanhHieu.Active, { DanhHieuVL[1][i][2] } })
+            tinsert(tbOpt, { DanhHieuVL[1][i][1], tbDanhHieu.Active, { DanhHieuVL[1][i] } })
         end
         tinsert(tbOpt, { "Trang sau", JulianV.DanhHieuVoLam, { 2 } })
         tinsert(tbOpt, { "TrÎ lπi", JulianV.NhanDanhHieu })
@@ -287,14 +288,13 @@ function JulianV.DanhHieuVoLam( nPage )
         if nPage < nCount then
             for i = 1, 10 do
                 tinsert(tbOpt,
-                    { DanhHieuVL[nPage][i][1], tbDanhHieu.Active, { DanhHieuVL[nPage][i][2] } })
+                    { DanhHieuVL[nPage][i][1], tbDanhHieu.Active, { DanhHieuVL[nPage][i] } })
             end
             tinsert(tbOpt, { "Trang sau", JulianV.DanhHieuVoLam, { nPage + 1 } })
         else
             for i = 1, getn(DanhHieuVL[nCount]) do
-                tinsert(tbOpt, {
-                    DanhHieuVL[nCount][i][1], tbDanhHieu.Active, { DanhHieuVL[nCount][i][2] },
-                })
+                tinsert(tbOpt,
+                    { DanhHieuVL[nCount][i][1], tbDanhHieu.Active, { DanhHieuVL[nCount][i] } })
             end
         end
         if nPage > 1 then

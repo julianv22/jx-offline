@@ -80,6 +80,10 @@ client/UserData/*
 !client/spr/
 client/spr/*
 !client/spr/julianv.spr
+!client/spr/skill
+client/spr/skill/*
+!client/spr/skill/others
+!client/spr/skill/others/**
 # -------------------data-------------------
 !client/data/
 client/data/*

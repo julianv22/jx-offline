@@ -51,7 +51,7 @@ tbBoss = {
 
 2. Thực hiện xử lý table đã được phân trang, và các điều kiện ở bước 2 và 3 của bài toán.
 
-3. Tạo function gọi Boss với để gọi Boss tương ứng với các tham số truyền vào.
+3. Tạo function gọi Boss để gọi Boss tương ứng với các tham số truyền vào.
 
 ### 1. Tạo function phân trang:
 

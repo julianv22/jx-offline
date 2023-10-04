@@ -122,54 +122,39 @@ function Boss_HK( nPage ) -- function này sẽ nhận tham số nPage (số tra
 
     local tbOpt = {}
 
-    if not nPage or nPage == 1 then -- Nếu chưa có số trang hoặc số trang là 1
+    if not nPage then nPage = 1 end -- Nếu không có số trang thì số trang là 1
 
-        for i = 1, 10 do -- Chạy vòng lặp từ 1 đến 10 để show tên Boss 
+    local nCount = getn(tbBossHK) -- getn(tbBossHK) = 4 (Đếm số phần tử của tbBossHK (table đã phân trang))
 
-            tinsert(tbOpt, { tbBossHK[1][i].szName, Call_Boss, { tbBossHK[1], i } })
-            -- Show tên Boss và function gọi Boss (Call_Boss) truyền các tham số tương ứng với trang 1
+    if nPage < nCount then -- nPage < 4 (Nếu số trang nPage < getn(tbBossHK))
 
-        end
+        for i = 1, 10 do -- Chạy vòng lặp từ 1 đến 10 để show tên Boss
 
-        tinsert(tbOpt, { "Trang sau", Boss_HK, { 2 } })
-        -- Vì đây là trang 1 nên thêm dòng Trang sau như yêu cầu 2 của bài toán.
-        -- Trường hợp này ta fix cố định tham số nPage = 2
-
-    else
-
-        local nCount = getn(tbBossHK) -- getn(tbBossHK) = 4 (Đếm số phần tử của tbBossHK (table đã phân trang))
-
-        if nPage < nCount then -- nPage < 4 (Nếu số trang vẫn còn < getn(tbBossHK))
-
-            for i = 1, 10 do -- Chạy vòng lặp từ 1 đến 10 để show tên Boss
-
-                tinsert(tbOpt, { tbBossHK[nPage][i].szName, Call_Boss, { tbBossHK[nPage], i } })
-                -- Show tên Boss và function gọi Call_Boss với các tham số tương ứng với số trang
-
-            end
-
-            tinsert(tbOpt, { "Trang sau", Boss_HK, { nPage + 1 } })
-            -- Thêm dòng trang sau theo yêu cầu 3 của bài toán
-            -- Tham số nPage sẽ được tăng lên 1
-
-        else -- Khi số trang nPage = 4
-
-            for i = 1, getn(tbBossHK[nCount]) do -- Chạy vòng lặp từ 1 đến 5 (getn(tbBossHK[4]) = 5)
-
-                tinsert(tbOpt, { tbBossHK[nCount][i].szName, Call_Boss, { tbBossHK[nCount], i } })
-                -- Show tên Boss và function gọi Call_Boss với các tham số tương ứng
-
-            end
+            tinsert(tbOpt, { tbBossHK[nPage][i].szName, Call_Boss, { tbBossHK[nPage], i } })
+            -- Show tên Boss và function gọi Call_Boss với các tham số tương ứng với số trang
 
         end
 
-        if nPage > 1 then -- Nếu số trang > 1
+        tinsert(tbOpt, { "Trang sau", Boss_HK, { nPage + 1 } })
+        -- Thêm dòng trang sau theo yêu cầu 3 của bài toán
+        -- Tham số nPage sẽ được tăng lên 1
 
-            tinsert(tbOpt, { "Trang tr­íc", Boss_HK, { nPage - 1 } })
-            -- Thêm dòng trang trước theo yêu cầu 2 của bài toán
-            -- Tham số nPage sẽ bị giảm xuống 1
+    else -- Nếu số trang nPage = 4
+
+        for i = 1, getn(tbBossHK[nCount]) do -- Chạy vòng lặp từ 1 đến 5 (getn(tbBossHK[4]) = 5)
+
+            tinsert(tbOpt, { tbBossHK[nCount][i].szName, Call_Boss, { tbBossHK[nCount], i } })
+            -- Show tên Boss và function gọi Call_Boss với các tham số tương ứng
 
         end
+
+    end
+
+    if nPage > 1 then -- Nếu số trang > 1
+
+        tinsert(tbOpt, { "Trang tr­íc", Boss_HK, { nPage - 1 } })
+        -- Thêm dòng trang trước theo yêu cầu 2 của bài toán
+        -- Tham số nPage sẽ bị giảm xuống 1
 
     end
 

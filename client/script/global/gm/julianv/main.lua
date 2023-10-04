@@ -16,8 +16,8 @@ function JulianV:IncludeFiles()
         functions = { "dialog_fun", "player_manager", "server_manager", "trangbi_vatpham" },
         lib = { "lib_monphai", "lib_vatpham", "lib_boss", "lib_trangbi" },
     }
-    for folder, filename in tbInclude do
-        for i = 1, getn(filename) do Include(root .. folder .. "\\" .. filename[i] .. ".lua") end
+    for folder, files in tbInclude do
+        for i = 1, getn(files) do Include(root .. folder .. "\\" ..files[i] .. ".lua") end
     end
 end
 JulianV:IncludeFiles()

@@ -297,8 +297,8 @@ end
 
 function JulianV.ShowAllTitle( nPage )
     local nOfPage = 12
-    local title_file, tab_name = "\\settings\\playertitle.txt", "title"
-    local tbTitle = JDialog:PhanTrang(JDialog:GetTabFileData(title_file, tab_name, 2, 2), nOfPage)
+    local path, tab_name = "\\settings\\playertitle.txt", "title"
+    local tbTitle = JDialog:PhanTrang(JDialog:GetTabFileData(path, tab_name, 2, 2), nOfPage)
     local tbOpt = {}
     if not nPage then nPage = 1 end
     local nCount = getn(tbTitle)

@@ -302,23 +302,22 @@ function JulianV.ShowAllTitle( nPage )
     local tbOpt = {}
     if not nPage then nPage = 1 end
     local nCount = getn(tbTitle)
+    local szTitleName = function( tab, page, id )
+        local text = tab[page][id][1]
+        if strlen(text) > 32 then text = strsub(text, 1, 32) end
+        if text == "" then text = "Unknown" end
+        return tab[page][id][2] .. "." .. text
+    end
     if nPage < nCount then
         for i = 1, nOfPage do
-            local szTitleName = tbTitle[nPage][i][1]
-            if strlen(szTitleName) > 31 then szTitleName = strsub(szTitleName, 0, 30) end
-            tinsert(tbOpt, {
-                tbTitle[nPage][i][2] .. "." .. szTitleName, tbDanhHieu.Active,
-                { tbTitle[nPage][i] },
-            })
+            tinsert(tbOpt,
+                { szTitleName(tbTitle, nPage, i), tbDanhHieu.Active, { tbTitle[nPage][i] } })
         end
         tinsert(tbOpt, { "Trang sau", JulianV.ShowAllTitle, { nPage + 1 } })
     else
         for i = 1, getn(tbTitle[nCount]) do
-            local szTitleName = tbTitle[nCount][i][1]
-            if strlen(szTitleName) > 35 then szTitleName = strsub(szTitleName, 0, 34) end
-            tinsert(tbOpt, {
-                tbTitle[nCount][i][2] .. "." .. szTitleName, tbDanhHieu.Active, tbTitle[nCount][i],
-            })
+            tinsert(tbOpt,
+                { szTitleName(tbTitle, nCount, i), tbDanhHieu.Active, tbTitle[nCount][i] })
         end
     end
     if nPage > 1 then tinsert(tbOpt, { "Trang tr­íc", JulianV.ShowAllTitle, { nPage - 1 } }) end

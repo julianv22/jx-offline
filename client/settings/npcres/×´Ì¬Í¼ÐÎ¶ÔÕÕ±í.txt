@@ -248,4 +248,4 @@ Status246	\spr\effect\other\zuihoudaxia_vn.spr	Head	Loop	0	0	20	1	20	1	Hiep khac
 Status247	\spr\skill\others\phongvan.spr	Head	Loop	0	0	14	1	14	1	Phong Van
 Status248	\spr\skill\others\daithanh.spr	Head	Loop	0	0	14	1	14	1	Dai Thanh
 Status249	\spr\skill\others\tranthien.spr	Head	Loop	0	0	25	1	25	1	Tran Thien
-Status250	\spr\skill\others\åÈÀ¶Ä¦Úµ-¹â»·.spr	Head	Loop	0	0	30	1	30	1	
+Status250	\spr\skill\others\åÈÀ¶Ä¦Úµ-¹â»·.spr	Foot	Loop	0	0	30	1	30	1	

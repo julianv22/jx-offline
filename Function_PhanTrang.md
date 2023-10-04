@@ -158,7 +158,9 @@ function Boss_HK( nPage ) -- function này sẽ nhận tham số nPage (số tra
 
     end
 
-    tbDialog:Show(tbOpt, nil, "Mêi <sex>chän Boss muèn gäi<pic=46><color>") -- Hiển thị dialog tương tác với người chơi
+    tinsert(tbOpt, { "Kết thúc đối thoại" })
+
+    CreateNewSayEx("Chọn Boss muốn gọi", tbOpt) -- Hiển thị dialog tương tác với người chơi
 
 end
 ```

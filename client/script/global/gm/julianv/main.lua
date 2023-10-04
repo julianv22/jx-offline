@@ -322,6 +322,7 @@ function JulianV:ChucNangKhac()
         { "Më réng r­¬ng", JulianV.ExpandStorage }, --
         { "Dän s¹ch R­¬ng chøa ®å", JulianV.ClearF4 }, --        
         { "Check Emoticons", JulianV.CheckEmo }, --    
+        { "Load Table_File", JulianV.Load_Table_File }, --
         { "KickOutSelf", KickOutSelf }, --
     }
     JDialog:Show(tbOpt, main)
@@ -407,4 +408,15 @@ function DisposeItem( nCount ) -- Huû vËt phÈm
         Msg2Player("Thao t¸c hñy vËt phÈm thµnh c«ng")
         Talk(1, "", "Thao t¸c thµnh c«ng, xin kiÓm tra l¹i<pic=46>");
     end
+end
+
+function JulianV:Load_Table_File()
+    local nRowCount = JDialog:GetRowCount("\\settings\\playertitle.txt", "table_title")
+    local tbOpt = {}
+    for i = 2, 11 do
+        tinsert(tbOpt, {
+            TabFile_GetCell("table_title", i, 1) .. "ID: " .. TabFile_GetCell("table_title", i, 2),
+        })
+    end
+    JDialog:Show(tbOpt, nil, "Load 10 dßng ®Çu cña file {{playertitle.txt}}")
 end

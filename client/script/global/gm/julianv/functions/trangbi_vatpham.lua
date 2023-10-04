@@ -100,25 +100,20 @@ function JulianV.Chose_Horses( nHorseType, nPage )
         }
     end
     local tbOpt = {}
-    if not nPage or nPage == 1 then
-        for i = 1, 10 do tinsert(tbOpt, tbHorseRes(tbHorse[1], i)) end
-        tinsert(tbOpt, { "Trang sau", JulianV.Chose_Horses, { nHorseType, 2 } })
+    if not nPage then nPage = 1 end
+    local nCount = getn(tbHorse)
+    if nPage < nCount then
+        for i = 1, 10 do tinsert(tbOpt, tbHorseRes(tbHorse[nPage], i)) end
+        tinsert(tbOpt, { "Trang sau", JulianV.Chose_Horses, { nHorseType, nPage + 1 } })
     else
-        local nCount = getn(tbHorse)
-        if nPage < nCount then
-            for i = 1, 10 do tinsert(tbOpt, tbHorseRes(tbHorse[nPage], i)) end
-            tinsert(tbOpt, { "Trang sau", JulianV.Chose_Horses, { nHorseType, nPage + 1 } })
-        else
-            for i = 1, getn(tbHorse[nCount]) do
-                tinsert(tbOpt, tbHorseRes(tbHorse[nCount], i))
-            end
-        end
-        if nPage > 1 then
-            tinsert(tbOpt, { "Trang tr­íc", JulianV.Chose_Horses, { nHorseType, nPage - 1 } })
-        end
+        for i = 1, getn(tbHorse[nCount]) do tinsert(tbOpt, tbHorseRes(tbHorse[nCount], i)) end
+    end
+    if nPage > 1 then
+        tinsert(tbOpt, { "Trang tr­íc", JulianV.Chose_Horses, { nHorseType, nPage - 1 } })
     end
     JDialog:Show(tbOpt, nil,
-        "<sex>h·y chän cho m×nh mét con chiÕn m· tèt ®Ó hµnh tÈu giang hå<pic=46><color>")
+        "<sex>h·y chän cho m×nh mét con chiÕn m· tèt ®Ó hµnh tÈu giang hå<pic=46>}}\n\n" ..
+            strfill_center("Trang {{" .. nPage .. "/" .. nCount .. "}}", 50, "-"))
 end
 
 function JulianV.Add_Horses( nId, nLevel )

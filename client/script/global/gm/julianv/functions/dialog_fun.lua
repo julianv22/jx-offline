@@ -61,7 +61,7 @@ end
 ---@param table? table @Table phan trang
 ---@param nOfPage? integer @So phan tu moi trang
 function JDialog:PhanTrang( table, nOfPage ) -- Phan trang
-    local tbSplitTable = {}
+    local tbSplitTable = { nil }
     local nCount = getn(table) -- §Õm sè phÇn tö cña b¶ng
     if nCount > nOfPage then -- NÕu sè phÇn tö > sè item cña 1 trang
         local nIndex = floor(nCount / nOfPage) -- Chia lÊy phÇn nguyªn
@@ -80,4 +80,21 @@ function JDialog:PhanTrang( table, nOfPage ) -- Phan trang
         tbSplitTable = table
     end
     return tbSplitTable
+end
+---@param path? string @File Path to load
+---@param tab_name? string @Table name
+---@param start_col? integer
+---@param max_row? integer
+function JDialog:GetTabFileData( path, tab_name, start_col, max_row )
+    if TabFile_Load(path, tab_name) ~= 1 then
+        return print("§äc tËp tin thÊt b¹i! " .. tab_name)
+    end
+    local nCount = TabFile_GetRowCount(tab_name)
+    local tbData = {}
+    for y = start_col, nCount do
+        local tbTemp = {}
+        for x = 1, max_row do tinsert(tbTemp, TabFile_GetCell(tab_name, y, x)) end
+        tinsert(tbData, tbTemp)
+    end
+    return tbData, nCount - start_col + 1
 end

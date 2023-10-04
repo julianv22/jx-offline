@@ -95,5 +95,5 @@ function tbDanhHieu.Active( DanhHieu )
     Title_AddTitle(nTitle, 1, nTime);
     Title_ActiveTitle(nTitle);
     SetTask(1122, nTitle);
-    Msg2Player("K›ch hoπt danh hi÷u <color=yellow>" .. szTitle)
+    GMMsg2Player("K›ch hoπt danh hi÷u", "<color=yellow>" .. szTitle)
 end

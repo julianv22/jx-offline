@@ -7,7 +7,7 @@ Include("\\script\\global\\login_head.lua")
 -- 一般只需修改（添加/删除）这里的Include文件：
 -- （在文件中执行一下login_add(fun, n_time)即可，例子参见"\\script\\missions\\leaguematch\\wlls_login.lua"）
 -- ================================================================
-Include("\\script\\global\\login_old.lua") -- 旧的Login脚本（包含多个活动）
+-- Include("\\script\\global\\login_old.lua") -- 旧的Login脚本（包含多个活动）
 Include("\\script\\missions\\leaguematch\\wlls_login.lua") -- WLLS武林联赛
 Include("\\script\\misc\\extpoint_loginmsg\\login_msg.lua")
 Include("\\script\\global\\offline_login.lua") -- if offline time > 8hours then reset hours

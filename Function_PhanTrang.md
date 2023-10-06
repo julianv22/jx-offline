@@ -1,6 +1,10 @@
 # Xây dựng function để phân trang
 
-Áp dụng cho những table có số phần tử quá lớn (>15) ta sẽ phân trang các table này ra nhiều trang, mỗi trang chứa n phần tử
+Áp dụng cho những table có số phần tử quá lớn (>15) ta sẽ phân trang table này ra nhiều trang, mỗi trang chứa n phần tử.
+
+## Mục đích
+
+Sử dụng để phân trang các lựa chọn trong hội thoại tương tác với người chơi.
 
 ## Giả thiết
 

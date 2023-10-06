@@ -14,10 +14,10 @@ function JulianV:IncludeFiles()
     local root = "\\script\\global\\gm\\julianv\\"
     local tbInclude = {
         functions = { "dialog_fun", "player_manager", "server_manager", "trangbi_vatpham" },
-        lib = { "lib_monphai", "lib_vatpham", "lib_boss", "lib_trangbi" },
+        lib = { "lib_monphai", "lib_vatpham", "lib_boss", "lib_trangbi", "lib_others" },
     }
     for folder, files in tbInclude do
-        for i = 1, getn(files) do Include(root .. folder .. "\\" ..files[i] .. ".lua") end
+        for i = 1, getn(files) do Include(root .. folder .. "\\" .. files[i] .. ".lua") end
     end
 end
 JulianV:IncludeFiles()
@@ -177,13 +177,13 @@ function JulianV:Player_Dialog()
     dofile("script/global/gm/julianv/functions/player_manager.lua")
     local tbOpt = {
         { "NhËn ®iÓm", JulianV.Point_Dialog }, --
-        { "Kü n¨ng - TiÒm n¨ng", JulianV.skillSupport }, --    
+        { "Kü n¨ng - TiÒm n¨ng", JulianV.SkillSupport }, --    
         { "Häc kü n¨ng M«n ph¸i", change_phai }, --
         { "NhËn danh hiÖu", JulianV.NhanDanhHieu }, --
-        { "§æi mµu PK", JulianV.change_PK }, --
+        { "§æi mµu PK", JulianV.Change_PK }, --
         { "§æi ngò hµnh", JulianV.Change_Serries }, --
         { "§æi giíi tÝnh", JulianV.Change_Sex }, --
-        { "§æi tªn nh©n vËt", JulianV.renameCharacter },
+        { "§æi tªn nh©n vËt", JulianV.RenameCharacter },
     }
     JDialog:Show(tbOpt, main)
 end
@@ -228,10 +228,10 @@ function JulianV:TrangBi_VatPham()
         { "Trang bÞ hiÕm", JulianV.TrangBiHiem }, --
         { "Thay ®æi ngo¹i h×nh trang bÞ", JulianV.ChangeFeature_Dialog }, --    
         { "------------------------", JulianV.TrangBi_VatPham }, --
-        { "NhËn MagicScript Item (Genre, Detail, Particular)", JulianV.getMagicItem }, --
-        { "LÊy nhiÒu Magic Item (Particular)", JulianV.getMagicItemSll }, --
-        { "NhËn Questkey Item (Questkey ID)", JulianV.getQuestkey }, --
-        { "NhËn GoldItem (GoldItem ID)", JulianV.getGoldItem }, --       
+        { "NhËn MagicScript Item (Genre, Detail, Particular)", JulianV.GetMagicItem }, --
+        { "LÊy nhiÒu Magic Item (Particular)", JulianV.GetMagicItems }, --
+        { "NhËn Questkey Item (Questkey ID)", JulianV.GetQuestkey }, --
+        { "NhËn GoldItem (GoldItem ID)", JulianV.GetGoldItem }, --       
 
     }
     JDialog:Show(tbOpt, main)
@@ -315,26 +315,25 @@ end
 function JulianV:ChucNangKhac()
     local tbOpt = {
         { "Më Shop", Sale, { 188 } }, --        
-        { "§i tíi B·i LuyÖn C«ng", JulianV.goto_BLC }, --
-        { "Trë vÒ Ba L¨ng HuyÖn", JulianV.goto_BLH }, --  
-        { "Söa lçi ThÇn Hµnh Phï", JulianV.fix_shenxingfu }, --
+        { "§i tíi B·i LuyÖn C«ng", JulianV.Goto_BLC }, --
+        { "Trë vÒ Ba L¨ng HuyÖn", JulianV.Goto_BLH }, --  
+        { "Söa lçi ThÇn Hµnh Phï", JulianV.Fix_Shenxingfu }, --
         { "Huû vËt phÈm", DisposeItem }, --
         { "Më réng r­¬ng", JulianV.ExpandStorage }, --
         { "Dän s¹ch R­¬ng chøa ®å", JulianV.ClearF4 }, --        
         { "Check Emoticons", JulianV.CheckEmo }, --    
-        { "Load Table_File", JulianV.Load_Table_File }, --
         { "KickOutSelf", KickOutSelf }, --
     }
     JDialog:Show(tbOpt, main)
 end
 
-function JulianV:fix_shenxingfu()
+function JulianV:Fix_Shenxingfu()
     DisabledUseTownP(0)
     Talk(1, "",
         "Tr¹ng th¸i sö dông thæ ®Þa phï vµ thÇn hµnh phï cña quý nh©n sÜ ®· trë vÒ ban ®Çu<pic=46>")
 end
 
-function JulianV:goto_BLH()
+function JulianV:Goto_BLH()
     w, x, y = GetWorldPos()
     if (w ~= 53) then
         SetFightState(0)
@@ -345,7 +344,7 @@ function JulianV:goto_BLH()
     Msg2Player("Di chuyÓn vÒ <color=yellow>Ba L¨ng HuyÖn<color> thµnh c«ng!");
 end
 
-function JulianV:goto_BLC()
+function JulianV:Goto_BLC()
     NewWorld(996, 1581, 3197)
     SetFightState(1)
 end
@@ -408,15 +407,4 @@ function DisposeItem( nCount ) -- Huû vËt phÈm
         Msg2Player("Thao t¸c hñy vËt phÈm thµnh c«ng")
         Talk(1, "", "Thao t¸c thµnh c«ng, xin kiÓm tra l¹i<pic=46>");
     end
-end
-
-function JulianV:Load_Table_File()
-    local nRowCount = JDialog:GetRowCount("\\settings\\playertitle.txt", "table_title")
-    local tbOpt = {}
-    for i = 2, 11 do
-        tinsert(tbOpt, {
-            TabFile_GetCell("table_title", i, 1) .. "ID: " .. TabFile_GetCell("table_title", i, 2),
-        })
-    end
-    JDialog:Show(tbOpt, nil, "Load 10 dßng ®Çu cña file {{playertitle.txt}}")
 end

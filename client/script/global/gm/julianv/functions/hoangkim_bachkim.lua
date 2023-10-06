@@ -5,17 +5,17 @@ function JulianV.VKHK_Dialog( nType )
     local tbOpt = {}
     if nType == 1 then
         for id, szMonPhai in tbMonPhai.tbFacName do
-            tinsert(tbOpt, { szMonPhai, JulianV.getWeapon, { nType, id } })
+            tinsert(tbOpt, { szMonPhai, JulianV.GetWeapon, { nType, id } })
         end
     else
         for i = 1, 10 do
-            tinsert(tbOpt, { tbMonPhai.tbFacName[i], JulianV.getWeapon, { nType, i } })
+            tinsert(tbOpt, { tbMonPhai.tbFacName[i], JulianV.GetWeapon, { nType, i } })
         end
     end
     JDialog:Show(tbOpt, JulianV.NhanTrangBi, "Mêi <sex>chän m«n ph¸i<pic=46><color>")
 end
 
-function JulianV.getWeapon( nType, id )
+function JulianV.GetWeapon( nType, id )
     if (CountFreeRoomByWH(2, 4, 1) < 1) then
         Talk(1, "",
             "Hµnh trang kh«ng ®ñ « trèng! Xin h·y s¾p xÕp råi quay l¹i nhÐ<pic=46>");
@@ -98,17 +98,17 @@ end
 -------------------------Ên - Phi Phong - Trang Søc-------------------------
 function JulianV:NguHanhAn_Diag()
     local tbOpt = {
-        { "T©n Nh©m Hµnh Ên Gi¸m (H¹)", JulianV.getNguHanhAn, { 5930 } }, --
-        { "T©n Nh©m Hµnh Ên Gi¸m (Trung)", JulianV.getNguHanhAn, { 5931 } }, --
-        { "T©n Nh©m Hµnh Ên Gi¸m (Th­îng)", JulianV.getNguHanhAn, { 5932 } }, --
-        { "Ngò Hµnh Ên C­êng Ho¸", JulianV.getNguHanhAn, { 0 } }, --
-        { "Ngò Hµnh Ên Nh­îc Ho¸", JulianV.getNguHanhAn, { 1 } }, --
-        { "Ngò Hµnh Ên C­êng Ho¸ vµ Nh­îc Ho¸", JulianV.getNguHanhAn, { 2 } },
+        { "T©n Nh©m Hµnh Ên Gi¸m (H¹)", JulianV.GetNguHanhAn, { 5930 } }, --
+        { "T©n Nh©m Hµnh Ên Gi¸m (Trung)", JulianV.GetNguHanhAn, { 5931 } }, --
+        { "T©n Nh©m Hµnh Ên Gi¸m (Th­îng)", JulianV.GetNguHanhAn, { 5932 } }, --
+        { "Ngò Hµnh Ên C­êng Ho¸", JulianV.GetNguHanhAn, { 0 } }, --
+        { "Ngò Hµnh Ên Nh­îc Ho¸", JulianV.GetNguHanhAn, { 1 } }, --
+        { "Ngò Hµnh Ên C­êng Ho¸ vµ Nh­îc Ho¸", JulianV.GetNguHanhAn, { 2 } },
     }
     JDialog:Show(tbOpt, JulianV.TrangBiKhac_Dialog)
 end
 
-function JulianV.getNguHanhAn( nType, nIndex )
+function JulianV.GetNguHanhAn( nType, nIndex )
     if nType > 2 then
         Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddGoldItem(0, nType)))
         return
@@ -125,7 +125,7 @@ function JulianV.getNguHanhAn( nType, nIndex )
         end
         local tbOpt = {}
         for i = 1, 10 do
-            tinsert(tbOpt, { szLoaiAn(nType) .. i, JulianV.getNguHanhAn, { nType, nType * 10 + i } })
+            tinsert(tbOpt, { szLoaiAn(nType) .. i, JulianV.GetNguHanhAn, { nType, nType * 10 + i } })
         end
         JDialog:Show(tbOpt, JulianV.NguHanhAn_Diag)
     else
@@ -134,15 +134,15 @@ function JulianV.getNguHanhAn( nType, nIndex )
     end
 end
 
-function JulianV.getPhiPhong( nIndex )
+function JulianV.GetPhiPhong( nIndex )
     if not nIndex then
         local tbOpt = {
-            { "Phi Phong cÊp thÊp", JulianV.getPhiPhong, { 3465 } }, --
-            { "Phi Phong PhÖ Quang", JulianV.getPhiPhong, { 3476 } }, --
-            { "Phi Phong KhÊp ThÇn", JulianV.getPhiPhong, { 3479 } }, --
-            { "Phi Phong K×nh Thiªn", JulianV.getPhiPhong, { 3482 } }, --
-            { "Phi Phong V« Cùc", JulianV.getPhiPhong, { 3485 } }, --
-            { "Phi Phong Siªu CÊp", JulianV.getPhiPhong, { 3488 } },
+            { "Phi Phong cÊp thÊp", JulianV.GetPhiPhong, { 3465 } }, --
+            { "Phi Phong PhÖ Quang", JulianV.GetPhiPhong, { 3476 } }, --
+            { "Phi Phong KhÊp ThÇn", JulianV.GetPhiPhong, { 3479 } }, --
+            { "Phi Phong K×nh Thiªn", JulianV.GetPhiPhong, { 3482 } }, --
+            { "Phi Phong V« Cùc", JulianV.GetPhiPhong, { 3485 } }, --
+            { "Phi Phong Siªu CÊp", JulianV.GetPhiPhong, { 3488 } },
         }
         JDialog:Show(tbOpt, JulianV.TrangBiKhac_Dialog)
     else
@@ -155,14 +155,14 @@ function JulianV.getPhiPhong( nIndex )
     end
 end
 
-function JulianV.getTrangSuc( nIndex, nEnd )
+function JulianV.GetTrangSuc( nIndex, nEnd )
     if not nIndex then
         local tbOpt = {
-            { "Bé Trang Søc 1", JulianV.getTrangSuc, { 1 } }, --
-            { "Bé Trang Søc 2", JulianV.getTrangSuc, { 2 } }, --
-            { "Bé Trang Søc Long §¸m", JulianV.getTrangSuc, { 4483, 4487 } }, --
-            { "Bé Trang Søc Cuång Lan", JulianV.getTrangSuc, { 4488, 4492 } }, --
-            { "Long ChiÕn Vu D·", JulianV.getTrangSuc, { 5657 } },
+            { "Bé Trang Søc 1", JulianV.GetTrangSuc, { 1 } }, --
+            { "Bé Trang Søc 2", JulianV.GetTrangSuc, { 2 } }, --
+            { "Bé Trang Søc Long §¸m", JulianV.GetTrangSuc, { 4483, 4487 } }, --
+            { "Bé Trang Søc Cuång Lan", JulianV.GetTrangSuc, { 4488, 4492 } }, --
+            { "Long ChiÕn Vu D·", JulianV.GetTrangSuc, { 5657 } },
         }
         JDialog:Show(tbOpt, JulianV.TrangBiKhac_Dialog)
     else

@@ -1,46 +1,26 @@
 ------------------------------------------------------------------
 -- Copyright by Julian-V (https://www.youtube.com/julianv)
 ------------------------------------------------------------------
-tbItem = {}
-tbItem.Ds = {
-    Nhan = 1,
-    DayChuyen = 2,
-    NgocBoi = 3,
- }
-
-tbItem.tbItemInfo = {
-    [tbItem.Ds.Nhan] = {
-        szName = "NhÉn",
-        tbList = { 4134, 4135 },
-     },
-    [tbItem.Ds.DayChuyen] = {
-        szName = "D©y ChuyÒn",
-        tbList = { 4436 },
-     },
-    [tbItem.Ds.NgocBoi] = {
-        szName = "Ngäc Béi",
-        tbList = { 4481 },
-     },
-}
-
 function main()
     dofile("script/global/gm/julianv/functions/sieupham_baoruong.lua")
 
-    if (CountFreeRoomByWH(2, 2, 1) < 1) then
-        Talk(1, "", "Hµnh trang kh«ng ®ñ « trèng! Xin h·y s¾p xÕp råi quay l¹i nhÐ<pic=46>");
+    if CountFreeRoomByWH(2, 1, 1) < 1 then
+        Talk(1, "",
+            "Hµnh trang kh«ng ®ñ « trèng! Xin h·y s¾p xÕp råi quay l¹i nhÐ<pic=46>");
+        return
+    elseif CountFreeRoomByWH(1, 2, 1) < 1 then
+        Talk(1, "",
+            "Hµnh trang kh«ng ®ñ « trèng! Xin h·y s¾p xÕp råi quay l¹i nhÐ<pic=46>");
         return
     elseif CalcFreeItemCellCount() < 6 then
-        Talk(1, "", "Hµnh trang kh«ng ®ñ « trèng! Xin h·y s¾p xÕp råi quay l¹i nhÐ<pic=46>");
+        Talk(1, "",
+            "Hµnh trang kh«ng ®ñ « trèng! Xin h·y s¾p xÕp råi quay l¹i nhÐ<pic=46>");
         return
     else
-        getItem()
-    end
-end
-
-function getItem()
-    for i = 1, getn(tbItem.tbItemInfo) do
-        for _, tbItemIdx in tbItem.tbItemInfo[i].tbList do
-            Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddGoldItem(0, tbItemIdx)))
-        end
+        for i = 4134, 4135 do AddGoldItem(0, i) end
+        AddGoldItem(0, 4436)
+        AddGoldItem(0, 4481)
+        Msg2Player(
+            "NhËn ®­îc bé trang søc <color=yellow>§éc C« CÇu B¹i Giíi ChØ<color> vµ <color=yellow>Huynh §Ö")
     end
 end

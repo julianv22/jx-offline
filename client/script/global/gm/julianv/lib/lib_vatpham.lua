@@ -120,6 +120,25 @@ tbVatPham.VP_Khac = {
      },
 }
 
+tbVatPham.tbTransLifeItems = {
+    {
+        szName = "<B¾c §Èu Tr­êng Sinh ThuËt - C¬ Së Thiªn>",
+        tbProp = { 6, 1, 1390, 0, 0, 0 },
+        tbParam = { 60 },
+    }, {
+        szName = "<B¾c §Èu Tr­êng Sinh ThuËt - §¹i Thõa T©m Ph¸p>",
+        tbProp = { 6, 1, 2974, 0, 0, 0 },
+        tbParam = { 60 },
+    }, {
+        szName = "B¾c §Èu TÈy Tñy §¬n",
+        tbProp = { 6, 1, 30127, 0, 0, 0 },
+        tbParam = { 60 },
+     }, {
+        szName = "TÝch LÞch §¬n",
+        tbProp = { 6, 1, 2973, 0, 0, 0 },
+     },
+}
+
 function tbVatPham:Define()
     for id, NguyenLieu in tbVatPham.NguyenLieu do tbVatPham[id] = NguyenLieu end
 end

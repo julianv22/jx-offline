@@ -67,33 +67,3 @@ tbNhanCanKhon = {
         { "Thêi gian lµm chËm", 3878 },
     },
 }
-
-tbDanhHieu = {
-    VoLam = {
-        { "Th¸i thó Ph­îng T­êng", 153 }, { "Th¸i thó Thµnh §«", 154 },
-        { "Th¸i thó §¹i Lý", 155 }, { "Th¸i thó BiÖn Kinh", 156 },
-        { "Th¸i thó T­¬ng D­¬ng", 157 }, { "Th¸i thó D­¬ng Ch©u", 158 },
-        { "Th¸i thó L©m An", 159 }, { "Vâ L©m Liªn §Êu Qu¸n Qu©n", 81 },
-        { "Vâ L©m Liªn §Êu H¹ng 2", 82 }, { "Vâ L©m Liªn §Êu H¹ng 3", 83 },
-        { "Vâ L©m Liªn §Êu H¹ng 4", 84 }, { "Vâ L©m Minh Chñ", 188 },
-        { "Phiªu M· §¹i T­íng Qu©n", 185 }, { "Ngù Long Cuång §ao", 165 },
-        { "Long ThÇn KiÕm", 80 }, { "Thiªn H¹ §Ö NhÊt Bang", 189 },
-    },
-    KiemThe = {
-        { "GM Julian-V", 200 }, { "Phong V©n", 197 }, { "§¹i Th¸nh", 198 },
-        { "TrÊn Thiªn", 199 }, { "Uy ChÊn Cöu Ch©u", 192 }, { "Vâ L©m ChÝ T«n", 193 },
-        { "NhÊt KiÕm Phong Thiªn", 194 }, { "NhÊt L­u Cao Thñ", 195 },
-        { "HiÖp Kh¸ch Cuèi Cïng Trªn Giang Hå", 196 },
-    },
-}
-
-function tbDanhHieu.Active( DanhHieu )
-    -- local nTime = tonumber(FormatTime2String("%m%d%H%M", GetCurServerTime() * 60*60*24*nDays))
-    local nTime = tonumber(FormatTime2String("%m%d%H%M", GetCurServerTime() * 60 * 60 * 24 * 30))
-    local szTitle = type(DanhHieu) == "table" and DanhHieu[1] or DanhHieu
-    local nTitle = type(DanhHieu) == "table" and DanhHieu[2] or DanhHieu
-    Title_AddTitle(nTitle, 1, nTime);
-    Title_ActiveTitle(nTitle);
-    SetTask(1122, nTitle);
-    GMMsg2Player("KÝch ho¹t danh hiÖu", "<color=yellow>" .. szTitle)
-end

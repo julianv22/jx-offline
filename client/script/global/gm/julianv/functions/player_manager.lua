@@ -1,99 +1,14 @@
 ------------------------------------------------------------------
 -- Copyright by Julian-V (https://www.youtube.com/julianv)
 ------------------------------------------------------------------
-tbPointsType = { -- C¸c lo¹i ®iÓm
-    [1] = {
-        szName = "Kinh nghiÖm (EXP)",
-        szUnit = "®iÓm EXP",
-        nLimit = 9999999999999999,
-        pFun = function( num ) AddOwnExp(num) end,
-    },
-    [2] = {
-        szName = "§¼ng cÊp (Level)",
-        szUnit = "®¼ng cÊp",
-        nLimit = 200,
-        pFun = function( num ) ST_LevelUp(num - GetLevel()) end,
-    },
-    [3] = {
-        szName = "TiÒm n¨ng",
-        szUnit = "®iÓm TiÒm n¨ng",
-        nLimit = 1000000,
-        pFun = function( num ) AddProp(num) end,
-    },
-    [4] = {
-        szName = "Kü n¨ng",
-        szUnit = "®iÓm Kü n¨ng",
-        nLimit = 999,
-        pFun = function( num ) AddMagicPoint(num) end,
-    },
-    [5] = {
-        szName = "TiÒn v¹n",
-        szUnit = "v¹n l­îng",
-        nLimit = 100000,
-        pFun = function( num ) Earn(num * 10000) end,
-    },
-    [6] = {
-        szName = "TiÒn §ång",
-        szUnit = "TiÒn §ång",
-        nLimit = 999,
-        pFun = function( num ) for i = 1, num do AddStackItem(1, 4, 417, 1, 1, 0, 0, 0) end end,
-    },
-    [7] = {
-        szName = "Kim Nguyªn B¶o",
-        szUnit = "Kim Nguyªn B¶o",
-        nLimit = 999,
-        pFun = function( num ) for i = 1, num do AddEventItem(343) end end,
-    },
-    [8] = {
-        szName = "Danh Väng",
-        szUnit = "®iÓm Danh Väng",
-        nLimit = 100000,
-        pFun = function( num ) AddRepute(num) end,
-    },
-    [9] = {
-        szName = "Phóc Duyªn",
-        szUnit = "®iÓm Phóc Duyªn",
-        nLimit = 100000,
-        pFun = function( num )
-            FuYuan_Start()
-            FuYuan_Add(num)
-        end,
-    },
-    [10] = {
-        szName = "Tµi l·nh ®¹o",
-        pFun = function()
-            AddLeadExp(1000000000)
-            Msg2Player(
-                "NhËn ®­îc <color=yellow>1.000.000.000<color> <color=green>®iÓm l·nh ®¹o")
-        end,
-    },
-    [11] = {
-        szName = "§iÓm cèng hiÕn Bang Héi",
-        pFun = function()
-            AddContribution(1000000)
-            Msg2Player(
-                "NhËn ®­îc <color=yellow>1.000.000<color> <color=green>®iÓm cèng hiÕn Bang Héi")
-        end,
-    },
-    [12] = {
-        szName = "Ch©n Nguyªn vµ Hé M¹ch §¬n",
-        pFun = function()
-            SetTask(4000, GetTask(4000) + 12000)
-            for i = 1, 12 do AddStackItem(500, 6, 1, 3203, 0, 0, 0) end
-            Msg2Player(
-                "NhËn ®­îc <color=yellow>60.000<color> Ch©n Nguyªn vµ <color=yellow>30.000<color> Hé M¹ch §¬n")
-        end,
-    },
-}
-
-function JulianV.change_PK( nType ) -- ®æi mµu pk
+function JulianV.Change_PK( nType ) -- ®æi mµu pk
     if not nType then
         local tbSay = { "<sex>muèn ®æi sang mµu tr¹ng th¸i nµo<pic=44>" }
         local szPK = function( num )
             return format("%s (%s)", tbMonPhai.tbPK_Status[num][1], tbMonPhai.tbPK_Status[num][3])
         end
         for i = 0, getn(tbMonPhai.tbPK_Status) do
-            tinsert(tbSay, szPK(i) .. format("/#JulianV.change_PK(%d)", i))
+            tinsert(tbSay, szPK(i) .. format("/#JulianV.Change_PK(%d)", i))
         end
         tinsert(tbSay, "Ta sÏ quay l¹i sau/return")
         CreateTaskSay(tbSay)
@@ -108,14 +23,14 @@ end
 Include("\\script\\global\\ÌØÊâÓÃµØ\\ÃÎ¾³\\npc\\Â·ÈË_ÅÑÉ®.lua"); -- tÈy tuû, c«ng ®iÓm nhanh
 Include("\\script\\global\\gm\\julianv\\npc\\npc_congskill.lua") -- Hç Trî Céng Full Skill
 
-function JulianV:skillSupport() -- hç trî skill
+function JulianV:SkillSupport() -- hç trî skill
     local tbOpt = {
         { "TÈy Tñy", JulianV.ClearPoints_Dialog }, --
         { "Céng ®iÓm nhanh", JulianV.CongDiemNhanh }, --    
         { "Thªm - Xo¸ Skill n©ng cao", JulianV.Skill_Nang_Cao },
     }
     if HaveMagic(210) == -1 then
-        tinsert(tbOpt, 1, { "Häc Khinh c«ng", JulianV.learnSkill, { 210 } })
+        tinsert(tbOpt, 1, { "Häc Khinh c«ng", JulianV.LearnSkill, { 210 } })
     end
     JDialog:Show(tbOpt, JulianV.Player_Dialog)
 end
@@ -125,10 +40,10 @@ function JulianV:CongDiemNhanh()
         { "Céng TiÒm n¨ng nhanh", add_prop }, --
         { "Céng Kü n¨ng nhanh", add_magic, { GetLastFactionNumber() } }, --
     }
-    JDialog:Show(tbOpt, JulianV.skillSupport)
+    JDialog:Show(tbOpt, JulianV.SkillSupport)
 end
 
-function JulianV.learnSkill( nSkillId, nLevel ) -- häc skill
+function JulianV.LearnSkill( nSkillId, nLevel ) -- häc skill
     if HaveMagic(nSkillId) == 1 then
         Talk(1, "", "Ng­¬i ®· së h÷u kü n¨ng nµy råi<pic=46>")
     else
@@ -140,7 +55,7 @@ function JulianV:ClearPoints_Dialog() -- tÈy tuû
     local tbOpt = {
         { "TÈy TiÒm n¨ng", DoClearPropCore }, --
         { "TÈy Kü n¨ng", DoClearSkillCore }, --
-        { "Kh«ng tÈy", JulianV.skillSupport }, --
+        { "Kh«ng tÈy", JulianV.SkillSupport }, --
     }
     JDialog:Show(tbOpt)
 end
@@ -150,7 +65,7 @@ function JulianV:Skill_Nang_Cao()
         { "Thªm Skill (SkillID, Level)", JulianV.AdvancedSkill, { 0 } }, --
         { "Xo¸ Skill (SkillID)", DelAdvSkill, { 0 } }, --        
     }
-    JDialog:Show(tbOpt, JulianV.skillSupport)
+    JDialog:Show(tbOpt, JulianV.SkillSupport)
 end
 
 function JulianV.AdvancedSkill( szSkill )
@@ -242,9 +157,9 @@ function JulianV.Change_Serries( nSeries ) -- ®æi ngò hµnh
     end
 end
 
-function JulianV.renameCharacter( szName ) -- ®æi tªn
+function JulianV.RenameCharacter( szName ) -- ®æi tªn
     if not szName then
-        g_AskClientStringEx("Julian-V", 1, 100, "NhËp tªn míi", { JulianV.renameCharacter })
+        g_AskClientStringEx("Julian-V", 1, 100, "NhËp tªn míi", { JulianV.RenameCharacter })
     else
         RenameRole(szName)
     end

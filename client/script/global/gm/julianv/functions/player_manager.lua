@@ -44,10 +44,14 @@ function JulianV:CongDiemNhanh()
 end
 
 function JulianV.LearnSkill( nSkillId, nLevel ) -- häc skill
-    if HaveMagic(nSkillId) == 1 then
+    nLevel = nLevel or 1
+    if HaveMagic(nSkillId) == nLevel then
         Talk(1, "", "Ng­¬i ®· së h÷u kü n¨ng nµy råi<pic=46>")
     else
-        AddMagic(nSkillId, nLevel and nLevel or 1)
+        AddMagic(nSkillId, nLevel)
+        Msg2Player(
+            "NhËn ®­îc Skill <color=yellow>" .. GetSkillName(nSkillId) .. "<color> cÊp " ..
+                nLevel)
     end
 end
 
@@ -63,7 +67,7 @@ end
 function JulianV:Skill_Nang_Cao()
     local tbOpt = {
         { "Thªm Skill (SkillID, Level)", JulianV.AdvancedSkill, { 0 } }, --
-        { "Xo¸ Skill (SkillID)", DelAdvSkill, { 0 } }, --        
+        { "Xo¸ Skill (SkillID)", JulianV.DelAdvSkill }, --        
     }
     JDialog:Show(tbOpt, JulianV.SkillSupport)
 end
@@ -76,7 +80,7 @@ function JulianV.AdvancedSkill( szSkill )
         if getn(tbSkill) > 2 then
             Talk(1, "", "Qu¸ nhiÒu tham sè, chØ nhËn 2 tham sè lµ Skill ID vµ Level<pic=46>")
         else
-            local nSkillId, nLevel = tonumber(tbSkill[1]), tonumber(tbSkill[2])
+            local nSkillId, nLevel = tonumber(tbSkill[1]), tbSkill[2] and tonumber(tbSkill[2]) or 1
             AddMagic(nSkillId, nLevel)
             Msg2Player("NhËn ®­îc Skill <color=yellow>" .. GetSkillName(nSkillId) ..
                            "<color> cÊp " .. nLevel)

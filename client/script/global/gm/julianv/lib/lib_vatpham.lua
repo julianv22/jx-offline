@@ -82,7 +82,7 @@ tbVatPham.NguyenLieu = {
          },
     },
 }
-tbVatPham.VP_Khac = {
+tbVatPham.VatPhamKhac = {
     {
         szName = "Håi Thiªn T¸i T¹o LÔ Bao",
         tbProp = { 6, 1, 1781, 0, 0, 0 },
@@ -140,12 +140,16 @@ tbVatPham.tbTransLifeItems = {
 }
 
 function tbVatPham:Define()
-    for id, NguyenLieu in tbVatPham.NguyenLieu do tbVatPham[id] = NguyenLieu end
+    for id, NguyenLieu in self.NguyenLieu do --
+        self[id] = NguyenLieu
+    end
 end
 tbVatPham:Define()
 
 function tbVatPham:Khac()
     local tbTemp = {}
-    for id, VP_Khac in tbVatPham.VP_Khac do tbTemp[id] = VP_Khac end
+    for id, VP_Khac in self.VatPhamKhac do --
+        tbTemp[id] = VP_Khac
+    end
     return tbTemp
 end

@@ -85,16 +85,16 @@ end
 ---@param tab_name? string @Table name
 ---@param start_col? integer
 ---@param max_row? integer
-function JDialog:GetTabFileData( path, tab_name, start_col, max_row ) -- Doc file txt
+function JDialog:GetTabFileData( path, tab_name, start_row, max_col ) -- Doc file txt
     if TabFile_Load(path, tab_name) ~= 1 then return print("ß‰c tÀp tin th t bπi! " .. path) end
-    if not start_col or start_col < 1 then start_col = 1 end
-    if not max_row or max_row < 1 then max_row = 1 end
+    if not start_row or start_row < 1 then start_row = 1 end
+    if not max_col or max_col < 1 then max_col = 1 end
     local nCount = TabFile_GetRowCount(tab_name)
     local tbData = {}
-    for y = start_col, nCount do
+    for y = start_row, nCount do
         local tbTemp = {}
-        for x = 1, max_row do tinsert(tbTemp, TabFile_GetCell(tab_name, y, x)) end
+        for x = 1, max_col do tinsert(tbTemp, TabFile_GetCell(tab_name, y, x)) end
         tinsert(tbData, tbTemp)
     end
-    return tbData, nCount - start_col + 1
+    return tbData, nCount - start_row + 1
 end

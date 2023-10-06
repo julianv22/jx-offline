@@ -2,7 +2,7 @@
 
 [![Julian-V](docs/Julian-V.png)](https://youtube.com/julianv "Julian-V")
 
-[![JX](https://badgen.net/badge/JX-Offline/Linux/cyan?icon=git)](/) [![Version](https://badgen.net/badge/Version/8.2/purple?icon=packagephobia)](#jx-offline) [![Actions](https://github.com/julianv22/jx-offline/actions/workflows/main.yml/badge.svg?event=push)](https://github.com/julianv22/jx-offline/actions/workflows/main.yml)
+[![JX](https://badgen.net/badge/JX-Offline/Linux/cyan?icon=git)](/) [![Version](https://badgen.net/badge/Version/8.2/purple?icon=packagephobia)](#jx-offline) [![Actions](https://github.com/julianv22/jx-offline/actions/workflows/main.yml/badge.svg?event=push)](https://github.com/julianv22/jx-offline/actions/workflows/main.yml) [![Last Commit](https://img.shields.io/github/last-commit/julianv22/jx-offline)](https://github.com/julianv22/jx-offline/commits/main) [![Release](https://img.shields.io/github/v/release/julianv22/jx-offline)](https://github.com/julianv22/jx-offline/releases) [![Download](https://img.shields.io/github/downloads/julianv22/jx-offline/total)](#) ![[License](https://img.shields.io/github/license/julianv22/jx-offline)](#)
 
 # README 
 
@@ -70,3 +70,6 @@ Quick install work environments with PowerShell
 Setting font in VsCode
 
 File Font: **.VnSourceCodePro-Regular.ttf**
+
+### License
+[Lua](https://www.lua.org/license.html)

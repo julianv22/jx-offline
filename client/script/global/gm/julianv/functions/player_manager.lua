@@ -27,7 +27,7 @@ function JulianV:SkillSupport() -- hÁ trÓ skill
     local tbOpt = {
         { "T»y TÒy", JulianV.ClearPoints_Dialog }, --
         { "CÈng Æi”m nhanh", JulianV.CongDiemNhanh }, --    
-        { "Th™m - Xo∏ Skill n©ng cao", JulianV.Skill_Nang_Cao },
+        { "Th™m - Xo∏ Skill n©ng cao", JulianV.Skill_NangCao },
     }
     if HaveMagic(210) == -1 then
         tinsert(tbOpt, 1, { "H‰c Khinh c´ng", JulianV.LearnSkill, { 210 } })
@@ -64,17 +64,17 @@ function JulianV:ClearPoints_Dialog() -- t»y tu˚
     JDialog:Show(tbOpt)
 end
 ------------------------Th™m, xo∏ skil theo ID------------------------
-function JulianV:Skill_Nang_Cao()
+function JulianV:Skill_NangCao()
     local tbOpt = {
-        { "Th™m Skill (SkillID, Level)", JulianV.AdvancedSkill, { 0 } }, --
+        { "Th™m Skill (SkillID, Level)", JulianV.AddAdvSkill, { 0 } }, --
         { "Xo∏ Skill (SkillID)", JulianV.DelAdvSkill }, --        
     }
     JDialog:Show(tbOpt, JulianV.SkillSupport)
 end
 
-function JulianV.AdvancedSkill( szSkill )
+function JulianV.AddAdvSkill( szSkill )
     if szSkill == 0 then
-        g_AskClientStringEx("1995,20", 1, 100, "Skill ID", { JulianV.AdvancedSkill })
+        g_AskClientStringEx("1995,20", 1, 100, "Skill ID", { JulianV.AddAdvSkill })
     else
         local tbSkill = split(szSkill, ",")
         if getn(tbSkill) > 2 then
@@ -214,6 +214,18 @@ function JulianV.DanhHieuVoLam( nPage )
     JDialog:Show(tbOpt, nil, "MÍi <sex>ch‰n Danh Hi÷u<pic=46>}}")
 end
 
+function JulianV.ActiveTitle( nType, nTitleId )
+    if nType == 1 then
+        if not nTitleId or nTitleId == 0 then
+            g_AskClientNumberEx(0, 500, "Title ID", { JulianV.ActiveTitle, { nType } })
+        else
+            tbDanhHieu.Active(nTitleId)
+        end
+    else
+        Title_RemoveTitle(GetTask(1122))
+    end
+end
+
 function JulianV.ShowAllTitle( nPage )
     local nOfPage = 12
     local path, tab_name = "\\settings\\playertitle.txt", "title"
@@ -242,16 +254,4 @@ function JulianV.ShowAllTitle( nPage )
     if nPage > 1 then tinsert(tbOpt, { "Trang tr≠Ìc", JulianV.ShowAllTitle, { nPage - 1 } }) end
     JDialog:Show(tbOpt, nil, "MÍi <sex>ch‰n Danh Hi÷u<pic=46>}}\n\n" ..
         strfill_center("Trang {{" .. nPage .. "/" .. nCount .. "}}", 50, "-"))
-end
-
-function JulianV.ActiveTitle( nType, nTitleId )
-    if nType == 1 then
-        if not nTitleId or nTitleId == 0 then
-            g_AskClientNumberEx(0, 500, "Title ID", { JulianV.ActiveTitle, { nType } })
-        else
-            tbDanhHieu.Active(nTitleId)
-        end
-    else
-        Title_RemoveTitle(GetTask(1122))
-    end
 end

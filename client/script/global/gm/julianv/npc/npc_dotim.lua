@@ -253,22 +253,22 @@ function tbDoTim.PurpleItem_diaglog( nItemId ) -- ch‰n t™n trang bﬁ
     for id, tbEquip in tbDoTim.tbTrangBi[nItemId].tbEquip do
         local nEqIdx, nGenre, nDetail, nPart = id, tbEquip[2], tbEquip[3], tbEquip[4]
         tinsert(tbOpt,
-            { tbEquip[1], tbDoTim.getItemLevel, { nItemId, nEqIdx, nGenre, nDetail, nPart } })
+            { tbEquip[1], tbDoTim.GetItemLevel, { nItemId, nEqIdx, nGenre, nDetail, nPart } })
     end
     JDialog:Show(tbOpt, main, { MAIN_TITLE })
 end
 
-function tbDoTim.getItemLevel( ... ) -- ch‰n level trang bﬁ
+function tbDoTim.GetItemLevel( ... ) -- ch‰n level trang bﬁ
     local nItemId, nEqIdx, nGenre, nDetail, nPart = unpack(arg)
     tbCheTao.nItemId = nItemId
     tbCheTao.szName = tbDoTim.tbTrangBi[nItemId].tbEquip[nEqIdx][1]
     tbCheTao.nGenre = nGenre
     tbCheTao.nDetail = nDetail
     tbCheTao.nPart = nPart
-    g_AskClientNumberEx(1, 10, "Item level", { tbDoTim.getItemSeries })
+    g_AskClientNumberEx(1, 10, "Item level", { tbDoTim.GetItemSeries })
 end
 ---@param nItemLevel? integer
-function tbDoTim.getItemSeries( nItemLevel ) -- ch‰n ngÚ hµnh trang bﬁ
+function tbDoTim.GetItemSeries( nItemLevel ) -- ch‰n ngÚ hµnh trang bﬁ
     tbCheTao.nLevel = nItemLevel
     MAIN_TITLE = MAIN_TITLE ..
                      format("\n<pic=137> Trang bﬁ: <bclr=blue>%s<bclr> c p: %d", tbCheTao.szName,
@@ -276,14 +276,14 @@ function tbDoTim.getItemSeries( nItemLevel ) -- ch‰n ngÚ hµnh trang bﬁ
     local szTitle = MAIN_TITLE .. "\n<pic=136><color>Ch‰n ngÚ hµnh:"
     local tbOpt = {}
     for nSeries, tbHe in tbDoTim.tbSeries do
-        tinsert(tbOpt, { "H÷ " .. tbHe[1], tbDoTim.getLine, { 1, nSeries } })
+        tinsert(tbOpt, { "H÷ " .. tbHe[1], tbDoTim.GetLines, { 1, nSeries } })
     end
     JDialog:Show(tbOpt, nil, { szTitle })
 end
 ---@param nLine? integer @So dong
 ---@param nSeries? integer @Ngu hanh
 ---@param tbLineOpt? table @Thuoc tinh dong
-function tbDoTim.getLine( nLine, nSeries, tbLineOpt ) -- ch‰n c∏c dﬂng
+function tbDoTim.GetLines( nLine, nSeries, tbLineOpt ) -- ch‰n c∏c dﬂng
     tbCheTao.nSeries = nSeries
     local tbOpt = {}
     local szTitle = ""
@@ -301,50 +301,50 @@ function tbDoTim.getLine( nLine, nSeries, tbLineOpt ) -- ch‰n c∏c dﬂng
     end
     if nLine <= 6 then
         szTitle = MAIN_TITLE .. "\n<pic=135><color> Ch‰n dﬂng " .. nLine .. ":"
-        tbDoTim.insertTable(tbOpt, nLine + 1)
+        tbDoTim.InsertTable(tbOpt, nLine + 1)
     else
         szTitle = MAIN_TITLE
-        tinsert(tbOpt, { "ßÂng ˝ ch’ tπo", tbDoTim.CheTaoDoTim })
+        tinsert(tbOpt, { "ßÂng ˝ ch’ tπo", tbDoTim.CreateQItem })
     end
     JDialog:Show(tbOpt, nil, { szTitle })
 end
 ---@param tbOpt? table @Options
 ---@param nLine? integer @So dong
-function tbDoTim.insertTable( tbOpt, nLine ) -- hi”n thﬁ c∏c dﬂng
+function tbDoTim.InsertTable( tbOpt, nLine ) -- hi”n thﬁ c∏c dﬂng
     if tbCheTao.nItemId == 1 then -- check id n’u lµ vÚ kh›
         for _, optVK in tbDoTim.tbWeaponMagic[tbCheTao.nSeries] do
             if type(optVK) == "table" then
-                tinsert(tbOpt, { optVK[1], tbDoTim.getLine, { nLine, tbCheTao.nSeries, optVK } })
+                tinsert(tbOpt, { optVK[1], tbDoTim.GetLines, { nLine, tbCheTao.nSeries, optVK } })
             end
         end
     else
         if tbCheTao.nItemId == 9 then -- n’u lµ giµy th◊ th™m dﬂng TDDC
             tinsert(tbOpt, {
-                "TËc ÆÈ di chuy”n", tbDoTim.getLine,
+                "TËc ÆÈ di chuy”n", tbDoTim.GetLines,
                 { nLine, tbCheTao.nSeries, { "TËc ÆÈ di chuy”n", 70 } },
             })
         end
         if tbCheTao.nItemId == 4 then -- n’u lµ d©y chuy“n th◊ th™m dﬂng Kh∏ng t t c∂
             tinsert(tbOpt, {
-                "Kh∏ng t t c∂", tbDoTim.getLine,
+                "Kh∏ng t t c∂", tbDoTim.GetLines,
                 { nLine, tbCheTao.nSeries, { "Kh∏ng t t c∂", 120 } },
             })
         end
         if tbCheTao.nItemId == 3 and tbCheTao.nSeries == 0 then -- n’u lµ ∏o h÷ Kim th◊ th™m dﬂng Ph∂n Æﬂn cÀn chi’n
             tinsert(tbOpt, {
-                "Ph∂n Æﬂn cÀn chi’n", tbDoTim.getLine,
+                "Ph∂n Æﬂn cÀn chi’n", tbDoTim.GetLines,
                 { nLine, tbCheTao.nSeries, { "Ph∂n Æﬂn cÀn chi’n", 80 } },
             })
         end
         for _, optTB in tbDoTim.tbEquipMagic[tbCheTao.nSeries] do
             if type(optTB) == "table" then
-                tinsert(tbOpt, { optTB[1], tbDoTim.getLine, { nLine, tbCheTao.nSeries, optTB } })
+                tinsert(tbOpt, { optTB[1], tbDoTim.GetLines, { nLine, tbCheTao.nSeries, optTB } })
             end
         end
     end
 end
 
-function tbDoTim:CheTaoDoTim()
+function tbDoTim:CreateQItem()
     local nItemIdx = AddQualityItem(2, tbCheTao.nGenre, tbCheTao.nDetail, tbCheTao.nPart,
                          tbCheTao.nLevel, tbCheTao.nSeries, 500, tbCheTao.tbOptions[1][2],
                          tbCheTao.tbOptions[2][2], tbCheTao.tbOptions[3][2],

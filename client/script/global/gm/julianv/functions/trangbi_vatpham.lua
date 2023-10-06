@@ -287,7 +287,7 @@ function JulianV.QualityItem_Dialog( nSex, nSeries ) -- dÂ t›m
         JDialog:Show(tbOpt, JulianV.NhanTrangBi2, "MÍi <sex>ch‰n loπi trang bﬁ<pic=46><color>")
     else
         for szName, _ in QItemNam do
-            tinsert(tbOpt, { szName, JulianV.getQualityItem, { nSex, szName } })
+            tinsert(tbOpt, { szName, JulianV.GetQualityItem, { nSex, szName } })
         end
         JDialog:Show(tbOpt, JulianV.QualityItem_Dialog,
             "MÍi <sex>ch‰n loπi trang bﬁ<pic=46><color>")
@@ -295,12 +295,12 @@ function JulianV.QualityItem_Dialog( nSex, nSeries ) -- dÂ t›m
 
 end
 
-function JulianV.getQualityItem( ... )
+function JulianV.GetQualityItem( ... )
     local nSex, szName, nSeries = unpack(arg)
     if not nSeries then
         local tbOpt = {}
         for i = 0, 4 do
-            tinsert(tbOpt, { tbMonPhai.tbSeries[i][1], JulianV.getQualityItem, { nSex, szName, i } })
+            tinsert(tbOpt, { tbMonPhai.tbSeries[i][1], JulianV.GetQualityItem, { nSex, szName, i } })
         end
         JDialog:Show(tbOpt, { JulianV.QualityItem_Dialog, { nSex } },
             "MÍi <sex>ch‰n ngÚ hµnh cho trang bﬁ<pic=46><color>")
@@ -318,26 +318,26 @@ function JulianV.DoXanh_Dialog( szEquipName ) -- ÆÂ xanh
 
     else
         for id, tbEquip in tbDoXanh[szEquipName] do
-            tinsert(tbOpt, { tbEquip[1], JulianV.Chon_Series, { tbEquip } })
+            tinsert(tbOpt, { tbEquip[1], JulianV.DoXanh_Series, { tbEquip } })
         end
     end
     JDialog:Show(tbOpt, JulianV.DoXanh_Dialog, "<sex>muËn nhÀn trang bﬁ nµo<pic=44><color>")
 end
 
-function JulianV.Chon_Series( tbEquip )
+function JulianV.DoXanh_Series( tbEquip )
     local tbOpt = {}
     for i = 0, getn(tbMonPhai.tbSeries) do
-        tinsert(tbOpt, { tbMonPhai.tbSeries[i][1], JulianV.getDoXanh, { tbEquip, i } })
+        tinsert(tbOpt, { tbMonPhai.tbSeries[i][1], JulianV.NhanDoXanh, { tbEquip, i } })
     end
     JDialog:Show(tbOpt, JulianV.DoXanh_Dialog,
         "MÍi <sex>ch‰n ngÚ hµnh cho trang bﬁ<pic=46><color>")
 end
 
-function JulianV.getDoXanh( tbEquip, nSeries, nCount )
+function JulianV.NhanDoXanh( tbEquip, nSeries, nCount )
     if nCount == 0 then return end
     if not nCount then
         g_AskClientNumberEx(0, CalcFreeItemCellCount(), "SË l≠Óng",
-            { JulianV.getDoXanh, { tbEquip, nSeries } })
+            { JulianV.NhanDoXanh, { tbEquip, nSeries } })
     else
         local nItemIndex
         local nGenre, nDetail, nPart = tbEquip[2], tbEquip[3], tbEquip[4]
@@ -352,18 +352,18 @@ function JulianV:TransLifeItem_Dialog()
     local tbOpt = {}
     local TSItems = tbVatPham.tbTransLifeItems
     for i = 1, getn(TSItems) do
-        tinsert(tbOpt, { TSItems[i].szName, JulianV.getTransLifeItem, { i } })
+        tinsert(tbOpt, { TSItems[i].szName, JulianV.GetTransLifeItem, { i } })
     end
     JDialog:Show(tbOpt, JulianV.NhanVatPham)
 end
 
-function JulianV.getTransLifeItem( nIndex, nCount )
+function JulianV.GetTransLifeItem( nIndex, nCount )
     local TSItems = tbVatPham.tbTransLifeItems
     if nCount == 0 then return end
     local nMax = CalcFreeItemCellCount()
     if not nCount then
         g_AskClientNumberEx(0, nIndex == 4 and 999 or nMax, "SË l≠Óng",
-            { JulianV.getTransLifeItem, { nIndex } })
+            { JulianV.GetTransLifeItem, { nIndex } })
     else
         if nIndex == 4 then
             for i = 1, nCount do

@@ -39,11 +39,11 @@ function JulianV.getWeapon( nType, id )
 end
 
 function JulianV.SetHKMP_Dialog( nItemId ) -- set trang bÞ hkmp
-    if GetFaction() == "" then
+    if GetLastFactionNumber() == -1 then
         Talk(1, "", "Nhµ ng­¬i ch­a gia nhËp m«n ph¸i nhËn c¸i g× mµ nhËn <pic=138>")
         return
     end
-    local nFacID = tbMonPhai.tbPinyn[GetFaction()][1]
+    local nFacID = GetLastFactionNumber() + 1
     if not nItemId then
         local tbOpt = {}
         for id, wp in tbMonPhai.tbGoldEquip[nFacID] do

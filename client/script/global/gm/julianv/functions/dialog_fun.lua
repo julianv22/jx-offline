@@ -41,14 +41,10 @@ end
 
 function JDialog:DefaultTitle() -- Reset tieu de Dialog ve mac dinh
     local nW, nX, nY = GetWorldPos()
-    local szFactionName = GetFaction()
-    if szFactionName == "" then
-        szFactionName = "T¸n Nh©n"
-    elseif szFactionName ~= "Míi nhËp giang hå " then
-        szFactionName = tbMonPhai.tbPinyn[GetFaction()][2]
-    end
+    local szFactionName = GetLastFactionNumber() == -1 and "T¸n Nh©n" or
+                              tbMonPhai.tbFacName[GetLastFactionNumber() + 1]
     local szTongName = GetTong()
-    szTongName = szTongName == "" and "Trèng" or szTongName
+    if szTongName == "" then szTongName = "Trèng" end
     local szAccount, szName, nTransLifeCount = GetAccount(), GetName(), ST_GetTransLifeCount()
     local szCurCamp = format("<color=%s>%s<color>", tbMonPhai.tbPK_Status[GetCamp()][2],
                           tbMonPhai.tbPK_Status[GetCamp()][1])

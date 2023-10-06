@@ -28,6 +28,7 @@ function main()
     dofile("script/global/gm/julianv/lib/lib_monphai.lua")
     dofile("script/global/gm/julianv/lib/lib_trangbi.lua")
     dofile("script/global/gm/julianv/lib/lib_boss.lua")
+    dofile("script/global/gm/julianv/lib/lib_others.lua")
     JulianV:Main()
     return 1
 end
@@ -404,7 +405,7 @@ function DisposeItem( nCount ) -- Huû vËt phÈm
             RemoveItemByIndex(nItemIndex)
             -- WriteLog(date("%Y%m%d %H%M%S").."\t".." GM Hñy Item "..GetAccount().."\t"..GetName().."\t".." Huû item "..strItem)
         end
-        Msg2Player("Thao t¸c hñy vËt phÈm thµnh c«ng")
+        Msg2Player("Thao t¸c hñy vËt phÈm thµnh c«ng!")
         Talk(1, "", "Thao t¸c thµnh c«ng, xin kiÓm tra l¹i<pic=46>");
     end
 end

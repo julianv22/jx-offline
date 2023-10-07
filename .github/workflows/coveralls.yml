@@ -17,11 +17,11 @@ jobs:
       with:
         node-version: 16.x
 
-    - name: npm install
-      run: npm install
+    #- name: npm install
+     # run: npm install
 
-    - name: Test ${{ matrix.test_number }}
-      run: make test-coverage-${{ matrix.test_number }}
+    - name: Test-Coverage
+      run: make test-coverage
     - name: Coveralls Parallel
       uses: coverallsapp/github-action@v2
       with:
@@ -38,4 +38,4 @@ jobs:
       uses: coverallsapp/github-action@v2
       with:
         parallel-finished: true
-        carryforward: "run-1,run-2"
+        #carryforward: "run-1,run-2"

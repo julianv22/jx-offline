@@ -335,7 +335,7 @@ function JulianV:Fix_Shenxingfu()
 end
 
 function JulianV:Goto_BLH()
-    w, x, y = GetWorldPos()
+    local w, x, y = GetWorldPos()
     if (w ~= 53) then
         SetFightState(0)
         NewWorld(53, 1626, 3178)

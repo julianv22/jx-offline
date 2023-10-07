@@ -1,6 +1,6 @@
 on: ["push", "pull_request"]
 
-name: Coveralls Parallel
+name: Coveralls GitHub Action
 
 jobs:
   test:
@@ -20,7 +20,7 @@ jobs:
       run: npm install
 
     - name: Run tests
-      run: make test
+      run: make test-coverage
 
     - name: Coveralls Parallel
       uses: coverallsapp/github-action@master

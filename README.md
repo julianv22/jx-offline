@@ -61,7 +61,7 @@ https://jxdocs.com/admin
 
 https://fb.com/groups/volamquan
 
-https://www.fb.com/groups/pytagaming1
+https://fb.com/groups/pytagaming1
 
 # Linh tinh
 

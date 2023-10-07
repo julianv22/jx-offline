@@ -13,8 +13,6 @@
  <a href="#"><img title="Downloads" src="https://img.shields.io/github/downloads/julianv22/jx-offline/total"></a> -->
 </p>
 
-<a href='https://coveralls.io/github/julianv22/jx-offline'><img title='Coverage Status' src='https://coveralls.io/repos/github/julianv22/jx-offline/badge.svg'/></a>
-
 # README 
 
 ### Yêu cầu cần thiết:

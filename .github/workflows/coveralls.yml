@@ -17,8 +17,7 @@ jobs:
         node-version: 16.x
 
     - name: npm install, make test-coverage
-      run: |
-        #npm install
+      run: |        
         make test-coverage
 
     - name: Coveralls

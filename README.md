@@ -2,7 +2,8 @@
 
 [![Julian-V](docs/Julian-V.png)](https://youtube.com/julianv "Julian-V")
 
-[![JX](https://badgen.net/badge/JX-Offline/Linux/cyan?icon=git)](/) [![Version](https://badgen.net/badge/Version/8.2/purple?icon=packagephobia)](#jx-offline) [![Actions](https://github.com/julianv22/jx-offline/actions/workflows/main.yml/badge.svg?event=push)](https://github.com/julianv22/jx-offline/actions/workflows/main.yml) [![Last Commit](https://img.shields.io/github/last-commit/julianv22/jx-offline)](https://github.com/julianv22/jx-offline/commits/main) <!-- [![Release](https://img.shields.io/github/v/release/julianv22/jx-offline)](https://github.com/julianv22/jx-offline/releases) [![Download](https://img.shields.io/github/downloads/julianv22/jx-offline/total)](#) -->
+[![JX](https://badgen.net/badge/JX-Offline/Linux/cyan?icon=git)](/) [![Version](https://badgen.net/badge/Version/8.2/purple?icon=packagephobia)](#jx-offline) [![License](https://img.shields.io/github/license/julianv22/jx-offline?logo=atom&label=License)](LICENSE) [![Actions](https://github.com/julianv22/jx-offline/actions/workflows/main.yml/badge.svg?event=push)](https://github.com/julianv22/jx-offline/actions/workflows/main.yml) [![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/t/julianv22/jx-offline?logo=git&label=Commits)](#)
+ [![Last Commit](https://img.shields.io/github/last-commit/julianv22/jx-offline?logo=github&label=Last%20Commit)](https://github.com/julianv22/jx-offline/commits/main) <!-- [![Release](https://img.shields.io/github/v/release/julianv22/jx-offline)](https://github.com/julianv22/jx-offline/releases) [![Download](https://img.shields.io/github/downloads/julianv22/jx-offline/total)](#) -->
 
 # README 
 

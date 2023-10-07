@@ -23,8 +23,8 @@
     "terminal.integrated.fontFamily": "Consolas",
     "files.autoSave": "afterDelay",
     "explorer.confirmDelete": false,
-    "editor.codeLensFontFamily": "sonkt_Source Code Pro",
+    "editor.codeLensFontFamily": ".VnSourceCodePro-Regular",
     "files.encoding": "iso88591",
-    "editor.fontFamily": "sonkt_Source Code Pro",
+    "editor.fontFamily": ".VnSourceCodePro-Regular",
     "editor.fontLigatures": false
 }

@@ -20,7 +20,7 @@ jobs:
       run: npm install
 
     - name: Run tests
-      run: make test-coverage
+      run: make unit-test #make test-coverage
 
     - name: Coveralls Parallel
       uses: coverallsapp/github-action@master

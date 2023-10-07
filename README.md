@@ -1,8 +1,8 @@
 # jx-offline
 
 <p align="center">
-<a href="https://youtube.com/julianv" target="_blank"><img title="Julian-V" src="docs/Julian-V.png"></a><br>
-<a href="#"><img title="YouTube Channel Subscribers" src="https://img.shields.io/youtube/channel/subscribers/UC8QPaA8hLDhroGdBtAImmbQ"></a><br>
+<a href="https://youtube.com/julianv"><img title="Julian-V" src="docs/Julian-V.png"></a><br>
+<a href="https://www.youtube.com/julianv?sub_confirmation=1"><img title="YouTube Channel Subscribers" src="https://img.shields.io/youtube/channel/subscribers/UC8QPaA8hLDhroGdBtAImmbQ"></a><br>
  <a href=""><img title="JX-Offline" src="https://badgen.net/badge/JX-Offline/Linux/cyan?icon=git"></a>
  <a href="#jx-offline"><img title="Version" src="https://badgen.net/badge/Version/8.2/purple?icon=packagephobia"></a>
  <a href="LICENSE"><img title="License" src="https://img.shields.io/github/license/julianv22/jx-offline?logo=atom&label=License"></a>

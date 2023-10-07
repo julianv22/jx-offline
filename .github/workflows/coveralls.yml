@@ -1,40 +1,25 @@
 on: ["push", "pull_request"]
 
-name: Coveralls GitHub Action
+name: Coveralls
 
 jobs:
-  test:
+
+  build:
+    name: Build
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      
     steps:
-    - name: Clone repository        
-      uses: actions/checkout@v3
+
+    - uses: actions/checkout@v1
+
     - name: Use Node.js 16.x
       uses: actions/setup-node@v3
       with:
         node-version: 16.x
 
-    - name: Install npm dependencies
-      run: npm install
+    - name: npm install, make test-coverage
+      run: |
+        npm install
+        make test-coverage
 
-    - name: Run tests
-      run: make test-coverage-2
-
-    - name: Coveralls Parallel
-      uses: coverallsapp/github-action@master
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        flag-name: run-test-cov
-        parallel: true
-
-  finish:
-    needs: test    
-    runs-on: ubuntu-latest
-    steps:
-    - name: Coveralls Finished
-      uses: coverallsapp/github-action@master
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        parallel-finished: true
+    - name: Coveralls
+      uses: coverallsapp/github-action@v2

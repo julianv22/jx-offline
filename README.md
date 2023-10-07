@@ -14,6 +14,12 @@
 
 Đã cài đặt jx-offline của [PYTA GAMING](https://www.youtube.com/watch?v=do5mFT4M3wc) phiên bản 8.2.
 
+| Version | Supported          |
+| ------- | ------------------ |
+| 8.0.x   | :white_check_mark: |
+| 8.2.x   | :white_check_mark: |
+| 6.0   | Unknown                |
+
 ### Cần lưu ý:
 
 Tương thích tốt nhất với phiên bản 8, những phiên bản khác có thể có những thay đổi trong **settings** dẫn đến kết quả sẽ khác khi sử dụng để lấy các item.

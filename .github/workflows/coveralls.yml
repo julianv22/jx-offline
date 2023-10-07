@@ -20,8 +20,8 @@ jobs:
     #- name: npm install
      # run: npm install
 
-    - name: Test-Coverage
-      run: make test-coverage
+    - name: Test-Coverage ${{ matrix.test_number }}
+      run: make test-coverage-${{ matrix.test_number }}
     - name: Coveralls Parallel
       uses: coverallsapp/github-action@v2
       with:

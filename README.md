@@ -1,7 +1,7 @@
 # jx-offline
 
 <p align="center">
-<a href="https://youtube.com/julianv" target="blank"><img src="docs/Julian-V.png" alt="Julian-V"></a><br>
+<a href="https://youtube.com/julianv" target="_blank"><img src="docs/Julian-V.png" alt="Julian-V"></a><br>
 <a href="#"><img alt="YouTube Channel Subscribers" src="https://img.shields.io/youtube/channel/subscribers/UC8QPaA8hLDhroGdBtAImmbQ"></a>
 </p>
 

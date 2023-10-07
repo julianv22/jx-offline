@@ -1,6 +1,9 @@
 # jx-offline
 
-[![Julian-V](docs/Julian-V.png)](https://youtube.com/julianv "Julian-V")
+<p align="center">
+<a href="https://youtube.com/julianv" target="blank"><img src="docs/Julian-V.png" alt="Julian-V"></a><br>
+<a href="#"><img alt="YouTube Channel Subscribers" src="https://img.shields.io/youtube/channel/subscribers/UC8QPaA8hLDhroGdBtAImmbQ"></a>
+</p>
 
 [![JX](https://badgen.net/badge/JX-Offline/Linux/cyan?icon=git)](/) [![Version](https://badgen.net/badge/Version/8.2/purple?icon=packagephobia)](#jx-offline) [![License](https://img.shields.io/github/license/julianv22/jx-offline?logo=atom&label=License)](LICENSE) [![Actions](https://github.com/julianv22/jx-offline/actions/workflows/main.yml/badge.svg?event=push)](https://github.com/julianv22/jx-offline/actions/workflows/main.yml) [![GitHub commit activity (branch)](https://img.shields.io/github/commit-activity/t/julianv22/jx-offline?logo=git&label=Commits)](#)
  [![Last Commit](https://img.shields.io/github/last-commit/julianv22/jx-offline?logo=codacy&label=Last%20Commit)](https://github.com/julianv22/jx-offline/commits/main) <!-- [![Release](https://img.shields.io/github/v/release/julianv22/jx-offline)](https://github.com/julianv22/jx-offline/releases) [![Download](https://img.shields.io/github/downloads/julianv22/jx-offline/total)](#) -->

@@ -103,7 +103,7 @@ function JulianV.Chose_Horses( nHorseType, nPage )
     if not nPage then nPage = 1 end
     local nCount = getn(tbHorse)
     if nPage < nCount then
-        for i = 1, 10 do tinsert(tbOpt, tbHorseRes(tbHorse[nPage], i)) end
+        for i = 1, getn(tbHorse[nPage]) do tinsert(tbOpt, tbHorseRes(tbHorse[nPage], i)) end
         tinsert(tbOpt, { "Trang sau", JulianV.Chose_Horses, { nHorseType, nPage + 1 } })
     else
         for i = 1, getn(tbHorse[nCount]) do tinsert(tbOpt, tbHorseRes(tbHorse[nCount], i)) end
@@ -227,9 +227,7 @@ function JulianV.GetMagicItem( szItem ) -- nhËn magic item
     else
         local tbItem = split(szItem, ",")
         if getn(tbItem) == 6 then
-            local nClass, nType, nId, nLvl, nSerie, nLuck = tonumber(tbItem[1]),
-                tonumber(tbItem[2]), tonumber(tbItem[3]), tonumber(tbItem[4]), tonumber(tbItem[5]),
-                tonumber(tbItem[6])
+            local nClass, nType, nId, nLvl, nSerie, nLuck = unpack(tbItem)
             local nItemIdx = AddItem(nClass, nType, nId, nLvl, nSerie, nLuck)
             Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(nItemIdx))
         else
@@ -315,7 +313,6 @@ function JulianV.DoXanh_Dialog( szEquipName ) -- ®å xanh
         for szTenTb, _ in tbDoXanh do
             tinsert(tbOpt, { szTenTb, JulianV.DoXanh_Dialog, { szTenTb } })
         end
-
     else
         for id, tbEquip in tbDoXanh[szEquipName] do
             tinsert(tbOpt, { tbEquip[1], JulianV.DoXanh_Series, { tbEquip } })
@@ -340,7 +337,7 @@ function JulianV.NhanDoXanh( tbEquip, nSeries, nCount )
             { JulianV.NhanDoXanh, { tbEquip, nSeries } })
     else
         local nItemIndex
-        local nGenre, nDetail, nPart = tbEquip[2], tbEquip[3], tbEquip[4]
+        local nGenre, nDetail, nPart = unpack(tbEquip, 2)
         for i = 1, nCount do
             nItemIndex = AddItem(nGenre, nDetail, nPart, 10, nSeries, 500, 10)
         end
@@ -368,7 +365,7 @@ function JulianV.GetTransLifeItem( nIndex, nCount )
         if nIndex == 4 then
             for i = 1, nCount do
                 local prop = TSItems[4].tbProp
-                AddItem(prop[1], prop[2], prop[3], prop[4], prop[6], prop[6])
+                AddItem(unpack(prop))
             end
             Msg2Player(format("NhËn ®­îc %d %s", nCount, TSItems[4].szName))
         else

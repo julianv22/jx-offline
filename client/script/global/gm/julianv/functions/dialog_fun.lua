@@ -59,6 +59,7 @@ end
 function JDialog:PhanTrang( table, nOfPage ) -- Phan trang
     local tbSplitTable = { nil }
     local nCount = getn(table) -- §Õm sè phÇn tö cña b¶ng
+    nOfPage = nOfPage or 10
     if nCount > nOfPage then -- NÕu sè phÇn tö > sè item cña 1 trang
         local nIndex = floor(nCount / nOfPage) -- Chia lÊy phÇn nguyªn
         for id = 0, nIndex - 1 do

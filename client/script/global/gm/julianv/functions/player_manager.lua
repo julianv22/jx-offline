@@ -49,9 +49,8 @@ function JulianV.LearnSkill( nSkillId, nLevel ) -- häc skill
         Talk(1, "", "Ng­¬i ®· së h÷u kü n¨ng nµy råi<pic=46>")
     else
         AddMagic(nSkillId, nLevel)
-        Msg2Player(
-            "NhËn ®­îc Skill <color=yellow>" .. GetSkillName(nSkillId) .. "<color> cÊp " ..
-                nLevel)
+        GMMsg2Player("Häc ®­îc kü n¨ng",
+            "<color=yellow>" .. GetSkillName(nSkillId) .. "<color> cÊp " .. nLevel)
     end
 end
 
@@ -80,10 +79,8 @@ function JulianV.AddAdvSkill( szSkill )
         if getn(tbSkill) > 2 then
             Talk(1, "", "Qu¸ nhiÒu tham sè, chØ nhËn 2 tham sè lµ Skill ID vµ Level<pic=46>")
         else
-            local nSkillId, nLevel = tonumber(tbSkill[1]), tbSkill[2] and tonumber(tbSkill[2]) or 1
-            AddMagic(nSkillId, nLevel)
-            Msg2Player("NhËn ®­îc Skill <color=yellow>" .. GetSkillName(nSkillId) ..
-                           "<color> cÊp " .. nLevel)
+            local nSkillId, nLevel = tonumber(tbSkill[1]), tonumber(tbSkill[2])
+            JulianV.LearnSkill(nSkillId, nLevel)
         end
     end
 end
@@ -94,7 +91,7 @@ function JulianV.DelAdvSkill( nSkillId )
         g_AskClientNumberEx(0, 9999, "Skill ID", { JulianV.DelAdvSkill })
     else
         DelMagic(nSkillId)
-        Msg2Player("§· xo¸ Skill <color=yellow>" .. GetSkillName(nSkillId))
+        GMMsg2Player("Xo¸ bá kü n¨ng", "<color=yellow>" .. GetSkillName(nSkillId))
     end
 end
 ------------------------NhËn ®iÓm------------------------
@@ -200,7 +197,7 @@ function JulianV.DanhHieuVoLam( nPage )
     if not nPage then nPage = 1 end
     local nCount = getn(DanhHieuVL)
     if nPage < nCount then
-        for i = 1, 10 do
+        for i = 1, getn(DanhHieuVL[nPage]) do
             tinsert(tbOpt, { DanhHieuVL[nPage][i][1], tbDanhHieu.Active, { DanhHieuVL[nPage][i] } })
         end
         tinsert(tbOpt, { "Trang sau", JulianV.DanhHieuVoLam, { nPage + 1 } })
@@ -227,9 +224,8 @@ function JulianV.ActiveTitle( nType, nTitleId )
 end
 
 function JulianV.ShowAllTitle( nPage )
-    local nOfPage = 12
     local path, tab_name = "\\settings\\playertitle.txt", "title"
-    local tbTitle = JDialog:PhanTrang(JDialog:GetTabFileData(path, tab_name, 2, 2), nOfPage)
+    local tbTitle = JDialog:PhanTrang(JDialog:GetTabFileData(path, tab_name, 2, 2), 12)
     local tbOpt = {}
     nPage = nPage or 1
     local nCount = getn(tbTitle)
@@ -240,7 +236,7 @@ function JulianV.ShowAllTitle( nPage )
         return tab[page][id][2] .. "." .. text
     end
     if nPage < nCount then
-        for i = 1, nOfPage do
+        for i = 1, getn(tbTitle[nPage]) do
             tinsert(tbOpt,
                 { szTitleName(tbTitle, nPage, i), tbDanhHieu.Active, { tbTitle[nPage][i] } })
         end

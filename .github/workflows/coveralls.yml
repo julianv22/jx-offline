@@ -25,7 +25,7 @@ jobs:
     - name: Coveralls Parallel
       uses: coverallsapp/github-action@v2
       with:
-        github-token: ${{ COVERALLS_REPO_TOKEN=SWoP9xHHSLPGWXVrnmQsm4VX8MIwzB51O }}
+        github-token: ${{ secrets.GITHUB_TOKEN }}
         flag-name: run-${{ join(matrix.*, '-') }}
         parallel: true
 
@@ -37,6 +37,6 @@ jobs:
     - name: Coveralls Finished
       uses: coverallsapp/github-action@v2
       with:
-        github-token: ${{ COVERALLS_REPO_TOKEN=SWoP9xHHSLPGWXVrnmQsm4VX8MIwzB51O }}
+        github-token: ${{ secrets.GITHUB_TOKEN }}
         parallel-finished: true
         carryforward: "run-1,run-2"

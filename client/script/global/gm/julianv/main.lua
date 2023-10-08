@@ -167,7 +167,7 @@ function JulianV.PowerUp( lvl )
         AddEng(lvl * 250)
         for i = 1, getn(tbMagic) do AddMagic(tbMagic[i], floor(lvl / 10 * 1.5)) end
         GMMsg2Player("Th«ng b¸o",
-            "<color=yellow>Ng­¬i ®· nhËn ®­îc mét cè lùc l­îng thÇn bÝ!<color>")
+            "<color=yellow>Ng­¬i ®· nhËn ®­îc mét c? lùc l­îng thÇn bÝ!<color>")
     end
 end
 ------------------------Nh©n vËt------------------------

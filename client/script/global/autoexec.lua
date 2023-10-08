@@ -173,6 +173,9 @@ function add_dialognpc( Tab )
             npcindex = AddNpc(itemlist[1], 1, SId, itemlist[3] * 32, itemlist[4] * 32, 1,
                            itemlist[6]);
             SetNpcScript(npcindex, itemlist[5]);
+            if itemlist[6] == "NPC Chyuy”n Sinh" then
+                AddNpcSkillState(npcindex, 839, 1, 1, 18 * 60 * 60 * 24 * 30)
+            end
         else
             if itemlist[1] == 1454 then print(itemlist[6], itemlist[2]) end
         end

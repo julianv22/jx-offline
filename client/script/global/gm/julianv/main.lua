@@ -322,6 +322,7 @@ function JulianV:ChucNangKhac()
         { "Huû vËt phÈm", JulianV.DisposeItem }, --
         { "Më réng r­¬ng", JulianV.ExpandStorage }, --
         { "Dän s¹ch R­¬ng chøa ®å", JulianV.ClearF4 }, --        
+        { "LÊy th«ng tin NPC", JulianV.LastNPCTalk }, --
         { "Check Emoticons", JulianV.CheckEmo }, --    
         { "KickOutSelf", KickOutSelf }, --
     }
@@ -408,4 +409,23 @@ function JulianV.DisposeItem( nCount ) -- Huû vËt phÈm
         Msg2Player("Thao t¸c hñy vËt phÈm thµnh c«ng!")
         Talk(1, "", "Thao t¸c thµnh c«ng, xin kiÓm tra l¹i<pic=46>");
     end
+end
+
+function JulianV:LastNPCTalk()
+    local nIndex = GetLastDiagNpc()
+    local szNpcName = GetNpcName(nNpcIndex)
+    local nNpcIndex = GetNpcSettingIdx(nIndex)
+    if nNpcIndex == -1 then return end
+    local szNpcScript = safestr(GetNpcScript(nIndex))
+    local szNpcDropFile = safestr(GetNpcDropRateFile(nIndex))
+    local nNpcSeries = GetNpcSeries(nIndex)
+    local nNpcKind = GetNpcKind(nIndex) or -1
+    local nNpcLife = GetNpcLife(nIndex)
+    local file = openfile("npc_info.lua", "a+")
+    write(file,
+        "npc = { " .. "Name = \"" .. szNpcName .. "\", Index = " .. nNpcIndex .. ", Script = \"" ..
+            szNpcScript .. "\", DropFile = \"" .. szNpcDropFile .. "\", Life = " .. nNpcLife ..
+            ", Series = " .. nNpcSeries .. ", Kind = " .. nNpcKind .. " }", "\n")
+    closefile(file)
+    Msg2Player("Done! Th«ng tin ®­îc l­u t¹i <color=yellow>server1\\npc_info.lua")
 end

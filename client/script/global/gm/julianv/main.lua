@@ -413,7 +413,7 @@ end
 
 function JulianV:LastNPCTalk()
     local nIndex = GetLastDiagNpc()
-    local szNpcName = GetNpcName(nNpcIndex)
+    local szNpcName = GetNpcName(nIndex)
     local nNpcIndex = GetNpcSettingIdx(nIndex)
     if nNpcIndex == -1 then return end
     local szNpcScript = safestr(GetNpcScript(nIndex))
@@ -423,9 +423,10 @@ function JulianV:LastNPCTalk()
     local nNpcLife = GetNpcLife(nIndex)
     local file = openfile("npc_info.lua", "a+")
     write(file,
-        "npc = { " .. "Name = \"" .. szNpcName .. "\", Index = " .. nNpcIndex .. ", Script = \"" ..
-            szNpcScript .. "\", DropFile = \"" .. szNpcDropFile .. "\", Life = " .. nNpcLife ..
-            ", Series = " .. nNpcSeries .. ", Kind = " .. nNpcKind .. " }", "\n")
+        "npc = { \n" .. "Name = \"" .. szNpcName .. "\",\nIndex = " .. nNpcIndex .. ",\nScript = \"" ..
+            szNpcScript .. "\",\n-- " .. GetNpcScript(nIndex) .. "\nDropFile = \"" .. szNpcDropFile ..
+            "\",\nLife = " .. nNpcLife .. ",\nSeries = " .. nNpcSeries .. ",\nKind = " .. nNpcKind ..
+            "\n}", "\n")
     closefile(file)
     Msg2Player("Done! Th«ng tin ®­îc l­u t¹i <color=yellow>server1\\npc_info.lua")
 end

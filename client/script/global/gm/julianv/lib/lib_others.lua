@@ -102,11 +102,11 @@ tbDanhHieu = {
     },
 }
 
-function tbDanhHieu.Active( DanhHieu )
+function tbDanhHieu:Active()
     -- local nTime = tonumber(FormatTime2String("%m%d%H%M", GetCurServerTime() * 60 * 60 * 24 * nDays))
     local nTime = tonumber(FormatTime2String("%m%d%H%M", GetCurServerTime() * 60 * 60 * 24 * 30))
-    local szTitle = type(DanhHieu) == "table" and DanhHieu[1] or DanhHieu
-    local nTitle = type(DanhHieu) == "table" and DanhHieu[2] or szTitle
+    local szTitle = type(self) == "table" and self[1] or self
+    local nTitle = type(self) == "table" and self[2] or szTitle
     Title_AddTitle(nTitle, 1, nTime);
     Title_ActiveTitle(nTitle);
     SetTask(1122, nTitle);

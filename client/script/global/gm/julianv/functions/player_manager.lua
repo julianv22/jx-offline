@@ -1,8 +1,8 @@
 ------------------------------------------------------------------
 -- Copyright by Julian-V (https://www.youtube.com/julianv)
 ------------------------------------------------------------------
-function JulianV.Change_PK( nType ) -- ®æi mµu pk
-    if not nType then
+function JulianV:Change_PK() -- ®æi mµu pk
+    if not self then
         local tbSay = { "<sex>muèn ®æi sang mµu tr¹ng th¸i nµo<pic=44>" }
         local szPK = function( num )
             return format("%s (%s)", tbMonPhai.tbPK_Status[num][1], tbMonPhai.tbPK_Status[num][3])
@@ -13,10 +13,10 @@ function JulianV.Change_PK( nType ) -- ®æi mµu pk
         tinsert(tbSay, "Ta sÏ quay l¹i sau/return")
         CreateTaskSay(tbSay)
     else
-        SetCurCamp(nType)
-        SetCamp(nType)
-        Msg2Player(format("§· ®æi mµu PK sang <color=%s>%s", tbMonPhai.tbPK_Status[nType][2],
-                       tbMonPhai.tbPK_Status[nType][1]))
+        SetCurCamp(self)
+        SetCamp(self)
+        Msg2Player(format("§· ®æi mµu PK sang <color=%s>%s", tbMonPhai.tbPK_Status[self][2],
+                       tbMonPhai.tbPK_Status[self][1]))
     end
 end
 
@@ -43,7 +43,8 @@ function JulianV:CongDiemNhanh()
     JDialog:Show(tbOpt, JulianV.SkillSupport)
 end
 
-function JulianV.LearnSkill( nSkillId, nLevel ) -- häc skill
+function JulianV:LearnSkill( nLevel ) -- häc skill
+    local nSkillId = self
     nLevel = nLevel or 1
     if HaveMagic(nSkillId) == nLevel then
         Talk(1, "", "Ng­¬i ®· së h÷u kü n¨ng nµy råi<pic=46>")
@@ -71,21 +72,22 @@ function JulianV:Skill_NangCao()
     JDialog:Show(tbOpt, JulianV.SkillSupport)
 end
 
-function JulianV.AddAdvSkill( szSkill )
-    if szSkill == 0 then
+function JulianV:AddAdvSkill()
+    if self == 0 then
         g_AskClientStringEx("1995,20", 1, 100, "Skill ID", { JulianV.AddAdvSkill })
     else
-        local tbSkill = split(szSkill, ",")
+        local tbSkill = split(self, ",")
         if getn(tbSkill) > 2 then
             Talk(1, "", "Qu¸ nhiÒu tham sè, chØ nhËn 2 tham sè lµ Skill ID vµ Level<pic=46>")
         else
-            local nSkillId, nLevel = tonumber(tbSkill[1]), tonumber(tbSkill[2])
-            JulianV.LearnSkill(nSkillId, nLevel)
+            local nSkillId, nLevel = tonum(tbSkill[1]), tonum(tbSkill[2])
+            JulianV:LearnSkill(nSkillId, nLevel)
         end
     end
 end
 
-function JulianV.DelAdvSkill( nSkillId )
+function JulianV.DelAdvSkill()
+    local nSkillId = self
     if nSkillId == 0 then return end
     if not nSkillId then
         g_AskClientNumberEx(0, 9999, "Skill ID", { JulianV.DelAdvSkill })
@@ -103,26 +105,26 @@ function JulianV:Point_Dialog()
     JDialog:Show(tbOpt, JulianV.Player_Dialog)
 end
 
-function JulianV.Pick_Points( nType, nLimit )
-    if nType < 10 then
-        g_AskClientNumberEx(0, nLimit, "Sè l­îng:", { JulianV.Set_Points, { nType } })
+function JulianV:Pick_Points( nLimit )
+    if self < 10 then
+        g_AskClientNumberEx(0, nLimit, "Sè l­îng:", { JulianV.Set_Points, { self } })
     else
-        tbPointsType[nType].pFun()
+        tbPointsType[self].pFun()
     end
 end
 
-function JulianV.Set_Points( nType, num )
+function JulianV:Set_Points( num )
     if num == 0 then
         return
     else
-        tbPointsType[nType].pFun(num)
+        tbPointsType[self].pFun(num)
         Msg2Player("NhËn ®­îc <color=yellow>" .. num .. "<color> <color=green>" ..
-                       tbPointsType[nType].szUnit)
+                       tbPointsType[self].szUnit)
     end
 end
 
-function JulianV.Change_Sex( bComfirm ) -- chuyÓn giíi
-    if not bComfirm then
+function JulianV:Change_Sex() -- chuyÓn giíi
+    if not self then
         local tbOpt = {
             { "§i th«i!", JulianV.Change_Sex, { 1 } }, --
             { "§Ó ta suy nghÜ l¹i..." },
@@ -135,12 +137,12 @@ function JulianV.Change_Sex( bComfirm ) -- chuyÓn giíi
     end
 end
 
-function JulianV.Change_Serries( nSeries ) -- ®æi ngò hµnh
+function JulianV:Change_Serries() -- ®æi ngò hµnh
     local nCurSeries = GetSeries()
     local szSeries = function( num )
         return format("<color=%s>%s<color>", tbMonPhai.tbSeries[num][2], tbMonPhai.tbSeries[num][1])
     end
-    if not nSeries then
+    if not self then
         local tbOpt = {}
         for i = 0, getn(tbMonPhai.tbSeries) do
             tinsert(tbOpt, { tbMonPhai.tbSeries[i][1], JulianV.Change_Serries, { i } })
@@ -148,21 +150,21 @@ function JulianV.Change_Serries( nSeries ) -- ®æi ngò hµnh
         JDialog:Show(tbOpt, JulianV.Player_Dialog, "<sex>hiÖn t¹i lµ hÖ " ..
             szSeries(nCurSeries) .. "\n\nMêi chän ngò hµnh muèn ®æi:")
     else
-        if nCurSeries == nSeries then
+        if nCurSeries == self then
             Talk(1, "", "§· lµ hÖ " .. szSeries(nCurSeries) ..
                 " råi, kh«ng cÇn chuyÓn n÷a<pic=46>")
         else
-            SetSeries(nSeries)
-            Talk(1, "KickOutSelf", "§· chuyÓn sang hÖ " .. szSeries(nSeries))
+            SetSeries(self)
+            Talk(1, "KickOutSelf", "§· chuyÓn sang hÖ " .. szSeries(self))
         end
     end
 end
 
-function JulianV.RenameCharacter( szName ) -- ®æi tªn
-    if not szName then
+function JulianV:RenameCharacter() -- ®æi tªn
+    if not self then
         g_AskClientStringEx("Julian-V", 1, 100, "NhËp tªn míi", { JulianV.RenameCharacter })
     else
-        RenameRole(szName)
+        RenameRole(self)
     end
 end
 ------------------------NhËn NhËn Danh hiÖu------------------------
@@ -177,7 +179,8 @@ function JulianV:NhanDanhHieu()
     JDialog:Show(tbOpt, JulianV.Player_Dialog)
 end
 
-function JulianV.DanhHieuKiemThe( DanhHieu )
+function JulianV:DanhHieuKiemThe()
+    local DanhHieu = self
     if not DanhHieu then
         local tbOpt = {}
         for i = 1, getn(tbDanhHieu.KiemThe) do
@@ -191,10 +194,10 @@ function JulianV.DanhHieuKiemThe( DanhHieu )
     end
 end
 
-function JulianV.DanhHieuVoLam( nPage )
+function JulianV:DanhHieuVoLam()
     local DanhHieuVL = JDialog:PhanTrang(tbDanhHieu.VoLam, 10)
     local tbOpt = {}
-    if not nPage then nPage = 1 end
+    local nPage = self or 1
     local nCount = getn(DanhHieuVL)
     if nPage < nCount then
         for i = 1, getn(DanhHieuVL[nPage]) do
@@ -211,10 +214,10 @@ function JulianV.DanhHieuVoLam( nPage )
     JDialog:Show(tbOpt, nil, "Mêi <sex>chän Danh HiÖu<pic=46>}}")
 end
 
-function JulianV.ActiveTitle( nType, nTitleId )
-    if nType == 1 then
+function JulianV:ActiveTitle( nTitleId )
+    if self == 1 then
         if not nTitleId or nTitleId == 0 then
-            g_AskClientNumberEx(0, 500, "Title ID", { JulianV.ActiveTitle, { nType } })
+            g_AskClientNumberEx(0, 500, "Title ID", { JulianV.ActiveTitle, { self } })
         else
             tbDanhHieu.Active(nTitleId)
         end
@@ -223,11 +226,11 @@ function JulianV.ActiveTitle( nType, nTitleId )
     end
 end
 
-function JulianV.ShowAllTitle( nPage )
+function JulianV:ShowAllTitle()
     local path, tab_name = "\\settings\\playertitle.txt", "title"
     local tbTitle = JDialog:PhanTrang(JDialog:GetTabFileData(path, tab_name, 2, 2), 10)
     local tbOpt = {}
-    nPage = nPage or 1
+    local nPage = self or 1
     local nCount = getn(tbTitle)
     local szTitleName = function( tab, page, id )
         local text = tab[page][id][1]

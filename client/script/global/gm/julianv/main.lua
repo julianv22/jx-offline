@@ -323,7 +323,6 @@ function JulianV:ChucNangKhac()
         { "Më réng r­¬ng", JulianV.ExpandStorage }, --
         { "Dän s¹ch R­¬ng chøa ®å", JulianV.ClearF4 }, --        
         { "Check Emoticons", JulianV.CheckEmo }, --    
-        { "Check SPR Files", JulianV.CheckSPR }, --
         { "KickOutSelf", KickOutSelf }, --
     }
     JDialog:Show(tbOpt, main)
@@ -408,15 +407,5 @@ function JulianV.DisposeItem( nCount ) -- Huû vËt phÈm
         end
         Msg2Player("Thao t¸c hñy vËt phÈm thµnh c«ng!")
         Talk(1, "", "Thao t¸c thµnh c«ng, xin kiÓm tra l¹i<pic=46>");
-    end
-end
-
-function JulianV.CheckSPR( szSPRLink )
-    if not szSPRLink then
-        local tbOpt = { { "Test", JulianV.CheckSPR, { "\\spr\\skill\\others\\tranthien.spr" } } }
-        JDialog:Show(tbOpt)
-    else
-        Describe("<link=image:" .. szSPRLink .. ">Test Skill<link>", 1,
-            "KÕt thóc ®èi tho¹i/JulianV.CheckSPR")
     end
 end

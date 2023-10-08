@@ -80,9 +80,9 @@ function JulianV:Admin_Dialog()
     }
     JDialog:Show(tbOpt, main)
 end
----@param self? integer
-function JulianV:GM_Activate()
-    if self == 1 then
+---@param num? integer
+function JulianV.GM_Activate( num )
+    if num == 1 then
         if Title_GetActiveTitle() ~= 191 then
             SetTask(1122, 191)
             Title_AddTitle(191, 1, 30 * 24 * 60 * 60 * 18);
@@ -94,7 +94,7 @@ function JulianV:GM_Activate()
         end
         return
     end
-    if self == 2 then
+    if num == 2 then
         if IsOwnFeatureChanged() == 0 then
             ChangeOwnFeature(0, 0, 567);
             Msg2Player("BiÕn thµnh h×nh d¸ng GM");
@@ -104,7 +104,7 @@ function JulianV:GM_Activate()
         end
         return
     end
-    if self == 3 then
+    if num == 3 then
         if GetSkillState(733) == -1 then
             AddSkillState(733, 1, 0, 777600);
             Msg2Player("BËt chøc n¨ng tµng h×nh cho GM");
@@ -114,10 +114,9 @@ function JulianV:GM_Activate()
         end
     end
 end
----@param self? integer
+---@param nMapId? integer 
 ---@param nPosX? integer
-function JulianV:Teleport( nPosX )
-    local nMapId = self
+function JulianV.Teleport( nMapId, nPosX )
     if not nMapId then
         g_AskClientNumberEx(0, 9999, "NhËp ID map", { JulianV.Teleport })
     elseif not nPosX then
@@ -146,27 +145,27 @@ function JulianV.MoveTo( ... )
     GMMsg2Player("DÞch chuyÓn ®Õn vÞ trÝ", nMapId .. ", <color=yellow>" .. nPosX .. "/" ..
         nPosY .. "<color> <color=green>Thµnh c«ng!")
 end
----@param self? integer @Level
-function JulianV:PowerUp()
+---@param lvl? integer @Level
+function JulianV.PowerUp( lvl )
     local tbMagic = { 21, 36, 75, 92, 130, 156, 160, 161, 166, 173, 178, 282, 332, 712 }
-    if self == -1 then
+    if lvl == -1 then
         DoClearPropCore()
         for i = 1, getn(tbMagic) do DelMagic(tbMagic[i]) end
         return
     end
-    if self == 0 then
+    if lvl == 0 then
         g_AskClientNumberEx(0, 200, "Power Up Level", { JulianV.PowerUp })
     else
         -- AddProp(200000);
         -- Earn(10000000) -- 1000 v¹n
         -- AddItem(0, 10, 5, 5, 0, 0, 0) -- Ngùa
-        ST_LevelUp(self - GetLevel())
+        ST_LevelUp(lvl - GetLevel())
         DoClearPropCore()
-        AddStrg(self * 250)
-        AddDex(self * 250)
-        AddVit(self * 250)
-        AddEng(self * 250)
-        for i = 1, getn(tbMagic) do AddMagic(tbMagic[i], floor(self / 10 * 1.5)) end
+        AddStrg(lvl * 250)
+        AddDex(lvl * 250)
+        AddVit(lvl * 250)
+        AddEng(lvl * 250)
+        for i = 1, getn(tbMagic) do AddMagic(tbMagic[i], floor(lvl / 10 * 1.5)) end
         GMMsg2Player("Th«ng b¸o",
             "<color=yellow>Ng­¬i ®· nhËn ®­îc mét cè lùc l­îng thÇn bÝ!<color>")
     end
@@ -206,13 +205,13 @@ function JulianV:Notification_Dialog()
     }
     JDialog:Show(tbOpt, main)
 end
----@param self? integer
+---@param nType? integer
 ---@param szMessage? string
-function JulianV:GM_Notification( szMessage )
+function JulianV.GM_Notification( nType, szMessage )
     if not szMessage then
-        g_AskClientStringEx("", 0, 256, "Néi dung", { JulianV.GM_Notification, { self } })
+        g_AskClientStringEx("", 0, 256, "Néi dung", { JulianV.GM_Notification, { nType } })
     else
-        if self == 0 then
+        if nType == 0 then
             Msg2SubWorld("<color=yellow><bclr=red>GM " .. GetName() ..
                              "<bclr> th«ng b¸o:<color> <color=cyan>" .. szMessage)
         else
@@ -270,7 +269,7 @@ function JulianV:JoinTongCondition()
         Msg2Player("<color=yellow>NhËn ®iÒu kiÖn gia nhËp Bang Héi thµnh c«ng!<color>")
     end
 end
-
+---@param num? integer
 function JulianV:CreateTong()
     local szTongName, nOper = GetTong()
     if nOper == 0 and GetCamp() == 4 and GetLevel() >= 50 and GetReputeLevel(GetRepute()) >= 6 and
@@ -297,9 +296,9 @@ function JulianV:CreateTong()
         end
     end
 end
-
-function JulianV:CreateTongConFirm()
-    if not self then
+---@param bConfirm? boolean
+function JulianV.CreateTongConFirm( bConfirm )
+    if not bConfirm then
         Say(
             "KiÕm hiÖp ch­ëng m«n nh©n: Khai s¸ng Bang Héi, më réng b¸ nghiÖp<pic=46>\nNg­¬i cÇn lÖ phÝ lµ <color=yellow>100 v¹n l­îng.",
             2, {
@@ -351,20 +350,20 @@ function JulianV:Goto_BLC()
     NewWorld(996, 1581, 3197)
     SetFightState(1)
 end
-
-function JulianV:CheckEmo()
-    if not self then
+---@param nPic? integer
+function JulianV.CheckEmo( nPic )
+    if not nPic then
         g_AskClientNumberEx(0, 999, "Start Id", { JulianV.CheckEmo })
     else
         local szPic = ""
-        for i = self, self + 7 do szPic = szPic .. "Pic " .. i .. ": <pic=" .. i .. ">\n" end
+        for i = nPic, nPic + 7 do szPic = szPic .. "Pic " .. i .. ": <pic=" .. i .. ">\n" end
         local tbSay = {
             szPic, --
             "                      Rêi khái/return", --
-            format("                      Next/#JulianV.CheckEmo(%d)", self + 8),
+            format("                      Next/#JulianV.CheckEmo(%d)", nPic + 8),
         }
-        if self > 8 then
-            tinsert(tbSay, format("                      Previous/#JulianV.CheckEmo(%d)", self - 8))
+        if nPic > 8 then
+            tinsert(tbSay, format("                      Previous/#JulianV.CheckEmo(%d)", nPic - 8))
         end
         CreateTaskSay(tbSay)
     end
@@ -376,9 +375,9 @@ function JulianV:ExpandStorage() -- Më réng r­¬ng
     OpenStoreBox(3)
     AddItem(6, 1, 1427, 90, 1, 0, 0)
 end
-
-function JulianV:ClearF4() -- Dän r­¬ng ®å
-    if not self then
+---@param bComfirm? boolean
+function JulianV.ClearF4( bComfirm ) -- Dän r­¬ng ®å
+    if not bComfirm then
         CreateNewSayEx(SPRLINK ..
                            "<color=red><pic=115> L­u ý: <color>TÊt c¶ vËt phÈm vµ trang bÞ trong R­¬ng chøa ®å sÏ bÞ {{Xo¸ bá}} hoµn toµn vµ kh«ng thÓ phôc håi nh­ cò.\n\n<sex>cã ch¾c ch¾n muèn lµm vËy kh«ng<pic=44><color>", --
             {
@@ -394,14 +393,14 @@ function JulianV:ClearF4() -- Dän r­¬ng ®å
         Talk(1, "", "§· dän s¹ch r­¬ng<pic=46>")
     end
 end
-
-function JulianV:DisposeItem() -- Huû vËt phÈm
-    if not self then
+---@param nCount? integer
+function JulianV.DisposeItem( nCount ) -- Huû vËt phÈm
+    if not nCount then
         g_GiveItemUI("Hñy vËt phÈm",
             "§¹i hiÖp h·y cÈn träng trong viÖc hñy vËt phÈm, vËt phÈm ®· hñy kh«ng thÓ lÊy l¹i ®­îc!",
             { JulianV.DisposeItem })
     else
-        for i = 1, self do
+        for i = 1, nCount do
             local nItemIndex = GetGiveItemUnit(i)
             local strItem = GetItemName(nItemIndex)
             RemoveItemByIndex(nItemIndex)

@@ -156,50 +156,41 @@ function JulianV:Check_Feature()
 end
 
 function JulianV:Change_Equip_Feature()
-    GiveItemUI("Thay ®æi ngo¹i h×nh trang bÞ",
+    g_GiveItemUI("Thay ®æi ngo¹i h×nh trang bÞ",
         "H·y ®Æt vµo 1 trang bÞ muèn thay ®æi. L­u ý ngo¹i h×nh míi vÉn tån t¹i sau khi tho¸t game.",
-        "Change_Equip_Feature_Confirm", "onCancel", 1);
+        { JulianV.Change_Equip_Feature_Confirm });
 end
 
-function Change_Equip_Feature_Confirm( nCount )
-    if nCount == 0 then return end
-    if nCount > 1 then
-        Talk(1, "", "Qu¸ nhiÒu trang bÞ, kh«ng thÓ xö lÝ<pic=46>")
+function JulianV.Change_Equip_Feature_Confirm( nCount )
+    if nCount == 0 then
+        Talk(1, "", "Vui lßng ®Æt trang bÞ vµo<pic=46>")
         return
-    elseif nCount == 1 then
+    end
+    if nCount == 1 then
         local nItemIndex = GetGiveItemUnit(1)
         g_AskClientNumberEx(0, 9999, "NhËp ID muèn ®æi:", { SetItemNewFeature, { nItemIndex } })
         -- SetItemNewFeature(nItemIndex, nNo)
-    end
-end
-
-function JulianV:Change_Weapon_Feature()
-    GiveItemUI("Thay ®æi ngo¹i h×nh trang bÞ",
-        "H·y ®Æt vµo 1 trang bÞ muèn thay ®æi. L­u ý ngo¹i h×nh míi vÉn tån t¹i sau khi tho¸t game.",
-        "Change_Weapon_Feature_Confirm", "onCancel", 1);
-end
-
-function Change_Weapon_Feature_Confirm( nCount )
-    if nCount == 0 then return end
-    if nCount > 1 then
+        Msg2Player("Thao t¸c thµnh c«ng!")
+    else
         Talk(1, "", "Qu¸ nhiÒu trang bÞ, kh«ng thÓ xö lÝ<pic=46>")
         return
-    elseif nCount == 1 then
-        local nItemIndex = GetGiveItemUnit(1)
-        g_AskClientNumberEx(0, 500, "NhËp ID muèn ®æi:", { SetItemNewFeature, { nItemIndex } })
-        -- SetItemNewFeature(nItemIndex, nNo)
     end
 end
 
 function JulianV:Restore_Feature()
-    GiveItemUI("Phôc håi ngo¹i h×nh trang bÞ", "§Æt vµo c¸c trang bÞ muèn phôc håi.",
-        "Restore_Feature_Confirm", "onCancel", 1);
+    g_GiveItemUI("Phôc håi ngo¹i h×nh trang bÞ", "§Æt vµo c¸c trang bÞ muèn phôc håi.",
+        { JulianV.Restore_Feature_Confirm });
 end
 
-function Restore_Feature_Confirm( nCount )
+function JulianV.Restore_Feature_Confirm( nCount )
+    if nCount == 0 then
+        Talk(1, "", "Vui lßng ®Æt trang bÞ vµo<pic=46>")
+        return
+    end
     for i = 1, nCount do
         local nItemIndex = GetGiveItemUnit(i)
         SetItemNewFeature(nItemIndex, -1)
+        Msg2Player("Thao t¸c thµnh c«ng!")
     end
 end
 ------------------------C¸c lo¹i vËt phÈm------------------------

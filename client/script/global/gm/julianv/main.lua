@@ -319,10 +319,11 @@ function JulianV:ChucNangKhac()
         { "§i tíi B·i LuyÖn C«ng", JulianV.Goto_BLC }, --
         { "Trë vÒ Ba L¨ng HuyÖn", JulianV.Goto_BLH }, --  
         { "Söa lçi ThÇn Hµnh Phï", JulianV.Fix_Shenxingfu }, --
-        { "Huû vËt phÈm", DisposeItem }, --
+        { "Huû vËt phÈm", JulianV.DisposeItem }, --
         { "Më réng r­¬ng", JulianV.ExpandStorage }, --
         { "Dän s¹ch R­¬ng chøa ®å", JulianV.ClearF4 }, --        
         { "Check Emoticons", JulianV.CheckEmo }, --    
+        { "Check SPR Files", JulianV.CheckSPR }, --
         { "KickOutSelf", KickOutSelf }, --
     }
     JDialog:Show(tbOpt, main)
@@ -393,11 +394,11 @@ function JulianV.ClearF4( bComfirm ) -- Dän r­¬ng ®å
     end
 end
 ---@param nCount? integer
-function DisposeItem( nCount ) -- Huû vËt phÈm
+function JulianV.DisposeItem( nCount ) -- Huû vËt phÈm
     if not nCount then
-        GiveItemUI("Hñy vËt phÈm",
+        g_GiveItemUI("Hñy vËt phÈm",
             "§¹i hiÖp h·y cÈn träng trong viÖc hñy vËt phÈm, vËt phÈm ®· hñy kh«ng thÓ lÊy l¹i ®­îc!",
-            "DisposeItem", "onCancel", 1);
+            { JulianV.DisposeItem })
     else
         for i = 1, nCount do
             local nItemIndex = GetGiveItemUnit(i)
@@ -407,5 +408,15 @@ function DisposeItem( nCount ) -- Huû vËt phÈm
         end
         Msg2Player("Thao t¸c hñy vËt phÈm thµnh c«ng!")
         Talk(1, "", "Thao t¸c thµnh c«ng, xin kiÓm tra l¹i<pic=46>");
+    end
+end
+
+function JulianV.CheckSPR( szSPRLink )
+    if not szSPRLink then
+        local tbOpt = { { "Test", JulianV.CheckSPR, { "\\spr\\skill\\others\\tranthien.spr" } } }
+        JDialog:Show(tbOpt)
+    else
+        Describe("<link=image:" .. szSPRLink .. ">Test Skill<link>", 1,
+            "KÕt thóc ®èi tho¹i/JulianV.CheckSPR")
     end
 end

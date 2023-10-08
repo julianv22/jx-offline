@@ -225,13 +225,13 @@ end
 
 function JulianV.ShowAllTitle( nPage )
     local path, tab_name = "\\settings\\playertitle.txt", "title"
-    local tbTitle = JDialog:PhanTrang(JDialog:GetTabFileData(path, tab_name, 2, 2), 12)
+    local tbTitle = JDialog:PhanTrang(JDialog:GetTabFileData(path, tab_name, 2, 2), 10)
     local tbOpt = {}
     nPage = nPage or 1
     local nCount = getn(tbTitle)
     local szTitleName = function( tab, page, id )
         local text = tab[page][id][1]
-        if strlen(text) > 32 then text = strsub(text, 1, 32) end
+        if strlen(text) > 30 then text = strsub(text, 1, 30) end
         if text == "" then text = "Unknown" end
         return tab[page][id][2] .. "." .. text
     end
@@ -244,10 +244,13 @@ function JulianV.ShowAllTitle( nPage )
     else
         for i = 1, getn(tbTitle[nCount]) do
             tinsert(tbOpt,
-                { szTitleName(tbTitle, nCount, i), tbDanhHieu.Active, tbTitle[nCount][i] })
+                { szTitleName(tbTitle, nCount, i), tbDanhHieu.Active, { tbTitle[nCount][i] } })
         end
     end
     if nPage > 1 then tinsert(tbOpt, { "Trang tr≠Ìc", JulianV.ShowAllTitle, { nPage - 1 } }) end
+    tinsert(tbOpt, { "Nh∂y Æ’n trang...", JulianV.JumpToPage, { nCount } })
     JDialog:Show(tbOpt, nil, "MÍi <sex>ch‰n Danh Hi÷u<pic=46>}}\n\n" ..
         strfill_center("Trang {{" .. nPage .. "/" .. nCount .. "}}", 50, "-"))
 end
+
+function JulianV:JumpToPage() g_AskClientNumberEx(1, self, "SË trang", { JulianV.ShowAllTitle }) end

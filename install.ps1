@@ -5,7 +5,7 @@ function Write-Start {
 	Write-Host (">> "+$msg) -ForegroundColor Green
 }
 
-function Write-Done { Write-Host "DONE" -ForegroundColor Blue; Write-Host }
+function Write-Done { Write-Host "DONE" -ForegroundColor Yellow; Write-Host }
 
 #START
 Start-Process -Wait powershell -verb runas -ArgumentList "Set-ItemProperty -Path REGISTRY::HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System -Name ConsentPromptBehaviorAdmin -Value 0"
@@ -52,4 +52,6 @@ Write-Start -msg "Enable Viertualization"
 	Start-Process -Wait powershell -verb runas -ArgumentList " echo y | Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -All"
 	Start-Process -Wait powershell -verb runas -ArgumentList "echo y | Enable-WindowsOptionalFeature -Online -FeatureName Containers -All"
 Write-Done
+
+    scoop status
 #END

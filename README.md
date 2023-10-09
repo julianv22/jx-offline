@@ -8,7 +8,7 @@
  <a href="LICENSE"><img title="License" src="https://img.shields.io/github/license/julianv22/jx-offline?logo=atom&label=License&labelColor=teal"></a>
  <a href="https://github.com/julianv22/jx-offline/actions/workflows/main.yml"><img title="Actions" src="https://github.com/julianv22/jx-offline/actions/workflows/main.yml/badge.svg"></a> 
  <a href="#"><img title="Commits" src="https://img.shields.io/github/commit-activity/t/julianv22/jx-offline?logo=git&label=Commits"></a>
- <a href="https://github.com/julianv22/jx-offline/commits/main"><img title="Last Commit" src="https://badgen.net/github/last-commit/julianv22/jx-offline?icon=codacy&label=Last%20Commit"></a>
+ <a href="https://github.com/julianv22/jx-offline/commits/main"><img title="Last Commit" src="https://img.shields.io/github/last-commit/julianv22/jx-offline?logo=codacy&label=Last%20Commit&labelColor=2F4F4F"></a>
 </p>
 
 # README 

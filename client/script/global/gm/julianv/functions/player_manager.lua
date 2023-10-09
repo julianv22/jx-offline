@@ -192,7 +192,7 @@ function JulianV.DanhHieuKiemThe( DanhHieu )
 end
 
 function JulianV.DanhHieuVoLam( nPage )
-    local DanhHieuVL = JDialog:PhanTrang(tbDanhHieu.VoLam, 10)
+    local DanhHieuVL = JDialog:PhanTrang(tbDanhHieu.VoLam, 12)
     local tbOpt = {}
     if not nPage then nPage = 1 end
     local nCount = getn(DanhHieuVL)

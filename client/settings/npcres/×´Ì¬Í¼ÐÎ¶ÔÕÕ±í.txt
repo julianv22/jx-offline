@@ -197,7 +197,7 @@ Status195	\spr\skill\others\jianxiazhizun.spr	Foot	Loop	0	0	15	1	60	1	Ô½ÄÏÁú»¢ËÎ
 Status196	\spr\skill\others\dubutianxia.spr	Foot	Loop	0	0	15	1	60	1	Ô½ÄÏÁú»¢ËÎ½ğ¡°ÌìÏÂÎŞË«¡±
 Status197	\spr\skill\partner\skill_bairenzhan.spr	Foot	Loop	0	0	20	1	25	1	×øÆï
 Status198	spr\skill\others\vipez.spr	Foot	Loop	0	0	15	1	83	1	Ô½ÄÏ°æÌìÏÂÎŞµĞ½±Àø¹â»Æ
-Status199	spr\skill\others\‘ğ¹â»·	Head	Loop	0	0	20	1	56	1	‘ğ¹â»·
+Status199	spr\skill\others\?ğ¹â»·	Head	Loop	0	0	20	1	56	1	?ğ¹â»·
 Status200	spr\skill\others\jingyingsaiguanjun.spr	Foot	Loop	0	0	15	1	35	1	ÌìÏÂµÚÒ»°ï¹Ú¾ü
 Status201	spr\skill\others\jingyingsaiguanjun_old.spr	Foot	Loop	0	0	15	1	45	1	ÌìÏÂµÚÒ»°ïÑÇ¾ü
 Status202	spr\skill\others\jingyingsaijijun_old.spr	Foot	Loop	0	0	15	1	45	1	ÌìÏÂµÚÒ»°ï¼¾¾ü
@@ -213,7 +213,7 @@ Status211	\spr\skill\songjin\zhanchangyinghao.spr	Foot	Loop	0	0	15	1	111	1	Ô½ÄÏË
 Status212	\spr\skill\songjin\zhanchangyinghao.spr	Foot	Loop	0	0	15	1	111	1	Ô½ÄÏËÎ½ğÕ½³¡»ı·ÖÅÅÃûµÚ°ËÃû¡°ËÄ¾øÕ½³¡¡±
 Status213	\spr\skill\songjin\zhanchangyinghao.spr	Foot	Loop	0	0	15	1	111	1	Ô½ÄÏËÎ½ğÕ½³¡»ı·ÖÅÅÃûµÚ¾ÅÃû¡°ËÄ¾øÕ½³¡¡±
 Status214	\spr\skill\songjin\zhanchangyinghao.spr	Foot	Loop	0	0	15	1	111	1	Ô½ÄÏËÎ½ğÕ½³¡»ı·ÖÅÅÃûµÚÊ®Ãû¡°ËÄ¾øÕ½³¡¡±
-Status215	spr\skill\others\‰ôÖ®ê ¹â»·	Head	Loop	0	0	30	1	30	1	‰ôÖ®ê ¹â»·
+Status215	spr\skill\others\?ôÖ®ê ¹â»·	Head	Loop	0	0	30	1	30	1	?ôÖ®ê ¹â»·
 Status216	\spr\skill\others\title_new_yl.spr	Foot	Loop	0	0	11	1	18	1	ËÎ½ğ»ı·ÖÅÅÃûµÚËÄ-Ê®Ãû
 Status217	\spr\skill\others\title_new_bj.spr	Foot	Loop	0	0	20	1	23	1	ËÎ½ğ»ı·ÖÅÅÃûµÚÈı
 Status218	\spr\skill\others\title_new_ab.spr	Foot	Loop	0	0	15	1	30	1	ËÎ½ğ»ı·ÖÅÅÃûµÚ¶ş
@@ -250,9 +250,8 @@ Status248	\spr\skill\others\daithanh.spr	Head	Head	0	0	14	1	14	1	§¹i Th¸nh
 Status249	\spr\skill\others\tranthien.spr	Head	Head	0	0	25	1	25	1	TrÊn Thiªn
 Status250	\spr\skill\others\sieuthan.spr	Head	Head	0	0	14	1	14	1	Siªu ThÇn
 Status251	\spr\skill\others\åÈÀ¶Ä¦Úµ-¹â»·.spr	Foot	Loop	0	0	30	1	30	1	Julian-V
-Status252	\spr\skill\others\²ÔÑ×ÆßÊ¥¡ª¹â»·.spr	Foot	Loop	0	0	30	1	30	1	
+Status252	\spr\skill\others\²ÔÑ×ÆßÊ¥¡ª¹â»·.spr	Foot	Loop	0	0	30	1	30	1	Vò Trô Hång Hoang
 Status253	\spr\skill\others\dubutianxia.spr	Foot	Loop	0	0	15	1	15	1	§éc Bé Thiªn H¹
 Status254	\spr\skill\others\huangdi.spr	Body	Loop	0	0	10	1	10	1	Hoµng §Õ
 Status255	\spr\skill\others\jianghugaoshou.spr	Foot	Loop	0	0	15	1	15	1	Cao Thñ Giang Hå
-Status256	\spr\skill\others\jianxiazhizun.spr	Foot	Loop	0	0	15	1	15	1	Thiªn H¹ §Ö NhÊt 
-Status257	\spr\skill\others\dati.spr	Foot	Loop	0	0	20	1	20	1	
+Status256	\spr\skill\others\jianxiazhizun.spr	Foot	Loop	0	0	15	1	15	1	Thiªn H¹ §Ö NhÊt

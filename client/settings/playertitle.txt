@@ -203,12 +203,11 @@ Julian-V	201	251	0	0	0	0	0	0	0	0	0	0	0	0	0
 Binh M· Nguyªn So¸i	202	154															
 Cao Thñ §Ö NhÊt B¶ng	203	158															
 Siªu Cao Thñ §Ö NhÊt B¶ng	204	157															
-	205	252															
+Vò Trô Hång Hoang	205	252															
 §éc Bé Thiªn H¹	206	253															
 Hoµng §Õ	207	254															
 Cao Thñ Giang Hå	208	255															
 Thiªn H¹ §Ö NhÊt	209	174															
 §Ö NhÊt Th­¬ng Nh©n	210	142															
-	211	186															
-ChÝnh Long	212	163															
-	213	257															
+NhÞ Long	211	186															
+§¹i Long	212	163															

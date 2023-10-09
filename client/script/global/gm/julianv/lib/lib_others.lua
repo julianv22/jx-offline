@@ -93,6 +93,9 @@ tbDanhHieu = {
         { "Vâ L©m Liªn §Êu H¹ng 4", 84 }, { "Vâ L©m Minh Chñ", 188 },
         { "Phiªu M· §¹i T­íng Qu©n", 185 }, { "Ngù Long Cuång §ao", 165 },
         { "Long ThÇn KiÕm", 80 }, { "Thiªn H¹ §Ö NhÊt Bang", 189 },
+        { "Vò Trô Hång Hoang", 205 }, { "Binh M· Nguyªn So¸i", 202 },
+        { "Siªu Cao Thñ §Ö NhÊt B¶ng", 204 }, { "Cao Thñ Giang Hå", 208 },
+        { "Thiªn H¹ §Ö NhÊt", 209 }, { "§Ö NhÊt Th­¬ng Nh©n", 210 },        
     },
     KiemThe = {
         { "GM Julian-V", 201 }, { "Uy ChÊn Cöu Ch©u", 192 }, { "Vâ L©m ChÝ T«n", 193 },

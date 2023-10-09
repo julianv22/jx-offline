@@ -422,11 +422,16 @@ function JulianV:LastNPCTalk()
     local nNpcKind = GetNpcKind(nIndex) or -1
     local nNpcLife = GetNpcLife(nIndex)
     local file = openfile("npc_info.lua", "a+")
+    Msg2Player("------------------------")
+    GMMsg2Player("Name", "<color=green>" .. szNpcName)
+    GMMsg2Player("Index", "<color=green>" .. nNpcIndex)
+    GMMsg2Player("Script", "<color=green>" .. szNpcScript)
     write(file,
         "npc = { \n" .. "Name = \"" .. szNpcName .. "\",\nIndex = " .. nNpcIndex .. ",\nScript = \"" ..
             szNpcScript .. "\",\n-- " .. GetNpcScript(nIndex) .. "\nDropFile = \"" .. szNpcDropFile ..
             "\",\nLife = " .. nNpcLife .. ",\nSeries = " .. nNpcSeries .. ",\nKind = " .. nNpcKind ..
             "\n}", "\n")
     closefile(file)
-    Msg2Player("Done! Th«ng tin ®­îc l­u t¹i <color=yellow>server1\\npc_info.lua")
+    GMMsg2Player("Xem chi tiÕt t¹i", "<color=yellow>server1\\npc_info.lua")
+    Msg2Player("------------------------")
 end

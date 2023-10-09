@@ -36,7 +36,7 @@ tbBoss = {
     ...
     ...
     ...
-    [35 = { ...
+    [35] = { ... }
 ```
 
 ## Bài toán
@@ -47,7 +47,7 @@ tbBoss = {
 
 3. Từ trang 2 trở đi sẽ thêm dòng **Trang trước** để trở về trang trước đó. Nếu là trang đầu cùng thì không thêm dòng này.
 
-## Giải quyết vấn đề
+# Giải quyết vấn đề
 
 ### Để giải quyết vấn đề trên ta cần
 

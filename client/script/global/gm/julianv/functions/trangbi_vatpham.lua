@@ -74,8 +74,8 @@ end
 function JulianV:TrangBiKhac_Dialog()
     local tbOpt = {
         { "Ngò hµnh Ên", JulianV.NguHanhAn_Diag }, --
-        { "Phi Phong", JulianV.getPhiPhong }, --
-        { "Trang Søc", JulianV.getTrangSuc },
+        { "Phi Phong", JulianV.NhanPhiPhong }, --
+        { "Trang Søc", JulianV.NhanTrangSuc },
         { "Cµn Kh«n Giíi ChØ", JulianV.NhanCanKhon_Diag }, --
         { "Set §éng S¸t", JulianV.NhanTBHiem, { 494, 497 } }, --
     }

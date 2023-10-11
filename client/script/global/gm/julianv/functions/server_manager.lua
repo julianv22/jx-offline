@@ -31,7 +31,8 @@ function JulianV:FactionBoss()
     JDialog:Show(tbOpt, JulianV.Choose_Boss_Dialog, "Mêi <sex>chän Boss muèn gäi<pic=46>}}")
 end
 
-function JulianV.Boss_HK( nPage )
+function JulianV:Boss_HK()
+    local nPage = self
     local tbBossHK = JDialog:PhanTrang(tbBoss, 11)
     local tbOpt = {}
     if not nPage then nPage = 1 end
@@ -52,12 +53,12 @@ function JulianV.Boss_HK( nPage )
         strfill_center("Trang {{" .. nPage .. "/" .. nCount .. "}}", 50, "-"))
 end
 
-function JulianV.Call_Boss( tbBoss, nIndex )
+function JulianV:Call_Boss( nIndex )
     if GetFightState() == 0 then
         Talk(1, "", "Kh«ng thÓ th¶ boss ë nh÷ng n¬i phi chiÕn ®Êu ®­îc.")
         return
     end
-    local Boss = tbBoss[nIndex];
+    local Boss = self[nIndex];
     local nw, nx, ny = GetWorldPos();
     local clBoss = AddNpcEx(Boss.nBossId, Boss.nLevel, Boss.nSeries, SubWorldID2Idx(nw), nx * 32,
                        ny * 32, 1, Boss.szName, 1);

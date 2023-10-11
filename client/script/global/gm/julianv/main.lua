@@ -67,7 +67,7 @@ function JulianV:Admin_Dialog()
             return { "T¾t tÝnh n¨ng tµng h×nh", JulianV.GM_Activate, { num } }
         end
     end
-    local PowerOpt = function()
+    local GM_Power = function()
         if HaveMagic(161) ~= -1 then
             return { "Power Down", JulianV.PowerUp, { -1 } }
         else
@@ -76,7 +76,7 @@ function JulianV:Admin_Dialog()
     end
     local tbOpt = {
         { "DÞch chuyÓn tøc thêi", JulianV.Teleport }, GM_Title(1), GM_Res(2), GM_Hide(3),
-        PowerOpt(),
+        GM_Power(),
     }
     JDialog:Show(tbOpt, main)
 end
@@ -92,7 +92,6 @@ function JulianV:GM_Activate()
             Title_RemoveTitle(191)
             Msg2Player("Huû kÝch ho¹t huy hiÖu GM")
         end
-        return
     end
     if self == 2 then
         if IsOwnFeatureChanged() == 0 then
@@ -102,7 +101,6 @@ function JulianV:GM_Activate()
             RestoreOwnFeature();
             Msg2Player("Trë l¹i h×nh d¸ng ban ®Çu");
         end
-        return
     end
     if self == 3 then
         if GetSkillState(733) == -1 then
@@ -375,20 +373,20 @@ function JulianV:ExpandStorage() -- Më réng r­¬ng
 end
 
 function JulianV:ClearF4() -- Dän r­¬ng ®å
-    if not self then
-        CreateNewSayEx(SPRLINK ..
-                           "<color=red><pic=115> L­u ý: <color>TÊt c¶ vËt phÈm vµ trang bÞ trong R­¬ng chøa ®å sÏ bÞ {{Xo¸ bá}} hoµn toµn vµ kh«ng thÓ phôc håi nh­ cò.\n\n<sex>cã ch¾c ch¾n muèn lµm vËy kh«ng<pic=44><color>", --
-            {
-                { "X¸c nhËn", JulianV.ClearF4, { 1 } }, --
-                { "§Ó ta suy nghÜ l¹i..." },
-            })
-    else
+    if self == 1 then
         local tbItems = GetRoomItems(0);
         if (getn(tbItems) > 0) then
             for i = 1, getn(tbItems) do RemoveItemByIndex(tbItems[i], -1); end
             AddItem(6, 1, 5128, 0, 0, 0)
         end
         Talk(1, "", "§· dän s¹ch r­¬ng<pic=46>")
+    else
+        CreateNewSayEx(SPRLINK ..
+                           "<color=red><pic=115> L­u ý: <color>TÊt c¶ vËt phÈm vµ trang bÞ trong R­¬ng chøa ®å sÏ bÞ {{Xo¸ bá}} hoµn toµn vµ kh«ng thÓ phôc håi nh­ cò.\n\n<sex>cã ch¾c ch¾n muèn lµm vËy kh«ng<pic=44><color>", --
+            {
+                { "X¸c nhËn", JulianV.ClearF4, { 1 } }, --
+                { "§Ó ta suy nghÜ l¹i..." },
+            })
     end
 end
 

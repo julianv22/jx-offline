@@ -49,9 +49,8 @@ function JDialog:DefaultTitle() -- Reset tieu de Dialog ve mac dinh
     local szCurCamp = format("<color=%s>%s<color>", tbMonPhai.tbPK_Status[GetCamp()][2],
                           tbMonPhai.tbPK_Status[GetCamp()][1])
     local szMessage = format(
-                          "<pic=137> Tµi kho¶n : <bclr=red>%s<bclr>     Index : <color=yellow>%s<color>\n<pic=136> Nh©n vËt  : <bclr=blue>%s<bclr>\n<pic=135> M«n ph¸i  : <color=green>%s<color>     CÊp ®é : <color=green>%d<color>\n<pic=136> ThÕ lùc   : %s   Trïng sinh : <color=green>%d<color>" ..
-                              szTongName ..
-                              "\n\n<pic=54> Täa ®é   : <color=yellow>%d,<color> <color=orange>%d/%d<color>",
+                          "<pic=137> Tµi kho¶n : <bclr=red>%s<bclr>     Index : {{%s}}\n<pic=136> Nh©n vËt  : <bclr=blue>%s<bclr>\n<pic=135> M«n ph¸i  : <g>%s</g>     CÊp ®é : <g>%d</g>\n<pic=136> ThÕ lùc   : %s   Trïng sinh : <g>%d</g>" ..
+                              szTongName .. "\n\n<pic=54> Täa ®é   : {{%d,}} <g>%d/%d</g>",
                           szAccount, PlayerIndex, szName, szFactionName, GetLevel(), szCurCamp,
                           ST_GetTransLifeCount(), nW, nX, nY)
     self:InitTitle(szMessage)

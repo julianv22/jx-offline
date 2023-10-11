@@ -19,7 +19,7 @@ Include("\\script\\lib\\string.lua");
 -- 同伴系统的支持
 IncludeLib("PARTNER");
 
-function TaskSay(caption, option)
+function TaskSay( caption, option )
     local str = caption;
     local strGenKey = strsub(str, 1, 5);
     if strGenKey == "<dec>" then
@@ -32,16 +32,12 @@ function TaskSay(caption, option)
     end
 end
 
-function TaskSayList(caption, ...)
-    TaskSay(caption, arg)
-end
+function TaskSayList( caption, ... ) TaskSay(caption, arg) end
 
 -- 用传进来的文字构造一段对话数组并执行
-function CreateTaskSay(tb)
+function CreateTaskSay( tb )
     local option = {}
-    for i = 2, getn(tb) do
-        tinsert(option, tb[i])
-    end
+    for i = 2, getn(tb) do tinsert(option, tb[i]) end
     TaskSay(tb[1], option)
 end
 
@@ -52,11 +48,15 @@ KEY_TASKSAY = {
     key_pan = "<pan>", -- Companion image connection identifier
     key_npc = "<npc>", -- The image and name connection identifier of the dialogue character NPC
     txt_left = "<color=yellow>",
-    txt_right = "<color>"
+    txt_right = "<color>",
+    key_green_l = "<g>",
+    key_green_r = "</g>",
+    txt_green_l = "<color=green>",
+    txt_green_r = "<color>",
 }
 
 -- 用于处理文本内的关键字，如：性别标识、同伴图像连接标识、重点颜色标识等。
-function SetTaskSayColor(str)
+function SetTaskSayColor( str )
     local strPan = CreatePartnerStringLink()
     local strNpc = CreateNpcStringLink()
     local strSex = GetPlayerSex();
@@ -65,6 +65,8 @@ function SetTaskSayColor(str)
     -- 处理重点标识颜色
     ReplaceString(KEY_TASKSAY.key_left, KEY_TASKSAY.txt_left)
     ReplaceString(KEY_TASKSAY.key_right, KEY_TASKSAY.txt_right)
+    ReplaceString(KEY_TASKSAY.key_green_l, KEY_TASKSAY.txt_green_l)
+    ReplaceString(KEY_TASKSAY.key_green_r, KEY_TASKSAY.txt_green_r)
 
     -- 处理性别标识
     ReplaceString(KEY_TASKSAY.key_sex, strSex)
@@ -79,33 +81,25 @@ function SetTaskSayColor(str)
 end
 
 -- 用于处理一堆选项的对话函数 Say(""...);
-function SelectSay(strSay)
-    if (getn(strSay) < 2) then
-        return
-    end
+function SelectSay( strSay )
+    if (getn(strSay) < 2) then return end
     local caption = SetTaskSayColor(strSay[1])
     local option = {}
-    for i = 2, getn(strSay) do
-        tinsert(option, strSay[i])
-    end
+    for i = 2, getn(strSay) do tinsert(option, strSay[i]) end
     Say(caption, getn(option), option)
 end
 
 -- 用于处理一堆选项的 Describe 函数
-function SelectDescribe(strSay)
-    if (getn(strSay) < 2) then
-        return
-    end
+function SelectDescribe( strSay )
+    if (getn(strSay) < 2) then return end
     local caption = SetTaskSayColor(strSay[1])
     local option = {}
-    for i = 2, getn(strSay) do
-        tinsert(option, strSay[i])
-    end
+    for i = 2, getn(strSay) do tinsert(option, strSay[i]) end
     Describe(caption, getn(option), option)
 end
 
 -- 子函数，用于扩展对话 TALK 函数的功能
-function TalkEx(fun, szMsg)
+function TalkEx( fun, szMsg )
 
     local num = getn(szMsg);
     local szmsg = "";
@@ -128,11 +122,10 @@ function CreatePartnerStringLink()
     local partnerindex, partnerstate = PARTNER_GetCurPartner() -- 获得召唤出同伴的index,同伴状态为召出或为不召出
     local nSettingIdx = PARTNER_GetSettingIdx(partnerindex) -- 获取同伴的设置 ID
 
-    local strLink = "<#><link=image[0,8]:#npcspr:?NPCSID=" .. tostring(nSettingIdx) .. "?ACTION=" .. tostring(0) .. ">";
+    local strLink = "<#><link=image[0,8]:#npcspr:?NPCSID=" .. tostring(nSettingIdx) .. "?ACTION=" ..
+                        tostring(0) .. ">";
 
-    if partnerindex < 1 or partnerstate == 0 then
-        return "";
-    end
+    if partnerindex < 1 or partnerstate == 0 then return ""; end
 
     -- 最后返回带同伴姓名的图像连接字符串
     return strLink .. PARTNER_GetName(partnerindex) .. "<link>: ";
@@ -148,11 +141,10 @@ function CreateNpcStringLink()
 
     local NpcName = GetNpcName(nNpcIndex); -- 得到此 NPC 的姓名
 
-    local strLink = "<#><link=image[0,8]:#npcspr:?NPCSID=" .. tostring(nSettingIdx) .. "?ACTION=" .. tostring(0) .. ">";
+    local strLink = "<#><link=image[0,8]:#npcspr:?NPCSID=" .. tostring(nSettingIdx) .. "?ACTION=" ..
+                        tostring(0) .. ">";
 
-    if nNpcIndex == 0 or nNpcIndex == nil then
-        return "";
-    end
+    if nNpcIndex == 0 or nNpcIndex == nil then return ""; end
 
     return strLink .. "<<" .. NpcName .. ">><link>: ";
 

@@ -1,21 +1,22 @@
 ------------------------------------------------------------------
 -- Copyright by Julian-V (https://www.youtube.com/julianv)
 ----------------------------Vò khÝ BKMP---------------------------
-function JulianV.VKHK_Dialog( nType )
+function JulianV:VKHK_Dialog()
     local tbOpt = {}
-    if nType == 1 then
+    if self == 1 then
         for id, szMonPhai in tbMonPhai.tbFacName do
-            tinsert(tbOpt, { szMonPhai, JulianV.GetWeapon, { nType, id } })
+            tinsert(tbOpt, { szMonPhai, JulianV.GetWeapon, { self, id } })
         end
     else
         for i = 1, 10 do
-            tinsert(tbOpt, { tbMonPhai.tbFacName[i], JulianV.GetWeapon, { nType, i } })
+            tinsert(tbOpt, { tbMonPhai.tbFacName[i], JulianV.GetWeapon, { self, i } })
         end
     end
     JDialog:Show(tbOpt, JulianV.NhanTrangBi, "Mêi <sex>chän m«n ph¸i<pic=46><color>")
 end
 
-function JulianV.GetWeapon( nType, id )
+function JulianV:GetWeapon( id )
+    local nType = self
     if (CountFreeRoomByWH(2, 4, 1) < 1) then
         Talk(1, "",
             "Hµnh trang kh«ng ®ñ « trèng! Xin h·y s¾p xÕp råi quay l¹i nhÐ<pic=46>");
@@ -38,13 +39,13 @@ function JulianV.GetWeapon( nType, id )
     end
 end
 
-function JulianV.SetHKMP_Dialog( nItemId ) -- set trang bÞ hkmp
+function JulianV:SetHKMP_Dialog() -- set trang bÞ hkmp
     if GetLastFactionNumber() == -1 then
         Talk(1, "", "Nhµ ng­¬i ch­a gia nhËp m«n ph¸i nhËn c¸i g× mµ nhËn <pic=138>")
         return
     end
     local nFacID = GetLastFactionNumber() + 1
-    if not nItemId then
+    if not self then
         local tbOpt = {}
         for id, wp in tbMonPhai.tbGoldEquip[nFacID] do
             tinsert(tbOpt, { wp, JulianV.SetHKMP_Dialog, { id } })
@@ -54,23 +55,23 @@ function JulianV.SetHKMP_Dialog( nItemId ) -- set trang bÞ hkmp
     else
         for i = 1, 5 do
             Msg2Player("NhËn ®­îc trang bÞ Hoµng Kim M«n ph¸i <color=yellow>" ..
-                           GetItemName(AddGoldItem(0, nItemId * 5 + i - 5)))
+                           GetItemName(AddGoldItem(0, self * 5 + i - 5)))
         end
     end
 end
 
-function JulianV.TrangBi_HKMP_An( nFacId ) -- set trang bÞ hkmp Èn
-    if not nFacId then
+function JulianV:TrangBi_HKMP_An() -- set trang bÞ hkmp Èn
+    if not self then
         local tbOpt = {}
         for id, szMonPhai in tbMonPhai.tbFacName do
             tinsert(tbOpt, { szMonPhai, JulianV.TrangBi_HKMP_An, { id } })
         end
         JDialog:Show(tbOpt, JulianV.NhanTrangBi, "Mêi <sex>chän m«n ph¸i<pic=46><color>")
     else
-        if not tbMonPhai.tbPrivateEquip[nFacId] then
+        if not tbMonPhai.tbPrivateEquip[self] then
             Talk(1, "", "M«n ph¸i nµy ch­a cã trang bÞ TrÊn Bang Chi B¶o<pic=46>")
         else
-            for _, id in tbMonPhai.tbPrivateEquip[nFacId] do
+            for _, id in tbMonPhai.tbPrivateEquip[self] do
                 Msg2Player("NhËn ®­îc trang bÞ Hoµng Kim M«n ph¸i <color=yellow>" ..
                                GetItemName(AddGoldItem(0, id)))
             end
@@ -108,9 +109,9 @@ function JulianV:NguHanhAn_Diag()
     JDialog:Show(tbOpt, JulianV.TrangBiKhac_Dialog)
 end
 
-function JulianV.NhanNguHanhAn( nType, nIndex )
-    if nType > 2 then
-        Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddGoldItem(0, nType)))
+function JulianV:NhanNguHanhAn( nIndex )
+    if self > 2 then
+        Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddGoldItem(0, self)))
         return
     end
     if not nIndex then
@@ -125,16 +126,16 @@ function JulianV.NhanNguHanhAn( nType, nIndex )
         end
         local tbOpt = {}
         for i = 1, 10 do
-            tinsert(tbOpt, { szLoaiAn(nType) .. i, JulianV.NhanNguHanhAn, { nType, nType * 10 + i } })
+            tinsert(tbOpt, { szLoaiAn(self) .. i, JulianV.NhanNguHanhAn, { self, self * 10 + i } })
         end
         JDialog:Show(tbOpt, JulianV.NguHanhAn_Diag)
     else
-        -- Msg2Player(nIndex+3204)
         Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddGoldItem(0, nIndex + 3204)))
     end
 end
 
-function JulianV.NhanPhiPhong( nIndex )
+function JulianV:NhanPhiPhong()
+    local nIndex = self
     if not nIndex then
         local tbOpt = {
             { "Phi Phong cÊp thÊp", JulianV.NhanPhiPhong, { 3465 } }, --
@@ -155,8 +156,8 @@ function JulianV.NhanPhiPhong( nIndex )
     end
 end
 
-function JulianV.NhanTrangSuc( nIndex, nEnd )
-    if not nIndex then
+function JulianV.NhanTrangSuc( nStart, nEnd )
+    if not nStart then
         local tbOpt = {
             { "Bé Trang Søc 1", JulianV.NhanTrangSuc, { 1 } }, --
             { "Bé Trang Søc 2", JulianV.NhanTrangSuc, { 2 } }, --
@@ -169,40 +170,40 @@ function JulianV.NhanTrangSuc( nIndex, nEnd )
         local thongbao = function()
             Talk(1, "", "§· chuyÓn trang bÞ vµo hµnh trang, xin h·y kiÓm tra l¹i<pic=46>")
         end
-        if nIndex == 1 then
+        if nStart == 1 then
             for i = 3542, 3554 do AddGoldItem(0, i) end
             for i = 3491, 3506 do AddGoldItem(0, i) end
             thongbao()
             return
         end
-        if nIndex == 2 then
+        if nStart == 2 then
             AddGoldItem(0, 3506)
             for i = 3880, 3888 do AddGoldItem(0, i) end
             thongbao()
             return
         end
         if nEnd then
-            for i = nIndex, nEnd do AddGoldItem(0, i) end
+            for i = nStart, nEnd do AddGoldItem(0, i) end
             thongbao()
             return
         else
-            AddGoldItem(0, nIndex)
+            AddGoldItem(0, nStart)
             thongbao()
             return
         end
     end
 end
 -------------------------NhÉn Cµn Kh«n-------------------------
-function JulianV.NhanCanKhon_Diag( szResit, nIndex )
+function JulianV:NhanCanKhon_Diag( nIndex )
     local tbOpt = {}
     if not nIndex then
-        if not szResit then
+        if not self then
             for resitName, _ in tbNhanCanKhon do
                 tinsert(tbOpt, { resitName, JulianV.NhanCanKhon_Diag, { resitName } })
             end
         else
-            for _, tbEff in tbNhanCanKhon[szResit] do
-                tinsert(tbOpt, { tbEff[1], JulianV.NhanCanKhon_Diag, { szResit, tbEff[2] } })
+            for _, tbEff in tbNhanCanKhon[self] do
+                tinsert(tbOpt, { tbEff[1], JulianV.NhanCanKhon_Diag, { self, tbEff[2] } })
             end
         end
         JDialog:Show(tbOpt, JulianV.TrangBiKhac_Dialog,

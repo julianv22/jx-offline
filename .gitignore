@@ -1,6 +1,8 @@
 # -------------------Ignore All-------------------
 *
 # -------------------Exclude List-------------------
+!*.*
+!LICENSE
 # -------------------server-------------------
 !server
 !server/**
@@ -86,7 +88,7 @@ client/data/*
 !client/data/1024x768.pak
 # -------------------settings-------------------
 !client/settings/
-!client/settings/*
+!client/settings/*.*
 !client/settings/item/
 !client/settings/item/**
 # -------------------docs-------------------

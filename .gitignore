@@ -88,7 +88,10 @@ client/data/*
 !client/data/1024x768.pak
 # -------------------settings-------------------
 !client/settings/
-!client/settings/*
+client/settings/*
+!client/settings/*.*
+!client/settings/npcres
+!client/settings/npcres/**
 !client/settings/item/
 !client/settings/item/**
 # -------------------docs-------------------

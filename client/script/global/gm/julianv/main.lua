@@ -32,6 +32,7 @@ function main()
     JulianV:Main()
     return 1
 end
+
 function JulianV:Main()
     local tbOpt = {
         { "Tools", self.ChucNangKhac }, --
@@ -44,7 +45,7 @@ function JulianV:Main()
     }
     JDialog:Show(tbOpt)
 end
-------------------------Admin------------------------
+------------------------Admin Manager------------------------
 function JulianV:Admin_Dialog()
     local GM_Title = function( num )
         if Title_GetActiveTitle() ~= 191 then
@@ -167,7 +168,7 @@ function JulianV:PowerUp()
             "<color=yellow>Ng­¬i ®· nhËn ®­îc mét cç lùc l­îng thÇn bÝ!<color>")
     end
 end
-------------------------Nh©n vËt------------------------
+------------------------Player Manager------------------------
 Include("\\script\\global\\fuyuan.lua") -- fuc duyen
 Include("\\script\\global\\gm\\ex_lib_function.lua")
 
@@ -185,7 +186,7 @@ function JulianV:Player_Dialog()
     }
     JDialog:Show(tbOpt, main)
 end
-------------------------Server------------------------
+------------------------Server Manager------------------------
 function JulianV:Server_Dialog()
     dofile("script/global/gm/julianv/functions/server_manager.lua")
     local tbOpt = {

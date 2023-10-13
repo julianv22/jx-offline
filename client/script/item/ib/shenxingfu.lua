@@ -9,8 +9,8 @@ Include("\\script\\task\\system\\task_string.lua");
 Include("\\script\\missions\\boss\\callboss_incity.lua")
 IncludeLib("TONG")
 
-function main( sel )
-    dofile("/script/item/ib/shenxingfu.lua");
+function main()    
+    dofile("script/item/ib/shenxingfu.lua");
     -- local szTongName, nTongID = GetTongName();
     -- if szTongName ~= nil and szTongName ~= "" then
     -- if TONG_GetMemberCount(nTongID) > 150 then
@@ -106,6 +106,7 @@ function cong3()
 end
 
 function vitri_khac()
+    Msg2Player("tét")
     local tab_Content = { -- "VËn Tiªu/goto_vantieu",
         "Boss s¸t thñ/gotobosssatthu", "V­ît ¶i/goto_satthu", "TÝn Sø/goto_tinsu",
         "KiÕm Gia Mª Cung/goto_kiemgia", "ThÝ LuyÖn §­êng/goto_thiluyenduong",

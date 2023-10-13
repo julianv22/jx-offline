@@ -106,7 +106,6 @@ function cong3()
 end
 
 function vitri_khac()
-    Msg2Player("tét")
     local tab_Content = { -- "VËn Tiªu/goto_vantieu",
         "Boss s¸t thñ/gotobosssatthu", "V­ît ¶i/goto_satthu", "TÝn Sø/goto_tinsu",
         "KiÕm Gia Mª Cung/goto_kiemgia", "ThÝ LuyÖn §­êng/goto_thiluyenduong",

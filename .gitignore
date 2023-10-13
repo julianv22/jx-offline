@@ -59,12 +59,13 @@ client/script/global/thanh/npc/*
 client/script/item/*
 !client/script/item/lessmoneygift.lua
 !client/script/item/moremoneygift.lua
+!client/script/item/ib
+!client/script/item/ib/**
 # -------------------script/task-------------------
 !client/script/task/
 client/script/task/*
 !client/script/task/system/
 client/script/task/system/*
-!client/script/task/system/task_string.lua
 # -------------------ui------------------- 
 !client/ui/
 client/ui/*

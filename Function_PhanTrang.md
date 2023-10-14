@@ -13,21 +13,21 @@ Giả sử ta có 1 table Boss Hoàng Kim trong đó có khoảng > 30 con boss,
 ```lua
 tbBoss = {
     [1] = {
-        szName = "TÞnh Th«ng",
+        szName = "Tịnh Thông",
         nBossId = 1355,
         nRate = 322,
         nSeries = 0,
         nLevel = 95,
      },
     [2] = {
-        szName = "Ng¹o Thiªn T­íng Qu©n",
+        szName = "Ngạo Thiên Tướng Quân",
         nBossId = 1356,
         nRate = 322,
         nSeries = 0,
         nLevel = 95,
     },
     [3] = {
-        szName = "LiÔu Thanh Thanh",
+        szName = "Liễu Thanh Thanh",
         nBossId = 523,
         nRate = 322,
         nSeries = 1,
@@ -36,7 +36,8 @@ tbBoss = {
     ...
     ...
     ...
-    [35] = { ... }
+    [35] = { ... },
+}
 ```
 
 ## Bài toán
@@ -124,43 +125,25 @@ function Boss_HK( nPage ) -- function này sẽ nhận tham số nPage (số tra
     local tbBossHK = PhanTrang(tbBoss, 10)
     -- Phân trang `tbBoss` thành 1 table có 4 phần tử, mỗi phần tử chỉ chứa thông tin 10 Boss rồi gán cho tbBossHK
 
-    local tbOpt = {}
-
-    if not nPage then nPage = 1 end -- Nếu không có số trang thì số trang là 1
+    nPage = nPage or 1
+    -- Nếu không có số trang thì số trang mặc định là 1      
 
     local nCount = getn(tbBossHK) -- getn(tbBossHK) = 4 (Đếm số phần tử của tbBossHK (table đã phân trang))
 
-    if nPage < nCount then -- nPage < 4 (Nếu số trang nPage < getn(tbBossHK))
+    local tbOpt = {}
 
-        for i = 1, 10 do -- Chạy vòng lặp từ 1 đến 10 để show tên Boss
+    for i = 1, getn(tbBossHK[nPage]) do -- Chạy vòng lặp từ 1 đến số phần tử của tbBossHK[nPage] để show tên Boss
 
-            tinsert(tbOpt, { tbBossHK[nPage][i].szName, Call_Boss, { tbBossHK[nPage], i } })
-            -- Show tên Boss và function gọi Call_Boss với các tham số tương ứng với số trang
-
-        end
-
-        tinsert(tbOpt, { "Trang sau", Boss_HK, { nPage + 1 } })
-        -- Thêm dòng trang sau theo yêu cầu 3 của bài toán
-        -- Tham số nPage sẽ được tăng lên 1
-
-    else -- Nếu số trang nPage = 4
-
-        for i = 1, getn(tbBossHK[nCount]) do -- Chạy vòng lặp từ 1 đến 5 (getn(tbBossHK[4]) = 5)
-
-            tinsert(tbOpt, { tbBossHK[nCount][i].szName, Call_Boss, { tbBossHK[nCount], i } })
-            -- Show tên Boss và function gọi Call_Boss với các tham số tương ứng
-
-        end
+        tinsert(tbOpt, { tbBossHK[nPage][i].szName, Call_Boss, { tbBossHK[nPage], i } })
+        -- Show tên Boss và function gọi Call_Boss với các tham số tương ứng với số trang
 
     end
 
-    if nPage > 1 then -- Nếu số trang > 1
+    if nPage < nCount then tinsert(tbOpt, { "Trang sau", JulianV.Boss_HK, { nPage + 1 } }) end
+    -- Nếu không phải trang cuối (nCount) thì thêm dòng trang sau theo yêu cầu của bài toán
 
-        tinsert(tbOpt, { "Trang tr­íc", Boss_HK, { nPage - 1 } })
-        -- Thêm dòng trang trước theo yêu cầu 2 của bài toán
-        -- Tham số nPage sẽ bị giảm xuống 1
-
-    end
+    if nPage > 1 then tinsert(tbOpt, { "Trang tr­íc", JulianV.Boss_HK, { nPage - 1 } }) end
+    -- Nếu số trang > 1 thì thêm dòng trang trước theo yêu cầu của bài toán
 
     tinsert(tbOpt, { "Kết thúc đối thoại" })
 

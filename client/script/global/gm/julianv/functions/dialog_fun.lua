@@ -99,9 +99,3 @@ end
 ---@param self? integer @Max page number
 ---@param pFun? function @Callback Function
 function JDialog:JumpToPage( pFun ) g_AskClientNumberEx(1, self, "Sè trang", { pFun }) end
----@param str? string
-function JDialog:StrPath( str )
-    str = "\\" .. str
-    str = replace(str, "/", "\\")
-    return str
-end

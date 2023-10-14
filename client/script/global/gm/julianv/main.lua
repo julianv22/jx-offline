@@ -435,7 +435,7 @@ function JulianV:LastNPCTalk()
 end
 
 function JulianV:ObjData()
-    local tbObjData = JDialog:GetTabFileData(JDialog:StrPath("settings/objdata.txt"), "tbObj", 2, 5)
+    local tbObjData = JDialog:GetTabFileData(safeshow("/settings/objdata.txt"), "tbObj", 2, 5)
     tbObjData = JDialog:PhanTrang(tbObjData, 10)
     local nPage = self or 1
     local nCount = getn(tbObjData)

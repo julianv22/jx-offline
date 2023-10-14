@@ -84,6 +84,7 @@ end
 ---@param start_col? integer
 ---@param max_row? integer
 function JDialog:GetTabFileData( path, tab_name, start_row, max_col ) -- Doc file txt
+    path = safeshow(path)
     if TabFile_Load(path, tab_name) ~= 1 then return print("ß‰c tÀp tin th t bπi! " .. path) end
     if not start_row or start_row < 1 then start_row = 1 end
     if not max_col or max_col < 1 then max_col = 1 end

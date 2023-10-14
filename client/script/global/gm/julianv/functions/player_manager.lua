@@ -218,7 +218,7 @@ function JulianV:ActiveTitle( nTitleId )
 end
 
 function JulianV:ShowAllTitle()
-    local path, tab_name = safeshow("/settings/playertitle.txt"), "title"
+    local path, tab_name = "/settings/playertitle.txt", "title"
     local tbTitle = JDialog:PhanTrang(JDialog:GetTabFileData(path, tab_name, 2, 2), 10)
     local szTitleName = function( tab, page, id )
         local text = tab[page][id][1]

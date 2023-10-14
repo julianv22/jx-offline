@@ -443,13 +443,13 @@ function JulianV:Nhan_VP_Khac( nCount )
     end
 end
 
-function JulianV.GetMask( nIndex )
-    if not nIndex then
+function JulianV:GetMask()
+    if not self then
         local tbOpt = {}
         for i = 1, 10 do tinsert(tbOpt, { tbMonPhai.tbFacName[i], JulianV.GetMask, { i } }) end
         JDialog:Show(tbOpt, JulianV.NhanVatPham)
     else
-        local nStart, nEnd = tbMonPhai.tbMasks[nIndex].nStart, tbMonPhai.tbMasks[nIndex].nEnd
+        local nStart, nEnd = tbMonPhai.tbMasks[self].nStart, tbMonPhai.tbMasks[self].nEnd
         for i = nStart, nEnd do
             Msg2Player("NhËn ®­îc <color=yellow>" .. GetItemName(AddGoldItem(0, i)))
         end

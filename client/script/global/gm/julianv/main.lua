@@ -320,6 +320,7 @@ function JulianV:ChucNangKhac()
         { "Më réng r­¬ng", JulianV.ExpandStorage }, --
         { "Dän s¹ch R­¬ng chøa ®å", JulianV.ClearF4 }, --        
         { "LÊy th«ng tin NPC", JulianV.LastNPCTalk }, --
+        { "ObjData Preview", JulianV.ObjData }, --
         { "Check Emoticons", JulianV.CheckEmo }, --    
         { "KickOutSelf", KickOutSelf }, --
     }
@@ -431,4 +432,37 @@ function JulianV:LastNPCTalk()
     closefile(file)
     GMMsg2Player("Xem chi tiÕt t¹i", "<color=yellow>server1\\npc_info.lua")
     Msg2Player("<color=white>------------------------")
+end
+
+function JulianV:ObjData()
+    local tbObjData = JDialog:GetTabFileData(JDialog:StrPath("settings/objdata.txt"), "tbObj", 2, 5)
+    tbObjData = JDialog:PhanTrang(tbObjData, 10)
+    local nPage = self or 1
+    local nCount = getn(tbObjData)
+    local tbOpt = {}
+    if nPage < nCount then
+        for i = 1, getn(tbObjData[nPage]) do
+            tinsert(tbOpt, {
+                tbObjData[nPage][i][2] .. "." .. tbObjData[nPage][i][1], JulianV.ShowObjData,
+                { tbObjData[nPage][i], nPage },
+            })
+        end
+        tinsert(tbOpt, { "Trang sau", JulianV.ObjData, { nPage + 1 } })
+    else
+        for i = 1, getn(tbObjData[nCount]) do
+            tinsert(tbOpt, {
+                tbObjData[nCount][i][2] .. "." .. tbObjData[nCount][i][1], JulianV.ShowObjData,
+                { tbObjData[nCount][i], nPage },
+            })
+        end
+    end
+    if nPage > 1 then tinsert(tbOpt, { "Trang tr­íc", JulianV.ObjData, { nPage - 1 } }) end
+    tinsert(tbOpt, { "Nh¶y ®Õn trang...", JDialog.JumpToPage, { nCount, JulianV.ObjData } })
+    JDialog:Show(tbOpt, nil, "Res ObjData\n\n" ..
+        strfill_center("Trang {{" .. nPage .. "/" .. nCount .. "}}", 50, "-"))
+end
+
+function JulianV:ShowObjData( nPage )
+    Describe("<link=image:" .. self[5] .. ">ObjData Preview<link>: " .. self[1], 2,
+        format("Trë l¹i/#JulianV.ObjData(%d)", nPage), "Tho¸t")
 end

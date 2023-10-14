@@ -1,19 +1,19 @@
 Name	DataID	Kind	ScriptName	ImageName	SoundName	LifeTime	Layer	Height	SkillKind	SkillCamp	SkillRange	SkillCastTime	SkillID	SkillLevel	LightRadius	LightRed	LightGreen	LightBlue	LightAlpha	LightReflectType	ImageTotalFrame	ImageCurFrame	ImageTotalDir	ImageCurDir	ImageInterval	ImageCgXpos	ImageCgYpos	Bar0	Bar1	Bar2	Bar3	Bar4	Bar5	Bar6	Bar7	Bar8	Bar9	Bar10	Bar11	Bar12	Bar13	Bar14	ImageDropName	ImageDropTotalFrame	ImageDropCurFrame	ImageDropTotalDir	ImageDropCurDir	ImageDropInterval(Ö¡¼ä¸ô£©	ImageDropCgXpos	ImageDropCgYpos	IsUnseen	ObstacleKind
-B¶o r­¬ng 1	1	Prop		\spr\obj\box\box001.spr		0	0	100	Cycle_Image_Static	4	0	0	0	0	0	0	0	0	0	0	22	0	2	0	100	161	210	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0									0	0
-B¶o r­¬ng 2	2	Box		\spr\obj\box\box002.spr		0	0	35	Cycle_Image_Static	4	0	0	0	0	0	0	0	0	0	0	2	0	2	0	80	38	59	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0									0	0
+R­¬ng chøa ®å 1	1	Prop		\spr\obj\box\box001.spr		0	0	100	Cycle_Image_Static	4	0	0	0	0	0	0	0	0	0	0	22	0	2	0	100	161	210	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0									0	0
+R­¬ng chøa ®å 2	2	Box		\spr\obj\box\box002.spr		0	0	35	Cycle_Image_Static	4	0	0	0	0	0	0	0	0	0	0	2	0	2	0	80	38	59	0	0	0	5	1	4	1	1	1	3	1	2	0	0	0									0	0
 b¶ng c¸o thÞ 1	3	Box		\spr\obj\signpost\signpost001.spr		0	0	190	Auto_Image_Static	4	0	0	0	0	0	0	0	0	0	0	2	0	2	0	80	97	149	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0									0	0
 b¶ng c¸o thÞ 2	4	Box		\spr\obj\signpost\signpost002.spr		0	0	190	Auto_Image_Dir	4	0	0	0	0	0	0	0	0	0	0	2	0	2	0	80	88	129	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0									0	0
 b¶ng c¸o thÞ 3	5	Box		\spr\obj\signpost\signpost003.spr		0	0	150	Auto_Image_Target	4	0	0	0	0	0	0	0	0	0	0	2	0	2	0	80	56	107	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0									0	0
-dÊu hiÖu 1	6	Box		\spr\obj\signpost\signpost004.spr		0	0	112	Auto_Delay_Static	4	0	0	0	0	0	0	0	0	0	0	2	0	2	0	80	42	90	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0									0	0
-dÊu hiÖu 2	7	Box		\spr\obj\signpost\signpost005.spr		0	0	45	Auto_Delay_Dir	4	0	0	0	0	0	0	0	0	0	0	2	0	2	0	80	22	38	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0									0	0
-dÊu hiÖu 3	8	Box		\spr\obj\signpost\signpost006.spr		0	0	200	Auto_Delay_Target	4	0	0	0	0	0	0	0	0	0	0	2	0	2	0	80	52	176	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0									0	0
+Bia ®¸ 1	6	Box		\spr\obj\signpost\signpost004.spr		0	0	112	Auto_Delay_Static	4	0	0	0	0	0	0	0	0	0	0	2	0	2	0	80	42	90	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0									0	0
+Bia ®¸ 2	7	Box		\spr\obj\signpost\signpost005.spr		0	0	45	Auto_Delay_Dir	4	0	0	0	0	0	0	0	0	0	0	2	0	2	0	80	22	38	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0									0	0
+Bia ®¸ 3	8	Box		\spr\obj\signpost\signpost006.spr		0	0	200	Auto_Delay_Target	4	0	0	0	0	0	0	0	0	0	0	2	0	2	0	80	52	176	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0									0	0
 KiÕm 	9	Item		\spr\obj\item\obj_wq_001.spr	\sound\sound_i005.wav	150	0	8	Cycle_Image_Static	4	0	0	0	0	0	0	0	0	0	0	8	0	1	0	18	60	105	0	0	0	0	0	0	0	1	4	0	3	2	0	0	0	\spr\obj\item\obj_wq_fall_001.spr	13	0	1	0	15	60	105	0	0
 §ao 	10	Item		\spr\obj\item\obj_wq_002.spr	\sound\sound_i005.wav	150	0	8	Cycle_Image_Static	4	0	0	0	0	0	0	0	0	0	0	8	0	1	0	18	70	110	0	0	0	5	4	0	1	1	4	3	1	2	0	0	0	\spr\obj\item\obj_wq_fall_002.spr	13	0	1	0	15	70	110	0	0
 C«n bæng 	11	Item		\spr\obj\item\obj_wq_003.spr	\sound\sound_i005.wav	150	0	4	Cycle_Image_Static	4	0	0	0	0	0	0	0	0	0	0	8	0	1	0	18	50	100	0	0	0	0	0	0	5	1	0	3	2	0	0	0	0	\spr\obj\item\obj_wq_fall_003.spr	12	0	1	0	15	50	100	0	0
-th­¬ng 	12	Item		\spr\obj\item\obj_wq_004.spr	\sound\sound_i005.wav	150	0	4	Cycle_Image_Static	4	0	0	0	0	0	0	0	0	0	0	8	0	1	0	18	80	112	0	0	0	5	4	0	3	1	4	0	3	2	0	0	0	\spr\obj\item\obj_wq_fall_004.spr	16	0	1	0	18	80	112	0	0
+Th­¬ng 	12	Item		\spr\obj\item\obj_wq_004.spr	\sound\sound_i005.wav	150	0	4	Cycle_Image_Static	4	0	0	0	0	0	0	0	0	0	0	8	0	1	0	18	80	112	0	0	0	5	4	0	3	1	4	0	3	2	0	0	0	\spr\obj\item\obj_wq_fall_004.spr	16	0	1	0	18	80	112	0	0
 Chïy 	13	Item		\spr\obj\item\obj_wq_005.spr	\sound\sound_i005.wav	150	0	2	Auto_Image_Target	4	0	0	0	0	0	0	0	0	0	0	8	0	1	0	38	60	115	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	\spr\obj\item\obj_wq_fall_005.spr	9	0	1	0	18	60	115	0	0
 Song ®ao	14	Item		\spr\obj\item\obj_wq_006.spr	\sound\sound_i005.wav	150	0	8	Cycle_Image_Static	4	0	0	0	0	0	0	0	0	0	0	8	0	1	0	38	60	130	0	0	0	5	1	4	3	1	1	0	3	2	0	0	0	\spr\obj\item\obj_wq_fall_006.spr	11	0	1	0	22	60	130	0	0
-Phi Tiªu	15	Item		\spr\obj\item\obj_wq_007.spr	\sound\sound_i005.wav	150	0	2	Cycle_Image_Static	4	0	0	0	0	0	0	0	0	0	0	7	0	1	0	32	60	115	0	0	0	5	4	0	3	1	0	0	0	0	0	0	0	\spr\obj\item\obj_wq_fall_007.spr	9	0	1	0	20	60	115	0	0
+Phi tiªu	15	Item		\spr\obj\item\obj_wq_007.spr	\sound\sound_i005.wav	150	0	2	Cycle_Image_Static	4	0	0	0	0	0	0	0	0	0	0	7	0	1	0	32	60	115	0	0	0	5	4	0	3	1	0	0	0	0	0	0	0	\spr\obj\item\obj_wq_fall_007.spr	9	0	1	0	20	60	115	0	0
 Cung 	16	Item		\spr\obj\item\obj_wq_008.spr	\sound\sound_i005.wav	150	0	1	Cycle_Image_Static	4	0	0	0	0	0	0	0	0	0	0	7	0	1	0	32	60	115	0	0	0	5	4	0	3	1	4	0	3	2	0	0	0	\spr\obj\item\obj_wq_fall_008.spr	9	0	1	0	20	60	115	0	0
 ¸m khÝ 	17	Item		\spr\obj\item\obj_wq_009.spr	\sound\sound_i005.wav	150	0	8	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	7	0	1	0	32	60	110	0	0	0	5	4	0	3	1	4	0	3	2	0	0	0	\spr\obj\item\obj_wq_fall_009.spr	9	0	1	0	20	60	110	0	0
 Hång d­îc 	18	Item		\spr\obj\item\obj_yp_hp01.spr	\sound\sound_i008.wav	150	0	4	Cycle_Image_Static	0	0	0	0	0	0	0	0	0	0	0	8	0	1	0	16	60	115	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	\spr\obj\item\obj_yp_hp01_fall.spr	10	0	1	0	20	63	115	0	0

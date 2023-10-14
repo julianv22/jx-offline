@@ -249,9 +249,7 @@ function JulianV:ShowAllTitle()
         end
     end
     if nPage > 1 then tinsert(tbOpt, { "Trang tr≠Ìc", JulianV.ShowAllTitle, { nPage - 1 } }) end
-    tinsert(tbOpt, { "Nh∂y Æ’n trang...", JulianV.JumpToPage, { nCount } })
+    tinsert(tbOpt, { "Nh∂y Æ’n trang...", JDialog.JumpToPage, { nCount, JulianV.ShowAllTitle } })
     JDialog:Show(tbOpt, nil, "MÍi <sex>ch‰n Danh Hi÷u<pic=46>}}\n\n" ..
         strfill_center("Trang {{" .. nPage .. "/" .. nCount .. "}}", 50, "-"))
 end
-
-function JulianV:JumpToPage() g_AskClientNumberEx(1, self, "SË trang", { JulianV.ShowAllTitle }) end

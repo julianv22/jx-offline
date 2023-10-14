@@ -195,20 +195,13 @@ end
 
 function JulianV:DanhHieuVoLam()
     local DanhHieuVL = JDialog:PhanTrang(tbDanhHieu.VoLam, 12)
-    local tbOpt = {}
     local nPage = self or 1
     local nCount = getn(DanhHieuVL)
-    if nPage < nCount then
-        for i = 1, getn(DanhHieuVL[nPage]) do
-            tinsert(tbOpt, { DanhHieuVL[nPage][i][1], tbDanhHieu.Active, { DanhHieuVL[nPage][i] } })
-        end
-        tinsert(tbOpt, { "Trang sau", JulianV.DanhHieuVoLam, { nPage + 1 } })
-    else
-        for i = 1, getn(DanhHieuVL[nCount]) do
-            tinsert(tbOpt,
-                { DanhHieuVL[nCount][i][1], tbDanhHieu.Active, { DanhHieuVL[nCount][i] } })
-        end
+    local tbOpt = {}
+    for i = 1, getn(DanhHieuVL[nPage]) do
+        tinsert(tbOpt, { DanhHieuVL[nPage][i][1], tbDanhHieu.Active, { DanhHieuVL[nPage][i] } })
     end
+    if nPage < nCount then tinsert(tbOpt, { "Trang sau", JulianV.DanhHieuVoLam, { nPage + 1 } }) end
     if nPage > 1 then tinsert(tbOpt, { "Trang tr≠Ìc", JulianV.DanhHieuVoLam, { nPage - 1 } }) end
     JDialog:Show(tbOpt, nil, "MÍi <sex>ch‰n Danh Hi÷u<pic=46>}}")
 end
@@ -227,27 +220,19 @@ end
 function JulianV:ShowAllTitle()
     local path, tab_name = safeshow("/settings/playertitle.txt"), "title"
     local tbTitle = JDialog:PhanTrang(JDialog:GetTabFileData(path, tab_name, 2, 2), 10)
-    local tbOpt = {}
-    local nPage = self or 1
-    local nCount = getn(tbTitle)
     local szTitleName = function( tab, page, id )
         local text = tab[page][id][1]
         if strlen(text) > 30 then text = strsub(text, 1, 30) end
         if text == "" then text = "Unknown" end
         return tab[page][id][2] .. "." .. text
     end
-    if nPage < nCount then
-        for i = 1, getn(tbTitle[nPage]) do
-            tinsert(tbOpt,
-                { szTitleName(tbTitle, nPage, i), tbDanhHieu.Active, { tbTitle[nPage][i] } })
-        end
-        tinsert(tbOpt, { "Trang sau", JulianV.ShowAllTitle, { nPage + 1 } })
-    else
-        for i = 1, getn(tbTitle[nCount]) do
-            tinsert(tbOpt,
-                { szTitleName(tbTitle, nCount, i), tbDanhHieu.Active, { tbTitle[nCount][i] } })
-        end
+    local nPage = self or 1
+    local nCount = getn(tbTitle)
+    local tbOpt = {}
+    for i = 1, getn(tbTitle[nPage]) do
+        tinsert(tbOpt, { szTitleName(tbTitle, nPage, i), tbDanhHieu.Active, { tbTitle[nPage][i] } })
     end
+    if nPage < nCount then tinsert(tbOpt, { "Trang sau", JulianV.ShowAllTitle, { nPage + 1 } }) end
     if nPage > 1 then tinsert(tbOpt, { "Trang tr≠Ìc", JulianV.ShowAllTitle, { nPage - 1 } }) end
     tinsert(tbOpt, { "Nh∂y Æ’n trang...", JDialog.JumpToPage, { nCount, JulianV.ShowAllTitle } })
     JDialog:Show(tbOpt, nil, "MÍi <sex>ch‰n Danh Hi÷u<pic=46>}}\n\n" ..

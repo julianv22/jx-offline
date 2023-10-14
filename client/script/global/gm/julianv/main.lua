@@ -440,22 +440,13 @@ function JulianV:ObjData()
     local nPage = self or 1
     local nCount = getn(tbObjData)
     local tbOpt = {}
-    if nPage < nCount then
-        for i = 1, getn(tbObjData[nPage]) do
-            tinsert(tbOpt, {
-                tbObjData[nPage][i][2] .. "." .. tbObjData[nPage][i][1], JulianV.ShowObjData,
-                { tbObjData[nPage][i], nPage },
-            })
-        end
-        tinsert(tbOpt, { "Trang sau", JulianV.ObjData, { nPage + 1 } })
-    else
-        for i = 1, getn(tbObjData[nCount]) do
-            tinsert(tbOpt, {
-                tbObjData[nCount][i][2] .. "." .. tbObjData[nCount][i][1], JulianV.ShowObjData,
-                { tbObjData[nCount][i], nPage },
-            })
-        end
+    for i = 1, getn(tbObjData[nPage]) do
+        tinsert(tbOpt, {
+            tbObjData[nPage][i][2] .. "." .. tbObjData[nPage][i][1], JulianV.ShowObjData,
+            { tbObjData[nPage][i], nPage },
+        })
     end
+    if nPage < nCount then tinsert(tbOpt, { "Trang sau", JulianV.ObjData, { nPage + 1 } }) end
     if nPage > 1 then tinsert(tbOpt, { "Trang tr­íc", JulianV.ObjData, { nPage - 1 } }) end
     tinsert(tbOpt, { "Nh¶y ®Õn trang...", JDialog.JumpToPage, { nCount, JulianV.ObjData } })
     JDialog:Show(tbOpt, nil, "Res ObjData\n\n" ..

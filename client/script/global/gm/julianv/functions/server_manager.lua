@@ -32,22 +32,14 @@ function JulianV:FactionBoss()
 end
 
 function JulianV:Boss_HK()
-    local nPage = self
     local tbBossHK = JDialog:PhanTrang(tbBoss, 11)
-    local tbOpt = {}
-    if not nPage then nPage = 1 end
+    local nPage = self or 1
     local nCount = getn(tbBossHK)
-    if nPage < nCount then
-        for i = 1, 11 do
-            tinsert(tbOpt, { tbBossHK[nPage][i].szName, JulianV.Call_Boss, { tbBossHK[nPage], i } })
-        end
-        tinsert(tbOpt, { "Trang sau", JulianV.Boss_HK, { nPage + 1 } })
-    else
-        for i = 1, getn(tbBossHK[nCount]) do
-            tinsert(tbOpt,
-                { tbBossHK[nCount][i].szName, JulianV.Call_Boss, { tbBossHK[nCount], i } })
-        end
+    local tbOpt = {}
+    for i = 1, getn(tbBossHK[nPage]) do
+        tinsert(tbOpt, { tbBossHK[nPage][i].szName, JulianV.Call_Boss, { tbBossHK[nPage], i } })
     end
+    if nPage < nCount then tinsert(tbOpt, { "Trang sau", JulianV.Boss_HK, { nPage + 1 } }) end
     if nPage > 1 then tinsert(tbOpt, { "Trang tr­íc", JulianV.Boss_HK, { nPage - 1 } }) end
     JDialog:Show(tbOpt, nil, "Mêi <sex>chän Boss muèn gäi<pic=46>}}\n\n" ..
         strfill_center("Trang {{" .. nPage .. "/" .. nCount .. "}}", 50, "-"))

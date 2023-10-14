@@ -94,20 +94,20 @@ end
 function JulianV:Chose_Horses( nPage )
     local nHorseType = self
     local tbHorse = JDialog:PhanTrang(tbNameResHorse[nHorseType].szEquip, 10)
-    local tbHorseRes = function( table, num )
+    local tbHorsesDesc = function( table, num )
         return {
             table[num][1] .. " [CÊp " .. table[num][3] .. "]", JulianV.Add_Horses,
             { table[num][2], table[num][3] },
         }
     end
-    local tbOpt = {}
     nPage = nPage or 1
     local nCount = getn(tbHorse)
+    local tbOpt = {}
+    for i = 1, getn(tbHorse[nPage]) do --
+        tinsert(tbOpt, tbHorsesDesc(tbHorse[nPage], i))
+    end
     if nPage < nCount then
-        for i = 1, getn(tbHorse[nPage]) do tinsert(tbOpt, tbHorseRes(tbHorse[nPage], i)) end
         tinsert(tbOpt, { "Trang sau", JulianV.Chose_Horses, { nHorseType, nPage + 1 } })
-    else
-        for i = 1, getn(tbHorse[nCount]) do tinsert(tbOpt, tbHorseRes(tbHorse[nCount], i)) end
     end
     if nPage > 1 then
         tinsert(tbOpt, { "Trang tr­íc", JulianV.Chose_Horses, { nHorseType, nPage - 1 } })

@@ -135,6 +135,7 @@ end
 --------------------------NV M«n Ph¸i--------------------------
 function QSupport:Faction_Dialog()
     local nFaction = GetLastFactionNumber()
+    local szFacName = QSupport.tbListMP[nFaction]
     if nFaction < 0 then
         Talk(1, "", "Xin h·y gia nhËp m«n ph¸i ®Ó sö dông chøc n¨ng nµy<pic=46>")
         return
@@ -142,7 +143,6 @@ function QSupport:Faction_Dialog()
         Talk(1, "", "HiÖn t¹i ch­a ph¸t triÓn nhiÖm vô m«n ph¸i nµy<pic=46>")
         return
     end
-    local szFacName = QSupport.tbListMP[nFaction]
     local tbOpt = {}
     for id, quest in QSupport.tbMonPhai do
         tinsert(tbOpt, { quest .. szFacName, QSupport.FactionQuest, { id } })

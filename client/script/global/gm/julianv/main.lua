@@ -11,7 +11,7 @@ Include("\\script\\global\\thinh\\hotro\\functions_partner.lua") -- bπn ÆÂng hµn
 -----------------------------INCLUDE FILES-----------------------------
 JulianV = {}
 function JulianV:IncludeFiles()
-    local root = safeshow("/script/global/gm/julianv")
+    local root = safeshow("/script/global/gm/julianv/")
     local tbInclude = {
         functions = {
             "dialog_fun", "player_manager", "server_manager", "trangbi_vatpham", "hoangkim_bachkim",
@@ -137,6 +137,7 @@ function JulianV:MoveTo( ... )
         nPosY = nPosY * 16
     end
     local nMove = NewWorld(nMapId, nPosX, nPosY)
+    SetFightState(1)
     AddSkillState(963, 1, 0, 18 * 3)
     if nMove ~= 1 then
         GMMsg2Player("Dﬁch chuy”n Æ’n vﬁ tr›",

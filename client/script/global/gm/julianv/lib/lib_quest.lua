@@ -1508,7 +1508,7 @@ tbFactionQuest = {
                 "<color=green>NhiÖm vô Trïng Ph¶n S­ M«n Vâ §ang Ph¸i<color><enter>Häc ®­îc vâ c«ng:<enter><color=yellow>Th¸i Cùc ThÇn C«ng<enter>V« Ng· V« KiÕm<enter>Tam Hoµn Thao NguyÖt<color>",
             },
             -- [1] = {"Yªu cÇu: ng­êi ch¬i ®· xuÊt s­, ®¼ng cÊp trªn 60, ch­a gia nhËp bang ph¸i nµo, cã thÓ ®Õn gÆp tr­ëng m«n cña ph¸i giao 5 v¹n l­îng ®Ó trïng ph¶n s­ m«n. Tõ ®ã vÒ sau cã thÓ tïy ý ra vµo s­ m«n. PhÇn th­ëng: Th¸i Cùc ThÇn C«ng, V« Ng· V« KiÕm, Tam Hoµn Thao NguyÖt. §­îc phong lµm: HuyÒn Vâ Ch©n Qu©n."},
-            [2] = { "§èi tho¹i Ch­ëng m«n, nép 5 v¹n l­îng", "", 0, 1, 49, 1721, 3129 },
+            [2] = { "§èi tho¹i Ch­ëng m«n, nép 5 v¹n l­îng", "",  0, 1, 84, 1598, 3183},
         },
         [8] = { -------------------------------------------------
             [1] = {

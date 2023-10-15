@@ -150,13 +150,13 @@ function QSupport:Faction_Dialog()
     JDialog:Show(tbOpt, main, QSupport.szTitle[3] .. szFacName .. "}}")
 end
 
-function QSupport:FactionQuest( nPage )
+function QSupport:FactionQuest()
     local nFaction, nLevel = GetLastFactionNumber(), self
     local szFacName = QSupport.tbMonPhai.List[nFaction]
     local szQuestName = QSupport.tbMonPhai[nLevel] .. szFacName
     local tbQuestInfo = tbFactionQuest[nFaction][nLevel]
-    local szTitle = tbQuestInfo[1]
-    local nStep, tbOpt = getn(tbQuestInfo), {}
+    local szTitle, nStep = tbQuestInfo[1], getn(tbQuestInfo)
+    local tbOpt = {}
     if nStep <= 10 then -- NÕu sè b­íc thùc hiÖn <= 10
         for i = 2, nStep do
             local tbPosition = pack(tbQuestInfo[i][3], tbQuestInfo[i][5], tbQuestInfo[i][6],
@@ -164,36 +164,45 @@ function QSupport:FactionQuest( nPage )
             tinsert(tbOpt,
                 { i - 1 .. "." .. tbQuestInfo[i][1], QSupport.FactionQuest_MoveTo, tbPosition })
         end
-    else -- NÕu sè b­íc thùc hiÖn > 10
-        nPage = nPage or 1
-        tbQuestInfo = JDialog:PhanTrang(tbQuestInfo, 10)
-        local nCount = getn(tbQuestInfo)
-        for i = 1, getn(tbQuestInfo[nPage]) do
-            local nStep = nPage == 1 and (i - 1) or ((nPage - 1) * 10 + i - 1)
-            local tbPosition = pack(tbQuestInfo[nPage][i][3], tbQuestInfo[nPage][i][5],
-                                   tbQuestInfo[nPage][i][6], tbQuestInfo[nPage][i][7], szQuestName,
-                                   nStep, tbQuestInfo[nPage][i][1])
-            if nPage == 1 then
-                if i > 1 then
-                    tinsert(tbOpt, {
-                        i - 1 .. "." .. tbQuestInfo[nPage][i][1], QSupport.FactionQuest_MoveTo,
-                        tbPosition,
-                    })
-                end
-            else
-                tinsert(tbOpt, {
-                    (nPage - 1) * 10 + i - 1 .. "." .. tbQuestInfo[nPage][i][1],
-                    QSupport.FactionQuest_MoveTo, tbPosition,
-                })
-            end
-        end
-        if nPage < nCount then
-            tinsert(tbOpt, { "Trang sau", QSupport.FactionQuest, { nFaction, nLevel, nPage + 1 } })
+        JDialog:Show(tbOpt, QSupport.Faction_Dialog, szTitle)
+    else
+        QSupport.FactionQuest_Page(1, szTitle, tbQuestInfo, szQuestName)
+    end
+end
+
+function QSupport.FactionQuest_Page( ... )
+    local nPage, szTitle, tbQuestInfo, szQuestName = unpack(arg)
+    tbQuestInfo = JDialog:PhanTrang(tbQuestInfo, 10)
+    local nCount = getn(tbQuestInfo)
+    local tbOpt = {}
+    for i = 1, getn(tbQuestInfo[nPage]) do
+        local nStep = nPage == 1 and (i - 1) or ((nPage - 1) * 10 + i - 1)
+        local tbPosition = pack(tbQuestInfo[nPage][i][3], tbQuestInfo[nPage][i][5],
+                               tbQuestInfo[nPage][i][6], tbQuestInfo[nPage][i][7], szQuestName,
+                               nStep, tbQuestInfo[nPage][i][1])
+        if i > 1 and nPage == 1 then
+            tinsert(tbOpt, {
+                i - 1 .. "." .. tbQuestInfo[nPage][i][1], QSupport.FactionQuest_MoveTo, tbPosition,
+            })
         end
         if nPage > 1 then
-            tinsert(tbOpt,
-                { "Trang tr­íc", QSupport.FactionQuest, { nFaction, nLevel, nPage - 1 } })
+            tinsert(tbOpt, {
+                (nPage - 1) * 10 + i - 1 .. "." .. tbQuestInfo[nPage][i][1],
+                QSupport.FactionQuest_MoveTo, tbPosition,
+            })
         end
+    end
+    if nPage < nCount then
+        tinsert(tbOpt, {
+            "Trang sau", QSupport.FactionQuest_Page,
+            { nPage + 1, szTitle, tbQuestInfo, szQuestName },
+        })
+    end
+    if nPage > 1 then
+        tinsert(tbOpt, {
+            "Trang tr­íc", QSupport.FactionQuest_Page,
+            { nPage - 1, szTitle, tbQuestInfo, szQuestName },
+        })
     end
     JDialog:Show(tbOpt, QSupport.Faction_Dialog, szTitle)
 end

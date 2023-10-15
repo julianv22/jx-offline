@@ -7,13 +7,12 @@ Include("\\script\\global\\gm\\lib_data_table.lua") -- data table ngùa & trang b
 function JulianV:NhanTrangBi()
     dofile("script/global/gm/julianv/functions/hoangkim_bachkim.lua")
     local tbOpt = {
-        { "NhËn ®å xanh - ®å tÝm", JulianV.NhanTrangBi2 },
-        { "NhËn Ên - Phi phong - Trang søc", JulianV.TrangBiKhac_Dialog }, --
-        { "Trang bÞ Hoµng Kim - B¹ch Kim cao cÊp", chose_type_goldquip }, --   
-        { "NhËn Set Hoµng Kim M«n Ph¸i", JulianV.SetHKMP_Dialog }, --    
-        { "NhËn trang bÞ TrÊn Bang Chi B¶o", JulianV.TrangBi_HKMP_An }, --
+        { "Set trang bÞ Hoµng Kim - B¹ch Kim cao cÊp", chose_type_goldquip }, --   
         { "Vò khÝ B¹ch Kim m«n ph¸i", JulianV.VKHK_Dialog, { 1 } }, --
-        { "Vò khÝ Hoµng Kim M«n Ph¸i", JulianV.VKHK_Dialog, { 2 } }, --
+        { "NhËn Set Hoµng Kim M«n Ph¸i 9x", JulianV.SetHKMP_Dialog }, --    
+        { "Vò khÝ Hoµng Kim M«n Ph¸i 9x", JulianV.VKHK_Dialog, { 2 } }, --
+        { "NhËn trang bÞ TrÊn Bang Chi B¶o 9x", JulianV.TrangBi_HKMP_An }, --                
+        { "NhËn Ên - Phi phong - Trang søc", JulianV.TrangBiKhac_Dialog }, --
         { "NhËn An Bang, Kim Phong, §Þnh Quèc, Hång ¶nh", JulianV.HoangKimCui }, --
     }
     JDialog:Show(tbOpt, JulianV.TrangBi_VatPham)
@@ -25,7 +24,7 @@ function JulianV:NhanTrangBi2()
         { "NhËn ®å tÝm", JulianV.QualityItem_Dialog }, --
         { "ChÕ t¹o ®å tÝm", JulianV.QualityWeapon_Dialog },
     }
-    JDialog:Show(tbOpt, JulianV.NhanTrangBi)
+    JDialog:Show(tbOpt, JulianV.TrangBi_VatPham)
 end
 
 function JulianV:TrangBiHiem()
@@ -245,7 +244,7 @@ function JulianV:GetMagicItems( nCount ) -- nhËn magic item theo sè l­îng
 end
 
 ---------------NhËn ®å xanh, ®å tÝm---------------
-function JulianV:QualityWeapon_Dialog()    
+function JulianV:QualityWeapon_Dialog()
     tbDoTim:Main()
     -- if not bGoto then
     --     CreateTaskSay({

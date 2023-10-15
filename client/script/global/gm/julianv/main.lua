@@ -226,10 +226,11 @@ end
 ------------------------Trang Trang bﬁ - VÀt ph»m------------------------
 function JulianV:TrangBi_VatPham()
     dofile("script/global/gm/julianv/functions/trangbi_vatpham.lua")
-    local tbOpt = {
+    local tbOpt = {        
+        { "NhÀn trang bﬁ Hoµng Kim", JulianV.NhanTrangBi }, --           
+        { "NhÀn trang bﬁ hi’m", JulianV.TrangBiHiem }, --
+        { "NhÀn ÆÂ xanh - ÆÂ t›m", JulianV.NhanTrangBi2 },
         { "NhÀn vÀt ph»m", JulianV.NhanVatPham }, --    
-        { "NhÀn trang bﬁ", JulianV.NhanTrangBi }, --   
-        { "Trang bﬁ hi’m", JulianV.TrangBiHiem }, --
         { "Thay ÆÊi ngoπi h◊nh trang bﬁ", JulianV.ChangeFeature_Dialog }, --    
         { "------------------------", JulianV.TrangBi_VatPham }, --
         { "NhÀn MagicScript Item (Genre, Detail, Particular)", JulianV.GetMagicItem }, --

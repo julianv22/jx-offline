@@ -124,12 +124,6 @@ function QSupport:VillageQuest( nQuestId )
     end
     JDialog:Show(tbOpt, QSupport.Village_Dialog, szTitle)
 end
-
-function QSupport.MoveTo( ... )
-    local nFightState, nMapId, nPosX, nPosY = unpack(arg)
-    NewWorld(nMapId, nPosX, nPosY)
-    SetFightState(nFightState)
-end
 --------------------------NV M´n Ph∏i--------------------------
 function QSupport:Faction_Dialog()
     local nFaction = GetLastFactionNumber()
@@ -162,7 +156,7 @@ function QSupport:FactionQuest()
             local tbPosition = pack(tbQuestInfo[i][3], tbQuestInfo[i][5], tbQuestInfo[i][6],
                                    tbQuestInfo[i][7], szQuestName, i - 1, tbQuestInfo[i][1])
             tinsert(tbOpt,
-                { i - 1 .. "." .. tbQuestInfo[i][1], QSupport.FactionQuest_MoveTo, tbPosition })
+                { i - 1 .. "." .. tbQuestInfo[i][1], QSupport.MoveTo_FacQuest, tbPosition })
         end
         JDialog:Show(tbOpt, QSupport.Faction_Dialog, szTitle)
     else
@@ -182,13 +176,13 @@ function QSupport.FactionQuest_Page( ... )
                                nStep, tbQuestInfo[nPage][i][1])
         if i > 1 and nPage == 1 then
             tinsert(tbOpt, {
-                i - 1 .. "." .. tbQuestInfo[nPage][i][1], QSupport.FactionQuest_MoveTo, tbPosition,
+                i - 1 .. "." .. tbQuestInfo[nPage][i][1], QSupport.MoveTo_FacQuest, tbPosition,
             })
         end
         if nPage > 1 then
             tinsert(tbOpt, {
                 (nPage - 1) * 10 + i - 1 .. "." .. tbQuestInfo[nPage][i][1],
-                QSupport.FactionQuest_MoveTo, tbPosition,
+                QSupport.MoveTo_FacQuest, tbPosition,
             })
         end
     end
@@ -205,15 +199,6 @@ function QSupport.FactionQuest_Page( ... )
         })
     end
     JDialog:Show(tbOpt, QSupport.Faction_Dialog, szTitle)
-end
-
-function QSupport.FactionQuest_MoveTo( ... )
-    local nFightState, nMapId, nPosX, nPosY, szQuestName, nStep, szQuestContent = unpack(arg)
-    GMMsg2Player("B≠Ìc " .. nStep, "<color=yellow>" .. szQuestName ..
-        "<color>\nNÈi dung: <color=green>" .. szQuestContent)
-    AddNote("NÈi dung nhi÷m vÙ: <color=green>" .. nStep .. "<color>")
-    NewWorld(nMapId, nPosX, nPosY)
-    SetFightState(nFightState)
 end
 --------------------------NV Hoµng Kim--------------------------
 function QSupport:Golden_Dialog( szQuestType )
@@ -266,4 +251,19 @@ function QSupport:GoldenQuestStep( ... )
     JDialog:Show(tbOpt, QSupport.Golden_Dialog,
         QSupport.szTitle[4] .. "\n" .. QSupport.tbHoangKim[nCamp] .. " - " ..
             QSupport.tbHoangKim[szQuestType][nLevel])
+end
+--------------------------Di chuy”n tÌi vﬁ tr›--------------------------
+function QSupport.MoveTo( ... )
+    local nFightState, nMapId, nPosX, nPosY = unpack(arg)
+    NewWorld(nMapId, nPosX, nPosY)
+    SetFightState(nFightState)
+end
+
+function QSupport.MoveTo_FacQuest( ... )
+    local nFightState, nMapId, nPosX, nPosY, szQuestName, nStep, szQuestContent = unpack(arg)
+    GMMsg2Player("B≠Ìc " .. nStep, "<color=yellow>" .. szQuestName ..
+        "<color>\nNÈi dung: <color=green>" .. szQuestContent)
+    AddNote("NÈi dung nhi÷m vÙ: <color=green>" .. nStep .. "<color>")
+    NewWorld(nMapId, nPosX, nPosY)
+    SetFightState(nFightState)
 end

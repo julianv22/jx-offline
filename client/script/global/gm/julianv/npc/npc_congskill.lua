@@ -7,7 +7,7 @@ Include("\\script\\missions\\leaguematch\\npc\\officer.lua")
 Include("\\script\\lib\\log.lua")
 ------------------------------------------------------------------------------------------------------------
 function main()
-    dofile("script/global/thinh/hotro/npccongfullskill.lua")
+    dofile("script/global/gm/julianv/npc/npc_congskill.lua")
     dialog_main()
 end
 tbChat = {

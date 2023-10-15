@@ -1,7 +1,6 @@
 ------------------------------------------------------------------
 -- Copyright by Julian-V (https://www.youtube.com/julianv)
 ------------------------------------------------------------------
-Include("\\script\\global\\gm\\julianv\\functions\\hoangkim_bachkim.lua") -- vò khi hoµng/b¹ch kim
 Include("\\script\\global\\gm\\functions_goldplatiumitems.lua") -- lÊy item hoµng kim, b¹ch kim
 Include("\\script\\global\\gm\\lib_data_table.lua") -- data table ngùa & trang bÞ
 
@@ -246,8 +245,7 @@ function JulianV:GetMagicItems( nCount ) -- nhËn magic item theo sè l­îng
 end
 
 ---------------NhËn ®å xanh, ®å tÝm---------------
-function JulianV:QualityWeapon_Dialog()
-    Include("\\script\\global\\gm\\julianv\\npc\\npc_dotim.lua")
+function JulianV:QualityWeapon_Dialog()    
     tbDoTim:Main()
     -- if not bGoto then
     --     CreateTaskSay({

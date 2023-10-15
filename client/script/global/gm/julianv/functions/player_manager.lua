@@ -22,7 +22,6 @@ function JulianV:Change_PK() -- ®æi mµu pk
 end
 
 Include("\\script\\global\\ÌØÊâÓÃµØ\\ÃÎ¾³\\npc\\Â·ÈË_ÅÑÉ®.lua"); -- tÈy tuû, c«ng ®iÓm nhanh
-Include("\\script\\global\\gm\\julianv\\npc\\npc_congskill.lua") -- Hç Trî Céng Full Skill
 
 function JulianV:SkillSupport() -- hç trî skill
     local tbOpt = {

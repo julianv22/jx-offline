@@ -11,13 +11,18 @@ Include("\\script\\global\\thinh\\hotro\\functions_partner.lua") -- b¹n ®ång hµn
 -----------------------------INCLUDE FILES-----------------------------
 JulianV = {}
 function JulianV:IncludeFiles()
-    local root = "\\script\\global\\gm\\julianv\\"
+    local root = safeshow("/script/global/gm/julianv")
     local tbInclude = {
-        functions = { "dialog_fun", "player_manager", "server_manager", "trangbi_vatpham" },
+        functions = {
+            "dialog_fun", "player_manager", "server_manager", "trangbi_vatpham", "hoangkim_bachkim",
+        },
         lib = { "lib_monphai", "lib_vatpham", "lib_boss", "lib_trangbi", "lib_others" },
+        npc = { "npc_congskill", "npc_dotim" },
     }
     for folder, files in tbInclude do
-        for i = 1, getn(files) do Include(root .. folder .. "\\" .. files[i] .. ".lua") end
+        for i = 1, getn(files) do --
+            Include(root .. folder .. "\\" .. files[i] .. ".lua")
+        end
     end
 end
 JulianV:IncludeFiles()

@@ -145,14 +145,13 @@ function QSupport:Faction_Dialog()
     local szFacName = QSupport.tbListMP[nFaction]
     local tbOpt = {}
     for id, quest in QSupport.tbMonPhai do
-        tinsert(tbOpt, { quest .. szFacName, QSupport.FactionQuest, { nFaction, id } })
+        tinsert(tbOpt, { quest .. szFacName, QSupport.FactionQuest, { id } })
     end
     JDialog:Show(tbOpt, main, QSupport.szTitle[3] .. szFacName .. "}}")
 end
 
-function QSupport:FactionQuest( nLevel, nPage )
-    local nFaction = self
-    nPage = nPage or 1
+function QSupport:FactionQuest( nPage )
+    local nFaction, nLevel = GetLastFactionNumber(), self
     local szFacName = QSupport.tbListMP[nFaction]
     local szQuestName = QSupport.tbMonPhai[nLevel] .. szFacName
     local tbQuestInfo = tbFactionQuest[nFaction][nLevel]
@@ -166,6 +165,7 @@ function QSupport:FactionQuest( nLevel, nPage )
                 { i - 1 .. "." .. tbQuestInfo[i][1], QSupport.FactionQuest_MoveTo, tbPosition })
         end
     else -- NÕu sè b­íc thùc hiÖn > 10
+        nPage = nPage or 1
         tbQuestInfo = JDialog:PhanTrang(tbQuestInfo, 10)
         local nCount = getn(tbQuestInfo)
         for i = 1, getn(tbQuestInfo[nPage]) do

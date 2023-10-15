@@ -54,7 +54,7 @@ QSupport = {
         [10] = "Hoa S¨n",
     },
 
-    tbMonPhai = {
+    tbQuestLvl = {
         [1] = "Nhi÷m vÙ c p 10 ",
         [2] = "Nhi÷m vÙ c p 20 ",
         [3] = "Nhi÷m vÙ c p 30 ",
@@ -144,7 +144,7 @@ function QSupport:Faction_Dialog()
         return
     end
     local tbOpt = {}
-    for id, quest in QSupport.tbMonPhai do
+    for id, quest in QSupport.tbQuestLvl do
         tinsert(tbOpt, { quest .. szFacName, QSupport.FactionQuest, { id } })
     end
     JDialog:Show(tbOpt, main, QSupport.szTitle[3] .. szFacName .. "}}")
@@ -153,7 +153,7 @@ end
 function QSupport:FactionQuest( nPage )
     local nFaction, nLevel = GetLastFactionNumber(), self
     local szFacName = QSupport.tbListMP[nFaction]
-    local szQuestName = QSupport.tbMonPhai[nLevel] .. szFacName
+    local szQuestName = QSupport.tbQuestLvl[nLevel] .. szFacName
     local tbQuestInfo = tbFactionQuest[nFaction][nLevel]
     local szTitle = tbQuestInfo[1]
     local nStep, tbOpt = getn(tbQuestInfo), {}

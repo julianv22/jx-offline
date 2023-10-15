@@ -39,22 +39,20 @@ QSupport = {
             "Canh D­¬ng Xu©n B¹ch TuyÕt",
         },
     },
-
-    tbListMP = {
-        [0] = "ThiÕu L©m",
-        [1] = "Thiªn V­¬ng Bang",
-        [2] = "§­êng M«n",
-        [3] = "Ngò §éc",
-        [4] = "Nga My",
-        [5] = "Thóy Yªn",
-        [6] = "C¸i Bang",
-        [7] = "Thiªn NhÉn Gi¸o",
-        [8] = "Vâ §ang",
-        [9] = "C«n L«n",
-        [10] = "Hoa S¬n",
-    },
-
-    tbQuestLvl = {
+    tbMonPhai = {
+        List = {
+            [0] = "ThiÕu L©m",
+            [1] = "Thiªn V­¬ng Bang",
+            [2] = "§­êng M«n",
+            [3] = "Ngò §éc",
+            [4] = "Nga My",
+            [5] = "Thóy Yªn",
+            [6] = "C¸i Bang",
+            [7] = "Thiªn NhÉn Gi¸o",
+            [8] = "Vâ §ang",
+            [9] = "C«n L«n",
+            [10] = "Hoa S¬n",
+        },
         [1] = "NhiÖm vô cÊp 10 ",
         [2] = "NhiÖm vô cÊp 20 ",
         [3] = "NhiÖm vô cÊp 30 ",
@@ -66,7 +64,7 @@ QSupport = {
         [10] = "NhiÖm vô ký danh ®Ö tö ",
     },
 
-    tbGoldenList = {
+    tbHoangKim = {
         [1] = " <color=orange>ChÝnh ph¸i<color>",
         [2] = " <g>Trung lËp</g>",
         [3] = " <color=pink>Tµ ph¸i<color>",
@@ -135,7 +133,7 @@ end
 --------------------------NV M«n Ph¸i--------------------------
 function QSupport:Faction_Dialog()
     local nFaction = GetLastFactionNumber()
-    local szFacName = QSupport.tbListMP[nFaction]
+    local szFacName = QSupport.tbMonPhai.List[nFaction]
     if nFaction < 0 then
         Talk(1, "", "Xin h·y gia nhËp m«n ph¸i ®Ó sö dông chøc n¨ng nµy<pic=46>")
         return
@@ -144,16 +142,18 @@ function QSupport:Faction_Dialog()
         return
     end
     local tbOpt = {}
-    for id, quest in QSupport.tbQuestLvl do
-        tinsert(tbOpt, { quest .. szFacName, QSupport.FactionQuest, { id } })
+    for id, quest in QSupport.tbMonPhai do
+        if type(id) == "number" then
+            tinsert(tbOpt, { quest .. szFacName, QSupport.FactionQuest, { id } })
+        end
     end
     JDialog:Show(tbOpt, main, QSupport.szTitle[3] .. szFacName .. "}}")
 end
 
 function QSupport:FactionQuest( nPage )
     local nFaction, nLevel = GetLastFactionNumber(), self
-    local szFacName = QSupport.tbListMP[nFaction]
-    local szQuestName = QSupport.tbQuestLvl[nLevel] .. szFacName
+    local szFacName = QSupport.tbMonPhai.List[nFaction]
+    local szQuestName = QSupport.tbMonPhai[nLevel] .. szFacName
     local tbQuestInfo = tbFactionQuest[nFaction][nLevel]
     local szTitle = tbQuestInfo[1]
     local nStep, tbOpt = getn(tbQuestInfo), {}
@@ -234,14 +234,14 @@ end
 
 function QSupport:GoldenQuest( nCamp, szQuestType )
     local tbOpt = {}
-    for i = 1, getn(QSupport.tbGoldenList[szQuestType]) do
+    for i = 1, getn(QSupport.tbHoangKim[szQuestType]) do
         tinsert(tbOpt, {
-            QSupport.tbGoldenList[szQuestType][i], QSupport.GoldenQuestStep,
+            QSupport.tbHoangKim[szQuestType][i], QSupport.GoldenQuestStep,
             { self, szQuestType, nCamp, i },
         })
     end
     JDialog:Show(tbOpt, QSupport.Golden_Dialog,
-        QSupport.szTitle[4] .. szQuestType .. QSupport.tbGoldenList[nCamp])
+        QSupport.szTitle[4] .. szQuestType .. QSupport.tbHoangKim[nCamp])
 end
 
 function QSupport:GoldenQuestStep( ... )
@@ -255,6 +255,6 @@ function QSupport:GoldenQuestStep( ... )
         tinsert(tbOpt, { i .. "." .. tbQuestInfo[i][1], QSupport.MoveTo, tbPosition })
     end
     JDialog:Show(tbOpt, QSupport.Golden_Dialog,
-        QSupport.szTitle[4] .. "\n" .. QSupport.tbGoldenList[nCamp] .. " - " ..
-            QSupport.tbGoldenList[szQuestType][nLevel])
+        QSupport.szTitle[4] .. "\n" .. QSupport.tbHoangKim[nCamp] .. " - " ..
+            QSupport.tbHoangKim[szQuestType][nLevel])
 end

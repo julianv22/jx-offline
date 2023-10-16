@@ -118,7 +118,7 @@ function QSupport:VillageQuest( nQuestId )
     local tbOpt = {}
     for step, quest in tbVillageQuest[self][nQuestId] do
         if step > 1 then
-            local tbPosition = pack(quest[2], quest[4], quest[5], quest[6])
+            local tbPosition = { quest[2], quest[4], quest[5], quest[6] }
             tinsert(tbOpt, { step - 1 .. "." .. quest[1], QSupport.MoveTo, tbPosition })
         end
     end
@@ -153,8 +153,10 @@ function QSupport:FactionQuest()
     local tbOpt = {}
     if nStep <= 10 then -- NÕu sè b­íc thùc hiÖn <= 10
         for i = 2, nStep do
-            local tbPosition = pack(tbQuestInfo[i][3], tbQuestInfo[i][5], tbQuestInfo[i][6],
-                                   tbQuestInfo[i][7], szQuestName, i - 1, tbQuestInfo[i][1])
+            local tbPosition = {
+                tbQuestInfo[i][3], tbQuestInfo[i][5], tbQuestInfo[i][6], tbQuestInfo[i][7],
+                szQuestName, i - 1, tbQuestInfo[i][1],
+            }
             tinsert(tbOpt,
                 { i - 1 .. "." .. tbQuestInfo[i][1], QSupport.MoveTo_FacQuest, tbPosition })
         end
@@ -171,19 +173,21 @@ function QSupport.FactionQuest_Page( ... )
     local tbOpt = {}
     for i = 1, getn(tbQuestInfo[nPage]) do
         local nStep = nPage == 1 and (i - 1) or ((nPage - 1) * 10 + i - 1)
-        local tbPosition = pack(tbQuestInfo[nPage][i][3], tbQuestInfo[nPage][i][5],
-                               tbQuestInfo[nPage][i][6], tbQuestInfo[nPage][i][7], szQuestName,
-                               nStep, tbQuestInfo[nPage][i][1])
+        local tbPosition = {
+            tbQuestInfo[nPage][i][3], tbQuestInfo[nPage][i][5], tbQuestInfo[nPage][i][6],
+            tbQuestInfo[nPage][i][7], szQuestName, nStep, tbQuestInfo[nPage][i][1],
+        }
         if i > 1 and nPage == 1 then
             tinsert(tbOpt, {
                 i - 1 .. "." .. tbQuestInfo[nPage][i][1], QSupport.MoveTo_FacQuest, tbPosition,
             })
         end
         if nPage > 1 then
-            tinsert(tbOpt, {
-                (nPage - 1) * 10 + i - 1 .. "." .. tbQuestInfo[nPage][i][1],
-                QSupport.MoveTo_FacQuest, tbPosition,
-            })
+            tinsert(tbOpt,
+                {
+                    (nPage - 1) * 10 + i - 1 .. "." .. tbQuestInfo[nPage][i][1],
+                    QSupport.MoveTo_FacQuest, tbPosition,
+                })
         end
     end
     if nPage < nCount then

@@ -248,8 +248,9 @@ function QSupport:GoldenQuestStep( ... )
     local tbQuestInfo = tbGoldenQuest[nQuestType][nCamp][nLevel]
     local tbOpt = {}
     for i = 1, getn(tbQuestInfo) do
-        local tbPosition = pack(tbQuestInfo[i][2], tbQuestInfo[i][4], tbQuestInfo[i][5],
-                               tbQuestInfo[i][6])
+        local tbPosition = {
+            tbQuestInfo[i][2], tbQuestInfo[i][4], tbQuestInfo[i][5], tbQuestInfo[i][6],
+        }
         tinsert(tbOpt, { i .. "." .. tbQuestInfo[i][1], QSupport.MoveTo, tbPosition })
     end
     JDialog:Show(tbOpt, QSupport.Golden_Dialog,

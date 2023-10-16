@@ -1,10 +1,10 @@
 ------------------------------------------------------------------
 -- Copyright by Julian-V (https://www.youtube.com/julianv)
 ------------------------------------------------------------------
-Include("\\script\\dailogsys\\dailogsay.lua")
-Include("\\script\\lib\\common.lua")
 IncludeLib("SETTING")
 IncludeLib("FILESYS")
+Include("\\script\\dailogsys\\dailogsay.lua")
+Include("\\script\\lib\\common.lua")
 Include(safeshow("/script/global/gm/julianv/lib/lib_quest.lua"))
 Include(safeshow("/script/global/gm/julianv/functions/dialog_fun.lua"))
 

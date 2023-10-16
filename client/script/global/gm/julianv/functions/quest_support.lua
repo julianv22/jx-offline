@@ -149,7 +149,7 @@ function QSupport:FactionQuest()
     local szFacName = QSupport.tbMonPhai.List[nFaction]
     local szQuestName = QSupport.tbMonPhai[nLevel] .. szFacName
     local tbQuestInfo = tbFactionQuest[nFaction][nLevel]
-    local szTitle, nStep = tbQuestInfo[1], getn(tbQuestInfo)
+    local nStep = getn(tbQuestInfo)
     local tbOpt = {}
     if nStep <= 10 then -- NÕu sè b­íc thùc hiÖn <= 10
         for i = 2, nStep do
@@ -160,9 +160,9 @@ function QSupport:FactionQuest()
             tinsert(tbOpt,
                 { i - 1 .. "." .. tbQuestInfo[i][1], QSupport.MoveTo_FacQuest, tbPosition })
         end
-        JDialog:Show(tbOpt, QSupport.Faction_Dialog, szTitle)
+        JDialog:Show(tbOpt, QSupport.Faction_Dialog, tbQuestInfo[1])
     else
-        QSupport.FactionQuest_Page(1, szTitle, tbQuestInfo, szQuestName)
+        QSupport.FactionQuest_Page(1, tbQuestInfo[1], tbQuestInfo, szQuestName)
     end
 end
 

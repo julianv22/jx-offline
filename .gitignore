@@ -95,6 +95,8 @@ client/settings/*
 !client/settings/npcres/**
 !client/settings/item/
 !client/settings/item/**
+!client/settings/faction
+!client/settings/faction/**
 # -------------------docs-------------------
 !docs/
 !docs/**

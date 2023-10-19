@@ -1,0 +1,106 @@
+[Name]
+New=Míi nhËp giang hå 
+Old=giang hå hiÖp kh¸ch
+
+[0]
+Name=shaolin
+ShowName=ThiÕu L©m
+Series=S_GOLD
+Camp=C_JUSTICE
+
+[1]
+Name=tianwang
+ShowName=Thiªn V­¬ng Bang
+Series=S_GOLD
+Camp=C_BALANCE
+
+[2]
+Name=tangmen
+ShowName=§­êng M«n
+Series=S_GOLD
+Camp=C_BALANCE
+
+[3]
+Name=wudu
+ShowName=Ngò §éc Gi¸o
+Series=S_WOOD
+Camp=C_EVIL
+
+[4]
+Name=emei
+ShowName=Nga My
+Series=S_WOOD
+Camp=C_JUSTICE
+
+[5]
+Name=cuiyan
+ShowName=Thóy Yªn M«n
+Series=S_WATER
+Camp=C_BALANCE
+
+[6]
+Name=gaibang
+ShowName=C¸i Bang
+Series=S_WATER
+Camp=C_JUSTICE
+
+[7]
+Name=tianren
+ShowName=Thiªn NhÉn Gi¸o
+Series=S_FIRE
+Camp=C_EVIL
+
+[8]
+Name=wudang
+ShowName=Vâ §ang
+Series=S_EARTH
+Camp=C_JUSTICE
+
+[9]
+Name=kunlun
+ShowName=C«n L«n
+Series=S_EARTH
+Camp=C_BALANCE
+
+[12]
+Name=huashan
+ShowName=Hoa S¬n
+Series=S_WATER
+Camp=C_BALANCE
+
+[10]
+Name=wuhuntang
+ShowName=Vò Hån §­êng
+Series=S_EARTH
+Camp=C_JUSTICE
+
+[11]
+Name=xiaoyao
+ShowName=Tiªu Dao
+Series=S_EARTH
+Camp=C_BALANCE
+
+[13]
+ShowName=13
+Series=S_EARTH
+Camp=C_JUSTICE
+
+[14]
+ShowName=14
+Series=S_EARTH
+Camp=C_EVIL
+
+[-1]
+ShowName=-1
+
+[-2]
+ShowName=-2
+
+[-3]
+ShowName=-3
+
+[-4]
+ShowName=-4
+
+[-5]
+ShowName=-5

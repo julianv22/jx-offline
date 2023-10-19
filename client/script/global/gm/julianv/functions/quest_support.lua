@@ -180,15 +180,13 @@ function QSupport.FactionQuest_Page( ... )
         }
         if i > 1 and nPage == 1 then
             tinsert(tbOpt, {
-                i - 1 .. "." .. tbQuestInfo[nPage][i][1], QSupport.MoveTo_FacQuest, tbPosition,
+                nStep .. "." .. tbQuestInfo[nPage][i][1], QSupport.MoveTo_FacQuest, tbPosition,
             })
         end
         if nPage > 1 then
-            tinsert(tbOpt,
-                {
-                    (nPage - 1) * 10 + i - 1 .. "." .. tbQuestInfo[nPage][i][1],
-                    QSupport.MoveTo_FacQuest, tbPosition,
-                })
+            tinsert(tbOpt, {
+                nStep .. "." .. tbQuestInfo[nPage][i][1], QSupport.MoveTo_FacQuest, tbPosition,
+            })
         end
     end
     if nPage < nCount then

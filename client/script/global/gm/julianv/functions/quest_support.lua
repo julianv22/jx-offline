@@ -100,7 +100,8 @@ function QSupport:Village_Dialog()
     local tbOpt = {}
     if not self then
         for i = 1, getn(QSupport.tbThonTran.List) do
-            tinsert(tbOpt, { QSupport.tbThonTran.List[i], QSupport.Village_Dialog, { i } })
+            tinsert(tbOpt,
+                { i .. "." .. QSupport.tbThonTran.List[i], QSupport.Village_Dialog, { i } })
         end
     else
         for i = 1, getn(QSupport.tbThonTran[self]) do

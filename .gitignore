@@ -3,6 +3,9 @@
 # -------------------Exclude List-------------------
 !*.*
 !LICENSE
+# --------------------docs--------------------
+!docs/
+!docs/**
 # -------------------server-------------------
 !server
 !server/**
@@ -42,10 +45,6 @@ client/script/global/gm/*
 !client/script/global/gm/julianv/
 !client/script/global/gm/julianv/**
 # ------------------------------------------------
-!client/script/global/npc/
-client/script/global/npc/*
-!client/script/global/npc/add_boss_bailuyencong.lua
-# ------------------------------------------------
 !client/script/global/thanh/
 client/script/global/thanh/*
 !client/script/global/thanh/npc/
@@ -53,7 +52,7 @@ client/script/global/thanh/npc/*
 !client/script/global/thanh/npc/npc_hotro.lua
 # -------------------script/skill-------------------
 !client/script/skill/
-!client/script/skill/*
+!client/script/skill/**
 # -------------------script/item-------------------
 !client/script/item/
 client/script/item/*
@@ -66,6 +65,7 @@ client/script/item/*
 client/script/task/*
 !client/script/task/system/
 client/script/task/system/*
+!client/script/task/system/task_string.lua
 # -------------------script/update_feature-------------------
 !client/script/update_feature
 client/script/update_feature/*
@@ -103,6 +103,3 @@ client/settings/*
 !client/settings/item/**
 !client/settings/faction
 !client/settings/faction/**
-# -------------------docs-------------------
-!docs/
-!docs/**

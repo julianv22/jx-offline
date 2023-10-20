@@ -66,6 +66,12 @@ client/script/item/*
 client/script/task/*
 !client/script/task/system/
 client/script/task/system/*
+# -------------------script/update_feature-------------------
+!client/script/update_feature
+client/script/update_feature/*
+!client/script/update_feature/songbac
+client/script/update_feature/songbac/*
+!client/script/update_feature/songbac/baucua.lua
 # -------------------ui------------------- 
 !client/ui/
 client/ui/*

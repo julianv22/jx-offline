@@ -39,6 +39,7 @@ QSupport = {
             "Canh D≠¨ng Xu©n Bπch Tuy’t",
         },
     },
+
     tbMonPhai = {
         List = {
             [0] = "Thi’u L©m",
@@ -163,11 +164,11 @@ function QSupport:FactionQuest()
         end
         JDialog:Show(tbOpt, QSupport.Faction_Dialog, tbQuestInfo[1])
     else
-        QSupport.FactionQuest_Page(1, tbQuestInfo[1], tbQuestInfo, szQuestName)
+        QSupport.FactionQuestPage(1, tbQuestInfo[1], tbQuestInfo, szQuestName)
     end
 end
 
-function QSupport.FactionQuest_Page( ... )
+function QSupport.FactionQuestPage( ... )
     local nPage, szTitle, tbQuestInfo, szQuestName = unpack(arg)
     tbQuestInfo = JDialog:PhanTrang(tbQuestInfo, 10)
     local nCount = getn(tbQuestInfo)
@@ -191,13 +192,13 @@ function QSupport.FactionQuest_Page( ... )
     end
     if nPage < nCount then
         tinsert(tbOpt, {
-            "Trang sau", QSupport.FactionQuest_Page,
+            "Trang sau", QSupport.FactionQuestPage,
             { nPage + 1, szTitle, tbQuestInfo, szQuestName },
         })
     end
     if nPage > 1 then
         tinsert(tbOpt, {
-            "Trang tr≠Ìc", QSupport.FactionQuest_Page,
+            "Trang tr≠Ìc", QSupport.FactionQuestPage,
             { nPage - 1, szTitle, tbQuestInfo, szQuestName },
         })
     end

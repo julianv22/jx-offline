@@ -23,15 +23,17 @@ Write-Start -msg "Installing Git..."
 	scoop install git	
 	scoop bucket add extras
 	scoop bucket add nerd-fonts
-	scoop bucket add java	
+	scoop bucket add java
+    scoop bucket add nonportable
 	scoop update
 Write-Done
 
 Write-Start -msg "Installing Scoop's packages"
 	# scoop install <# Browsers #> firefox googleschrome
-	scoop install <# Tools #>			obs-studio wpsoffice winscp
-	scoop install <# Coding #>			vscode nodejs python notepadplusplus hxd
-	scoop install <# Community #>		discord	
+	scoop install <# Sofwares #>			obs-studio wpsoffice winscp
+	scoop install <# Developing #>			vscode nodejs python notepadplusplus hxd
+	scoop install <# Community #>			discord
+    scoop install <# Virtual Machine #>		nonportable/virtualbox-np
 	Start-Process -Wait powershell -verb runas -ArgumentList "scoop install extras/ida-free"
 	Start-Process -Wait powershell -verb runas -ArgumentList "scoop install DejaVuSansMono-NF-Mono vcredist-aio"
 Write-Done

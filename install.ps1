@@ -33,7 +33,7 @@ Write-Start -msg "Installing Scoop's packages"
 	scoop install <# Sofwares #>			obs-studio wpsoffice winscp
 	scoop install <# Developing #>			vscode nodejs python notepadplusplus hxd
 	scoop install <# Community #>			discord
-    scoop install <# Virtual Machine #>		nonportable/virtualbox-np
+    # scoop install <# Virtual Machine #>		nonportable/virtualbox-np
 	Start-Process -Wait powershell -verb runas -ArgumentList "scoop install extras/ida-free"
 	Start-Process -Wait powershell -verb runas -ArgumentList "scoop install DejaVuSansMono-NF-Mono vcredist-aio"
 Write-Done

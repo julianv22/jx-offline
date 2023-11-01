@@ -5,10 +5,15 @@ function Write-Start {
 	Write-Host (">> "+$msg) -ForegroundColor Green
 }
 
+function Write-App {
+	param ($msg)
+	Write-Host $msg -ForegroundColor Magenta
+}
+
 function Write-Done { Write-Host "DONE" -ForegroundColor Yellow; Write-Host }
 
 #START
-Write-Start -msg "Installing scoop..."
+Write-Start "Installing scoop..."
 	if (Get-Command scoop -errorAction SilentlyContinue) {
 		Write-Warning "Scoop is already installed"
 	} else {		
@@ -16,7 +21,7 @@ Write-Start -msg "Installing scoop..."
 	}
 Write-Done
 
-Write-Start -msg "Installing git & buckets..."
+Write-Start "Installing git & buckets..."
 	scoop install git
 	scoop bucket add extras
 	scoop bucket add java
@@ -27,9 +32,8 @@ Write-Start -msg "Installing git & buckets..."
 	scoop update
 Write-Done
 
-Write-Start -msg "Installing Windows Terminal & Powershell..."
-	scoop install windows-terminal pwsh psreadline oh-my-posh terminal-icons
-	scoop install DejaVuSansMono-NF-Mono
+Write-Start "Installing Windows Terminal & Powershell..."
+	scoop install windows-terminal pwsh psreadline oh-my-posh terminal-icons	
 	Import-Module Terminal-Icons
 	Set-PSReadLineOption -PredictionSource History
 	Set-PSReadLineOption -PredictionViewStyle ListView
@@ -43,13 +47,14 @@ Import-Module Terminal-Icons"
 	. $PROFILE
 Write-Done
 
-Write-Start -msg "Installing apps..."
-	Write-Host "<# Developing #>";	scoop install nodejs python vscode notepadplusplus
-	Write-Host "<# Sofwares #>";	scoop install obs-studio discord wpsoffice hibit-uninstaller vcredist-aio
-	Write-Host "<# Games #>";		scoop install steam
-	Write-Host "<# JX-Tools #>";	scoop install winscp hxd ida-free
-	Write-Host "<# Winget #>";		scoop install winget
-    #Write-Host "<# Virtual Machine #>";	scoop install <# Virtual Machine #>	nonportable/virtualbox-np
+Write-Start "Installing apps..."
+	Write-App "<# Developing #>";	scoop install nodejs python vscode notepadplusplus
+	Write-App "<# Sofwares #>";		scoop install obs-studio discord wpsoffice hibit-uninstaller vcredist-aio
+	Write-App "<# Games #>";		scoop install steam
+	Write-App "<# JX-Tools #>";		scoop install winscp hxd ida-free
+	Write-App "<# Fonts #>";		scoop install DejaVuSansMono-NF-Mono
+	Write-App "<# Winget #>";		scoop install winget
+    #Write-App "<# Virtual Machine #>";	scoop install <# Virtual Machine #>	nonportable/virtualbox-np
 	Write-Host; code --install-extension vscode-icons-team.vscode-icons --force
 Write-Done
 
@@ -60,22 +65,21 @@ Write-Done
 # 	Enable-WindowsOptionalFeature -Online -FeatureName Containers -All
 # Write-Done
 
-Write-Start -msg "Cleanup apps by removing old verions"
+Write-Start "Cleanup apps by removing old verions"
     scoop cleanup -a
 Write-Done
 
-Write-Start -msg "Clear the download caches"
+Write-Start "Clear the download caches"
     scoop cache rm -a
 Write-Done
 
-Write-Start -msg "Show status and check for new app versions"
-	Write-Host (" ! Use winget upgrade <package-name> to upgrade packages") -ForegroundColor Blue
-	Write-Host " ! or use winget upgrade --all to upgrade all" -ForegroundColor Blue
+Write-Start "Show status and check for new app versions"
+	Write-Host (" ! Use winget upgrade <package-name> to upgrade packages or use winget upgrade --all to upgrade all") -ForegroundColor Blue
 	winget upgrade
 	Write-Host; Write-Host " ! Use scoop update <package-name> to update packages" -ForegroundColor Blue
     scoop status
 Write-Done
 
-# Opening Windows Terminal...
+# Open Windows Terminal
 	windowsterminal
 #END

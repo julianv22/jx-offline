@@ -45,7 +45,7 @@ Write-Done
 
 Write-Start -msg "Installing apps..."
 	Write-Host "<# Developing #>";	scoop install nodejs python vscode notepadplusplus
-	Write-Host "<# Sofwares #>";	scoop install obs-studio discord wpsoffice vcredist-aio
+	Write-Host "<# Sofwares #>";	scoop install obs-studio discord wpsoffice hibit-uninstaller vcredist-aio
 	Write-Host "<# Games #>";		scoop install steam
 	Write-Host "<# JX-Tools #>";	scoop install winscp hxd ida-free
 	Write-Host "<# Winget #>";		scoop install winget

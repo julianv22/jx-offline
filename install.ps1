@@ -8,64 +8,63 @@ function Write-Start {
 function Write-Done { Write-Host "DONE" -ForegroundColor Yellow; Write-Host }
 
 #START
-Write-Start -msg "Installing Scoop..."
+Write-Start -msg "Installing scoop..."
 	if (Get-Command scoop -errorAction SilentlyContinue) {
 		Write-Warning "Scoop is already installed"
-	} else {
-		#Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-		iex "& {$(irm get.scoop.sh)} -RunAsAdmin"
+	} else {		
+		iex "& {$(irm get.scoop.sh)} -RunAsAdmin"		
 	}
 Write-Done
 
 Write-Start -msg "Installing git & buckets..."
-	scoop install git	
-	scoop bucket add extras	
+	scoop install git
+	scoop bucket add extras
 	scoop bucket add java
 	scoop bucket add main
 	scoop bucket add nerd-fonts
     scoop bucket add nonportable
-    scoop bucket add versions    
+    scoop bucket add versions
 	scoop update
 Write-Done
 
 Write-Start -msg "Installing Windows Terminal & Powershell..."
-	scoop install oh-my-posh windows-terminal pwsh terminal-icons winget DejaVuSansMono-NF-Mono	
-	Start-Process -Wait pwsh -verb runas -ArgumentList "Set-ItemProperty -Path REGISTRY::HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System -Name ConsentPromptBehaviorAdmin -Value 0"	
+	scoop install windows-terminal pwsh psreadline oh-my-posh terminal-icons
+	scoop install DejaVuSansMono-NF-Mono
+	Import-Module Terminal-Icons
+	Set-PSReadLineOption -PredictionSource History
+	Set-PSReadLineOption -PredictionViewStyle ListView
+	Set-ItemProperty -Path REGISTRY::HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System -Name ConsentPromptBehaviorAdmin -Value 0
 	if (!(test-path $PROFILE)) {
 		New-Item -Path $PROFILE -Type File -Force
 	}
 	Clear-Content $PROFILE
 	Add-Content $PROFILE -Value "oh-my-posh init pwsh --config 'C:\Users\Admin\scoop\apps\oh-my-posh\current\themes\quick-term.omp.json' | Invoke-Expression
 Import-Module Terminal-Icons"
-	.$PROFILE
-	Import-Module Terminal-Icons
+	. $PROFILE
 Write-Done
 
-Write-Start -msg "Installing Scoop's packages..."	
-	scoop install <# Developing #>		nodejs python vscode notepadplusplus hxd winscp
-	scoop install <# Sofwares #>		obs-studio discord wpsoffice
-	scoop install <# Games #>			steam
-    #scoop install <# Virtual Machine #>		nonportable/virtualbox-np
-	Start-Process -Wait pwsh -verb runas -ArgumentList "scoop install ida-free"
-	Start-Process -Wait pwsh -verb runas -ArgumentList "scoop install vcredist-aio"	
+Write-Start -msg "Installing apps..."
+	Write-Host "<# Developing #>";	scoop install nodejs python vscode notepadplusplus
+	Write-Host "<# Sofwares #>";	scoop install obs-studio discord wpsoffice vcredist-aio
+	Write-Host "<# Games #>";		scoop install steam
+	Write-Host "<# JX-Tools #>";	scoop install winscp hxd ida-free
+	Write-Host "<# Winget #>";		scoop install winget
+    #Write-Host "<# Virtual Machine #>";	scoop install <# Virtual Machine #>	nonportable/virtualbox-np
+	Write-Host; code --install-extension vscode-icons-team.vscode-icons --force
 Write-Done
 
-Write-Start -msg "Installing extensions..."		
-	code --install-extension vscode-icons-team.vscode-icons --force	
-Write-Done
-
-Write-Start -msg "Enable Virtualization"
-	Start-Process -Wait pwsh -verb runas -ArgumentList "echo y | Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All -Norestart"
-	Start-Process -Wait pwsh -verb runas -ArgumentList "echo y | Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux -All -Norestart"
-	Start-Process -Wait pwsh -verb runas -ArgumentList " echo y | Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -All"
-	Start-Process -Wait pwsh -verb runas -ArgumentList "echo y | Enable-WindowsOptionalFeature -Online -FeatureName Containers -All"
-Write-Done
+# Write-Start -msg "Enable Virtualization"
+# 	Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All -Norestart
+# 	Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux -All -Norestart
+# 	Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -All
+# 	Enable-WindowsOptionalFeature -Online -FeatureName Containers -All
+# Write-Done
 
 Write-Start -msg "Cleanup apps by removing old verions"
     scoop cleanup -a
 Write-Done
 
-Write-Start -msg "Clear the download cache"
+Write-Start -msg "Clear the download caches"
     scoop cache rm -a
 Write-Done
 
@@ -77,6 +76,6 @@ Write-Start -msg "Show status and check for new app versions"
     scoop status
 Write-Done
 
-# Opening Windows Terminal...	
+# Opening Windows Terminal...
 	windowsterminal.exe
 #END

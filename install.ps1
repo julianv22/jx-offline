@@ -77,5 +77,5 @@ Write-Start -msg "Show status and check for new app versions"
 Write-Done
 
 # Opening Windows Terminal...
-	windowsterminal.exe
+	windowsterminal
 #END

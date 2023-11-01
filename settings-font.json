@@ -1,30 +1,47 @@
-{
-    "editor.fontSize": 14,
-    "symbolMasks.masks": [
-        {
-            "language": [ "lua", "plaintext", "ini", "log", "c", "csharp", "cpp", "json"],
-            "patterns": [
-            {
-            "pattern": "Â­",
-            "replace": "?",
-            }
-            ]
-        }
-    ],
+{    
+    "workbench.iconTheme": "vscode-icons",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.fontSize": 16,
+    "editor.fontFamily": "sonkt_Source Code Pro Regular",
+    "editor.codeLensFontFamily": "sonkt_Source Code Pro Regular",
+    "[jsonc]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[lua]": {
+      "editor.defaultFormatter": "yinfei.luahelper"
+    },
     "security.workspace.trust.untrustedFiles": "open",
     "security.workspace.trust.enabled": false,
     "editor.unicodeHighlight.ambiguousCharacters": false,
     "editor.unicodeHighlight.invisibleCharacters": false,
     "Lua.diagnostics.enable": false,
     "editor.guides.bracketPairs": "active",
-    "php.validate.executablePath": "C:\\xampp8\\php\\php.exe",    
     "problems.decorations.enabled": false,
     "editor.fontWeight": "normal",
-    "terminal.integrated.fontFamily": "Consolas",
+    "terminal.integrated.fontFamily": "DejaVuSansM Nerd Font",
     "files.autoSave": "afterDelay",
     "explorer.confirmDelete": false,
-    "editor.codeLensFontFamily": "sonkt_Source Code Pro Regular",
     "files.encoding": "iso88591",
-    "editor.fontFamily": "sonkt_Source Code Pro Regular",
-    "editor.fontLigatures": false
-}
+    "git.autofetch": true,
+    "symbolMasks.masks": [
+      {
+        "language": [
+          "lua",
+          "plaintext",
+          "ini",
+          "log",
+          "c",
+          "csharp",
+          "cpp",
+          "json"
+        ],
+        "patterns": [
+          {
+            "pattern": "­",
+            "replace": "?"
+          }
+        ]
+      }
+    ],
+    "editor.minimap.enabled": false
+  }

@@ -74,10 +74,13 @@ Write-Start "Clear the download caches"
 Write-Done
 
 Write-Start "Show status and check for new app versions"
-	Write-Host (" ! Use winget upgrade <package-name> to upgrade packages or use winget upgrade --all to upgrade all") -ForegroundColor Blue
-	winget upgrade
-	Write-Host; Write-Host " ! Use scoop update <package-name> to update packages" -ForegroundColor Blue
-    scoop status
+	Write-App "------------Winget------------"
+	Write-Host ("Use winget update <package-name> to update packages
+or use winget update --all to update all") -ForegroundColor Cyan
+	winget update
+	Write-App "------------Scoop-------------"
+	Write-Host "Use scoop update <package-name> to update packages" -ForegroundColor Cyan
+	scoop status
 Write-Done
 
 # Open Windows Terminal

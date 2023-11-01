@@ -39,13 +39,13 @@ Write-Start -msg "Installing git & buckets..."
 Write-Done
 
 Write-Start -msg "Installing Scoop's packages..."
-	scoop install <# Nerd Fonts #>			Hack-NF windows-terminal oh-my-posh
-	scoop install <# Developing #>			vscode nodejs python notepadplusplus hxd winscp	
-	scoop install <# Sofwares #>			obs-studio discord wpsoffice	
-	scoop install <# Games #>				steam	
+	scoop install <# Environments #>	DejaVuSansMono-NF-Mono windows-terminal oh-my-posh
+	scoop install <# Developing #>		vscode nodejs python notepadplusplus hxd winscp	
+	scoop install <# Sofwares #>		obs-studio discord wpsoffice	
+	scoop install <# Games #>			steam	
     #scoop install <# Virtual Machine #>		nonportable/virtualbox-np
 	Start-Process -Wait powershell -verb runas -ArgumentList "scoop install ida-free"
-	Start-Process -Wait powershell -verb runas -ArgumentList "scoop install DejaVuSansMono-NF-Mono vcredist-aio"
+	Start-Process -Wait powershell -verb runas -ArgumentList "scoop install vcredist-aio"
 Write-Done
 
 Write-Start -msg "Installing extensions..."		

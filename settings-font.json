@@ -18,7 +18,7 @@
     "editor.guides.bracketPairs": "active",
     "problems.decorations.enabled": false,
     "editor.fontWeight": "normal",
-    "terminal.integrated.fontFamily": "DejaVuSansM Nerd Font",
+    "terminal.integrated.fontFamily": "DejaVuSansM Nerd Font Mono",
     "files.autoSave": "afterDelay",
     "explorer.confirmDelete": false,
     "files.encoding": "iso88591",

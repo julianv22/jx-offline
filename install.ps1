@@ -17,7 +17,8 @@ Write-Start "Installing scoop..."
 	if (Get-Command scoop -errorAction SilentlyContinue) {
 		Write-Warning "Scoop is already installed"
 	} else {		
-		iex "& {$(irm get.scoop.sh)} -RunAsAdmin"		
+		iex "& {$(irm get.scoop.sh)} -RunAsAdmin"
+		#irm get.scoop.sh | iex		
 	}
 Write-Done
 

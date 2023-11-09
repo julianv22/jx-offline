@@ -40,9 +40,7 @@ Write-Start "Installing Windows Terminal & Powershell..."
 	Import-Module Terminal-Icons
 	Import-Module PSReadLine
 	Set-PSReadLineOption -PredictionSource History
-	Set-PSReadLineOption -PredictionViewStyle ListView
-	Set-PSReadLineKeyHandler -Key UpArrow -Function HistorySearchBackward
-	Set-PSReadLineKeyHandler -Key DownArrow -Function HistorySearchForward
+	Set-PSReadLineOption -PredictionViewStyle ListView	
 	Set-ItemProperty -Path REGISTRY::HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System -Name ConsentPromptBehaviorAdmin -Value 0
 	if (!(test-path $PROFILE)) {
 		New-Item -Path $PROFILE -Type File -Force

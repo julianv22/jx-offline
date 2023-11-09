@@ -52,8 +52,8 @@ Write-Start "Installing apps..."
 	Write-App "<# Developing #>";	scoop install nodejs python vscode notepadplusplus
 	Write-App "<# Sofwares #>";		scoop install obs-studio discord wpsoffice hibit-uninstaller vcredist-aio
 	Write-App "<# Games #>";		scoop install steam
-	Write-App "<# JX-Tools #>";		scoop install winscp hxd ida-free	
-	Write-App "<# Winget #>";		scoop install winget
+	Write-App "<# JX-Tools #>";		scoop install winscp hxd ida-free
+	Write-App "<# Apps #>";			scoop install neofetch ntop nano winget
     #Write-App "<# Virtual Machine #>";	scoop install <# Virtual Machine #>	nonportable/virtualbox-np
 	Write-Host; code --install-extension vscode-icons-team.vscode-icons --force
 Write-Done

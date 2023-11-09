@@ -86,3 +86,4 @@ Write-Done
 # Open Windows Terminal
 	windowsterminal
 #END
+#irm christitus.com/win | iex

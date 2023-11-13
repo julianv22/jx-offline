@@ -53,10 +53,10 @@ Write-Done
 Write-Start "Installing apps..."
 	Write-App "<# Fonts #>";		scoop install DejaVuSansMono-NF-Mono
 	Write-App "<# Developing #>";	scoop install nodejs python vscode kate
-	Write-App "<# Sofwares #>";		scoop install obs-studio hibit-uninstaller vcredist-aio # discord wpsoffice bleachbit
+	Write-App "<# Sofwares #>";		scoop install obs-studio vcredist-aio # discord wpsoffice bleachbit hibit-uninstaller
 	Write-App "<# Games #>";		scoop install steam
 	Write-App "<# JX-Tools #>";		scoop install winscp hxd ida-free
-	Write-App "<# Apps #>";			scoop install neofetch btop nano irfanview nilesoft-shell shutup10 kdeconnect winget
+	Write-App "<# Apps #>";			scoop install neofetch btop nano irfanview nilesoft-shell shutup10 kdeconnect wingetui
 	Write-Host; code --install-extension vscode-icons-team.vscode-icons --force
 	Write-App "Add 'Open with Code' to Context Menu" # Add 'Open with Code' to Context Menu
 	reg import "C:\Users\Admin\scoop\apps\vscode\current\install-context.reg"
@@ -80,7 +80,5 @@ or use winget update --all to update all") -ForegroundColor Cyan
 	Write-Host "Use scoop update <package-name> to update packages" -ForegroundColor Cyan
 	scoop status
 Write-Done
-
-# Open Windows Terminal
-	windowsterminal
+	wt # Open Windows Terminal
 # END

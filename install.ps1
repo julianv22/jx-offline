@@ -51,7 +51,7 @@ Write-Start "Installing Windows Terminal & Powershell..."
 Write-Done
 
 Write-Start "Installing apps..."
-	Write-App "<# Fonts #>";		scoop install DejaVuSansMono-NF-Mono
+	Write-App "<# Fonts #>";		scoop install SourceCodePro-NF-Mono
 	Write-App "<# Developing #>";	scoop install nodejs python vscode kate
 	Write-App "<# Sofwares #>";		scoop install obs-studio vcredist-aio # discord wpsoffice bleachbit hibit-uninstaller
 	Write-App "<# Games #>";		scoop install steam

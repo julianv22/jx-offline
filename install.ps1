@@ -45,7 +45,7 @@ Write-Start "Installing Windows Terminal & Powershell..."
 	if (!(test-path $PROFILE)) {
 		New-Item -Path $PROFILE -Type File -Force
 	}
-	Copy-Item -Path "E:\Windows\Microsoft.PowerShell_profile.ps1" -Destination $PROFILE
+	Copy-Item -Path "D:\jx-offline\Microsoft.PowerShell_profile.ps1" -Destination $PROFILE
 	# Copy-Item -Path ".\Microsoft.PowerShell_profile.ps1" -Destination $PROFILE
 	. $PROFILE
 Write-Done

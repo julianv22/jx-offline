@@ -54,22 +54,15 @@ Write-Done
 Write-Start "Installing apps..."
 	Write-App "<# Fonts #>";		scoop install DejaVuSansMono-NF-Mono
 	Write-App "<# Developing #>";	scoop install nodejs python vscode notepadplusplus
-	Write-App "<# Sofwares #>";		scoop install obs-studio discord wpsoffice hibit-uninstaller vcredist-aio
+	Write-App "<# Sofwares #>";		scoop install obs-studio discord wpsoffice bleachbit hibit-uninstaller vcredist-aio
 	Write-App "<# Games #>";		scoop install steam
 	Write-App "<# JX-Tools #>";		scoop install winscp hxd ida-free
-	Write-App "<# Apps #>";			scoop install neofetch btop nano irfanview nilesoft-shell shutup10 winget
-    #Write-App "<# Virtual Machine #>";	scoop install <# Virtual Machine #>	nonportable/virtualbox-np
+	Write-App "<# Apps #>";			scoop install neofetch btop nano irfanview nilesoft-shell shutup10 kdeconnect winget    
 	Write-Host; code --install-extension vscode-icons-team.vscode-icons --force
+	Write-App "Add 'Open with Code' to Context Menu" # Add 'Open with Code' to Context Menu
 	reg import "C:\Users\Admin\scoop\apps\vscode\current\install-context.reg"
 	reg import "C:\Users\Admin\scoop\apps\vscode\current\install-associations.reg"
 Write-Done
-
-# Write-Start -msg "Enable Virtualization"
-# 	Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Hyper-V -All -Norestart
-# 	Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux -All -Norestart
-# 	Enable-WindowsOptionalFeature -Online -FeatureName VirtualMachinePlatform -All
-# 	Enable-WindowsOptionalFeature -Online -FeatureName Containers -All
-# Write-Done
 
 Write-Start "Cleanup apps by removing old verions"
     scoop cleanup -a

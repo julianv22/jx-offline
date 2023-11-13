@@ -1,5 +1,5 @@
 Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
-#irm christitus.com/win | iex
+# irm christitus.com/win | iex
 
 # Function
 function Write-Start {
@@ -14,13 +14,13 @@ function Write-App {
 
 function Write-Done { Write-Host "DONE" -ForegroundColor Yellow; Write-Host }
 
-#START
+# START
 Write-Start "Installing scoop..."
 	if (Get-Command scoop -errorAction SilentlyContinue) {
 		Write-Warning "Scoop is already installed"
 	} else {		
 		iex "& {$(irm get.scoop.sh)} -RunAsAdmin"
-		#irm get.scoop.sh | iex		
+		# irm get.scoop.sh | iex		
 	}
 Write-Done
 
@@ -45,9 +45,8 @@ Write-Start "Installing Windows Terminal & Powershell..."
 	if (!(test-path $PROFILE)) {
 		New-Item -Path $PROFILE -Type File -Force
 	}
-	Clear-Content $PROFILE
-	Add-Content $PROFILE -Value "oh-my-posh init pwsh --config 'C:\Users\Admin\scoop\apps\oh-my-posh\current\themes\quick-term.omp.json' | Invoke-Expression
-Import-Module Terminal-Icons"
+	Copy-Item -Path "E:\Windows\Microsoft.PowerShell_profile.ps1" -Destination $PROFILE
+	# Copy-Item -Path ".\Microsoft.PowerShell_profile.ps1" -Destination $PROFILE
 	. $PROFILE
 Write-Done
 
@@ -84,4 +83,4 @@ Write-Done
 
 # Open Windows Terminal
 	windowsterminal
-#END
+# END

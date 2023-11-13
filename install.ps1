@@ -60,6 +60,8 @@ Write-Start "Installing apps..."
 	Write-App "<# Apps #>";			scoop install neofetch btop nano irfanview nilesoft-shell shutup10 winget
     #Write-App "<# Virtual Machine #>";	scoop install <# Virtual Machine #>	nonportable/virtualbox-np
 	Write-Host; code --install-extension vscode-icons-team.vscode-icons --force
+	reg import "C:\Users\Admin\scoop\apps\vscode\current\install-context.reg"
+	reg import "C:\Users\Admin\scoop\apps\vscode\current\install-associations.reg"
 Write-Done
 
 # Write-Start -msg "Enable Virtualization"

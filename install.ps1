@@ -67,8 +67,8 @@ Write-Start "Checking update..."
 		Write-Warning "PSWindowsUpdate is already installed"
 	} else {
 		Write-Start "Installing PSWindowsUpdate..."
-		Install-Module PSWindowsUpdate
-		Add-WUServiceManager -MicrosoftUpdate
+		Install-Module PSWindowsUpdate -Force
+		Add-WUServiceManager -MicrosoftUpdate -Confirm:$false
 	}#
 	S-Update
 Write-Done

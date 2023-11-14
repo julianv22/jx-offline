@@ -63,6 +63,8 @@ Write-Start "Installing apps..."
 Write-Done
 
 Write-Start "Checking update..."
+	Install-Module PSWindowsUpdate
+	Add-WUServiceManager -MicrosoftUpdate
 	S-Update
 Write-Done
 	wt btop # Open Windows Terminal wit BTOP

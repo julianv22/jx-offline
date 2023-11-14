@@ -9,17 +9,18 @@ Set-PSReadLineOption -PredictionViewStyle ListView
 
 function JX-Location {Set-Location -Path D:\jx-offline; ls}
 
-function W-Update { winget update; Get-WindowsUpdate }
+function W-Update {
+	Write-Host ">> Get 'winget' updatable..." -ForegroundColor Green
+	winget update
+	Write-Host; Write-Host ">> Get-WindowsUpdate..." -ForegroundColor Green
+	Get-WindowsUpdate
+}
 
 function Scoop-Update {
 	scoop update
 	scoop update -a
 	scoop status
 	Scoop-Clean
-	Write-Host; Write-Host ">> Get 'winget' updatable..." -ForegroundColor Green
-	winget update
-	Write-Host; Write-Host ">> Get-WindowsUpdate..." -ForegroundColor Green
-	Get-WindowsUpdate
 }
 
 function Scoop-Clean {

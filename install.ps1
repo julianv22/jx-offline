@@ -45,7 +45,6 @@ Write-Start "Installing Windows Terminal & Powershell..."
 		New-Item -Path $PROFILE -Type File -Force
 	}
 	Start-BitsTransfer -Source "https://raw.githubusercontent.com/julianv22/jx-offline/main/Microsoft.PowerShell_profile.ps1" -Destination $PROFILE
-	oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\quick-term.omp.json" | Invoke-Expression
 	. $PROFILE
 Write-Done
 

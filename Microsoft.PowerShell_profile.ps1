@@ -22,6 +22,16 @@ function S-Clean {
 	scoop cache rm -a
 }
 
+function Install-WUpdate {
+	if (Get-Module -ListAvailable -Name PSWindowsUpdate) {
+		Write-Warning "PSWindowsUpdate is already installed"
+	} else {
+		Write-Start "Installing PSWindowsUpdate..."
+		Install-Module PSWindowsUpdate -Force
+		Add-WUServiceManager -MicrosoftUpdate -Confirm:$false
+	}
+}
+
 function W-Update {
 	Write-Host ">> Get 'winget' updatable..." -ForegroundColor Green
 	winget update

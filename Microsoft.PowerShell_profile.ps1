@@ -22,7 +22,7 @@ function S-Clean {
 	scoop cache rm -a
 }
 
-function Install-WUpdate {
+function PS-Windows-Update {
 	if (Get-Module -ListAvailable -Name PSWindowsUpdate) {
 		Write-Warning "PSWindowsUpdate is already installed"
 	} else {

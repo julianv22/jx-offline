@@ -8,6 +8,20 @@ Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
 
 function JX-Location {Set-Location -Path D:\jx-offline; ls}
+Set-Alias -Name jx -Value JX-Location
+
+function S-Update {
+	scoop update
+	scoop update -a
+	scoop status
+	Scoop-Clean
+}
+
+function S-Clean {
+	scoop cleanup -a
+	scoop cache rm -a
+}
+
 
 function W-Update {
 	Write-Host ">> Get 'winget' updatable..." -ForegroundColor Green
@@ -15,22 +29,6 @@ function W-Update {
 	Write-Host; Write-Host ">> Get-WindowsUpdate..." -ForegroundColor Green
 	Get-WindowsUpdate
 }
-
-function Scoop-Update {
-	scoop update
-	scoop update -a
-	scoop status
-	Scoop-Clean
-}
-
-function Scoop-Clean {
-	scoop cleanup -a
-	scoop cache rm -a
-}
-
-Set-Alias -Name jx -Value JX-Location
-Set-Alias -Name S-Update -Value Scoop-Update
-Set-Alias -Name S-Clean -Value Scoop-Clean
 
 # Start-BitsTransfer -Source "https://raw.githubusercontent.com/julianv22/jx-offline/main/Microsoft.PowerShell_profile.ps1" -Destination $PROFILE
 # (Get-PSReadLineOption).HistorySavePath

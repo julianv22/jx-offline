@@ -14,7 +14,7 @@ function S-Update {
 	scoop update
 	scoop update -a
 	scoop status
-	Scoop-Clean
+	S-Clean
 }
 
 function S-Clean {

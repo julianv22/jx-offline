@@ -14,6 +14,7 @@ function Scoop-Update {
 	Scoop-Clean
 	Write-Host ">> Upgrading winget..." -ForegroundColor Green
 	winget upgrade
+	Get-WindowsUpdate
 }
 
 function Scoop-Clean {
@@ -24,3 +25,5 @@ function Scoop-Clean {
 Set-Alias -Name jx -Value JX-Location
 Set-Alias -Name S-Update -Value Scoop-Update
 Set-Alias -Name S-Clean -Value Scoop-Clean
+
+# Start-BitsTransfer -Source "https://raw.githubusercontent.com/julianv22/jx-offline/main/Microsoft.PowerShell_profile.ps1" -Destination $PROFILE

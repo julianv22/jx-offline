@@ -1,4 +1,6 @@
-oh-my-posh init pwsh --config 'C:\Users\Admin\scoop\apps\oh-my-posh\current\themes\quick-term.omp.json' | Invoke-Expression
+$env:SCOOP_APPS="$env:USERPROFILE\scoop\apps"
+
+oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\quick-term.omp.json" | Invoke-Expression
 
 Import-Module Terminal-Icons
 Import-Module PSReadLine
@@ -27,3 +29,4 @@ Set-Alias -Name S-Update -Value Scoop-Update
 Set-Alias -Name S-Clean -Value Scoop-Clean
 
 # Start-BitsTransfer -Source "https://raw.githubusercontent.com/julianv22/jx-offline/main/Microsoft.PowerShell_profile.ps1" -Destination $PROFILE
+# (Get-PSReadLineOption).HistorySavePath

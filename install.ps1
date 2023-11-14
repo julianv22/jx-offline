@@ -47,6 +47,7 @@ Write-Start "Installing Windows Terminal & Powershell..."
 		New-Item -Path $PROFILE -Type File -Force
 	}
 	Start-BitsTransfer -Source "https://raw.githubusercontent.com/julianv22/jx-offline/main/Microsoft.PowerShell_profile.ps1" -Destination $PROFILE
+	oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\quick-term.omp.json" | Invoke-Expression
 	. $PROFILE
 Write-Done
 
@@ -59,8 +60,8 @@ Write-Start "Installing apps..."
 	Write-App "<# Apps #>";			scoop install neofetch btop nano irfanview nilesoft-shell shutup10 kdeconnect wingetui
 	Write-Host; code --install-extension vscode-icons-team.vscode-icons --force
 	Write-App "Add 'Open with Code' to Context Menu" # Add 'Open with Code' to Context Menu
-	reg import "C:\Users\Admin\scoop\apps\vscode\current\install-context.reg"
-	reg import "C:\Users\Admin\scoop\apps\vscode\current\install-associations.reg"
+	reg import "$env:USERPROFILE\scoop\apps\vscode\current\install-context.reg"
+	reg import "$env:USERPROFILE\scoop\apps\vscode\current\install-associations.reg"
 Write-Done
 
 Write-Start "Cleanup apps by removing old verions"

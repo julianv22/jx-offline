@@ -46,7 +46,7 @@ Write-Start "Installing Windows Terminal & Powershell..."
 	if (!(test-path $PROFILE)) {
 		New-Item -Path $PROFILE -Type File -Force
 	}
-	Start-BitsTransfer -Source "https://github.com/julianv22/jx-offline/blob/main/Microsoft.PowerShell_profile.ps1" -Destination $PROFILE
+	Start-BitsTransfer -Source "https://raw.githubusercontent.com/julianv22/jx-offline/main/Microsoft.PowerShell_profile.ps1" -Destination $PROFILE
 	. $PROFILE
 Write-Done
 

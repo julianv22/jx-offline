@@ -14,7 +14,7 @@ function Scoop-Update {
 	scoop update -a
 	scoop status
 	Scoop-Clean
-	Write-Host; Write-Host ">> Get winget update..." -ForegroundColor Green
+	Write-Host; Write-Host ">> Get 'winget' updatable..." -ForegroundColor Green
 	winget update
 	Write-Host; Write-Host ">> Get-WindowsUpdate..." -ForegroundColor Green
 	Get-WindowsUpdate

@@ -80,5 +80,5 @@ or use winget update --all to update all") -ForegroundColor Cyan
 	Write-Host "Use scoop update <package-name> to update packages" -ForegroundColor Cyan
 	scoop status
 Write-Done
-	wt # Open Windows Terminal
+	wt btop # Open Windows Terminal
 # END

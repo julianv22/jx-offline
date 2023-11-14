@@ -40,13 +40,13 @@ Write-Start "Installing Windows Terminal & Powershell..."
 	Import-Module Terminal-Icons
 	Import-Module PSReadLine
 	Set-PSReadLineOption -PredictionSource History
-	Set-PSReadLineOption -PredictionViewStyle ListView
+	Set-PSReadLineOption -PredictionViewStyle ListView.
+	Set-PSReadLineOption -HistoryNoDuplicates:$True
 	Set-ItemProperty -Path REGISTRY::HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System -Name ConsentPromptBehaviorAdmin -Value 0
 	if (!(test-path $PROFILE)) {
 		New-Item -Path $PROFILE -Type File -Force
 	}
-	Copy-Item -Path "D:\jx-offline\Microsoft.PowerShell_profile.ps1" -Destination $PROFILE
-	# Copy-Item -Path ".\Microsoft.PowerShell_profile.ps1" -Destination $PROFILE
+	Start-BitsTransfer -Source "https://github.com/julianv22/jx-offline/blob/main/Microsoft.PowerShell_profile.ps1" -Destination $PROFILE
 	. $PROFILE
 Write-Done
 
@@ -80,5 +80,5 @@ or use winget update --all to update all") -ForegroundColor Cyan
 	Write-Host "Use scoop update <package-name> to update packages" -ForegroundColor Cyan
 	scoop status
 Write-Done
-	wt btop # Open Windows Terminal
+	wt btop # Open Windows Terminal wit BTOP
 # END

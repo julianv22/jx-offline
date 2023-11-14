@@ -4,6 +4,7 @@ Import-Module Terminal-Icons
 Import-Module PSReadLine
 Set-PSReadLineOption -PredictionSource History
 Set-PSReadLineOption -PredictionViewStyle ListView
+Set-PSReadLineOption -HistoryNoDuplicates:$True
 
 function JX-Location {Set-Location -Path D:\jx-offline; ls}
 

@@ -32,7 +32,6 @@ Write-Start "Installing git & buckets..."
 	scoop bucket add nerd-fonts
     scoop bucket add nonportable
     scoop bucket add versions
-	scoop update
 Write-Done
 
 Write-Start "Installing Windows Terminal & Powershell..."
@@ -40,8 +39,7 @@ Write-Start "Installing Windows Terminal & Powershell..."
 	Import-Module Terminal-Icons
 	Import-Module PSReadLine
 	Set-PSReadLineOption -PredictionSource History
-	Set-PSReadLineOption -PredictionViewStyle ListView.
-	Set-PSReadLineOption -HistoryNoDuplicates:$True
+	Set-PSReadLineOption -PredictionViewStyle ListView
 	Set-ItemProperty -Path REGISTRY::HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Policies\System -Name ConsentPromptBehaviorAdmin -Value 0
 	if (!(test-path $PROFILE)) {
 		New-Item -Path $PROFILE -Type File -Force
@@ -59,27 +57,13 @@ Write-Start "Installing apps..."
 	Write-App "<# JX-Tools #>";		scoop install winscp hxd ida-free
 	Write-App "<# Apps #>";			scoop install neofetch btop nano irfanview nilesoft-shell shutup10 kdeconnect wingetui
 	Write-Host; code --install-extension vscode-icons-team.vscode-icons --force
-	# Add 'Open with Code' to Context Menu
-	reg import "$env:USERPROFILE\scoop\apps\vscode\current\install-context.reg"
-	reg import "$env:USERPROFILE\scoop\apps\vscode\current\install-associations.reg"
+	Write-Host "Add 'Open with Code' to Context Menu..."
+	reg import "$env:SCOOP_APPS\vscode\current\install-context.reg"
+	reg import "$env:SCOOP_APPS\vscode\current\install-associations.reg"
 Write-Done
 
-Write-Start "Cleanup apps by removing old verions"
-    scoop cleanup -a
-Write-Done
-
-Write-Start "Clear the download caches"
-    scoop cache rm -a
-Write-Done
-
-Write-Start "Show status and check for new app versions"
-	Write-App "------------Winget------------"
-	Write-Host ("Use winget update <package-name> to update packages
-or use winget update --all to update all") -ForegroundColor Cyan
-	winget update
-	Write-App "------------Scoop-------------"
-	Write-Host "Use scoop update <package-name> to update packages" -ForegroundColor Cyan
-	scoop status
+Write-Start "Checking update..."
+	S-Update
 Write-Done
 	wt btop # Open Windows Terminal wit BTOP
 # END

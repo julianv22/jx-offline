@@ -9,6 +9,8 @@ Set-PSReadLineOption -PredictionViewStyle ListView
 
 function JX-Location {Set-Location -Path D:\jx-offline; ls}
 
+function W-Update { winget update; Get-WindowsUpdate }
+
 function Scoop-Update {
 	scoop update
 	scoop update -a

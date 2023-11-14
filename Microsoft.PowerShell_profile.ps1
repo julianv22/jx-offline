@@ -22,7 +22,6 @@ function S-Clean {
 	scoop cache rm -a
 }
 
-
 function W-Update {
 	Write-Host ">> Get 'winget' updatable..." -ForegroundColor Green
 	winget update

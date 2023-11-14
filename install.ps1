@@ -59,7 +59,7 @@ Write-Start "Installing apps..."
 	Write-App "<# JX-Tools #>";		scoop install winscp hxd ida-free
 	Write-App "<# Apps #>";			scoop install neofetch btop nano irfanview nilesoft-shell shutup10 kdeconnect wingetui
 	Write-Host; code --install-extension vscode-icons-team.vscode-icons --force
-	Write-App "Add 'Open with Code' to Context Menu" # Add 'Open with Code' to Context Menu
+	# Add 'Open with Code' to Context Menu
 	reg import "$env:USERPROFILE\scoop\apps\vscode\current\install-context.reg"
 	reg import "$env:USERPROFILE\scoop\apps\vscode\current\install-associations.reg"
 Write-Done

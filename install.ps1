@@ -63,13 +63,6 @@ Write-Start "Installing apps..."
 Write-Done
 
 Write-Start "Checking update..."
-	if (Get-Module -ListAvailable -Name PSWindowsUpdate) {
-		Write-Warning "PSWindowsUpdate is already installed"
-	} else {
-		Write-Start "Installing PSWindowsUpdate..."
-		Install-Module PSWindowsUpdate -Force
-		Add-WUServiceManager -MicrosoftUpdate -Confirm:$false
-	}#
 	S-Update
 Write-Done
 	wt btop # Open Windows Terminal wit BTOP

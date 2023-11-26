@@ -1,5 +1,5 @@
 Include("\\script\\battles\\battlehead.lua")
-BALANCE_MAMCOUNT = 3
+BALANCE_MAMCOUNT = 5
 strbattleinfo=
 {
 	"Tèng Kim cã nh÷ng h×nh thøc tham chiÕn sau, ng­¬i muèn t×m hiÓu……",
@@ -135,7 +135,8 @@ strbt_info=
 	"C¸c chøc n¨ng míi khi b¸o danh?/bt_infonew",
 	"§iÓm b¸o danh phe Tèng n»m ë h­íng B¾c T­¬ng D­¬ng, cña phe Kim lµ ë h­íng Nam Chu Tiªn trÊn",
 	format("ChiÕn tr­êng Tèng Kim chİnh thøc b¸o danh lóc %s. Thêi gian b¸o danh lµ %d phót, hÖ thèng sÏ liªn tôc th«ng b¸o. <enter>Thêi gian chiÕn ®Êu lµ %d phót, cø mçi %d phót hÖ thèng sÏ c«ng b¸o t×nh h×nh. NÕu hÕt thêi gian b¸o danh sè ng­êi tham gia vÉn ch­a ®ñ, ng­êi ch¬i vÉn cã thÓ tiÕp tôc b¸o danh.",TIMELIST, BAOMING_TIME, FIGHTING_TIME, ANNOUNCE_TIME),
-	"Ng­êi ch¬i ph¶i ®¹t ®Õn hoÆc cao h¬n cÊp <color=yellow>40<color> míi cã thÓ b¸o danh, phİ b¸o danh <color=yellow>5000<color> l­îng. Tèng kim ®¹i chiÕn ph©n ra lµm ba cÊp bËc: s¬ cÊp (cÊp 40~79), trung cÊp (cÊp 80~119), cao cÊp (cÊp 120 trë lªn).",
+--	"ËÎ½ğÕ½³¡½«ÓÚÃ¿Ìì11£º00¡¢13£º00¡¢15£º00¡¢17£º00¡¢19£º00¡¢21£º00¡¢23£º00×¼Ê±¿ª·Å±¨Ãû£¨ÏµÍ³¹ã²¥¹ö¶¯Í¨Öª£©£¬±¨ÃûÊ±¼äÎª30·ÖÖÓ¡£<enter>±¨Ãû½áÊøºóÕıÊ½¿ªÕ½£¬Õ½¶·Ê±¼äÎª60·ÖÖÓ£¬Ã¿20Ãë¹«²¼Ò»´ÎÕ½¿ö¡£±¨Ãû½áÊøºóÈô²ÎÕ½ÈËÊıÎ´´ïµ½ÉÏÏŞ£¬Ôò¿É¼ÌĞø±¨Ãû½øÈëÕ½³¡¡£",
+	"Ng­êi ch¬i ph¶i ®¹t ®Õn hoÆc cao h¬n cÊp <color=yellow>40<color> míi cã thÓ b¸o danh, phİ b¸o danh <color=yellow>100000<color> l­îng. Tèng kim ®¹i chiÕn ph©n ra lµm ba cÊp bËc: s¬ cÊp (cÊp 40~79), trung cÊp (cÊp 80~119), cao cÊp (cÊp 120 trë lªn).",
 	"Sè l­îng tèi ®a lµ: <color=yellow>400<color>ng­êi. HÕt thêi gian b¸o danh nÕu vÉn ch­a ®ñ nh©n sè vÉn cã thÓ b¸o danh, nh­ng nÕu mét phe nhiÒu h¬n phe kia <color=yellow>"..BALANCE_MAMCOUNT.."ng­êi<color>, th× sÏ kh«ng thÓ tham gia vµo phe ®ã, cÇn ph¶i İt h¬n phe kia<color=yellow>"..BALANCE_MAMCOUNT.."ng­êi<color> míi ®­îc nhËn thªm.",
 	"Qui t¾c b¸o danh: Thêi gian cña 1 chiÕn dŞch lµ 1 tuÇn. Mçi lÇn më 1 chiÕn dŞch míi, sè ®iÓm tİch lòy cña tuÇn tr­íc sÏ trë vÒ 0. Trän 1 chiÕn dŞch chØ ®­îc tham gia cho 1 phe, muèn thay ®æi, ph¶i ®îi ®Õn tuÇn sau.",--±¨ÃûÊ±Íæ¼ÒĞèÒªÈ¨ºâË«·½ÈËÊıÒòËØ£¬ÏµÍ³»á×Ô¶¯¸ù¾İË«·½ÈËÊıµÄ¶àÉÙµ÷½Ú»ı·Ö¡£ÈËÊıÕ¼ÓÅ·½µÄ»ı·Ö½«ÓĞË¥¼õ£¬ÈËÊıÁÓÊÆ·½µÄ»ı·Ö½«ÓĞ¼Ó³É¡£",
 	"Nh÷ng chøc n¨ng míi: tr­íc khi chİnh thøc khai chiÕn, cã thÓ dïng ®iÓm tİch lòy ®Õn Qu©n Nhu quan ®Ó mua c¸c ®¹o cô chuyªn dông. Sau khi khai chiÕn sÏ kh«ng thÓ mua",

@@ -1075,3 +1075,13 @@ boss200	NormalNpc	spr\npcres\boss\boss200
 boss201	NormalNpc	spr\npcres\boss\boss201																
 boss202	NormalNpc	spr\npcres\boss\boss202																
 boss203	NormalNpc	spr\npcres\boss\boss203																
+boss204	NormalNpc	spr\npcres\boss\boss204																
+boss205	NormalNpc	spr\npcres\boss\boss205																
+boss206	NormalNpc	spr\npcres\boss\boss206																
+boss207	NormalNpc	spr\npcres\boss\boss207																
+boss208	NormalNpc	spr\npcres\boss\boss208																
+boss209	NormalNpc	spr\npcres\boss\boss209																
+boss210	NormalNpc	spr\npcres\boss\boss210																
+boss211	NormalNpc	spr\npcres\boss\boss211																
+boss212	NormalNpc	spr\npcres\boss\boss212																
+boss213	NormalNpc	spr\npcres\boss\boss213																

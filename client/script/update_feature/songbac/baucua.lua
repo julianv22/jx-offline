@@ -81,7 +81,7 @@ local nValue = 0
 	end
 	local szMsg = format("<color=green>KÕt qu¶ ®ît nµy <color=yellow> %s , %s ,%s <color=green>. 1 phót n÷a cã thÓ ®Æt cöa<color>",tbResult[1],tbResult[2],tbResult[3])
 	logplayer("dulieu/songbac.txt",format("Ket qua bau cua lan nay"..tbResult[1].."va"..tbResult[2].."va"..tbResult[3]))
-	-- Msg2SubWorld(szMsg)
+	Msg2SubWorld(szMsg)
 	return 1
 end
 
@@ -358,7 +358,7 @@ local nX = mod(nMin,2)
 	elseif (nX == 1) then
 		self.nStatus = 1
 		local szMsg = "<color=green>B©y giê b¹n cã thÓ ®Æt cöa BÇu Cua <color>"
-		-- Msg2SubWorld(szMsg)
+		Msg2SubWorld(szMsg)
 	else
 		self.nStatus = 1
 	end

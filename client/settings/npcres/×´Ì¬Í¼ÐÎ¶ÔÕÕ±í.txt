@@ -1,4 +1,4 @@
-Status	file name	type	Play method	Start frame behind the protagonist	Ending frame behind the protagonist	Total animation frames	Total number of animation directions	animation frame interval	The picture is divided into several parts	"Note: The picture can only be divided into 1, 2, and 3 petals."
+Status	ÎÄ¼şÃû	ÀàĞÍ	²¥·Å·½Ê½	Ö÷½ÇÉíºó¿ªÊ¼Ö¡	Ö÷½ÇÉíºó½áÊøÖ¡	¶¯»­×ÜÖ¡Êı	¶¯»­×Ü·½ÏòÊı	¶¯»­Ö¡¼ä¸ô	Í¼·Ö¼¸°ê	ËµÃ÷£ºÍ¼Ö»ÄÜ·Ö1¡¢2¡¢3°ê
 Status1	Special	Head	Loop			8	1	50	1	Ñ£ÔÎ
 Status2	Special	Foot	Loop			8	1	50	1	ÖĞ¶¾
 Status3	Special	Body	Loop	0	29	8	1	50	1	±ù¶³
@@ -140,7 +140,7 @@ Status138	\spr\skill\others\title_new_bj.spr	Foot	Loop	0	0	20	1	23	1	ËÎ½ğæôÆï´ó½
 Status139	\spr\skill\others\title_new_ab.spr	Foot	Loop	0	0	15	1	30	1	ËÎ½ğ°²°î´ó½«¾ü
 Status140	\spr\skill\others\title_new_dg.spr	Foot	Loop	0	0	15	1	15	1	ËÎ½ğ¶¨¹úÔªË§
 Status141	\spr\item\script\tisheng_skill.spr	Body	Loop	0	0	8	1	18	1	½ğÖÓÕÖ
-Status142	\spr\skill\others\jingyingsaiguanjun.spr	Foot	Loop	0	0	15	1	15	1	¾«Ó¢Èü¹Ú¾ü
+Status142	\spr\skill\others\jingyingsaiguanjun.spr	Foot	Loop	0	0	15	1	18	1	¾«Ó¢Èü¹Ú¾ü
 Status143	\spr\skill\others\jingyingsaiyajun.spr	Foot	Loop	0	0	15	1	15	1	¾«Ó¢ÈüÑÇ¾ü
 Status144	\spr\skill\others\jingyingsaijijun.spr	Foot	Loop	0	0	15	1	15	1	¾«Ó¢Èü¼¾¾ü
 Status145	\spr\skill\others\vip_guanghuan.spr	Foot	Loop	0	0	15	1	15	1	vipÕÊºÅ¹â»·
@@ -161,7 +161,7 @@ Status159	\spr\skill\others\shengguanqindun.spr	Body	Loop	0	0	15	1	56	1	Ê¥¹âÇß¶Ü
 Status160	\spr\skill\zhongqiu\zq_sl_003.spr	Head	Loop	0	0	20	1	60	1	ºìÔÂ
 Status161	\spr\skill\zhongqiu\lanyue.spr	Head	Loop	0	0	10	1	100	1	À¶ÔÂ
 Status162	\spr\skill\others\vip_sc.spr	Foot	Loop	0	0	20	1	80	1	ÖĞ¼¶VIP¹â»·
-Status163	\spr\skill\others\vip_sr.spr	Foot	Loop	0	0	20	1	20	1	¸ß¼¶VIP¹â»·
+Status163	\spr\skill\others\vip_sr.spr	Foot	Loop	0	0	20	1	80	1	¸ß¼¶VIP¹â»·
 Status164	\spr\skill\others\vip_sp.spr	Foot	Loop	0	0	20	1	80	1	³¬¼¶VIP¹â»·
 Status165	\spr\skill\others\dati.spr	Foot	Loop	0	0	20	1	56	1	´ğÌâ±ÈÈü¹â»·
 Status166	\spr\item\newyear2010\×í¾Æ.spr	Head	Loop	0	0	12	1	110	1	×í¾Æ
@@ -172,7 +172,7 @@ Status170	\spr\skill\others\zhongyueguanjun.spr	Body	Loop	0	0	30	1	56	1	ÖĞÔ½PKÈü
 Status171	\spr\skill\others\jianmianhui_1st.spr	Foot	Loop	0	0	20	1	80	1	Ê×½ì½ğÉ½ÂÛ½£¹â»·
 Status172	\spr\skill\others\jianghugaoshou.spr	Foot	Loop	0	0	15	1	60	1	VIPÕÊºÅ¹â»·½­ºş¸ßÊÖ
 Status173	\spr\skill\others\wulinhaojie.spr	Foot	Loop	0	0	15	1	60	1	VIPÕÊºÅ¹â»·ÎäÁÖºÀ½Ü
-Status174	\spr\skill\others\jianxiazhizun.spr	Foot	Loop	0	0	15	1	15	1	VIPÕÊºÅ¹â»·½£ÏÀÖÁ×ğ
+Status174	\spr\skill\others\jianxiazhizun.spr	Foot	Loop	0	0	15	1	60	1	VIPÕÊºÅ¹â»·½£ÏÀÖÁ×ğ
 Status175	\spr\skill\others\dubutianxia.spr	Foot	Loop	0	0	15	1	60	1	VIPÕÊºÅ¹â»·¶À²½ÌìÏÂ
 Status176	\spr\skill\others\xiridaxia.spr	Foot	Loop	0	0	15	1	15	1	ÎôÈÕ´óÏÀ»î¶¯
 Status177	\spr\skill\others\¶À¹ÂÇó°Ü.spr	Head	Loop	0	0	20	1	40	1	¶À¹ÂÇó°Ü
@@ -184,7 +184,7 @@ Status182	\spr\skill\others\ÏÀÃûÔ¶²¥.spr	Head	Loop	0	0	20	1	40	1	ÏÀÃûÔ¶²¥
 Status183	\spr\skill\others\ÎäÁÖĞÂĞã.spr	Head	Loop	0	0	20	1	40	1	ÎäÁÖĞÂĞã
 Status184	\spr\skill\others\³õÈë½­ºş.spr	Head	Loop	0	0	20	1	40	1	³õÈë½­ºş
 Status185	\spr\skill\others\ÈëÃÅµÜ×Ó.spr	Head	Loop	0	0	20	1	40	1	ÈëÃÅµÜ×Ó
-Status186	\spr\skill\others\longzhidui2.spr	Foot	Loop	0	0	15	1	15	1	2012ÁúÖ®¶Ó¹â»·
+Status186	\spr\skill\others\longzhidui2.spr	Foot	Loop	0	0	15	1	83	1	2012ÁúÖ®¶Ó¹â»·
 Status187	\spr\skill\others\pkno1tong.spr	Foot	Loop	0	0	15	1	60	1	2012ÖĞÔ½µÚÒ»°ï
 Status188	spr\skill\ÃÅÅÉ½ø½×\½ğ.spr	Body	Loop	0	0	20	1	40	1	½ø½×boss½ğÏµ¹â»·
 Status189	spr\skill\ÃÅÅÉ½ø½×\Ä¾.spr	Body	Loop	0	0	20	1	40	1	½ø½×bossÄ¾Ïµ¹â»·
@@ -197,7 +197,7 @@ Status195	\spr\skill\others\jianxiazhizun.spr	Foot	Loop	0	0	15	1	60	1	Ô½ÄÏÁú»¢ËÎ
 Status196	\spr\skill\others\dubutianxia.spr	Foot	Loop	0	0	15	1	60	1	Ô½ÄÏÁú»¢ËÎ½ğ¡°ÌìÏÂÎŞË«¡±
 Status197	\spr\skill\partner\skill_bairenzhan.spr	Foot	Loop	0	0	20	1	25	1	×øÆï
 Status198	spr\skill\others\vipez.spr	Foot	Loop	0	0	15	1	83	1	Ô½ÄÏ°æÌìÏÂÎŞµĞ½±Àø¹â»Æ
-Status199	spr\skill\others\?ğ¹â»·	Head	Loop	0	0	20	1	56	1	?ğ¹â»·
+Status199	spr\skill\others\‘ğ¹â»·	Head	Loop	0	0	20	1	56	1	‘ğ¹â»·
 Status200	spr\skill\others\jingyingsaiguanjun.spr	Foot	Loop	0	0	15	1	35	1	ÌìÏÂµÚÒ»°ï¹Ú¾ü
 Status201	spr\skill\others\jingyingsaiguanjun_old.spr	Foot	Loop	0	0	15	1	45	1	ÌìÏÂµÚÒ»°ïÑÇ¾ü
 Status202	spr\skill\others\jingyingsaijijun_old.spr	Foot	Loop	0	0	15	1	45	1	ÌìÏÂµÚÒ»°ï¼¾¾ü
@@ -213,7 +213,7 @@ Status211	\spr\skill\songjin\zhanchangyinghao.spr	Foot	Loop	0	0	15	1	111	1	Ô½ÄÏË
 Status212	\spr\skill\songjin\zhanchangyinghao.spr	Foot	Loop	0	0	15	1	111	1	Ô½ÄÏËÎ½ğÕ½³¡»ı·ÖÅÅÃûµÚ°ËÃû¡°ËÄ¾øÕ½³¡¡±
 Status213	\spr\skill\songjin\zhanchangyinghao.spr	Foot	Loop	0	0	15	1	111	1	Ô½ÄÏËÎ½ğÕ½³¡»ı·ÖÅÅÃûµÚ¾ÅÃû¡°ËÄ¾øÕ½³¡¡±
 Status214	\spr\skill\songjin\zhanchangyinghao.spr	Foot	Loop	0	0	15	1	111	1	Ô½ÄÏËÎ½ğÕ½³¡»ı·ÖÅÅÃûµÚÊ®Ãû¡°ËÄ¾øÕ½³¡¡±
-Status215	spr\skill\others\?ôÖ®ê ¹â»·	Head	Loop	0	0	30	1	30	1	?ôÖ®ê ¹â»·
+Status215	spr\skill\others\‰ôÖ®ê ¹â»·	Head	Loop	0	0	30	1	30	1	‰ôÖ®ê ¹â»·
 Status216	\spr\skill\others\title_new_yl.spr	Foot	Loop	0	0	11	1	18	1	ËÎ½ğ»ı·ÖÅÅÃûµÚËÄ-Ê®Ãû
 Status217	\spr\skill\others\title_new_bj.spr	Foot	Loop	0	0	20	1	23	1	ËÎ½ğ»ı·ÖÅÅÃûµÚÈı
 Status218	\spr\skill\others\title_new_ab.spr	Foot	Loop	0	0	15	1	30	1	ËÎ½ğ»ı·ÖÅÅÃûµÚ¶ş
@@ -240,18 +240,18 @@ Status238	\spr\skill\wuhuntang\µôÑªBUFF.spr	Body	Loop	0	0	12	1	12	1	º³É½»÷µôÑªbu
 Status239	\spr\skill\wuhuntang\¼õËÙ×´Ì¬.spr	Head	Loop	0	0	12	1	33	1	¼õ¹¥»÷Debuff
 Status240	\spr\skill\wuhuntang\¼õËÙ×´Ì¬.spr	Head	Loop	0	0	12	1	33	1	¼õ¹¥ËÙDebuff
 Status241	\spr\skill\zhongqiu\zq_sl_001.spr	Head	Loop	0	0	10	1	20	1	Ã·»¨ÈıÅªDeBuff¡ª¡ª»Ğã±
-Status242	\spr\effect\other\weizhenjiuzhou_vn.spr	Head	Loop	0	0	20	1	20	1	Uy ChÊn Cöu Ch©u
-Status243	\spr\effect\other\wulinzhizun_vn.spr	Head	Loop	0	0	20	1	20	1	Vâ L©m Chİ T«n
-Status244	\spr\effect\other\yijianfengtian_vn.spr	Head	Loop	0	0	20	1	20	1	NhÊt KiÕm Phong Thiªn
-Status245	\spr\effect\other\yiliugaoshou_vn.spr	Head	Loop	0	0	20	1	20	1	NhÊt L­u Cao Thñ
-Status246	\spr\effect\other\zuihoudaxia_vn.spr	Head	Loop	0	0	20	1	20	1	HiÖp Kh¸ch Cuèi Cïng Trªn Giang Hå
-Status247	\spr\skill\others\phongvan.spr	Head	Head	0	0	14	1	14	1	Phong V©n
-Status248	\spr\skill\others\daithanh.spr	Head	Head	0	0	14	1	14	1	§¹i Th¸nh
-Status249	\spr\skill\others\tranthien.spr	Head	Head	0	0	25	1	25	1	TrÊn Thiªn
-Status250	\spr\skill\others\sieuthan.spr	Head	Head	0	0	14	1	14	1	Siªu ThÇn
-Status251	\spr\skill\others\åÈÀ¶Ä¦Úµ-¹â»·.spr	Foot	Loop	0	0	30	1	30	1	Julian-V
-Status252	\spr\skill\others\²ÔÑ×ÆßÊ¥¡ª¹â»·.spr	Foot	Loop	0	0	30	1	30	1	Vò Trô Hång Hoang
-Status253	\spr\skill\others\dubutianxia.spr	Foot	Loop	0	0	15	1	15	1	§éc Bé Thiªn H¹
-Status254	\spr\skill\others\huangdi.spr	Body	Loop	0	0	10	1	10	1	Hoµng §Õ
-Status255	\spr\skill\others\jianghugaoshou.spr	Foot	Loop	0	0	15	1	15	1	Cao Thñ Giang Hå
-Status256	\spr\skill\others\jianxiazhizun.spr	Foot	Loop	0	0	15	1	15	1	Thiªn H¹ §Ö NhÊt
+Status242	\spr\effect\other\weizhenjiuzhou_vn.spr	Head	Loop	0	0	20	1	20	1	uy chan cuu chau
+Status243	\spr\effect\other\wulinzhizun_vn.spr	Head	Loop	0	0	20	1	20	1	vo lam chi ton
+Status244	\spr\effect\other\yijianfengtian_vn.spr	Head	Loop	0	0	20	1	20	1	nhat kiem phong thien
+Status245	\spr\effect\other\yiliugaoshou_vn.spr	Head	Loop	0	0	20	1	20	1	nhat luu cao thu
+Status246	\spr\effect\other\zuihoudaxia_vn.spr	Head	Loop	0	0	20	1	20	1	hiep khac cuoi cung tren giang ho
+Status247	\spr\vongsangjackie1_15frame.spr	Foot	Loop	0	0	15	1	15	1	hiep khac cuoi cung tren giang ho
+Status248	\spr\vongsangjackie4_15frame.spr	Foot	Loop	0	0	15	1	15	1	VLTK 8.2
+Status249	\spr\vongsangjackie5_15frame.spr	Foot	Loop	0	0	15	1	15	1	VLTK 8.2
+Status250	\spr\vongsangjackie7_15frame.spr	Foot	Loop	0	0	15	1	15	1	VLTK 8.2
+Status251	\spr\vongsangjackie12_15frame.spr	Foot	Loop	0	0	15	1	15	1	VLTK 8.2
+Status252	\spr\vongsangjackie18_15frame.spr	Foot	Loop	0	0	15	1	15	1	VLTK 8.2
+Status253	\spr\vongsangjackie21_10frame.spr	Foot	Loop	0	0	10	1	10	1	VLTK 8.2
+Status254	\spr\vongsangjackie27_15frame.spr	Foot	Loop	0	0	15	1	15	1	VLTK 8.2
+Status255	\spr\vongsangjackie28_15frame.spr	Foot	Loop	0	0	15	1	15	1	VLTK 8.2
+Status256	\spr\vongsangjackie35_15frame.spr	Foot	Loop	0	0	15	1	15	1	VLTK 8.2

@@ -61,9 +61,9 @@ function sj_GetRankTop10_CallBack(Param, hResult)
 	end
 	
 	tbOpt = {
-		[1]={"NhÀn ph«n th≠Îng Long HÊ TËng Kim tu«n tr≠Ìc", sj_GetWeeklyRank},
+		[1]={"Ta muËn nhÀn ph«n th≠Îng Long HÊ TËng Kim tu«n tr≠Ìc", sj_GetWeeklyRank},
 		--BÊ sung ph«n th≠Îng chÿ nhÀn exp, kh´ng nhÀn hµo quang - modified by DinhHQ - 20130701
-		[2]={"NhÀn ph«n th≠Îng Long HÊ TËng Kim tu«n tr≠Ìc (chÿ nhÀn kinh nghi÷m)", sj_GetWeeklyRank_2},
+		[2]={"Ta muËn nhÀn ph«n th≠Îng Long HÊ TËng Kim tu«n tr≠Ìc (chÿ nhÀn kinh nghi÷m)", sj_GetWeeklyRank_2},
 		[3]={" ß„ng",}
 	}
 	CallPlayerFunction(nPlayerIndex, CreateNewSayEx, szTitle, tbOpt)
@@ -115,6 +115,7 @@ local tbRankAward = {
 	[2]={Exp=400000000, nTitle=256},
 	[3]={Exp=300000000, nTitle=257},
 	[4]={Exp=200000000, nTitle=258},
+
 }
 
 function sj_GiveRankAward(nRank)
@@ -135,14 +136,19 @@ function sj_GiveRankAward(nRank)
 	end
 	
 	local nDate = mod(FormatTime2Number(GetCurServerTime() + 7*24*60*60), 100000000)
+
 	Title_RemoveTitle(%tbRankAward[nRank].nTitle)
 	Title_AddTitle(%tbRankAward[nRank].nTitle, 2, nDate) --≥÷–¯“ª÷‹
 	Title_ActiveTitle(%tbRankAward[nRank].nTitle)
+
 	SetTask(1122, %tbRankAward[nRank].nTitle)
 	tbAwardTemplet:GiveAwardByList({nExp_tl = %tbRankAward[nRank].Exp}, "battle rank top10")
+
 end
 
+
 --------BÊ sung ph«n th≠Îng chÿ nhÀn exp, kh´ng nhÀn hµo quang - modified by DinhHQ - 20130701--------
+
 function sj_GetWeeklyRank_2()
 	local nTime = tonumber(GetLocalDate("%H%M"))
 	local nWeekDay = tonumber(GetLocalDate("%w"))
@@ -155,8 +161,11 @@ function sj_GetWeeklyRank_2()
 	local szName = GetName()
 	local hParam = OB_Create()
 	ObjBuffer:PushObject(hParam, szName)
+	
 	RemoteExecute("\\script\\battle\\weeklyrank.lua", "tbSJ_WeeklyRank:s_GetRankAward", hParam, "sj_GetWeeklyRank_CallBack_2", 0)
+	
 	OB_Release(hParam)
+
 end
 
 function sj_GetWeeklyRank_CallBack_2(Param, hResult)
@@ -174,6 +183,7 @@ function sj_GetWeeklyRank_CallBack_2(Param, hResult)
 	end
 	
 	CallPlayerFunction(nPlayerIndex, sj_GiveRankAward_2, nRank)
+	
 end
 
 function sj_GiveRankAward_2(nRank)

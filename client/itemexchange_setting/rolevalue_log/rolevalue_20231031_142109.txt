@@ -1,0 +1,5 @@
+[Normal]Item: To¸i NguyÖt §ao(0,0,1,1,1,10), unbind = 0, bind = 0
+[Normal]Item: Ph¸ Thiªn chïy(0,0,0,4,1,10), unbind = 0, bind = 0
+[Normal]Item: Kim C« Bæng(0,0,0,2,1,10), unbind = 0, bind = 0
+[Normal]Item: Th«n NhËt Tr·m(0,0,0,5,1,10), unbind = 0, bind = 0
+[Normal]Item: Khæng T­íc Linh(0,0,1,2,1,10), unbind = 0, bind = 0

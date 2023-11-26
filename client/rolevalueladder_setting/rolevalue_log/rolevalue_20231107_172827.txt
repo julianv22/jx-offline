@@ -1,0 +1,48 @@
+[Normal]Item: Siªu Quang(0,1,4365,13,5,10), unbind = 0, bind = 50
+[Normal]Item: D­¬ng Sa(0,1,5092,26,5,10), unbind = 0, bind = 50
+[Normal]Item: Ngù Phong(0,1,5093,27,5,10), unbind = 0, bind = 50
+[Normal]Item: Truy ®iÖn(0,1,5094,28,5,10), unbind = 0, bind = 50
+[Normal]Item: L­u Tinh (0,1,5095,29,5,10), unbind = 0, bind = 50
+[Normal]Item: NguyÖt KhuyÕt M¹n §å H¹ng Liªn(0,1,5809,1,4,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å Ph¸t Qu¸n(0,1,5810,2,0,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å NhiÕp Ph¸ch ChØ Hoµn(0,1,5811,0,2,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å Hé UyÓn(0,1,5812,1,1,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å Thóc Yªu(0,1,5813,0,3,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å Gi¸p Y(0,1,5814,3,4,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å Phi Tiªu(0,1,5815,0,0,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å Lİ(0,1,5816,1,2,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å Yªu Trôy(0,1,5817,1,1,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å §o¹t Hån ChØ Hoµn(0,1,5818,0,3,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å §o¹t Hån ChØ Hoµn(0,1,5818,0,3,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å Yªu Trôy(0,1,5817,1,1,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å Lİ(0,1,5816,1,2,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å Phi Tiªu(0,1,5815,0,0,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å Gi¸p Y(0,1,5814,3,4,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å Thóc Yªu(0,1,5813,0,3,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å Hé UyÓn(0,1,5812,1,1,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å NhiÕp Ph¸ch ChØ Hoµn(0,1,5811,0,2,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å Ph¸t Qu¸n(0,1,5810,2,0,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å H¹ng Liªn(0,1,5809,1,4,10), unbind = 0, bind = 30000
+[Normal]Item: Siªu Quang(0,1,4365,13,5,10), unbind = 0, bind = 50
+[Normal]Item: Siªu Quang(0,1,4365,13,5,10), unbind = 0, bind = 50
+[Normal]Item: NguyÖt KhuyÕt M¹n §å H¹ng Liªn(0,1,5809,1,4,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å Ph¸t Qu¸n(0,1,5810,2,0,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å NhiÕp Ph¸ch ChØ Hoµn(0,1,5811,0,2,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å Hé UyÓn(0,1,5812,1,1,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å Thóc Yªu(0,1,5813,0,3,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å Gi¸p Y(0,1,5814,3,4,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å Phi Tiªu(0,1,5815,0,0,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å Lİ(0,1,5816,1,2,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å Yªu Trôy(0,1,5817,1,1,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å §o¹t Hån ChØ Hoµn(0,1,5818,0,3,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å §o¹t Hån ChØ Hoµn(0,1,5818,0,3,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å Yªu Trôy(0,1,5817,1,1,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å Lİ(0,1,5816,1,2,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å Phi Tiªu(0,1,5815,0,0,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å Gi¸p Y(0,1,5814,3,4,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å Thóc Yªu(0,1,5813,0,3,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å Hé UyÓn(0,1,5812,1,1,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å NhiÕp Ph¸ch ChØ Hoµn(0,1,5811,0,2,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å Ph¸t Qu¸n(0,1,5810,2,0,10), unbind = 0, bind = 30000
+[Normal]Item: NguyÖt KhuyÕt M¹n §å H¹ng Liªn(0,1,5809,1,4,10), unbind = 0, bind = 30000
+[Normal]Item: Siªu Quang(0,1,4365,13,5,10), unbind = 0, 

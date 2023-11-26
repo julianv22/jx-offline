@@ -1,0 +1,10 @@
+[Normal]Item: Anh Hµo B∏ Kh› Hπng Li™n(0,1,8726,1,1,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B∏ Kh› Qu∏n(0,1,8727,4,3,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B∏ Kh› Ng˘ Qu©n Chÿ Hoµn(0,1,8728,0,4,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B∏ Kh› ThÛc Uy”n(0,1,8729,1,0,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B∏ Kh› Y™u ßÌi(0,1,8730,0,2,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B∏ Kh› Gi∏p Y(0,1,8731,4,1,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B∏ Kh› Thu…n(0,1,8732,8,3,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B∏ Kh› Ngoa(0,1,8733,0,4,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B∏ Kh› Y™u TrÙy(0,1,8734,1,0,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B∏ Kh› Tr n S¨n Chÿ Hoµn(0,1,8735,0,2,10), unbind = 0, bind = 60000

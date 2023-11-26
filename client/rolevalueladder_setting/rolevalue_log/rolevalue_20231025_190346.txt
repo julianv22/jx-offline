@@ -1,0 +1,95 @@
+[Normal]Item: Anh Hµo B¸ KhÝ TrÊn S¬n ChØ Hoµn(0,1,8735,0,2,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B¸ KhÝ Yªu Trôy(0,1,8734,1,0,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B¸ KhÝ Ngoa(0,1,8733,0,4,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B¸ KhÝ ThuÉn(0,1,8732,8,3,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B¸ KhÝ Gi¸p Y(0,1,8731,4,1,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B¸ KhÝ Yªu §íi(0,1,8730,0,2,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B¸ KhÝ Thóc UyÓn(0,1,8729,1,0,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B¸ KhÝ Ngù Qu©n ChØ Hoµn(0,1,8728,0,4,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B¸ KhÝ Qu¸n(0,1,8727,4,3,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B¸ KhÝ H¹ng Liªn(0,1,8726,1,1,10), unbind = 0, bind = 60000
+[Normal]Item: Phôc Ma Tö Kim C«n(0,1,5,2,0,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma HuyÒn Hoµng Cµ Sa(0,1,6,0,4,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma ¤ Kim NhuyÔn §iÒu(0,1,7,0,3,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma PhËt T©m NhuyÔn KhÊu(0,1,8,1,1,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma Phæ §é T¨ng hµi(0,1,9,0,2,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Méng Long Tö Kim B¸t Nh· Giíi(0,1,768,0,0,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Phôc Ma V« L­îng Kim Cang UyÓn(0,1,770,1,1,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Tø Kh«ng §¹t Ma T¨ng Hµi(0,1,775,1,2,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Méng Long Tö Kim B¸t Nh· Giíi(0,1,768,0,0,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Méng Long Tö Kim B¸t Nh· Giíi(0,1,768,0,0,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Méng Long Tö Kim B¸t Nh· Giíi(0,1,768,0,0,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Méng Long Tö Kim B¸t Nh· Giíi(0,1,768,0,0,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Méng Long Tö Kim B¸t Nh· Giíi(0,1,768,0,0,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Méng Long Tö Kim B¸t Nh· Giíi(0,1,768,0,0,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Méng Long Tö Kim B¸t Nh· Giíi(0,1,768,0,0,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Méng Long Tö Kim B¸t Nh· Giíi(0,1,768,0,0,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Méng Long Tö Kim B¸t Nh· Giíi(0,1,768,0,0,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Méng Long Tö Kim B¸t Nh· Giíi(0,1,768,0,0,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Méng Long Tö Kim B¸t Nh· Giíi(0,1,768,0,0,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma Tö Kim C«n(0,1,5,2,0,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma Tö Kim C«n(0,1,5,2,0,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma Tö Kim C«n(0,1,5,2,0,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma Tö Kim C«n(0,1,5,2,0,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma Tö Kim C«n(0,1,5,2,0,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma Tö Kim C«n(0,1,5,2,0,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma Tö Kim C«n(0,1,5,2,0,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma Tö Kim C«n(0,1,5,2,0,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma Tö Kim C«n(0,1,5,2,0,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma Tö Kim C«n(0,1,5,2,0,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma Tö Kim C«n(0,1,5,2,0,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma HuyÒn Hoµng Cµ Sa(0,1,6,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma HuyÒn Hoµng Cµ Sa(0,1,6,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma HuyÒn Hoµng Cµ Sa(0,1,6,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma HuyÒn Hoµng Cµ Sa(0,1,6,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma HuyÒn Hoµng Cµ Sa(0,1,6,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma HuyÒn Hoµng Cµ Sa(0,1,6,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma HuyÒn Hoµng Cµ Sa(0,1,6,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma HuyÒn Hoµng Cµ Sa(0,1,6,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma HuyÒn Hoµng Cµ Sa(0,1,6,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma HuyÒn Hoµng Cµ Sa(0,1,6,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma HuyÒn Hoµng Cµ Sa(0,1,6,0,1,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Tø Kh«ng §¹t Ma T¨ng Hµi(0,1,775,1,2,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Tø Kh«ng §¹t Ma T¨ng Hµi(0,1,775,1,2,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Tø Kh«ng §¹t Ma T¨ng Hµi(0,1,775,1,2,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Tø Kh«ng §¹t Ma T¨ng Hµi(0,1,775,1,2,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Tø Kh«ng §¹t Ma T¨ng Hµi(0,1,775,1,2,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Tø Kh«ng §¹t Ma T¨ng Hµi(0,1,775,1,2,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Tø Kh«ng §¹t Ma T¨ng Hµi(0,1,775,1,2,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Tø Kh«ng §¹t Ma T¨ng Hµi(0,1,775,1,2,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Tø Kh«ng §¹t Ma T¨ng Hµi(0,1,775,1,2,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Tø Kh«ng §¹t Ma T¨ng Hµi(0,1,775,1,2,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Tø Kh«ng §¹t Ma T¨ng Hµi(0,1,775,1,2,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma Phæ §é T¨ng hµi(0,1,9,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma Phæ §é T¨ng hµi(0,1,9,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma Phæ §é T¨ng hµi(0,1,9,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma Phæ §é T¨ng hµi(0,1,9,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma Phæ §é T¨ng hµi(0,1,9,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma Phæ §é T¨ng hµi(0,1,9,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma Phæ §é T¨ng hµi(0,1,9,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma Phæ §é T¨ng hµi(0,1,9,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma Phæ §é T¨ng hµi(0,1,9,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma Phæ §é T¨ng hµi(0,1,9,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma Phæ §é T¨ng hµi(0,1,9,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma PhËt T©m NhuyÔn KhÊu(0,1,8,1,1,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma PhËt T©m NhuyÔn KhÊu(0,1,8,1,1,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma PhËt T©m NhuyÔn KhÊu(0,1,8,1,1,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma PhËt T©m NhuyÔn KhÊu(0,1,8,1,1,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma PhËt T©m NhuyÔn KhÊu(0,1,8,1,1,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma PhËt T©m NhuyÔn KhÊu(0,1,8,1,1,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma PhËt T©m NhuyÔn KhÊu(0,1,8,1,1,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma PhËt T©m NhuyÔn KhÊu(0,1,8,1,1,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma PhËt T©m NhuyÔn KhÊu(0,1,8,1,1,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma PhËt T©m NhuyÔn KhÊu(0,1,8,1,1,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma PhËt T©m NhuyÔn KhÊu(0,1,8,1,1,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Phôc Ma V« L­îng Kim Cang UyÓn(0,1,770,1,1,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Phôc Ma V« L­îng Kim Cang UyÓn(0,1,770,1,1,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Phôc Ma V« L­îng Kim Cang UyÓn(0,1,770,1,1,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Phôc Ma V« L­îng Kim Cang UyÓn(0,1,770,1,1,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Phôc Ma V« L­îng Kim Cang UyÓn(0,1,770,1,1,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Phôc Ma V« L­îng Kim Cang UyÓn(0,1,770,1,1,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Phôc Ma V« L­îng Kim Cang UyÓn(0,1,770,1,1,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Phôc Ma V« L­îng Kim Cang UyÓn(0,1,770,1,1,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Phôc Ma V« L­îng Kim Cang UyÓn(0,1,770,1,1,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Phôc Ma V« L­îng Kim Cang UyÓn(0,1,770,1,1,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ th

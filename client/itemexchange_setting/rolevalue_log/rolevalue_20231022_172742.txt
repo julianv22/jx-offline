@@ -1,0 +1,4 @@
+[Normal]Item: ChiÕu D¹ Ngäc S­ Tö (0,0,10,5,0,5), unbind = 0, bind = 0
+[Normal]Item: Siªu Quang(0,0,10,13,0,1), unbind = 0, bind = 0
+[Normal]Item: Siªu Quang(0,0,10,13,0,1), unbind = 0, bind = 0
+[Normal]Item: XÝch Long C©u(0,0,10,9,0,1), unbind = 0, bind = 0

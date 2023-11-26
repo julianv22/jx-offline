@@ -1,0 +1,16 @@
+[Normal]Item: Thi™u H·a C´n (0,0,0,2,0,1), unbind = 0, bind = 0
+[Enchasable]Item: (0,2,0,0,0,10),º”…À∫¶«øªØ=(8,66),º”…À∫¶«øªØ=(11,106),º”…À∫¶«øªØ=(24,199),º”…À∫¶«øªØ=(39,266),º”…À∫¶«øªØ=(50,399),º”…À∫¶«øªØ=(55,665), unbind = 0, bind = 1701
+[Normal]Item: CÊn Ch©u B∂o Æao(0,0,0,1,4,7), unbind = 0, bind = 0
+[Normal]Item: CÊn Ch©u B∂o Æao(0,0,0,1,4,7), unbind = 0, bind = 0
+[Normal]Item: CÊn Ch©u B∂o Æao(0,0,0,1,4,7), unbind = 0, bind = 0
+[Normal]Item: H∂i Lam B∂o Thπch GiÌi Chÿ(0,0,3,0,4,7), unbind = 0, bind = 0
+[Normal]Item: CÊn Ch©u B∂o Æao(0,0,0,1,4,7), unbind = 0, bind = 0
+[Normal]Item: ßπi Phong ßao(0,0,0,1,0,10), unbind = 0, bind = 0
+[Normal]Item: ßπi Phong ßao(0,0,0,1,0,10), unbind = 0, bind = 0
+[Enchasable]Item: (0,2,0,1,0,10), unbind = 0, bind = 0
+[Enchasable]Item: (0,2,0,1,0,10), unbind = 0, bind = 0
+[Enchasable]Item: (0,2,0,1,1,10), unbind = 0, bind = 0
+[Enchasable]Item: (0,2,0,1,2,10), unbind = 0, bind = 0
+[Enchasable]Item: (0,2,0,1,3,10), unbind = 0, bind = 0
+[Enchasable]Item: (0,2,0,1,4,10), unbind = 0, bind = 0
+[Normal]Item: To∏n ß«u chÔy(0,0,0,4,0,1), unbind = 0, bind = 0

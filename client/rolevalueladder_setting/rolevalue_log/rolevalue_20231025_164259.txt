@@ -1,0 +1,333 @@
+[Normal]Item: Anh Hµo B¸ KhÝ TrÊn S¬n ChØ Hoµn(0,1,8735,0,2,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B¸ KhÝ Yªu Trôy(0,1,8734,1,0,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B¸ KhÝ Ngoa(0,1,8733,0,4,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B¸ KhÝ ThuÉn(0,1,8732,8,3,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B¸ KhÝ Gi¸p Y(0,1,8731,4,1,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B¸ KhÝ Yªu §íi(0,1,8730,0,2,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B¸ KhÝ Thóc UyÓn(0,1,8729,1,0,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B¸ KhÝ Ngù Qu©n ChØ Hoµn(0,1,8728,0,4,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B¸ KhÝ Qu¸n(0,1,8727,4,3,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B¸ KhÝ H¹ng Liªn(0,1,8726,1,1,10), unbind = 0, bind = 60000
+[Normal]Item: Méng Long ChÝnh Hång T¨ng M·o(0,1,0,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Méng Long Kim Ti ChÝnh Hång Cµ Sa(0,1,1,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Méng Long HuyÒn Ti Ph¸t ®¸i(0,1,2,0,0,10), unbind = 0, bind = 50
+[Normal]Item: Méng Long PhËt Ph¸p HuyÒn Béi(0,1,3,1,4,10), unbind = 0, bind = 50
+[Normal]Item: Méng Long §¹t Ma T¨ng hµi(0,1,4,0,0,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma Tö Kim C«n(0,1,5,2,0,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma HuyÒn Hoµng Cµ Sa(0,1,6,1,1,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma ¤ Kim NhuyÔn §iÒu(0,1,7,0,3,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma PhËt T©m NhuyÔn KhÊu(0,1,8,1,1,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma Phæ §é T¨ng hµi(0,1,9,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Tø Kh«ng Gi¸ng Ma Giíi ®ao(0,1,10,1,0,10), unbind = 0, bind = 50
+[Normal]Item: Tø Kh«ng Tö Kim Cµ Sa(0,1,11,1,2,10), unbind = 0, bind = 50
+[Normal]Item: Tø Kh«ng Hé ph¸p Yªu ®¸i(0,1,12,0,3,10), unbind = 0, bind = 50
+[Normal]Item: Tø Kh«ng NhuyÔn B× Hé UyÓn(0,1,13,1,1,10), unbind = 0, bind = 50
+[Normal]Item: Tø Kh«ng Giíi LuËt Ph¸p giíi(0,1,14,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Tø Kh«ng Giíi LuËt Ph¸p giíi(0,1,14,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Tø Kh«ng NhuyÔn B× Hé UyÓn(0,1,13,1,1,10), unbind = 0, bind = 50
+[Normal]Item: Tø Kh«ng Hé ph¸p Yªu ®¸i(0,1,12,0,3,10), unbind = 0, bind = 50
+[Normal]Item: Tø Kh«ng Tö Kim Cµ Sa(0,1,11,1,2,10), unbind = 0, bind = 50
+[Normal]Item: Tø Kh«ng Gi¸ng Ma Giíi ®ao(0,1,10,1,0,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma Phæ §é T¨ng hµi(0,1,9,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma PhËt T©m NhuyÔn KhÊu(0,1,8,1,1,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma ¤ Kim NhuyÔn §iÒu(0,1,7,0,3,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma HuyÒn Hoµng Cµ Sa(0,1,6,1,1,10), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma Tö Kim C«n(0,1,5,2,0,10), unbind = 0, bind = 50
+[Normal]Item: Méng Long §¹t Ma T¨ng hµi(0,1,4,0,0,10), unbind = 0, bind = 50
+[Normal]Item: Méng Long PhËt Ph¸p HuyÒn Béi(0,1,3,1,4,10), unbind = 0, bind = 50
+[Normal]Item: Méng Long HuyÒn Ti Ph¸t ®¸i(0,1,2,0,0,10), unbind = 0, bind = 50
+[Normal]Item: Méng Long Kim Ti ChÝnh Hång Cµ Sa(0,1,1,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Méng Long ChÝnh Hång T¨ng M·o(0,1,0,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Anh Hµo B¸ KhÝ H¹ng Liªn(0,1,8726,1,1,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B¸ KhÝ Qu¸n(0,1,8727,4,3,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B¸ KhÝ Ngù Qu©n ChØ Hoµn(0,1,8728,0,4,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B¸ KhÝ Thóc UyÓn(0,1,8729,1,0,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B¸ KhÝ Yªu §íi(0,1,8730,0,2,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B¸ KhÝ Gi¸p Y(0,1,8731,4,1,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B¸ KhÝ ThuÉn(0,1,8732,8,3,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B¸ KhÝ Ngoa(0,1,8733,0,4,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B¸ KhÝ Yªu Trôy(0,1,8734,1,0,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo B¸ KhÝ TrÊn S¬n ChØ Hoµn(0,1,8735,0,2,10), unbind = 0, bind = 60000
+[Normal]Item: Tø Kh«ng B¶o Th¹ch H¹ng Khuyªn(0,1,541,1,4,10), unbind = 0, bind = 50
+[Normal]Item: Tø Kh«ng B¶o ThiÕt Kh«i(0,1,542,0,0,10), unbind = 0, bind = 50
+[Normal]Item: Tø Kh«ng B¶o TrÊn Cµ Sa(0,1,543,0,4,10), unbind = 0, bind = 50
+[Normal]Item: Tø Kh«ng B¶o Th¹ch Ngäc Béi(0,1,544,1,1,10), unbind = 0, bind = 50
+[Normal]Item: Tø Kh«ng Chi Giíi(0,1,545,0,3,10), unbind = 0, bind = 50
+[Normal]Item: Ngù Long L­îng Ng©n B¶o ®ao(0,1,25,1,2,10), unbind = 0, bind = 50
+[Normal]Item: Ngù Long ChiÕn ThÇn Phi Qu¶i gi¸p(0,1,26,1,0,10), unbind = 0, bind = 50
+[Normal]Item: Ngù Long Thiªn M«n Thóc Yªu hoµn(0,1,27,1,4,10), unbind = 0, bind = 50
+[Normal]Item: Ngù Long TÊn Phong Hé yÓn(0,1,28,4,2,10), unbind = 0, bind = 50
+[Normal]Item: Ngù Long TuyÖt MÖnh ChØ hoµn(0,1,29,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Ngù Long Hoµng Thiªn ChiÕn Ngoa(0,1,556,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Ngù Long Thanh Tr­êng Sam(0,1,557,4,0,10), unbind = 0, bind = 50
+[Normal]Item: Ngù Long B¶o Th¹ch Ngäc Béi(0,1,558,1,3,10), unbind = 0, bind = 50
+[Normal]Item: Ngù Long Thiªn M«n Hé UyÓn(0,1,559,1,3,10), unbind = 0, bind = 50
+[Normal]Item: Ngù Long Thiªn Ngäc ChØ Hoµn(0,1,560,0,4,10), unbind = 0, bind = 50
+[Normal]Item: KÕ NghiÖp B«n L«i Toµn Long th­¬ng(0,1,20,3,2,10), unbind = 0, bind = 50
+[Normal]Item: KÕ NghiÖp HuyÒn Vò Hoµng Kim Kh¶i(0,1,21,4,0,10), unbind = 0, bind = 50
+[Normal]Item: KÕ NghiÖp B¹ch Hæ V« Song khÊu(0,1,22,1,4,10), unbind = 0, bind = 50
+[Normal]Item: KÕ NghiÖp HáaV©n Kú L©n Thñ (0,1,23,1,3,10), unbind = 0, bind = 50
+[Normal]Item: KÕ NghiÖp Chu T­íc L¨ng V©n Ngoa(0,1,24,0,1,10), unbind = 0, bind = 50
+[Normal]Item: KÕ NghiÖp TrÊn Quèc Hé Th©n Phï(0,1,546,1,0,10), unbind = 0, bind = 50
+[Normal]Item: KÕ NghiÖp B¶o Gia Ph¸t Qu¸n(0,1,547,4,2,10), unbind = 0, bind = 50
+[Normal]Item: KÕ NghiÖp B¶o Th¹ch Ngäc Béi(0,1,548,1,3,10), unbind = 0, bind = 50
+[Normal]Item: KÕ NghiÖp §Õ V­¬ng Giíi ChØ(0,1,549,0,1,10), unbind = 0, bind = 50
+[Normal]Item: KÕ NghiÖp §Õ V­¬ng ChØ Hoµn(0,1,550,0,4,10), unbind = 0, bind = 50
+[Normal]Item: H¸m Thiªn Kim Hoµn §¹i Nh·n ThÇn Chïy(0,1,15,4,2,10), unbind = 0, bind = 50
+[Normal]Item: H¸m Thiªn Vò ThÇn T­¬ng Kim Gi¸p(0,1,16,4,0,10), unbind = 0, bind = 50
+[Normal]Item: H¸m Thiªn Uy Vò Thóc yªu ®¸i(0,1,17,1,4,10), unbind = 0, bind = 50
+[Normal]Item: H¸m Thiªn Hæ ®Çu KhÈn Thóc UyÓn(0,1,18,1,3,10), unbind = 0, bind = 50
+[Normal]Item: H¸m Thiªn Thõa Long ChiÕn Ngoa(0,1,19,1,1,10), unbind = 0, bind = 50
+[Normal]Item: H¸m Thiªn Kim Hoµn §¹i Nh·n ThÇn Chïy(0,1,15,4,2,10), unbind = 0, bind = 50
+[Normal]Item: H¸m Thiªn Vò ThÇn T­¬ng Kim Gi¸p(0,1,16,4,0,10), unbind = 0, bind = 50
+[Normal]Item: H¸m Thiªn Uy Vò Thóc yªu ®¸i(0,1,17,1,4,10), unbind = 0, bind = 50
+[Normal]Item: H¸m Thiªn Hæ ®Çu KhÈn Thóc UyÓn(0,1,18,1,3,10), unbind = 0, bind = 50
+[Normal]Item: H¸m Thiªn Thõa Long ChiÕn Ngoa(0,1,19,1,1,10), unbind = 0, bind = 50
+[Normal]Item: H¸m Thiªn TrÊn Quèc Hé Th©n Phï(0,1,551,1,0,10), unbind = 0, bind = 50
+[Normal]Item: H¸m Thiªn B¶o Gia Ph¸t Qu¸n(0,1,552,4,2,10), unbind = 0, bind = 50
+[Normal]Item: H¸m Thiªn B¶o Th¹ch Ngäc Béi(0,1,553,1,3,10), unbind = 0, bind = 50
+[Normal]Item: H¸m Thiªn §Õ V­¬ng Giíi ChØ(0,1,554,0,1,10), unbind = 0, bind = 50
+[Normal]Item: H¸m Thiªn §Õ V­¬ng ChØ Hoµn(0,1,555,0,4,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Ngù Long TÊn Phong Ph¸t C¬(0,1,792,4,2,10), unbind = 0, bind = 50
+[Normal]Item: §Þa Ph¸ch Ngò hµnh Liªn Hoµn Qu¸n(0,1,85,3,4,10), unbind = 0, bind = 50
+[Normal]Item: §Þa Ph¸ch H¾c DiÖm Xung Thiªn Liªn(0,1,86,1,3,10), unbind = 0, bind = 50
+[Normal]Item: §Þa Ph¸ch TÝch LÞch L«i Háa Giíi(0,1,87,0,1,10), unbind = 0, bind = 50
+[Normal]Item: §Þa Ph¸ch KhÊu T©m tr¹c(0,1,88,1,2,10), unbind = 0, bind = 50
+[Normal]Item: §Þa Ph¸ch §Þa Hµnh Thiªn Lý Ngoa(0,1,89,0,0,10), unbind = 0, bind = 50
+[Normal]Item: Thiªn Quang Hoa Vò M¹n Thiªn(0,1,75,2,0,10), unbind = 0, bind = 50
+[Normal]Item: Thiªn Quang §Þnh T©m Ng­ng ThÇn Phï (0,1,76,1,4,10), unbind = 0, bind = 50
+[Normal]Item: Thiªn Quang S©m La Thóc §¸i(0,1,77,0,3,10), unbind = 0, bind = 50
+[Normal]Item: Thiªn Quang Song B¹o Hµn ThiÕt Tr¹c(0,1,78,1,2,10), unbind = 0, bind = 50
+[Normal]Item: Thiªn Quang Thóc Thiªn Ph­îc §Þa Hoµn(0,1,79,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Thiªn Quang Song Long §Çu Hoµn(0,1,596,2,0,10), unbind = 0, bind = 50
+[Normal]Item: Thiªn Quang Uy Vò Gi¸p Y(0,1,597,3,4,10), unbind = 0, bind = 50
+[Normal]Item: Thiªn Quang Long Tranh Hé UyÓn(0,1,598,1,1,10), unbind = 0, bind = 50
+[Normal]Item: Thiªn Quang B¨ng Háa béi(0,1,599,1,1,10), unbind = 0, bind = 50
+[Normal]Item: Thiªn Quang Hoa Vò ChØ Hoµn(0,1,600,0,3,10), unbind = 0, bind = 50
+[Normal]Item: S©m Hoang Phi Tinh §o¹t Hån(0,1,80,0,0,10), unbind = 0, bind = 50
+[Normal]Item: S©m Hoang KimTiÒn Liªn Hoµn Gi¸p(0,1,81,6,4,10), unbind = 0, bind = 50
+[Normal]Item: S©m Hoang Hån Gi¶o Yªu Thóc(0,1,82,0,3,10), unbind = 0, bind = 50
+[Normal]Item: S©m Hoang HuyÒn ThiÕt T­¬ng Ngäc Béi(0,1,83,1,1,10), unbind = 0, bind = 50
+[Normal]Item: S©m Hoang Tinh VÉn Phi Lý (0,1,84,1,2,10), unbind = 0, bind = 50
+[Normal]Item: S©m Hoang Hé Th©n Phï(0,1,601,1,4,10), unbind = 0, bind = 50
+[Normal]Item: S©m Hoang Long HuyÕt §Çu Hoµn(0,1,602,2,0,10), unbind = 0, bind = 50
+[Normal]Item: S©m Hoang Cö Liªn Hé UyÓn(0,1,603,1,1,10), unbind = 0, bind = 50
+[Normal]Item: S©m Hoang HuyÒn Kim Th­îng Giíi(0,1,604,0,2,10), unbind = 0, bind = 50
+[Normal]Item: S©m Hoang HuyÒn Kim H¹ Giíi(0,1,605,0,3,10), unbind = 0, bind = 50
+[Normal]Item: B¨ng Hµn §¬n ChØ Phi §ao(0,1,70,1,0,10), unbind = 0, bind = 50
+[Normal]Item: B¨ng Hµn HuyÒn Y Thóc Gi¸p(0,1,71,3,4,10), unbind = 0, bind = 50
+[Normal]Item: B¨ng Hµn T©m TiÔn Yªu KhÊu(0,1,72,0,3,10), unbind = 0, bind = 50
+[Normal]Item: B¨ng Hµn HuyÒn Thiªn B¨ng Háa Béi(0,1,73,1,1,10), unbind = 0, bind = 50
+[Normal]Item: B¨ng Hµn NguyÖt ¶nh Ngoa(0,1,74,1,2,10), unbind = 0, bind = 50
+[Normal]Item: B¨ng Hµn Hé Th©n Phï(0,1,591,1,4,10), unbind = 0, bind = 50
+[Normal]Item: B¨ng Hµn HuyÒn Quang §Çu Hoµn(0,1,592,2,0,10), unbind = 0, bind = 50
+[Normal]Item: B¨ng Hµn Long Tranh Hé UyÒn(0,1,593,1,1,10), unbind = 0, bind = 50
+[Normal]Item: B¨ng Hµn Long T­¬ng Th­îng Giíi(0,1,594,0,2,10), unbind = 0, bind = 50
+[Normal]Item: B¨ng Hµn Long T­¬ng H¹ Giíi(0,1,595,0,3,10), unbind = 0, bind = 50
+[Normal]Item: B¨ng Hµn Hé Th©n Phï(0,1,591,1,4,10), unbind = 0, bind = 50
+[Normal]Item: B¨ng Hµn HuyÒn Quang §Çu Hoµn(0,1,592,2,0,10), unbind = 0, bind = 50
+[Normal]Item: B¨ng Hµn Long Tranh Hé UyÒn(0,1,593,1,1,10), unbind = 0, bind = 50
+[Normal]Item: B¨ng Hµn Long T­¬ng Th­îng Giíi(0,1,594,0,2,10), unbind = 0, bind = 50
+[Normal]Item: B¨ng Hµn Long T­¬ng H¹ Giíi(0,1,595,0,3,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Thiªn Quang §Þa Hµnh Thiªn Lý  Ngoa(0,1,842,1,2,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] §Þa Ph¸ch Phong Hµn Thóc Yªu(0,1,853,0,0,10), unbind = 0, bind = 50
+[Normal]Item: Minh ¶o Tµ S¸t §éc NhËn(0,1,60,1,2,10), unbind = 0, bind = 50
+[Normal]Item: Minh ¶o U §éc ¸m Y(0,1,61,16,0,10), unbind = 0, bind = 50
+[Normal]Item: Minh ¶o §éc YÕt ChØ Hoµn(0,1,62,0,4,10), unbind = 0, bind = 50
+[Normal]Item: Minh ¶o Hñ Cèt Hé uyÓn(0,1,63,1,3,10), unbind = 0, bind = 50
+[Normal]Item: Minh ¶o Song Hoµn Xµ Hµi(0,1,64,1,4,10), unbind = 0, bind = 50
+[Normal]Item: Minh ¶o Tµ §éc C¶nh Phï(0,1,586,1,0,10), unbind = 0, bind = 50
+[Normal]Item: Minh ¶o Xµ Hoµn NhuyÔn LÝ(0,1,587,1,1,10), unbind = 0, bind = 50
+[Normal]Item: Minh ¶o Kim Xµ Thñ M·o(0,1,588,2,2,10), unbind = 0, bind = 50
+[Normal]Item: Minh ¶o Long HuyÕt Béi(0,1,589,1,3,10), unbind = 0, bind = 50
+[Normal]Item: Minh ¶o §o¹n Cèt Giíi ChØ(0,1,590,0,1,10), unbind = 0, bind = 50
+[Normal]Item: U Lung Kim Xµ Ph¸t ®¸i(0,1,55,2,1,10), unbind = 0, bind = 50
+[Normal]Item: U Lung XÝch YÕt MËt trang(0,1,56,16,2,10), unbind = 0, bind = 50
+[Normal]Item: U Lung Thanh Ng« TriÒn yªu(0,1,57,1,0,10), unbind = 0, bind = 50
+[Normal]Item: U Lung Ng©n ThÒm Hé UyÓn(0,1,58,1,4,10), unbind = 0, bind = 50
+[Normal]Item: U Lung MÆc Thï NhuyÔn Lý (0,1,59,1,1,10), unbind = 0, bind = 50
+[Normal]Item: U Lung Kim C¶nh Phï(0,1,581,1,0,10), unbind = 0, bind = 50
+[Normal]Item: U Lung Thanh Long TriÒn Thñ(0,1,582,6,2,10), unbind = 0, bind = 50
+[Normal]Item: U Lung XÝch HuyÕt Béi(0,1,583,1,3,10), unbind = 0, bind = 50
+[Normal]Item: U Lung Th­îng Giíi(0,1,584,0,1,10), unbind = 0, bind = 50
+[Normal]Item: U Lung H¹ Giíi(0,1,585,0,4,10), unbind = 0, bind = 50
+[Normal]Item: Chó Ph­îc Ph¸ gi¸p ®Çu hoµn(0,1,65,2,4,10), unbind = 0, bind = 50
+[Normal]Item: Chó Ph­îc DiÖt L«i C¶nh Phï (0,1,66,1,3,10), unbind = 0, bind = 50
+[Normal]Item: Chó Ph­îc U ¶o ChØ Hoµn(0,1,67,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Chó Ph­îc Xuyªn T©m §éc UyÓn(0,1,68,1,2,10), unbind = 0, bind = 50
+[Normal]Item: Chó Ph­îc B¨ng Háa Thùc Cèt Ngoa(0,1,69,1,3,10), unbind = 0, bind = 50
+[Normal]Item: Chó Ph­îc Ph¸ gi¸p ®Çu hoµn(0,1,65,2,4,10), unbind = 0, bind = 50
+[Normal]Item: Chó Ph­îc DiÖt L«i C¶nh Phï (0,1,66,1,3,10), unbind = 0, bind = 50
+[Normal]Item: Chó Ph­îc U ¶o ChØ Hoµn(0,1,67,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Chó Ph­îc Xuyªn T©m §éc UyÓn(0,1,68,1,2,10), unbind = 0, bind = 50
+[Normal]Item: Chó Ph­îc B¨ng Háa Thùc Cèt Ngoa(0,1,69,1,3,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Minh Hoan Song Hoµn Xµ KhÊu(0,1,828,1,4,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Chó Phäc Trïng Cèt Ngäc Béi(0,1,833,1,3,10), unbind = 0, bind = 50
+[Normal]Item: V« Ma Ma Ni qu¸n(0,1,35,7,2,10), unbind = 0, bind = 50
+[Normal]Item: V« Ma Tö Kh©m Cµ Sa(0,1,36,1,4,10), unbind = 0, bind = 50
+[Normal]Item: V« Ma B¨ng Tinh ChØ Hoµn(0,1,37,0,4,10), unbind = 0, bind = 50
+[Normal]Item: V« Ma TÈy T­îng Ngäc KhÊu (0,1,38,0,1,10), unbind = 0, bind = 50
+[Normal]Item: V« Ma Hång Truy NhuyÔn Th¸p hµi(0,1,39,3,1,10), unbind = 0, bind = 50
+[Normal]Item: V« Ma Thanh T©m h­íng ThiÖn Ch©u(0,1,566,0,4,10), unbind = 0, bind = 50
+[Normal]Item: V« Ma B¨ng Hµn TriÒn Thñ(0,1,567,6,0,10), unbind = 0, bind = 50
+[Normal]Item: V« Ma Thanh Phong Cµ Sa(0,1,568,16,4,10), unbind = 0, bind = 50
+[Normal]Item: V« Ma CÇm VËn Hé UyÓn(0,1,569,0,1,10), unbind = 0, bind = 50
+[Normal]Item: V« Ma PhËt Quang ChØ Hoµn(0,1,570,0,2,10), unbind = 0, bind = 50
+[Normal]Item: V« Ma Thanh T©m h­íng ThiÖn Ch©u(0,1,566,0,4,10), unbind = 0, bind = 50
+[Normal]Item: V« Ma B¨ng Hµn TriÒn Thñ(0,1,567,6,0,10), unbind = 0, bind = 50
+[Normal]Item: V« Ma Thanh Phong Cµ Sa(0,1,568,16,4,10), unbind = 0, bind = 50
+[Normal]Item: V« Ma CÇm VËn Hé UyÓn(0,1,569,0,1,10), unbind = 0, bind = 50
+[Normal]Item: V« Ma PhËt Quang ChØ Hoµn(0,1,570,0,2,10), unbind = 0, bind = 50
+[Normal]Item: V« TrÇn Ngäc N÷ Tè T©m qu¸n(0,1,40,7,3,10), unbind = 0, bind = 50
+[Normal]Item: V« TrÇn Thanh T©m H­íng ThiÖn Ch©u(0,1,41,0,1,10), unbind = 0, bind = 50
+[Normal]Item: V« TrÇn Tõ Bi Ngäc Ban ChØ (0,1,42,0,2,10), unbind = 0, bind = 50
+[Normal]Item: V« TrÇn PhËt T©m Tõ H÷u Yªu Phèi(0,1,43,0,1,10), unbind = 0, bind = 50
+[Normal]Item: V« TrÇn PhËt Quang ChØ Hoµn(0,1,44,0,1,10), unbind = 0, bind = 50
+[Normal]Item: V« Gian û Thiªn KiÕm(0,1,30,0,0,10), unbind = 0, bind = 50
+[Normal]Item: V« Gian Thanh Phong Truy Y(0,1,31,3,2,10), unbind = 0, bind = 50
+[Normal]Item: V« Gian PhÊt V©n Ti ®¸i(0,1,32,0,3,10), unbind = 0, bind = 50
+[Normal]Item: V« Gian CÇm VËn Hé UyÓn(0,1,33,0,1,10), unbind = 0, bind = 50
+[Normal]Item: V« Gian B¹ch Ngäc Bµn ChØ (0,1,34,0,2,10), unbind = 0, bind = 50
+[Normal]Item: V« Gian B¹ch Ngäc H¹ng Liªn(0,1,561,0,1,10), unbind = 0, bind = 50
+[Normal]Item: V« Gian Ngäc N÷ Qu¸n(0,1,562,7,1,10), unbind = 0, bind = 50
+[Normal]Item: V« Gian Tö Kh©m Cµ Sa(0,1,563,16,4,10), unbind = 0, bind = 50
+[Normal]Item: V« Gian TÈy L­îng Ngäc KhÊu(0,1,564,0,1,10), unbind = 0, bind = 50
+[Normal]Item: V« Gian PhËt Quang ChØ Hoµn(0,1,565,0,3,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] V« Gian Thanh Phong NhuyÔn KÞch(0,1,795,3,2,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] V« YÓm Thu Thñy L­u Quang §¸i(0,1,800,1,4,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] V« TrÇn TÞnh ¶nh L­u T«(0,1,807,0,1,10), unbind = 0, bind = 50
+[Normal]Item: BÝch H¶i Uyªn ¦¬ng Liªn Hoµn ®ao(0,1,50,5,2,10), unbind = 0, bind = 50
+[Normal]Item: BÝch H¶i Hoµn Ch©u Vò Liªn(0,1,51,13,2,10), unbind = 0, bind = 50
+[Normal]Item: BÝch H¶i Hång Linh Kim Ti ®¸i(0,1,52,0,4,10), unbind = 0, bind = 50
+[Normal]Item: BÝch H¶i Hång L¨ng Ba(0,1,53,0,0,10), unbind = 0, bind = 50
+[Normal]Item: BÝch H¶i Khiªn TÕ ChØ hoµn(0,1,54,0,1,10), unbind = 0, bind = 50
+[Normal]Item: BÝch H¶i Hoµn Ch©u Vò Liªn(0,1,576,0,0,10), unbind = 0, bind = 50
+[Normal]Item: BÝch H¶i V« ¶nh Phông Ngoa(0,1,577,3,1,10), unbind = 0, bind = 50
+[Normal]Item: BÝch H¶i Kim Phông Gi¸p(0,1,578,16,0,10), unbind = 0, bind = 50
+[Normal]Item: BÝch H¶i B¨ng Tung Hé UyÓn(0,1,579,0,3,10), unbind = 0, bind = 50
+[Normal]Item: BÝch H¶i CÈm Th¹ch ChØ Hoµn(0,1,580,0,4,10), unbind = 0, bind = 50
+[Normal]Item: Tª Hoµng Phông Nghi ®ao(0,1,45,1,0,10), unbind = 0, bind = 50
+[Normal]Item: Tª Hoµng TuÖ T©m Khinh Sa Y(0,1,46,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Tª Hoµng Phong TuyÕt B¹ch V©n Thóc §¸i(0,1,47,0,3,10), unbind = 0, bind = 50
+[Normal]Item: Tª Hoµng B¨ng Tung CÈm uyÓn(0,1,48,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Tª Hoµng Thóy Ngäc ChØ Hoµn(0,1,49,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Tª Hoµng B¶o Th¹ch H¹ng Liªn(0,1,571,0,4,10), unbind = 0, bind = 50
+[Normal]Item: Tª hoµng V« ¶nh Phông Ngoa(0,1,572,3,2,10), unbind = 0, bind = 50
+[Normal]Item: Tª Hoµng Hoµn Ch©u Thanh C©n(0,1,573,13,0,10), unbind = 0, bind = 50
+[Normal]Item: Tª Hoµng Kim Phông Gi¸p(0,1,574,16,4,10), unbind = 0, bind = 50
+[Normal]Item: Tª hoµng B¨ng Th¹ch ChØ Hoµn(0,1,575,0,3,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Thª Hoµng HuÖ T©m Tr­êng Sinh KhÊu(0,1,810,0,1,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] BÝch H¶i Hoµn Ch©u Tuyªn Thanh C©n(0,1,815,13,2,10), unbind = 0, bind = 50
+[Normal]Item: §ång Cõu Phi Long §Çu hoµn(0,1,90,1,0,10), unbind = 0, bind = 50
+[Normal]Item: §ång Cõu Gi¸ng Long C¸i Y(0,1,91,5,4,10), unbind = 0, bind = 50
+[Normal]Item: §ång Cõu TiÒm Long Yªu §¸i(0,1,92,0,2,10), unbind = 0, bind = 50
+[Normal]Item: §ång Cõu Kh¸ng Long Hé UyÓn(0,1,93,1,0,10), unbind = 0, bind = 50
+[Normal]Item: §ång Cõu KiÕn Long Ban ChØ (0,1,94,0,4,10), unbind = 0, bind = 50
+[Normal]Item: §ång Cõu Tinh Th¹ch Th©n Phï(0,1,606,1,1,10), unbind = 0, bind = 50
+[Normal]Item: §ång Cõu V©n Long TriÒn Thñ(0,1,607,6,3,10), unbind = 0, bind = 50
+[Normal]Item: §ång Cõu B¹ch Long Ngoa(0,1,608,0,4,10), unbind = 0, bind = 50
+[Normal]Item: §ång Cõu ¤ Sa Ph¸t Qu¸n(0,1,609,3,3,10), unbind = 0, bind = 50
+[Normal]Item: §ång Cõu TiÒm Long ChØ Hoµn(0,1,610,0,2,10), unbind = 0, bind = 50
+[Normal]Item: §Þch Kh¸i Lôc Ngäc Tr­îng(0,1,95,2,2,10), unbind = 0, bind = 50
+[Normal]Item: §Þch Kh¸i Cöu §¹i C¸i Y(0,1,96,5,0,10), unbind = 0, bind = 50
+[Normal]Item: §Þch Kh¸i TriÒn M·ng yªu ®¸i(0,1,97,0,4,10), unbind = 0, bind = 50
+[Normal]Item: §Þch Kh¸i CÈu TÝch B× Hé uyÓn(0,1,98,1,3,10), unbind = 0, bind = 50
+[Normal]Item: §Þch Kh¸i Th¶o Gian Th¹ch giíi(0,1,99,0,1,10), unbind = 0, bind = 50
+[Normal]Item: §Þch Kh¸i B¶o Ngäc Th©n Phï(0,1,611,1,0,10), unbind = 0, bind = 50
+[Normal]Item: §Þch Kh¸i Thiªn TÇm Ngoa(0,1,612,0,1,10), unbind = 0, bind = 50
+[Normal]Item: §Þch Kh¸i B¹ch Ngäc Ph¸t Qu¸n(0,1,613,3,2,10), unbind = 0, bind = 50
+[Normal]Item: §Þch Kh¸i Thiªn Long Ngäc Béi(0,1,614,1,3,10), unbind = 0, bind = 50
+[Normal]Item: §Þch Kh¸i B¶o Ngäc Giíi ChØ(0,1,615,0,4,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] §ång Cõu Ngù Long Ngäc Béi(0,1,854,1,0,10), unbind = 0, bind = 50
+[Normal]Item: Ma ThÞ LiÖt DiÖm Qu¸n MiÖn(0,1,110,2,3,10), unbind = 0, bind = 50
+[Normal]Item: Ma ThÞ LÖ Ma PhÖ T©m Liªn(0,1,111,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Ma ThÞ NghiÖp Háa U Minh Giíi(0,1,112,0,2,10), unbind = 0, bind = 50
+[Normal]Item: Ma ThÞ HuyÕt Ngäc ThÊt S¸t Béi(0,1,113,1,0,10), unbind = 0, bind = 50
+[Normal]Item: Ma ThÞ s¬n  H¶i Phi Hång Lý (0,1,114,0,4,10), unbind = 0, bind = 50
+[Normal]Item: Ma S¸t Quû Cèc U Minh Th­¬ng(0,1,100,3,2,10), unbind = 0, bind = 50
+[Normal]Item: Ma S¸t Tµn D­¬ng ¶nh HuyÕt Gi¸p(0,1,101,16,0,10), unbind = 0, bind = 50
+[Normal]Item: Ma S¸t XÝch Ký Táa Yªu KhÊu(0,1,102,1,4,10), unbind = 0, bind = 50
+[Normal]Item: Ma S¸t Cö Háa Liªu Thiªn uyÓn(0,1,103,3,2,10), unbind = 0, bind = 50
+[Normal]Item: Ma S¸t V©n Long Thæ Ch©u giíi(0,1,104,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Ma S¸t B¶o Th¹ch Th©n Phï(0,1,616,1,0,10), unbind = 0, bind = 50
+[Normal]Item: Ma S¸t Phi Hång LÝ(0,1,617,0,1,10), unbind = 0, bind = 50
+[Normal]Item: Ma S¸t Tinh Th¹ch Ngäc béi(0,1,618,1,3,10), unbind = 0, bind = 50
+[Normal]Item: Ma S¸t Thiªn Niªn Hé UyÓn(0,1,619,1,3,10), unbind = 0, bind = 50
+[Normal]Item: Ma S¸t TrÊn Bang Giíi ChØ(0,1,620,0,4,10), unbind = 0, bind = 50
+[Normal]Item: Ma Hoµng Kim Gi¸p Kh«i(0,1,105,2,0,10), unbind = 0, bind = 50
+[Normal]Item: Ma Hoµng ¸n XuÊt Hæ H¹ng Khuyªn(0,1,106,1,4,10), unbind = 0, bind = 50
+[Normal]Item: Ma Hoµng Khª Cèc Thóc yªu ®¸i(0,1,107,1,3,10), unbind = 0, bind = 50
+[Normal]Item: Ma Hoµng HuyÕt Y Thó Tr¹c(0,1,108,1,1,10), unbind = 0, bind = 50
+[Normal]Item: Ma Hoµng §¨ng §¹p Ngoa(0,1,109,0,4,10), unbind = 0, bind = 50
+[Normal]Item: Ma ThÞ LÖ Hé Th©n Phï(0,1,621,1,1,10), unbind = 0, bind = 50
+[Normal]Item: Ma ThÞ TrÊn Ph¸i B¶o §ao(0,1,622,1,3,10), unbind = 0, bind = 50
+[Normal]Item: Ma ThÞ B¶o ThiÕt Gi¸p(0,1,623,16,1,10), unbind = 0, bind = 50
+[Normal]Item: Ma ThÞ Lang PhiÕn Hé UyÓn(0,1,624,1,0,10), unbind = 0, bind = 50
+[Normal]Item: Ma ThÞ Tinh Th¹ch ChØ hoµn(0,1,625,0,4,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Ma S¸t Cö Háa Liªu Thiªn Hoµn(0,1,867,3,2,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Ma Hoµng Dung Kim §o¹n NhËt Giíi(0,1,873,0,4,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Ma ThÞ LÖ Ma PhÖ T©m §¸i(0,1,875,0,2,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Ma S¸t Cö Háa Liªu Thiªn Hoµn(0,1,867,3,2,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Ma Hoµng Dung Kim §o¹n NhËt Giíi(0,1,873,0,4,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Ma ThÞ LÖ Ma PhÖ T©m §¸i(0,1,875,0,2,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Ma S¸t Cö Háa Liªu Thiªn Hoµn(0,1,867,3,2,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Ma Hoµng Dung Kim §o¹n NhËt Giíi(0,1,873,0,4,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Ma ThÞ LÖ Ma PhÖ T©m §¸i(0,1,875,0,2,10), unbind = 0, bind = 50
+[Normal]Item: CËp Phong Ch©n Vò KiÕm(0,1,120,0,2,10), unbind = 0, bind = 50
+[Normal]Item: CËp Phong Tam Thanh Phï (0,1,121,1,0,10), unbind = 0, bind = 50
+[Normal]Item: CËp Phong HuyÒn Ti Tam §o¹n cÈm(0,1,122,0,4,10), unbind = 0, bind = 50
+[Normal]Item: CËp Phong Thóy Ngäc HuyÒn Hoµng Béi(0,1,123,1,3,10), unbind = 0, bind = 50
+[Normal]Item: CËp Phong Thanh Tïng Ph¸p giíi(0,1,124,0,1,10), unbind = 0, bind = 50
+[Normal]Item: CËp phong V¹n LÝ TÇm Ngoa(0,1,631,0,1,10), unbind = 0, bind = 50
+[Normal]Item: CËp Phong Kim ¤ Ph¸t Qu¸n(0,1,632,1,2,10), unbind = 0, bind = 50
+[Normal]Item: CËp Phong TrÊn B¶o §¹o Bµo(0,1,633,3,0,8), unbind = 0, bind = 50
+[Normal]Item: CËp Phong B¶o Th¹ch Ngäc Béi(0,1,634,1,3,10), unbind = 0, bind = 50
+[Normal]Item: CËp Phong NhÊt KhÝ ChØ Hoµn(0,1,635,0,4,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng Nh¹c Th¸i Cùc KiÕm(0,1,115,0,4,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng Nh¹c V« Ng· ®¹o bµo(0,1,116,1,1,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng Nh¹c Né L«i Giíi(0,1,117,0,1,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng Nh¹c V« Cùc HuyÒn Ngäc Béi(0,1,118,1,2,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng Nh¹c Thiªn §Þa HuyÒn Hoµng giíi(0,1,119,0,0,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng Nh¹c B¶o Th¹ch H¹ng Khuyªn(0,1,626,1,3,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng Nh¹c Thiªn LÝ TÇm Ngoa(0,1,627,0,0,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng Nh¹c ¤ Sa Ph¸t Qu¸n(0,1,628,1,4,10), unbind = 0, bind = 50
+[Normal]Item: L¨ng Nh¹c TrÊn B¶o §¹o Bµo(0,1,629,3,3,8), unbind = 0, bind = 50
+[Normal]Item: L¨ng Nh¹c Vò Thiªn Hé UyÓn(0,1,630,1,2,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] L¨ng Nh¹c V« Ng· Thóc §¸i(0,1,880,1,1,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] CËp Phong Thóy Ngäc HuyÒn Hoµng UyÓn(0,1,887,1,3,10), unbind = 0, bind = 50
+[Normal]Item: Vô ¶o B¾c Minh §¹o qu¸n(0,1,135,1,0,10), unbind = 0, bind = 50
+[Normal]Item: Vô ¶o Ki B¸n phï chó (0,1,136,1,0,10), unbind = 0, bind = 50
+[Normal]Item: Vô ¶o Thóc T©m chØ hoµn(0,1,137,0,3,10), unbind = 0, bind = 50
+[Normal]Item: Vô ¶o Thanh ¶nh HuyÒn Ngäc Béi(0,1,138,1,1,10), unbind = 0, bind = 50
+[Normal]Item: Vô ¶o Tung Phong TuyÕt ¶nh ngoa(0,1,139,0,2,10), unbind = 0, bind = 50
+[Normal]Item: S­¬ng Tinh Thiªn Niªn Hµn ThiÕt(0,1,125,1,2,10), unbind = 0, bind = 50
+[Normal]Item: S­¬ng Tinh Ng¹o S­¬ng ®¹o bµo(0,1,126,1,3,10), unbind = 0, bind = 50
+[Normal]Item: S­¬ng Tinh Thanh Phong Lò ®¸i(0,1,127,0,4,10), unbind = 0, bind = 50
+[Normal]Item: S­¬ng Tinh Thiªn Tinh B¨ng Tinh thñ (0,1,128,1,3,10), unbind = 0, bind = 50
+[Normal]Item: S­¬ng Tinh Phong B¹o chØ hoµn(0,1,129,0,1,10), unbind = 0, bind = 50
+[Normal]Item: S­¬ng Tinh Ng¹o ThÕ Hé Th©n Phï(0,1,636,1,0,10), unbind = 0, bind = 50
+[Normal]Item: S­¬ng Tinh V¹n LÝ TÇm Ngoa(0,1,637,0,1,10), unbind = 0, bind = 50
+[Normal]Item: S­¬ng Tinh Tö Kim Ph¸t Qu¸n(0,1,638,1,2,10), unbind = 0, bind = 50
+[Normal]Item: S­¬ng Tinh TrÊn B¶o §¹o Bµo(0,1,639,3,0,8), unbind = 0, bind = 50
+[Normal]Item: S­¬ng Tinh Hµn ThiÕt ChØ Hoµn(0,1,640,0,4,10), unbind = 0, bind = 50
+[Normal]Item: L«i Khung Hµn Tung B¨ng B¹ch quan(0,1,130,1,4,10), unbind = 0, bind = 50
+[Normal]Item: L«i Khung Thiªn §Þa Hé phï (0,1,131,1,3,10), unbind = 0, bind = 50
+[Normal]Item: L«i Khung Phong L«i Thanh CÈm ®¸i(0,1,132,0,1,10), unbind = 0, bind = 50
+[Normal]Item: L«i Khung Linh Ngäc UÈn L«i(0,1,133,1,2,10), unbind = 0, bind = 50
+[Normal]Item: L«i Khung Cöu Thiªn DÉn L«i giíi(0,1,134,0,0,10), unbind = 0, bind = 50
+[Normal]Item: L«i Khung Linh KhÝ TÇm Ngoa(0,1,641,0,0,10), unbind = 0, bind = 50
+[Normal]Item: L«i Khung TrÊn Long B¶o KiÕm(0,1,642,0,4,10), unbind = 0, bind = 50
+[Normal]Item: L«i Khung Thiªn Niªn §¹o Bµo(0,1,643,3,3,8), unbind = 0, bind = 50
+[Normal]Item: L«i Khung B¶o Th¹ch Ngäc Béi(0,1,644,1,2,10), unbind = 0, bind = 50
+[Normal]Item: L«i Khung §Þnh Quèc ChØ Hoµn(0,1,645,0,1,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] S­¬ng Tinh L­u Tinh C¶n NguyÖt KhÊu(0,1,890,1,3,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] L«i Khung Linh Ngäc Èn L«i UyÓn(0,1,897,1,2,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Vô Hoan Th¸i Uyªn Ch©n Vò Liªn(0,1,900,1,0,10), unbind = 0, bind = 50
+[Normal]Item: L«i Khung Linh KhÝ TÇm Ngoa(0,1,641,0,0,10), unbind = 0, bind = 50
+[Normal]Item: L«i Khung TrÊn Long B¶o KiÕm(0,1,642,0,4,10), unbind = 0, bind = 50
+[Normal]Item: L«i Khung Thiªn Niªn §¹o Bµo(0,1,643,3,3,8), unbind = 0, bind = 50
+[Normal]Item: L«i Khung B¶o Th¹ch Ngäc Béi(0,1,644,1,2,10), unbind = 0, bind = 50
+[Normal]Item: L«i Khung §Þnh Quèc ChØ Hoµn(0,1,645,0,1,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] S­¬ng Tinh L­u Tinh C¶n NguyÖt KhÊu(0,1,890,1,3,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] L«i Khung Linh Ngäc Èn L«i UyÓn(0,1,897,1,2,10), unbind = 0, bind = 50
+[Normal]Item: [H¹n chÕ thêi gian] Vô Hoan Th¸i Uyªn Ch©n Vò Liªn(0,1,900,1,0,10), unbind = 0, bind = 50

@@ -1,0 +1,3 @@
+[Normal]Item: B¨ng Hµn §¬n ChØ Phi §ao(0,1,70,1,0,10),(115,0) = [43,66],(121,0) = [31,0],(139,48) = [2,131], unbind = 0, bind = 11137
+[Normal]Item: Toµn Th¹ch Giíi ChØ(0,0,3,0,3,10), unbind = 0, bind = 0
+[Normal]Item: Ma Hoµng ¸n XuÊt Hæ H¹ng Khuyªn(0,1,106,1,4,10),(104,0) = [22,64],(103,0) = [16,0],(114,0) = [17,0], unbind = 0, bind = 1230

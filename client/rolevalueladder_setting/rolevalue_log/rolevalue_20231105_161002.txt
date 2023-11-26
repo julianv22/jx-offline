@@ -1,0 +1,36 @@
+[Normal]Item: [Hoµn Mü] An Bang Kª HuyÕt Th¹ch Giíi ChØ(0,1,212,0,3,8), unbind = 0, bind = 50
+[Normal]Item: Anh Hµo Uy Vò H¹ng Liªn(0,1,8736,1,0,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Uy Vò Qu¸n(0,1,8737,4,2,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Uy Vò NhuÖ Phong ChØ Hoµn(0,1,8738,0,1,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Uy Vò Thóc UyÓn(0,1,8739,1,3,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Uy Vò Yªu §íi(0,1,8740,0,4,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Uy Vò Gi¸p Y(0,1,8741,4,0,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Uy Vò §ao(0,1,8742,7,2,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Uy Vò Ngoa(0,1,8743,0,1,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Uy Vò Yªu Trôy(0,1,8744,1,3,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Uy Vò Tru NÞnh ChØ Hoµn(0,1,8745,0,4,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Uy Vò Tru NÞnh ChØ Hoµn(0,1,8745,0,4,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Uy Vò Yªu Trôy(0,1,8744,1,3,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Uy Vò Ngoa(0,1,8743,0,1,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Uy Vò §ao(0,1,8742,7,2,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Uy Vò Gi¸p Y(0,1,8741,4,0,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Uy Vò Yªu §íi(0,1,8740,0,4,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Uy Vò Thóc UyÓn(0,1,8739,1,3,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Uy Vò NhuÖ Phong ChØ Hoµn(0,1,8738,0,1,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Uy Vò Qu¸n(0,1,8737,4,2,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Uy Vò H¹ng Liªn(0,1,8736,1,0,10), unbind = 0, bind = 60000
+[Normal]Item: [Hoµn Mü] An Bang Kª HuyÕt Th¹ch Giíi ChØ(0,1,212,0,3,8), unbind = 0, bind = 50
+[Normal]Item: Phôc Ma Tö Kim C«n(0,1,5,2,0,10), unbind = 0, bind = 50
+[Normal]Item: [Hoµn Mü] An Bang Kª HuyÕt Th¹ch Giíi ChØ(0,1,212,0,3,8), unbind = 0, bind = 50
+[Normal]Item: Anh Hµo Uy Vò H¹ng Liªn(0,1,8736,1,0,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Uy Vò Qu¸n(0,1,8737,4,2,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Uy Vò NhuÖ Phong ChØ Hoµn(0,1,8738,0,1,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Uy Vò Thóc UyÓn(0,1,8739,1,3,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Uy Vò Yªu §íi(0,1,8740,0,4,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Uy Vò Gi¸p Y(0,1,8741,4,0,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Uy Vò §ao(0,1,8742,7,2,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Uy Vò Ngoa(0,1,8743,0,1,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Uy Vò Yªu Trôy(0,1,8744,1,3,10), unbind = 0, bind = 60000
+[Normal]Item: Anh Hµo Uy Vò Tru NÞnh ChØ Hoµn(0,1,8745,0,4,10), unbind = 0, bind = 60000
+[Normal]Item: C«n Lu©n §ao - ChiÕn tr­êng Thiªn Nh©n §Þch(0,1,4628,794,5,1), unbind = 0, bind = 50
+[Normal]Item: C«n Lu©n KiÕm - ChiÕn tr­êng Thiªn Nh©n §Þch(0,1,4629,795,5,1), unbind = 0, bind = 50

@@ -1,0 +1,4 @@
+[Normal]Item: [Hoµn Mü] An Bang Kª HuyÕt Th¹ch Giíi ChØ(0,1,212,0,3,8), unbind = 0, bind = 2500
+[Normal]Item: [Hoµn Mü] An Bang Kª HuyÕt Th¹ch Giíi ChØ(0,1,212,0,3,8), unbind = 0, bind = 2500
+[Normal]Item: Phôc Ma Tö Kim C«n(0,1,5,2,0,10),(115,0) = [37,75],(121,0) = [58,25],(139,273) = [2,50], unbind = 0, bind = 10417
+[Normal]Item: [Hoµn Mü] An Bang Kª HuyÕt Th¹ch Giíi ChØ(0,1,212,0,3,8), unbind = 0, bind = 2500

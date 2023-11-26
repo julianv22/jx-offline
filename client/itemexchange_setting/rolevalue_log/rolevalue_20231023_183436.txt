@@ -1,0 +1,21 @@
+[Normal]Item: B¸ V­¬ngTiªu(0,0,1,0,0,10), unbind = 0, bind = 0
+[Normal]Item: B¸ V­¬ngTiªu(0,0,1,0,0,10), unbind = 0, bind = 0
+[Normal]Item: B¸ V­¬ngTiªu(0,0,1,0,0,10), unbind = 0, bind = 0
+[Normal]Item: B¸ V­¬ngTiªu(0,0,1,0,0,10), unbind = 0, bind = 0
+[Normal]Item: B¸ V­¬ngTiªu(0,0,1,0,0,10), unbind = 0, bind = 0
+[Normal]Item: B¸ V­¬ngTiªu(0,0,1,0,0,10), unbind = 0, bind = 0
+[Normal]Item: B¸ V­¬ngTiªu(0,0,1,0,0,10), unbind = 0, bind = 0
+[Normal]Item: B¸ V­¬ngTiªu(0,0,1,0,0,10), unbind = 0, bind = 0
+[Normal]Item: B¸ V­¬ngTiªu(0,0,1,0,0,10), unbind = 0, bind = 0
+[Normal]Item: B¸ V­¬ngTiªu(0,0,1,0,0,10), unbind = 0, bind = 0
+[Normal]Item: B¸ V­¬ngTiªu(0,0,1,0,0,10), unbind = 0, bind = 0
+[Normal]Item: B¸ V­¬ngTiªu(0,0,1,0,0,10), unbind = 0, bind = 0
+[Normal]Item: B¸ V­¬ngTiªu(0,0,1,0,0,10), unbind = 0, bind = 0
+[Normal]Item: B¸ V­¬ngTiªu(0,0,1,0,0,10), unbind = 0, bind = 0
+[Normal]Item: B¸ V­¬ngTiªu(0,0,1,0,0,10), unbind = 0, bind = 0
+[Normal]Item: B¸ V­¬ngTiªu(0,0,1,0,0,10), unbind = 0, bind = 0
+[Normal]Item: B¸ V­¬ngTiªu(0,0,1,0,0,10), unbind = 0, bind = 0
+[Normal]Item: B¸ V­¬ngTiªu(0,0,1,0,0,10), unbind = 0, bind = 0
+[Normal]Item: B¸ V­¬ngTiªu(0,0,1,0,0,10), unbind = 0, bind = 0
+[Normal]Item: B¸ V­¬ngTiªu(0,0,1,0,0,10), unbind = 0, bind = 0
+[Normal]Item: §¹i Phong §ao(0,0,0,1,0,10), unbind = 0, bind = 0

@@ -1,0 +1,8 @@
+[Normal]Item: B«n Tiªu(0,0,10,6,0,10), unbind = 0, bind = 0
+[Normal]Item: Phiªn Vò (0,0,10,7,0,10), unbind = 0, bind = 0
+[Normal]Item: Phi V©n(0,0,10,8,0,10), unbind = 0, bind = 0
+[Normal]Item: XÝch Long C©u(0,0,10,9,0,10), unbind = 0, bind = 0
+[Normal]Item: TuyÖt §Þa(0,0,10,10,0,10), unbind = 0, bind = 0
+[Normal]Item: Du Huy(0,0,10,11,0,10), unbind = 0, bind = 0
+[Normal]Item: §»ng Vô(0,0,10,12,0,10), unbind = 0, bind = 0
+[Normal]Item: Siªu Quang(0,0,10,13,0,10), unbind = 0, bind = 0

@@ -1,0 +1,18 @@
+[Normal]Item: ThiÕt Th­¬ng(0,0,0,3,4,1), unbind = 0, bind = 0
+[Normal]Item: [Hoµn Mü] An Bang Cóc Hoa Th¹ch ChØ Hoµn(0,1,210,0,2,8), unbind = 0, bind = 2500
+[Normal]Item: Kim Tiªu (0,0,1,0,0,9), unbind = 0, bind = 0
+[Normal]Item: Hçn ThiÕt Bæng(0,0,0,2,4,8), unbind = 0, bind = 0
+[Normal]Item: Hå §iÖp Song §ao(0,0,0,5,4,8), unbind = 0, bind = 0
+[Normal]Item: Háa NhuÖ Th­¬ng(0,0,0,3,4,9), unbind = 0, bind = 0
+[Normal]Item: B¸ V­¬ngTiªu(0,0,1,0,4,10), unbind = 0, bind = 0
+[Normal]Item: NghiÖt Long chïy(0,0,0,4,4,9), unbind = 0, bind = 0
+[Normal]Item: ¤ Kim KiÕm(0,0,0,0,2,6), unbind = 0, bind = 0
+[Normal]Item: To¸n §Çu chïy(0,0,0,4,0,1), unbind = 0, bind = 0
+[Normal]Item: Tø Kh«ng Gi¸ng Ma Giíi ®ao(0,1,10,1,0,10),(115,0) = [27,37],(121,0) = [58,37],(139,273) = [1,0], unbind = 0, bind = 7250
+[Normal]Item: Tø Kh«ng §¹t Ma T¨ng Hµi(0,1,11,0,4,10), unbind = 0, bind = 0
+[Normal]Item: Tø Kh«ng Hé ph¸p Yªu ®¸i(0,1,12,0,3,10),(106,0) = [41,0],(139,10) = [1,0],(102,0) = [27,5], unbind = 0, bind = 27562
+[Normal]Item: Tø Kh«ng NhuyÔn B× Hé UyÓn(0,1,13,1,1,10),(139,321) = [3,1281],(102,0) = [28,256],(139,19) = [1,0], unbind = 0, bind = 429712
+[Normal]Item: Tø Kh«ng Giíi LuËt Ph¸p giíi(0,1,14,0,2,10), unbind = 0, bind = 0
+[Normal]Item: To¸n §Çu chïy(0,0,0,4,0,1), unbind = 0, bind = 0
+[Normal]Item: To¸n §Çu chïy(0,0,0,4,0,1), unbind = 0, bind = 0
+[Normal]Item: To¸n §Çu chïy(0,0,0,4,0,1), unbind = 0, bind = 0

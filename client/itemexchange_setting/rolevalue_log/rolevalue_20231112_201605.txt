@@ -1,0 +1,5 @@
+[Normal]Item: Nga Mi Thİch(0,0,0,5,0,1), unbind = 0, bind = 0
+[Normal]Item: [Cùc phÈm] An Bang B¨ng Tinh Th¹ch H¹ng Liªn(0,1,407,0,4,10), unbind = 0, bind = 0
+[Normal]Item: [Cùc phÈm] An Bang Cóc Hoa Th¹ch ChØ Hoµn(0,1,408,0,2,8), unbind = 0, bind = 0
+[Normal]Item: [Cùc phÈm] An Bang §iÒn Hoµng Th¹ch Ngäc Béi(0,1,409,1,1,8), unbind = 0, bind = 0
+[Normal]Item: [Cùc phÈm] An Bang Kª HuyÕt Th¹ch Giíi ChØ(0,1,410,0,3,8), unbind = 0, bind = 0

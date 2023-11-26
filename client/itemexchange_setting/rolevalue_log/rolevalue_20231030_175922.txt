@@ -1,0 +1,1 @@
+[Normal]Item: Ph¸ Gi¸p Nç (0,0,1,2,1,7), unbind = 0, bind = 0

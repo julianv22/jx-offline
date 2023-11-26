@@ -1,0 +1,87 @@
+[Normal]Item: Phôc Ma Tö Kim C«n(0,1,5,2,0,10),(115,0) = [40,125],(121,0) = [55,25],(139,273) = [1,0], unbind = 0, bind = 10417
+[Normal]Item: Phôc Ma V« L­îng Kim C­¬ng UyÓn(0,1,6,0,4,10), unbind = 0, bind = 0
+[Normal]Item: Phôc Ma ¤ Kim NhuyÔn §iÒu(0,1,7,0,3,10),(106,0) = [42,0],(139,10) = [1,0],(110,0) = [36,0], unbind = 0, bind = 2250
+[Normal]Item: Phôc Ma PhËt T©m NhuyÔn KhÊu(0,1,8,1,1,10), unbind = 0, bind = 83333
+[Normal]Item: Phôc Ma Phæ §é T¨ng hµi(0,1,9,0,2,10),(139,319) = [3,182],(111,0) = [46,0],(103,0) = [28,0], unbind = 0, bind = 234999
+[Normal]Item: Phôc Ma Tö Kim C«n(0,1,5,2,0,10),(115,0) = [40,125],(121,0) = [55,25],(139,273) = [1,0], unbind = 0, bind = 10417
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®×Ï½ğ¹÷0(0,4,5,2,0,10), unbind = 0, bind = 12417
+[Normal]Item: Phôc Ma Tö Kim C«n(0,1,5,2,0,10),(115,0) = [40,125],(121,0) = [55,25],(139,273) = [1,0], unbind = 0, bind = 10417
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®×Ï½ğ¹÷1(0,4,5,2,0,10), unbind = 0, bind = 14817
+[Normal]Item: Phôc Ma Tö Kim C«n(0,1,5,2,0,10),(115,0) = [40,125],(121,0) = [55,25],(139,273) = [1,0], unbind = 0, bind = 10417
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®×Ï½ğ¹÷2(0,4,5,2,0,10), unbind = 0, bind = 18417
+[Normal]Item: Phôc Ma Tö Kim C«n(0,1,5,2,0,10),(115,0) = [40,125],(121,0) = [55,25],(139,273) = [1,0], unbind = 0, bind = 10417
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®×Ï½ğ¹÷3(0,4,5,2,0,10), unbind = 0, bind = 23217
+[Normal]Item: Phôc Ma Tö Kim C«n(0,1,5,2,0,10),(115,0) = [40,125],(121,0) = [55,25],(139,273) = [1,0], unbind = 0, bind = 10417
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®×Ï½ğ¹÷4(0,4,5,2,0,10), unbind = 0, bind = 29217
+[Normal]Item: Phôc Ma Tö Kim C«n(0,1,5,2,0,10),(115,0) = [40,125],(121,0) = [55,25],(139,273) = [1,0], unbind = 0, bind = 10417
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®×Ï½ğ¹÷5(0,4,5,2,0,10), unbind = 0, bind = 38217
+[Normal]Item: Phôc Ma Tö Kim C«n(0,1,5,2,0,10),(115,0) = [40,125],(121,0) = [55,25],(139,273) = [1,0], unbind = 0, bind = 10417
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®×Ï½ğ¹÷6(0,4,5,2,0,10), unbind = 0, bind = 56217
+[Normal]Item: Phôc Ma Tö Kim C«n(0,1,5,2,0,10),(115,0) = [40,125],(121,0) = [55,25],(139,273) = [1,0], unbind = 0, bind = 10417
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®×Ï½ğ¹÷7(0,4,5,2,0,10), unbind = 0, bind = 86217
+[Normal]Item: Phôc Ma Tö Kim C«n(0,1,5,2,0,10),(115,0) = [40,125],(121,0) = [55,25],(139,273) = [1,0], unbind = 0, bind = 10417
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®×Ï½ğ¹÷8(0,4,5,2,0,10), unbind = 0, bind = 10417
+[Normal]Item: Phôc Ma Tö Kim C«n(0,1,5,2,0,10),(115,0) = [40,125],(121,0) = [55,25],(139,273) = [1,0], unbind = 0, bind = 10417
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®×Ï½ğ¹÷9(0,4,5,2,0,10), unbind = 0, bind = 10417
+[Normal]Item: Phôc Ma Tö Kim C«n(0,1,5,2,0,10),(115,0) = [40,125],(121,0) = [55,25],(139,273) = [1,0], unbind = 0, bind = 10417
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®×Ï½ğ¹÷10(0,4,5,2,0,10), unbind = 0, bind = 10417
+[Normal]Item: Phôc Ma V« L­îng Kim C­¬ng UyÓn(0,1,6,0,1,10), unbind = 0, bind = 0
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®ÎŞÁ¿½ğ¸ÕÍó0(0,4,6,0,1,10), unbind = 0, bind = 0
+[Normal]Item: Phôc Ma V« L­îng Kim C­¬ng UyÓn(0,1,6,0,1,10), unbind = 0, bind = 0
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®ÎŞÁ¿½ğ¸ÕÍó1(0,4,6,0,1,10), unbind = 0, bind = 0
+[Normal]Item: Phôc Ma V« L­îng Kim C­¬ng UyÓn(0,1,6,0,1,10), unbind = 0, bind = 0
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®ÎŞÁ¿½ğ¸ÕÍó2(0,4,6,0,1,10), unbind = 0, bind = 0
+[Normal]Item: Phôc Ma V« L­îng Kim C­¬ng UyÓn(0,1,6,0,1,10), unbind = 0, bind = 0
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®ÎŞÁ¿½ğ¸ÕÍó3(0,4,6,0,1,10), unbind = 0, bind = 0
+[Normal]Item: Phôc Ma V« L­îng Kim C­¬ng UyÓn(0,1,6,0,1,10), unbind = 0, bind = 0
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®ÎŞÁ¿½ğ¸ÕÍó4(0,4,6,0,1,10), unbind = 0, bind = 0
+[Normal]Item: Phôc Ma V« L­îng Kim C­¬ng UyÓn(0,1,6,0,1,10), unbind = 0, bind = 0
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®ÎŞÁ¿½ğ¸ÕÍó5(0,4,6,0,1,10), unbind = 0, bind = 0
+[Normal]Item: Phôc Ma V« L­îng Kim C­¬ng UyÓn(0,1,6,0,1,10), unbind = 0, bind = 0
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®ÎŞÁ¿½ğ¸ÕÍó6(0,4,6,0,1,10), unbind = 0, bind = 0
+[Normal]Item: Phôc Ma V« L­îng Kim C­¬ng UyÓn(0,1,6,0,1,10), unbind = 0, bind = 0
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®ÎŞÁ¿½ğ¸ÕÍó7(0,4,6,0,1,10), unbind = 0, bind = 0
+[Normal]Item: Phôc Ma V« L­îng Kim C­¬ng UyÓn(0,1,6,0,1,10), unbind = 0, bind = 0
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®ÎŞÁ¿½ğ¸ÕÍó8(0,4,6,0,1,10), unbind = 0, bind = 0
+[Normal]Item: Phôc Ma V« L­îng Kim C­¬ng UyÓn(0,1,6,0,1,10), unbind = 0, bind = 0
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®ÎŞÁ¿½ğ¸ÕÍó9(0,4,6,0,1,10), unbind = 0, bind = 0
+[Normal]Item: Phôc Ma V« L­îng Kim C­¬ng UyÓn(0,1,6,0,1,10), unbind = 0, bind = 0
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®ÎŞÁ¿½ğ¸ÕÍó10(0,4,6,0,1,10), unbind = 0, bind = 0
+[Normal]Item: Phôc Ma Phæ §é T¨ng hµi(0,1,9,0,2,10),(139,319) = [3,182],(111,0) = [46,0],(103,0) = [28,0], unbind = 0, bind = 234999
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®ÆÕ¶ÉÉ®Ğ¬0(0,4,9,0,2,10), unbind = 0, bind = 236999
+[Normal]Item: Phôc Ma Phæ §é T¨ng hµi(0,1,9,0,2,10),(139,319) = [3,182],(111,0) = [46,0],(103,0) = [28,0], unbind = 0, bind = 234999
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®ÆÕ¶ÉÉ®Ğ¬1(0,4,9,0,2,10), unbind = 0, bind = 238599
+[Normal]Item: Phôc Ma Phæ §é T¨ng hµi(0,1,9,0,2,10),(139,319) = [3,182],(111,0) = [46,0],(103,0) = [28,0], unbind = 0, bind = 234999
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®ÆÕ¶ÉÉ®Ğ¬2(0,4,9,0,2,10), unbind = 0, bind = 240999
+[Normal]Item: Phôc Ma Phæ §é T¨ng hµi(0,1,9,0,2,10),(139,319) = [3,182],(111,0) = [46,0],(103,0) = [28,0], unbind = 0, bind = 234999
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®ÆÕ¶ÉÉ®Ğ¬3(0,4,9,0,2,10), unbind = 0, bind = 244199
+[Normal]Item: Phôc Ma Phæ §é T¨ng hµi(0,1,9,0,2,10),(139,319) = [3,182],(111,0) = [46,0],(103,0) = [28,0], unbind = 0, bind = 234999
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®ÆÕ¶ÉÉ®Ğ¬4(0,4,9,0,2,10), unbind = 0, bind = 248199
+[Normal]Item: Phôc Ma Phæ §é T¨ng hµi(0,1,9,0,2,10),(139,319) = [3,182],(111,0) = [46,0],(103,0) = [28,0], unbind = 0, bind = 234999
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®ÆÕ¶ÉÉ®Ğ¬5(0,4,9,0,2,10), unbind = 0, bind = 254199
+[Normal]Item: Phôc Ma Phæ §é T¨ng hµi(0,1,9,0,2,10),(139,319) = [3,182],(111,0) = [46,0],(103,0) = [28,0], unbind = 0, bind = 234999
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®ÆÕ¶ÉÉ®Ğ¬6(0,4,9,0,2,10), unbind = 0, bind = 266199
+[Normal]Item: Phôc Ma Phæ §é T¨ng hµi(0,1,9,0,2,10),(139,319) = [3,182],(111,0) = [46,0],(103,0) = [28,0], unbind = 0, bind = 234999
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®ÆÕ¶ÉÉ®Ğ¬7(0,4,9,0,2,10), unbind = 0, bind = 286199
+[Normal]Item: Phôc Ma Phæ §é T¨ng hµi(0,1,9,0,2,10),(139,319) = [3,182],(111,0) = [46,0],(103,0) = [28,0], unbind = 0, bind = 234999
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®ÆÕ¶ÉÉ®Ğ¬8(0,4,9,0,2,10), unbind = 0, bind = 234999
+[Normal]Item: Phôc Ma Phæ §é T¨ng hµi(0,1,9,0,2,10),(139,319) = [3,182],(111,0) = [46,0],(103,0) = [28,0], unbind = 0, bind = 234999
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®ÆÕ¶ÉÉ®Ğ¬9(0,4,9,0,2,10), unbind = 0, bind = 234999
+[Normal]Item: Phôc Ma Phæ §é T¨ng hµi(0,1,9,0,2,10),(139,319) = [3,182],(111,0) = [46,0],(103,0) = [28,0], unbind = 0, bind = 234999
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®ÆÕ¶ÉÉ®Ğ¬10(0,4,9,0,2,10), unbind = 0, bind = 234999
+[Normal]Item: Phôc Ma PhËt T©m NhuyÔn KhÊu(0,1,8,1,1,10), unbind = 0, bind = 83333
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®·ğĞÄÈí¿Û0(0,4,8,1,1,10), unbind = 0, bind = 85333
+[Normal]Item: Phôc Ma PhËt T©m NhuyÔn KhÊu(0,1,8,1,1,10), unbind = 0, bind = 83333
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®·ğĞÄÈí¿Û1(0,4,8,1,1,10), unbind = 0, bind = 86933
+[Normal]Item: Phôc Ma PhËt T©m NhuyÔn KhÊu(0,1,8,1,1,10), unbind = 0, bind = 83333
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®·ğĞÄÈí¿Û2(0,4,8,1,1,10), unbind = 0, bind = 89333
+[Normal]Item: Phôc Ma PhËt T©m NhuyÔn KhÊu(0,1,8,1,1,10), unbind = 0, bind = 83333
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®·ğĞÄÈí¿Û3(0,4,8,1,1,10), unbind = 0, bind = 92533
+[Normal]Item: Phôc Ma PhËt T©m NhuyÔn KhÊu(0,1,8,1,1,10), unbind = 0, bind = 83333
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®·ğĞÄÈí¿Û4(0,4,8,1,1,10), unbind = 0, bind = 96533
+[Normal]Item: Phôc Ma PhËt T©m NhuyÔn KhÊu(0,1,8,1,1,10), unbind = 0, bind = 83333
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®·ğĞÄÈí¿Û5(0,4,8,1,1,10), unbind = 0, bind = 102533
+[Normal]Item: Phôc Ma PhËt T©m NhuyÔn KhÊu(0,1,8,1,1,10), unbind = 0, bind = 83333
+[Normal]Item: [Ìì´ÍµÄ]·üÄ§Ö®·ğĞÄÈí¿Û6(0,4,8,1,1,10), unbind = 0, bind = 83333
+[Normal]Item: Phôc Ma PhËt T©m NhuyÔn KhÊu(0,1,8,1,1,10), unbind = 0, bind = 83333
+[Normal]Item: [Ìì´ÍµÄ]

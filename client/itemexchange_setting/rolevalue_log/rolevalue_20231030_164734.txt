@@ -1,0 +1,2 @@
+[Normal]Item: Y”n Nguy÷t ßao(0,0,0,1,4,8), unbind = 0, bind = 0
+[Normal]Item: Thanh Long ßao(0,0,0,1,4,9), unbind = 0, bind = 0

@@ -1,0 +1,9 @@
+[Normal]Item: [Cùc phÈm] An Bang B¨ng Tinh Th¹ch H¹ng Liªn(0,1,407,0,4,10), unbind = 0, bind = 50
+[Normal]Item: [Cùc phÈm] An Bang Cóc Hoa Th¹ch ChØ Hoµn(0,1,408,0,2,8), unbind = 0, bind = 50
+[Normal]Item: [Cùc phÈm] An Bang §iÒn Hoµng Th¹ch Ngäc Béi(0,1,409,1,1,8), unbind = 0, bind = 50
+[Normal]Item: [Cùc phÈm] An Bang Kª HuyÕt Th¹ch Giíi ChØ(0,1,410,0,3,8), unbind = 0, bind = 50
+[Normal]Item: H¾c thÇn- M·nh Uy- Kh«i(0,1,4837,0,2,10), unbind = 0, bind = 50
+[Normal]Item: H¾c thÇn- M·nh Uy- §¹o Bµo(0,1,4838,0,0,10), unbind = 0, bind = 50
+[Normal]Item: H¾c thÇn- M·nh Uy- Lý(0,1,4839,0,1,10), unbind = 0, bind = 50
+[Normal]Item: H¾c thÇn- M·nh Uy- Hé UyÓn(0,1,4840,0,3,10), unbind = 0, bind = 50
+[Normal]Item: H¾c thÇn- M·nh Uy- Yªu §¸i(0,1,4841,0,4,10), unbind = 0, bind = 50

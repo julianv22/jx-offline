@@ -1,0 +1,2 @@
+[Normal]Item: Thiªu Háa C«n (0,0,0,2,1,1), unbind = 0, bind = 0
+[Normal]Item: To¸n §Çu chïy(0,0,0,4,0,1), unbind = 0, bind = 0

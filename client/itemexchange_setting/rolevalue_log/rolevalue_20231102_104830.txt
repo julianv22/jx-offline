@@ -1,0 +1,5 @@
+[Normal]Item: [Hoµn Mü] An Bang Kª HuyÕt Th¹ch Giíi ChØ(0,1,212,0,3,8), unbind = 0, bind = 2500
+[Normal]Item: [Hoµn Mü] An Bang B¨ng Tinh Th¹ch H¹ng Liªn(0,1,209,0,4,10), unbind = 0, bind = 3333
+[Normal]Item: [Hoµn Mü] An Bang Kª HuyÕt Th¹ch Giíi ChØ(0,1,212,0,3,8), unbind = 0, bind = 2500
+[Normal]Item: [Hoµn Mü] An Bang Kª HuyÕt Th¹ch Giíi ChØ(0,1,212,0,3,8), unbind = 0, bind = 2500
+[Normal]Item: [Hoµn Mü] An Bang Kª HuyÕt Th¹ch Giíi ChØ(0,1,212,0,3,8), unbind = 0, bind = 2500

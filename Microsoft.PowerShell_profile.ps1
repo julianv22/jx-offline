@@ -39,5 +39,14 @@ function W-Update {
 	Get-WindowsUpdate
 }
 
+function Delete-Temp {
+#Parameter
+$Directories = "$env:USERPROFILE\AppData\Local\Temp", "C:\Windows\Temp"
+
+#Delete files in each directory
+	ForEach ($Dir in $Directories) {
+		Remove-Item -Path $Dir -Recurse -Force
+	}
+}
 # Start-BitsTransfer -Source "https://raw.githubusercontent.com/julianv22/jx-offline/main/Microsoft.PowerShell_profile.ps1" -Destination $PROFILE
 # (Get-PSReadLineOption).HistorySavePath
